@@ -8,15 +8,44 @@ namespace CH.Spartan.Authorization
     {
         public override void SetPermissions(IPermissionDefinitionContext context)
         {
-            //Common permissions
-            var pages = context.GetPermissionOrNull(PermissionNames.Pages);
-            if (pages == null)
+            var homes = context.GetPermissionOrNull(PermissionNames.Homes);
+            if (homes == null)
             {
-                pages = context.CreatePermission(PermissionNames.Pages, L("Pages"));
+                homes = context.CreatePermission(PermissionNames.Homes, L("我的主页"));
+            }
+            homes.CreateChildPermission(PermissionNames.Homes_Monitor, L("定位监控"), multiTenancySides: MultiTenancySides.Tenant);
+            homes.CreateChildPermission(PermissionNames.Homes_HistoryTrack, L("历史轨迹"), multiTenancySides: MultiTenancySides.Tenant);
+            homes.CreateChildPermission(PermissionNames.Homes_Notification, L("报警信息"), multiTenancySides: MultiTenancySides.Tenant);
+            homes.CreateChildPermission(PermissionNames.Homes_MileageReport, L("里程统计"), multiTenancySides: MultiTenancySides.Tenant);
+
+            var mySettings = context.GetPermissionOrNull(PermissionNames.MySettings);
+            if (mySettings == null)
+            {
+                mySettings = context.CreatePermission(PermissionNames.MySettings, L("我的设置"));
             }
 
-            //Host permissions
-            var tenants = pages.CreateChildPermission(PermissionNames.Pages_Tenants, L("Tenants"), multiTenancySides: MultiTenancySides.Host);
+            mySettings.CreateChildPermission(PermissionNames.MySettings_Device, L("车辆设置"), multiTenancySides: MultiTenancySides.Tenant);
+            mySettings.CreateChildPermission(PermissionNames.MySettings_Area, L("区域设置"), multiTenancySides: MultiTenancySides.Tenant);
+
+            var platformManages = context.GetPermissionOrNull(PermissionNames.PlatformManages);
+            if (platformManages == null)
+            {
+                platformManages = context.CreatePermission(PermissionNames.PlatformManages, L("平台管理"));
+            }
+
+            platformManages.CreateChildPermission(PermissionNames.PlatformManages_User, L("客户管理"), multiTenancySides: MultiTenancySides.Tenant);
+            platformManages.CreateChildPermission(PermissionNames.PlatformManages_Role, L("角色管理"), multiTenancySides: MultiTenancySides.Tenant);
+            platformManages.CreateChildPermission(PermissionNames.PlatformManages_Device, L("车辆管理"), multiTenancySides: MultiTenancySides.Tenant);
+
+            var systemManages = context.GetPermissionOrNull(PermissionNames.SystemManages);
+            if (systemManages == null)
+            {
+                systemManages = context.CreatePermission(PermissionNames.SystemManages, L("系统管理"));
+            }
+
+            systemManages.CreateChildPermission(PermissionNames.SystemManages_Tenant, L("租户管理"), multiTenancySides: MultiTenancySides.Host);
+            systemManages.CreateChildPermission(PermissionNames.SystemManages_AuditLog, L("审计日志"), multiTenancySides: MultiTenancySides.Host);
+
         }
 
         private static ILocalizableString L(string name)

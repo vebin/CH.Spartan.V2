@@ -3867,3 +3867,43 @@ DEBUG 2016-04-03 11:55:27,493 [100  ] Abp.Web.SignalR.Hubs.AbpCommonHub        -
 DEBUG 2016-04-03 11:56:08,321 [93   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c4039775-e68d-4f23-a452-ec2c2b86d520
 DEBUG 2016-04-03 11:56:11,752 [87   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"896b92b1-151d-4399-8e28-fa2a59caed50","IpAddress":"::1","TenantId":null,"UserId":null,"ConnectTime":"2016-04-03T11:56:11.7525119+08:00","Properties":{}}
 DEBUG 2016-04-03 11:56:11,762 [46   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 896b92b1-151d-4399-8e28-fa2a59caed50
+DEBUG 2016-04-03 12:39:51,649 [100  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 896b92b1-151d-4399-8e28-fa2a59caed50
+DEBUG 2016-04-03 12:39:53,161 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"95011a45-56a6-4c36-90eb-4df3c349a048","IpAddress":"::1","TenantId":null,"UserId":null,"ConnectTime":"2016-04-03T12:39:53.1603077+08:00","Properties":{}}
+DEBUG 2016-04-03 12:39:53,174 [100  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 95011a45-56a6-4c36-90eb-4df3c349a048
+DEBUG 2016-04-03 12:40:07,411 [93   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 95011a45-56a6-4c36-90eb-4df3c349a048
+DEBUG 2016-04-03 12:40:08,546 [98   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4e3592e0-2d98-4ee1-95a7-f31616a4268d","IpAddress":"::1","TenantId":null,"UserId":null,"ConnectTime":"2016-04-03T12:40:08.5460166+08:00","Properties":{}}
+DEBUG 2016-04-03 12:40:08,558 [90   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4e3592e0-2d98-4ee1-95a7-f31616a4268d
+DEBUG 2016-04-03 12:40:15,039 [90   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4e3592e0-2d98-4ee1-95a7-f31616a4268d
+DEBUG 2016-04-03 12:40:15,974 [101  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"2d24b7b0-e257-494e-ba06-10ac63aeb292","IpAddress":"::1","TenantId":null,"UserId":null,"ConnectTime":"2016-04-03T12:40:15.9742413+08:00","Properties":{}}
+DEBUG 2016-04-03 12:40:15,987 [20   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 2d24b7b0-e257-494e-ba06-10ac63aeb292
+DEBUG 2016-04-03 12:40:34,456 [87   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 2d24b7b0-e257-494e-ba06-10ac63aeb292
+DEBUG 2016-04-03 13:21:13,921 [52   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-03 13:21:13,923 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-03 13:21:13,923 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-03 13:21:13,923 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-03 13:21:13,923 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-03 13:21:13,923 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-03 13:21:13,924 [fe2b6] Hangfire.Server.Worker                   - Background process 'Worker #cd6fe2b6' stopped.
+DEBUG 2016-04-03 13:21:13,924 [6a5c0] Hangfire.Server.Worker                   - Background process 'Worker #9bd6a5c0' stopped.
+DEBUG 2016-04-03 13:21:13,924 [81d32] Hangfire.Server.Worker                   - Background process 'Worker #62681d32' stopped.
+DEBUG 2016-04-03 13:21:13,924 [fac62] Hangfire.Server.Worker                   - Background process 'Worker #320fac62' stopped.
+DEBUG 2016-04-03 13:21:13,924 [4a850] Hangfire.Server.Worker                   - Background process 'Worker #a284a850' stopped.
+DEBUG 2016-04-03 13:21:13,924 [90268] Hangfire.Server.Worker                   - Background process 'Worker #ced90268' stopped.
+DEBUG 2016-04-03 13:21:13,925 [487b2] Hangfire.Server.Worker                   - Background process 'Worker #5c2487b2' stopped.
+DEBUG 2016-04-03 13:21:13,925 [38558] Hangfire.Server.Worker                   - Background process 'Worker #0e838558' stopped.
+DEBUG 2016-04-03 13:21:13,925 [bc3a1] Hangfire.Server.Worker                   - Background process 'Worker #b4fbc3a1' stopped.
+DEBUG 2016-04-03 13:21:13,925 [958fd] Hangfire.Server.Worker                   - Background process 'Worker #289958fd' stopped.
+DEBUG 2016-04-03 13:21:13,925 [4f1e3] Hangfire.Server.Worker                   - Background process 'Worker #ae74f1e3' stopped.
+DEBUG 2016-04-03 13:21:13,925 [a2705] Hangfire.Server.Worker                   - Background process 'Worker #af5a2705' stopped.
+DEBUG 2016-04-03 13:21:13,925 [7ee1c] Hangfire.Server.Worker                   - Background process 'Worker #9a97ee1c' stopped.
+DEBUG 2016-04-03 13:21:13,925 [1439e] Hangfire.Server.Worker                   - Background process 'Worker #7f41439e' stopped.
+DEBUG 2016-04-03 13:21:13,925 [d00b0] Hangfire.Server.Worker                   - Background process 'Worker #40fd00b0' stopped.
+DEBUG 2016-04-03 13:21:13,925 [edd7b] Hangfire.Server.Worker                   - Background process 'Worker #6ebedd7b' stopped.
+DEBUG 2016-04-03 13:21:13,925 [d73c6] Hangfire.Server.Worker                   - Background process 'Worker #e49d73c6' stopped.
+DEBUG 2016-04-03 13:21:13,926 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-03 13:21:13,926 [6836d] Hangfire.Server.Worker                   - Background process 'Worker #3416836d' stopped.
+DEBUG 2016-04-03 13:21:13,926 [3b9ba] Hangfire.Server.Worker                   - Background process 'Worker #3c93b9ba' stopped.
+DEBUG 2016-04-03 13:21:13,926 [6aab4] Hangfire.Server.Worker                   - Background process 'Worker #fbe6aab4' stopped.
+DEBUG 2016-04-03 13:21:13,927 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-03 13:21:13,927 [52   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-03 13:21:13,928 [52   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager

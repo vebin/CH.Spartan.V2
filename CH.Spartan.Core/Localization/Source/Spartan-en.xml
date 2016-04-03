@@ -12,13 +12,12 @@
     <text name="区域设置" value="Area Setting" />
    
     <text name="平台管理" value="Platform" />
-    <text name="租户管理" value="Tenant" />
+    <text name="角色管理" value="Role" />
     <text name="客户管理" value="Customer" />
     <text name="车辆管理" value="Device" />
 
     <text name="系统管理" value="System Setting" />
-    <text name="用户管理" value="User" />
-    <text name="角色管理" value="Role" />
+    <text name="租户管理" value="Tenant" />
     <text name="审计日志" value="Audit Logs" />
     
     

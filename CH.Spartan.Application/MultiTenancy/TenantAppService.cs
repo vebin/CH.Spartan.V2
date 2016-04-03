@@ -3,11 +3,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
+using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
+using Abp.Linq.Extensions;
+using Castle.Core.Internal;
 using CH.Spartan.Authorization.Roles;
+using CH.Spartan.Commons.Dto;
 using CH.Spartan.Editions;
 using CH.Spartan.MultiTenancy.Dto;
 using CH.Spartan.Users;
+using System.Linq.Dynamic;
+using System.Data.Entity;
+using CH.Spartan.Commons.Linq;
 
 namespace CH.Spartan.MultiTenancy
 {
@@ -16,12 +23,13 @@ namespace CH.Spartan.MultiTenancy
         private readonly TenantManager _tenantManager;
         private readonly RoleManager _roleManager;
         private readonly EditionManager _editionManager;
-
-        public TenantAppService(TenantManager tenantManager, RoleManager roleManager, EditionManager editionManager)
+        private readonly IRepository<Tenant> _tenantRepository; 
+        public TenantAppService(TenantManager tenantManager, RoleManager roleManager, EditionManager editionManager, IRepository<Tenant> tenantRepository)
         {
             _tenantManager = tenantManager;
             _roleManager = roleManager;
             _editionManager = editionManager;
+            _tenantRepository = tenantRepository;
         }
 
         public ListResultOutput<TenantListDto> GetTenants()
@@ -33,6 +41,19 @@ namespace CH.Spartan.MultiTenancy
                     .MapTo<List<TenantListDto>>()
                 );
         }
+
+        public async Task<PagedResultOutput<TenantListDto>> GetTenants(GetTenantsInput input)
+        {
+            var query = _tenantRepository.GetAll();
+
+            query.WhereIf(input.Filter.IsNullOrEmpty(),p => p.TenancyName.Contains(input.Filter) || p.Name.Contains(input.Filter));
+
+            var count = await query.CountAsync();
+            var list = await query.OrderBy(input).PageBy(input).ToListAsync();
+
+            return new PagedResultOutput<TenantListDto>(count, list.MapTo<List<TenantListDto>>());
+        }
+
 
         public async Task CreateTenant(CreateTenantInput input)
         {

@@ -32,14 +32,27 @@
                         <span><img alt="image" class="img-circle" src="/Content/img/profile_small.jpg" /></span>
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear">
-                                <span class="block m-t-xs"><strong class="font-bold">Beaut-zihan</strong></span>
-                                <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">
+                                        @{
+                                            if (Model.LoginInformations.Tenant != null)
+                                            {
+                                                @Html.Raw(Model.LoginInformations.Tenant.Name)
+                                            }
+                                            else
+                                            {
+                                                @Html.Raw("超级管理员")
+                                            }
+                                        }
+                                    </strong>
+                                </span>
+                                <span class="text-muted text-xs block">@Model.LoginInformations.User.UserName<b class="caret"></b></span>
                             </span>
                         </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
                             @*<li>
-                                <a class="J_menuItem" href="form_avatar.html">修改头像</a>
-                            </li>*@
+                                    <a class="J_menuItem" href="form_avatar.html">修改头像</a>
+                                </li>*@
                             <li>
                                 <a class="J_menuItem" href="profile.html">@L("个人资料")</a>
                             </li>
@@ -64,38 +77,38 @@
                     <li>
                         @if (menuItem.Items.IsNullOrEmpty())
                         {
-                        <a href="@menuItem.Url">
-                            @if (!string.IsNullOrWhiteSpace(menuItem.Icon))
+                            <a href="@menuItem.Url">
+                                @if (!string.IsNullOrWhiteSpace(menuItem.Icon))
                                 {
-                                <i class="@menuItem.Icon"></i>
+                                    <i class="@menuItem.Icon"></i>
                                 }
-                            @menuItem.DisplayName
-                        </a>
+                                @menuItem.DisplayName
+                            </a>
                         }
                         else
                         {
-                        <a href="#">
-                            @if (!string.IsNullOrWhiteSpace(menuItem.Icon))
+                            <a href="#">
+                                @if (!string.IsNullOrWhiteSpace(menuItem.Icon))
                                 {
-                                <i class="@menuItem.Icon"></i>
+                                    <i class="@menuItem.Icon"></i>
                                 }
-                            <span class="nav-label">@menuItem.DisplayName</span>
-                            <span class="fa arrow"></span>
-                        </a>
-                        <ul class="nav nav-second-level">
-                            @foreach (var subMenuItem in menuItem.Items)
+                                <span class="nav-label">@menuItem.DisplayName</span>
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-second-level">
+                                @foreach (var subMenuItem in menuItem.Items)
                                 {
-                                <li>
-                                    <a class="J_menuItem" href="@subMenuItem.Url">
-                                        @if (!string.IsNullOrWhiteSpace(subMenuItem.Icon))
+                                    <li>
+                                        <a class="J_menuItem" href="@subMenuItem.Url">
+                                            @if (!string.IsNullOrWhiteSpace(subMenuItem.Icon))
                                             {
-                                            <i class="@subMenuItem.Icon"></i>
+                                                <i class="@subMenuItem.Icon"></i>
                                             }
-                                        @subMenuItem.DisplayName
-                                    </a>
-                                </li>
+                                            @subMenuItem.DisplayName
+                                        </a>
+                                    </li>
                                 }
-                        </ul>
+                            </ul>
                         }
                     </li>
                 }
@@ -171,42 +184,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                            <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-alerts">
-                            <li>
-                                <a href="mailbox.html">
-                                    <div>
-                                        <i class="fa fa-envelope fa-fw"></i> 您有16条未读消息
-                                        <span class="pull-right text-muted small">4分钟前</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="profile.html">
-                                    <div>
-                                        <i class="fa fa-qq fa-fw"></i> 3条新回复
-                                        <span class="pull-right text-muted small">12分钟钱</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <div class="text-center link-block">
-                                    <a class="J_menuItem" href="notifications.html">
-                                        <strong>查看所有 </strong>
-                                        <i class="fa fa-angle-right"></i>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
                     <li class="dropdown hidden-xs">
                         <a class="right-sidebar-toggle" aria-expanded="false">
-                            <i class="fa fa-tasks"></i> 主题
+                            <i class="fa fa-tasks"></i>
                         </a>
                     </li>
                 </ul>
@@ -257,9 +237,7 @@
     <!--右侧边栏开始-->
     <div id="right-sidebar">
         <div class="sidebar-container">
-
             <ul class="nav nav-tabs navs-3">
-
                 <li class="active">
                     <a data-toggle="tab" href="#tab-1">
                         <i class="fa fa-gear"></i> 主题
@@ -272,11 +250,10 @@
                 </li>
                 <li>
                     <a data-toggle="tab" href="#tab-3">
-                        项目进度
+                        车辆
                     </a>
                 </li>
             </ul>
-
             <div class="tab-content">
                 <div id="tab-1" class="tab-pane active">
                     <div class="sidebar-title">

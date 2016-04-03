@@ -84,7 +84,7 @@ namespace CH.Spartan.Migrations.SeedData
             var defaultTenant = _context.Tenants.FirstOrDefault(t => t.TenancyName == "yugps");
             if (defaultTenant == null)
             {
-                defaultTenant = _context.Tenants.Add(new Tenant { TenancyName = "yugps", Name = "域行" });
+                defaultTenant = _context.Tenants.Add(new Tenant { TenancyName = "yugps", Name = "深圳羽衡科技有限公司" });
                 _context.SaveChanges();
             }
 

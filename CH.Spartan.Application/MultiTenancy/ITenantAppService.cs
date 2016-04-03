@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
+using CH.Spartan.Commons.Dto;
 using CH.Spartan.MultiTenancy.Dto;
 
 namespace CH.Spartan.MultiTenancy
@@ -10,5 +11,7 @@ namespace CH.Spartan.MultiTenancy
         ListResultOutput<TenantListDto> GetTenants();
 
         Task CreateTenant(CreateTenantInput input);
+
+        Task<PagedResultOutput<TenantListDto>> GetTenants(GetTenantsInput input);
     }
 }

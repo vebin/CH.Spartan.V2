@@ -37,6 +37,11 @@ namespace CH.Spartan.Web.Controllers
                 CurrentLanguage = _localizationManager.CurrentLanguage,
                 Languages = _localizationManager.GetAllLanguages()
             };
+
+            if (AbpSession.UserId.HasValue)
+            {
+                model.LoginInformations = AsyncHelper.RunSync(() => _sessionAppService.GetCurrentLoginInformations());
+            }
             return View(model);
         }
 

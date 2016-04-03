@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using Abp.Application.Navigation;
 using Abp.Localization;
+using CH.Spartan.Sessions.Dto;
 
 namespace CH.Spartan.Web.Models.Layout
 {
@@ -23,5 +24,10 @@ namespace CH.Spartan.Web.Models.Layout
         /// 全部语言
         /// </summary>
         public IReadOnlyList<LanguageInfo> Languages { get; set; }
+
+        /// <summary>
+        /// 当前登录信息
+        /// </summary>
+        public GetCurrentLoginInformationsOutput LoginInformations { get; set; }
     }
 }

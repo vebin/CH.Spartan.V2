@@ -1,4 +1,7 @@
-﻿using System.Web.Optimization;
+﻿using System.Threading;
+using System.Web.Optimization;
+using Abp.Dependency;
+using Abp.Localization;
 
 namespace CH.Spartan.Web
 {
@@ -6,6 +9,7 @@ namespace CH.Spartan.Web
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
+            var currentLanguage = Thread.CurrentThread.CurrentUICulture.Name;
             bundles.IgnoreList.Clear();
             bundles.Add(
                 new StyleBundle("~/styles")
@@ -16,6 +20,7 @@ namespace CH.Spartan.Web
                     .Include("~/Content/css/style.min.css", new CssRewriteUrlTransform())
                     .Include("~/Content/css/main.css", new CssRewriteUrlTransform())
                 );
+
             bundles.Add(
                 new ScriptBundle("~/scripts")
                     .Include(
@@ -33,7 +38,23 @@ namespace CH.Spartan.Web
                         "~/Content/js/hplus.min.js"
                     )
                 );
-            
+
+
+
+            bundles.Add(
+                new StyleBundle("~/plugins/table")
+                .Include("~/Content/css/bootstrap-table.css", new CssRewriteUrlTransform())
+                );
+
+            bundles.Add(
+                new ScriptBundle("~/plugins/table")
+                    .Include(
+                        "~/Content/js/plugins/table/bootstrap-table.js"
+                    ).Include(
+                        "~/Content/js/plugins/table/locale/bootstrap-table-" + currentLanguage + ".js"
+                    )
+                );
+
         }
     }
 }

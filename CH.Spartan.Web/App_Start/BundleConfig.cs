@@ -29,8 +29,7 @@ namespace CH.Spartan.Web
                         "~/Abp/Framework/scripts/abp.js",
                         "~/Abp/Framework/scripts/libs/abp.jquery.js",
                         "~/Abp/Framework/scripts/libs/abp.spartan.js",
-                        "~/Content/js/hplus.min.js",
-                        "~/Content/js/main.js"
+                        "~/Content/js/hplus.min.js"
                     )
                 );
             

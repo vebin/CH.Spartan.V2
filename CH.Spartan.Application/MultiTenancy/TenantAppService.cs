@@ -14,6 +14,7 @@ using CH.Spartan.MultiTenancy.Dto;
 using CH.Spartan.Users;
 using System.Linq.Dynamic;
 using System.Data.Entity;
+using Abp.Extensions;
 using CH.Spartan.Commons.Linq;
 
 namespace CH.Spartan.MultiTenancy
@@ -44,11 +45,11 @@ namespace CH.Spartan.MultiTenancy
 
         public async Task<PagedResultOutput<TenantListDto>> GetTenants(GetTenantsInput input)
         {
-            var query = _tenantRepository.GetAll();
-
-            query.WhereIf(input.Filter.IsNullOrEmpty(),p => p.TenancyName.Contains(input.Filter) || p.Name.Contains(input.Filter));
+            var query = _tenantRepository.GetAll()
+                .WhereIf(!input.SearchText.IsNullOrEmpty(),p => p.TenancyName.Contains(input.SearchText) || p.Name.Contains(input.SearchText));
 
             var count = await query.CountAsync();
+
             var list = await query.OrderBy(input).PageBy(input).ToListAsync();
 
             return new PagedResultOutput<TenantListDto>(count, list.MapTo<List<TenantListDto>>());

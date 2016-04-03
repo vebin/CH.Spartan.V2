@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
+using Abp.Runtime.Validation;
 
 namespace CH.Spartan.Commons.Dto
 {
     public interface IFilterResultRequest
     {
-        string Filter { get; set; }
+        string SearchText { get; set; }
     }
 
 
@@ -23,18 +24,25 @@ namespace CH.Spartan.Commons.Dto
         IDateTimeResultRequest,
         IFilterResultRequest,
         ISortedResultRequest,
-        IPagedResultRequest
+        IPagedResultRequest,
+        IShouldNormalize
     {
         public DateTime? StarTime { get; set; }
 
         public DateTime? EndTime { get; set; }
 
-        public string Filter { get; set; }
+        public string SearchText { get; set; }
 
         public string Sorting { get; set; }
 
         public int MaxResultCount { get; set; }
 
         public int SkipCount { get; set; }
+
+        public void Normalize()
+        {
+            Sorting =SpartanConsts.DefaultSorting;
+            MaxResultCount = SpartanConsts.DefaultMaxResultCount;
+        }
     }
 }

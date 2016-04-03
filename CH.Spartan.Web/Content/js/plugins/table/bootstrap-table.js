@@ -303,12 +303,13 @@
         locale: undefined,
         height: undefined,
         undefinedText: '-',
-        sortName: undefined,
-        sortOrder: 'asc',
+        sortName: "Id",
+        sortOrder: 'DESC',
         striped: false,
         columns: [[]],
         data: [],
-        dataField: 'rows',
+        //totalField: 'result.totalCount',
+        //dataField: 'result.items',
         method: 'get',
         url: undefined,
         ajax: undefined,
@@ -323,9 +324,9 @@
         responseHandler: function (res) {
             return res;
         },
-        pagination: false,
+        pagination: true,
         onlyInfoPagination: false,
-        sidePagination: 'client', // client or server
+        sidePagination: 'server', // client or server
         totalRows: 0, // server side need to set
         pageNumber: 1,
         pageSize: 10,
@@ -335,7 +336,7 @@
         paginationDetailHAlign: 'left', //right, left
         paginationPreText: '&lsaquo;',
         paginationNextText: '&rsaquo;',
-        search: false,
+        search: true,
         searchOnEnterKey: false,
         strictSearch: false,
         searchAlign: 'right',
@@ -1923,18 +1924,17 @@
 
         if (this.options.queryParamsType === 'limit') {
             params = {
-                search: params.searchText,
-                sort: params.sortName,
-                order: params.sortOrder
+                searchText: params.searchText,
+                sorting: params.sortName +" "+params.sortOrder
             };
-            params.offset = this.options.pageSize === this.options.formatAllRows() ?
+            params.skipCount = this.options.pageSize === this.options.formatAllRows() ?
                 0 : this.options.pageSize * (this.options.pageNumber - 1);
 
             if (this.options.pagination) {
-                params.limit = this.options.pageSize === this.options.formatAllRows() ?
+                params.maxResultCount = this.options.pageSize === this.options.formatAllRows() ?
                     this.options.totalRows : this.options.pageSize;
             } else {
-                params.limit = this.options.totalRows;
+                params.maxResultCount = this.options.totalRows;
             }
         }
 
@@ -2320,12 +2320,15 @@
 
     BootstrapTable.prototype.load = function (data) {
         var fixedScroll = false;
-
+        debugger;
         // #431: support pagination
         if (this.options.sidePagination === 'server') {
-            this.options.totalRows = data.total;
+            //this.options.totalRows = data.total;
+            //fixedScroll = data.fixedScroll;
+            //data = data[this.options.dataField];
+            this.options.totalRows = data.result.totalCount;
             fixedScroll = data.fixedScroll;
-            data = data[this.options.dataField];
+            data = data.result.items;
         } else if (!$.isArray(data)) { // support fixedScroll
             fixedScroll = data.fixedScroll;
             data = data.data;

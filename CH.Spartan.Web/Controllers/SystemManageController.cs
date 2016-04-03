@@ -30,7 +30,7 @@ namespace CH.Spartan.Web.Controllers
         public async Task<JsonResult> TenantSearch(GetTenantsInput input)
         {
             var result = await _tenantAppService.GetTenants(input);
-            return Json(result);
+            return Json(result,JsonRequestBehavior.AllowGet);
         }
     }
 }

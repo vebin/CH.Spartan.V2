@@ -343,10 +343,10 @@
         selectItemName: 'btSelectItem',
         showHeader: true,
         showFooter: false,
-        showColumns: false,
-        showPaginationSwitch: false,
-        showRefresh: false,
-        showToggle: false,
+        showColumns: true,
+        showPaginationSwitch: true,
+        showRefresh: true,
+        showToggle: true,
         buttonsAlign: 'right',
         smartDisplay: true,
         escape: false,
@@ -359,7 +359,7 @@
             return '';
         },
         trimOnSearch: true,
-        clickToSelect: false,
+        clickToSelect: true,
         singleSelect: false,
         toolbar: undefined,
         toolbarAlign: 'left',
@@ -2320,7 +2320,6 @@
 
     BootstrapTable.prototype.load = function (data) {
         var fixedScroll = false;
-        debugger;
         // #431: support pagination
         if (this.options.sidePagination === 'server') {
             //this.options.totalRows = data.total;

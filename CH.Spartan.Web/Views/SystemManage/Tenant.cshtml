@@ -1,28 +1,42 @@
 ﻿@using System.Web.Optimization
 @section styles
 {
-    @Styles.Render("~/plugins/table")
+    @Styles.Render("~/styles/plugins/table")
 }
 @section scripts
 {
-    @Scripts.Render("~/plugins/table")
+    @Scripts.Render("~/scripts/plugins/table")
     <script type="text/javascript">
         $(function() {
-            $('#table').bootstrapTable({
-                url: '/SystemManage/TenantSearch'
-            });
+           
         })
     </script>
 }
-<div class="container">
-    <table id="table">
-        <thead>
-            <tr>
-                <th data-field="id" data-sortable="true">ID</th>
-                <th data-field="name" data-sortable="true">Item Name</th>
-            </tr>
-        </thead>
-    </table>
-</div>
+
+    <div class="ibox float-e-margins">
+        <div class="ibox-content">
+            <div class="btn-group hidden-xs" id="tableToolbar" role="group">
+                <button type="button" class="btn btn-outline btn-default">
+                    <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-outline btn-default">
+                    <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
+                </button>
+            </div>
+            <table data-toggle="table"
+                   data-url="/SystemManage/TenantSearch"
+                   data-toolbar="#tableToolbar"
+                   data-height="600" 
+                   data-show-export="true">
+                <thead>
+                    <tr>
+                        <th data-field="state" data-checkbox="true"></th>
+                        <th data-field="id" data-sortable="true" data-filter-control="select">ID</th>
+                        <th data-field="name" data-sortable="true" data-filter-control="datepicker">姓名</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
 
 

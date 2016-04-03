@@ -375,6 +375,7 @@
     <Content Include="Content\js\plugins\table\extensions\copy-rows\bootstrap-table-copy-rows.js" />
     <Content Include="Content\js\plugins\table\extensions\editable\bootstrap-table-editable.js" />
     <Content Include="Content\js\plugins\table\extensions\export\bootstrap-table-export.js" />
+    <Content Include="Content\js\plugins\table\extensions\export\tableExport.js" />
     <Content Include="Content\js\plugins\table\extensions\filter-control\bootstrap-table-filter-control.js" />
     <Content Include="Content\js\plugins\table\extensions\filter\bootstrap-table-filter.js" />
     <Content Include="Content\js\plugins\table\extensions\flat-json\bootstrap-table-flat-json.js" />

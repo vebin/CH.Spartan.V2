@@ -42,19 +42,22 @@ namespace CH.Spartan.Web
 
 
             bundles.Add(
-                new StyleBundle("~/plugins/table")
-                .Include("~/Content/css/bootstrap-table.css", new CssRewriteUrlTransform())
+                new StyleBundle("~/styles/plugins/table")
+                .Include("~/Content/js/plugins/table/bootstrap-table.css", new CssRewriteUrlTransform())
                 );
 
             bundles.Add(
-                new ScriptBundle("~/plugins/table")
+                new ScriptBundle("~/scripts/plugins/table")
                     .Include(
                         "~/Content/js/plugins/table/bootstrap-table.js"
                     ).Include(
                         "~/Content/js/plugins/table/locale/bootstrap-table-" + currentLanguage + ".js"
+                    ).Include(
+                        "~/Content/js/plugins/table/extensions/export/bootstrap-table-export.js"
+                    ).Include(
+                        "~/Content/js/plugins/table/extensions/export/tableExport.js"
                     )
                 );
-
         }
     }
 }

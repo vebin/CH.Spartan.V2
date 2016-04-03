@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
+using Abp.Extensions;
 using Abp.Runtime.Validation;
 
 namespace CH.Spartan.Commons.Dto
@@ -41,8 +42,14 @@ namespace CH.Spartan.Commons.Dto
 
         public void Normalize()
         {
-            Sorting =SpartanConsts.DefaultSorting;
-            MaxResultCount = SpartanConsts.DefaultMaxResultCount;
+            if (Sorting.IsNullOrEmpty())
+            {
+                Sorting = SpartanConsts.DefaultSorting;
+            }
+            if (MaxResultCount == 0)
+            {
+                MaxResultCount = SpartanConsts.DefaultMaxResultCount;
+            }
         }
     }
 }

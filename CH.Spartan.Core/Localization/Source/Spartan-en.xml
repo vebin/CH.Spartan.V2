@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="en">
+  <texts>
+    <text name="我的主页" value="Home page" />
+    <text name="定位监控" value="Monitor" />
+    <text name="历史轨迹" value="History Track" />
+    <text name="报警信息" value="Notification" />
+    <text name="里程统计" value="Mileage Report" />
+
+    <text name="我的设置" value="My Setting" />
+    <text name="车辆设置" value="Device Setting" /> 
+    <text name="区域设置" value="Area Setting" />
+   
+    <text name="平台管理" value="Platform" />
+    <text name="租户管理" value="Tenant" />
+    <text name="客户管理" value="Customer" />
+    <text name="车辆管理" value="Device" />
+
+    <text name="系统管理" value="System Setting" />
+    <text name="用户管理" value="User" />
+    <text name="角色管理" value="Role" />
+    <text name="审计日志" value="Audit Logs" />
+    
+    
+    <text name="个人资料" value="User Info" />
+    <text name="修改密码" value="Change Password" />
+    <text name="联系我们" value="Contact us" />
+    <text name="安全退出" value="Login Out" />
+
+  </texts>
+</localizationDictionary>

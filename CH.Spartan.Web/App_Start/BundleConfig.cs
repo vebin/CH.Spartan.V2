@@ -11,6 +11,7 @@ namespace CH.Spartan.Web
                 new StyleBundle("~/styles")
                     .Include("~/Content/css/bootstrap.min.css", new CssRewriteUrlTransform())
                     .Include("~/Content/css/font-awesome.min.css", new CssRewriteUrlTransform())
+                    .Include("~/Content/css/plugins/flags/famfamfam-flags.css", new CssRewriteUrlTransform())
                     .Include("~/Content/css/animate.min.css", new CssRewriteUrlTransform())
                     .Include("~/Content/css/style.min.css", new CssRewriteUrlTransform())
                     .Include("~/Content/css/main.css", new CssRewriteUrlTransform())

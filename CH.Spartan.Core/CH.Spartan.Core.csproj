@@ -111,15 +111,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\Spartan-zh-CN.xml" />
-    <EmbeddedResource Include="Localization\Source\Spartan-tr.xml" />
     <EmbeddedResource Include="Localization\Source\Spartan.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\Spartan-pt-BR.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Localization\Source\Spartan-es.xml" />
+    <EmbeddedResource Include="Localization\Source\Spartan-en.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

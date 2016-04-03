@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using Abp.Authorization;
+using Abp.Domain.Uow;
 using CH.Spartan.Users.Dto;
 
 namespace CH.Spartan.Users
@@ -28,6 +29,12 @@ namespace CH.Spartan.Users
         public async Task RemoveFromRole(long userId, string roleName)
         {
             CheckErrors(await _userManager.RemoveFromRoleAsync(userId, roleName));
+        }
+
+        public async Task<string> GetTenancyNameAsync(string userName)
+        {
+            UnitOfWorkManager.Current.DisableFilter(AbpDataFilters.MayHaveTenant);
+            return await _userManager.GetTenancyNameAsync(userName);
         }
     }
 }

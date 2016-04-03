@@ -9,5 +9,7 @@ namespace CH.Spartan.Users
         Task ProhibitPermission(ProhibitPermissionInput input);
 
         Task RemoveFromRole(long userId, string roleName);
+
+        Task<string> GetTenancyNameAsync(string userName);
     }
 }

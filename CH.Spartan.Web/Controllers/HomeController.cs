@@ -9,6 +9,8 @@ using CH.Spartan.Web.Models.Layout;
 
 namespace CH.Spartan.Web.Controllers
 {
+
+    [AbpMvcAuthorize]
     public class HomeController : SpartanControllerBase
     {
         private readonly IUserNavigationManager _userNavigationManager;

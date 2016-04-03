@@ -315,6 +315,7 @@
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\login.min.css" />
     <Content Include="Content\css\main.css" />
     <Content Include="Content\css\patterns\header-profile-skin-1.png" />
     <Content Include="Content\css\patterns\header-profile-skin-3.png" />
@@ -334,6 +335,13 @@
     <Content Include="Content\img\a7.jpg" />
     <Content Include="Content\img\a8.jpg" />
     <Content Include="Content\img\a9.jpg" />
+    <Content Include="Content\img\login\1.jpg" />
+    <Content Include="Content\img\login\2.jpg" />
+    <Content Include="Content\img\login\3.jpg" />
+    <Content Include="Content\img\login\4.jpg" />
+    <Content Include="Content\img\login\5.jpg" />
+    <Content Include="Content\img\login\locked.png" />
+    <Content Include="Content\img\login\user.png" />
     <Content Include="Content\img\profile.jpg" />
     <Content Include="Content\img\profile_small.jpg" />
     <Content Include="Content\js\bootstrap.min.js" />
@@ -411,6 +419,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Dashboard.cshtml" />
     <Content Include="Abp\Framework\scripts\libs\abp.spartan.js" />
+    <Content Include="Views\Account\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

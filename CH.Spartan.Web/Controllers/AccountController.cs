@@ -32,7 +32,7 @@ namespace CH.Spartan.Web.Controllers
         private readonly RoleManager _roleManager;
         private readonly IUnitOfWorkManager _unitOfWorkManager;
         private readonly IMultiTenancyConfig _multiTenancyConfig;
-
+        private readonly IUserAppService _userAppService;
         private IAuthenticationManager AuthenticationManager
         {
             get
@@ -46,13 +46,14 @@ namespace CH.Spartan.Web.Controllers
             UserManager userManager,
             RoleManager roleManager,
             IUnitOfWorkManager unitOfWorkManager,
-            IMultiTenancyConfig multiTenancyConfig)
+            IMultiTenancyConfig multiTenancyConfig, IUserAppService userAppService)
         {
             _tenantManager = tenantManager;
             _userManager = userManager;
             _roleManager = roleManager;
             _unitOfWorkManager = unitOfWorkManager;
             _multiTenancyConfig = multiTenancyConfig;
+            _userAppService = userAppService;
         }
 
         #region Login / Logout
@@ -74,41 +75,30 @@ namespace CH.Spartan.Web.Controllers
 
         [HttpPost]
         [DisableAuditing]
-        public async Task<JsonResult> Login(LoginViewModel loginModel, string returnUrl = "", string returnUrlHash = "")
+        public async Task<JsonResult> Login(LoginViewModel loginModel)
         {
             CheckModelState();
 
             var loginResult = await GetLoginResultAsync(
-                loginModel.UsernameOrEmailAddress,
-                loginModel.Password,
-                loginModel.TenancyName
+                loginModel.UserName,
+                loginModel.Password
                 );
 
-            await SignInAsync(loginResult.User, loginResult.Identity, loginModel.RememberMe);
-
-            if (string.IsNullOrWhiteSpace(returnUrl))
-            {
-                returnUrl = Request.ApplicationPath;
-            }
-
-            if (!string.IsNullOrWhiteSpace(returnUrlHash))
-            {
-                returnUrl = returnUrl + returnUrlHash;
-            }
-
-            return Json(new MvcAjaxResponse { TargetUrl = returnUrl });
+            await SignInAsync(loginResult.User, loginResult.Identity);
+            return Json(new MvcAjaxResponse { TargetUrl = "/" });
         }
 
-        private async Task<AbpUserManager<Tenant, Role, User>.AbpLoginResult> GetLoginResultAsync(string usernameOrEmailAddress, string password, string tenancyName)
-        {
-            var loginResult = await _userManager.LoginAsync(usernameOrEmailAddress, password, tenancyName);
 
+        private async Task<AbpUserManager<Tenant, Role, User>.AbpLoginResult> GetLoginResultAsync(string userName, string password)
+        {
+            var tenancyName = await _userAppService.GetTenancyNameAsync(userName);
+            var loginResult = await _userManager.LoginAsync(userName, password, tenancyName);
             switch (loginResult.Result)
             {
                 case AbpLoginResultType.Success:
                     return loginResult;
                 default:
-                    throw CreateExceptionForFailedLoginAttempt(loginResult.Result, usernameOrEmailAddress, tenancyName);
+                    throw CreateExceptionForFailedLoginAttempt(loginResult.Result, userName, tenancyName);
             }
         }
 
@@ -123,7 +113,7 @@ namespace CH.Spartan.Web.Controllers
             AuthenticationManager.SignIn(new AuthenticationProperties { IsPersistent = rememberMe }, identity);
         }
 
-        private Exception CreateExceptionForFailedLoginAttempt(AbpLoginResultType result, string usernameOrEmailAddress, string tenancyName)
+        private Exception CreateExceptionForFailedLoginAttempt(AbpLoginResultType result, string userName, string tenancyName)
         {
             switch (result)
             {
@@ -131,18 +121,18 @@ namespace CH.Spartan.Web.Controllers
                     return new ApplicationException("Don't call this method with a success result!");
                 case AbpLoginResultType.InvalidUserNameOrEmailAddress:
                 case AbpLoginResultType.InvalidPassword:
-                    return new UserFriendlyException(L("LoginFailed"), L("InvalidUserNameOrPassword"));
+                    return new UserFriendlyException(L("登录失败"), L("用户名或者密码错误"));
                 case AbpLoginResultType.InvalidTenancyName:
-                    return new UserFriendlyException(L("LoginFailed"), L("ThereIsNoTenantDefinedWithName{0}", tenancyName));
+                    return new UserFriendlyException(L("登录失败"), L("当前用户不属于任何运营商{0}", tenancyName));
                 case AbpLoginResultType.TenantIsNotActive:
-                    return new UserFriendlyException(L("LoginFailed"), L("TenantIsNotActive", tenancyName));
+                    return new UserFriendlyException(L("登录失败"), L("所属运营商已经已过期", tenancyName));
                 case AbpLoginResultType.UserIsNotActive:
-                    return new UserFriendlyException(L("LoginFailed"), L("UserIsNotActiveAndCanNotLogin", usernameOrEmailAddress));
+                    return new UserFriendlyException(L("登录失败"), L("用户已经被禁止登录", userName));
                 case AbpLoginResultType.UserEmailIsNotConfirmed:
-                    return new UserFriendlyException(L("LoginFailed"), "Your email address is not confirmed. You can not login"); //TODO: localize message
-                default: //Can not fall to default actually. But other result types can be added in the future and we may forget to handle it
+                    return new UserFriendlyException(L("登录失败"), "电子邮件没有验证通过");
+                default:
                     Logger.Warn("Unhandled login fail reason: " + result);
-                    return new UserFriendlyException(L("LoginFailed"));
+                    return new UserFriendlyException(L("登录失败"));
             }
         }
 

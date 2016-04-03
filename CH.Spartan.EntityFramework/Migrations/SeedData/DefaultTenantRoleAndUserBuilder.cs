@@ -66,9 +66,9 @@ namespace CH.Spartan.Migrations.SeedData
                     new User
                     {
                         TenantId = null,
-                        UserName = User.AdminUserName,
-                        Name = User.AdminUserName,
-                        Surname = "管理员",
+                        UserName = "admin",
+                        Name = "admin",
+                        Surname = "admin",
                         EmailAddress = "admin@aspnetboilerplate.com",
                         IsEmailConfirmed = true,
                         Password = new PasswordHasher().HashPassword(User.DefaultPassword)
@@ -79,16 +79,12 @@ namespace CH.Spartan.Migrations.SeedData
                 _context.UserRoles.Add(new UserRole(adminUserForHost.Id, adminRoleForHost.Id));
                 _context.SaveChanges();
             }
-            
-
-
-
 
             //添加租户
             var defaultTenant = _context.Tenants.FirstOrDefault(t => t.TenancyName == "yugps");
             if (defaultTenant == null)
             {
-                defaultTenant = _context.Tenants.Add(new Tenant { TenancyName = "yugps", Name = "深圳羽衡科技有限公司" });
+                defaultTenant = _context.Tenants.Add(new Tenant { TenancyName = "yugps", Name = "域行" });
                 _context.SaveChanges();
             }
 
@@ -128,9 +124,9 @@ namespace CH.Spartan.Migrations.SeedData
                     new User
                     {
                         TenantId = defaultTenant.Id,
-                        UserName = User.AdminUserName,
-                        Name = User.AdminUserName,
-                        Surname = "管理员",
+                        UserName = "yugps",
+                        Name = "yugps",
+                        Surname = "yugps",
                         EmailAddress = "admin@aspnetboilerplate.com",
                         IsEmailConfirmed = true,
                         Password = new PasswordHasher().HashPassword(User.DefaultPassword)

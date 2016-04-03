@@ -1,4 +1,5 @@
-﻿using Abp.Authorization;
+﻿using System.Threading.Tasks;
+using Abp.Authorization;
 using Abp.Authorization.Users;
 using Abp.Configuration;
 using Abp.Configuration.Startup;
@@ -47,6 +48,12 @@ namespace CH.Spartan.Users
                 organizationUnitSettings,
                 userLoginAttemptRepository)
         {
+        }
+
+        public async Task<string> GetTenancyNameAsync(string userName)
+        {
+            var user = await Store.FindByNameAsync(userName);
+            return user?.Tenant != null ? user.Tenant.TenancyName : "";
         }
     }
 }

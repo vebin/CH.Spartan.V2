@@ -1,4 +1,5 @@
-﻿using Abp.Domain.Repositories;
+﻿using System.Threading.Tasks;
+using Abp.Domain.Repositories;
 using Abp.MultiTenancy;
 using CH.Spartan.Authorization.Roles;
 using CH.Spartan.Editions;

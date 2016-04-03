@@ -1,0 +1,61 @@
+﻿@model CH.Spartan.Web.Models.Account.LoginFormViewModel
+@{
+    ViewBag.Title = "登录-域行定位平台";
+}
+@section styles
+{
+    <link href="/Content/css/login.min.css" rel="stylesheet" />
+}
+@section scripts
+{
+    <script type="text/javascript">
+        $(function () {
+            $("#LoginButton").click(function (e) {
+                e.preventDefault();
+                abp.ajax({
+                    url: abp.appPath + "Account/Login",
+                    type: "POST",
+                    data: JSON.stringify({
+                        userName: $("#UserName").val(),
+                        password: $("#Password").val()
+                    })
+                });
+            });
+            $("#LoginForm input:first-child").focus();
+        });
+    </script>
+}
+<div class="signinpanel">
+    <div class="row">
+        <div class="col-sm-7">
+            <div class="signin-info">
+                <div class="logopanel m-b">
+                    <h1>[ YUGPS ]</h1>
+                </div>
+                <div class="m-b"></div>
+                <h4>欢迎使用 <strong>域行定位平台</strong></h4>
+                <ul class="m-b">
+                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势一</li>
+                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势二</li>
+                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势三</li>
+                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势四</li>
+                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势五</li>
+                </ul>
+                <strong>是否很心动？ <a href="#">立即体验</a>&nbsp; <a href="#">下载APP</a> &nbsp; <a href="#">购买定位器</a></strong>
+            </div>
+        </div>
+        <div class="col-sm-5" id="LoginArea">
+            <form method="post" id="LoginForm">
+                <h4 class="no-margins">登录：</h4>
+                <input type="text" class="form-control uname" placeholder="用户名" id="UserName" />
+                <input type="password" class="form-control pword m-b" placeholder="密码" id="Password" />
+                <button class="btn btn-success btn-block" id="LoginButton">登录</button>
+            </form>
+        </div>
+    </div>
+    <div class="signup-footer">
+        <div class="pull-left">
+            Copyright © 2015-2020 深圳羽衡科技有限公司 All rights reserved.<br />粤ICP备15067404号-1 粤ICP备15067404号-2
+        </div>
+    </div>
+</div>

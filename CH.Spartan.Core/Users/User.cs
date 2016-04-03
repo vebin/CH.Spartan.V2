@@ -8,7 +8,7 @@ namespace CH.Spartan.Users
 {
     public class User : AbpUser<Tenant, User>
     {
-        public const string DefaultPassword = "123qwe";
+        public const string DefaultPassword = "123456";
 
         public static string CreateRandomPassword()
         {

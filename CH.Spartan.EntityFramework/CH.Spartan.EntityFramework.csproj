@@ -158,15 +158,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604020821337_init.resx">
+      <DependentUpon>201604020821337_init.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\CH.Spartan.Core\CH.Spartan.Core.csproj">
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>CH.Spartan.Core</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201604020821337_init.resx">
-      <DependentUpon>201604020821337_init.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

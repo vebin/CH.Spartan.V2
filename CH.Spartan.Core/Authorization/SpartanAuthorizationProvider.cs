@@ -11,7 +11,7 @@ namespace CH.Spartan.Authorization
             var homes = context.GetPermissionOrNull(PermissionNames.Homes);
             if (homes == null)
             {
-                homes = context.CreatePermission(PermissionNames.Homes, L("我的主页"));
+                homes = context.CreatePermission(PermissionNames.Homes, L("我的主页"), multiTenancySides: MultiTenancySides.Tenant);
             }
             homes.CreateChildPermission(PermissionNames.Homes_Monitor, L("定位监控"), multiTenancySides: MultiTenancySides.Tenant);
             homes.CreateChildPermission(PermissionNames.Homes_HistoryTrack, L("历史轨迹"), multiTenancySides: MultiTenancySides.Tenant);
@@ -21,7 +21,7 @@ namespace CH.Spartan.Authorization
             var mySettings = context.GetPermissionOrNull(PermissionNames.MySettings);
             if (mySettings == null)
             {
-                mySettings = context.CreatePermission(PermissionNames.MySettings, L("我的设置"));
+                mySettings = context.CreatePermission(PermissionNames.MySettings, L("我的设置"), multiTenancySides: MultiTenancySides.Tenant);
             }
 
             mySettings.CreateChildPermission(PermissionNames.MySettings_Device, L("车辆设置"), multiTenancySides: MultiTenancySides.Tenant);
@@ -30,7 +30,7 @@ namespace CH.Spartan.Authorization
             var platformManages = context.GetPermissionOrNull(PermissionNames.PlatformManages);
             if (platformManages == null)
             {
-                platformManages = context.CreatePermission(PermissionNames.PlatformManages, L("平台管理"));
+                platformManages = context.CreatePermission(PermissionNames.PlatformManages, L("平台管理"), multiTenancySides: MultiTenancySides.Tenant);
             }
 
             platformManages.CreateChildPermission(PermissionNames.PlatformManages_User, L("客户管理"), multiTenancySides: MultiTenancySides.Tenant);
@@ -40,7 +40,7 @@ namespace CH.Spartan.Authorization
             var systemManages = context.GetPermissionOrNull(PermissionNames.SystemManages);
             if (systemManages == null)
             {
-                systemManages = context.CreatePermission(PermissionNames.SystemManages, L("系统管理"));
+                systemManages = context.CreatePermission(PermissionNames.SystemManages, L("系统管理"), multiTenancySides: MultiTenancySides.Host);
             }
 
             systemManages.CreateChildPermission(PermissionNames.SystemManages_Tenant, L("租户管理"), multiTenancySides: MultiTenancySides.Host);

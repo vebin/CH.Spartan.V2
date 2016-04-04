@@ -370,24 +370,12 @@ var abp = abp || {};
         return showMessage(message, title);
     };
 
-    abp.message.confirm = function (message, titleOrCallback, callback) {
+    abp.message.confirm = function (message, callback) {
         abp.log.warn('abp.message.confirm is not implemented!');
+    };
 
-        if (titleOrCallback && !(typeof titleOrCallback == 'string')) {
-            callback = titleOrCallback;
-        }
-
-        var result = confirm(message);
-        callback && callback(result);
-
-        if (!$) {
-            abp.log.warn('abp.message can not return promise since jQuery is not defined!');
-            return null;
-        }
-
-        return $.Deferred(function ($dfd) {
-            $dfd.resolve();
-        });
+    abp.message.prompt = function (message, callback) {
+        abp.log.warn('abp.message.prompt is not implemented!');
     };
 
     /* UI *******************************************************/
@@ -415,6 +403,12 @@ var abp = abp || {};
     abp.ui.clearBusy = function (elm) {
         abp.log.warn('abp.ui.clearBusy is not implemented!');
     };
+
+    /*UI WINDOW */
+    abp.ui.open = function (url, title, options) {
+        abp.log.warn('abp.window.open is not implemented!');
+    };
+
 
     /* SIMPLE EVENT BUS *****************************************/
 

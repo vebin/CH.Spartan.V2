@@ -6281,3 +6281,840 @@ DEBUG 2016-04-04 13:01:06,621 [120  ] Abp.Web.SignalR.Hubs.AbpCommonHub        -
 DEBUG 2016-04-04 13:01:09,959 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: bbefaf43-f4fe-4556-bf93-4cc3fb115633
 DEBUG 2016-04-04 13:01:11,082 [26   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"fc6dfba0-094a-4576-ae4a-1aeacbcef052","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-04T13:01:11.0816427+08:00","Properties":{}}
 DEBUG 2016-04-04 13:01:11,092 [113  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: fc6dfba0-094a-4576-ae4a-1aeacbcef052
+DEBUG 2016-04-04 13:11:02,370 [49   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: fc6dfba0-094a-4576-ae4a-1aeacbcef052
+DEBUG 2016-04-04 13:41:17,583 [151  ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 13:41:17,584 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-04 13:41:17,584 [5da20] Hangfire.Server.Worker                   - Background process 'Worker #2485da20' stopped.
+DEBUG 2016-04-04 13:41:17,585 [58cff] Hangfire.Server.Worker                   - Background process 'Worker #a4058cff' stopped.
+DEBUG 2016-04-04 13:41:17,585 [8404d] Hangfire.Server.Worker                   - Background process 'Worker #5658404d' stopped.
+DEBUG 2016-04-04 13:41:17,585 [1cd86] Hangfire.Server.Worker                   - Background process 'Worker #38a1cd86' stopped.
+DEBUG 2016-04-04 13:41:17,585 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-04 13:41:17,585 [68ece] Hangfire.Server.Worker                   - Background process 'Worker #98068ece' stopped.
+DEBUG 2016-04-04 13:41:17,585 [ef1ab] Hangfire.Server.Worker                   - Background process 'Worker #828ef1ab' stopped.
+DEBUG 2016-04-04 13:41:17,585 [e1ebd] Hangfire.Server.Worker                   - Background process 'Worker #c77e1ebd' stopped.
+DEBUG 2016-04-04 13:41:17,585 [2cd24] Hangfire.Server.Worker                   - Background process 'Worker #de22cd24' stopped.
+DEBUG 2016-04-04 13:41:17,585 [76b3f] Hangfire.Server.Worker                   - Background process 'Worker #d6d76b3f' stopped.
+DEBUG 2016-04-04 13:41:17,589 [a20f4] Hangfire.Server.Worker                   - Background process 'Worker #5c2a20f4' stopped.
+DEBUG 2016-04-04 13:41:17,586 [8f7b0] Hangfire.Server.Worker                   - Background process 'Worker #1558f7b0' stopped.
+DEBUG 2016-04-04 13:41:17,586 [f70ca] Hangfire.Server.Worker                   - Background process 'Worker #4a6f70ca' stopped.
+DEBUG 2016-04-04 13:41:17,586 [d4dfd] Hangfire.Server.Worker                   - Background process 'Worker #127d4dfd' stopped.
+DEBUG 2016-04-04 13:41:17,586 [3a0ab] Hangfire.Server.Worker                   - Background process 'Worker #12f3a0ab' stopped.
+DEBUG 2016-04-04 13:41:17,587 [8b126] Hangfire.Server.Worker                   - Background process 'Worker #6e98b126' stopped.
+DEBUG 2016-04-04 13:41:17,587 [bd7e5] Hangfire.Server.Worker                   - Background process 'Worker #d9dbd7e5' stopped.
+DEBUG 2016-04-04 13:41:17,587 [9daca] Hangfire.Server.Worker                   - Background process 'Worker #d649daca' stopped.
+DEBUG 2016-04-04 13:41:17,587 [9971b] Hangfire.Server.Worker                   - Background process 'Worker #2239971b' stopped.
+DEBUG 2016-04-04 13:41:17,588 [f22e4] Hangfire.Server.Worker                   - Background process 'Worker #3d9f22e4' stopped.
+DEBUG 2016-04-04 13:41:17,588 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-04 13:41:17,588 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-04 13:41:17,588 [6879c] Hangfire.Server.Worker                   - Background process 'Worker #ad96879c' stopped.
+DEBUG 2016-04-04 13:41:17,588 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-04 13:41:17,588 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-04 13:41:17,596 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-04 13:41:17,596 [151  ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-04 13:41:17,596 [151  ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 13:41:30,313 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-04 13:41:33,269 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-04 13:41:33,272 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,274 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,274 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,274 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,274 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,274 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,275 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,275 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,275 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,275 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,275 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,275 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,275 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,276 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,276 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,276 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:41:33,279 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-04 13:41:33,315 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 13:41:33,315 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 13:41:33,315 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 13:41:33,315 [1    ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 13:41:33,774 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-04 13:41:33,779 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-04 13:41:33,779 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-04 13:41:33,781 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-04 13:41:33,781 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-04 13:41:33,787 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-04 13:41:33,811 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-04 13:41:33,812 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-04 13:41:33,812 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-04 13:41:33,812 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-04 13:41:33,812 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-04 13:41:33,812 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-04 13:41:33,812 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-04 13:41:33,820 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-04 13:41:33,950 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-04 13:41:33,952 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-04 13:41:33,962 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-04 13:41:33,968 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-04 13:41:33,971 [de101] Hangfire.Server.Worker                   - Background process 'Worker #7fede101' started.
+DEBUG 2016-04-04 13:41:33,972 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes defines auto mapping attributes
+DEBUG 2016-04-04 13:41:33,972 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-04 13:41:33,973 [067d0] Hangfire.Server.Worker                   - Background process 'Worker #f3c067d0' started.
+DEBUG 2016-04-04 13:41:33,974 [f9d7f] Hangfire.Server.Worker                   - Background process 'Worker #728f9d7f' started.
+DEBUG 2016-04-04 13:41:33,975 [e1c0a] Hangfire.Server.Worker                   - Background process 'Worker #448e1c0a' started.
+DEBUG 2016-04-04 13:41:33,976 [2b12e] Hangfire.Server.Worker                   - Background process 'Worker #b062b12e' started.
+DEBUG 2016-04-04 13:41:33,977 [00489] Hangfire.Server.Worker                   - Background process 'Worker #11300489' started.
+DEBUG 2016-04-04 13:41:33,977 [9f1bd] Hangfire.Server.Worker                   - Background process 'Worker #bd99f1bd' started.
+DEBUG 2016-04-04 13:41:33,979 [ee22b] Hangfire.Server.Worker                   - Background process 'Worker #1c0ee22b' started.
+DEBUG 2016-04-04 13:41:33,980 [43466] Hangfire.Server.Worker                   - Background process 'Worker #e5443466' started.
+DEBUG 2016-04-04 13:41:33,981 [db27f] Hangfire.Server.Worker                   - Background process 'Worker #c9adb27f' started.
+DEBUG 2016-04-04 13:41:33,982 [07ecb] Hangfire.Server.Worker                   - Background process 'Worker #17a07ecb' started.
+DEBUG 2016-04-04 13:41:33,983 [41955] Hangfire.Server.Worker                   - Background process 'Worker #18241955' started.
+DEBUG 2016-04-04 13:41:33,984 [dde27] Hangfire.Server.Worker                   - Background process 'Worker #408dde27' started.
+DEBUG 2016-04-04 13:41:33,985 [84b38] Hangfire.Server.Worker                   - Background process 'Worker #2a084b38' started.
+DEBUG 2016-04-04 13:41:33,986 [8376e] Hangfire.Server.Worker                   - Background process 'Worker #81e8376e' started.
+DEBUG 2016-04-04 13:41:33,987 [30320] Hangfire.Server.Worker                   - Background process 'Worker #0b230320' started.
+DEBUG 2016-04-04 13:41:33,988 [46dab] Hangfire.Server.Worker                   - Background process 'Worker #62146dab' started.
+DEBUG 2016-04-04 13:41:33,989 [afb95] Hangfire.Server.Worker                   - Background process 'Worker #3b1afb95' started.
+DEBUG 2016-04-04 13:41:33,989 [a9217] Hangfire.Server.Worker                   - Background process 'Worker #c7ea9217' started.
+DEBUG 2016-04-04 13:41:33,990 [86911] Hangfire.Server.Worker                   - Background process 'Worker #b6186911' started.
+DEBUG 2016-04-04 13:41:33,991 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-04 13:41:33,992 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-04 13:41:34,028 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-04 13:41:34,032 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-04-04 13:41:34,056 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-04-04 13:41:34,057 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-04-04 13:41:34,058 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-04-04 13:41:34,058 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-04-04 13:41:41,371 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f5bdda08-cbed-4f5a-a9da-5fe90a0d8071","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-04T13:41:41.3601941+08:00","Properties":{}}
+DEBUG 2016-04-04 13:41:41,447 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f5bdda08-cbed-4f5a-a9da-5fe90a0d8071
+DEBUG 2016-04-04 13:58:07,875 [142  ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 13:58:07,876 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-04 13:58:07,876 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-04 13:58:07,877 [86911] Hangfire.Server.Worker                   - Background process 'Worker #b6186911' stopped.
+DEBUG 2016-04-04 13:58:07,877 [afb95] Hangfire.Server.Worker                   - Background process 'Worker #3b1afb95' stopped.
+DEBUG 2016-04-04 13:58:07,877 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-04 13:58:07,877 [46dab] Hangfire.Server.Worker                   - Background process 'Worker #62146dab' stopped.
+DEBUG 2016-04-04 13:58:07,877 [30320] Hangfire.Server.Worker                   - Background process 'Worker #0b230320' stopped.
+DEBUG 2016-04-04 13:58:07,877 [a9217] Hangfire.Server.Worker                   - Background process 'Worker #c7ea9217' stopped.
+DEBUG 2016-04-04 13:58:07,878 [ee22b] Hangfire.Server.Worker                   - Background process 'Worker #1c0ee22b' stopped.
+DEBUG 2016-04-04 13:58:07,878 [8376e] Hangfire.Server.Worker                   - Background process 'Worker #81e8376e' stopped.
+DEBUG 2016-04-04 13:58:07,878 [f9d7f] Hangfire.Server.Worker                   - Background process 'Worker #728f9d7f' stopped.
+DEBUG 2016-04-04 13:58:07,878 [84b38] Hangfire.Server.Worker                   - Background process 'Worker #2a084b38' stopped.
+DEBUG 2016-04-04 13:58:07,878 [067d0] Hangfire.Server.Worker                   - Background process 'Worker #f3c067d0' stopped.
+DEBUG 2016-04-04 13:58:07,878 [41955] Hangfire.Server.Worker                   - Background process 'Worker #18241955' stopped.
+DEBUG 2016-04-04 13:58:07,879 [07ecb] Hangfire.Server.Worker                   - Background process 'Worker #17a07ecb' stopped.
+DEBUG 2016-04-04 13:58:07,879 [e1c0a] Hangfire.Server.Worker                   - Background process 'Worker #448e1c0a' stopped.
+DEBUG 2016-04-04 13:58:07,879 [9f1bd] Hangfire.Server.Worker                   - Background process 'Worker #bd99f1bd' stopped.
+DEBUG 2016-04-04 13:58:07,879 [43466] Hangfire.Server.Worker                   - Background process 'Worker #e5443466' stopped.
+DEBUG 2016-04-04 13:58:07,879 [de101] Hangfire.Server.Worker                   - Background process 'Worker #7fede101' stopped.
+DEBUG 2016-04-04 13:58:07,879 [00489] Hangfire.Server.Worker                   - Background process 'Worker #11300489' stopped.
+DEBUG 2016-04-04 13:58:07,879 [2b12e] Hangfire.Server.Worker                   - Background process 'Worker #b062b12e' stopped.
+DEBUG 2016-04-04 13:58:07,879 [db27f] Hangfire.Server.Worker                   - Background process 'Worker #c9adb27f' stopped.
+DEBUG 2016-04-04 13:58:07,879 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-04 13:58:07,880 [dde27] Hangfire.Server.Worker                   - Background process 'Worker #408dde27' stopped.
+DEBUG 2016-04-04 13:58:07,880 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-04 13:58:07,880 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-04 13:58:07,881 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-04 13:58:07,895 [142  ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-04 13:58:07,895 [142  ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 13:58:11,508 [36   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-04 13:58:14,489 [36   ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-04 13:58:14,493 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,494 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,495 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,495 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,495 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,495 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,495 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,495 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,495 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,496 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,496 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,496 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,496 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,496 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,496 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,496 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:58:14,501 [36   ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-04 13:58:14,542 [36   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 13:58:14,542 [36   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 13:58:14,542 [36   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 13:58:14,542 [36   ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 13:58:15,024 [36   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-04 13:58:15,029 [36   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-04 13:58:15,029 [36   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-04 13:58:15,032 [36   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-04 13:58:15,032 [36   ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-04 13:58:15,039 [36   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-04 13:58:15,065 [36   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-04 13:58:15,065 [36   ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-04 13:58:15,065 [36   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-04 13:58:15,065 [36   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-04 13:58:15,065 [36   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-04 13:58:15,065 [36   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-04 13:58:15,065 [36   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-04 13:58:15,076 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-04 13:58:15,206 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-04 13:58:15,207 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-04 13:58:15,208 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-04 13:58:15,213 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-04 13:58:15,214 [91491] Hangfire.Server.Worker                   - Background process 'Worker #e2591491' started.
+DEBUG 2016-04-04 13:58:15,215 [9bc0d] Hangfire.Server.Worker                   - Background process 'Worker #6c19bc0d' started.
+DEBUG 2016-04-04 13:58:15,217 [b7890] Hangfire.Server.Worker                   - Background process 'Worker #6abb7890' started.
+DEBUG 2016-04-04 13:58:15,218 [ea5c3] Hangfire.Server.Worker                   - Background process 'Worker #7a3ea5c3' started.
+DEBUG 2016-04-04 13:58:15,218 [20219] Hangfire.Server.Worker                   - Background process 'Worker #b9e20219' started.
+DEBUG 2016-04-04 13:58:15,219 [c5208] Hangfire.Server.Worker                   - Background process 'Worker #b64c5208' started.
+DEBUG 2016-04-04 13:58:15,220 [fac4a] Hangfire.Server.Worker                   - Background process 'Worker #897fac4a' started.
+DEBUG 2016-04-04 13:58:15,220 [c7ae0] Hangfire.Server.Worker                   - Background process 'Worker #02dc7ae0' started.
+DEBUG 2016-04-04 13:58:15,221 [bb9f6] Hangfire.Server.Worker                   - Background process 'Worker #2fdbb9f6' started.
+DEBUG 2016-04-04 13:58:15,222 [6672d] Hangfire.Server.Worker                   - Background process 'Worker #30e6672d' started.
+DEBUG 2016-04-04 13:58:15,222 [5d7c7] Hangfire.Server.Worker                   - Background process 'Worker #8645d7c7' started.
+DEBUG 2016-04-04 13:58:15,223 [603a5] Hangfire.Server.Worker                   - Background process 'Worker #3fe603a5' started.
+DEBUG 2016-04-04 13:58:15,223 [2fbb3] Hangfire.Server.Worker                   - Background process 'Worker #d682fbb3' started.
+DEBUG 2016-04-04 13:58:15,224 [aa597] Hangfire.Server.Worker                   - Background process 'Worker #af4aa597' started.
+DEBUG 2016-04-04 13:58:15,224 [026dd] Hangfire.Server.Worker                   - Background process 'Worker #582026dd' started.
+DEBUG 2016-04-04 13:58:15,225 [ad626] Hangfire.Server.Worker                   - Background process 'Worker #a46ad626' started.
+DEBUG 2016-04-04 13:58:15,225 [5b481] Hangfire.Server.Worker                   - Background process 'Worker #88f5b481' started.
+DEBUG 2016-04-04 13:58:15,226 [a85f4] Hangfire.Server.Worker                   - Background process 'Worker #ec9a85f4' started.
+DEBUG 2016-04-04 13:58:15,226 [36   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes defines auto mapping attributes
+DEBUG 2016-04-04 13:58:15,226 [36   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-04 13:58:15,227 [b292d] Hangfire.Server.Worker                   - Background process 'Worker #389b292d' started.
+DEBUG 2016-04-04 13:58:15,228 [17d4e] Hangfire.Server.Worker                   - Background process 'Worker #f4317d4e' started.
+DEBUG 2016-04-04 13:58:15,228 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-04 13:58:15,229 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-04 13:58:15,281 [36   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-04 13:58:15,285 [36   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-04-04 13:58:15,315 [36   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-04-04 13:58:15,317 [36   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-04-04 13:58:15,318 [36   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-04-04 13:58:15,319 [36   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-04-04 13:59:06,607 [6    ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 13:59:06,608 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-04 13:59:06,608 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-04 13:59:06,608 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-04 13:59:06,609 [17d4e] Hangfire.Server.Worker                   - Background process 'Worker #f4317d4e' stopped.
+DEBUG 2016-04-04 13:59:06,609 [b292d] Hangfire.Server.Worker                   - Background process 'Worker #389b292d' stopped.
+DEBUG 2016-04-04 13:59:06,609 [5b481] Hangfire.Server.Worker                   - Background process 'Worker #88f5b481' stopped.
+DEBUG 2016-04-04 13:59:06,609 [a85f4] Hangfire.Server.Worker                   - Background process 'Worker #ec9a85f4' stopped.
+DEBUG 2016-04-04 13:59:06,609 [ad626] Hangfire.Server.Worker                   - Background process 'Worker #a46ad626' stopped.
+DEBUG 2016-04-04 13:59:06,609 [026dd] Hangfire.Server.Worker                   - Background process 'Worker #582026dd' stopped.
+DEBUG 2016-04-04 13:59:06,609 [2fbb3] Hangfire.Server.Worker                   - Background process 'Worker #d682fbb3' stopped.
+DEBUG 2016-04-04 13:59:06,610 [aa597] Hangfire.Server.Worker                   - Background process 'Worker #af4aa597' stopped.
+DEBUG 2016-04-04 13:59:06,610 [603a5] Hangfire.Server.Worker                   - Background process 'Worker #3fe603a5' stopped.
+DEBUG 2016-04-04 13:59:06,610 [5d7c7] Hangfire.Server.Worker                   - Background process 'Worker #8645d7c7' stopped.
+DEBUG 2016-04-04 13:59:06,610 [6672d] Hangfire.Server.Worker                   - Background process 'Worker #30e6672d' stopped.
+DEBUG 2016-04-04 13:59:06,610 [bb9f6] Hangfire.Server.Worker                   - Background process 'Worker #2fdbb9f6' stopped.
+DEBUG 2016-04-04 13:59:06,610 [c7ae0] Hangfire.Server.Worker                   - Background process 'Worker #02dc7ae0' stopped.
+DEBUG 2016-04-04 13:59:06,611 [fac4a] Hangfire.Server.Worker                   - Background process 'Worker #897fac4a' stopped.
+DEBUG 2016-04-04 13:59:06,611 [c5208] Hangfire.Server.Worker                   - Background process 'Worker #b64c5208' stopped.
+DEBUG 2016-04-04 13:59:06,611 [20219] Hangfire.Server.Worker                   - Background process 'Worker #b9e20219' stopped.
+DEBUG 2016-04-04 13:59:06,611 [ea5c3] Hangfire.Server.Worker                   - Background process 'Worker #7a3ea5c3' stopped.
+DEBUG 2016-04-04 13:59:06,611 [91491] Hangfire.Server.Worker                   - Background process 'Worker #e2591491' stopped.
+DEBUG 2016-04-04 13:59:06,611 [b7890] Hangfire.Server.Worker                   - Background process 'Worker #6abb7890' stopped.
+DEBUG 2016-04-04 13:59:06,611 [9bc0d] Hangfire.Server.Worker                   - Background process 'Worker #6c19bc0d' stopped.
+DEBUG 2016-04-04 13:59:06,611 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-04 13:59:06,611 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-04 13:59:06,612 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-04 13:59:06,613 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-04 13:59:06,614 [6    ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-04 13:59:06,615 [6    ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 13:59:09,489 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-04 13:59:12,587 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-04 13:59:12,590 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,592 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,592 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,592 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,592 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,593 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,593 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,593 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,593 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,593 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,593 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,593 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,594 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,594 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,594 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,594 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 13:59:12,598 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-04 13:59:12,639 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 13:59:12,639 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 13:59:12,639 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 13:59:12,639 [1    ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 13:59:13,221 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-04 13:59:13,226 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-04 13:59:13,227 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-04 13:59:13,228 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-04 13:59:13,228 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-04 13:59:13,233 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-04 13:59:13,259 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-04 13:59:13,259 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-04 13:59:13,259 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-04 13:59:13,259 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-04 13:59:13,260 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-04 13:59:13,260 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-04 13:59:13,260 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-04 13:59:13,268 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-04 13:59:13,413 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-04 13:59:13,414 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-04 13:59:13,415 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-04 13:59:13,417 [969b8] Hangfire.Server.Worker                   - Background process 'Worker #0ac969b8' started.
+DEBUG 2016-04-04 13:59:13,417 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-04 13:59:13,420 [38258] Hangfire.Server.Worker                   - Background process 'Worker #3a138258' started.
+DEBUG 2016-04-04 13:59:13,422 [c88c4] Hangfire.Server.Worker                   - Background process 'Worker #1b4c88c4' started.
+DEBUG 2016-04-04 13:59:13,423 [f1b49] Hangfire.Server.Worker                   - Background process 'Worker #1c0f1b49' started.
+DEBUG 2016-04-04 13:59:13,423 [bbc91] Hangfire.Server.Worker                   - Background process 'Worker #f92bbc91' started.
+DEBUG 2016-04-04 13:59:13,424 [cf314] Hangfire.Server.Worker                   - Background process 'Worker #904cf314' started.
+DEBUG 2016-04-04 13:59:13,425 [639d8] Hangfire.Server.Worker                   - Background process 'Worker #3ec639d8' started.
+DEBUG 2016-04-04 13:59:13,425 [707ca] Hangfire.Server.Worker                   - Background process 'Worker #df5707ca' started.
+DEBUG 2016-04-04 13:59:13,426 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes defines auto mapping attributes
+DEBUG 2016-04-04 13:59:13,426 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-04 13:59:13,426 [c90d6] Hangfire.Server.Worker                   - Background process 'Worker #388c90d6' started.
+DEBUG 2016-04-04 13:59:13,427 [e80b7] Hangfire.Server.Worker                   - Background process 'Worker #f43e80b7' started.
+DEBUG 2016-04-04 13:59:13,428 [7e7bc] Hangfire.Server.Worker                   - Background process 'Worker #63d7e7bc' started.
+DEBUG 2016-04-04 13:59:13,428 [e3947] Hangfire.Server.Worker                   - Background process 'Worker #d08e3947' started.
+DEBUG 2016-04-04 13:59:13,429 [6d216] Hangfire.Server.Worker                   - Background process 'Worker #d4f6d216' started.
+DEBUG 2016-04-04 13:59:13,432 [7b4d0] Hangfire.Server.Worker                   - Background process 'Worker #de17b4d0' started.
+DEBUG 2016-04-04 13:59:13,433 [dac6d] Hangfire.Server.Worker                   - Background process 'Worker #3ffdac6d' started.
+DEBUG 2016-04-04 13:59:13,434 [b9557] Hangfire.Server.Worker                   - Background process 'Worker #012b9557' started.
+DEBUG 2016-04-04 13:59:13,435 [a0de5] Hangfire.Server.Worker                   - Background process 'Worker #296a0de5' started.
+DEBUG 2016-04-04 13:59:13,438 [c0483] Hangfire.Server.Worker                   - Background process 'Worker #fd1c0483' started.
+DEBUG 2016-04-04 13:59:13,439 [75d82] Hangfire.Server.Worker                   - Background process 'Worker #14375d82' started.
+DEBUG 2016-04-04 13:59:13,439 [a2cfe] Hangfire.Server.Worker                   - Background process 'Worker #203a2cfe' started.
+DEBUG 2016-04-04 13:59:13,440 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-04 13:59:13,442 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-04 13:59:13,483 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-04 13:59:13,487 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-04-04 13:59:13,512 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-04-04 13:59:13,513 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-04-04 13:59:13,514 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-04-04 13:59:13,515 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-04-04 14:34:39,957 [111  ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 14:34:39,970 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-04 14:34:39,970 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-04 14:34:39,970 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-04 14:34:39,970 [75d82] Hangfire.Server.Worker                   - Background process 'Worker #14375d82' stopped.
+DEBUG 2016-04-04 14:34:39,970 [c0483] Hangfire.Server.Worker                   - Background process 'Worker #fd1c0483' stopped.
+DEBUG 2016-04-04 14:34:39,970 [a2cfe] Hangfire.Server.Worker                   - Background process 'Worker #203a2cfe' stopped.
+DEBUG 2016-04-04 14:34:39,970 [b9557] Hangfire.Server.Worker                   - Background process 'Worker #012b9557' stopped.
+DEBUG 2016-04-04 14:34:39,971 [a0de5] Hangfire.Server.Worker                   - Background process 'Worker #296a0de5' stopped.
+DEBUG 2016-04-04 14:34:39,971 [dac6d] Hangfire.Server.Worker                   - Background process 'Worker #3ffdac6d' stopped.
+DEBUG 2016-04-04 14:34:39,971 [7b4d0] Hangfire.Server.Worker                   - Background process 'Worker #de17b4d0' stopped.
+DEBUG 2016-04-04 14:34:39,971 [e80b7] Hangfire.Server.Worker                   - Background process 'Worker #f43e80b7' stopped.
+DEBUG 2016-04-04 14:34:39,971 [7e7bc] Hangfire.Server.Worker                   - Background process 'Worker #63d7e7bc' stopped.
+DEBUG 2016-04-04 14:34:39,971 [6d216] Hangfire.Server.Worker                   - Background process 'Worker #d4f6d216' stopped.
+DEBUG 2016-04-04 14:34:39,971 [e3947] Hangfire.Server.Worker                   - Background process 'Worker #d08e3947' stopped.
+DEBUG 2016-04-04 14:34:39,972 [c90d6] Hangfire.Server.Worker                   - Background process 'Worker #388c90d6' stopped.
+DEBUG 2016-04-04 14:34:39,972 [639d8] Hangfire.Server.Worker                   - Background process 'Worker #3ec639d8' stopped.
+DEBUG 2016-04-04 14:34:39,972 [cf314] Hangfire.Server.Worker                   - Background process 'Worker #904cf314' stopped.
+DEBUG 2016-04-04 14:34:39,972 [bbc91] Hangfire.Server.Worker                   - Background process 'Worker #f92bbc91' stopped.
+DEBUG 2016-04-04 14:34:39,972 [707ca] Hangfire.Server.Worker                   - Background process 'Worker #df5707ca' stopped.
+DEBUG 2016-04-04 14:34:39,972 [38258] Hangfire.Server.Worker                   - Background process 'Worker #3a138258' stopped.
+DEBUG 2016-04-04 14:34:39,973 [969b8] Hangfire.Server.Worker                   - Background process 'Worker #0ac969b8' stopped.
+DEBUG 2016-04-04 14:34:39,973 [c88c4] Hangfire.Server.Worker                   - Background process 'Worker #1b4c88c4' stopped.
+DEBUG 2016-04-04 14:34:39,973 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-04 14:34:39,973 [f1b49] Hangfire.Server.Worker                   - Background process 'Worker #1c0f1b49' stopped.
+DEBUG 2016-04-04 14:34:39,973 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-04 14:34:39,973 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-04 14:34:39,975 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-04 14:34:39,992 [111  ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-04 14:34:39,992 [111  ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 14:34:44,974 [36   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-04 14:34:47,266 [36   ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-04 14:34:47,269 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,270 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,271 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,271 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,271 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,271 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,271 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,271 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,271 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,271 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,271 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,271 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,271 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,272 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,272 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,272 [36   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:34:47,278 [36   ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-04 14:34:47,318 [36   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:34:47,318 [36   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:34:47,318 [36   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:34:47,318 [36   ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:34:47,951 [36   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-04 14:34:47,958 [36   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-04 14:34:47,959 [36   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-04 14:34:47,960 [36   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-04 14:34:47,961 [36   ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-04 14:34:47,966 [36   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-04 14:34:48,009 [36   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-04 14:34:48,009 [36   ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-04 14:34:48,009 [36   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-04 14:34:48,009 [36   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-04 14:34:48,009 [36   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-04 14:34:48,009 [36   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-04 14:34:48,009 [36   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-04 14:34:48,021 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-04 14:34:48,202 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-04 14:34:48,202 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-04 14:34:48,203 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-04 14:34:48,203 [36   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes defines auto mapping attributes
+DEBUG 2016-04-04 14:34:48,203 [36   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-04 14:34:48,205 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-04 14:34:48,206 [65645] Hangfire.Server.Worker                   - Background process 'Worker #dce65645' started.
+DEBUG 2016-04-04 14:34:48,207 [de845] Hangfire.Server.Worker                   - Background process 'Worker #fb4de845' started.
+DEBUG 2016-04-04 14:34:48,213 [b381b] Hangfire.Server.Worker                   - Background process 'Worker #b56b381b' started.
+DEBUG 2016-04-04 14:34:48,215 [2f3f6] Hangfire.Server.Worker                   - Background process 'Worker #c7e2f3f6' started.
+DEBUG 2016-04-04 14:34:48,217 [62dbc] Hangfire.Server.Worker                   - Background process 'Worker #74362dbc' started.
+DEBUG 2016-04-04 14:34:48,217 [e7b2d] Hangfire.Server.Worker                   - Background process 'Worker #660e7b2d' started.
+DEBUG 2016-04-04 14:34:48,218 [3928e] Hangfire.Server.Worker                   - Background process 'Worker #3f73928e' started.
+DEBUG 2016-04-04 14:34:48,219 [47a8a] Hangfire.Server.Worker                   - Background process 'Worker #82747a8a' started.
+DEBUG 2016-04-04 14:34:48,219 [d16af] Hangfire.Server.Worker                   - Background process 'Worker #a50d16af' started.
+DEBUG 2016-04-04 14:34:48,220 [0089f] Hangfire.Server.Worker                   - Background process 'Worker #fa90089f' started.
+DEBUG 2016-04-04 14:34:48,221 [7929d] Hangfire.Server.Worker                   - Background process 'Worker #4f17929d' started.
+DEBUG 2016-04-04 14:34:48,221 [176cf] Hangfire.Server.Worker                   - Background process 'Worker #cf0176cf' started.
+DEBUG 2016-04-04 14:34:48,222 [4a9cd] Hangfire.Server.Worker                   - Background process 'Worker #5254a9cd' started.
+DEBUG 2016-04-04 14:34:48,223 [e73eb] Hangfire.Server.Worker                   - Background process 'Worker #5b5e73eb' started.
+DEBUG 2016-04-04 14:34:48,223 [98c26] Hangfire.Server.Worker                   - Background process 'Worker #16198c26' started.
+DEBUG 2016-04-04 14:34:48,224 [66030] Hangfire.Server.Worker                   - Background process 'Worker #cce66030' started.
+DEBUG 2016-04-04 14:34:48,228 [838b5] Hangfire.Server.Worker                   - Background process 'Worker #71c838b5' started.
+DEBUG 2016-04-04 14:34:48,229 [61650] Hangfire.Server.Worker                   - Background process 'Worker #35e61650' started.
+DEBUG 2016-04-04 14:34:48,229 [58fe1] Hangfire.Server.Worker                   - Background process 'Worker #f9458fe1' started.
+DEBUG 2016-04-04 14:34:48,231 [0c7ac] Hangfire.Server.Worker                   - Background process 'Worker #9a10c7ac' started.
+DEBUG 2016-04-04 14:34:48,233 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-04 14:34:48,234 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-04 14:34:48,266 [36   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-04 14:34:48,271 [36   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-04-04 14:34:48,297 [36   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-04-04 14:34:48,298 [36   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-04-04 14:34:48,299 [36   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-04-04 14:34:48,299 [36   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-04-04 14:37:14,426 [151  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f5bdda08-cbed-4f5a-a9da-5fe90a0d8071
+DEBUG 2016-04-04 14:37:17,486 [142  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"31806752-f8a6-4a0e-a68a-523af867f7ba","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-04T14:37:17.4756764+08:00","Properties":{}}
+DEBUG 2016-04-04 14:37:30,744 [111  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"93111ebb-9bd1-4e3b-9df0-c5709d1a1fdf","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-04T14:37:30.7446192+08:00","Properties":{}}
+DEBUG 2016-04-04 14:37:55,582 [42   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"9d5a4d4c-09a1-4452-ba5a-fa6f8fe0f2cf","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-04T14:37:55.5826966+08:00","Properties":{}}
+DEBUG 2016-04-04 14:37:58,871 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 31806752-f8a6-4a0e-a68a-523af867f7ba
+DEBUG 2016-04-04 14:38:04,672 [151  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"166dd734-d386-47e4-a56a-f83cdf33a66b","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-04T14:38:04.6727715+08:00","Properties":{}}
+DEBUG 2016-04-04 14:38:23,916 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 93111ebb-9bd1-4e3b-9df0-c5709d1a1fdf
+DEBUG 2016-04-04 14:38:33,943 [149  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 9d5a4d4c-09a1-4452-ba5a-fa6f8fe0f2cf
+DEBUG 2016-04-04 14:40:13,875 [151  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"3d7328a0-6dbb-47ca-b8e1-d00adef00de6","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-04T14:40:13.8753291+08:00","Properties":{}}
+DEBUG 2016-04-04 14:40:13,915 [94   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 3d7328a0-6dbb-47ca-b8e1-d00adef00de6
+DEBUG 2016-04-04 14:40:44,069 [94   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 166dd734-d386-47e4-a56a-f83cdf33a66b
+DEBUG 2016-04-04 14:41:26,672 [151  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 3d7328a0-6dbb-47ca-b8e1-d00adef00de6
+DEBUG 2016-04-04 14:41:29,291 [74   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"e6f66736-abbd-4874-991c-2c508efe35c1","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-04T14:41:29.2911946+08:00","Properties":{}}
+DEBUG 2016-04-04 14:41:29,341 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: e6f66736-abbd-4874-991c-2c508efe35c1
+DEBUG 2016-04-04 14:46:59,984 [145  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: e6f66736-abbd-4874-991c-2c508efe35c1
+DEBUG 2016-04-04 14:47:02,933 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"be9b678e-0a28-471a-9c58-b1c48ed79864","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-04T14:47:02.9334219+08:00","Properties":{}}
+DEBUG 2016-04-04 14:47:02,966 [105  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: be9b678e-0a28-471a-9c58-b1c48ed79864
+DEBUG 2016-04-04 14:47:27,580 [145  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: be9b678e-0a28-471a-9c58-b1c48ed79864
+DEBUG 2016-04-04 14:47:30,324 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"632ea970-5b0c-484d-a3c2-7235ce023687","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-04T14:47:30.3242739+08:00","Properties":{}}
+DEBUG 2016-04-04 14:47:30,379 [145  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 632ea970-5b0c-484d-a3c2-7235ce023687
+DEBUG 2016-04-04 14:47:47,601 [145  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 632ea970-5b0c-484d-a3c2-7235ce023687
+DEBUG 2016-04-04 14:47:49,243 [11   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ad9c93c4-027d-4b39-8253-79d4a579487a","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-04T14:47:49.2435843+08:00","Properties":{}}
+DEBUG 2016-04-04 14:47:49,270 [148  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ad9c93c4-027d-4b39-8253-79d4a579487a
+DEBUG 2016-04-04 14:55:31,358 [118  ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 14:55:31,359 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-04 14:55:31,359 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-04 14:55:31,359 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-04 14:55:31,359 [61650] Hangfire.Server.Worker                   - Background process 'Worker #35e61650' stopped.
+DEBUG 2016-04-04 14:55:31,359 [98c26] Hangfire.Server.Worker                   - Background process 'Worker #16198c26' stopped.
+DEBUG 2016-04-04 14:55:31,359 [0c7ac] Hangfire.Server.Worker                   - Background process 'Worker #9a10c7ac' stopped.
+DEBUG 2016-04-04 14:55:31,359 [838b5] Hangfire.Server.Worker                   - Background process 'Worker #71c838b5' stopped.
+DEBUG 2016-04-04 14:55:31,359 [e73eb] Hangfire.Server.Worker                   - Background process 'Worker #5b5e73eb' stopped.
+DEBUG 2016-04-04 14:55:31,359 [4a9cd] Hangfire.Server.Worker                   - Background process 'Worker #5254a9cd' stopped.
+DEBUG 2016-04-04 14:55:31,360 [66030] Hangfire.Server.Worker                   - Background process 'Worker #cce66030' stopped.
+DEBUG 2016-04-04 14:55:31,360 [58fe1] Hangfire.Server.Worker                   - Background process 'Worker #f9458fe1' stopped.
+DEBUG 2016-04-04 14:55:31,360 [0089f] Hangfire.Server.Worker                   - Background process 'Worker #fa90089f' stopped.
+DEBUG 2016-04-04 14:55:31,360 [7929d] Hangfire.Server.Worker                   - Background process 'Worker #4f17929d' stopped.
+DEBUG 2016-04-04 14:55:31,360 [d16af] Hangfire.Server.Worker                   - Background process 'Worker #a50d16af' stopped.
+DEBUG 2016-04-04 14:55:31,360 [de845] Hangfire.Server.Worker                   - Background process 'Worker #fb4de845' stopped.
+DEBUG 2016-04-04 14:55:31,360 [2f3f6] Hangfire.Server.Worker                   - Background process 'Worker #c7e2f3f6' stopped.
+DEBUG 2016-04-04 14:55:31,360 [62dbc] Hangfire.Server.Worker                   - Background process 'Worker #74362dbc' stopped.
+DEBUG 2016-04-04 14:55:31,360 [176cf] Hangfire.Server.Worker                   - Background process 'Worker #cf0176cf' stopped.
+DEBUG 2016-04-04 14:55:31,360 [b381b] Hangfire.Server.Worker                   - Background process 'Worker #b56b381b' stopped.
+DEBUG 2016-04-04 14:55:31,360 [3928e] Hangfire.Server.Worker                   - Background process 'Worker #3f73928e' stopped.
+DEBUG 2016-04-04 14:55:31,360 [65645] Hangfire.Server.Worker                   - Background process 'Worker #dce65645' stopped.
+DEBUG 2016-04-04 14:55:31,361 [47a8a] Hangfire.Server.Worker                   - Background process 'Worker #82747a8a' stopped.
+DEBUG 2016-04-04 14:55:31,361 [e7b2d] Hangfire.Server.Worker                   - Background process 'Worker #660e7b2d' stopped.
+DEBUG 2016-04-04 14:55:31,361 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-04 14:55:31,361 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-04 14:55:31,361 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-04 14:55:31,362 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-04 14:55:31,362 [118  ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-04 14:55:31,362 [118  ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 14:55:36,552 [49   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-04 14:55:38,770 [49   ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-04 14:55:38,773 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,775 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,775 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,775 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,775 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,775 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,775 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,776 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,776 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,776 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,776 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,777 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,777 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,777 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,777 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,777 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:38,783 [49   ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-04 14:55:38,823 [49   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:55:38,823 [49   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:55:38,823 [49   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:55:38,823 [49   ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:55:39,504 [49   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-04 14:55:39,508 [49   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-04 14:55:39,509 [49   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-04 14:55:39,512 [49   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-04 14:55:39,512 [49   ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-04 14:55:39,518 [49   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-04 14:55:39,542 [49   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-04 14:55:39,542 [49   ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-04 14:55:39,543 [49   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-04 14:55:39,543 [49   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-04 14:55:39,543 [49   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-04 14:55:39,543 [49   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-04 14:55:39,543 [49   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-04 14:55:39,552 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-04 14:55:39,683 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-04 14:55:39,684 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-04 14:55:39,685 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-04 14:55:39,687 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-04 14:55:39,688 [c165d] Hangfire.Server.Worker                   - Background process 'Worker #b9cc165d' started.
+DEBUG 2016-04-04 14:55:39,691 [38248] Hangfire.Server.Worker                   - Background process 'Worker #6f238248' started.
+DEBUG 2016-04-04 14:55:39,693 [54327] Hangfire.Server.Worker                   - Background process 'Worker #02e54327' started.
+DEBUG 2016-04-04 14:55:39,695 [dd5fd] Hangfire.Server.Worker                   - Background process 'Worker #f40dd5fd' started.
+DEBUG 2016-04-04 14:55:39,695 [89d3d] Hangfire.Server.Worker                   - Background process 'Worker #1d589d3d' started.
+DEBUG 2016-04-04 14:55:39,696 [ae90f] Hangfire.Server.Worker                   - Background process 'Worker #98bae90f' started.
+DEBUG 2016-04-04 14:55:39,697 [0dcfc] Hangfire.Server.Worker                   - Background process 'Worker #bfa0dcfc' started.
+DEBUG 2016-04-04 14:55:39,698 [568e0] Hangfire.Server.Worker                   - Background process 'Worker #b72568e0' started.
+DEBUG 2016-04-04 14:55:39,699 [5bf7e] Hangfire.Server.Worker                   - Background process 'Worker #e485bf7e' started.
+DEBUG 2016-04-04 14:55:39,699 [8552e] Hangfire.Server.Worker                   - Background process 'Worker #09f8552e' started.
+DEBUG 2016-04-04 14:55:39,699 [7c5aa] Hangfire.Server.Worker                   - Background process 'Worker #6017c5aa' started.
+DEBUG 2016-04-04 14:55:39,701 [22d26] Hangfire.Server.Worker                   - Background process 'Worker #37622d26' started.
+DEBUG 2016-04-04 14:55:39,701 [cad3e] Hangfire.Server.Worker                   - Background process 'Worker #882cad3e' started.
+DEBUG 2016-04-04 14:55:39,701 [49   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes defines auto mapping attributes
+DEBUG 2016-04-04 14:55:39,701 [49   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-04 14:55:39,702 [a4276] Hangfire.Server.Worker                   - Background process 'Worker #b78a4276' started.
+DEBUG 2016-04-04 14:55:39,702 [1f569] Hangfire.Server.Worker                   - Background process 'Worker #9fa1f569' started.
+DEBUG 2016-04-04 14:55:39,703 [f6970] Hangfire.Server.Worker                   - Background process 'Worker #e44f6970' started.
+DEBUG 2016-04-04 14:55:39,704 [4100f] Hangfire.Server.Worker                   - Background process 'Worker #4274100f' started.
+DEBUG 2016-04-04 14:55:39,704 [3873f] Hangfire.Server.Worker                   - Background process 'Worker #fad3873f' started.
+DEBUG 2016-04-04 14:55:39,705 [a189c] Hangfire.Server.Worker                   - Background process 'Worker #322a189c' started.
+DEBUG 2016-04-04 14:55:39,705 [079f8] Hangfire.Server.Worker                   - Background process 'Worker #e39079f8' started.
+DEBUG 2016-04-04 14:55:39,706 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-04 14:55:39,707 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-04 14:55:39,755 [49   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-04 14:55:39,759 [49   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-04-04 14:55:39,784 [49   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-04-04 14:55:39,785 [49   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-04-04 14:55:39,786 [49   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-04-04 14:55:39,787 [49   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-04-04 14:55:48,754 [109  ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 14:55:48,754 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-04 14:55:48,755 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-04 14:55:48,755 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-04 14:55:48,755 [079f8] Hangfire.Server.Worker                   - Background process 'Worker #e39079f8' stopped.
+DEBUG 2016-04-04 14:55:48,755 [a189c] Hangfire.Server.Worker                   - Background process 'Worker #322a189c' stopped.
+DEBUG 2016-04-04 14:55:48,755 [3873f] Hangfire.Server.Worker                   - Background process 'Worker #fad3873f' stopped.
+DEBUG 2016-04-04 14:55:48,755 [4100f] Hangfire.Server.Worker                   - Background process 'Worker #4274100f' stopped.
+DEBUG 2016-04-04 14:55:48,756 [f6970] Hangfire.Server.Worker                   - Background process 'Worker #e44f6970' stopped.
+DEBUG 2016-04-04 14:55:48,756 [1f569] Hangfire.Server.Worker                   - Background process 'Worker #9fa1f569' stopped.
+DEBUG 2016-04-04 14:55:48,756 [a4276] Hangfire.Server.Worker                   - Background process 'Worker #b78a4276' stopped.
+DEBUG 2016-04-04 14:55:48,756 [cad3e] Hangfire.Server.Worker                   - Background process 'Worker #882cad3e' stopped.
+DEBUG 2016-04-04 14:55:48,756 [22d26] Hangfire.Server.Worker                   - Background process 'Worker #37622d26' stopped.
+DEBUG 2016-04-04 14:55:48,756 [7c5aa] Hangfire.Server.Worker                   - Background process 'Worker #6017c5aa' stopped.
+DEBUG 2016-04-04 14:55:48,756 [8552e] Hangfire.Server.Worker                   - Background process 'Worker #09f8552e' stopped.
+DEBUG 2016-04-04 14:55:48,757 [5bf7e] Hangfire.Server.Worker                   - Background process 'Worker #e485bf7e' stopped.
+DEBUG 2016-04-04 14:55:48,757 [568e0] Hangfire.Server.Worker                   - Background process 'Worker #b72568e0' stopped.
+DEBUG 2016-04-04 14:55:48,757 [ae90f] Hangfire.Server.Worker                   - Background process 'Worker #98bae90f' stopped.
+DEBUG 2016-04-04 14:55:48,757 [0dcfc] Hangfire.Server.Worker                   - Background process 'Worker #bfa0dcfc' stopped.
+DEBUG 2016-04-04 14:55:48,757 [89d3d] Hangfire.Server.Worker                   - Background process 'Worker #1d589d3d' stopped.
+DEBUG 2016-04-04 14:55:48,757 [dd5fd] Hangfire.Server.Worker                   - Background process 'Worker #f40dd5fd' stopped.
+DEBUG 2016-04-04 14:55:48,757 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-04 14:55:48,758 [54327] Hangfire.Server.Worker                   - Background process 'Worker #02e54327' stopped.
+DEBUG 2016-04-04 14:55:48,758 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-04 14:55:48,758 [c165d] Hangfire.Server.Worker                   - Background process 'Worker #b9cc165d' stopped.
+DEBUG 2016-04-04 14:55:48,758 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-04 14:55:48,758 [38248] Hangfire.Server.Worker                   - Background process 'Worker #6f238248' stopped.
+DEBUG 2016-04-04 14:55:48,760 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-04 14:55:48,761 [109  ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-04 14:55:48,761 [109  ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 14:55:51,402 [35   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-04 14:55:54,596 [35   ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-04 14:55:54,600 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,602 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,602 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,602 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,602 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,602 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,602 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,602 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,602 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,602 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,603 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,603 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,603 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,604 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,604 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,604 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:55:54,609 [35   ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-04 14:55:54,653 [35   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:55:54,653 [35   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:55:54,653 [35   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:55:54,653 [35   ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:55:55,166 [35   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-04 14:55:55,171 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-04 14:55:55,171 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-04 14:55:55,172 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-04 14:55:55,172 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-04 14:55:55,178 [35   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-04 14:55:55,206 [35   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-04 14:55:55,206 [35   ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-04 14:55:55,206 [35   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-04 14:55:55,206 [35   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-04 14:55:55,206 [35   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-04 14:55:55,206 [35   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-04 14:55:55,206 [35   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-04 14:55:55,216 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-04 14:55:55,355 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-04 14:55:55,357 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-04 14:55:55,361 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-04 14:55:55,363 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-04 14:55:55,365 [52982] Hangfire.Server.Worker                   - Background process 'Worker #ba852982' started.
+DEBUG 2016-04-04 14:55:55,369 [42631] Hangfire.Server.Worker                   - Background process 'Worker #22242631' started.
+DEBUG 2016-04-04 14:55:55,371 [7d472] Hangfire.Server.Worker                   - Background process 'Worker #3b37d472' started.
+DEBUG 2016-04-04 14:55:55,371 [4faab] Hangfire.Server.Worker                   - Background process 'Worker #5364faab' started.
+DEBUG 2016-04-04 14:55:55,372 [35ccf] Hangfire.Server.Worker                   - Background process 'Worker #67735ccf' started.
+DEBUG 2016-04-04 14:55:55,372 [35   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes defines auto mapping attributes
+DEBUG 2016-04-04 14:55:55,372 [35   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-04 14:55:55,373 [1c89c] Hangfire.Server.Worker                   - Background process 'Worker #1531c89c' started.
+DEBUG 2016-04-04 14:55:55,374 [b56d4] Hangfire.Server.Worker                   - Background process 'Worker #625b56d4' started.
+DEBUG 2016-04-04 14:55:55,377 [26c3b] Hangfire.Server.Worker                   - Background process 'Worker #e8c26c3b' started.
+DEBUG 2016-04-04 14:55:55,381 [0e518] Hangfire.Server.Worker                   - Background process 'Worker #7920e518' started.
+DEBUG 2016-04-04 14:55:55,381 [d4367] Hangfire.Server.Worker                   - Background process 'Worker #89ed4367' started.
+DEBUG 2016-04-04 14:55:55,382 [aabba] Hangfire.Server.Worker                   - Background process 'Worker #b5daabba' started.
+DEBUG 2016-04-04 14:55:55,383 [690de] Hangfire.Server.Worker                   - Background process 'Worker #049690de' started.
+DEBUG 2016-04-04 14:55:55,384 [2ae07] Hangfire.Server.Worker                   - Background process 'Worker #45f2ae07' started.
+DEBUG 2016-04-04 14:55:55,385 [edf9b] Hangfire.Server.Worker                   - Background process 'Worker #00fedf9b' started.
+DEBUG 2016-04-04 14:55:55,386 [1ceb9] Hangfire.Server.Worker                   - Background process 'Worker #1721ceb9' started.
+DEBUG 2016-04-04 14:55:55,386 [941b6] Hangfire.Server.Worker                   - Background process 'Worker #4d5941b6' started.
+DEBUG 2016-04-04 14:55:55,387 [56b7d] Hangfire.Server.Worker                   - Background process 'Worker #d8056b7d' started.
+DEBUG 2016-04-04 14:55:55,388 [ec1df] Hangfire.Server.Worker                   - Background process 'Worker #cb9ec1df' started.
+DEBUG 2016-04-04 14:55:55,389 [904ad] Hangfire.Server.Worker                   - Background process 'Worker #160904ad' started.
+DEBUG 2016-04-04 14:55:55,391 [afb6e] Hangfire.Server.Worker                   - Background process 'Worker #d6fafb6e' started.
+DEBUG 2016-04-04 14:55:55,393 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-04 14:55:55,395 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-04 14:55:55,432 [35   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-04 14:55:55,436 [35   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-04-04 14:55:55,459 [35   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-04-04 14:55:55,463 [35   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-04-04 14:55:55,465 [35   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-04-04 14:55:55,466 [35   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-04-04 14:56:21,685 [132  ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 14:56:21,686 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-04 14:56:21,686 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-04 14:56:21,686 [afb6e] Hangfire.Server.Worker                   - Background process 'Worker #d6fafb6e' stopped.
+DEBUG 2016-04-04 14:56:21,686 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-04 14:56:21,686 [904ad] Hangfire.Server.Worker                   - Background process 'Worker #160904ad' stopped.
+DEBUG 2016-04-04 14:56:21,686 [ec1df] Hangfire.Server.Worker                   - Background process 'Worker #cb9ec1df' stopped.
+DEBUG 2016-04-04 14:56:21,686 [56b7d] Hangfire.Server.Worker                   - Background process 'Worker #d8056b7d' stopped.
+DEBUG 2016-04-04 14:56:21,686 [941b6] Hangfire.Server.Worker                   - Background process 'Worker #4d5941b6' stopped.
+DEBUG 2016-04-04 14:56:21,686 [1ceb9] Hangfire.Server.Worker                   - Background process 'Worker #1721ceb9' stopped.
+DEBUG 2016-04-04 14:56:21,686 [edf9b] Hangfire.Server.Worker                   - Background process 'Worker #00fedf9b' stopped.
+DEBUG 2016-04-04 14:56:21,686 [2ae07] Hangfire.Server.Worker                   - Background process 'Worker #45f2ae07' stopped.
+DEBUG 2016-04-04 14:56:21,687 [690de] Hangfire.Server.Worker                   - Background process 'Worker #049690de' stopped.
+DEBUG 2016-04-04 14:56:21,687 [aabba] Hangfire.Server.Worker                   - Background process 'Worker #b5daabba' stopped.
+DEBUG 2016-04-04 14:56:21,687 [d4367] Hangfire.Server.Worker                   - Background process 'Worker #89ed4367' stopped.
+DEBUG 2016-04-04 14:56:21,687 [0e518] Hangfire.Server.Worker                   - Background process 'Worker #7920e518' stopped.
+DEBUG 2016-04-04 14:56:21,687 [26c3b] Hangfire.Server.Worker                   - Background process 'Worker #e8c26c3b' stopped.
+DEBUG 2016-04-04 14:56:21,687 [b56d4] Hangfire.Server.Worker                   - Background process 'Worker #625b56d4' stopped.
+DEBUG 2016-04-04 14:56:21,687 [1c89c] Hangfire.Server.Worker                   - Background process 'Worker #1531c89c' stopped.
+DEBUG 2016-04-04 14:56:21,687 [35ccf] Hangfire.Server.Worker                   - Background process 'Worker #67735ccf' stopped.
+DEBUG 2016-04-04 14:56:21,687 [4faab] Hangfire.Server.Worker                   - Background process 'Worker #5364faab' stopped.
+DEBUG 2016-04-04 14:56:21,687 [7d472] Hangfire.Server.Worker                   - Background process 'Worker #3b37d472' stopped.
+DEBUG 2016-04-04 14:56:21,687 [42631] Hangfire.Server.Worker                   - Background process 'Worker #22242631' stopped.
+DEBUG 2016-04-04 14:56:21,687 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-04 14:56:21,687 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-04 14:56:21,687 [52982] Hangfire.Server.Worker                   - Background process 'Worker #ba852982' stopped.
+DEBUG 2016-04-04 14:56:21,687 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-04 14:56:21,689 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-04 14:56:21,689 [132  ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-04 14:56:21,689 [132  ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 14:56:24,346 [49   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-04 14:56:28,514 [49   ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-04 14:56:28,519 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,521 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,521 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,522 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,522 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,522 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,522 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,522 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,522 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,522 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,523 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,523 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,523 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,523 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,523 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,523 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:28,529 [49   ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-04 14:56:28,565 [49   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:56:28,565 [49   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:56:28,565 [49   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:56:28,565 [49   ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:56:29,094 [49   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-04 14:56:29,096 [49   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-04 14:56:29,097 [49   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-04 14:56:29,100 [49   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-04 14:56:29,101 [49   ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-04 14:56:29,102 [49   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-04 14:56:29,123 [49   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-04 14:56:29,123 [49   ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-04 14:56:29,123 [49   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-04 14:56:29,123 [49   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-04 14:56:29,124 [49   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-04 14:56:29,124 [49   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-04 14:56:29,124 [49   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-04 14:56:29,137 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-04 14:56:29,272 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-04 14:56:29,273 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-04 14:56:29,275 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-04 14:56:29,275 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-04 14:56:29,278 [83bf3] Hangfire.Server.Worker                   - Background process 'Worker #ded83bf3' started.
+DEBUG 2016-04-04 14:56:29,281 [dde0d] Hangfire.Server.Worker                   - Background process 'Worker #6d8dde0d' started.
+DEBUG 2016-04-04 14:56:29,283 [96a34] Hangfire.Server.Worker                   - Background process 'Worker #4b796a34' started.
+DEBUG 2016-04-04 14:56:29,286 [b2213] Hangfire.Server.Worker                   - Background process 'Worker #b4db2213' started.
+DEBUG 2016-04-04 14:56:29,286 [b332c] Hangfire.Server.Worker                   - Background process 'Worker #ec1b332c' started.
+DEBUG 2016-04-04 14:56:29,287 [14e97] Hangfire.Server.Worker                   - Background process 'Worker #1c014e97' started.
+DEBUG 2016-04-04 14:56:29,288 [9fc5f] Hangfire.Server.Worker                   - Background process 'Worker #c3a9fc5f' started.
+DEBUG 2016-04-04 14:56:29,289 [0ac9d] Hangfire.Server.Worker                   - Background process 'Worker #6830ac9d' started.
+DEBUG 2016-04-04 14:56:29,292 [850db] Hangfire.Server.Worker                   - Background process 'Worker #0f4850db' started.
+DEBUG 2016-04-04 14:56:29,293 [61318] Hangfire.Server.Worker                   - Background process 'Worker #b4f61318' started.
+DEBUG 2016-04-04 14:56:29,294 [e8889] Hangfire.Server.Worker                   - Background process 'Worker #a54e8889' started.
+DEBUG 2016-04-04 14:56:29,296 [a78f0] Hangfire.Server.Worker                   - Background process 'Worker #f19a78f0' started.
+DEBUG 2016-04-04 14:56:29,296 [52163] Hangfire.Server.Worker                   - Background process 'Worker #67352163' started.
+DEBUG 2016-04-04 14:56:29,297 [17439] Hangfire.Server.Worker                   - Background process 'Worker #c0a17439' started.
+DEBUG 2016-04-04 14:56:29,298 [adb1e] Hangfire.Server.Worker                   - Background process 'Worker #1c0adb1e' started.
+DEBUG 2016-04-04 14:56:29,299 [d43e9] Hangfire.Server.Worker                   - Background process 'Worker #b88d43e9' started.
+DEBUG 2016-04-04 14:56:29,300 [e1609] Hangfire.Server.Worker                   - Background process 'Worker #773e1609' started.
+DEBUG 2016-04-04 14:56:29,302 [0e2d5] Hangfire.Server.Worker                   - Background process 'Worker #7980e2d5' started.
+DEBUG 2016-04-04 14:56:29,303 [66556] Hangfire.Server.Worker                   - Background process 'Worker #46066556' started.
+DEBUG 2016-04-04 14:56:29,303 [8eb10] Hangfire.Server.Worker                   - Background process 'Worker #9b28eb10' started.
+DEBUG 2016-04-04 14:56:29,304 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-04 14:56:29,306 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-04 14:56:29,352 [49   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes defines auto mapping attributes
+DEBUG 2016-04-04 14:56:29,353 [49   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-04 14:56:29,407 [49   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-04 14:56:29,415 [49   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-04-04 14:56:29,428 [49   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-04-04 14:56:29,430 [49   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-04-04 14:56:29,432 [49   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-04-04 14:56:29,433 [49   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-04-04 14:56:46,574 [132  ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 14:56:46,575 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-04 14:56:46,575 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-04 14:56:46,575 [8eb10] Hangfire.Server.Worker                   - Background process 'Worker #9b28eb10' stopped.
+DEBUG 2016-04-04 14:56:46,575 [66556] Hangfire.Server.Worker                   - Background process 'Worker #46066556' stopped.
+DEBUG 2016-04-04 14:56:46,575 [0e2d5] Hangfire.Server.Worker                   - Background process 'Worker #7980e2d5' stopped.
+DEBUG 2016-04-04 14:56:46,575 [e1609] Hangfire.Server.Worker                   - Background process 'Worker #773e1609' stopped.
+DEBUG 2016-04-04 14:56:46,575 [d43e9] Hangfire.Server.Worker                   - Background process 'Worker #b88d43e9' stopped.
+DEBUG 2016-04-04 14:56:46,575 [adb1e] Hangfire.Server.Worker                   - Background process 'Worker #1c0adb1e' stopped.
+DEBUG 2016-04-04 14:56:46,575 [17439] Hangfire.Server.Worker                   - Background process 'Worker #c0a17439' stopped.
+DEBUG 2016-04-04 14:56:46,575 [52163] Hangfire.Server.Worker                   - Background process 'Worker #67352163' stopped.
+DEBUG 2016-04-04 14:56:46,575 [a78f0] Hangfire.Server.Worker                   - Background process 'Worker #f19a78f0' stopped.
+DEBUG 2016-04-04 14:56:46,576 [e8889] Hangfire.Server.Worker                   - Background process 'Worker #a54e8889' stopped.
+DEBUG 2016-04-04 14:56:46,576 [61318] Hangfire.Server.Worker                   - Background process 'Worker #b4f61318' stopped.
+DEBUG 2016-04-04 14:56:46,576 [850db] Hangfire.Server.Worker                   - Background process 'Worker #0f4850db' stopped.
+DEBUG 2016-04-04 14:56:46,576 [0ac9d] Hangfire.Server.Worker                   - Background process 'Worker #6830ac9d' stopped.
+DEBUG 2016-04-04 14:56:46,576 [9fc5f] Hangfire.Server.Worker                   - Background process 'Worker #c3a9fc5f' stopped.
+DEBUG 2016-04-04 14:56:46,576 [14e97] Hangfire.Server.Worker                   - Background process 'Worker #1c014e97' stopped.
+DEBUG 2016-04-04 14:56:46,576 [b332c] Hangfire.Server.Worker                   - Background process 'Worker #ec1b332c' stopped.
+DEBUG 2016-04-04 14:56:46,576 [b2213] Hangfire.Server.Worker                   - Background process 'Worker #b4db2213' stopped.
+DEBUG 2016-04-04 14:56:46,576 [96a34] Hangfire.Server.Worker                   - Background process 'Worker #4b796a34' stopped.
+DEBUG 2016-04-04 14:56:46,576 [dde0d] Hangfire.Server.Worker                   - Background process 'Worker #6d8dde0d' stopped.
+DEBUG 2016-04-04 14:56:46,577 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-04 14:56:46,577 [83bf3] Hangfire.Server.Worker                   - Background process 'Worker #ded83bf3' stopped.
+DEBUG 2016-04-04 14:56:46,577 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-04 14:56:46,577 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-04 14:56:46,577 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-04 14:56:46,577 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-04 14:56:46,577 [132  ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-04 14:56:46,577 [132  ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-04 14:56:51,135 [35   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-04 14:56:53,413 [35   ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-04 14:56:53,419 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,423 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,424 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,424 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,424 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,424 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,424 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,424 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,424 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,424 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,424 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,425 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,425 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,425 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,425 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,425 [35   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-04 14:56:53,429 [35   ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-04 14:56:53,479 [35   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:56:53,479 [35   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:56:53,479 [35   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:56:53,479 [35   ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-04 14:56:54,159 [35   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-04 14:56:54,164 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-04 14:56:54,164 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-04 14:56:54,165 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-04 14:56:54,166 [35   ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-04 14:56:54,172 [35   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-04 14:56:54,205 [35   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-04 14:56:54,205 [35   ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-04 14:56:54,205 [35   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-04 14:56:54,205 [35   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-04 14:56:54,205 [35   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-04 14:56:54,205 [35   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-04 14:56:54,205 [35   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-04 14:56:54,214 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-04 14:56:54,359 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-04 14:56:54,360 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-04 14:56:54,361 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-04 14:56:54,363 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-04 14:56:54,363 [35   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 3 classes defines auto mapping attributes
+DEBUG 2016-04-04 14:56:54,363 [35   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-04 14:56:54,364 [b0830] Hangfire.Server.Worker                   - Background process 'Worker #5cbb0830' started.
+DEBUG 2016-04-04 14:56:54,367 [fbb37] Hangfire.Server.Worker                   - Background process 'Worker #7fafbb37' started.
+DEBUG 2016-04-04 14:56:54,369 [f3f9f] Hangfire.Server.Worker                   - Background process 'Worker #5fcf3f9f' started.
+DEBUG 2016-04-04 14:56:54,370 [74d8c] Hangfire.Server.Worker                   - Background process 'Worker #37f74d8c' started.
+DEBUG 2016-04-04 14:56:54,371 [93a4c] Hangfire.Server.Worker                   - Background process 'Worker #c9293a4c' started.
+DEBUG 2016-04-04 14:56:54,372 [03214] Hangfire.Server.Worker                   - Background process 'Worker #b4503214' started.
+DEBUG 2016-04-04 14:56:54,373 [6be6c] Hangfire.Server.Worker                   - Background process 'Worker #ea36be6c' started.
+DEBUG 2016-04-04 14:56:54,374 [03832] Hangfire.Server.Worker                   - Background process 'Worker #c1603832' started.
+DEBUG 2016-04-04 14:56:54,378 [32e5d] Hangfire.Server.Worker                   - Background process 'Worker #35432e5d' started.
+DEBUG 2016-04-04 14:56:54,379 [6e031] Hangfire.Server.Worker                   - Background process 'Worker #fca6e031' started.
+DEBUG 2016-04-04 14:56:54,379 [2ff5a] Hangfire.Server.Worker                   - Background process 'Worker #7bf2ff5a' started.
+DEBUG 2016-04-04 14:56:54,380 [3fb46] Hangfire.Server.Worker                   - Background process 'Worker #6953fb46' started.
+DEBUG 2016-04-04 14:56:54,382 [08092] Hangfire.Server.Worker                   - Background process 'Worker #22208092' started.
+DEBUG 2016-04-04 14:56:54,383 [b99c4] Hangfire.Server.Worker                   - Background process 'Worker #e2bb99c4' started.
+DEBUG 2016-04-04 14:56:54,388 [958d0] Hangfire.Server.Worker                   - Background process 'Worker #d31958d0' started.
+DEBUG 2016-04-04 14:56:54,389 [eb39e] Hangfire.Server.Worker                   - Background process 'Worker #f63eb39e' started.
+DEBUG 2016-04-04 14:56:54,390 [e952b] Hangfire.Server.Worker                   - Background process 'Worker #e3ee952b' started.
+DEBUG 2016-04-04 14:56:54,391 [fd31c] Hangfire.Server.Worker                   - Background process 'Worker #d87fd31c' started.
+DEBUG 2016-04-04 14:56:54,393 [e3e1d] Hangfire.Server.Worker                   - Background process 'Worker #ef0e3e1d' started.
+DEBUG 2016-04-04 14:56:54,394 [daf83] Hangfire.Server.Worker                   - Background process 'Worker #2b6daf83' started.
+DEBUG 2016-04-04 14:56:54,394 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-04 14:56:54,397 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-04 14:56:54,435 [35   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-04 14:56:54,439 [35   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.TenantListDto
+DEBUG 2016-04-04 14:56:54,467 [35   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2016-04-04 14:56:54,468 [35   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2016-04-04 14:56:54,469 [35   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2016-04-04 14:56:54,470 [35   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'CH.Spartan.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2016-04-04 15:03:56,827 [57   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ad9c93c4-027d-4b39-8253-79d4a579487a
+DEBUG 2016-04-04 15:07:01,776 [41   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"03ab3a49-7759-486e-b885-6d397c6a7376","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-04T15:07:01.7631714+08:00","Properties":{}}
+DEBUG 2016-04-04 15:07:01,823 [41   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 03ab3a49-7759-486e-b885-6d397c6a7376

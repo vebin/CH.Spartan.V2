@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using Abp.Application.Services.Dto;
 using Abp.Web.Models;
 using Abp.Web.Mvc.Models;
 using Abp.WebApi.Authorization;
@@ -31,6 +32,11 @@ namespace CH.Spartan.Web.Controllers
         {
             var result = await _tenantAppService.GetTenants(input);
             return Json(result,JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult TenantEdit()
+        {
+            return View();
         }
     }
 }

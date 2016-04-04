@@ -294,13 +294,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Abp\Framework\scripts\abp.js" />
-    <Content Include="Abp\Framework\scripts\libs\abp.blockUI.js" />
     <Content Include="Abp\Framework\scripts\libs\abp.jquery.js" />
-    <Content Include="Abp\Framework\scripts\libs\abp.jtable.js" />
     <Content Include="Abp\Framework\scripts\libs\abp.signalr.js" />
-    <Content Include="Abp\Framework\scripts\libs\abp.spin.js" />
-    <Content Include="Abp\Framework\scripts\libs\abp.sweet-alert.js" />
-    <Content Include="Abp\Framework\scripts\libs\abp.toastr.js" />
     <Content Include="Abp\Framework\scripts\libs\angularjs\abp.ng.js" />
     <Content Include="Abp\Framework\scripts\libs\requirejs\plugins\service.js" />
     <Content Include="Abp\Framework\scripts\utils\ie10fix.js" />
@@ -363,6 +358,7 @@
     <Content Include="Content\js\plugins\layer\skin\default\loading-2.gif" />
     <Content Include="Content\js\plugins\layer\skin\layer.css" />
     <Content Include="Content\js\plugins\layer\skin\layer.ext.css" />
+    <Content Include="Content\js\plugins\layer\skin\moon\default.png" />
     <Content Include="Content\js\plugins\layer\skin\moon\style.css" />
     <Content Include="Content\js\plugins\metisMenu\jquery.metisMenu.js" />
     <Content Include="Content\js\plugins\pace\pace.min.js" />
@@ -534,6 +530,7 @@
     <Content Include="Content\js\plugins\table\extensions\toolbar\README.md" />
     <Content Include="Content\js\plugins\table\locale\bootstrap-table-en-US.js.template" />
     <Content Include="Content\js\plugins\table\locale\README.md" />
+    <None Include="Views\SystemManage\TenantEdit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

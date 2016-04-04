@@ -16,16 +16,33 @@
 
         //修改
         function edit(id) {
-
-
+            abp.ui.open("/SystemManage/TenantEdit?id=" + id, "修改", {
+                btn: ["确定", '取消'],
+                yes: function(index, layero) {
+                    debugger;
+                },
+                cancel: function (index) {
+                    debugger;
+                },
+                end: function() {
+                    debugger;
+                }
+            });
         }
+
         //删除
         function del(ids) {
 
 
         }
 
-        $(function() {
+
+        (function($) {
+            if (!$) {
+                return;
+            }
+
+            //搜索
             $("#btn-search").click(function() {
                 var args =
                 {
@@ -35,15 +52,17 @@
             });
 
             //添加
-            $("#btn-add").click(function () {
-                
+            $("#btn-add").click(function() {
+
             });
 
             //删除
-            $("#btn-del").click(function () {
-                
+            $("#btn-del").click(function() {
+
             });
-        });
+        })(jQuery);
+
+
     </script>
 }
 <div class="wrapper wrapper-content animated lightSpeedIn list">

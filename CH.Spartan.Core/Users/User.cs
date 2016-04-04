@@ -15,15 +15,17 @@ namespace CH.Spartan.Users
             return Guid.NewGuid().ToString("N").Truncate(16);
         }
 
-        public static User CreateTenantAdminUser(int tenantId, string emailAddress, string password)
+        public static User CreateTenantAdminUser(int tenantId,string userName,string emailAddress, string password)
         {
             return new User
             {
                 TenantId = tenantId,
-                UserName = AdminUserName,
-                Name = AdminUserName,
-                Surname = AdminUserName,
+                UserName = userName,
+                Name = userName,
+                Surname = userName,
                 EmailAddress = emailAddress,
+                IsEmailConfirmed = true,
+                IsActive = true,
                 Password = new PasswordHasher().HashPassword(password)
             };
         }

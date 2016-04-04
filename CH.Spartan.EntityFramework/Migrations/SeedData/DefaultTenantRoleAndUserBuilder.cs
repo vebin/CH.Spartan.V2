@@ -29,10 +29,10 @@ namespace CH.Spartan.Migrations.SeedData
         private void CreateUserAndRoles()
         {
             //添加 租主管理员角色 静态(该角色不允许更改权限)
-            var adminRoleForHost = _context.Roles.FirstOrDefault(r => r.TenantId == null && r.Name == StaticRoleNames.Host.Admin);
+            var adminRoleForHost = _context.Roles.FirstOrDefault(r => r.TenantId == null && r.Name == RoleNames.Host.Admin);
             if (adminRoleForHost == null)
             {
-                adminRoleForHost = _context.Roles.Add(new Role { Name = StaticRoleNames.Host.Admin, DisplayName = StaticRoleNames.Host.Admin, IsStatic = true });
+                adminRoleForHost = _context.Roles.Add(new Role { Name = RoleNames.Host.Admin, DisplayName = RoleNames.Host.Admin, IsStatic = true });
                 _context.SaveChanges();
 
                 //分配所有 租主权限 给租主管理员角色
@@ -84,15 +84,15 @@ namespace CH.Spartan.Migrations.SeedData
             var defaultTenant = _context.Tenants.FirstOrDefault(t => t.TenancyName == "yugps");
             if (defaultTenant == null)
             {
-                defaultTenant = _context.Tenants.Add(new Tenant { TenancyName = "yugps", Name = "深圳羽衡科技有限公司" });
+                defaultTenant = _context.Tenants.Add(new Tenant { TenancyName = "yugps", Name = "深圳羽衡科技有限公司"});
                 _context.SaveChanges();
             }
 
             //添加租户 管理员角色 静态(该角色不允许更改权限)
-            var adminRoleForDefaultTenant = _context.Roles.FirstOrDefault(r => r.TenantId == defaultTenant.Id && r.Name == StaticRoleNames.Tenants.Admin);
+            var adminRoleForDefaultTenant = _context.Roles.FirstOrDefault(r => r.TenantId == defaultTenant.Id && r.Name == RoleNames.Tenants.Admin);
             if (adminRoleForDefaultTenant == null)
             {
-                adminRoleForDefaultTenant = _context.Roles.Add(new Role { TenantId = defaultTenant.Id, Name = StaticRoleNames.Tenants.Admin, DisplayName = StaticRoleNames.Tenants.Admin, IsStatic = true });
+                adminRoleForDefaultTenant = _context.Roles.Add(new Role { TenantId = defaultTenant.Id, Name = RoleNames.Tenants.Admin, DisplayName = RoleNames.Tenants.Admin, IsStatic = true });
                 _context.SaveChanges();
 
                 var permissions = PermissionFinder

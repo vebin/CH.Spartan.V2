@@ -113,24 +113,11 @@
             shadeClose: true,
             shade: false,
             maxmin: true,
-            area: ["1150px", "650px"],
-            content: url
+            area: ["80%", "80%"],
+            content: [url,"yes"]
         };
         var args = $.extend({}, opts, options);
-        dialog.open({
-            type: 2,
-            title: false,
-            closeBtn: false,
-            shade: [0],
-            area: ["340px", "215px"],
-            offset: "rb", //右下角弹出
-            time: 2000, //2秒后自动关闭
-            shift: 2,
-            content: [url, "no"], //iframe的url，no代表不显示滚动条
-            end: function () {
-                dialog.open(args);
-            }
-        });
+        dialog.open(args);
     };
 
 })();

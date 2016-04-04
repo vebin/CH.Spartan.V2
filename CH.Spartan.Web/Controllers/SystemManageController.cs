@@ -28,15 +28,16 @@ namespace CH.Spartan.Web.Controllers
             return View();
         }
 
-        public async Task<JsonResult> TenantSearch(GetTenantsInput input)
+        public async Task<JsonResult> TenantSearch(GetTenantPagedInput input)
         {
-            var result = await _tenantAppService.GetTenants(input);
+            var result = await _tenantAppService.GetTenantPaged(input);
             return Json(result,JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult TenantEdit()
+        public async Task<ActionResult> TenantEdit(NullableIdInput input)
         {
-            return View();
+            var result = await _tenantAppService.FetchTenant(input);
+            return View(result);
         }
     }
 }

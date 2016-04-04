@@ -109,10 +109,13 @@
   <ItemGroup>
     <Compile Include="Commons\Dto\QueryResultRequestInput.cs" />
     <Compile Include="Commons\Linq\LinqExtend.cs" />
-    <Compile Include="MultiTenancy\Dto\GetTenantsInput.cs" />
+    <Compile Include="MultiTenancy\Dto\EditTenantInput.cs" />
+    <Compile Include="MultiTenancy\Dto\EditTenantOutput.cs" />
+    <Compile Include="MultiTenancy\Dto\GetTenantListInput.cs" />
+    <Compile Include="MultiTenancy\Dto\GetTenantPagedInput.cs" />
+    <Compile Include="MultiTenancy\Dto\TenantDto.cs" />
     <Compile Include="SpartanApplicationModule.cs" />
     <Compile Include="SpartanAppServiceBase.cs" />
-    <Compile Include="MultiTenancy\Dto\CreateTenantInput.cs" />
     <Compile Include="MultiTenancy\ITenantAppService.cs" />
     <Compile Include="MultiTenancy\Dto\TenantListDto.cs" />
     <Compile Include="MultiTenancy\TenantAppService.cs" />

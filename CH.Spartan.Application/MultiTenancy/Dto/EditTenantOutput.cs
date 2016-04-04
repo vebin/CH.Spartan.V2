@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
-using CH.Spartan.Commons.Dto;
 
 namespace CH.Spartan.MultiTenancy.Dto
 {
-    public class GetTenantsInput : QueryResultRequestInput
+    public class EditTenantOutput : IOutputDto
     {
-
+        public EditTenantOutput(TenantDto tenant)
+        {
+            Tenant = tenant;
+        }
+        public TenantDto Tenant { get; set; }
     }
 }

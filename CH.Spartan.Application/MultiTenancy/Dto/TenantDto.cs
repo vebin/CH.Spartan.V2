@@ -1,10 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
+using Abp.AutoMapper;
+using Abp.Domain.Entities.Auditing;
 using CH.Spartan.Users;
 
 namespace CH.Spartan.MultiTenancy.Dto
 {
-    public class CreateTenantInput : IInputDto
+    [AutoMap(typeof (Tenant))]
+    public class TenantDto : EntityDto, IDoubleWayDto
     {
         [Required]
         [StringLength(Tenant.MaxTenancyNameLength)]
@@ -17,6 +25,6 @@ namespace CH.Spartan.MultiTenancy.Dto
 
         [Required]
         [StringLength(User.MaxEmailAddressLength)]
-        public string AdminEmailAddress { get; set; }
+        public string EmailAddress { get; set; }
     }
 }

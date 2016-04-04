@@ -17,9 +17,11 @@
         //修改
         function edit(id) {
             abp.ui.open("/SystemManage/TenantEdit?id=" + id, "修改", {
+                area: ["50%", "50%"],
                 btn: ["确定", '取消'],
                 yes: function(index, layero) {
-                    debugger;
+                    var iframeWin = layero.find("iframe")[0].contentWindow;
+                    iframeWin.saveData();
                 },
                 cancel: function (index) {
                     debugger;

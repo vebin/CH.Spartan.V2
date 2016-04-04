@@ -58,6 +58,15 @@ namespace CH.Spartan.Web
                         "~/Content/js/plugins/table/extensions/export/tableExport.js"
                     )
                 );
+
+            bundles.Add(
+               new ScriptBundle("~/scripts/plugins/validation")
+                   .Include(
+                       "~/Content/js/plugins/validation/jquery.validate.js"
+                   ).Include(
+                       "~/Content/js/plugins/validation/localization/messages_" + currentLanguage + ".js"
+                   )
+               );
         }
     }
 }

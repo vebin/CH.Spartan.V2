@@ -9,6 +9,11 @@ using Abp.Runtime.Validation;
 
 namespace CH.Spartan.Commons.Dto
 {
+    public interface ICountResultRequest
+    {
+        int Count { get; set; }
+    }
+
     public interface IFilterResultRequest
     {
         string SearchText { get; set; }
@@ -24,9 +29,8 @@ namespace CH.Spartan.Commons.Dto
     public class QueryResultRequestInput :
         IDateTimeResultRequest,
         IFilterResultRequest,
-        ISortedResultRequest,
-        IPagedResultRequest,
-        IShouldNormalize
+        ISortedResultRequest
+        
     {
         public DateTime? StarTime { get; set; }
 
@@ -35,6 +39,32 @@ namespace CH.Spartan.Commons.Dto
         public string SearchText { get; set; }
 
         public string Sorting { get; set; }
+        
+    }
+
+    public class QueryListResultRequestInput : QueryResultRequestInput, 
+        ICountResultRequest, 
+        IShouldNormalize
+    {
+        public int Count { get; set; }
+
+        public void Normalize()
+        {
+            if (Sorting.IsNullOrEmpty())
+            {
+                Sorting = SpartanConsts.DefaultSorting;
+            }
+            if (Count == 0)
+            {
+                Count = SpartanConsts.DefaultMaxResultCount;
+            }
+        }
+    }
+
+    public class QueryPagedResultRequestInput : QueryResultRequestInput, 
+        IPagedResultRequest, 
+        IShouldNormalize
+    {
 
         public int MaxResultCount { get; set; }
 

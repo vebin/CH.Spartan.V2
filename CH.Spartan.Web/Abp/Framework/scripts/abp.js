@@ -1,4 +1,5 @@
-﻿var abp = abp || {};
+﻿/*请不要更新此文件 已经做修改 by chenhuan*/
+var abp = abp || {};
 (function ($) {
 
     /* Application paths *****************************************/
@@ -569,5 +570,25 @@
         //alternative for $.isFunction
         return !!(obj && obj.constructor && obj.call && obj.apply);
     };
+
+    abp.utils.getFormData = function (form) {
+        var serializeObj = {};
+        var $this = $(form);
+        var array = $this.serializeArray();
+        var str = $this.serialize();
+        $(array).each(function() {
+            if (serializeObj[this.name]) {
+                if ($.isArray(serializeObj[this.name])) {
+                    serializeObj[this.name].push(this.value);
+                } else {
+                    serializeObj[this.name] = [serializeObj[this.name], this.value];
+                }
+            } else {
+                serializeObj[this.name] = this.value;
+            }
+        });
+        return serializeObj;
+    }
+
 
 })(jQuery);

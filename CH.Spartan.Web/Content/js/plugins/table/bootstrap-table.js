@@ -1,6 +1,7 @@
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>
  * version: 1.10.1
+ * 本版本是经过修改过 专门适配ABP框架的 请勿更新 by chenhuan
  * https://github.com/wenzhixin/bootstrap-table/
  */
 
@@ -308,7 +309,7 @@
         striped: false,
         columns: [[]],
         data: [],
-        //totalField: 'result.totalCount',
+        //totalField: 'result.totalCount',不再用这个参数 已经使用固定参数
         //dataField: 'result.items',
         method: 'get',
         url: undefined,
@@ -330,13 +331,13 @@
         totalRows: 0, // server side need to set
         pageNumber: 1,
         pageSize: 10,
-        pageList: [10, 25, 50, 100],
+        pageList: [10, 25, 50],
         paginationHAlign: 'right', //right, left
         paginationVAlign: 'bottom', //bottom, top, both
         paginationDetailHAlign: 'left', //right, left
         paginationPreText: '&lsaquo;',
         paginationNextText: '&rsaquo;',
-        search: true,
+        search: false,
         searchOnEnterKey: false,
         strictSearch: false,
         searchAlign: 'right',

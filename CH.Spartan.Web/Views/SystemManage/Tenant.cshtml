@@ -7,36 +7,91 @@
 {
     @Scripts.Render("~/scripts/plugins/table")
     <script type="text/javascript">
+        //操作
+        function formatterOp(value, row, index) {
+            var edit = '<i class="btn-op fa fa-edit" title="编辑" onclick="edit(\'' + row.id + '\')"></i>';
+            var del = '<i class="btn-op fa fa-trash-o" title="删除" onclick="del(\'' + row.id + '\')"></i>';
+            return edit + del;
+        }
+
+        //修改
+        function edit(id) {
+
+
+        }
+        //删除
+        function del(ids) {
+
+
+        }
+
         $(function() {
-           
-        })
+            $("#btn-search").click(function() {
+                var args =
+                {
+                    query: abp.utils.getFormData("#form")
+                }
+                $("#table").bootstrapTable("refresh", args);
+            });
+
+            //添加
+            $("#btn-add").click(function () {
+                
+            });
+
+            //删除
+            $("#btn-del").click(function () {
+                
+            });
+        });
     </script>
 }
-
-    <div class="ibox float-e-margins">
-        <div class="ibox-content">
-            <div class="btn-group hidden-xs" id="tableToolbar" role="group">
-                <button type="button" class="btn btn-outline btn-default">
-                    <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
-                </button>
-                <button type="button" class="btn btn-outline btn-default">
-                    <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
-                </button>
+<div class="wrapper wrapper-content animated lightSpeedIn list">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content list-toolbar">
+                    <form role="form" class="form-inline" id="form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="请输入租户名或者昵称" name="SearchText">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" id="btn-search">查询</button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="ibox-content list-content">
+                    <div class="btn-group hidden-xs" id="tableToolbar" role="group">
+                        <button type="button" class="btn btn-outline btn-default" id="btn-add">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline btn-default" id="btn-del">
+                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <table id="table"
+                           data-toggle="table"
+                           data-url="/SystemManage/TenantSearch"
+                           data-toolbar="#tableToolbar"
+                           data-height="550"
+                           data-show-export="true">
+                        <thead>
+                            <tr>
+                                <th data-field="state" data-checkbox="true"></th>
+                                <th data-field="id" data-sortable="true" data-width="50">编号</th>
+                                <th data-field="op" data-formatter="formatterOp" data-width="60">操作</th>
+                                <th data-field="tenancyName" data-sortable="true">租户名</th>
+                                <th data-field="name" data-sortable="true">租户昵称</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
             </div>
-            <table data-toggle="table"
-                   data-url="/SystemManage/TenantSearch"
-                   data-toolbar="#tableToolbar"
-                   data-height="600" 
-                   data-show-export="true">
-                <thead>
-                    <tr>
-                        <th data-field="state" data-checkbox="true"></th>
-                        <th data-field="id" data-sortable="true" data-filter-control="select">ID</th>
-                        <th data-field="name" data-sortable="true" data-filter-control="datepicker">姓名</th>
-                    </tr>
-                </thead>
-            </table>
         </div>
     </div>
+</div>
+
 
 

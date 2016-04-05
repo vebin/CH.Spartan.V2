@@ -20,6 +20,10 @@ namespace CH.Spartan.MultiTenancy.Dto
         [StringLength(Tenant.MaxNameLength)]
         public string Name { get; set; }
 
+        [Required]
+        [StringLength(Tenant.MaxPhoneLength)]
+        public string Phone { get; set; }
+
         public int? EditionId { get; set; }
 
         public bool IsActive { get; set; }

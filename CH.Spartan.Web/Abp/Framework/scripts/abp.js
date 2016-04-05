@@ -409,6 +409,9 @@ var abp = abp || {};
         abp.log.warn('abp.window.open is not implemented!');
     };
 
+    abp.ui.close = function () {
+        abp.log.warn('abp.window.close is not implemented!');
+    };
 
     /* SIMPLE EVENT BUS *****************************************/
 

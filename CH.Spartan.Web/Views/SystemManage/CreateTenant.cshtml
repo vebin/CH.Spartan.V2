@@ -1,39 +1,33 @@
 ﻿@using System.Web.Optimization
-@model CH.Spartan.MultiTenancy.Dto.EditTenantOutput
+@model CH.Spartan.MultiTenancy.Dto.CreateTenantOutput
 @section scripts
 {
     @Scripts.Render("~/scripts/plugins/validation")
     <script type="text/javascript">
-
-        $.validator.setDefaults(
-        {
-            highlight: function (e) {
-                $(e).closest(".form-group").removeClass("has-success").addClass("has-error");
-            },
-            success: function (e) {
-                e.closest(".form-group").removeClass("has-error").addClass("has-success");
-            },
-            errorElement: "span",
-            errorPlacement: function (e, r) {
-                e.appendTo(r.is(":radio") || r.is(":checkbox") ? r.parent().parent().parent() : r.parent());
-            },
-            errorClass: "help-block m-b-none",
-            validClass: "help-block m-b-none"
-        });
-
-        var from;
+        var from = $("#form");
         (function ($) {
             if (!$) {
                 return;
             }
-
-            from = $("#form").validate();
+            from.validate({
+                submitHandler: function (form) {
+                    var data =
+                    {
+                        tenant: abp.utils.getFormData(form)
+                    };
+                    debugger;
+                    abp.ajax({
+                        url: "/SystemManage/CreateTenant",
+                        data: JSON.stringify(data)
+                    }).done(function (result) {
+                        abp.ui.close();
+                    });
+                }
+            });
         })(jQuery);
 
         function saveData() {
-            //abp.message.success("fdsa");
-            //var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
-            //parent.layer.close(index); //再执行关闭    
+            from.submit();
         }
     </script>
 }
@@ -42,21 +36,27 @@
     <div class="ibox-content">
         <form class="form-horizontal m-t" id="form">
             <div class="form-group">
-                <label class="col-sm-3 control-label">昵称：</label>
+                <label class="col-sm-3 control-label">@L("公司名")：</label>
                 <div class="col-sm-8">
                     <input name="name" class="form-control" type="text" required value="@Model.Tenant.Name">
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-3 control-label">用户名：</label>
+                <label class="col-sm-3 control-label">@L("用户名")：</label>
                 <div class="col-sm-8">
                     <input name="tenancyName" class="form-control" type="text" required value="@Model.Tenant.TenancyName">
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-3 control-label">E-mail：</label>
+                <label class="col-sm-3 control-label">@L("邮件")：</label>
                 <div class="col-sm-8">
                     <input name="emailAddress" class="form-control" type="text" required value="@Model.Tenant.EmailAddress">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">@L("电话")：</label>
+                <div class="col-sm-8">
+                    <input name="phone" class="form-control" type="text" required value="@Model.Tenant.Phone">
                 </div>
             </div>
         </form>

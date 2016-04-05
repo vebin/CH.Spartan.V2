@@ -120,4 +120,9 @@
         dialog.open(args);
     };
 
+    abp.ui.close = function () {
+        var index = dialog.getFrameIndex(window.name);
+        dialog.close(index);
+    };
+
 })();

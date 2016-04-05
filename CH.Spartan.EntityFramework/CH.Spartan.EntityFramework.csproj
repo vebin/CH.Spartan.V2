@@ -125,9 +125,9 @@
   <ItemGroup>
     <Compile Include="EntityFramework\SpartanDbContext.cs" />
     <Compile Include="EntityFramework\Repositories\SpartanRepositoryBase.cs" />
-    <Compile Include="Migrations\201604020821337_init.cs" />
-    <Compile Include="Migrations\201604020821337_init.Designer.cs">
-      <DependentUpon>201604020821337_init.cs</DependentUpon>
+    <Compile Include="Migrations\201604050847316_Init.cs" />
+    <Compile Include="Migrations\201604050847316_Init.Designer.cs">
+      <DependentUpon>201604050847316_Init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="SpartanDataModule.cs" />
@@ -142,11 +142,6 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201604020821337_init.resx">
-      <DependentUpon>201604020821337_init.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Abp\Abp.EntityFramework\Abp.EntityFramework.csproj">
@@ -169,6 +164,11 @@
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>CH.Spartan.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201604050847316_Init.resx">
+      <DependentUpon>201604050847316_Init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

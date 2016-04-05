@@ -1,6 +1,6 @@
 namespace CH.Spartan.Authorization.Roles
 {
-    public static class RoleNames
+    public static class StaticRoleNames
     {
         public static class Host
         {

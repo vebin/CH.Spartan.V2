@@ -20,7 +20,7 @@
     </DbProviderFactories>
   </system.data>
 
-3.生成迁移文件 先配置Configuration文件 使用mysql生成器 然后执行 Add-Migration init 和 Update-Database
+3.设置CH.Spartan.Web 为启动项目(必须) 生成迁移文件 先配置Configuration文件 使用mysql生成器 然后执行 Add-Migration init 和 Update-Database
     internal sealed class Configuration : DbMigrationsConfiguration<Spartan.EntityFramework.SpartanDbContext>
     {
         public Configuration()

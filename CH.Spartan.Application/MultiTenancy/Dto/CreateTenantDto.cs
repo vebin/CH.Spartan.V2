@@ -26,6 +26,10 @@ namespace CH.Spartan.MultiTenancy.Dto
         [StringLength(User.MaxEmailAddressLength)]
         public string EmailAddress { get; set; }
 
+        [Required]
+        [StringLength(Tenant.MaxPhoneLength)]
+        public string Phone { get; set; }
+
         public int? EditionId { get; set; }
     }
 

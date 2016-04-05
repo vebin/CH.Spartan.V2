@@ -5,7 +5,7 @@ namespace CH.Spartan.Migrations
     using System.Data.Entity.Infrastructure.Annotations;
     using System.Data.Entity.Migrations;
     
-    public partial class init : DbMigration
+    public partial class Init : DbMigration
     {
         public override void Up()
         {
@@ -343,6 +343,8 @@ namespace CH.Spartan.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
+                        Balance = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        Phone = c.String(nullable: false, maxLength: 64, storeType: "nvarchar"),
                         TenancyName = c.String(nullable: false, maxLength: 64, storeType: "nvarchar"),
                         EditionId = c.Int(),
                         Name = c.String(nullable: false, maxLength: 128, storeType: "nvarchar"),

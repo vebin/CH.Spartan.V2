@@ -64,6 +64,8 @@ namespace CH.Spartan.Web
                    .Include(
                        "~/Content/js/plugins/validation/jquery.validate.js"
                    ).Include(
+                       "~/Content/js/plugins/validation/jquery.validate.default.js"
+                   ).Include(
                        "~/Content/js/plugins/validation/localization/messages_" + currentLanguage + ".js"
                    )
                );

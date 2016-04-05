@@ -62,11 +62,11 @@ namespace CH.Spartan.MultiTenancy
                 await CurrentUnitOfWork.SaveChangesAsync();
 
                 //把租户的部分权限赋予  管理员角色
-                var adminRole = _roleManager.Roles.Single(r => r.Name == RoleNames.Tenants.Admin);
+                var adminRole = _roleManager.Roles.Single(r => r.Name == StaticRoleNames.Tenants.Admin);
                 await _roleManager.GrantAllAdminPermissionsAsync(adminRole);
 
                 //把租户的部分权限赋予 普通用户角色
-                var userRole = _roleManager.Roles.Single(r => r.Name == RoleNames.Tenants.User);
+                var userRole = _roleManager.Roles.Single(r => r.Name == StaticRoleNames.Tenants.User);
                 await _roleManager.GrantAllUserPermissionsAsync(userRole);
 
                 using (CurrentUnitOfWork.DisableFilter(AbpDataFilters.MayHaveTenant))
@@ -75,9 +75,15 @@ namespace CH.Spartan.MultiTenancy
                     var adminUser = User.CreateTenantAdminUser(tenant.Id, input.Tenant.TenancyName, input.Tenant.EmailAddress, User.DefaultPassword);
                     CheckErrors(await UserManager.CreateAsync(adminUser));
                     await CurrentUnitOfWork.SaveChangesAsync();
-                    //给管理员赋予管理员角色
-                    CheckErrors(await UserManager.AddToRoleAsync(adminUser.Id, adminRole.Name));
-                    await CurrentUnitOfWork.SaveChangesAsync();
+                    using (CurrentUnitOfWork.EnableFilter(AbpDataFilters.MayHaveTenant))
+                    {
+                        using ( CurrentUnitOfWork.SetFilterParameter(AbpDataFilters.MayHaveTenant,AbpDataFilters.Parameters.TenantId, tenant.Id))
+                        {
+                            //给管理员赋予管理员角色
+                            CheckErrors(await UserManager.AddToRoleAsync(adminUser.Id, adminRole.Name));
+                            await CurrentUnitOfWork.SaveChangesAsync();
+                        }
+                    }
                 }
 
             }

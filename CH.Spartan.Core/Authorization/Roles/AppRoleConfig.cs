@@ -11,7 +11,7 @@ namespace CH.Spartan.Authorization.Roles
 
             roleManagementConfig.StaticRoles.Add(
                 new StaticRoleDefinition(
-                    RoleNames.Host.Admin,
+                    StaticRoleNames.Host.Admin,
                     MultiTenancySides.Host)
                 );
 
@@ -19,13 +19,13 @@ namespace CH.Spartan.Authorization.Roles
 
             roleManagementConfig.StaticRoles.Add(
                 new StaticRoleDefinition(
-                    RoleNames.Tenants.Admin,
+                    StaticRoleNames.Tenants.Admin,
                     MultiTenancySides.Tenant)
                 );
 
             roleManagementConfig.StaticRoles.Add(
               new StaticRoleDefinition(
-                  RoleNames.Tenants.User,
+                  StaticRoleNames.Tenants.User,
                   MultiTenancySides.Tenant)
               );
         }

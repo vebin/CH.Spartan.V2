@@ -26,5 +26,16 @@
     <text name="联系我们" value="Contact us" />
     <text name="安全退出" value="Login Out" />
 
+
+    <text name="租户" value="Tenant" />
+
+    <text name="添加" value="Create" />
+    <text name="修改" value="Edit" />
+    <text name="删除" value="Delete" />
+
+    <text name="确定" value="OK" />
+    <text name="保存" value="Save" />
+    <text name="取消" value="Cancel" />
+
   </texts>
 </localizationDictionary>

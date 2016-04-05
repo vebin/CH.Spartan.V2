@@ -17,7 +17,7 @@
         //添加
         function create() {
             abp.ui.open("/SystemManage/CreateTenant", "@L("添加")@L("租户")", {
-                area: ["50%", "50%"],
+                area: ["30%", "50%"],
                 btn: ["@L("确定")", '@L("取消")'],
                 yes: function(index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
@@ -58,7 +58,7 @@
                 abp.ajax({
                     url: "/SystemManage/DeleteTenant",
                     data: JSON.stringify(ids)
-                }).done(function(data) {
+                }).done(function (result) {
                     debugger;
                 });
             });

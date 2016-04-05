@@ -29,10 +29,10 @@ namespace CH.Spartan.Migrations.SeedData
         private void CreateUserAndRoles()
         {
             //添加 租主管理员角色 静态(该角色不允许更改权限)
-            var adminRoleForHost = _context.Roles.FirstOrDefault(r => r.TenantId == null && r.Name == RoleNames.Host.Admin);
+            var adminRoleForHost = _context.Roles.FirstOrDefault(r => r.TenantId == null && r.Name == StaticRoleNames.Host.Admin);
             if (adminRoleForHost == null)
             {
-                adminRoleForHost = _context.Roles.Add(new Role { Name = RoleNames.Host.Admin, DisplayName = RoleNames.Host.Admin, IsStatic = true });
+                adminRoleForHost = _context.Roles.Add(new Role { Name = StaticRoleNames.Host.Admin, DisplayName = StaticRoleNames.Host.Admin, IsStatic = true });
                 _context.SaveChanges();
 
                 //分配所有 租主权限 给租主管理员角色

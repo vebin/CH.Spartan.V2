@@ -61,7 +61,7 @@ namespace CH.Spartan.Commons.Dto
         }
     }
 
-    public class QueryPagedResultRequestInput : QueryResultRequestInput, 
+    public class QueryListPagedResultRequestInput : QueryResultRequestInput, 
         IPagedResultRequest, 
         IShouldNormalize
     {

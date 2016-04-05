@@ -9,14 +9,52 @@ namespace CH.Spartan.MultiTenancy
 {
     public interface ITenantAppService : IApplicationService
     {
-        Task<ListResultOutput<TenantListDto>> GetTenantList(GetTenantListInput input);
+        /// <summary>
+        /// 获取 集合
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task<ListResultOutput<GetTenantListDto>> GetTenantListAsync(GetTenantListInput input);
 
-        Task<PagedResultOutput<TenantListDto>> GetTenantPaged(GetTenantPagedInput input);
+        /// <summary>
+        /// 获取 集合 分页
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task<PagedResultOutput<GetTenantListDto>> GetTenantListPagedAsync(GetTenantListPagedInput input);
 
-        Task EditTenant(EditTenantInput input);
+        /// <summary>
+        /// 添加
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task CreateTenantAsync(CreateTenantInput input);
 
-        Task<EditTenantOutput> FetchTenant(NullableIdInput input);
+        /// <summary>
+        /// 更新
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task UpdateTenantAsync(UpdateTenantInput input);
 
-        Task DeleteTenant(List<IdInput> input);
+        /// <summary>
+        /// 获取 新对象
+        /// </summary>
+        /// <returns></returns>
+        CreateTenantOutput GetNewTenant();
+
+        /// <summary>
+        /// 获取 更新对象
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task<UpdateTenantOutput> GetUpdateTenantAsync(IdInput input);
+
+        /// <summary>
+        /// 删除
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task DeleteTenantAsync(List<IdInput> input);
     }
 }

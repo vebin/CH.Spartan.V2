@@ -31,27 +31,14 @@ namespace CH.Spartan.Authorization.Roles
             _permissionManager = permissionManager;
         }
 
-        public async Task<IdentityResult> CreateUserRoles(int tenantId)
-        {
-            var role = new Role()
-            {
-                Name = RoleNames.Tenants.User,
-                DisplayName = RoleNames.Tenants.User,
-                IsDefault = true,
-                TenantId = tenantId
-            };
-            await CreateAsync(role);
-            return IdentityResult.Success;
-        }
-
         public async Task GrantAllUserPermissionsAsync(Role role)
         {
             var permissions =
-                _permissionManager.GetAllPermissions(MultiTenancySides.Tenant).Where(p => !p.Name.IsIn(
-                    PermissionNames.PlatformManages,
-                    PermissionNames.PlatformManages_Device, 
-                    PermissionNames.PlatformManages_User,
-                    PermissionNames.PlatformManages_Role));
+                _permissionManager.GetAllPermissions(MultiTenancySides.Tenant).Where(p =>
+                    !p.Name.StartsWith(PermissionNames.PlatformManages)&&
+                    !p.Name.Equals(PermissionNames.MySettings_Device_Create) &&
+                    !p.Name.Equals(PermissionNames.MySettings_Device_Delete)
+                    );
             await SetGrantedPermissionsAsync(role,permissions);
         }
     }

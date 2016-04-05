@@ -22,6 +22,12 @@ namespace CH.Spartan.Authorization.Roles
                     RoleNames.Tenants.Admin,
                     MultiTenancySides.Tenant)
                 );
+
+            roleManagementConfig.StaticRoles.Add(
+              new StaticRoleDefinition(
+                  RoleNames.Tenants.User,
+                  MultiTenancySides.Tenant)
+              );
         }
     }
 }

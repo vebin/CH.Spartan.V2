@@ -25,5 +25,17 @@
     <text name="修改密码" value="修改密码" />
     <text name="联系我们" value="联系我们" />
     <text name="安全退出" value="安全退出" />
+    
+    <text name="租户" value="租户" />
+    
+    <text name="添加" value="添加" />
+    <text name="修改" value="修改" />
+    <text name="删除" value="删除" />
+
+    <text name="确定" value="确定" />
+    <text name="保存" value="保存" />
+    <text name="取消" value="取消" />
+    
+    
   </texts>
 </localizationDictionary>

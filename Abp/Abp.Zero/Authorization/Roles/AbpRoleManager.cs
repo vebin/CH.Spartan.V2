@@ -392,8 +392,8 @@ namespace Abp.Authorization.Roles
 
             return role;
         }
-
-        public async Task GrantAllPermissionsAsync(TRole role)
+        
+        public async Task GrantAllAdminPermissionsAsync(TRole role)
         {
             var permissions = _permissionManager.GetAllPermissions(role.GetMultiTenancySide());
             await SetGrantedPermissionsAsync(role, permissions);

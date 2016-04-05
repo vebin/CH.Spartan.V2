@@ -9,13 +9,32 @@
         public const string Homes_MileageReport = "Homes.MileageReport";
 
         public const string MySettings = "MySettings";
+
         public const string MySettings_Device = "MySettings.Device";
+        public const string MySettings_Device_Create = "MySettings.Device.Create";
+        public const string MySettings_Device_Update = "MySettings.Device.Update";
+        public const string MySettings_Device_Delete = "MySettings.Device.Delete";
+
         public const string MySettings_Area = "MySettings.Area";
+        public const string MySettings_Area_Create = "MySettings.Area.Create";
+        public const string MySettings_Area_Update = "MySettings.Area.Update";
+        public const string MySettings_Area_Delete = "MySettings.Area.Delete";
 
         public const string PlatformManages = "PlatformManages";
         public const string PlatformManages_User = "PlatformManages.User";
+        public const string PlatformManages_User_Create = "PlatformManages.User.Create";
+        public const string PlatformManages_User_Update = "PlatformManages.User.Update";
+        public const string PlatformManages_User_Delete = "PlatformManages.User.Delete";
+
         public const string PlatformManages_Role = "PlatformManages.Role";
+        public const string PlatformManages_Role_Create = "PlatformManages.Role.Create";
+        public const string PlatformManages_Role_Update = "PlatformManages.Role.Update";
+        public const string PlatformManages_Role_Delete = "PlatformManages.Role.Delete";
+
         public const string PlatformManages_Device = "PlatformManages.Device";
+        public const string PlatformManages_Device_Create = "PlatformManages.Device.Create";
+        public const string PlatformManages_Device_Update = "PlatformManages.Device.Update";
+        public const string PlatformManages_Device_Delete = "PlatformManages.Device.Delete";
 
         public const string SystemManages = "SystemManages";
         public const string SystemManages_Tenant = "SystemManages.Tenant";

@@ -66,10 +66,10 @@ namespace CH.Spartan.Migrations.SeedData
                     new User
                     {
                         TenantId = null,
-                        UserName = "admin",
-                        Name = "admin",
-                        Surname = "admin",
-                        EmailAddress = "admin@aspnetboilerplate.com",
+                        UserName = User.AdminUserName,
+                        Name = User.AdminUserName,
+                        Surname = "管理员",
+                        EmailAddress = "hhahh2011@gmail.com",
                         IsEmailConfirmed = true,
                         Password = new PasswordHasher().HashPassword(User.DefaultPassword)
                     });
@@ -77,62 +77,6 @@ namespace CH.Spartan.Migrations.SeedData
                 _context.SaveChanges();
                 //给租主 赋予租主管理员角色
                 _context.UserRoles.Add(new UserRole(adminUserForHost.Id, adminRoleForHost.Id));
-                _context.SaveChanges();
-            }
-
-            //添加租户
-            var defaultTenant = _context.Tenants.FirstOrDefault(t => t.TenancyName == "yugps");
-            if (defaultTenant == null)
-            {
-                defaultTenant = _context.Tenants.Add(new Tenant { TenancyName = "yugps", Name = "深圳羽衡科技有限公司"});
-                _context.SaveChanges();
-            }
-
-            //添加租户 管理员角色 静态(该角色不允许更改权限)
-            var adminRoleForDefaultTenant = _context.Roles.FirstOrDefault(r => r.TenantId == defaultTenant.Id && r.Name == RoleNames.Tenants.Admin);
-            if (adminRoleForDefaultTenant == null)
-            {
-                adminRoleForDefaultTenant = _context.Roles.Add(new Role { TenantId = defaultTenant.Id, Name = RoleNames.Tenants.Admin, DisplayName = RoleNames.Tenants.Admin, IsStatic = true });
-                _context.SaveChanges();
-
-                var permissions = PermissionFinder
-                    .GetAllPermissions(new SpartanAuthorizationProvider())
-                    .Where(p => p.MultiTenancySides.HasFlag(MultiTenancySides.Tenant))
-                    .ToList();
-
-                foreach (var permission in permissions)
-                {
-                    if (!permission.IsGrantedByDefault)
-                    {
-                        _context.Permissions.Add(
-                            new RolePermissionSetting
-                            {
-                                Name = permission.Name,
-                                IsGranted = true,
-                                RoleId = adminRoleForDefaultTenant.Id
-                            });
-                    }
-                }
-                _context.SaveChanges();
-            }
-
-            //添加租户 用户
-            var adminUserForDefaultTenant = _context.Users.FirstOrDefault(u => u.TenantId == defaultTenant.Id && u.UserName == User.AdminUserName);
-            if (adminUserForDefaultTenant == null)
-            {
-                adminUserForDefaultTenant = _context.Users.Add(
-                    new User
-                    {
-                        TenantId = defaultTenant.Id,
-                        UserName = "yugps",
-                        Name = "yugps",
-                        Surname = "yugps",
-                        EmailAddress = "admin@aspnetboilerplate.com",
-                        IsEmailConfirmed = true,
-                        Password = new PasswordHasher().HashPassword(User.DefaultPassword)
-                    });
-                _context.SaveChanges();
-                _context.UserRoles.Add(new UserRole(adminUserForDefaultTenant.Id, adminRoleForDefaultTenant.Id));
                 _context.SaveChanges();
             }
         }

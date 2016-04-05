@@ -23,21 +23,67 @@ namespace CH.Spartan.Web.Controllers
             _tenantAppService = tenantAppService;
         }
 
+        #region 租户
+
+        #region 首页
         public ActionResult Tenant()
         {
             return View();
         }
+        #endregion
 
-        public async Task<JsonResult> TenantSearch(GetTenantPagedInput input)
+        #region 搜索
+
+        [HttpGet]
+        public async Task<JsonResult> SearchTenant(GetTenantListPagedInput input)
         {
-            var result = await _tenantAppService.GetTenantPaged(input);
-            return Json(result,JsonRequestBehavior.AllowGet);
+            var result = await _tenantAppService.GetTenantListPagedAsync(input);
+            return Json(result, JsonRequestBehavior.AllowGet);
         }
+        #endregion
 
-        public async Task<ActionResult> TenantEdit(NullableIdInput input)
+        #region 添加
+        [HttpGet]
+        public ActionResult CreateTenant()
         {
-            var result = await _tenantAppService.FetchTenant(input);
+            var result = _tenantAppService.GetNewTenant();
             return View(result);
         }
+
+        [HttpPost]
+        public async Task<JsonResult> CreateTenant(CreateTenantInput input)
+        {
+            await _tenantAppService.CreateTenantAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+        #region 更新
+        [HttpGet]
+        public ActionResult UpdateTenant(IdInput input)
+        {
+            var result = _tenantAppService.GetUpdateTenantAsync(input);
+            return View(result);
+        }
+
+        [HttpPost]
+        public async Task<JsonResult> UpdateTenant(UpdateTenantInput input)
+        {
+            await _tenantAppService.UpdateTenantAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+        #region 删除
+        [HttpPost]
+        public async Task<JsonResult> DeleteTenant(List<IdInput> input)
+        {
+            await _tenantAppService.DeleteTenantAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+
+        #endregion
     }
 }

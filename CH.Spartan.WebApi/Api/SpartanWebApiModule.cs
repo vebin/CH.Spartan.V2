@@ -15,9 +15,9 @@ namespace CH.Spartan.Api
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
 
-            DynamicApiControllerBuilder
-                .ForAll<IApplicationService>(typeof(SpartanApplicationModule).Assembly, "app")
-                .Build();
+            //DynamicApiControllerBuilder
+            //    .ForAll<IApplicationService>(typeof(SpartanApplicationModule).Assembly, "app")
+            //    .Build();
 
             Configuration.Modules.AbpWebApi().HttpConfiguration.Filters.Add(new HostAuthenticationFilter("Bearer"));
         }

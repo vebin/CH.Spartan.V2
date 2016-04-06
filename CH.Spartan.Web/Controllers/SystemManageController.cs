@@ -6,14 +6,18 @@ using System.Web;
 using System.Web.Mvc;
 using Abp.Application.Services.Dto;
 using Abp.Web.Models;
+using Abp.Web.Mvc.Authorization;
 using Abp.Web.Mvc.Models;
 using Abp.WebApi.Authorization;
+using CH.Spartan.Authorization;
 using CH.Spartan.MultiTenancy;
 using CH.Spartan.MultiTenancy.Dto;
 
 namespace CH.Spartan.Web.Controllers
 {
-    [AbpApiAuthorize]
+
+
+    [AbpMvcAuthorize(PermissionNames.SystemManages)]
     public class SystemManageController : SpartanControllerBase
     {
         private readonly ITenantAppService _tenantAppService;
@@ -26,6 +30,7 @@ namespace CH.Spartan.Web.Controllers
         #region 租户
 
         #region 首页
+        [AbpMvcAuthorize(PermissionNames.SystemManages_Tenant)]
         public ActionResult Tenant()
         {
             return View();
@@ -35,6 +40,7 @@ namespace CH.Spartan.Web.Controllers
         #region 搜索
 
         [HttpGet]
+        [AbpMvcAuthorize(PermissionNames.SystemManages_Tenant)]
         public async Task<JsonResult> SearchTenant(GetTenantListPagedInput input)
         {
             var result = await _tenantAppService.GetTenantListPagedAsync(input);
@@ -44,6 +50,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 添加
         [HttpGet]
+        [AbpMvcAuthorize(PermissionNames.SystemManages_Tenant_Create)]
         public ActionResult CreateTenant()
         {
             var result = _tenantAppService.GetNewTenant();
@@ -51,6 +58,7 @@ namespace CH.Spartan.Web.Controllers
         }
 
         [HttpPost]
+        [AbpMvcAuthorize(PermissionNames.SystemManages_Tenant_Create)]
         public async Task<JsonResult> CreateTenant(CreateTenantInput input)
         {
             await _tenantAppService.CreateTenantAsync(input);
@@ -60,13 +68,15 @@ namespace CH.Spartan.Web.Controllers
 
         #region 更新
         [HttpGet]
-        public ActionResult UpdateTenant(IdInput input)
+        [AbpMvcAuthorize(PermissionNames.SystemManages_Tenant_Update)]
+        public async Task<ActionResult> UpdateTenant(IdInput input)
         {
-            var result = _tenantAppService.GetUpdateTenantAsync(input);
+            var result = await _tenantAppService.GetUpdateTenantAsync(input);
             return View(result);
         }
 
         [HttpPost]
+        [AbpMvcAuthorize(PermissionNames.SystemManages_Tenant_Update)]
         public async Task<JsonResult> UpdateTenant(UpdateTenantInput input)
         {
             await _tenantAppService.UpdateTenantAsync(input);
@@ -76,6 +86,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 删除
         [HttpPost]
+        [AbpMvcAuthorize(PermissionNames.SystemManages_Tenant_Delete)]
         public async Task<JsonResult> DeleteTenant(List<IdInput> input)
         {
             await _tenantAppService.DeleteTenantAsync(input);

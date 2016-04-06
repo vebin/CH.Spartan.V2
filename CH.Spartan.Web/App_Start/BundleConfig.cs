@@ -42,12 +42,12 @@ namespace CH.Spartan.Web
 
 
             bundles.Add(
-                new StyleBundle("~/styles/plugins/table")
+                new StyleBundle("~/styles/plugins/list")
                 .Include("~/Content/js/plugins/table/bootstrap-table.css", new CssRewriteUrlTransform())
                 );
 
             bundles.Add(
-                new ScriptBundle("~/scripts/plugins/table")
+                new ScriptBundle("~/scripts/plugins/list")
                     .Include(
                         "~/Content/js/plugins/table/bootstrap-table.js"
                     ).Include(
@@ -60,13 +60,28 @@ namespace CH.Spartan.Web
                 );
 
             bundles.Add(
-               new ScriptBundle("~/scripts/plugins/validation")
+                new StyleBundle("~/styles/plugins/edit")
+                .Include("~/Content/js/plugins/icheck/skins/all.css", new CssRewriteUrlTransform())
+                .Include("~/Content/js/plugins/layer/laydate/need/laydate.css", new CssRewriteUrlTransform())
+                .Include("~/Content/js/plugins/layer/laydate/skins/default/laydate.css", new CssRewriteUrlTransform())
+                );
+
+            bundles.Add(
+               new ScriptBundle("~/scripts/plugins/edit")
                    .Include(
                        "~/Content/js/plugins/validation/jquery.validate.js"
                    ).Include(
                        "~/Content/js/plugins/validation/jquery.validate.default.js"
                    ).Include(
                        "~/Content/js/plugins/validation/localization/messages_" + currentLanguage + ".js"
+                   ).Include(
+                       "~/Content/js/plugins/icheck/icheck.min.js"
+                   ).Include(
+                       "~/Content/js/plugins/icheck/icheck.min.default.js"
+                   ).Include(
+                       "~/Content/js/plugins/layer/laydate/laydate.js"
+                   ).Include(
+                       "~/Content/js/plugins/layer/laydate/laydate.default.js"
                    )
                );
         }

@@ -23,8 +23,8 @@
 <body class="fixed-sidebar full-height-layout" style="overflow: hidden">
     @RenderBody()
     @Scripts.Render("~/scripts")
-    <script src="/api/AbpServiceProxies/GetAll?v=@(Clock.Now.Ticks)"></script>
-    <script src="/AbpScripts/GetScripts?v=@(Clock.Now.Ticks)" type="text/javascript"></script>
+    @*<script src="/api/AbpServiceProxies/GetAll?v=@(Clock.Now.Ticks)"></script>
+    <script src="/AbpScripts/GetScripts?v=@(Clock.Now.Ticks)" type="text/javascript"></script>*@
     <script src="/Content/js/main.js"></script>
     @RenderSection("scripts", required: false)
 </body>

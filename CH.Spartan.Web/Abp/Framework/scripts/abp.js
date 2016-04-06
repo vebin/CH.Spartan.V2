@@ -404,7 +404,10 @@ var abp = abp || {};
         abp.log.warn('abp.ui.clearBusy is not implemented!');
     };
 
-    /*UI WINDOW */
+    /*DIALOG */
+
+    abp.dialog = abp.dialog || {};
+
     abp.dialog.open = function (url, title, options) {
         abp.log.warn('abp.window.open is not implemented!');
     };

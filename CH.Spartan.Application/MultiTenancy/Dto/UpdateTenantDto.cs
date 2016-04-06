@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
+using CH.Spartan.Users;
 
 namespace CH.Spartan.MultiTenancy.Dto
 {
@@ -23,8 +24,6 @@ namespace CH.Spartan.MultiTenancy.Dto
         [Required]
         [StringLength(Tenant.MaxPhoneLength)]
         public string Phone { get; set; }
-
-        public int? EditionId { get; set; }
 
         public bool IsActive { get; set; }
     }

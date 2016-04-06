@@ -61,14 +61,16 @@
         dialog.confirm(message, {
             btn: ["确定", "取消"],
             shade: false
-        }, function () {
+        }, function (index) {
             if (callback) {
                 callback(true);
             }
-        }, function () {
+            dialog.close(index);
+        }, function (index) {
             if (callback) {
                 callback(false);
             }
+            dialog.close(index);
         });
     };
 
@@ -103,7 +105,7 @@
         dialog.close(busy);
     };
 
-    /* WINDOW **************************************************/
+    /* DIALOG **************************************************/
     abp.dialog.open = function (url, title, options) {
         options = options || {};
         var opts =

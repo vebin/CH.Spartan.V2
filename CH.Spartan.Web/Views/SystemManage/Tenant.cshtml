@@ -1,11 +1,11 @@
 ﻿@using System.Web.Optimization
 @section styles
 {
-    @Styles.Render("~/styles/plugins/table")
+    @Styles.Render("~/styles/plugins/list")
 }
 @section scripts
 {
-    @Scripts.Render("~/scripts/plugins/table")
+    @Scripts.Render("~/scripts/plugins/list")
     <script type="text/javascript">
         //操作
         function formatterOp(value, row, index) {
@@ -16,18 +16,18 @@
 
         //添加
         function create() {
-            abp.dialog.open("/SystemManage/CreateTenant", "@L("添加")@L("租户")", {
-                area: ["30%", "50%"],
+            abp.dialog.open("/SystemManage/CreateTenant", "@L("添加租户")", {
+                area: ["30%", "60%"],
                 btn: ["@L("确定")", '@L("取消")'],
                 yes: function(index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
-                    iframeWin.saveData();
+                    iframeWin.submitForm();
                 },
                 cancel: function(index) {
-                    
+
                 },
                 end: function() {
-                     $("#btn-search").click();
+                    $("#btn-search").click();
                 }
             });
         }
@@ -35,15 +35,15 @@
 
         //更新
         function update(id) {
-            abp.dialog.open("/SystemManage/UpdateTenant?id=" + id, "@L("修改")@L("租户")", {
-                area: ["50%", "50%"],
+            abp.dialog.open("/SystemManage/UpdateTenant?id=" + id, "@L("修改租户")", {
+                area: ["30%", "60%"],
                 btn: ["@L("保存")", '@L("取消")'],
                 yes: function(index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
-                    iframeWin.saveData();
+                    iframeWin.submitForm();
                 },
                 cancel: function(index) {
-                    
+
                 },
                 end: function() {
                     $("#btn-search").click();
@@ -53,14 +53,19 @@
 
         //删除
         function del(ids) {
-            abp.message.confirm("@L("确定")@L("删除")?", function(yes) {
-                if (!yes) return;
-                abp.ajax({
-                    url: "/SystemManage/DeleteTenant",
-                    data: JSON.stringify(ids)
-                }).done(function (result) {
-                    debugger;
-                });
+            debugger;
+            if (typeof ids == "string") {
+                ids = [{ id: ids }];
+            }
+            abp.message.confirm("@L("确定删除")?", function(yes) {
+                if (yes) {
+                    abp.ajax({
+                        url: "/SystemManage/DeleteTenant",
+                        data: JSON.stringify(ids)
+                    }).done(function(result) {
+                        $("#btn-search").click();
+                    });
+                }
             });
         }
 
@@ -87,8 +92,8 @@
             $("#btn-del").click(function() {
                 var rows = $("#table").bootstrapTable("getSelections");
                 var ids = [];
-                $.each(rows,function(index, item) {
-                    ids.push(item.id);
+                $.each(rows, function(index, item) {
+                    ids.push({ id: item.id });
                 });
                 del(ids);
             });
@@ -103,9 +108,9 @@
                     <form role="form" class="form-inline" id="form">
                         <div class="form-group">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="请输入租户名或者昵称" name="SearchText">
+                                <input type="text" class="form-control" placeholder="@L("请输入租户名或者昵称")" name="SearchText">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-search">查询</button>
+                                    <button class="btn btn-default" type="button" id="btn-search">@L("查询")</button>
                                 </span>
                             </div>
                         </div>
@@ -129,10 +134,10 @@
                         <thead>
                             <tr>
                                 <th data-field="state" data-checkbox="true"></th>
-                                <th data-field="id" data-sortable="true" data-width="50">编号</th>
-                                <th data-field="op" data-formatter="formatterOp" data-width="60">操作</th>
-                                <th data-field="tenancyName" data-sortable="true">租户名</th>
-                                <th data-field="name" data-sortable="true">租户昵称</th>
+                                <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
+                                <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
+                                <th data-field="tenancyName" data-sortable="true">@L("租户名")</th>
+                                <th data-field="name" data-sortable="true">@L("公司名")</th>
                             </tr>
                         </thead>
                     </table>

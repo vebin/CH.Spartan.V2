@@ -1,8 +1,12 @@
 ﻿@using System.Web.Optimization
 @model CH.Spartan.MultiTenancy.Dto.CreateTenantOutput
+@section styles
+{
+    @Styles.Render("~/styles/plugins/edit")
+}
 @section scripts
 {
-    @Scripts.Render("~/scripts/plugins/validation")
+    @Scripts.Render("~/scripts/plugins/edit")
     <script type="text/javascript">
         var from = $("#form");
         (function ($) {
@@ -15,18 +19,18 @@
                     {
                         tenant: abp.utils.getFormData(form)
                     };
-                    debugger;
                     abp.ajax({
                         url: "/SystemManage/CreateTenant",
                         data: JSON.stringify(data)
                     }).done(function (result) {
+                        abp.message.success("@L("添加成功")");
                         abp.dialog.close();
                     });
                 }
             });
         })(jQuery);
 
-        function saveData() {
+        function submitForm() {
             from.submit();
         }
     </script>
@@ -38,25 +42,25 @@
             <div class="form-group">
                 <label class="col-sm-3 control-label">@L("公司名")：</label>
                 <div class="col-sm-8">
-                    <input name="name" class="form-control" type="text" required value="@Model.Tenant.Name">
+                    <input name="Name" class="form-control" type="text" required value="@Model.Tenant.Name">
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-3 control-label">@L("用户名")：</label>
+                <label class="col-sm-3 control-label">@L("租户名")：</label>
                 <div class="col-sm-8">
-                    <input name="tenancyName" class="form-control" type="text" required value="@Model.Tenant.TenancyName">
+                    <input name="TenancyName" class="form-control" type="text" required value="@Model.Tenant.TenancyName">
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-3 control-label">@L("邮件")：</label>
                 <div class="col-sm-8">
-                    <input name="emailAddress" class="form-control" type="text" required value="@Model.Tenant.EmailAddress">
+                    <input name="EmailAddress" class="form-control" type="text" required value="@Model.Tenant.EmailAddress">
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-3 control-label">@L("电话")：</label>
                 <div class="col-sm-8">
-                    <input name="phone" class="form-control" type="text" required value="@Model.Tenant.Phone">
+                    <input name="Phone" class="form-control" type="text" required value="@Model.Tenant.Phone">
                 </div>
             </div>
         </form>

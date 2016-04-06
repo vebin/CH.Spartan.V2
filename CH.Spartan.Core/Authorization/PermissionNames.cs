@@ -38,6 +38,11 @@
 
         public const string SystemManages = "SystemManages";
         public const string SystemManages_Tenant = "SystemManages.Tenant";
+        public const string SystemManages_Tenant_Create = "SystemManages.Tenant.Create";
+        public const string SystemManages_Tenant_Update = "SystemManages.Tenant.Update";
+        public const string SystemManages_Tenant_Delete = "SystemManages.Tenant.Delete";
+
         public const string SystemManages_AuditLog = "PlatformManages.AuditLog";
+        public const string SystemManages_AuditLog_Delete = "PlatformManages.AuditLog.Delete";
     }
 }

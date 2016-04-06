@@ -36,7 +36,10 @@ namespace CH.Spartan.MultiTenancy
 
         public async Task DeleteTenantAsync(List<IdInput> input)
         {
-            await _tenantRepository.DeleteAsync(p => p.Id.IsIn(input.Select(o => o.Id).ToArray()));
+            foreach (var item in input)
+            {
+                await _tenantRepository.DeleteAsync(item.Id);
+            }
         }
 
         public async Task CreateTenantAsync(CreateTenantInput input)
@@ -104,7 +107,8 @@ namespace CH.Spartan.MultiTenancy
 
         public async Task<UpdateTenantOutput> GetUpdateTenantAsync(IdInput input)
         {
-            return new UpdateTenantOutput((await _tenantRepository.GetAsync(input.Id)).MapTo<UpdateTenantDto>());
+            var result = await _tenantRepository.GetAsync(input.Id);
+            return new UpdateTenantOutput(result.MapTo<UpdateTenantDto>());
         }
 
         public async Task<ListResultOutput<GetTenantListDto>> GetTenantListAsync(GetTenantListInput input)

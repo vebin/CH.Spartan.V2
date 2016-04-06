@@ -2910,3 +2910,1342 @@ DEBUG 2016-04-05 18:24:59,094 [128  ] Abp.Web.SignalR.Hubs.AbpCommonHub        -
 DEBUG 2016-04-05 18:24:59,123 [126  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0aea8012-505b-4d39-a8dc-ee25f496af21
 DEBUG 2016-04-05 18:25:09,984 [102  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: bf8d0aef-4d00-403f-8c4d-a0623c321743
 DEBUG 2016-04-05 18:25:35,020 [128  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0aea8012-505b-4d39-a8dc-ee25f496af21
+DEBUG 2016-04-06 21:40:30,682 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-06 21:40:34,700 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-06 21:40:34,704 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:40:34,711 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-06 21:40:34,759 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 21:40:34,760 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 21:40:34,760 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 21:40:34,760 [1    ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 21:40:35,853 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-06 21:40:35,861 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-06 21:40:35,862 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-06 21:40:35,863 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-06 21:40:35,863 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-06 21:40:35,870 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-06 21:40:35,919 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-06 21:40:35,919 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-06 21:40:35,919 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-06 21:40:35,919 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-06 21:40:35,920 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-06 21:40:35,920 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-06 21:40:35,920 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-06 21:40:35,966 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-06 21:40:36,126 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-06 21:40:36,183 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-06 21:40:36,183 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-06 21:40:36,186 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-06 21:40:36,198 [335e7] Hangfire.Server.Worker                   - Background process 'Worker #5c3335e7' started.
+DEBUG 2016-04-06 21:40:36,198 [41f05] Hangfire.Server.Worker                   - Background process 'Worker #32041f05' started.
+DEBUG 2016-04-06 21:40:36,229 [74006] Hangfire.Server.Worker                   - Background process 'Worker #d6374006' started.
+DEBUG 2016-04-06 21:40:36,232 [1a48d] Hangfire.Server.Worker                   - Background process 'Worker #8af1a48d' started.
+DEBUG 2016-04-06 21:40:36,235 [7b065] Hangfire.Server.Worker                   - Background process 'Worker #a867b065' started.
+DEBUG 2016-04-06 21:40:36,238 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 5 classes defines auto mapping attributes
+DEBUG 2016-04-06 21:40:36,238 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-06 21:40:36,241 [3b7f8] Hangfire.Server.Worker                   - Background process 'Worker #6393b7f8' started.
+DEBUG 2016-04-06 21:40:36,243 [1b73b] Hangfire.Server.Worker                   - Background process 'Worker #8171b73b' started.
+DEBUG 2016-04-06 21:40:36,270 [b6e08] Hangfire.Server.Worker                   - Background process 'Worker #ae1b6e08' started.
+DEBUG 2016-04-06 21:40:36,273 [1170b] Hangfire.Server.Worker                   - Background process 'Worker #a3d1170b' started.
+DEBUG 2016-04-06 21:40:36,277 [3e010] Hangfire.Server.Worker                   - Background process 'Worker #c213e010' started.
+DEBUG 2016-04-06 21:40:36,283 [31543] Hangfire.Server.Worker                   - Background process 'Worker #14a31543' started.
+DEBUG 2016-04-06 21:40:36,309 [f60e2] Hangfire.Server.Worker                   - Background process 'Worker #9a7f60e2' started.
+DEBUG 2016-04-06 21:40:36,311 [ff5b0] Hangfire.Server.Worker                   - Background process 'Worker #615ff5b0' started.
+DEBUG 2016-04-06 21:40:36,313 [582e8] Hangfire.Server.Worker                   - Background process 'Worker #bff582e8' started.
+DEBUG 2016-04-06 21:40:36,339 [bea89] Hangfire.Server.Worker                   - Background process 'Worker #065bea89' started.
+DEBUG 2016-04-06 21:40:36,342 [16f80] Hangfire.Server.Worker                   - Background process 'Worker #6b316f80' started.
+DEBUG 2016-04-06 21:40:36,345 [7e21a] Hangfire.Server.Worker                   - Background process 'Worker #fc97e21a' started.
+DEBUG 2016-04-06 21:40:36,366 [601e7] Hangfire.Server.Worker                   - Background process 'Worker #3ed601e7' started.
+DEBUG 2016-04-06 21:40:36,371 [f3380] Hangfire.Server.Worker                   - Background process 'Worker #d39f3380' started.
+DEBUG 2016-04-06 21:40:36,379 [8b22f] Hangfire.Server.Worker                   - Background process 'Worker #1928b22f' started.
+DEBUG 2016-04-06 21:40:36,419 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-06 21:40:36,427 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-06 21:40:36,675 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-06 21:40:36,685 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2016-04-06 21:40:36,703 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.GetTenantListDto
+DEBUG 2016-04-06 21:40:36,704 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.UpdateTenantDto
+DEBUG 2016-04-06 21:43:23,484 [39   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"876c27a2-77f0-426f-8348-0f612b479322","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-06T21:43:23.4630284+08:00","Properties":{}}
+WARN  2016-04-06 21:43:26,674 [39   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 21:43:26,676 [39   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 21:43:26,676 [39   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 21:43:26,677 [39   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 21:43:26,678 [39   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 21:43:26,679 [39   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 21:43:26,878 [39   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:43:26,880 [39   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:43:26,881 [39   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 21:44:43,839 [6    ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 21:44:43,840 [6    ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 21:44:43,840 [6    ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 21:44:43,841 [6    ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 21:44:43,842 [6    ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 21:44:43,842 [6    ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 21:44:43,843 [6    ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:44:43,845 [6    ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:44:43,846 [6    ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+DEBUG 2016-04-06 21:45:51,411 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"d3633c2f-35a9-4ca3-b002-5f32bfa82577","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-06T21:45:51.4115137+08:00","Properties":{}}
+DEBUG 2016-04-06 21:45:51,470 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: d3633c2f-35a9-4ca3-b002-5f32bfa82577
+WARN  2016-04-06 21:45:53,063 [38   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 21:45:53,063 [38   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 21:45:53,065 [38   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 21:45:53,066 [38   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 21:45:53,067 [38   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 21:45:53,068 [38   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 21:45:53,071 [38   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:45:53,074 [38   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:45:53,078 [38   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 21:45:55,194 [34   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 21:45:55,195 [34   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 21:45:55,196 [34   ] Abp.Logging.LogHelper                    - Can not find '邮件' in localization source 'Spartan'!
+WARN  2016-04-06 21:45:55,197 [34   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 21:45:55,299 [34   ] Abp.Logging.LogHelper                    - Can not find '添加成功' in localization source 'Spartan'!
+DEBUG 2016-04-06 21:46:23,421 [40   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 876c27a2-77f0-426f-8348-0f612b479322
+WARN  2016-04-06 21:47:25,036 [42   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:25,036 [42   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:25,037 [42   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:25,038 [42   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:25,038 [42   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:25,039 [42   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:25,042 [42   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:25,043 [42   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:25,044 [42   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:26,851 [6    ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:26,851 [6    ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:26,852 [6    ] Abp.Logging.LogHelper                    - Can not find '邮件' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:26,852 [6    ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:26,853 [6    ] Abp.Logging.LogHelper                    - Can not find '添加成功' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:40,703 [39   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:40,704 [39   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:40,705 [39   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:40,706 [39   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:40,706 [39   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:40,707 [39   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:40,709 [39   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:40,711 [39   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:40,712 [39   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:44,493 [47   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:44,494 [47   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:44,495 [47   ] Abp.Logging.LogHelper                    - Can not find '邮件' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:44,496 [47   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 21:47:44,498 [47   ] Abp.Logging.LogHelper                    - Can not find '添加成功' in localization source 'Spartan'!
+ERROR 2016-04-06 21:48:19,912 [39   ] n.Web.Controllers.SystemManageController - The model item passed into the dictionary is of type 'System.Threading.Tasks.Task`1[CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput]', but this dictionary requires a model item of type 'CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput'.
+System.InvalidOperationException: The model item passed into the dictionary is of type 'System.Threading.Tasks.Task`1[CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput]', but this dictionary requires a model item of type 'CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput'.
+   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   在 System.Web.Mvc.ViewDataDictionary.set_Model(Object value)
+   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   在 System.Web.Mvc.ViewDataDictionary`1..ctor(ViewDataDictionary viewDataDictionary)
+   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   在 System.Web.Mvc.WebViewPage.set_ViewData(ViewDataDictionary value)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2016-04-06 21:48:25,068 [47   ] n.Web.Controllers.SystemManageController - The model item passed into the dictionary is of type 'System.Threading.Tasks.Task`1[CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput]', but this dictionary requires a model item of type 'CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput'.
+System.InvalidOperationException: The model item passed into the dictionary is of type 'System.Threading.Tasks.Task`1[CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput]', but this dictionary requires a model item of type 'CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput'.
+   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   在 System.Web.Mvc.ViewDataDictionary.set_Model(Object value)
+   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   在 System.Web.Mvc.ViewDataDictionary`1..ctor(ViewDataDictionary viewDataDictionary)
+   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   在 System.Web.Mvc.WebViewPage.set_ViewData(ViewDataDictionary value)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2016-04-06 21:49:26,871 [47   ] n.Web.Controllers.SystemManageController - The model item passed into the dictionary is of type 'System.Threading.Tasks.Task`1[CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput]', but this dictionary requires a model item of type 'CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput'.
+System.InvalidOperationException: The model item passed into the dictionary is of type 'System.Threading.Tasks.Task`1[CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput]', but this dictionary requires a model item of type 'CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput'.
+   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   在 System.Web.Mvc.ViewDataDictionary.set_Model(Object value)
+   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   在 System.Web.Mvc.ViewDataDictionary`1..ctor(ViewDataDictionary viewDataDictionary)
+   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   在 System.Web.Mvc.WebViewPage.set_ViewData(ViewDataDictionary value)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-04-06 21:50:51,096 [49   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-06 21:50:51,096 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-06 21:50:51,096 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-06 21:50:51,096 [1b73b] Hangfire.Server.Worker                   - Background process 'Worker #8171b73b' stopped.
+DEBUG 2016-04-06 21:50:51,097 [601e7] Hangfire.Server.Worker                   - Background process 'Worker #3ed601e7' stopped.
+DEBUG 2016-04-06 21:50:51,097 [41f05] Hangfire.Server.Worker                   - Background process 'Worker #32041f05' stopped.
+DEBUG 2016-04-06 21:50:51,097 [335e7] Hangfire.Server.Worker                   - Background process 'Worker #5c3335e7' stopped.
+DEBUG 2016-04-06 21:50:51,097 [74006] Hangfire.Server.Worker                   - Background process 'Worker #d6374006' stopped.
+DEBUG 2016-04-06 21:50:51,097 [1a48d] Hangfire.Server.Worker                   - Background process 'Worker #8af1a48d' stopped.
+DEBUG 2016-04-06 21:50:51,097 [7b065] Hangfire.Server.Worker                   - Background process 'Worker #a867b065' stopped.
+DEBUG 2016-04-06 21:50:51,097 [3b7f8] Hangfire.Server.Worker                   - Background process 'Worker #6393b7f8' stopped.
+DEBUG 2016-04-06 21:50:51,097 [b6e08] Hangfire.Server.Worker                   - Background process 'Worker #ae1b6e08' stopped.
+DEBUG 2016-04-06 21:50:51,097 [1170b] Hangfire.Server.Worker                   - Background process 'Worker #a3d1170b' stopped.
+DEBUG 2016-04-06 21:50:51,097 [3e010] Hangfire.Server.Worker                   - Background process 'Worker #c213e010' stopped.
+DEBUG 2016-04-06 21:50:51,097 [31543] Hangfire.Server.Worker                   - Background process 'Worker #14a31543' stopped.
+DEBUG 2016-04-06 21:50:51,097 [f60e2] Hangfire.Server.Worker                   - Background process 'Worker #9a7f60e2' stopped.
+DEBUG 2016-04-06 21:50:51,098 [ff5b0] Hangfire.Server.Worker                   - Background process 'Worker #615ff5b0' stopped.
+DEBUG 2016-04-06 21:50:51,098 [582e8] Hangfire.Server.Worker                   - Background process 'Worker #bff582e8' stopped.
+DEBUG 2016-04-06 21:50:51,098 [16f80] Hangfire.Server.Worker                   - Background process 'Worker #6b316f80' stopped.
+DEBUG 2016-04-06 21:50:51,098 [bea89] Hangfire.Server.Worker                   - Background process 'Worker #065bea89' stopped.
+DEBUG 2016-04-06 21:50:51,098 [8b22f] Hangfire.Server.Worker                   - Background process 'Worker #1928b22f' stopped.
+DEBUG 2016-04-06 21:50:51,098 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-06 21:50:51,098 [7e21a] Hangfire.Server.Worker                   - Background process 'Worker #fc97e21a' stopped.
+DEBUG 2016-04-06 21:50:51,098 [f3380] Hangfire.Server.Worker                   - Background process 'Worker #d39f3380' stopped.
+DEBUG 2016-04-06 21:50:51,098 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-06 21:50:51,098 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-06 21:50:51,098 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-06 21:50:51,100 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-06 21:50:51,100 [49   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-06 21:50:51,100 [49   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-06 21:50:58,420 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-06 21:51:02,279 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-06 21:51:02,293 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,297 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,297 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,298 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,298 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,298 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,299 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,299 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,299 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,300 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,300 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,300 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,300 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,304 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,305 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,308 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:51:02,319 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-06 21:51:02,436 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 21:51:02,436 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 21:51:02,436 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 21:51:02,436 [1    ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 21:51:03,917 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-06 21:51:03,923 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-06 21:51:03,924 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-06 21:51:03,925 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-06 21:51:03,926 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-06 21:51:03,933 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-06 21:51:03,972 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-06 21:51:03,973 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-06 21:51:03,973 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-06 21:51:03,973 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-06 21:51:03,973 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-06 21:51:03,973 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-06 21:51:03,973 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-06 21:51:04,169 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-06 21:51:04,374 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-06 21:51:04,378 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-06 21:51:04,406 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-06 21:51:04,408 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-06 21:51:04,410 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 5 classes defines auto mapping attributes
+DEBUG 2016-04-06 21:51:04,411 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-06 21:51:04,417 [1fae3] Hangfire.Server.Worker                   - Background process 'Worker #a651fae3' started.
+DEBUG 2016-04-06 21:51:04,426 [90279] Hangfire.Server.Worker                   - Background process 'Worker #a7190279' started.
+DEBUG 2016-04-06 21:51:04,434 [e3e5f] Hangfire.Server.Worker                   - Background process 'Worker #e11e3e5f' started.
+DEBUG 2016-04-06 21:51:04,438 [95422] Hangfire.Server.Worker                   - Background process 'Worker #e2395422' started.
+DEBUG 2016-04-06 21:51:04,442 [97865] Hangfire.Server.Worker                   - Background process 'Worker #15997865' started.
+DEBUG 2016-04-06 21:51:04,444 [5e766] Hangfire.Server.Worker                   - Background process 'Worker #9955e766' started.
+DEBUG 2016-04-06 21:51:04,449 [cd1d3] Hangfire.Server.Worker                   - Background process 'Worker #dcecd1d3' started.
+DEBUG 2016-04-06 21:51:04,455 [36d0d] Hangfire.Server.Worker                   - Background process 'Worker #1a536d0d' started.
+DEBUG 2016-04-06 21:51:04,458 [581f4] Hangfire.Server.Worker                   - Background process 'Worker #91b581f4' started.
+DEBUG 2016-04-06 21:51:04,507 [a4ab8] Hangfire.Server.Worker                   - Background process 'Worker #eb6a4ab8' started.
+DEBUG 2016-04-06 21:51:04,530 [be8e7] Hangfire.Server.Worker                   - Background process 'Worker #44abe8e7' started.
+DEBUG 2016-04-06 21:51:04,533 [803a1] Hangfire.Server.Worker                   - Background process 'Worker #8a4803a1' started.
+DEBUG 2016-04-06 21:51:04,538 [21bb0] Hangfire.Server.Worker                   - Background process 'Worker #ae721bb0' started.
+DEBUG 2016-04-06 21:51:04,564 [66b6e] Hangfire.Server.Worker                   - Background process 'Worker #0be66b6e' started.
+DEBUG 2016-04-06 21:51:04,567 [7418a] Hangfire.Server.Worker                   - Background process 'Worker #2477418a' started.
+DEBUG 2016-04-06 21:51:04,593 [7eb28] Hangfire.Server.Worker                   - Background process 'Worker #2f87eb28' started.
+DEBUG 2016-04-06 21:51:04,595 [20a15] Hangfire.Server.Worker                   - Background process 'Worker #69f20a15' started.
+DEBUG 2016-04-06 21:51:04,600 [6f005] Hangfire.Server.Worker                   - Background process 'Worker #36e6f005' started.
+DEBUG 2016-04-06 21:51:04,622 [42b75] Hangfire.Server.Worker                   - Background process 'Worker #25642b75' started.
+DEBUG 2016-04-06 21:51:04,629 [7e8f4] Hangfire.Server.Worker                   - Background process 'Worker #49c7e8f4' started.
+DEBUG 2016-04-06 21:51:04,633 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-06 21:51:04,649 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-06 21:51:04,768 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-06 21:51:04,772 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2016-04-06 21:51:04,783 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.GetTenantListDto
+DEBUG 2016-04-06 21:51:04,784 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.UpdateTenantDto
+DEBUG 2016-04-06 21:51:16,205 [60   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a3072913-e390-4697-92fa-0c8df5eeec56","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-06T21:51:16.1907681+08:00","Properties":{}}
+DEBUG 2016-04-06 21:51:16,265 [57   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a3072913-e390-4697-92fa-0c8df5eeec56
+WARN  2016-04-06 21:51:19,255 [59   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 21:51:19,256 [59   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 21:51:19,256 [59   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 21:51:19,257 [59   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 21:51:19,258 [59   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 21:51:19,258 [59   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 21:51:19,440 [59   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:51:19,441 [59   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:51:19,442 [59   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+ERROR 2016-04-06 21:53:02,258 [57   ] n.Web.Controllers.SystemManageController - The model item passed into the dictionary is of type 'System.Threading.Tasks.Task`1[CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput]', but this dictionary requires a model item of type 'CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput'.
+System.InvalidOperationException: The model item passed into the dictionary is of type 'System.Threading.Tasks.Task`1[CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput]', but this dictionary requires a model item of type 'CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput'.
+   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   在 System.Web.Mvc.ViewDataDictionary.set_Model(Object value)
+   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   在 System.Web.Mvc.ViewDataDictionary`1..ctor(ViewDataDictionary viewDataDictionary)
+   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   在 System.Web.Mvc.WebViewPage.set_ViewData(ViewDataDictionary value)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2016-04-06 21:56:17,170 [98   ] n.Web.Controllers.SystemManageController - The model item passed into the dictionary is of type 'System.Threading.Tasks.Task`1[CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput]', but this dictionary requires a model item of type 'CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput'.
+System.InvalidOperationException: The model item passed into the dictionary is of type 'System.Threading.Tasks.Task`1[CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput]', but this dictionary requires a model item of type 'CH.Spartan.MultiTenancy.Dto.UpdateTenantOutput'.
+   在 System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)
+   在 System.Web.Mvc.ViewDataDictionary.set_Model(Object value)
+   在 System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)
+   在 System.Web.Mvc.ViewDataDictionary`1..ctor(ViewDataDictionary viewDataDictionary)
+   在 System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)
+   在 System.Web.Mvc.WebViewPage.set_ViewData(ViewDataDictionary value)
+   在 System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-04-06 21:56:27,305 [101  ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-06 21:56:27,306 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-06 21:56:27,306 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-06 21:56:27,306 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-06 21:56:27,306 [7e8f4] Hangfire.Server.Worker                   - Background process 'Worker #49c7e8f4' stopped.
+DEBUG 2016-04-06 21:56:27,306 [42b75] Hangfire.Server.Worker                   - Background process 'Worker #25642b75' stopped.
+DEBUG 2016-04-06 21:56:27,306 [6f005] Hangfire.Server.Worker                   - Background process 'Worker #36e6f005' stopped.
+DEBUG 2016-04-06 21:56:27,306 [20a15] Hangfire.Server.Worker                   - Background process 'Worker #69f20a15' stopped.
+DEBUG 2016-04-06 21:56:27,306 [7eb28] Hangfire.Server.Worker                   - Background process 'Worker #2f87eb28' stopped.
+DEBUG 2016-04-06 21:56:27,306 [7418a] Hangfire.Server.Worker                   - Background process 'Worker #2477418a' stopped.
+DEBUG 2016-04-06 21:56:27,306 [66b6e] Hangfire.Server.Worker                   - Background process 'Worker #0be66b6e' stopped.
+DEBUG 2016-04-06 21:56:27,306 [21bb0] Hangfire.Server.Worker                   - Background process 'Worker #ae721bb0' stopped.
+DEBUG 2016-04-06 21:56:27,306 [803a1] Hangfire.Server.Worker                   - Background process 'Worker #8a4803a1' stopped.
+DEBUG 2016-04-06 21:56:27,307 [be8e7] Hangfire.Server.Worker                   - Background process 'Worker #44abe8e7' stopped.
+DEBUG 2016-04-06 21:56:27,307 [a4ab8] Hangfire.Server.Worker                   - Background process 'Worker #eb6a4ab8' stopped.
+DEBUG 2016-04-06 21:56:27,307 [36d0d] Hangfire.Server.Worker                   - Background process 'Worker #1a536d0d' stopped.
+DEBUG 2016-04-06 21:56:27,307 [cd1d3] Hangfire.Server.Worker                   - Background process 'Worker #dcecd1d3' stopped.
+DEBUG 2016-04-06 21:56:27,307 [5e766] Hangfire.Server.Worker                   - Background process 'Worker #9955e766' stopped.
+DEBUG 2016-04-06 21:56:27,307 [97865] Hangfire.Server.Worker                   - Background process 'Worker #15997865' stopped.
+DEBUG 2016-04-06 21:56:27,307 [95422] Hangfire.Server.Worker                   - Background process 'Worker #e2395422' stopped.
+DEBUG 2016-04-06 21:56:27,307 [e3e5f] Hangfire.Server.Worker                   - Background process 'Worker #e11e3e5f' stopped.
+DEBUG 2016-04-06 21:56:27,307 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-06 21:56:27,307 [90279] Hangfire.Server.Worker                   - Background process 'Worker #a7190279' stopped.
+DEBUG 2016-04-06 21:56:27,307 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-06 21:56:27,307 [1fae3] Hangfire.Server.Worker                   - Background process 'Worker #a651fae3' stopped.
+DEBUG 2016-04-06 21:56:27,307 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-06 21:56:27,308 [581f4] Hangfire.Server.Worker                   - Background process 'Worker #91b581f4' stopped.
+DEBUG 2016-04-06 21:56:27,309 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-06 21:56:27,309 [101  ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-06 21:56:27,309 [101  ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-06 21:56:49,191 [79   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-06 21:56:52,887 [79   ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-06 21:56:52,891 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,893 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,893 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,893 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,893 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,893 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,893 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,894 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,894 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,894 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,894 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,894 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,894 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,894 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,894 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,895 [79   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 21:56:52,899 [79   ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-06 21:56:52,961 [79   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 21:56:52,961 [79   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 21:56:52,961 [79   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 21:56:52,961 [79   ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 21:56:53,712 [79   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-06 21:56:53,718 [79   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-06 21:56:53,719 [79   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-06 21:56:53,720 [79   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-06 21:56:53,720 [79   ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-06 21:56:53,728 [79   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-06 21:56:53,773 [79   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-06 21:56:53,773 [79   ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-06 21:56:53,773 [79   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-06 21:56:53,773 [79   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-06 21:56:53,774 [79   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-06 21:56:53,774 [79   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-06 21:56:53,774 [79   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-06 21:56:53,811 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-06 21:56:53,972 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-06 21:56:53,976 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-06 21:56:53,980 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-06 21:56:54,094 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-06 21:56:54,105 [85a54] Hangfire.Server.Worker                   - Background process 'Worker #d1085a54' started.
+DEBUG 2016-04-06 21:56:54,118 [8f587] Hangfire.Server.Worker                   - Background process 'Worker #d638f587' started.
+DEBUG 2016-04-06 21:56:54,118 [79   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 5 classes defines auto mapping attributes
+DEBUG 2016-04-06 21:56:54,118 [79   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-06 21:56:54,127 [5439b] Hangfire.Server.Worker                   - Background process 'Worker #6db5439b' started.
+DEBUG 2016-04-06 21:56:54,143 [f04b6] Hangfire.Server.Worker                   - Background process 'Worker #be7f04b6' started.
+DEBUG 2016-04-06 21:56:54,153 [13923] Hangfire.Server.Worker                   - Background process 'Worker #9af13923' started.
+DEBUG 2016-04-06 21:56:54,158 [d13f0] Hangfire.Server.Worker                   - Background process 'Worker #119d13f0' started.
+DEBUG 2016-04-06 21:56:54,161 [56fb3] Hangfire.Server.Worker                   - Background process 'Worker #c0156fb3' started.
+DEBUG 2016-04-06 21:56:54,171 [49fe1] Hangfire.Server.Worker                   - Background process 'Worker #3d449fe1' started.
+DEBUG 2016-04-06 21:56:54,172 [9862c] Hangfire.Server.Worker                   - Background process 'Worker #22e9862c' started.
+DEBUG 2016-04-06 21:56:54,179 [aeeed] Hangfire.Server.Worker                   - Background process 'Worker #a66aeeed' started.
+DEBUG 2016-04-06 21:56:54,207 [e6a79] Hangfire.Server.Worker                   - Background process 'Worker #00de6a79' started.
+DEBUG 2016-04-06 21:56:54,211 [fbc56] Hangfire.Server.Worker                   - Background process 'Worker #1fafbc56' started.
+DEBUG 2016-04-06 21:56:54,220 [785f9] Hangfire.Server.Worker                   - Background process 'Worker #78d785f9' started.
+DEBUG 2016-04-06 21:56:54,224 [922a6] Hangfire.Server.Worker                   - Background process 'Worker #333922a6' started.
+DEBUG 2016-04-06 21:56:54,230 [d9a19] Hangfire.Server.Worker                   - Background process 'Worker #5dcd9a19' started.
+DEBUG 2016-04-06 21:56:54,236 [34438] Hangfire.Server.Worker                   - Background process 'Worker #e5534438' started.
+DEBUG 2016-04-06 21:56:54,243 [c9158] Hangfire.Server.Worker                   - Background process 'Worker #184c9158' started.
+DEBUG 2016-04-06 21:56:54,249 [85570] Hangfire.Server.Worker                   - Background process 'Worker #1bc85570' started.
+DEBUG 2016-04-06 21:56:54,263 [f289c] Hangfire.Server.Worker                   - Background process 'Worker #83af289c' started.
+DEBUG 2016-04-06 21:56:54,266 [0f693] Hangfire.Server.Worker                   - Background process 'Worker #2210f693' started.
+DEBUG 2016-04-06 21:56:54,276 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-06 21:56:54,278 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-06 21:56:54,410 [79   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-06 21:56:54,414 [79   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2016-04-06 21:56:54,427 [79   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.GetTenantListDto
+DEBUG 2016-04-06 21:56:54,428 [79   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.UpdateTenantDto
+DEBUG 2016-04-06 21:57:05,997 [47   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7c7466f6-c4a7-4437-bc75-6d39b3590c02","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-06T21:57:05.9829246+08:00","Properties":{}}
+DEBUG 2016-04-06 21:57:06,039 [98   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7c7466f6-c4a7-4437-bc75-6d39b3590c02
+WARN  2016-04-06 21:57:07,971 [98   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:07,972 [98   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:07,972 [98   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:07,973 [98   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:07,973 [98   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:07,974 [98   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:08,048 [98   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:08,049 [98   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:08,050 [98   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:10,191 [94   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:10,192 [94   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:10,193 [94   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:10,193 [94   ] Abp.Logging.LogHelper                    - Can not find '状态' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:10,194 [94   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:10,273 [94   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:27,188 [98   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:27,189 [98   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:27,190 [98   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:27,191 [98   ] Abp.Logging.LogHelper                    - Can not find '状态' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:27,192 [98   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-06 21:57:27,193 [98   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:06,026 [47   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:06,027 [47   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:06,028 [47   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:06,030 [47   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:06,031 [47   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:06,033 [47   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:06,039 [47   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:06,040 [47   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:06,041 [47   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:08,015 [71   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:08,016 [71   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:08,017 [71   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:08,017 [71   ] Abp.Logging.LogHelper                    - Can not find '状态' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:08,018 [71   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:08,021 [71   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:36,095 [71   ] Abp.Logging.LogHelper                    - Can not find '登录失败' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:36,096 [71   ] Abp.Logging.LogHelper                    - Can not find '所属运营商已经已过期' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:36,179 [71   ] partan.Web.Controllers.AccountController - [登录失败]
+Abp.UI.UserFriendlyException: [登录失败]
+   在 CH.Spartan.Web.Controllers.AccountController.<GetLoginResultAsync>d__11.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\AccountController.cs:行号 101
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 CH.Spartan.Web.Controllers.AccountController.<Login>d__10.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\AccountController.cs:行号 82
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-04-06 21:58:41,212 [74   ] Abp.Logging.LogHelper                    - Can not find '登录失败' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:41,212 [74   ] Abp.Logging.LogHelper                    - Can not find '所属运营商已经已过期' in localization source 'Spartan'!
+WARN  2016-04-06 21:58:41,279 [74   ] partan.Web.Controllers.AccountController - [登录失败]
+Abp.UI.UserFriendlyException: [登录失败]
+   在 CH.Spartan.Web.Controllers.AccountController.<GetLoginResultAsync>d__11.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\AccountController.cs:行号 101
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 CH.Spartan.Web.Controllers.AccountController.<Login>d__10.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\AccountController.cs:行号 82
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-04-06 21:59:08,077 [75   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7c7466f6-c4a7-4437-bc75-6d39b3590c02
+WARN  2016-04-06 22:00:58,816 [73   ] Abp.Logging.LogHelper                    - Can not find '登录失败' in localization source 'Spartan'!
+WARN  2016-04-06 22:00:58,817 [73   ] Abp.Logging.LogHelper                    - Can not find '所属运营商已经已过期' in localization source 'Spartan'!
+WARN  2016-04-06 22:00:58,875 [73   ] partan.Web.Controllers.AccountController - [登录失败]
+Abp.UI.UserFriendlyException: [登录失败]
+   在 CH.Spartan.Web.Controllers.AccountController.<GetLoginResultAsync>d__11.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\AccountController.cs:行号 101
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 CH.Spartan.Web.Controllers.AccountController.<Login>d__10.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\AccountController.cs:行号 82
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-04-06 22:01:08,188 [73   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"5d2bddf0-2874-466f-be96-a16b3ccd441e","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-06T22:01:08.188982+08:00","Properties":{}}
+DEBUG 2016-04-06 22:01:08,207 [74   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 5d2bddf0-2874-466f-be96-a16b3ccd441e
+WARN  2016-04-06 22:01:09,753 [47   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:09,754 [47   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:09,756 [47   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:09,757 [47   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:09,758 [47   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:09,759 [47   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:09,760 [47   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:09,761 [47   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:09,762 [47   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:12,447 [47   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:12,447 [47   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:12,448 [47   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:12,448 [47   ] Abp.Logging.LogHelper                    - Can not find '状态' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:12,449 [47   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:12,449 [47   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:34,721 [40   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:34,722 [40   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:34,723 [40   ] Abp.Logging.LogHelper                    - Can not find '邮件' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:34,723 [40   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:34,725 [40   ] Abp.Logging.LogHelper                    - Can not find '添加成功' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:50,837 [70   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:50,838 [70   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:50,838 [70   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:50,839 [70   ] Abp.Logging.LogHelper                    - Can not find '状态' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:50,840 [70   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:50,841 [70   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:53,594 [71   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:53,595 [71   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:53,596 [71   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:53,597 [71   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:53,598 [71   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:53,599 [71   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:53,601 [71   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:53,602 [71   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:53,604 [71   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:55,443 [75   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:55,444 [75   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:55,445 [75   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:55,445 [75   ] Abp.Logging.LogHelper                    - Can not find '状态' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:55,446 [75   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-06 22:01:55,447 [75   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-06 22:02:04,252 [40   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:02:04,253 [40   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:02:04,253 [40   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 22:02:04,254 [40   ] Abp.Logging.LogHelper                    - Can not find '状态' in localization source 'Spartan'!
+WARN  2016-04-06 22:02:04,254 [40   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-06 22:02:04,255 [40   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-06 22:02:12,802 [71   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:02:12,803 [71   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:02:12,804 [71   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 22:02:12,804 [71   ] Abp.Logging.LogHelper                    - Can not find '状态' in localization source 'Spartan'!
+WARN  2016-04-06 22:02:12,805 [71   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-06 22:02:12,805 [71   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-06 22:02:37,132 [69   ] n.Web.Controllers.SystemManageController - Method arguments are not valid! See ValidationErrors for details.
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   在 Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:行号 72
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 12
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.TenantAppServiceProxy.DeleteTenantAsync(List`1 input)
+   在 CH.Spartan.Web.Controllers.SystemManageController.<DeleteTenant>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\SystemManageController.cs:行号 92
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-04-06 22:02:37,133 [69   ] n.Web.Controllers.SystemManageController - There are 1 validation errors:
+WARN  2016-04-06 22:02:37,133 [69   ] n.Web.Controllers.SystemManageController - input is null! (input)
+DEBUG 2016-04-06 22:03:55,879 [67   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 5d2bddf0-2874-466f-be96-a16b3ccd441e
+WARN  2016-04-06 22:03:55,893 [71   ] n.Web.Controllers.SystemManageController - Method arguments are not valid! See ValidationErrors for details.
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   在 Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:行号 72
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 12
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.TenantAppServiceProxy.DeleteTenantAsync(List`1 input)
+   在 CH.Spartan.Web.Controllers.SystemManageController.<DeleteTenant>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\SystemManageController.cs:行号 92
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-04-06 22:03:55,893 [71   ] n.Web.Controllers.SystemManageController - There are 1 validation errors:
+WARN  2016-04-06 22:03:55,893 [71   ] n.Web.Controllers.SystemManageController - input is null! (input)
+WARN  2016-04-06 22:03:58,460 [71   ] n.Web.Controllers.SystemManageController - Method arguments are not valid! See ValidationErrors for details.
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   在 Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:行号 72
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 12
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.TenantAppServiceProxy.DeleteTenantAsync(List`1 input)
+   在 CH.Spartan.Web.Controllers.SystemManageController.<DeleteTenant>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\SystemManageController.cs:行号 92
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-04-06 22:03:58,460 [71   ] n.Web.Controllers.SystemManageController - There are 1 validation errors:
+WARN  2016-04-06 22:03:58,460 [71   ] n.Web.Controllers.SystemManageController - input is null! (input)
+WARN  2016-04-06 22:04:00,614 [75   ] n.Web.Controllers.SystemManageController - Method arguments are not valid! See ValidationErrors for details.
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   在 Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:行号 72
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 12
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.TenantAppServiceProxy.DeleteTenantAsync(List`1 input)
+   在 CH.Spartan.Web.Controllers.SystemManageController.<DeleteTenant>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\SystemManageController.cs:行号 92
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-04-06 22:04:00,614 [75   ] n.Web.Controllers.SystemManageController - There are 1 validation errors:
+WARN  2016-04-06 22:04:00,614 [75   ] n.Web.Controllers.SystemManageController - input is null! (input)
+ERROR 2016-04-06 22:06:51,544 [76   ] n.Web.Controllers.SystemManageController - LINQ to Entities does not recognize the method 'Boolean IsIn[Int32](Int32, Int32[])' method, and this method cannot be translated into a store expression.
+System.NotSupportedException: LINQ to Entities does not recognize the method 'Boolean IsIn[Int32](Int32, Int32[])' method, and this method cannot be translated into a store expression.
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.DefaultTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Abp.Domain.Repositories.AbpRepositoryBase`2.Delete(Expression`1 predicate) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Repositories\AbpRepositoryBase.cs:行号 183
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.Delete_callback_2(Expression`1 predicate)
+   在 Castle.Proxies.Invocations.AbpRepositoryBase`2_Delete_8.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 28
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.Delete(Expression`1 predicate)
+   在 Abp.Domain.Repositories.AbpRepositoryBase`2.<DeleteAsync>d__32.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Repositories\AbpRepositoryBase.cs:行号 191
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 CH.Spartan.MultiTenancy.TenantAppService.<DeleteTenantAsync>d__5.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Application\MultiTenancy\TenantAppService.cs:行号 39
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinally>d__1.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:行号 40
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinally>d__0.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:行号 20
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 CH.Spartan.Web.Controllers.SystemManageController.<DeleteTenant>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\SystemManageController.cs:行号 92
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2016-04-06 22:07:15,016 [71   ] n.Web.Controllers.SystemManageController - LINQ to Entities does not recognize the method 'Boolean IsIn[Int32](Int32, Int32[])' method, and this method cannot be translated into a store expression.
+System.NotSupportedException: LINQ to Entities does not recognize the method 'Boolean IsIn[Int32](Int32, Int32[])' method, and this method cannot be translated into a store expression.
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.DefaultTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Abp.Domain.Repositories.AbpRepositoryBase`2.Delete(Expression`1 predicate) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Repositories\AbpRepositoryBase.cs:行号 183
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.Delete_callback_2(Expression`1 predicate)
+   在 Castle.Proxies.Invocations.AbpRepositoryBase`2_Delete_8.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 28
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.Delete(Expression`1 predicate)
+   在 Abp.Domain.Repositories.AbpRepositoryBase`2.<DeleteAsync>d__32.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Repositories\AbpRepositoryBase.cs:行号 191
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 CH.Spartan.MultiTenancy.TenantAppService.<DeleteTenantAsync>d__5.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Application\MultiTenancy\TenantAppService.cs:行号 39
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinally>d__1.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:行号 40
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinally>d__0.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:行号 20
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 CH.Spartan.Web.Controllers.SystemManageController.<DeleteTenant>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\SystemManageController.cs:行号 92
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-04-06 22:09:28,368 [45   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"889b6578-5072-47a1-be92-6090711c3428","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-06T22:09:28.3683748+08:00","Properties":{}}
+DEBUG 2016-04-06 22:09:28,408 [32   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 889b6578-5072-47a1-be92-6090711c3428
+WARN  2016-04-06 22:09:31,049 [41   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 22:09:31,050 [41   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 22:09:31,051 [41   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 22:09:31,052 [41   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 22:09:31,053 [41   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:09:31,054 [41   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:09:31,058 [41   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:09:31,059 [41   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:09:31,060 [41   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 22:09:57,257 [32   ] n.Web.Controllers.SystemManageController - Method arguments are not valid! See ValidationErrors for details.
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   在 Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:行号 72
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 12
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.TenantAppServiceProxy.DeleteTenantAsync(List`1 input)
+   在 CH.Spartan.Web.Controllers.SystemManageController.<DeleteTenant>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\SystemManageController.cs:行号 92
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-04-06 22:09:57,258 [32   ] n.Web.Controllers.SystemManageController - There are 1 validation errors:
+WARN  2016-04-06 22:09:57,258 [32   ] n.Web.Controllers.SystemManageController - input is null! (input)
+WARN  2016-04-06 22:10:11,966 [24   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 22:10:11,966 [24   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 22:10:11,967 [24   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 22:10:11,967 [24   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 22:10:11,968 [24   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:10:11,968 [24   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:10:11,971 [24   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:10:11,972 [24   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:10:11,973 [24   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+ERROR 2016-04-06 22:10:32,213 [30   ] n.Web.Controllers.SystemManageController - LINQ to Entities does not recognize the method 'Boolean IsIn[Int32](Int32, Int32[])' method, and this method cannot be translated into a store expression.
+System.NotSupportedException: LINQ to Entities does not recognize the method 'Boolean IsIn[Int32](Int32, Int32[])' method, and this method cannot be translated into a store expression.
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.DefaultTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Abp.Domain.Repositories.AbpRepositoryBase`2.Delete(Expression`1 predicate) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Repositories\AbpRepositoryBase.cs:行号 183
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.Delete_callback_2(Expression`1 predicate)
+   在 Castle.Proxies.Invocations.AbpRepositoryBase`2_Delete_8.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 28
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.Delete(Expression`1 predicate)
+   在 Abp.Domain.Repositories.AbpRepositoryBase`2.<DeleteAsync>d__32.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Repositories\AbpRepositoryBase.cs:行号 191
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 CH.Spartan.MultiTenancy.TenantAppService.<DeleteTenantAsync>d__5.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Application\MultiTenancy\TenantAppService.cs:行号 39
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinally>d__1.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:行号 40
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinally>d__0.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:行号 20
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 CH.Spartan.Web.Controllers.SystemManageController.<DeleteTenant>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\SystemManageController.cs:行号 92
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2016-04-06 22:13:26,278 [38   ] n.Web.Controllers.SystemManageController - LINQ to Entities does not recognize the method 'Boolean IsIn[Int32](Int32, Int32[])' method, and this method cannot be translated into a store expression.
+System.NotSupportedException: LINQ to Entities does not recognize the method 'Boolean IsIn[Int32](Int32, Int32[])' method, and this method cannot be translated into a store expression.
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.DefaultTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   在 System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   在 System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.Infrastructure.DefaultExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Abp.Domain.Repositories.AbpRepositoryBase`2.Delete(Expression`1 predicate) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Repositories\AbpRepositoryBase.cs:行号 183
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.Delete_callback_2(Expression`1 predicate)
+   在 Castle.Proxies.Invocations.AbpRepositoryBase`2_Delete_8.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:行号 28
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.EfRepositoryBase`2Proxy_2.Delete(Expression`1 predicate)
+   在 Abp.Domain.Repositories.AbpRepositoryBase`2.<DeleteAsync>d__32.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Repositories\AbpRepositoryBase.cs:行号 191
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 CH.Spartan.MultiTenancy.TenantAppService.<DeleteTenantAsync>d__5.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Application\MultiTenancy\TenantAppService.cs:行号 39
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinally>d__1.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:行号 40
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinally>d__0.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:行号 20
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 CH.Spartan.Web.Controllers.SystemManageController.<DeleteTenant>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\SystemManageController.cs:行号 92
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-04-06 22:13:26,279 [52   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 889b6578-5072-47a1-be92-6090711c3428
+DEBUG 2016-04-06 22:14:24,010 [38   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-06 22:14:24,012 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-06 22:14:24,012 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-06 22:14:24,012 [85a54] Hangfire.Server.Worker                   - Background process 'Worker #d1085a54' stopped.
+DEBUG 2016-04-06 22:14:24,012 [34438] Hangfire.Server.Worker                   - Background process 'Worker #e5534438' stopped.
+DEBUG 2016-04-06 22:14:24,012 [8f587] Hangfire.Server.Worker                   - Background process 'Worker #d638f587' stopped.
+DEBUG 2016-04-06 22:14:24,012 [5439b] Hangfire.Server.Worker                   - Background process 'Worker #6db5439b' stopped.
+DEBUG 2016-04-06 22:14:24,012 [f04b6] Hangfire.Server.Worker                   - Background process 'Worker #be7f04b6' stopped.
+DEBUG 2016-04-06 22:14:24,012 [13923] Hangfire.Server.Worker                   - Background process 'Worker #9af13923' stopped.
+DEBUG 2016-04-06 22:14:24,012 [d13f0] Hangfire.Server.Worker                   - Background process 'Worker #119d13f0' stopped.
+DEBUG 2016-04-06 22:14:24,012 [56fb3] Hangfire.Server.Worker                   - Background process 'Worker #c0156fb3' stopped.
+DEBUG 2016-04-06 22:14:24,012 [49fe1] Hangfire.Server.Worker                   - Background process 'Worker #3d449fe1' stopped.
+DEBUG 2016-04-06 22:14:24,012 [9862c] Hangfire.Server.Worker                   - Background process 'Worker #22e9862c' stopped.
+DEBUG 2016-04-06 22:14:24,012 [aeeed] Hangfire.Server.Worker                   - Background process 'Worker #a66aeeed' stopped.
+DEBUG 2016-04-06 22:14:24,013 [e6a79] Hangfire.Server.Worker                   - Background process 'Worker #00de6a79' stopped.
+DEBUG 2016-04-06 22:14:24,013 [785f9] Hangfire.Server.Worker                   - Background process 'Worker #78d785f9' stopped.
+DEBUG 2016-04-06 22:14:24,013 [922a6] Hangfire.Server.Worker                   - Background process 'Worker #333922a6' stopped.
+DEBUG 2016-04-06 22:14:24,013 [d9a19] Hangfire.Server.Worker                   - Background process 'Worker #5dcd9a19' stopped.
+DEBUG 2016-04-06 22:14:24,013 [c9158] Hangfire.Server.Worker                   - Background process 'Worker #184c9158' stopped.
+DEBUG 2016-04-06 22:14:24,013 [f289c] Hangfire.Server.Worker                   - Background process 'Worker #83af289c' stopped.
+DEBUG 2016-04-06 22:14:24,013 [85570] Hangfire.Server.Worker                   - Background process 'Worker #1bc85570' stopped.
+DEBUG 2016-04-06 22:14:24,013 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-06 22:14:24,013 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-06 22:14:24,013 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-06 22:14:24,013 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-06 22:14:24,014 [0f693] Hangfire.Server.Worker                   - Background process 'Worker #2210f693' stopped.
+DEBUG 2016-04-06 22:14:24,014 [fbc56] Hangfire.Server.Worker                   - Background process 'Worker #1fafbc56' stopped.
+DEBUG 2016-04-06 22:14:24,015 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-06 22:14:24,015 [38   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-06 22:14:24,015 [38   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-06 22:14:32,469 [86   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-06 22:14:36,157 [86   ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-06 22:14:36,161 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,163 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,163 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,163 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,163 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,164 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,164 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,164 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,164 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,164 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,164 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,164 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,165 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,165 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,165 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,165 [86   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-06 22:14:36,169 [86   ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-06 22:14:36,215 [86   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 22:14:36,215 [86   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 22:14:36,215 [86   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 22:14:36,215 [86   ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-06 22:14:36,970 [86   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-06 22:14:36,976 [86   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-06 22:14:36,977 [86   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-06 22:14:36,979 [86   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-06 22:14:36,980 [86   ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-06 22:14:36,988 [86   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-06 22:14:37,028 [86   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-06 22:14:37,028 [86   ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-06 22:14:37,028 [86   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-06 22:14:37,028 [86   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-06 22:14:37,028 [86   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-06 22:14:37,028 [86   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-06 22:14:37,028 [86   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-06 22:14:37,059 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-06 22:14:37,227 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-06 22:14:37,233 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-06 22:14:37,233 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-06 22:14:37,241 [86   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 5 classes defines auto mapping attributes
+DEBUG 2016-04-06 22:14:37,241 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-06 22:14:37,241 [86   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-06 22:14:37,246 [e6cd7] Hangfire.Server.Worker                   - Background process 'Worker #e76e6cd7' started.
+DEBUG 2016-04-06 22:14:37,249 [6fbb5] Hangfire.Server.Worker                   - Background process 'Worker #a156fbb5' started.
+DEBUG 2016-04-06 22:14:37,257 [626c7] Hangfire.Server.Worker                   - Background process 'Worker #102626c7' started.
+DEBUG 2016-04-06 22:14:37,259 [b86ac] Hangfire.Server.Worker                   - Background process 'Worker #baeb86ac' started.
+DEBUG 2016-04-06 22:14:37,263 [82b85] Hangfire.Server.Worker                   - Background process 'Worker #7d482b85' started.
+DEBUG 2016-04-06 22:14:37,267 [8fa3d] Hangfire.Server.Worker                   - Background process 'Worker #5ec8fa3d' started.
+DEBUG 2016-04-06 22:14:37,272 [837d9] Hangfire.Server.Worker                   - Background process 'Worker #82e837d9' started.
+DEBUG 2016-04-06 22:14:37,279 [c989c] Hangfire.Server.Worker                   - Background process 'Worker #839c989c' started.
+DEBUG 2016-04-06 22:14:37,281 [60aa3] Hangfire.Server.Worker                   - Background process 'Worker #edf60aa3' started.
+DEBUG 2016-04-06 22:14:37,307 [a9d58] Hangfire.Server.Worker                   - Background process 'Worker #102a9d58' started.
+DEBUG 2016-04-06 22:14:37,311 [5a978] Hangfire.Server.Worker                   - Background process 'Worker #50d5a978' started.
+DEBUG 2016-04-06 22:14:37,315 [70d16] Hangfire.Server.Worker                   - Background process 'Worker #e8f70d16' started.
+DEBUG 2016-04-06 22:14:37,321 [71e2a] Hangfire.Server.Worker                   - Background process 'Worker #96e71e2a' started.
+DEBUG 2016-04-06 22:14:37,324 [6ce68] Hangfire.Server.Worker                   - Background process 'Worker #1256ce68' started.
+DEBUG 2016-04-06 22:14:37,328 [a3bda] Hangfire.Server.Worker                   - Background process 'Worker #345a3bda' started.
+DEBUG 2016-04-06 22:14:37,332 [224ed] Hangfire.Server.Worker                   - Background process 'Worker #6f2224ed' started.
+DEBUG 2016-04-06 22:14:37,337 [a2e96] Hangfire.Server.Worker                   - Background process 'Worker #8c5a2e96' started.
+DEBUG 2016-04-06 22:14:37,342 [aaa27] Hangfire.Server.Worker                   - Background process 'Worker #71caaa27' started.
+DEBUG 2016-04-06 22:14:37,346 [75825] Hangfire.Server.Worker                   - Background process 'Worker #8e275825' started.
+DEBUG 2016-04-06 22:14:37,350 [59494] Hangfire.Server.Worker                   - Background process 'Worker #ce659494' started.
+DEBUG 2016-04-06 22:14:37,363 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-06 22:14:37,371 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-06 22:14:37,504 [86   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-06 22:14:37,509 [86   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2016-04-06 22:14:37,520 [86   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.GetTenantListDto
+DEBUG 2016-04-06 22:14:37,521 [86   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.UpdateTenantDto
+DEBUG 2016-04-06 22:14:47,623 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"7e6584a1-7704-4da2-9de2-8fccb10650b0","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-06T22:14:47.6115935+08:00","Properties":{}}
+DEBUG 2016-04-06 22:14:47,662 [48   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 7e6584a1-7704-4da2-9de2-8fccb10650b0
+WARN  2016-04-06 22:14:54,863 [35   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 22:14:54,864 [35   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 22:14:54,864 [35   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 22:14:54,865 [35   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 22:14:54,865 [35   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:14:54,866 [35   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:14:54,946 [35   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:14:54,948 [35   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:14:54,950 [35   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 22:17:31,330 [38   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 22:17:31,331 [38   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 22:17:31,332 [38   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 22:17:31,332 [38   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 22:17:31,334 [38   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:17:31,334 [38   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:17:31,337 [38   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:17:31,338 [38   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:17:31,339 [38   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 22:21:28,847 [38   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 22:21:28,848 [38   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 22:21:28,848 [38   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 22:21:28,849 [38   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 22:21:28,849 [38   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:21:28,850 [38   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:21:29,196 [38   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:21:29,198 [38   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:21:29,199 [38   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:03,479 [56   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:03,480 [56   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:03,481 [56   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:03,481 [56   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:03,482 [56   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:03,482 [56   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:03,485 [56   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:03,487 [56   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:03,488 [56   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:26,440 [32   ] Abp.Logging.LogHelper                    - Can not find '登录失败' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:26,440 [32   ] Abp.Logging.LogHelper                    - Can not find '用户名或者密码错误' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:26,517 [32   ] partan.Web.Controllers.AccountController - [登录失败]
+Abp.UI.UserFriendlyException: [登录失败]
+   在 CH.Spartan.Web.Controllers.AccountController.<GetLoginResultAsync>d__11.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\AccountController.cs:行号 101
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 CH.Spartan.Web.Controllers.AccountController.<Login>d__10.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\AccountController.cs:行号 82
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-04-06 22:22:39,362 [21   ] Abp.Logging.LogHelper                    - Can not find '登录失败' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:39,363 [21   ] Abp.Logging.LogHelper                    - Can not find '所属运营商已经已过期' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:39,418 [21   ] partan.Web.Controllers.AccountController - [登录失败]
+Abp.UI.UserFriendlyException: [登录失败]
+   在 CH.Spartan.Web.Controllers.AccountController.<GetLoginResultAsync>d__11.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\AccountController.cs:行号 101
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 CH.Spartan.Web.Controllers.AccountController.<Login>d__10.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\AccountController.cs:行号 82
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-04-06 22:22:51,099 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"05a19bbe-57b1-4fda-b080-cefe1a32a59b","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-06T22:22:51.0991422+08:00","Properties":{}}
+DEBUG 2016-04-06 22:22:51,118 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 05a19bbe-57b1-4fda-b080-cefe1a32a59b
+WARN  2016-04-06 22:22:52,271 [37   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:52,272 [37   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:52,272 [37   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:52,273 [37   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:52,274 [37   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:52,275 [37   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:52,276 [37   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:52,277 [37   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:52,278 [37   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+DEBUG 2016-04-06 22:22:54,468 [21   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 7e6584a1-7704-4da2-9de2-8fccb10650b0
+WARN  2016-04-06 22:22:54,560 [21   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:54,561 [21   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:54,562 [21   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:54,563 [21   ] Abp.Logging.LogHelper                    - Can not find '状态' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:54,564 [21   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-06 22:22:54,623 [21   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-06 22:23:22,830 [52   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:23:22,830 [52   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:23:22,831 [52   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 22:23:22,831 [52   ] Abp.Logging.LogHelper                    - Can not find '状态' in localization source 'Spartan'!
+WARN  2016-04-06 22:23:22,832 [52   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-06 22:23:22,833 [52   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:50,542 [32   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:50,542 [32   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:50,543 [32   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:50,543 [32   ] Abp.Logging.LogHelper                    - Can not find '状态' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:50,544 [32   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:50,591 [32   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+DEBUG 2016-04-06 22:26:54,219 [32   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 05a19bbe-57b1-4fda-b080-cefe1a32a59b
+DEBUG 2016-04-06 22:26:55,483 [56   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"88ec1cd2-749e-418b-bf2e-c35e30aea80c","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-06T22:26:55.4834382+08:00","Properties":{}}
+DEBUG 2016-04-06 22:26:55,503 [67   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 88ec1cd2-749e-418b-bf2e-c35e30aea80c
+WARN  2016-04-06 22:26:56,782 [37   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:56,782 [37   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:56,783 [37   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:56,783 [37   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:56,784 [37   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:56,784 [37   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:56,786 [37   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:56,788 [37   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:56,789 [37   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:58,749 [40   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:58,749 [40   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:58,750 [40   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:58,751 [40   ] Abp.Logging.LogHelper                    - Can not find '状态' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:58,751 [40   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-06 22:26:58,752 [40   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+DEBUG 2016-04-06 22:28:28,073 [32   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 88ec1cd2-749e-418b-bf2e-c35e30aea80c
+DEBUG 2016-04-06 22:28:29,807 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4a8a87b7-e313-4834-ae22-dcd9ad8744c9","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-06T22:28:29.807359+08:00","Properties":{}}
+DEBUG 2016-04-06 22:28:29,826 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4a8a87b7-e313-4834-ae22-dcd9ad8744c9
+WARN  2016-04-06 22:28:31,503 [56   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-06 22:28:31,503 [56   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-06 22:28:31,504 [56   ] Abp.Logging.LogHelper                    - Can not find '编号' in localization source 'Spartan'!
+WARN  2016-04-06 22:28:31,505 [56   ] Abp.Logging.LogHelper                    - Can not find '操作' in localization source 'Spartan'!
+WARN  2016-04-06 22:28:31,506 [56   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:28:31,507 [56   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:28:31,511 [56   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:28:31,513 [56   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-06 22:28:31,514 [56   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-06 22:28:33,950 [23   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:28:33,951 [23   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:28:33,952 [23   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 22:28:33,952 [23   ] Abp.Logging.LogHelper                    - Can not find '状态' in localization source 'Spartan'!
+WARN  2016-04-06 22:28:33,953 [23   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-06 22:28:33,955 [23   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-06 22:29:16,030 [56   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-06 22:29:16,031 [56   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-06 22:29:16,032 [56   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-06 22:29:16,033 [56   ] Abp.Logging.LogHelper                    - Can not find '状态' in localization source 'Spartan'!
+WARN  2016-04-06 22:29:16,035 [56   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-06 22:29:16,036 [56   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!

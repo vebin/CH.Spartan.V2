@@ -79,6 +79,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Devices\Device.cs" />
     <Compile Include="SpartanConsts.cs" />
     <Compile Include="SpartanCoreModule.cs" />
     <Compile Include="Authorization\SpartanAuthorizationProvider.cs" />

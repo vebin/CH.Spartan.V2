@@ -104,7 +104,7 @@
     };
 
     /* WINDOW **************************************************/
-    abp.ui.open = function (url, title, options) {
+    abp.dialog.open = function (url, title, options) {
         options = options || {};
         var opts =
         {
@@ -120,7 +120,7 @@
         dialog.open(args);
     };
 
-    abp.ui.close = function () {
+    abp.dialog.close = function () {
         var index = dialog.getFrameIndex(window.name);
         dialog.close(index);
     };

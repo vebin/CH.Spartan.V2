@@ -405,11 +405,11 @@ var abp = abp || {};
     };
 
     /*UI WINDOW */
-    abp.ui.open = function (url, title, options) {
+    abp.dialog.open = function (url, title, options) {
         abp.log.warn('abp.window.open is not implemented!');
     };
 
-    abp.ui.close = function () {
+    abp.dialog.close = function () {
         abp.log.warn('abp.window.close is not implemented!');
     };
 

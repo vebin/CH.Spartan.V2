@@ -2909,3 +2909,4 @@ DEBUG 2016-04-05 18:24:58,433 [128  ] Abp.Web.SignalR.Hubs.AbpCommonHub        -
 DEBUG 2016-04-05 18:24:59,094 [128  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0aea8012-505b-4d39-a8dc-ee25f496af21","IpAddress":"::1","TenantId":25,"UserId":4,"ConnectTime":"2016-04-05T18:24:59.0949217+08:00","Properties":{}}
 DEBUG 2016-04-05 18:24:59,123 [126  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0aea8012-505b-4d39-a8dc-ee25f496af21
 DEBUG 2016-04-05 18:25:09,984 [102  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: bf8d0aef-4d00-403f-8c4d-a0623c321743
+DEBUG 2016-04-05 18:25:35,020 [128  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 0aea8012-505b-4d39-a8dc-ee25f496af21

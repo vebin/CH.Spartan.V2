@@ -16,7 +16,7 @@
 
         //添加
         function create() {
-            abp.ui.open("/SystemManage/CreateTenant", "@L("添加")@L("租户")", {
+            abp.dialog.open("/SystemManage/CreateTenant", "@L("添加")@L("租户")", {
                 area: ["30%", "50%"],
                 btn: ["@L("确定")", '@L("取消")'],
                 yes: function(index, layero) {
@@ -24,10 +24,10 @@
                     iframeWin.saveData();
                 },
                 cancel: function(index) {
-                    debugger;
+                    
                 },
                 end: function() {
-                    debugger;
+                     $("#btn-search").click();
                 }
             });
         }
@@ -35,7 +35,7 @@
 
         //更新
         function update(id) {
-            abp.ui.open("/SystemManage/UpdateTenant?id=" + id, "@L("修改")@L("租户")", {
+            abp.dialog.open("/SystemManage/UpdateTenant?id=" + id, "@L("修改")@L("租户")", {
                 area: ["50%", "50%"],
                 btn: ["@L("保存")", '@L("取消")'],
                 yes: function(index, layero) {
@@ -43,10 +43,10 @@
                     iframeWin.saveData();
                 },
                 cancel: function(index) {
-                    debugger;
+                    
                 },
                 end: function() {
-                    debugger;
+                    $("#btn-search").click();
                 }
             });
         }

@@ -49,5 +49,23 @@
     <text name="操作" value="操作" />
     
     <text name="编号" value="编号" />
+
+
+
+
+    <text name="设备类型名字" value="设备类型名字" />
+    <text name="设备所使用协议" value="设备所使用协议" />
+    <text name="设备唯一编码生成规则" value="设备唯一编码生成规则" />
+    <text name="是否有继电器" value="是否有继电器" />
+    <text name="是否有外接电源" value="是否有外接电源" />
+    <text name="是否有SOS报警" value="是否有SOS报警" />
+    <text name="是否有脱落报警" value="是否有脱落报警" />
+    <text name="是否有震动报警" value="是否有震动报警" />
+    <text name="是否有低电报警" value="是否有低电报警" />
+    <text name="是否有电量数据" value="是否有电量数据" />
+    <text name="是否有Acc信号" value="是否有Acc信号" />
+    
+    
+    
   </texts>
 </localizationDictionary>

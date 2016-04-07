@@ -1,5 +1,7 @@
-﻿@using System.Web.Optimization
+﻿
+
 @using CH.Spartan.Authorization
+@using System.Web.Optimization
 @section styles
 {
     @Styles.Render("~/styles/plugins/list")
@@ -10,10 +12,13 @@
     <script type="text/javascript">
         //操作
         function formatterOp(value, row, index) {
-            if (abp.auth.isGranted("@PermissionNames.SystemManages_Tenant_Update")) {
+            var edit = "";
+            var del = "";
+
+            if (abp.auth.isGranted("@PermissionNames.SystemManages_DeviceType_Update")) {
                 edit = '<i class="btn-op fa fa-edit" title="@L("修改")" onclick="update(\'' + row.id + '\')"></i>';
             }
-            if (abp.auth.isGranted("@PermissionNames.SystemManages_Tenant_Delete")) {
+            if (abp.auth.isGranted("@PermissionNames.SystemManages_DeviceType_Delete")) {
                 del = '<i class="btn-op fa fa-trash-o" title="@L("删除")" onclick="del(\'' + row.id + '\')"></i>';
             }
             return edit + del;
@@ -21,15 +26,14 @@
 
         //添加
         function create() {
-            abp.dialog.open("/SystemManage/CreateTenant", "@L("添加租户")", {
-                area: ["30%", "60%"],
+            abp.dialog.open("/SystemManage/CreateDeviceType", "@L("添加设备类型")", {
+                area: ["30%", "80%"],
                 btn: ["@L("确定")", '@L("取消")'],
                 yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
                     iframeWin.submitForm();
                 },
                 cancel: function (index) {
-
                 },
                 end: function () {
                     $("#btn-search").click();
@@ -37,24 +41,23 @@
             });
         }
 
-
         //更新
         function update(id) {
-            abp.dialog.open("/SystemManage/UpdateTenant?id=" + id, "@L("修改租户")", {
-                area: ["30%", "60%"],
+            abp.dialog.open("/SystemManage/UpdateDeviceType?id=" + id, "@L("修改设备类型")", {
+                area: ["30%", "80%"],
                 btn: ["@L("保存")", '@L("取消")'],
                 yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
                     iframeWin.submitForm();
                 },
                 cancel: function (index) {
-
                 },
                 end: function () {
                     $("#btn-search").click();
                 }
             });
         }
+
 
         //删除
         function del(ids) {
@@ -62,16 +65,20 @@
                 ids = [{ id: ids }];
             }
             abp.message.confirm("@L("确定删除")?", function (yes) {
-                if (yes) {
-                    abp.ajax({
-                        url: "/SystemManage/DeleteTenant",
-                        data: JSON.stringify(ids)
-                    }).done(function (result) {
-                        $("#btn-search").click();
-                    });
-                }
+                if (!yes) return;
+                abp.ajax({
+                    url: "/SystemManage/DeleteDeviceType",
+                    data: JSON.stringify(ids)
+                }).done(function (result) {
+                    abp.notify.success("@L("删除成功")");
+                    $("#btn-search").click();
+                });
             });
         }
+
+
+
+
 
         (function ($) {
             if (!$) {
@@ -101,6 +108,9 @@
                 });
                 del(ids);
             });
+
+
+
         })(jQuery);
     </script>
 }
@@ -112,7 +122,7 @@
                     <form role="form" class="form-inline" id="form">
                         <div class="form-group">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="@L("请输入租户名或者昵称")" name="SearchText">
+                                <input type="text" class="form-control" placeholder="@L("请输入关键字")" name="SearchText">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="button" id="btn-search">@L("查询")</button>
                                 </span>
@@ -122,18 +132,18 @@
                 </div>
                 <div class="ibox-content list-content">
                     <div class="btn-group hidden-xs" id="tableToolbar" role="group">
-                        @if (IsGranted(PermissionNames.SystemManages_Tenant_Create))
+                        @if (IsGranted(PermissionNames.SystemManages_DeviceType_Create))
                         {
                             <button type="button" class="btn btn-outline btn-default" id="btn-add"><i class="fa fa-plus" aria-hidden="true"></i></button>
                         }
-                        @if (IsGranted(PermissionNames.SystemManages_Tenant_Delete))
+                        @if (IsGranted(PermissionNames.SystemManages_DeviceType_Delete))
                         {
                             <button type="button" class="btn btn-outline btn-default" id="btn-del"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                         }
                     </div>
                     <table id="table"
                            data-toggle="table"
-                           data-url="/SystemManage/SearchTenant"
+                           data-url="/SystemManage/SearchDeviceType"
                            data-toolbar="#tableToolbar"
                            data-height="550"
                            data-show-export="true">
@@ -142,8 +152,17 @@
                                 <th data-field="state" data-checkbox="true"></th>
                                 <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
                                 <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
-                                <th data-field="tenancyName" data-sortable="true">@L("租户名")</th>
-                                <th data-field="name" data-sortable="true">@L("公司名")</th>
+                                <th data-field="name" data-sortable="true">@L("设备类型名字")</th>
+                                <th data-field="protocol" data-sortable="true">@L("设备所使用协议")</th>
+                                <th data-field="isHaveRelay" data-sortable="true">@L("是否有继电器")</th>
+                                <th data-field="isHaveMainPowerBreak" data-sortable="true">@L("是否有外接电源")</th>
+                                <th data-field="isHaveSos" data-sortable="true">@L("是否有SOS报警")</th>
+                                <th data-field="isHaveDropOff" data-sortable="true">@L("是否有脱落报警")</th>
+                                <th data-field="isHaveShake" data-sortable="true">@L("是否有震动报警")</th>
+                                <th data-field="isHaveLowBattery" data-sortable="true">@L("是否有低电报警")</th>
+                                <th data-field="isHavePower" data-sortable="true">@L("是否有电量数据")</th>
+                                <th data-field="isHaveAcc" data-sortable="true">@L("是否有Acc信号")</th>
+                                <th data-field="creationTime" data-sortable="true">@L("创建时间")</th>
                             </tr>
                         </thead>
                     </table>
@@ -152,6 +171,3 @@
         </div>
     </div>
 </div>
-
-
-

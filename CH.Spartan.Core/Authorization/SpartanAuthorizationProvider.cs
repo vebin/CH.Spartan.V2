@@ -74,11 +74,11 @@ namespace CH.Spartan.Authorization
                 systemManage = context.CreatePermission(PermissionNames.SystemManages, L("系统管理"), multiTenancySides: MultiTenancySides.Host);
             }
 
-            var systemManagesTenant = systemManage.CreateChildPermission(PermissionNames.SystemManages_Tenant, L("租户管理"), multiTenancySides: MultiTenancySides.Host);
-            systemManagesTenant.CreateChildPermission(PermissionNames.SystemManages_Tenant_Create, L("添加"), multiTenancySides: MultiTenancySides.Host);
-            systemManagesTenant.CreateChildPermission(PermissionNames.SystemManages_Tenant_Update, L("更新"), multiTenancySides: MultiTenancySides.Host);
-            systemManagesTenant.CreateChildPermission(PermissionNames.SystemManages_Tenant_Delete, L("删除"), multiTenancySides: MultiTenancySides.Host);
-            systemManagesTenant.CreateChildPermission(PermissionNames.SystemManages_Tenant_Deposit, L("充值"), multiTenancySides: MultiTenancySides.Host);
+            var systemManageTenant = systemManage.CreateChildPermission(PermissionNames.SystemManages_Tenant, L("租户管理"), multiTenancySides: MultiTenancySides.Host);
+            systemManageTenant.CreateChildPermission(PermissionNames.SystemManages_Tenant_Create, L("添加"), multiTenancySides: MultiTenancySides.Host);
+            systemManageTenant.CreateChildPermission(PermissionNames.SystemManages_Tenant_Update, L("更新"), multiTenancySides: MultiTenancySides.Host);
+            systemManageTenant.CreateChildPermission(PermissionNames.SystemManages_Tenant_Delete, L("删除"), multiTenancySides: MultiTenancySides.Host);
+            systemManageTenant.CreateChildPermission(PermissionNames.SystemManages_Tenant_Deposit, L("充值"), multiTenancySides: MultiTenancySides.Host);
 
             var systemManageDeviceType = systemManage.CreateChildPermission(PermissionNames.SystemManages_DeviceType, L("设备类型"), multiTenancySides: MultiTenancySides.Host);
             systemManageDeviceType.CreateChildPermission(PermissionNames.SystemManages_DeviceType_Create, L("添加"), multiTenancySides: MultiTenancySides.Host);

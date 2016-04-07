@@ -123,11 +123,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityFramework\Repositories\DeviceTypeRepository.cs" />
     <Compile Include="EntityFramework\SpartanDbContext.cs" />
     <Compile Include="EntityFramework\Repositories\SpartanRepositoryBase.cs" />
     <Compile Include="Migrations\201604050847316_Init.cs" />
     <Compile Include="Migrations\201604050847316_Init.Designer.cs">
       <DependentUpon>201604050847316_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604070943429_Add_Device_Type_And_Device.cs" />
+    <Compile Include="Migrations\201604070943429_Add_Device_Type_And_Device.Designer.cs">
+      <DependentUpon>201604070943429_Add_Device_Type_And_Device.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="SpartanDataModule.cs" />
@@ -168,6 +173,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201604050847316_Init.resx">
       <DependentUpon>201604050847316_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604070943429_Add_Device_Type_And_Device.resx">
+      <DependentUpon>201604070943429_Add_Device_Type_And_Device.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

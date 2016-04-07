@@ -10,6 +10,8 @@ using Abp.Web.Mvc.Authorization;
 using Abp.Web.Mvc.Models;
 using Abp.WebApi.Authorization;
 using CH.Spartan.Authorization;
+using CH.Spartan.DeviceTypes;
+using CH.Spartan.DeviceTypes.Dto;
 using CH.Spartan.MultiTenancy;
 using CH.Spartan.MultiTenancy.Dto;
 
@@ -21,10 +23,13 @@ namespace CH.Spartan.Web.Controllers
     public class SystemManageController : SpartanControllerBase
     {
         private readonly ITenantAppService _tenantAppService;
-
-        public SystemManageController(ITenantAppService tenantAppService)
+        private readonly IDeviceTypeAppService _deviceTypeAppService;
+        public SystemManageController(
+            ITenantAppService tenantAppService, 
+            IDeviceTypeAppService deviceTypeAppService)
         {
             _tenantAppService = tenantAppService;
+            _deviceTypeAppService = deviceTypeAppService;
         }
 
         #region 租户
@@ -90,6 +95,76 @@ namespace CH.Spartan.Web.Controllers
         public async Task<JsonResult> DeleteTenant(List<IdInput> input)
         {
             await _tenantAppService.DeleteTenantAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+
+        #endregion
+
+        #region 设备类型
+
+        #region 首页
+        [AbpMvcAuthorize(PermissionNames.SystemManages_DeviceType)]
+        public ActionResult DeviceType()
+        {
+            return View();
+        }
+        #endregion
+
+        #region 搜索
+
+        [HttpGet]
+        [AbpMvcAuthorize(PermissionNames.SystemManages_DeviceType)]
+        public async Task<JsonResult> SearchDeviceType(GetDeviceTypeListPagedInput input)
+        {
+            var result = await _deviceTypeAppService.GetDeviceTypeListPagedAsync(input);
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+        #region 添加
+        [HttpGet]
+        [AbpMvcAuthorize(PermissionNames.SystemManages_DeviceType_Create)]
+        public ActionResult CreateDeviceType()
+        {
+            var result = _deviceTypeAppService.GetNewDeviceType();
+            return View(result);
+        }
+
+        [HttpPost]
+        [AbpMvcAuthorize(PermissionNames.SystemManages_DeviceType_Create)]
+        public async Task<JsonResult> CreateDeviceType(CreateDeviceTypeInput input)
+        {
+            await _deviceTypeAppService.CreateDeviceTypeAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+        #region 更新
+        [HttpGet]
+        [AbpMvcAuthorize(PermissionNames.SystemManages_DeviceType_Update)]
+        public async Task<ActionResult> UpdateDeviceType(IdInput input)
+        {
+            var result = await _deviceTypeAppService.GetUpdateDeviceTypeAsync(input);
+            return View(result);
+        }
+
+        [HttpPost]
+        [AbpMvcAuthorize(PermissionNames.SystemManages_DeviceType_Update)]
+        public async Task<JsonResult> UpdateDeviceType(UpdateDeviceTypeInput input)
+        {
+            await _deviceTypeAppService.UpdateDeviceTypeAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+        #region 删除
+        [HttpPost]
+        [AbpMvcAuthorize(PermissionNames.SystemManages_DeviceType_Delete)]
+        public async Task<JsonResult> DeleteDeviceType(List<IdInput> input)
+        {
+            await _deviceTypeAppService.DeleteDeviceTypeAsync(input);
             return Json(true, JsonRequestBehavior.AllowGet);
         }
         #endregion

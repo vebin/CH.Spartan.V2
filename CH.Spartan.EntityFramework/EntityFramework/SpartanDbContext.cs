@@ -2,6 +2,8 @@
 using System.Data.Entity;
 using Abp.Zero.EntityFramework;
 using CH.Spartan.Authorization.Roles;
+using CH.Spartan.Devices;
+using CH.Spartan.DeviceTypes;
 using CH.Spartan.MultiTenancy;
 using CH.Spartan.Users;
 using MySql.Data.Entity;
@@ -11,6 +13,8 @@ namespace CH.Spartan.EntityFramework
     public class SpartanDbContext : AbpZeroDbContext<Tenant, Role, User>
     {
         //TODO: Define an IDbSet for your Entities...
+
+        public IDbSet<DeviceType> DeviceTypes { get; set; }
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.
@@ -36,6 +40,17 @@ namespace CH.Spartan.EntityFramework
         public SpartanDbContext(DbConnection connection)
             : base(connection, true)
         {
+
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Device>()
+                .HasRequired(p => p.DeviceType)
+                .WithMany(p => p.Devices)
+                .HasForeignKey(p => p.BDeviceTypeId);
 
         }
 

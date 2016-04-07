@@ -626,6 +626,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Views\SystemManage\DeviceType.cshtml" />
+    <Content Include="Views\SystemManage\UpdateDeviceType.cshtml" />
+    <Content Include="Views\SystemManage\CreateDeviceType.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Abp\Abp.AutoMapper\Abp.AutoMapper.csproj">

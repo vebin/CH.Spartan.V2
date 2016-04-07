@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using CH.Spartan.Commons;
-using CH.Spartan.Users;
 
 namespace CH.Spartan.MultiTenancy.Dto
 {
@@ -41,9 +35,6 @@ namespace CH.Spartan.MultiTenancy.Dto
             Tenant = tenant;
         }
 
-         
         public UpdateTenantDto Tenant { get; set; }
-
-        public List<ComboboxItemDto> ActiveList { get; set; }
     }
 }

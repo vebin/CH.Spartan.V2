@@ -17,7 +17,7 @@ namespace CH.Spartan.Web.Controllers
 {
 
 
-    [AbpMvcAuthorize(PermissionNames.SystemManages)]
+    [AbpMvcAuthorize]
     public class SystemManageController : SpartanControllerBase
     {
         private readonly ITenantAppService _tenantAppService;

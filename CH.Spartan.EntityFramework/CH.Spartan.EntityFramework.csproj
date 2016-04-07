@@ -134,6 +134,14 @@
     <Compile Include="Migrations\201604070943429_Add_Device_Type_And_Device.Designer.cs">
       <DependentUpon>201604070943429_Add_Device_Type_And_Device.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604071337238_test.cs" />
+    <Compile Include="Migrations\201604071337238_test.Designer.cs">
+      <DependentUpon>201604071337238_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604071359191_test2.cs" />
+    <Compile Include="Migrations\201604071359191_test2.Designer.cs">
+      <DependentUpon>201604071359191_test2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="SpartanDataModule.cs" />
     <Compile Include="Migrations\SeedData\DefaultEditionsBuilder.cs" />
@@ -176,6 +184,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604070943429_Add_Device_Type_And_Device.resx">
       <DependentUpon>201604070943429_Add_Device_Type_And_Device.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604071337238_test.resx">
+      <DependentUpon>201604071337238_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604071359191_test2.resx">
+      <DependentUpon>201604071359191_test2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

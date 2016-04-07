@@ -19,14 +19,10 @@ namespace CH.Spartan.DeviceTypes
         public string Name { get; set; }
 
         /// <summary>
-        /// 设备所使用协议
+        /// 接入网关
         /// </summary>
-        public EnumProtocol Protocol { get; set; }
-
-        /// <summary>
-        /// 设备唯一编码生成规则
-        /// </summary>
-        public EnumCodeCreateRule CodeCreateRule { get; set; }
+        [Required, MaxLength(50)]
+        public string GatewayInfo { get; set; }
 
         /// <summary>
         /// 是否有继电器

@@ -18,6 +18,7 @@ namespace CH.Spartan.Web
                     .Include("~/Content/css/plugins/flags/famfamfam-flags.css", new CssRewriteUrlTransform())
                     .Include("~/Content/css/animate.min.css", new CssRewriteUrlTransform())
                     .Include("~/Content/css/style.min.css", new CssRewriteUrlTransform())
+                    .Include("~/Content/css/base.css", new CssRewriteUrlTransform())
                     .Include("~/Content/css/main.css", new CssRewriteUrlTransform())
                 );
 

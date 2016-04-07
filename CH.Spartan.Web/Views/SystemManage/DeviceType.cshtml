@@ -24,18 +24,25 @@
             return edit + del;
         }
 
+        function formatterEnable(value, row, index) {
+            return value ? "@L("是")" : "@L("否")";
+        }
+
         //添加
         function create() {
             abp.dialog.open("/SystemManage/CreateDeviceType", "@L("添加设备类型")", {
-                area: ["30%", "80%"],
+                //area: ["675px", "80%"],
+                area: ["775px", "80%"],
+                //area: ["995px", "80%"],
+                //area: ["1250px", "80%"],
                 btn: ["@L("确定")", '@L("取消")'],
-                yes: function (index, layero) {
+                yes: function(index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
                     iframeWin.submitForm();
                 },
-                cancel: function (index) {
+                cancel: function(index) {
                 },
-                end: function () {
+                end: function() {
                     $("#btn-search").click();
                 }
             });
@@ -44,15 +51,15 @@
         //更新
         function update(id) {
             abp.dialog.open("/SystemManage/UpdateDeviceType?id=" + id, "@L("修改设备类型")", {
-                area: ["30%", "80%"],
+                area: ["50%", "80%"],
                 btn: ["@L("保存")", '@L("取消")'],
-                yes: function (index, layero) {
+                yes: function(index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
                     iframeWin.submitForm();
                 },
-                cancel: function (index) {
+                cancel: function(index) {
                 },
-                end: function () {
+                end: function() {
                     $("#btn-search").click();
                 }
             });
@@ -64,12 +71,12 @@
             if (typeof ids == "string") {
                 ids = [{ id: ids }];
             }
-            abp.message.confirm("@L("确定删除")?", function (yes) {
+            abp.message.confirm("@L("确定删除")?", function(yes) {
                 if (!yes) return;
                 abp.ajax({
                     url: "/SystemManage/DeleteDeviceType",
                     data: JSON.stringify(ids)
-                }).done(function (result) {
+                }).done(function(result) {
                     abp.notify.success("@L("删除成功")");
                     $("#btn-search").click();
                 });
@@ -77,16 +84,13 @@
         }
 
 
-
-
-
-        (function ($) {
+        (function($) {
             if (!$) {
                 return;
             }
 
             //搜索
-            $("#btn-search").click(function () {
+            $("#btn-search").click(function() {
                 var args =
                 {
                     query: abp.utils.getFormData("#form")
@@ -95,20 +99,23 @@
             });
 
             //添加
-            $("#btn-add").click(function () {
+            $("#btn-add").click(function() {
                 create();
             });
 
             //删除
-            $("#btn-del").click(function () {
+            $("#btn-del").click(function() {
                 var rows = $("#table").bootstrapTable("getSelections");
                 var ids = [];
-                $.each(rows, function (index, item) {
+                $.each(rows, function(index, item) {
                     ids.push({ id: item.id });
                 });
-                del(ids);
+                if (ids.length == 0) {
+                    abp.notify.error("@L("请选择要删除的数据")");
+                } else {
+                    del(ids);
+                }
             });
-
 
 
         })(jQuery);
@@ -153,16 +160,15 @@
                                 <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
                                 <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
                                 <th data-field="name" data-sortable="true">@L("设备类型名字")</th>
-                                <th data-field="protocol" data-sortable="true">@L("设备所使用协议")</th>
-                                <th data-field="isHaveRelay" data-sortable="true">@L("是否有继电器")</th>
-                                <th data-field="isHaveMainPowerBreak" data-sortable="true">@L("是否有外接电源")</th>
-                                <th data-field="isHaveSos" data-sortable="true">@L("是否有SOS报警")</th>
-                                <th data-field="isHaveDropOff" data-sortable="true">@L("是否有脱落报警")</th>
-                                <th data-field="isHaveShake" data-sortable="true">@L("是否有震动报警")</th>
-                                <th data-field="isHaveLowBattery" data-sortable="true">@L("是否有低电报警")</th>
-                                <th data-field="isHavePower" data-sortable="true">@L("是否有电量数据")</th>
-                                <th data-field="isHaveAcc" data-sortable="true">@L("是否有Acc信号")</th>
-                                <th data-field="creationTime" data-sortable="true">@L("创建时间")</th>
+                                <th data-field="gatewayInfo" data-sortable="true">@L("接入网关")</th>
+                                <th data-field="isHaveRelay" data-formatter="formatterEnable" data-sortable="true">@L("是否有继电器")</th>
+                                <th data-field="isHaveMainPowerBreak" data-formatter="formatterEnable" data-sortable="true">@L("是否有外接电源")</th>
+                                <th data-field="isHaveSos" data-formatter="formatterEnable" data-sortable="true">@L("是否有SOS报警")</th>
+                                <th data-field="isHaveDropOff" data-formatter="formatterEnable" data-sortable="true">@L("是否有脱落报警")</th>
+                                <th data-field="isHaveShake" data-formatter="formatterEnable" data-sortable="true">@L("是否有震动报警")</th>
+                                <th data-field="isHaveLowBattery" data-formatter="formatterEnable" data-sortable="true">@L("是否有低电报警")</th>
+                                <th data-field="isHavePower" data-formatter="formatterEnable" data-sortable="true">@L("是否有电量数据")</th>
+                                <th data-field="isHaveAcc" data-formatter="formatterEnable" data-sortable="true">@L("是否有Acc信号")</th>
                             </tr>
                         </thead>
                     </table>

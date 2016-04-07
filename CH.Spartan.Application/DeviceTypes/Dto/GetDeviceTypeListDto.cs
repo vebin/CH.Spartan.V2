@@ -1,7 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
+using Abp.Runtime.Validation;
 using CH.Spartan.Commons;
+using Newtonsoft.Json;
 
 namespace CH.Spartan.DeviceTypes.Dto
 {
@@ -11,21 +14,13 @@ namespace CH.Spartan.DeviceTypes.Dto
         /// <summary>
         /// 设备类型名字
         /// </summary>
-        [Required]
-        [MaxLength(50)]
         public string Name { get; set; }
 
         /// <summary>
-        /// 设备所使用协议
+        /// 接入网关
         /// </summary>
-        [Required]
-        public EnumProtocol Protocol { get; set; }
-
-        /// <summary>
-        /// 设备唯一编码生成规则
-        /// </summary>
-        [Required]
-        public EnumCodeCreateRule CodeCreateRule { get; set; }
+        [Required, MaxLength(50)]
+        public string GatewayInfo { get; set; }
 
         /// <summary>
         /// 是否有继电器
@@ -66,7 +61,6 @@ namespace CH.Spartan.DeviceTypes.Dto
         /// 是否有Acc信号
         /// </summary>
         public bool IsHaveAcc { get; set; }
-
     }
 
     public class GetDeviceTypeListInput : QueryListResultRequestInput

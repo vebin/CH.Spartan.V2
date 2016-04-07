@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using CH.Spartan.Commons.Dto;
+using CH.Spartan.Commons;
 
 namespace CH.Spartan.MultiTenancy.Dto
 {

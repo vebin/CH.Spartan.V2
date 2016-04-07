@@ -2,6 +2,7 @@
 {
     public static class PermissionNames
     {
+      
         public const string Homes = "Homes";
         public const string Homes_Monitor = "Homes.Monitor";
         public const string Homes_HistoryTrack = "Homes.HistoryTrack";
@@ -36,11 +37,29 @@
         public const string PlatformManages_Device_Update = "PlatformManages.Device.Update";
         public const string PlatformManages_Device_Delete = "PlatformManages.Device.Delete";
 
+        public const string PlatformManages_DeviceStatistics = "PlatformManages.DeviceStatistics";
+
+        public const string PlatformManages_UserStatistics = "PlatformManages.UserStatistics";
+
+        public const string PlatformManages_DealRecord = "PlatformManages.DealRecord";
+        public const string PlatformManages_DealRecord_Delete = "PlatformManages.DealRecord.Delete";
+
+
+
         public const string SystemManages = "SystemManages";
+
+  
+
         public const string SystemManages_Tenant = "SystemManages.Tenant";
         public const string SystemManages_Tenant_Create = "SystemManages.Tenant.Create";
         public const string SystemManages_Tenant_Update = "SystemManages.Tenant.Update";
         public const string SystemManages_Tenant_Delete = "SystemManages.Tenant.Delete";
+        public const string SystemManages_Tenant_Deposit = "SystemManages.Tenant.Deposit";
+
+        public const string SystemManages_DeviceType = "SystemManages.DeviceType";
+        public const string SystemManages_DeviceType_Create = "SystemManages.DeviceType.Create";
+        public const string SystemManages_DeviceType_Update = "SystemManages.DeviceType.Update";
+        public const string SystemManages_DeviceType_Delete = "SystemManages.DeviceType.Delete";
 
         public const string SystemManages_AuditLog = "PlatformManages.AuditLog";
         public const string SystemManages_AuditLog_Delete = "PlatformManages.AuditLog.Delete";

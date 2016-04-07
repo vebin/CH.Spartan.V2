@@ -16,9 +16,13 @@
     <text name="客户管理" value="客户管理" />
     <text name="角色管理" value="角色管理" />
     <text name="车辆管理" value="车辆管理" />
-
+    <text name="车辆统计" value="车辆统计" />
+    <text name="用户统计" value="用户统计" />
+    <text name="交易记录" value="交易记录" />
+    
     <text name="系统管理" value="系统管理" />
     <text name="租户管理" value="租户管理" />
+    <text name="设备类型" value="设备类型" />
     <text name="审计日志" value="审计日志" />
     
     <text name="个人资料" value="个人资料" />
@@ -35,7 +39,15 @@
     <text name="确定" value="确定" />
     <text name="保存" value="保存" />
     <text name="取消" value="取消" />
+
+    <text name="充值" value="充值" />
+
+    <text name="是" value="是" />
+
+    <text name="否" value="否" />
+
+    <text name="操作" value="操作" />
     
-    
+    <text name="编号" value="编号" />
   </texts>
 </localizationDictionary>

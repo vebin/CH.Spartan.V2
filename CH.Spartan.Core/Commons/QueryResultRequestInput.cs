@@ -7,18 +7,12 @@ using Abp.Application.Services.Dto;
 using Abp.Extensions;
 using Abp.Runtime.Validation;
 
-namespace CH.Spartan.Commons.Dto
+namespace CH.Spartan.Commons
 {
-    public interface ICountResultRequest
-    {
-        int Count { get; set; }
-    }
-
     public interface IFilterResultRequest
     {
         string SearchText { get; set; }
     }
-
 
     public interface IDateTimeResultRequest
     {
@@ -42,11 +36,11 @@ namespace CH.Spartan.Commons.Dto
         
     }
 
-    public class QueryListResultRequestInput : QueryResultRequestInput, 
-        ICountResultRequest, 
+    public class QueryListResultRequestInput : QueryResultRequestInput,
+        ILimitedResultRequest, 
         IShouldNormalize
     {
-        public int Count { get; set; }
+        public int MaxResultCount { get; set; }
 
         public void Normalize()
         {
@@ -54,9 +48,9 @@ namespace CH.Spartan.Commons.Dto
             {
                 Sorting = SpartanConsts.DefaultSorting;
             }
-            if (Count == 0)
+            if (MaxResultCount == 0)
             {
-                Count = SpartanConsts.DefaultMaxResultCount;
+                MaxResultCount = SpartanConsts.DefaultMaxResultCount;
             }
         }
     }

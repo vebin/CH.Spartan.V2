@@ -5,7 +5,7 @@ using Abp.Localization;
 using Abp.Threading;
 using Abp.Web.Mvc.Authorization;
 using CH.Spartan.Sessions;
-using CH.Spartan.Web.Models.Layout;
+using CH.Spartan.Web.Models;
 
 namespace CH.Spartan.Web.Controllers
 {

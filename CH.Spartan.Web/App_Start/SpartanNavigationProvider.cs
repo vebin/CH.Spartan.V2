@@ -51,6 +51,9 @@ namespace CH.Spartan.Web
                         .AddItem(new MenuItemDefinition("User", L("客户管理"), "fa fa-user", "/PlatformManage/User", true, PermissionNames.PlatformManages_User))
                         .AddItem(new MenuItemDefinition("Role", L("角色管理"), "fa fa-check", "/PlatformManage/Role", true, PermissionNames.PlatformManages_Role))
                         .AddItem(new MenuItemDefinition("Device", L("车辆管理"), "fa fa-truck", "/PlatformManage/Device", true, PermissionNames.PlatformManages_Device))
+                        .AddItem(new MenuItemDefinition("DeviceStatistics", L("车辆统计"), "fa fa-truck", "/PlatformManage/DeviceStatistics", true, PermissionNames.PlatformManages_DeviceStatistics))
+                        .AddItem(new MenuItemDefinition("UserStatistics", L("用户统计"), "fa fa-user", "/PlatformManage/UserStatistics", true, PermissionNames.PlatformManages_UserStatistics))
+                        .AddItem(new MenuItemDefinition("DealRecord", L("交易记录"), "fa fa-credit-card", "/PlatformManage/DealRecord", true, PermissionNames.PlatformManages_DealRecord))
                 ).AddItem(
                     new MenuItemDefinition(
                         "SystemManage",
@@ -61,6 +64,7 @@ namespace CH.Spartan.Web
                         requiredPermissionName: PermissionNames.SystemManages
                         )
                         .AddItem(new MenuItemDefinition("Tenant", L("租户管理"), "fa fa-user-secret", "/SystemManage/Tenant", true, PermissionNames.SystemManages_Tenant))
+                        .AddItem(new MenuItemDefinition("DeviceType", L("设备类型"), "fa fa-user-secret", "/SystemManage/DeviceType", true, PermissionNames.SystemManages_Tenant))
                         .AddItem(new MenuItemDefinition("AuditLog", L("审计日志"), "fa fa-calendar-o", "/SystemManage/AuditLog", true, PermissionNames.SystemManages_AuditLog))
                 );
         }

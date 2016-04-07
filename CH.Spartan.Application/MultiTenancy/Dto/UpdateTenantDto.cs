@@ -6,11 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
+using CH.Spartan.Commons;
 using CH.Spartan.Users;
 
 namespace CH.Spartan.MultiTenancy.Dto
 {
-    [AutoMap(typeof(Tenant))]
+    [AutoMap(typeof (Tenant))]
     public class UpdateTenantDto : EntityDto, IDoubleWayDto
     {
         [Required]
@@ -39,6 +40,10 @@ namespace CH.Spartan.MultiTenancy.Dto
         {
             Tenant = tenant;
         }
+
+         
         public UpdateTenantDto Tenant { get; set; }
+
+        public List<ComboboxItemDto> ActiveList { get; set; }
     }
 }

@@ -7,16 +7,12 @@ using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.Linq.Extensions;
 using CH.Spartan.Authorization.Roles;
-using CH.Spartan.Commons.Dto;
 using CH.Spartan.Editions;
 using CH.Spartan.MultiTenancy.Dto;
 using CH.Spartan.Users;
-using System.Linq.Dynamic;
 using Abp.Extensions;
-using CH.Spartan.Commons.Linq;
-using System;
 using System.Data.Entity;
-using Abp.Domain.Entities;
+using CH.Spartan.Commons;
 
 namespace CH.Spartan.MultiTenancy
 {

@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Dynamic;
 using System.Text;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
-using System.Linq.Dynamic;
-using System.Data.Entity;
 using Abp.Extensions;
 
-namespace CH.Spartan.Commons.Linq
+namespace CH.Spartan.Commons
 {
     public static class LinqExtend
     {

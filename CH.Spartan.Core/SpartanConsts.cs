@@ -13,6 +13,17 @@ namespace CH.Spartan
 
 
     #region 枚举
+    public enum EnumCodeCreateRule
+    {
+        [EnumDisplayName("手机号0前缀")]
+        SimNoWithZeroPrefix = 5,
+        [EnumDisplayName("Gps设备号")]
+        DeviceGpsNo = 3,
+        [EnumDisplayName("Gps设备号0前缀")]
+        DeviceGpsNoWithZeroPrefix = 2,
+        [EnumDisplayName("康凯斯")]
+        Kks = 4
+    }
 
     #endregion
 }

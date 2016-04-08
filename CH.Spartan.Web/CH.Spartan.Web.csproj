@@ -619,17 +619,17 @@
     <Content Include="Content\js\plugins\table\extensions\toolbar\README.md" />
     <Content Include="Content\js\plugins\table\locale\bootstrap-table-en-US.js.template" />
     <Content Include="Content\js\plugins\table\locale\README.md" />
+    <Content Include="Views\SystemManage\CreateDeviceType.cshtml" />
     <None Include="Views\SystemManage\CreateTenant.cshtml" />
     <Content Include="Views\SystemManage\UpdateTenant.cshtml" />
+    <Content Include="Views\SystemManage\DeviceType.cshtml" />
+    <Content Include="Views\SystemManage\UpdateDeviceType.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Views\SystemManage\DeviceType.cshtml" />
-    <Content Include="Views\SystemManage\UpdateDeviceType.cshtml" />
-    <Content Include="Views\SystemManage\CreateDeviceType.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Abp\Abp.AutoMapper\Abp.AutoMapper.csproj">

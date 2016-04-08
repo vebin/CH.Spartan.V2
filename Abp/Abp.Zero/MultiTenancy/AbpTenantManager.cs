@@ -56,9 +56,7 @@ namespace Abp.MultiTenancy
             EditionManager = editionManager;
             LocalizationManager = NullLocalizationManager.Instance;
         }
-
-        public virtual IQueryable<TTenant> Tenants { get { return TenantRepository.GetAll(); } }
-
+       
         public virtual async Task<IdentityResult> CreateAsync(TTenant tenant)
         {
             if (await TenantRepository.FirstOrDefaultAsync(t => t.TenancyName == tenant.TenancyName) != null)

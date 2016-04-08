@@ -90,7 +90,7 @@
     <Compile Include="Commons\QueryResultRequestInput.cs" />
     <Compile Include="Devices\Device.cs" />
     <Compile Include="DeviceTypes\DeviceType.cs" />
-    <Compile Include="DeviceTypes\Repositories\IDeviceTypeRepository.cs" />
+    <Compile Include="MultiTenancy\TenantStore.cs" />
     <Compile Include="SpartanConsts.cs" />
     <Compile Include="SpartanCoreModule.cs" />
     <Compile Include="Authorization\SpartanAuthorizationProvider.cs" />
@@ -112,6 +112,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <Compile Include="DeviceTypes\DeviceTypeManager.cs" />
+    <Compile Include="DeviceTypes\DeviceTypeStore.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

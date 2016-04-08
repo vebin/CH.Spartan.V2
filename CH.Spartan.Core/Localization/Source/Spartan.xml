@@ -54,7 +54,10 @@
 
 
     <text name="设备类型名字" value="设备类型名字" />
-    <text name="设备所使用协议" value="设备所使用协议" />
+    <text name="接入网关" value="接入网关" />
+    <text name="供应商" value="供应商" />
+    <text name="制造商" value="制造商" />
+    <text name="服务费元/年" value="服务费元/年" />
     <text name="设备唯一编码生成规则" value="设备唯一编码生成规则" />
     <text name="是否有继电器" value="是否有继电器" />
     <text name="是否有外接电源" value="是否有外接电源" />
@@ -63,7 +66,7 @@
     <text name="是否有震动报警" value="是否有震动报警" />
     <text name="是否有低电报警" value="是否有低电报警" />
     <text name="是否有电量数据" value="是否有电量数据" />
-    <text name="是否有Acc信号" value="是否有Acc信号" />
+    <text name="是否有Acc信号" value="是否有Acc信号" />>
     
     
     

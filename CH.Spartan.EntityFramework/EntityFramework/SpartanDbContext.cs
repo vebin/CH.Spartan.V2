@@ -12,8 +12,14 @@ namespace CH.Spartan.EntityFramework
 {
     public class SpartanDbContext : AbpZeroDbContext<Tenant, Role, User>
     {
-        //TODO: Define an IDbSet for your Entities...
+        /// <summary>
+        /// 设备
+        /// </summary>
+        public IDbSet<Device> Devices { get; set; }
 
+        /// <summary>
+        /// 设备类型
+        /// </summary>
         public IDbSet<DeviceType> DeviceTypes { get; set; }
 
         /* NOTE: 

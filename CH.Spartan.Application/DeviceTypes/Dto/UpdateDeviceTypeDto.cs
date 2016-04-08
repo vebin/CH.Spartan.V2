@@ -18,8 +18,36 @@ namespace CH.Spartan.DeviceTypes.Dto
         /// <summary>
         /// 接入网关
         /// </summary>
-        [Required, MaxLength(50)]
-        public string GatewayInfo { get; set; }
+        [Required]
+        [MaxLength(50)]
+        public string SwitchInGateway { get; set; }
+
+        /// <summary>
+        /// 供应商
+        /// </summary>
+        [Required]
+        [MaxLength(150)]
+        public string Supplier { get; set; }
+
+        /// <summary>
+        /// 制造商
+        /// </summary>
+        [Required]
+        [MaxLength(150)]
+        public string Manufacturer { get; set; }
+
+        /// <summary>
+        /// 服务费元/年
+        /// </summary>
+        [Required]
+        [Range(1, 500)]
+        public decimal ServiceCharge { get; set; }
+
+        /// <summary>
+        /// 设备唯一编码生成规则
+        /// </summary>
+        [Required]
+        public EnumCodeCreateRule CodeCreateRule { get; set; }
 
         /// <summary>
         /// 是否有继电器

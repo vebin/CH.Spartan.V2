@@ -66,7 +66,7 @@ namespace CH.Spartan.MultiTenancy
                 using (CurrentUnitOfWork.DisableFilter(AbpDataFilters.MayHaveTenant))
                 {
                     //管理员账户
-                    var adminUser = User.CreateTenantAdminUser(tenant.Id, input.Tenant.TenancyName, input.Tenant.EmailAddress, User.DefaultPassword);
+                    var adminUser = User.CreateTenantAdminUser(tenant.Id, input.Tenant.TenancyName, input.Tenant.EmailAddress, SpartanConsts.DefaultPassword);
                     CheckErrors(await UserManager.CreateAsync(adminUser));
                     await CurrentUnitOfWork.SaveChangesAsync();
                     using (CurrentUnitOfWork.EnableFilter(AbpDataFilters.MayHaveTenant))

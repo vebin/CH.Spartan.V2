@@ -85,12 +85,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\Area.cs" />
     <Compile Include="Commons\EnumExtend.cs" />
     <Compile Include="Commons\LinqExtend.cs" />
     <Compile Include="Commons\QueryResultRequestInput.cs" />
+    <Compile Include="DealRecords\DealRecord.cs" />
     <Compile Include="Devices\Device.cs" />
     <Compile Include="DeviceTypes\DeviceType.cs" />
+    <Compile Include="Historys\History.cs" />
     <Compile Include="MultiTenancy\TenantStore.cs" />
+    <Compile Include="Nodes\Node.cs" />
+    <Compile Include="Reports\MileageReportDay.cs" />
     <Compile Include="SpartanConsts.cs" />
     <Compile Include="SpartanCoreModule.cs" />
     <Compile Include="Authorization\SpartanAuthorizationProvider.cs" />
@@ -130,6 +135,7 @@
       <Name>Abp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

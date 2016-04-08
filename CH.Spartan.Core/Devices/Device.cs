@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,12 @@ namespace CH.Spartan.Devices
         /// </summary>
         [Required,MaxLength(100)]
         public string BName { get; set; }
+
+        /// <summary>
+        /// 车牌号
+        /// </summary>
+        [Required, MaxLength(100)]
+        public string BLicensePlate { get; set; }
 
         /// <summary>
         /// 设备图标类型
@@ -62,39 +69,10 @@ namespace CH.Spartan.Devices
         /// 所属节点Id
         /// </summary>
         public int BNodeId { get; set; }
+
         #endregion
 
         #region 设置信息
-        /// <summary>
-        /// 报警设置 是否开启报警
-        /// </summary>
-        public bool SIsEnableAlarm { get; set; }
-
-        /// <summary>
-        /// 报警设置 是否发送邮件
-        /// </summary>
-        public bool SIsSendEmail { get; set; }
-
-        /// <summary>
-        /// 报警设置 是否发送APP
-        /// </summary>
-        public bool SIsSendApp { get; set; }
-
-        /// <summary>
-        /// 报警设置 接收邮件列表
-        /// </summary>
-        [MaxLength(250)]
-        public string SReceiveEmails { get; set; }
-
-        /// <summary>
-        /// 报警设置 允许接收开始时间
-        /// </summary>
-        public TimeSpan SReceiveStartTime { get; set; }
-
-        /// <summary>
-        /// 报警设置 允许接收结束时间
-        /// </summary>
-        public TimeSpan SReceiveEndTime { get; set; }
 
         /// <summary>
         /// 报警设置 超限速
@@ -105,11 +83,7 @@ namespace CH.Spartan.Devices
         /// 报警设置 进出区域
         /// </summary>
         public bool SInOutArea { get; set; }
-
-        /// <summary>
-        /// 报警设置 设防半径
-        /// </summary>
-        public int SFortifyRadius { get; set; }
+        
         #endregion
 
         #region 定位信息
@@ -206,6 +180,26 @@ namespace CH.Spartan.Devices
         public DateTime? COverSpeedLastAlarmTime { get; set; }
 
         /// <summary>
+        /// 状态 启动时间
+        /// </summary>
+        public DateTime? CStartupTime { get; set; }
+
+        /// <summary>
+        /// 状态 启动最后报警时间
+        /// </summary>
+        public DateTime? CStartupLastAlarmTime { get; set; }
+
+        /// <summary>
+        /// 状态 拥有速度时间
+        /// </summary>
+        public DateTime? CLastHaveSpeedTime { get; set; }
+
+        /// <summary>
+        /// 状态 拥有速度最后报警时间
+        /// </summary>
+        public DateTime? CLastHaveSpeedLastAlarmTime { get; set; }
+
+        /// <summary>
         /// 状态 进入区域列表
         /// </summary>
         [MaxLength(500)]
@@ -232,10 +226,6 @@ namespace CH.Spartan.Devices
         /// </summary>
         public DateTime? CLeaveFortifyAreaLastAlarmTime { get; set; }
 
-        /// <summary>
-        /// 状态 拥有速度时间
-        /// </summary>
-        public DateTime? CLastHaveSpeedTime { get; set; }
 
         /// <summary>
         /// 状态 是否脱落
@@ -299,6 +289,7 @@ namespace CH.Spartan.Devices
         /// <summary>
         /// 设备类型
         /// </summary>
+        [ForeignKey("BDeviceTypeId")]
         public virtual DeviceType DeviceType { get; set; }
 
         #endregion

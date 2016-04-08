@@ -88,51 +88,9 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("是否有外接电源"):</label>
+                        <label class="col-sm-4 control-label">@L("拥有报警"):</label>
                         <div class="col-sm-8">
-                            <select name="IsHaveMainPowerBreak" id="IsHaveMainPowerBreak" class="form-control"> @Html.GetOptionHtmlByEnable(Model.DeviceType.IsHaveMainPowerBreak)</select>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("是否有SOS报警"):</label>
-                        <div class="col-sm-8">
-                            <select name="IsHaveSos" id="IsHaveSos" class="form-control"> @Html.GetOptionHtmlByEnable(Model.DeviceType.IsHaveSos)</select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("是否有脱落报警"):</label>
-                        <div class="col-sm-8">
-                            <select name="IsHaveDropOff" id="IsHaveDropOff" class="form-control"> @Html.GetOptionHtmlByEnable(Model.DeviceType.IsHaveDropOff)</select>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("是否有震动报警"):</label>
-                        <div class="col-sm-8">
-                            <select name="IsHaveShake" id="IsHaveShake" class="form-control"> @Html.GetOptionHtmlByEnable(Model.DeviceType.IsHaveShake)</select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("是否有低电报警"):</label>
-                        <div class="col-sm-8">
-                            <select name="IsHaveLowBattery" id="IsHaveLowBattery" class="form-control"> @Html.GetOptionHtmlByEnable(Model.DeviceType.IsHaveLowBattery)</select>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("是否有电量数据"):</label>
-                        <div class="col-sm-8">
-                            <select name="IsHavePower" id="IsHavePower" class="form-control"> @Html.GetOptionHtmlByEnable(Model.DeviceType.IsHavePower)</select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("是否有Acc信号"):</label>
-                        <div class="col-sm-8">
-                            <select name="IsHaveAcc" id="IsHaveAcc" class="form-control"> @Html.GetOptionHtmlByEnable(Model.DeviceType.IsHaveAcc)</select>
+                            <select name="HaveAlarmType" id="HaveAlarmType" class="form-control"> @Html.GetOptionHtmlByEnable(Model.DeviceType.HaveAlarmType)</select>
                         </div>
                     </div>
                 </div>

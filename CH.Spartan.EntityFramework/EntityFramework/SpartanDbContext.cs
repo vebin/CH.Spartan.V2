@@ -49,16 +49,5 @@ namespace CH.Spartan.EntityFramework
 
         }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<Device>()
-                .HasRequired(p => p.DeviceType)
-                .WithMany(p => p.Devices)
-                .HasForeignKey(p => p.BDeviceTypeId);
-
-        }
-
     }
 }

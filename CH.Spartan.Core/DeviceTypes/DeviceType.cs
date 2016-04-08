@@ -54,43 +54,8 @@ namespace CH.Spartan.DeviceTypes
         public bool IsHaveRelay { get; set; }
 
         /// <summary>
-        /// 是否有外接电源
+        /// 拥有报警功能
         /// </summary>
-        public bool IsHaveMainPowerBreak { get; set; }
-
-        /// <summary>
-        /// 是否有SOS报警
-        /// </summary>
-        public bool IsHaveSos { get; set; }
-
-        /// <summary>
-        /// 是否有脱落报警
-        /// </summary>
-        public bool IsHaveDropOff { get; set; }
-
-        /// <summary>
-        /// 是否有震动报警
-        /// </summary>
-        public bool IsHaveShake { get; set; }
-
-        /// <summary>
-        /// 是否有低电报警
-        /// </summary>
-        public bool IsHaveLowBattery { get; set; }
-
-        /// <summary>
-        /// 是否有电量数据
-        /// </summary>
-        public bool IsHavePower { get; set; }
-
-        /// <summary>
-        /// 是否有Acc信号
-        /// </summary>
-        public bool IsHaveAcc { get; set; }
-
-        /// <summary>
-        /// 设备集合
-        /// </summary>
-        public ICollection<Device> Devices { get; set; }
+        public EnumAlarmType HaveAlarmType { get; set; }
     }
 }

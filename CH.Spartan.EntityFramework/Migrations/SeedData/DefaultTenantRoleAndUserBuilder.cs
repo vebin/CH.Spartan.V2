@@ -69,11 +69,11 @@ namespace CH.Spartan.Migrations.SeedData
                         UserName = User.AdminUserName,
                         Name = User.AdminUserName,
                         Surname = "管理员",
-                        EmailAddress = "hhahh2011@gmail.com",
+                        EmailAddress = "359875450@qq.com",
                         IsEmailConfirmed = true,
-                        Password = new PasswordHasher().HashPassword(User.DefaultPassword)
+                        Password = new Md532PasswordHasher().HashPassword(SpartanConsts.DefaultPassword)
                     });
-
+                
                 _context.SaveChanges();
                 //给租主 赋予租主管理员角色
                 _context.UserRoles.Add(new UserRole(adminUserForHost.Id, adminRoleForHost.Id));

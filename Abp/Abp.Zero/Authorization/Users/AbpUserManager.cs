@@ -411,7 +411,7 @@ namespace Abp.Authorization.Users
 
                 if (!loggedInFromExternalSource)
                 {
-                    var verificationResult = new PasswordHasher().VerifyHashedPassword(user.Password, plainPassword);
+                    var verificationResult = new Md532PasswordHasher().VerifyHashedPassword(user.Password, plainPassword);
                     if (verificationResult != PasswordVerificationResult.Success)
                     {
                         return new AbpLoginResult(AbpLoginResultType.InvalidPassword, tenant, user);
@@ -497,7 +497,7 @@ namespace Abp.Authorization.Users
 
                             user.Tenant = tenant;
                             user.AuthenticationSource = source.Object.Name;
-                            user.Password = new PasswordHasher().HashPassword(Guid.NewGuid().ToString("N").Left(16)); //Setting a random password since it will not be used
+                            user.Password = new Md532PasswordHasher().HashPassword(Guid.NewGuid().ToString("N").Left(16)); //Setting a random password since it will not be used
 
                             user.Roles = new List<UserRole>();
                             foreach (var defaultRole in RoleManager.Roles.Where(r => r.TenantId == tenantId && r.IsDefault).ToList())
@@ -584,13 +584,12 @@ namespace Abp.Authorization.Users
 
         public virtual async Task<IdentityResult> ChangePasswordAsync(TUser user, string newPassword)
         {
-            var result = await PasswordValidator.ValidateAsync(newPassword);
-            if (!result.Succeeded)
-            {
-                return result;
-            }
-
-            await AbpStore.SetPasswordHashAsync(user, PasswordHasher.HashPassword(newPassword));
+            //var result = await PasswordValidator.ValidateAsync(newPassword);
+            //if (!result.Succeeded)
+            //{
+            //    return result;
+            //}
+            await AbpStore.SetPasswordHashAsync(user,new Md532PasswordHasher().HashPassword(newPassword));
             return IdentityResult.Success;
         }
 

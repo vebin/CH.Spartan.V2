@@ -104,7 +104,7 @@ namespace CH.Spartan.MultiTenancy
 
         public async Task<ListResultOutput<GetTenantListDto>> GetTenantListAsync(GetTenantListInput input)
         {
-            var list = await _tenantManager.Store.Tenants
+            var list = await _tenantManager.Store.Table
                 .OrderBy(input)
                 .ToListAsync();
             return new ListResultOutput<GetTenantListDto>(list.MapTo<List<GetTenantListDto>>());
@@ -112,7 +112,7 @@ namespace CH.Spartan.MultiTenancy
 
         public async Task<PagedResultOutput<GetTenantListDto>> GetTenantListPagedAsync(GetTenantListPagedInput input)
         {
-            var query = _tenantManager.Store.Tenants
+            var query = _tenantManager.Store.Table
                 .WhereIf(!input.SearchText.IsNullOrEmpty(), p => p.TenancyName.Contains(input.SearchText) || p.Name.Contains(input.SearchText));
 
             var count = await query.CountAsync();

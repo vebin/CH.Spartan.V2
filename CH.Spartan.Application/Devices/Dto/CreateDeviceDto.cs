@@ -111,159 +111,159 @@ namespace CH.Spartan.Devices.Dto
         public DateTime GReceiveTime { get; set; }
 
         /// <summary>
-        /// 是否已经定位状态
+        /// 是否已经定位
         /// </summary>
         public bool GIsLocated { get; set; }
 
         /// <summary>
-        /// 状态ACC
+        /// ACC
         /// </summary>
         public bool CIsAccOn { get; set; }
 
         /// <summary>
-        /// 状态电量
+        /// 电量
         /// </summary>
         public int CPower { get; set; }
 
         /// <summary>
-        /// 状态是否继电器启用
+        /// 是否继电器启用
         /// </summary>
         public bool CIsRelayEnable { get; set; }
 
         /// <summary>
-        /// 状态电器启用时间
+        /// 电器启用时间
         /// </summary>
         public DateTime? CRelayBreakTime { get; set; }
 
         /// <summary>
-        /// 状态是否外接电源断开
+        /// 是否外接电源断开
         /// </summary>
         public bool CIsMainPowerBreak { get; set; }
 
         /// <summary>
-        /// 状态外接电源断开时间
+        /// 外接电源断开时间
         /// </summary>
         public DateTime? CMainPowerBreakTime { get; set; }
 
         /// <summary>
-        /// 状态外接电源断开最后一次报警时间
+        /// 外接电源断开最后一次报警时间
         /// </summary>
         public DateTime? CMainPowerBreakLastAlarmTime { get; set; }
 
         /// <summary>
-        /// 状态是否SOS求助
+        /// 是否SOS求助
         /// </summary>
         public bool CIsSos { get; set; }
 
         /// <summary>
-        /// 状态超速时间
+        /// 超速时间
         /// </summary>
         public DateTime? COverSpeedTime { get; set; }
 
         /// <summary>
-        /// 状态超速最后报警时间
+        /// 超速最后报警时间
         /// </summary>
         public DateTime? COverSpeedLastAlarmTime { get; set; }
 
         /// <summary>
-        /// 状态启动时间
+        /// 启动时间
         /// </summary>
         public DateTime? CStartupTime { get; set; }
 
         /// <summary>
-        /// 状态启动最后报警时间
+        /// 启动最后报警时间
         /// </summary>
         public DateTime? CStartupLastAlarmTime { get; set; }
 
         /// <summary>
-        /// 状态拥有速度时间
+        /// 拥有速度时间
         /// </summary>
         public DateTime? CLastHaveSpeedTime { get; set; }
 
         /// <summary>
-        /// 状态拥有速度最后报警时间
+        /// 拥有速度最后报警时间
         /// </summary>
         public DateTime? CLastHaveSpeedLastAlarmTime { get; set; }
 
         /// <summary>
-        /// 状态进入区域列表
+        /// 进入区域列表
         /// </summary>
         [MaxLength(500)]
         public string CInAreaList { get; set; }
 
         /// <summary>
-        /// 状态是否处于设防状态
+        /// 是否处于设防
         /// </summary>
         public bool CIsFortify { get; set; }
 
         /// <summary>
-        /// 状态设防时的经纬度
+        /// 设防时的经纬度
         /// </summary>
         [MaxLength(100)]
         public string CFortifyLatLng { get; set; }
 
         /// <summary>
-        /// 状态离开设防区域时间
+        /// 离开设防区域时间
         /// </summary>
         public DateTime? CLeaveFortifyAreaTime { get; set; }
 
         /// <summary>
-        /// 状态离开设防区域最后报警时间
+        /// 离开设防区域最后报警时间
         /// </summary>
         public DateTime? CLeaveFortifyAreaLastAlarmTime { get; set; }
 
         /// <summary>
-        /// 状态是否脱落
+        /// 是否脱落
         /// </summary>
         public bool CIsDropOff { get; set; }
 
         /// <summary>
-        /// 状态脱落时间
+        /// 脱落时间
         /// </summary>
         public DateTime? CDropOffTime { get; set; }
 
         /// <summary>
-        /// 状态脱落最后报警时间
+        /// 脱落最后报警时间
         /// </summary>
         public DateTime? CDropOffLastAlarmTime { get; set; }
 
         /// <summary>
-        /// 状态是否震动
+        /// 是否震动
         /// </summary>
         public bool CIsShake { get; set; }
 
         /// <summary>
-        /// 状态震动时间
+        /// 震动时间
         /// </summary>
         public DateTime? CShakeTime { get; set; }
 
         /// <summary>
-        /// 状态是否低电
+        /// 是否低电
         /// </summary>
         public bool CIsLowBattery { get; set; }
 
         /// <summary>
-        /// 状态低电时间
+        /// 低电时间
         /// </summary>
         public DateTime? CLowBatteryTime { get; set; }
 
         /// <summary>
-        /// 状态低电最后报警时间
+        /// 低电最后报警时间
         /// </summary>
         public DateTime? CLowBatteryLastAlarmTime { get; set; }
 
         /// <summary>
-        /// 状态是否进入盲区
+        /// 是否进入盲区
         /// </summary>
         public bool CIsInBlindArea { get; set; }
 
         /// <summary>
-        /// 状态进入盲区时间
+        /// 进入盲区时间
         /// </summary>
         public DateTime? CInBlindAreaTime { get; set; }
 
         /// <summary>
-        /// 状态进入盲区最后报警时间
+        /// 进入盲区最后报警时间
         /// </summary>
         public DateTime? CInBlindAreaLastAlarmTime { get; set; }
 

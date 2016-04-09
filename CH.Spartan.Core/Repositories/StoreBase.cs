@@ -40,15 +40,11 @@ namespace CH.Spartan.Repositories
             Repository = repository;
             UnitOfWorkManager = unitOfWorkManager;
         }
-       
+
         /// <summary>
-        /// 全部
+        /// 当前表
         /// </summary>
-        /// <returns></returns>
-        public virtual IQueryable<T> GetAll()
-        {
-            return Repository.GetAll();
-        }
+        public virtual IQueryable<T> Table => Repository.GetAll();
 
         /// <summary>
         /// 添加

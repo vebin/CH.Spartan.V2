@@ -61,8 +61,58 @@
     <text name="设备唯一编码生成规则" value="设备唯一编码生成规则" />
     <text name="是否有继电器" value="是否有继电器" />
     <text name="拥有报警" value="拥有报警" />
-    
-    
+
+    <text name="设备" value="设备" />
+    <text name="设备名字" value="设备名字" />
+    <text name="车牌号" value="车牌号" />
+    <text name="设备图标类型" value="设备图标类型" />
+    <text name="设备类型Id" value="设备类型Id" />
+    <text name="设备号" value="设备号" />
+    <text name="设备唯一编码不同的设备编码生成规则不一样" value="设备唯一编码不同的设备编码生成规则不一样" />
+    <text name="Sim号" value="Sim号" />
+    <text name="过期时间" value="过期时间" />
+    <text name="所属节点Id" value="所属节点Id" />
+    <text name="报警设置超限速" value="报警设置超限速" />
+    <text name="报警设置进出区域" value="报警设置进出区域" />
+    <text name="方向0-359,正北为0,顺时针" value="方向0-359,正北为0,顺时针" />
+    <text name="海拔高度,单位为米(m)" value="海拔高度,单位为米(m)" />
+    <text name="纬度" value="纬度" />
+    <text name="经度" value="经度" />
+    <text name="速度(1/10)/km/h" value="速度(1/10)/km/h" />
+    <text name="GPS最后定位时间" value="GPS最后定位时间" />
+    <text name="设备最后通讯时间" value="设备最后通讯时间" />
+    <text name="是否已经定位" value="是否已经定位" />
+    <text name="ACC" value="ACC" />
+    <text name="电量" value="电量" />
+    <text name="是否继电器启用" value="是否继电器启用" />
+    <text name="电器启用时间" value="电器启用时间" />
+    <text name="是否外接电源断开" value="是否外接电源断开" />
+    <text name="外接电源断开时间" value="外接电源断开时间" />
+    <text name="外接电源断开最后一次报警时间" value="外接电源断开最后一次报警时间" />
+    <text name="是否SOS求助" value="是否SOS求助" />
+    <text name="超速时间" value="超速时间" />
+    <text name="超速最后报警时间" value="超速最后报警时间" />
+    <text name="启动时间" value="启动时间" />
+    <text name="启动最后报警时间" value="启动最后报警时间" />
+    <text name="拥有速度时间" value="拥有速度时间" />
+    <text name="拥有速度最后报警时间" value="拥有速度最后报警时间" />
+    <text name="进入区域列表" value="进入区域列表" />
+    <text name="是否处于设防" value="是否处于设防" />
+    <text name="设防时的经纬度" value="设防时的经纬度" />
+    <text name="离开设防区域时间" value="离开设防区域时间" />
+    <text name="离开设防区域最后报警时间" value="离开设防区域最后报警时间" />
+    <text name="是否脱落" value="是否脱落" />
+    <text name="脱落时间" value="脱落时间" />
+    <text name="脱落最后报警时间" value="脱落最后报警时间" />
+    <text name="是否震动" value="是否震动" />
+    <text name="震动时间" value="震动时间" />
+    <text name="是否低电" value="是否低电" />
+    <text name="低电时间" value="低电时间" />
+    <text name="低电最后报警时间" value="低电最后报警时间" />
+    <text name="是否进入盲区" value="是否进入盲区" />
+    <text name="进入盲区时间" value="进入盲区时间" />
+    <text name="进入盲区最后报警时间" value="进入盲区最后报警时间" />
+    <text name="所属用户Id" value="所属用户Id" />
     
   </texts>
 </localizationDictionary>

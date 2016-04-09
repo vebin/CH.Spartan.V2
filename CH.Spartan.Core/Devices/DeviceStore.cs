@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using CH.Spartan.Repositories;
+using EntityFramework.Extensions;
 
 namespace CH.Spartan.Devices
 {
@@ -16,7 +17,7 @@ namespace CH.Spartan.Devices
            IUnitOfWorkManager unitOfWorkManager) 
             : base(deviceRepository, unitOfWorkManager)
        {
-
+          
        }
     }
 }

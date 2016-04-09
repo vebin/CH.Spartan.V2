@@ -164,13 +164,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("是否已经定位状态"):</label>
+                        <label class="col-sm-4 control-label">@L("是否已经定位"):</label>
                         <div class="col-sm-8">
                          <select name="GIsLocated" id="GIsLocated" class="form-control"> @Html.GetOptionHtmlByEnable(Model.Device.GIsLocated)</select>
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态ACC"):</label>
+                        <label class="col-sm-4 control-label">@L("ACC"):</label>
                         <div class="col-sm-8">
                          <select name="CIsAccOn" id="CIsAccOn" class="form-control"> @Html.GetOptionHtmlByEnable(Model.Device.CIsAccOn)</select>
          </div>
@@ -178,13 +178,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态电量"):</label>
+                        <label class="col-sm-4 control-label">@L("电量"):</label>
                         <div class="col-sm-8">
                         <input class="form-control " type="text" id="CPower" name="CPower" value="@Model.Device.CPower" />
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态是否继电器启用"):</label>
+                        <label class="col-sm-4 control-label">@L("是否继电器启用"):</label>
                         <div class="col-sm-8">
                          <select name="CIsRelayEnable" id="CIsRelayEnable" class="form-control"> @Html.GetOptionHtmlByEnable(Model.Device.CIsRelayEnable)</select>
          </div>
@@ -192,13 +192,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态电器启用时间"):</label>
+                        <label class="col-sm-4 control-label">@L("电器启用时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CRelayBreakTime" name="CRelayBreakTime" value="@Model.Device.CRelayBreakTime" />
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态是否外接电源断开"):</label>
+                        <label class="col-sm-4 control-label">@L("是否外接电源断开"):</label>
                         <div class="col-sm-8">
                          <select name="CIsMainPowerBreak" id="CIsMainPowerBreak" class="form-control"> @Html.GetOptionHtmlByEnable(Model.Device.CIsMainPowerBreak)</select>
          </div>
@@ -206,13 +206,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态外接电源断开时间"):</label>
+                        <label class="col-sm-4 control-label">@L("外接电源断开时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CMainPowerBreakTime" name="CMainPowerBreakTime" value="@Model.Device.CMainPowerBreakTime" />
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态外接电源断开最后一次报警时间"):</label>
+                        <label class="col-sm-4 control-label">@L("外接电源断开最后一次报警时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CMainPowerBreakLastAlarmTime" name="CMainPowerBreakLastAlarmTime" value="@Model.Device.CMainPowerBreakLastAlarmTime" />
          </div>
@@ -220,13 +220,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态是否SOS求助"):</label>
+                        <label class="col-sm-4 control-label">@L("是否SOS求助"):</label>
                         <div class="col-sm-8">
                          <select name="CIsSos" id="CIsSos" class="form-control"> @Html.GetOptionHtmlByEnable(Model.Device.CIsSos)</select>
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态超速时间"):</label>
+                        <label class="col-sm-4 control-label">@L("超速时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="COverSpeedTime" name="COverSpeedTime" value="@Model.Device.COverSpeedTime" />
          </div>
@@ -234,13 +234,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态超速最后报警时间"):</label>
+                        <label class="col-sm-4 control-label">@L("超速最后报警时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="COverSpeedLastAlarmTime" name="COverSpeedLastAlarmTime" value="@Model.Device.COverSpeedLastAlarmTime" />
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态启动时间"):</label>
+                        <label class="col-sm-4 control-label">@L("启动时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CStartupTime" name="CStartupTime" value="@Model.Device.CStartupTime" />
          </div>
@@ -248,13 +248,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态启动最后报警时间"):</label>
+                        <label class="col-sm-4 control-label">@L("启动最后报警时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CStartupLastAlarmTime" name="CStartupLastAlarmTime" value="@Model.Device.CStartupLastAlarmTime" />
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态拥有速度时间"):</label>
+                        <label class="col-sm-4 control-label">@L("拥有速度时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CLastHaveSpeedTime" name="CLastHaveSpeedTime" value="@Model.Device.CLastHaveSpeedTime" />
          </div>
@@ -262,13 +262,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态拥有速度最后报警时间"):</label>
+                        <label class="col-sm-4 control-label">@L("拥有速度最后报警时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CLastHaveSpeedLastAlarmTime" name="CLastHaveSpeedLastAlarmTime" value="@Model.Device.CLastHaveSpeedLastAlarmTime" />
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态进入区域列表"):</label>
+                        <label class="col-sm-4 control-label">@L("进入区域列表"):</label>
                         <div class="col-sm-8">
                         <input class="form-control " type="text" id="CInAreaList" name="CInAreaList" value="@Model.Device.CInAreaList" />
          </div>
@@ -276,13 +276,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态是否处于设防状态"):</label>
+                        <label class="col-sm-4 control-label">@L("是否处于设防"):</label>
                         <div class="col-sm-8">
                          <select name="CIsFortify" id="CIsFortify" class="form-control"> @Html.GetOptionHtmlByEnable(Model.Device.CIsFortify)</select>
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态设防时的经纬度"):</label>
+                        <label class="col-sm-4 control-label">@L("设防时的经纬度"):</label>
                         <div class="col-sm-8">
                         <input class="form-control " type="text" id="CFortifyLatLng" name="CFortifyLatLng" value="@Model.Device.CFortifyLatLng" />
          </div>
@@ -290,13 +290,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态离开设防区域时间"):</label>
+                        <label class="col-sm-4 control-label">@L("离开设防区域时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CLeaveFortifyAreaTime" name="CLeaveFortifyAreaTime" value="@Model.Device.CLeaveFortifyAreaTime" />
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态离开设防区域最后报警时间"):</label>
+                        <label class="col-sm-4 control-label">@L("离开设防区域最后报警时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CLeaveFortifyAreaLastAlarmTime" name="CLeaveFortifyAreaLastAlarmTime" value="@Model.Device.CLeaveFortifyAreaLastAlarmTime" />
          </div>
@@ -304,13 +304,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态是否脱落"):</label>
+                        <label class="col-sm-4 control-label">@L("是否脱落"):</label>
                         <div class="col-sm-8">
                          <select name="CIsDropOff" id="CIsDropOff" class="form-control"> @Html.GetOptionHtmlByEnable(Model.Device.CIsDropOff)</select>
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态脱落时间"):</label>
+                        <label class="col-sm-4 control-label">@L("脱落时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CDropOffTime" name="CDropOffTime" value="@Model.Device.CDropOffTime" />
          </div>
@@ -318,13 +318,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态脱落最后报警时间"):</label>
+                        <label class="col-sm-4 control-label">@L("脱落最后报警时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CDropOffLastAlarmTime" name="CDropOffLastAlarmTime" value="@Model.Device.CDropOffLastAlarmTime" />
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态是否震动"):</label>
+                        <label class="col-sm-4 control-label">@L("是否震动"):</label>
                         <div class="col-sm-8">
                          <select name="CIsShake" id="CIsShake" class="form-control"> @Html.GetOptionHtmlByEnable(Model.Device.CIsShake)</select>
          </div>
@@ -332,13 +332,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态震动时间"):</label>
+                        <label class="col-sm-4 control-label">@L("震动时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CShakeTime" name="CShakeTime" value="@Model.Device.CShakeTime" />
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态是否低电"):</label>
+                        <label class="col-sm-4 control-label">@L("是否低电"):</label>
                         <div class="col-sm-8">
                          <select name="CIsLowBattery" id="CIsLowBattery" class="form-control"> @Html.GetOptionHtmlByEnable(Model.Device.CIsLowBattery)</select>
          </div>
@@ -346,13 +346,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态低电时间"):</label>
+                        <label class="col-sm-4 control-label">@L("低电时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CLowBatteryTime" name="CLowBatteryTime" value="@Model.Device.CLowBatteryTime" />
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态低电最后报警时间"):</label>
+                        <label class="col-sm-4 control-label">@L("低电最后报警时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CLowBatteryLastAlarmTime" name="CLowBatteryLastAlarmTime" value="@Model.Device.CLowBatteryLastAlarmTime" />
          </div>
@@ -360,13 +360,13 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态是否进入盲区"):</label>
+                        <label class="col-sm-4 control-label">@L("是否进入盲区"):</label>
                         <div class="col-sm-8">
                          <select name="CIsInBlindArea" id="CIsInBlindArea" class="form-control"> @Html.GetOptionHtmlByEnable(Model.Device.CIsInBlindArea)</select>
                         </div>
                     </div>
   <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态进入盲区时间"):</label>
+                        <label class="col-sm-4 control-label">@L("进入盲区时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CInBlindAreaTime" name="CInBlindAreaTime" value="@Model.Device.CInBlindAreaTime" />
          </div>
@@ -374,7 +374,7 @@
    </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("状态进入盲区最后报警时间"):</label>
+                        <label class="col-sm-4 control-label">@L("进入盲区最后报警时间"):</label>
                         <div class="col-sm-8">
                        <input class="form-control " type="text" id="CInBlindAreaLastAlarmTime" name="CInBlindAreaLastAlarmTime" value="@Model.Device.CInBlindAreaLastAlarmTime" />
                         </div>

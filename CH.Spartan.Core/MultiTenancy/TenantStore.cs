@@ -13,8 +13,6 @@ namespace CH.Spartan.MultiTenancy
 {
     public class TenantStore : StoreBase<Tenant>
     {
-        public virtual IQueryable<Tenant> Tenants => Repository.GetAll();
-
         public TenantStore(
             IRepository<Tenant> tenantRepository, 
             IUnitOfWorkManager unitOfWorkManager) :

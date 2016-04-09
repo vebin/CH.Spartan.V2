@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
 using Abp.Domain.Repositories;
-using Abp.Manager;
 using Abp.MultiTenancy;
 using CH.Spartan.Authorization.Roles;
 using CH.Spartan.Editions;

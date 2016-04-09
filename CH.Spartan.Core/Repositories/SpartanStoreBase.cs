@@ -8,20 +8,20 @@ using Abp.Domain.Entities;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 
-namespace Abp.Store
+namespace CH.Spartan.Repositories
 {
     /// <summary>
     /// 存储
     /// </summary>
     /// <typeparam name="T">实体</typeparam>
-    public abstract class AbpStore<T>: 
+    public abstract class SpartanStoreBase<T>: 
         ITransientDependency
         where T : Entity<int> 
     {
         /// <summary>
         /// 仓储
         /// </summary>
-        protected IRepository<T> Repository {  get; }
+        protected ISpartanRepositoryBase<T> Repository {  get; }
 
         /// <summary>
         /// 工作单元
@@ -33,8 +33,8 @@ namespace Abp.Store
         /// </summary>
         /// <param name="repository">仓储</param>
         /// <param name="unitOfWorkManager">工作单元</param>
-        protected AbpStore(
-            IRepository<T> repository, 
+        protected SpartanStoreBase(
+            ISpartanRepositoryBase<T> repository, 
             IUnitOfWorkManager unitOfWorkManager)
         {
             Repository = repository;

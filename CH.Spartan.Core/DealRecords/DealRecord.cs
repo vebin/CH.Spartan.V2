@@ -4,11 +4,14 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
+using CH.Spartan.MultiTenancy;
+using CH.Spartan.Users;
 
 namespace CH.Spartan.DealRecords
 {
-    public class DealRecord : FullAuditedEntity
+    public class DealRecord : FullUserAndTenantEntity<User,Tenant>
     {
         /// <summary>
         /// 交易名称

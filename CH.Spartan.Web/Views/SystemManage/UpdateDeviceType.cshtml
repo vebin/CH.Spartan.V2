@@ -1,6 +1,4 @@
-﻿@using System.Web.Optimization
-@using CH.Spartan.Web.Models
-@model CH.Spartan.DeviceTypes.Dto.UpdateDeviceTypeOutput
+﻿@model CH.Spartan.DeviceTypes.Dto.UpdateDeviceTypeOutput
 @section scripts
 {
     @Scripts.Render("~/scripts/plugins/edit")
@@ -85,12 +83,6 @@
                         <label class="col-sm-4 control-label">@L("是否有继电器"):</label>
                         <div class="col-sm-8">
                             <select name="IsHaveRelay" id="IsHaveRelay" class="form-control"> @Html.GetOptionHtmlByEnable(Model.DeviceType.IsHaveRelay)</select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("拥有报警"):</label>
-                        <div class="col-sm-8">
-                            <select name="HaveAlarmType" id="HaveAlarmType" class="form-control"> @Html.GetOptionHtmlByEnable(Model.DeviceType.HaveAlarmType)</select>
                         </div>
                     </div>
                 </div>

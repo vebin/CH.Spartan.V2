@@ -35,7 +35,7 @@ namespace CH.Spartan.Web.Controllers
         #region 租户
 
         #region 首页
-        [AbpMvcAuthorize(PermissionNames.SystemManages_Tenant)]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Tenant)]
         public ActionResult Tenant()
         {
             return View();
@@ -45,7 +45,7 @@ namespace CH.Spartan.Web.Controllers
         #region 搜索
 
         [HttpGet]
-        [AbpMvcAuthorize(PermissionNames.SystemManages_Tenant)]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Tenant)]
         public async Task<JsonResult> SearchTenant(GetTenantListPagedInput input)
         {
             var result = await _tenantAppService.GetTenantListPagedAsync(input);
@@ -55,7 +55,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 添加
         [HttpGet]
-        [AbpMvcAuthorize(PermissionNames.SystemManages_Tenant_Create)]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Tenant_Create)]
         public ActionResult CreateTenant()
         {
             var result = _tenantAppService.GetNewTenant();
@@ -63,7 +63,7 @@ namespace CH.Spartan.Web.Controllers
         }
 
         [HttpPost]
-        [AbpMvcAuthorize(PermissionNames.SystemManages_Tenant_Create)]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Tenant_Create)]
         public async Task<JsonResult> CreateTenant(CreateTenantInput input)
         {
             await _tenantAppService.CreateTenantAsync(input);
@@ -73,7 +73,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 更新
         [HttpGet]
-        [AbpMvcAuthorize(PermissionNames.SystemManages_Tenant_Update)]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Tenant_Update)]
         public async Task<ActionResult> UpdateTenant(IdInput input)
         {
             var result = await _tenantAppService.GetUpdateTenantAsync(input);
@@ -81,7 +81,7 @@ namespace CH.Spartan.Web.Controllers
         }
 
         [HttpPost]
-        [AbpMvcAuthorize(PermissionNames.SystemManages_Tenant_Update)]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Tenant_Update)]
         public async Task<JsonResult> UpdateTenant(UpdateTenantInput input)
         {
             await _tenantAppService.UpdateTenantAsync(input);
@@ -91,7 +91,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 删除
         [HttpPost]
-        [AbpMvcAuthorize(PermissionNames.SystemManages_Tenant_Delete)]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Tenant_Delete)]
         public async Task<JsonResult> DeleteTenant(List<IdInput> input)
         {
             await _tenantAppService.DeleteTenantAsync(input);
@@ -105,7 +105,7 @@ namespace CH.Spartan.Web.Controllers
         #region 设备类型
 
         #region 首页
-        [AbpMvcAuthorize(PermissionNames.SystemManages_DeviceType)]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_DeviceType)]
         public ActionResult DeviceType()
         {
             return View();
@@ -115,7 +115,7 @@ namespace CH.Spartan.Web.Controllers
         #region 搜索
 
         [HttpGet]
-        [AbpMvcAuthorize(PermissionNames.SystemManages_DeviceType)]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_DeviceType)]
         public async Task<JsonResult> SearchDeviceType(GetDeviceTypeListPagedInput input)
         {
             var result = await _deviceTypeAppService.GetDeviceTypeListPagedAsync(input);
@@ -125,7 +125,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 添加
         [HttpGet]
-        [AbpMvcAuthorize(PermissionNames.SystemManages_DeviceType_Create)]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_DeviceType_Create)]
         public ActionResult CreateDeviceType()
         {
             var result = _deviceTypeAppService.GetNewDeviceType();
@@ -133,7 +133,7 @@ namespace CH.Spartan.Web.Controllers
         }
 
         [HttpPost]
-        [AbpMvcAuthorize(PermissionNames.SystemManages_DeviceType_Create)]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_DeviceType_Create)]
         public async Task<JsonResult> CreateDeviceType(CreateDeviceTypeInput input)
         {
             await _deviceTypeAppService.CreateDeviceTypeAsync(input);
@@ -143,7 +143,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 更新
         [HttpGet]
-        [AbpMvcAuthorize(PermissionNames.SystemManages_DeviceType_Update)]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_DeviceType_Update)]
         public async Task<ActionResult> UpdateDeviceType(IdInput input)
         {
             var result = await _deviceTypeAppService.GetUpdateDeviceTypeAsync(input);
@@ -151,7 +151,7 @@ namespace CH.Spartan.Web.Controllers
         }
 
         [HttpPost]
-        [AbpMvcAuthorize(PermissionNames.SystemManages_DeviceType_Update)]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_DeviceType_Update)]
         public async Task<JsonResult> UpdateDeviceType(UpdateDeviceTypeInput input)
         {
             await _deviceTypeAppService.UpdateDeviceTypeAsync(input);
@@ -161,7 +161,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 删除
         [HttpPost]
-        [AbpMvcAuthorize(PermissionNames.SystemManages_DeviceType_Delete)]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_DeviceType_Delete)]
         public async Task<JsonResult> DeleteDeviceType(List<IdInput> input)
         {
             await _deviceTypeAppService.DeleteDeviceTypeAsync(input);

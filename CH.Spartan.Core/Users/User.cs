@@ -23,57 +23,6 @@ namespace CH.Spartan.Users
 
         #endregion
 
-        #region 设置
-
-        /// <summary>
-        /// 报警是否开启
-        /// </summary>
-        public bool SIsEnableAlarm { get; set; }
-
-        /// <summary>
-        /// 报警信息报警声音
-        /// </summary>
-        [MaxLength(100)]
-        public string SAlarmSound { get; set; }
-
-        /// <summary>
-        /// 报警信息是否发送邮件
-        /// </summary>
-        public bool SIsSendEmail { get; set; }
-
-        /// <summary>
-        /// 报警信息是否发送APP
-        /// </summary>
-        public bool SIsSendApp { get; set; }
-
-        /// <summary>
-        /// 接收报警类型
-        /// </summary>
-        public EnumAlarmType SReceiveAlarmType { get; set; }
-
-        /// <summary>
-        /// 报警信息接收邮件列表
-        /// </summary>
-        [MaxLength(250)]
-        public string SReceiveEmails { get; set; }
-
-        /// <summary>
-        /// 报警信息允许接收开始时间
-        /// </summary>
-        public TimeSpan SReceiveStartTime { get; set; }
-
-        /// <summary>
-        /// 报警信息允许接收结束时间
-        /// </summary>
-        public TimeSpan SReceiveEndTime { get; set; }
-
-        /// <summary>
-        /// 报警设防半径
-        /// </summary>
-        public int SFortifyRadius { get; set; }
-
-        #endregion
-
         #region 绑定
 
         /// <summary>
@@ -151,13 +100,6 @@ namespace CH.Spartan.Users
                 IsActive = true,
                 IsInitPassword = true,
                 IsInitUserName = true,
-                SIsEnableAlarm = true,
-                SFortifyRadius = 100,
-                SIsSendApp = true,
-                SIsSendEmail = false,
-                SReceiveStartTime = new TimeSpan(8, 0, 0),
-                SReceiveEndTime = new TimeSpan(23, 59, 59),
-                SAlarmSound = "default",
                 Password = new Md532PasswordHasher().HashPassword(password)
             };
         }
@@ -174,13 +116,6 @@ namespace CH.Spartan.Users
                 IsActive = true,
                 IsInitPassword = true,
                 IsInitUserName = true,
-                SIsEnableAlarm=true,
-                SFortifyRadius = 100,
-                SIsSendApp = true,
-                SIsSendEmail = false,
-                SReceiveStartTime = new TimeSpan(8,0,0),
-                SReceiveEndTime = new TimeSpan(23, 59, 59),
-                SAlarmSound = "default",
                 Password = new Md532PasswordHasher().HashPassword(password)
             };
         }

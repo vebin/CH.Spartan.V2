@@ -1,6 +1,6 @@
-﻿namespace CH.Spartan.Authorization
+﻿namespace CH.Spartan
 {
-    public static class PermissionNames
+    public static class SpartanPermissionNames
     {
       
         public const string Homes = "Homes";

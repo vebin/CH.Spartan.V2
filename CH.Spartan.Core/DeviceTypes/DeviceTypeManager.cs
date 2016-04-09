@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 using Abp.Configuration;
 using Abp.Dependency;
 using Abp.Domain.Uow;
-using Abp.Manager;
 using Abp.Runtime.Caching;
-using Abp.Store;
+using CH.Spartan.Domain;
 
 namespace CH.Spartan.DeviceTypes
 {
-    public class DeviceTypeManager : AbpManager<DeviceType>
+    public class DeviceTypeManager : SpartanManagerBase<DeviceType>
     {
         public DeviceTypeManager(
             DeviceTypeStore deviceTypeStore, 
@@ -22,6 +21,7 @@ namespace CH.Spartan.DeviceTypes
             IUnitOfWorkManager unitOfWorkManager) 
 			: base(deviceTypeStore, settingManager, cacheManager, iocResolver, unitOfWorkManager)
         {
+
         }
     }
 }

@@ -11,52 +11,54 @@ using Abp.Domain.Uow;
 using Abp.Localization;
 using Abp.Runtime.Caching;
 using Abp.Runtime.Session;
-using Abp.Store;
+using CH.Spartan.Repositories;
 
-namespace Abp.Manager
+namespace CH.Spartan.Domain
 {
     /// <summary>
     /// 领域服务
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public abstract class AbpManager<T>
+    public abstract class SpartanManagerBase<T>
         : IDomainService
         where T : Entity<int>
     {
-        /// <summary>
-        /// 存储
-        /// </summary>
-        public AbpStore<T> Store {  get; }
-
+        
         /// <summary>
         /// 当前会话
         /// </summary>
-        public IAbpSession AbpSession {  get; set; }
+        public IAbpSession AbpSession { get; set; }
 
         /// <summary>
         /// 本地语言
         /// </summary>
-        public ILocalizationManager LocalizationManager {  get; set; }
+        public ILocalizationManager LocalizationManager { get; set; }
 
         /// <summary>
         /// 设置管理
         /// </summary>
-        public ISettingManager SettingManager {  get; set; }
+        public ISettingManager SettingManager { get; set; }
 
         /// <summary>
         /// 缓存
         /// </summary>
-        public ICacheManager CacheManager {  get; set; }
+        public ICacheManager CacheManager { get; set; }
 
         /// <summary>
         /// Ioc
         /// </summary>
-        public IIocResolver IocResolver {  get; set; }
+        public IIocResolver IocResolver { get; set; }
 
         /// <summary>
         /// 工作单元
         /// </summary>
-        public IUnitOfWorkManager UnitOfWorkManager {  get; set; }
+        public IUnitOfWorkManager UnitOfWorkManager { get; set; }
+
+        /// <summary>
+        /// 存储
+        /// </summary>
+        public SpartanStoreBase<T> Store { get; set; }
+
 
         /// <summary>
         /// 领域服务
@@ -66,21 +68,21 @@ namespace Abp.Manager
         /// <param name="cacheManager">缓存</param>
         /// <param name="iocResolver">Ioc</param>
         /// <param name="unitOfWorkManager">工作单元</param>
-        protected AbpManager(
-            AbpStore<T> store, 
+        protected SpartanManagerBase(
+            SpartanStoreBase<T> store,
             ISettingManager settingManager,
             ICacheManager cacheManager,
             IIocResolver iocResolver,
             IUnitOfWorkManager unitOfWorkManager
             )
         {
-            Store = store;
             AbpSession = NullAbpSession.Instance;
             LocalizationManager = NullLocalizationManager.Instance;
             SettingManager = settingManager;
             CacheManager = cacheManager;
             IocResolver = iocResolver;
             UnitOfWorkManager = unitOfWorkManager;
+            Store = store;
         }
     }
 }

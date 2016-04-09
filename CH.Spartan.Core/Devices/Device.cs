@@ -5,18 +5,23 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Abp.Authorization.Users;
+using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 using CH.Spartan.DeviceTypes;
+using CH.Spartan.MultiTenancy;
+using CH.Spartan.Nodes;
+using CH.Spartan.Users;
 
 namespace CH.Spartan.Devices
 {
-    public class Device : FullAuditedEntity
+    public class Device : FullUserAndTenantEntity<User,Tenant>
     {
         #region 基本信息
         /// <summary>
         /// 设备名字
         /// </summary>
-        [Required,MaxLength(100)]
+        [Required, MaxLength(100)]
         public string BName { get; set; }
 
         /// <summary>
@@ -61,11 +66,6 @@ namespace CH.Spartan.Devices
         public DateTime? BExpireTime { get; set; }
 
         /// <summary>
-        /// 所属用户Id
-        /// </summary>
-        public int BUserId { get; set; }
-
-        /// <summary>
         /// 所属节点Id
         /// </summary>
         public int BNodeId { get; set; }
@@ -83,7 +83,7 @@ namespace CH.Spartan.Devices
         /// 报警设置 进出区域
         /// </summary>
         public bool SInOutArea { get; set; }
-        
+
         #endregion
 
         #region 定位信息
@@ -291,6 +291,12 @@ namespace CH.Spartan.Devices
         /// </summary>
         [ForeignKey("BDeviceTypeId")]
         public virtual DeviceType DeviceType { get; set; }
+
+        /// <summary>
+        /// 所属节点
+        /// </summary>
+        [ForeignKey("BNodeId")]
+        public virtual Node Node { get; set; }
 
         #endregion
     }

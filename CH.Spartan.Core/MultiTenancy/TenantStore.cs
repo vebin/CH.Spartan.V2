@@ -7,16 +7,16 @@ using Abp.Authorization.Roles;
 using Abp.Dependency;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
-using Abp.Store;
+using CH.Spartan.Repositories;
 
 namespace CH.Spartan.MultiTenancy
 {
-    public class TenantStore : AbpStore<Tenant>
+    public class TenantStore : SpartanStoreBase<Tenant>
     {
         public virtual IQueryable<Tenant> Tenants => Repository.GetAll();
 
         public TenantStore(
-            IRepository<Tenant> tenantRepository, 
+            ISpartanRepositoryBase<Tenant> tenantRepository, 
             IUnitOfWorkManager unitOfWorkManager) :
             base(tenantRepository, unitOfWorkManager)
         {

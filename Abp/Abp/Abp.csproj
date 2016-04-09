@@ -96,9 +96,13 @@
     <Compile Include="BackgroundJobs\NullBackgroundJobStore.cs" />
     <Compile Include="Authorization\IPermissionDependency.cs" />
     <Compile Include="Authorization\IPermissionDependencyContext.cs" />
+    <Compile Include="Domain\Entities\FullTenantEntity.cs" />
+    <Compile Include="Domain\Entities\FullUserEntity.cs" />
+    <Compile Include="Domain\Entities\FullUserAndTenantEntity.cs" />
+    <Compile Include="Domain\Entities\IMustHaveUser.cs" />
+    <Compile Include="Domain\Entities\IMustHaveUserAndTenant.cs" />
     <Compile Include="Json\JsonSerializationHelper.cs" />
     <Compile Include="Logging\LoggerExtensions.cs" />
-    <Compile Include="Manager\AbpManager.cs" />
     <Compile Include="Notifications\INotificationDefinitionContext.cs" />
     <Compile Include="Notifications\INotificationDefinitionManager.cs" />
     <Compile Include="Notifications\INotificationDistributer.cs" />
@@ -145,7 +149,6 @@
     <Compile Include="RealTime\OnlineClient.cs" />
     <Compile Include="RealTime\OnlineClientManager.cs" />
     <Compile Include="Runtime\Serialization\BinarySerializationHelper.cs" />
-    <Compile Include="Store\AbpStore.cs" />
     <Compile Include="Threading\ThreadCultureSanitizer.cs" />
     <Compile Include="Threading\BackgroundWorkers\BackgroundWorkerManager.cs" />
     <Compile Include="Threading\BackgroundWorkers\BackgroundWorkerBase.cs" />

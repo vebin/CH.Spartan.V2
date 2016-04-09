@@ -30,6 +30,7 @@ namespace CH.Spartan
             AppRoleConfig.Configure(Configuration.Modules.Zero().RoleManagement);
 
             Configuration.Authorization.Providers.Add<SpartanAuthorizationProvider>();
+            Configuration.Settings.Providers.Add<SpartanSettingProvider>();
         }
 
         public override void Initialize()

@@ -45,6 +45,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
       <Private>True</Private>
@@ -71,6 +79,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Linq.Dynamic, Version=1.0.5840.25917, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Linq.Dynamic.1.0.6\lib\net40\System.Linq.Dynamic.dll</HintPath>
@@ -89,18 +98,23 @@
     <Compile Include="Commons\EnumExtend.cs" />
     <Compile Include="Commons\LinqExtend.cs" />
     <Compile Include="Commons\QueryResultRequestInput.cs" />
+    <Compile Include="DeviceTypes\DeviceTypeStore.cs" />
+    <Compile Include="Domain\SpartanManagerBase.cs" />
+    <Compile Include="MultiTenancy\TenantStore.cs" />
+    <Compile Include="Repositories\SpartanStoreBase.cs" />
+    <Compile Include="Repositories\ISpartanRepositoryBase.cs" />
+    <Compile Include="SpartanSettingKeys.cs" />
     <Compile Include="DealRecords\DealRecord.cs" />
     <Compile Include="Devices\Device.cs" />
     <Compile Include="DeviceTypes\DeviceType.cs" />
     <Compile Include="Historys\History.cs" />
-    <Compile Include="MultiTenancy\TenantStore.cs" />
     <Compile Include="Nodes\Node.cs" />
     <Compile Include="Reports\MileageReportDay.cs" />
     <Compile Include="SpartanConsts.cs" />
     <Compile Include="SpartanCoreModule.cs" />
-    <Compile Include="Authorization\SpartanAuthorizationProvider.cs" />
+    <Compile Include="SpartanAuthorizationProvider.cs" />
     <Compile Include="Authorization\PermissionChecker.cs" />
-    <Compile Include="Authorization\PermissionNames.cs" />
+    <Compile Include="SpartanPermissionNames.cs" />
     <Compile Include="Authorization\Roles\AppRoleConfig.cs" />
     <Compile Include="Authorization\Roles\StaticRoleNames.cs" />
     <Compile Include="Editions\EditionManager.cs" />
@@ -111,6 +125,7 @@
     <Compile Include="Authorization\Roles\Role.cs" />
     <Compile Include="Authorization\Roles\RoleManager.cs" />
     <Compile Include="Authorization\Roles\RoleStore.cs" />
+    <Compile Include="SpartanSettingProvider.cs" />
     <Compile Include="Users\User.cs" />
     <Compile Include="Users\UserManager.cs" />
     <Compile Include="Users\UserStore.cs" />
@@ -118,7 +133,6 @@
   <ItemGroup>
     <None Include="app.config" />
     <Compile Include="DeviceTypes\DeviceTypeManager.cs" />
-    <Compile Include="DeviceTypes\DeviceTypeStore.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

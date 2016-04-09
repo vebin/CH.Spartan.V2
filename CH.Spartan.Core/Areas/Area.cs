@@ -4,11 +4,14 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
+using CH.Spartan.MultiTenancy;
+using CH.Spartan.Users;
 
 namespace CH.Spartan.Areas
 {
-    public class Area : FullAuditedEntity
+    public class Area : FullUserAndTenantEntity<User, Tenant>
     {
         /// <summary>
         /// 区域名字

@@ -1,10 +1,13 @@
 ﻿using Abp.Domain.Entities;
 using Abp.EntityFramework;
 using Abp.EntityFramework.Repositories;
+using CH.Spartan.Repositories;
 
 namespace CH.Spartan.EntityFramework.Repositories
 {
-    public abstract class SpartanRepositoryBase<TEntity, TPrimaryKey> : EfRepositoryBase<SpartanDbContext, TEntity, TPrimaryKey>
+    public class SpartanRepositoryBase<TEntity, TPrimaryKey> : 
+        EfRepositoryBase<SpartanDbContext, TEntity, TPrimaryKey>,
+        ISpartanRepositoryBase<TEntity, TPrimaryKey>
         where TEntity : class, IEntity<TPrimaryKey>
     {
         protected SpartanRepositoryBase(IDbContextProvider<SpartanDbContext> dbContextProvider)
@@ -16,7 +19,9 @@ namespace CH.Spartan.EntityFramework.Repositories
         //add common methods for all repositories
     }
 
-    public abstract class SpartanRepositoryBase<TEntity> : SpartanRepositoryBase<TEntity, int>
+    public  class SpartanRepositoryBase<TEntity> :
+        SpartanRepositoryBase<TEntity, int>,
+        ISpartanRepositoryBase<TEntity, int>
         where TEntity : class, IEntity<int>
     {
         protected SpartanRepositoryBase(IDbContextProvider<SpartanDbContext> dbContextProvider)

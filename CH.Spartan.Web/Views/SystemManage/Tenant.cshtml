@@ -1,6 +1,4 @@
-﻿@using System.Web.Optimization
-@using CH.Spartan.Authorization
-@section styles
+﻿@section styles
 {
     @Styles.Render("~/styles/plugins/list")
 }
@@ -10,10 +8,10 @@
     <script type="text/javascript">
         //操作
         function formatterOp(value, row, index) {
-            if (abp.auth.isGranted("@PermissionNames.SystemManages_Tenant_Update")) {
+            if (abp.auth.isGranted("@SpartanPermissionNames.SystemManages_Tenant_Update")) {
                 edit = '<i class="btn-op fa fa-edit" title="@L("修改")" onclick="update(\'' + row.id + '\')"></i>';
             }
-            if (abp.auth.isGranted("@PermissionNames.SystemManages_Tenant_Delete")) {
+            if (abp.auth.isGranted("@SpartanPermissionNames.SystemManages_Tenant_Delete")) {
                 del = '<i class="btn-op fa fa-trash-o" title="@L("删除")" onclick="del(\'' + row.id + '\')"></i>';
             }
             return edit + del;
@@ -122,11 +120,11 @@
                 </div>
                 <div class="ibox-content list-content">
                     <div class="btn-group hidden-xs" id="tableToolbar" role="group">
-                        @if (IsGranted(PermissionNames.SystemManages_Tenant_Create))
+                        @if (IsGranted(SpartanPermissionNames.SystemManages_Tenant_Create))
                         {
                             <button type="button" class="btn btn-outline btn-default" id="btn-add"><i class="fa fa-plus" aria-hidden="true"></i></button>
                         }
-                        @if (IsGranted(PermissionNames.SystemManages_Tenant_Delete))
+                        @if (IsGranted(SpartanPermissionNames.SystemManages_Tenant_Delete))
                         {
                             <button type="button" class="btn btn-outline btn-default" id="btn-del"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                         }

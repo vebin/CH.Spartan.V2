@@ -5,18 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
-using Abp.Store;
+using CH.Spartan.Repositories;
 
 namespace CH.Spartan.DeviceTypes
 {
-   public class DeviceTypeStore:AbpStore<DeviceType>
+   public class DeviceTypeStore: SpartanStoreBase<DeviceType>
    {
        public DeviceTypeStore(
-           IRepository<DeviceType> deviceTypeRepository, 
+           ISpartanRepositoryBase<DeviceType> deviceTypeRepository, 
            IUnitOfWorkManager unitOfWorkManager) 
             : base(deviceTypeRepository, unitOfWorkManager)
        {
-
+           
        }
     }
 }

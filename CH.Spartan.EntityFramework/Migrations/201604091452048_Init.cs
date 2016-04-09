@@ -10,103 +10,14 @@ namespace CH.Spartan.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.AbpAuditLogs",
-                c => new
-                    {
-                        Id = c.Long(nullable: false, identity: true),
-                        TenantId = c.Int(),
-                        UserId = c.Long(),
-                        ServiceName = c.String(maxLength: 256, storeType: "nvarchar"),
-                        MethodName = c.String(maxLength: 256, storeType: "nvarchar"),
-                        Parameters = c.String(maxLength: 1024, storeType: "nvarchar"),
-                        ExecutionTime = c.DateTime(nullable: false, precision: 0),
-                        ExecutionDuration = c.Int(nullable: false),
-                        ClientIpAddress = c.String(maxLength: 64, storeType: "nvarchar"),
-                        ClientName = c.String(maxLength: 128, storeType: "nvarchar"),
-                        BrowserInfo = c.String(maxLength: 256, storeType: "nvarchar"),
-                        Exception = c.String(maxLength: 2000, storeType: "nvarchar"),
-                        ImpersonatorUserId = c.Long(),
-                        ImpersonatorTenantId = c.Int(),
-                        CustomData = c.String(maxLength: 2000, storeType: "nvarchar"),
-                    },
-                annotations: new Dictionary<string, object>
-                {
-                    { "DynamicFilter_AuditLog_MayHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
-                })
-                .PrimaryKey(t => t.Id);
-            
-            CreateTable(
-                "dbo.AbpBackgroundJobs",
-                c => new
-                    {
-                        Id = c.Long(nullable: false, identity: true),
-                        JobType = c.String(nullable: false, maxLength: 512, storeType: "nvarchar"),
-                        JobArgs = c.String(nullable: false, unicode: false),
-                        TryCount = c.Short(nullable: false),
-                        NextTryTime = c.DateTime(nullable: false, precision: 0),
-                        LastTryTime = c.DateTime(precision: 0),
-                        IsAbandoned = c.Boolean(nullable: false),
-                        Priority = c.Byte(nullable: false),
-                        CreationTime = c.DateTime(nullable: false, precision: 0),
-                        CreatorUserId = c.Long(),
-                    })
-                .PrimaryKey(t => t.Id)
-                .Index(t => new { t.IsAbandoned, t.NextTryTime });
-            
-            CreateTable(
-                "dbo.Devices",
+                "dbo.Areas",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        BName = c.String(nullable: false, maxLength: 100, storeType: "nvarchar"),
-                        BLicensePlate = c.String(nullable: false, maxLength: 100, storeType: "nvarchar"),
-                        BIconType = c.String(nullable: false, maxLength: 50, storeType: "nvarchar"),
-                        BDeviceTypeId = c.Int(nullable: false),
-                        BNo = c.String(nullable: false, maxLength: 50, storeType: "nvarchar"),
-                        BCode = c.String(nullable: false, maxLength: 50, storeType: "nvarchar"),
-                        BSimNo = c.String(nullable: false, maxLength: 50, storeType: "nvarchar"),
-                        BExpireTime = c.DateTime(precision: 0),
-                        BNodeId = c.Int(nullable: false),
-                        SLimitSpeed = c.Int(nullable: false),
-                        SInOutArea = c.Boolean(nullable: false),
-                        GDirection = c.Int(nullable: false),
-                        GHeight = c.Double(nullable: false),
-                        GLatitude = c.Double(nullable: false),
-                        GLongitude = c.Double(nullable: false),
-                        GSpeed = c.Double(nullable: false),
-                        GReportTime = c.DateTime(nullable: false, precision: 0),
-                        GReceiveTime = c.DateTime(nullable: false, precision: 0),
-                        GIsLocated = c.Boolean(nullable: false),
-                        CIsAccOn = c.Boolean(nullable: false),
-                        CPower = c.Int(nullable: false),
-                        CIsRelayEnable = c.Boolean(nullable: false),
-                        CRelayBreakTime = c.DateTime(precision: 0),
-                        CIsMainPowerBreak = c.Boolean(nullable: false),
-                        CMainPowerBreakTime = c.DateTime(precision: 0),
-                        CMainPowerBreakLastAlarmTime = c.DateTime(precision: 0),
-                        CIsSos = c.Boolean(nullable: false),
-                        COverSpeedTime = c.DateTime(precision: 0),
-                        COverSpeedLastAlarmTime = c.DateTime(precision: 0),
-                        CStartupTime = c.DateTime(precision: 0),
-                        CStartupLastAlarmTime = c.DateTime(precision: 0),
-                        CLastHaveSpeedTime = c.DateTime(precision: 0),
-                        CLastHaveSpeedLastAlarmTime = c.DateTime(precision: 0),
-                        CInAreaList = c.String(maxLength: 500, storeType: "nvarchar"),
-                        CIsFortify = c.Boolean(nullable: false),
-                        CFortifyLatLng = c.String(maxLength: 100, storeType: "nvarchar"),
-                        CLeaveFortifyAreaTime = c.DateTime(precision: 0),
-                        CLeaveFortifyAreaLastAlarmTime = c.DateTime(precision: 0),
-                        CIsDropOff = c.Boolean(nullable: false),
-                        CDropOffTime = c.DateTime(precision: 0),
-                        CDropOffLastAlarmTime = c.DateTime(precision: 0),
-                        CIsShake = c.Boolean(nullable: false),
-                        CShakeTime = c.DateTime(precision: 0),
-                        CIsLowBattery = c.Boolean(nullable: false),
-                        CLowBatteryTime = c.DateTime(precision: 0),
-                        CLowBatteryLastAlarmTime = c.DateTime(precision: 0),
-                        CIsInBlindArea = c.Boolean(nullable: false),
-                        CInBlindAreaTime = c.DateTime(precision: 0),
-                        CInBlindAreaLastAlarmTime = c.DateTime(precision: 0),
+                        Name = c.String(maxLength: 250, storeType: "nvarchar"),
+                        Type = c.Int(nullable: false),
+                        Points = c.String(maxLength: 500, storeType: "nvarchar"),
+                        Radius = c.Int(),
                         TenantId = c.Int(nullable: false),
                         UserId = c.Long(nullable: false),
                         IsDeleted = c.Boolean(nullable: false),
@@ -119,68 +30,14 @@ namespace CH.Spartan.Migrations
                     },
                 annotations: new Dictionary<string, object>
                 {
-                    { "DynamicFilter_Device_MustHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
-                    { "DynamicFilter_Device_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                    { "DynamicFilter_Area_MustHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                    { "DynamicFilter_Area_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
                 })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.DeviceTypes", t => t.BDeviceTypeId, cascadeDelete: true)
-                .ForeignKey("dbo.Nodes", t => t.BNodeId, cascadeDelete: true)
                 .ForeignKey("dbo.AbpTenants", t => t.TenantId, cascadeDelete: true)
                 .ForeignKey("dbo.AbpUsers", t => t.UserId, cascadeDelete: true)
-                .Index(t => t.BDeviceTypeId)
-                .Index(t => t.BNodeId)
                 .Index(t => t.TenantId)
                 .Index(t => t.UserId);
-            
-            CreateTable(
-                "dbo.DeviceTypes",
-                c => new
-                    {
-                        Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(nullable: false, maxLength: 50, storeType: "nvarchar"),
-                        SwitchInGateway = c.String(nullable: false, maxLength: 50, storeType: "nvarchar"),
-                        Supplier = c.String(nullable: false, maxLength: 150, storeType: "nvarchar"),
-                        Manufacturer = c.String(nullable: false, maxLength: 150, storeType: "nvarchar"),
-                        ServiceCharge = c.Decimal(nullable: false, precision: 18, scale: 2),
-                        CodeCreateRule = c.Int(nullable: false),
-                        IsHaveRelay = c.Boolean(nullable: false),
-                        HaveAlarmType = c.Int(nullable: false),
-                        IsDeleted = c.Boolean(nullable: false),
-                        DeleterUserId = c.Long(),
-                        DeletionTime = c.DateTime(precision: 0),
-                        LastModificationTime = c.DateTime(precision: 0),
-                        LastModifierUserId = c.Long(),
-                        CreationTime = c.DateTime(nullable: false, precision: 0),
-                        CreatorUserId = c.Long(),
-                    },
-                annotations: new Dictionary<string, object>
-                {
-                    { "DynamicFilter_DeviceType_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
-                })
-                .PrimaryKey(t => t.Id);
-            
-            CreateTable(
-                "dbo.Nodes",
-                c => new
-                    {
-                        Id = c.Int(nullable: false, identity: true),
-                        Key = c.String(maxLength: 50, storeType: "nvarchar"),
-                        Name = c.String(maxLength: 50, storeType: "nvarchar"),
-                        HistoryTableName = c.String(maxLength: 250, storeType: "nvarchar"),
-                        HistoryConnectionString = c.String(maxLength: 250, storeType: "nvarchar"),
-                        IsDeleted = c.Boolean(nullable: false),
-                        DeleterUserId = c.Long(),
-                        DeletionTime = c.DateTime(precision: 0),
-                        LastModificationTime = c.DateTime(precision: 0),
-                        LastModifierUserId = c.Long(),
-                        CreationTime = c.DateTime(nullable: false, precision: 0),
-                        CreatorUserId = c.Long(),
-                    },
-                annotations: new Dictionary<string, object>
-                {
-                    { "DynamicFilter_Node_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
-                })
-                .PrimaryKey(t => t.Id);
             
             CreateTable(
                 "dbo.AbpTenants",
@@ -354,6 +211,209 @@ namespace CH.Spartan.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
+                "dbo.AbpAuditLogs",
+                c => new
+                    {
+                        Id = c.Long(nullable: false, identity: true),
+                        TenantId = c.Int(),
+                        UserId = c.Long(),
+                        ServiceName = c.String(maxLength: 256, storeType: "nvarchar"),
+                        MethodName = c.String(maxLength: 256, storeType: "nvarchar"),
+                        Parameters = c.String(maxLength: 1024, storeType: "nvarchar"),
+                        ExecutionTime = c.DateTime(nullable: false, precision: 0),
+                        ExecutionDuration = c.Int(nullable: false),
+                        ClientIpAddress = c.String(maxLength: 64, storeType: "nvarchar"),
+                        ClientName = c.String(maxLength: 128, storeType: "nvarchar"),
+                        BrowserInfo = c.String(maxLength: 256, storeType: "nvarchar"),
+                        Exception = c.String(maxLength: 2000, storeType: "nvarchar"),
+                        ImpersonatorUserId = c.Long(),
+                        ImpersonatorTenantId = c.Int(),
+                        CustomData = c.String(maxLength: 2000, storeType: "nvarchar"),
+                    },
+                annotations: new Dictionary<string, object>
+                {
+                    { "DynamicFilter_AuditLog_MayHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.AbpBackgroundJobs",
+                c => new
+                    {
+                        Id = c.Long(nullable: false, identity: true),
+                        JobType = c.String(nullable: false, maxLength: 512, storeType: "nvarchar"),
+                        JobArgs = c.String(nullable: false, unicode: false),
+                        TryCount = c.Short(nullable: false),
+                        NextTryTime = c.DateTime(nullable: false, precision: 0),
+                        LastTryTime = c.DateTime(precision: 0),
+                        IsAbandoned = c.Boolean(nullable: false),
+                        Priority = c.Byte(nullable: false),
+                        CreationTime = c.DateTime(nullable: false, precision: 0),
+                        CreatorUserId = c.Long(),
+                    })
+                .PrimaryKey(t => t.Id)
+                .Index(t => new { t.IsAbandoned, t.NextTryTime });
+            
+            CreateTable(
+                "dbo.DealRecords",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(maxLength: 250, storeType: "nvarchar"),
+                        Remark = c.String(maxLength: 250, storeType: "nvarchar"),
+                        Type = c.Int(nullable: false),
+                        Amount = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        TenantId = c.Int(nullable: false),
+                        UserId = c.Long(nullable: false),
+                        IsDeleted = c.Boolean(nullable: false),
+                        DeleterUserId = c.Long(),
+                        DeletionTime = c.DateTime(precision: 0),
+                        LastModificationTime = c.DateTime(precision: 0),
+                        LastModifierUserId = c.Long(),
+                        CreationTime = c.DateTime(nullable: false, precision: 0),
+                        CreatorUserId = c.Long(),
+                    },
+                annotations: new Dictionary<string, object>
+                {
+                    { "DynamicFilter_DealRecord_MustHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                    { "DynamicFilter_DealRecord_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.AbpTenants", t => t.TenantId, cascadeDelete: true)
+                .ForeignKey("dbo.AbpUsers", t => t.UserId, cascadeDelete: true)
+                .Index(t => t.TenantId)
+                .Index(t => t.UserId);
+            
+            CreateTable(
+                "dbo.Devices",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        BName = c.String(nullable: false, maxLength: 100, storeType: "nvarchar"),
+                        BLicensePlate = c.String(nullable: false, maxLength: 100, storeType: "nvarchar"),
+                        BIconType = c.String(nullable: false, maxLength: 50, storeType: "nvarchar"),
+                        BDeviceTypeId = c.Int(nullable: false),
+                        BNo = c.String(nullable: false, maxLength: 50, storeType: "nvarchar"),
+                        BCode = c.String(nullable: false, maxLength: 50, storeType: "nvarchar"),
+                        BSimNo = c.String(nullable: false, maxLength: 50, storeType: "nvarchar"),
+                        BExpireTime = c.DateTime(precision: 0),
+                        BNodeId = c.Int(nullable: false),
+                        SLimitSpeed = c.Int(nullable: false),
+                        SInOutArea = c.Boolean(nullable: false),
+                        GDirection = c.Int(nullable: false),
+                        GHeight = c.Double(nullable: false),
+                        GLatitude = c.Double(nullable: false),
+                        GLongitude = c.Double(nullable: false),
+                        GSpeed = c.Double(nullable: false),
+                        GReportTime = c.DateTime(nullable: false, precision: 0),
+                        GReceiveTime = c.DateTime(nullable: false, precision: 0),
+                        GIsLocated = c.Boolean(nullable: false),
+                        CIsAccOn = c.Boolean(nullable: false),
+                        CPower = c.Int(nullable: false),
+                        CIsRelayEnable = c.Boolean(nullable: false),
+                        CRelayBreakTime = c.DateTime(precision: 0),
+                        CIsMainPowerBreak = c.Boolean(nullable: false),
+                        CMainPowerBreakTime = c.DateTime(precision: 0),
+                        CMainPowerBreakLastAlarmTime = c.DateTime(precision: 0),
+                        CIsSos = c.Boolean(nullable: false),
+                        COverSpeedTime = c.DateTime(precision: 0),
+                        COverSpeedLastAlarmTime = c.DateTime(precision: 0),
+                        CStartupTime = c.DateTime(precision: 0),
+                        CStartupLastAlarmTime = c.DateTime(precision: 0),
+                        CLastHaveSpeedTime = c.DateTime(precision: 0),
+                        CLastHaveSpeedLastAlarmTime = c.DateTime(precision: 0),
+                        CInAreaList = c.String(maxLength: 500, storeType: "nvarchar"),
+                        CIsFortify = c.Boolean(nullable: false),
+                        CFortifyLatLng = c.String(maxLength: 100, storeType: "nvarchar"),
+                        CLeaveFortifyAreaTime = c.DateTime(precision: 0),
+                        CLeaveFortifyAreaLastAlarmTime = c.DateTime(precision: 0),
+                        CIsDropOff = c.Boolean(nullable: false),
+                        CDropOffTime = c.DateTime(precision: 0),
+                        CDropOffLastAlarmTime = c.DateTime(precision: 0),
+                        CIsShake = c.Boolean(nullable: false),
+                        CShakeTime = c.DateTime(precision: 0),
+                        CIsLowBattery = c.Boolean(nullable: false),
+                        CLowBatteryTime = c.DateTime(precision: 0),
+                        CLowBatteryLastAlarmTime = c.DateTime(precision: 0),
+                        CIsInBlindArea = c.Boolean(nullable: false),
+                        CInBlindAreaTime = c.DateTime(precision: 0),
+                        CInBlindAreaLastAlarmTime = c.DateTime(precision: 0),
+                        TenantId = c.Int(nullable: false),
+                        UserId = c.Long(nullable: false),
+                        IsDeleted = c.Boolean(nullable: false),
+                        DeleterUserId = c.Long(),
+                        DeletionTime = c.DateTime(precision: 0),
+                        LastModificationTime = c.DateTime(precision: 0),
+                        LastModifierUserId = c.Long(),
+                        CreationTime = c.DateTime(nullable: false, precision: 0),
+                        CreatorUserId = c.Long(),
+                    },
+                annotations: new Dictionary<string, object>
+                {
+                    { "DynamicFilter_Device_MustHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                    { "DynamicFilter_Device_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.DeviceTypes", t => t.BDeviceTypeId, cascadeDelete: true)
+                .ForeignKey("dbo.Nodes", t => t.BNodeId, cascadeDelete: true)
+                .ForeignKey("dbo.AbpTenants", t => t.TenantId, cascadeDelete: true)
+                .ForeignKey("dbo.AbpUsers", t => t.UserId, cascadeDelete: true)
+                .Index(t => t.BDeviceTypeId)
+                .Index(t => t.BNodeId)
+                .Index(t => t.TenantId)
+                .Index(t => t.UserId);
+            
+            CreateTable(
+                "dbo.DeviceTypes",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(nullable: false, maxLength: 50, storeType: "nvarchar"),
+                        SwitchInGateway = c.String(nullable: false, maxLength: 50, storeType: "nvarchar"),
+                        Supplier = c.String(nullable: false, maxLength: 150, storeType: "nvarchar"),
+                        Manufacturer = c.String(nullable: false, maxLength: 150, storeType: "nvarchar"),
+                        ServiceCharge = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        CodeCreateRule = c.Int(nullable: false),
+                        IsHaveRelay = c.Boolean(nullable: false),
+                        HaveAlarmType = c.Int(nullable: false),
+                        IsDeleted = c.Boolean(nullable: false),
+                        DeleterUserId = c.Long(),
+                        DeletionTime = c.DateTime(precision: 0),
+                        LastModificationTime = c.DateTime(precision: 0),
+                        LastModifierUserId = c.Long(),
+                        CreationTime = c.DateTime(nullable: false, precision: 0),
+                        CreatorUserId = c.Long(),
+                    },
+                annotations: new Dictionary<string, object>
+                {
+                    { "DynamicFilter_DeviceType_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Nodes",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Key = c.String(maxLength: 50, storeType: "nvarchar"),
+                        Name = c.String(maxLength: 50, storeType: "nvarchar"),
+                        HistoryTableName = c.String(maxLength: 250, storeType: "nvarchar"),
+                        HistoryConnectionString = c.String(maxLength: 250, storeType: "nvarchar"),
+                        IsDeleted = c.Boolean(nullable: false),
+                        DeleterUserId = c.Long(),
+                        DeletionTime = c.DateTime(precision: 0),
+                        LastModificationTime = c.DateTime(precision: 0),
+                        LastModifierUserId = c.Long(),
+                        CreationTime = c.DateTime(nullable: false, precision: 0),
+                        CreatorUserId = c.Long(),
+                    },
+                annotations: new Dictionary<string, object>
+                {
+                    { "DynamicFilter_Node_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
                 "dbo.AbpFeatures",
                 c => new
                     {
@@ -369,6 +429,23 @@ namespace CH.Spartan.Migrations
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.AbpEditions", t => t.EditionId, cascadeDelete: true)
                 .Index(t => t.EditionId);
+            
+            CreateTable(
+                "dbo.Histories",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        DeviceId = c.Int(nullable: false),
+                        DeviceDayKey = c.String(maxLength: 50, storeType: "nvarchar"),
+                        Direction = c.Int(nullable: false),
+                        Height = c.Double(nullable: false),
+                        Latitude = c.Double(nullable: false),
+                        Longitude = c.Double(nullable: false),
+                        Speed = c.Double(nullable: false),
+                        ReceiveTime = c.DateTime(nullable: false, precision: 0),
+                        ReportTime = c.DateTime(nullable: false, precision: 0),
+                    })
+                .PrimaryKey(t => t.Id);
             
             CreateTable(
                 "dbo.AbpLanguages",
@@ -412,6 +489,31 @@ namespace CH.Spartan.Migrations
                 annotations: new Dictionary<string, object>
                 {
                     { "DynamicFilter_ApplicationLanguageText_MayHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.MileageReportDays",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        DeviceId = c.Int(nullable: false),
+                        UserId = c.Long(nullable: false),
+                        TenantId = c.Int(nullable: false),
+                        CreationTime = c.DateTime(nullable: false, precision: 0),
+                        LastModificationTime = c.DateTime(precision: 0),
+                        Day = c.DateTime(nullable: false, precision: 0),
+                        TotalMileage = c.Double(nullable: false),
+                        StartTime = c.DateTime(precision: 0),
+                        StartLatLng = c.String(unicode: false),
+                        StartAddress = c.String(unicode: false),
+                        EndTime = c.DateTime(precision: 0),
+                        EndLatLng = c.String(maxLength: 50, storeType: "nvarchar"),
+                        EndAddress = c.String(maxLength: 50, storeType: "nvarchar"),
+                    },
+                annotations: new Dictionary<string, object>
+                {
+                    { "DynamicFilter_MileageReportDay_MustHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
                 })
                 .PrimaryKey(t => t.Id);
             
@@ -572,6 +674,12 @@ namespace CH.Spartan.Migrations
             DropForeignKey("dbo.AbpFeatures", "EditionId", "dbo.AbpEditions");
             DropForeignKey("dbo.Devices", "UserId", "dbo.AbpUsers");
             DropForeignKey("dbo.Devices", "TenantId", "dbo.AbpTenants");
+            DropForeignKey("dbo.Devices", "BNodeId", "dbo.Nodes");
+            DropForeignKey("dbo.Devices", "BDeviceTypeId", "dbo.DeviceTypes");
+            DropForeignKey("dbo.DealRecords", "UserId", "dbo.AbpUsers");
+            DropForeignKey("dbo.DealRecords", "TenantId", "dbo.AbpTenants");
+            DropForeignKey("dbo.Areas", "UserId", "dbo.AbpUsers");
+            DropForeignKey("dbo.Areas", "TenantId", "dbo.AbpTenants");
             DropForeignKey("dbo.AbpSettings", "TenantId", "dbo.AbpTenants");
             DropForeignKey("dbo.AbpTenants", "LastModifierUserId", "dbo.AbpUsers");
             DropForeignKey("dbo.AbpTenants", "EditionId", "dbo.AbpEditions");
@@ -585,8 +693,6 @@ namespace CH.Spartan.Migrations
             DropForeignKey("dbo.AbpUsers", "LastModifierUserId", "dbo.AbpUsers");
             DropForeignKey("dbo.AbpUsers", "DeleterUserId", "dbo.AbpUsers");
             DropForeignKey("dbo.AbpUsers", "CreatorUserId", "dbo.AbpUsers");
-            DropForeignKey("dbo.Devices", "BNodeId", "dbo.Nodes");
-            DropForeignKey("dbo.Devices", "BDeviceTypeId", "dbo.DeviceTypes");
             DropIndex("dbo.AbpUserNotifications", new[] { "UserId", "State", "CreationTime" });
             DropIndex("dbo.AbpUserLoginAttempts", new[] { "TenancyName", "UserNameOrEmailAddress", "Result" });
             DropIndex("dbo.AbpRoles", new[] { "CreatorUserId" });
@@ -596,6 +702,13 @@ namespace CH.Spartan.Migrations
             DropIndex("dbo.AbpOrganizationUnits", new[] { "ParentId" });
             DropIndex("dbo.AbpNotificationSubscriptions", new[] { "NotificationName", "EntityTypeName", "EntityId", "UserId" });
             DropIndex("dbo.AbpFeatures", new[] { "EditionId" });
+            DropIndex("dbo.Devices", new[] { "UserId" });
+            DropIndex("dbo.Devices", new[] { "TenantId" });
+            DropIndex("dbo.Devices", new[] { "BNodeId" });
+            DropIndex("dbo.Devices", new[] { "BDeviceTypeId" });
+            DropIndex("dbo.DealRecords", new[] { "UserId" });
+            DropIndex("dbo.DealRecords", new[] { "TenantId" });
+            DropIndex("dbo.AbpBackgroundJobs", new[] { "IsAbandoned", "NextTryTime" });
             DropIndex("dbo.AbpSettings", new[] { "UserId" });
             DropIndex("dbo.AbpSettings", new[] { "TenantId" });
             DropIndex("dbo.AbpUserRoles", new[] { "UserId" });
@@ -610,11 +723,8 @@ namespace CH.Spartan.Migrations
             DropIndex("dbo.AbpTenants", new[] { "LastModifierUserId" });
             DropIndex("dbo.AbpTenants", new[] { "DeleterUserId" });
             DropIndex("dbo.AbpTenants", new[] { "EditionId" });
-            DropIndex("dbo.Devices", new[] { "UserId" });
-            DropIndex("dbo.Devices", new[] { "TenantId" });
-            DropIndex("dbo.Devices", new[] { "BNodeId" });
-            DropIndex("dbo.Devices", new[] { "BDeviceTypeId" });
-            DropIndex("dbo.AbpBackgroundJobs", new[] { "IsAbandoned", "NextTryTime" });
+            DropIndex("dbo.Areas", new[] { "UserId" });
+            DropIndex("dbo.Areas", new[] { "TenantId" });
             DropTable("dbo.AbpUserOrganizationUnits",
                 removedAnnotations: new Dictionary<string, object>
                 {
@@ -636,6 +746,11 @@ namespace CH.Spartan.Migrations
                 });
             DropTable("dbo.AbpNotificationSubscriptions");
             DropTable("dbo.AbpNotifications");
+            DropTable("dbo.MileageReportDays",
+                removedAnnotations: new Dictionary<string, object>
+                {
+                    { "DynamicFilter_MileageReportDay_MustHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                });
             DropTable("dbo.AbpLanguageTexts",
                 removedAnnotations: new Dictionary<string, object>
                 {
@@ -647,7 +762,36 @@ namespace CH.Spartan.Migrations
                     { "DynamicFilter_ApplicationLanguage_MayHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
                     { "DynamicFilter_ApplicationLanguage_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
                 });
+            DropTable("dbo.Histories");
             DropTable("dbo.AbpFeatures");
+            DropTable("dbo.Nodes",
+                removedAnnotations: new Dictionary<string, object>
+                {
+                    { "DynamicFilter_Node_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                });
+            DropTable("dbo.DeviceTypes",
+                removedAnnotations: new Dictionary<string, object>
+                {
+                    { "DynamicFilter_DeviceType_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                });
+            DropTable("dbo.Devices",
+                removedAnnotations: new Dictionary<string, object>
+                {
+                    { "DynamicFilter_Device_MustHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                    { "DynamicFilter_Device_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                });
+            DropTable("dbo.DealRecords",
+                removedAnnotations: new Dictionary<string, object>
+                {
+                    { "DynamicFilter_DealRecord_MustHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                    { "DynamicFilter_DealRecord_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                });
+            DropTable("dbo.AbpBackgroundJobs");
+            DropTable("dbo.AbpAuditLogs",
+                removedAnnotations: new Dictionary<string, object>
+                {
+                    { "DynamicFilter_AuditLog_MayHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                });
             DropTable("dbo.AbpEditions",
                 removedAnnotations: new Dictionary<string, object>
                 {
@@ -668,27 +812,11 @@ namespace CH.Spartan.Migrations
                 {
                     { "DynamicFilter_Tenant_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
                 });
-            DropTable("dbo.Nodes",
+            DropTable("dbo.Areas",
                 removedAnnotations: new Dictionary<string, object>
                 {
-                    { "DynamicFilter_Node_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
-                });
-            DropTable("dbo.DeviceTypes",
-                removedAnnotations: new Dictionary<string, object>
-                {
-                    { "DynamicFilter_DeviceType_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
-                });
-            DropTable("dbo.Devices",
-                removedAnnotations: new Dictionary<string, object>
-                {
-                    { "DynamicFilter_Device_MustHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
-                    { "DynamicFilter_Device_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
-                });
-            DropTable("dbo.AbpBackgroundJobs");
-            DropTable("dbo.AbpAuditLogs",
-                removedAnnotations: new Dictionary<string, object>
-                {
-                    { "DynamicFilter_AuditLog_MayHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                    { "DynamicFilter_Area_MustHaveTenant", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
+                    { "DynamicFilter_Area_SoftDelete", "EntityFramework.DynamicFilters.DynamicFilterDefinition" },
                 });
         }
     }

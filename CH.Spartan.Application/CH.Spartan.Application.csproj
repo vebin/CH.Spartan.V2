@@ -98,6 +98,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commons\ComboboxHelper.cs" />
+    <Compile Include="Devices\DeviceAppService.cs" />
+    <Compile Include="Devices\DeviceConstants.cs" />
+    <Compile Include="Devices\Dto\CreateDeviceDto.cs" />
+    <Compile Include="Devices\Dto\GetDeviceListDto.cs" />
+    <Compile Include="Devices\Dto\UpdateDeviceDto.cs" />
+    <Compile Include="Devices\IDeviceAppService.cs" />
     <Compile Include="DeviceTypes\DeviceTypeAppService.cs" />
     <Compile Include="DeviceTypes\Dto\CreateDeviceTypeDto.cs" />
     <Compile Include="DeviceTypes\Dto\GetDeviceTypeListDto.cs" />

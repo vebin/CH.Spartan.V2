@@ -620,10 +620,13 @@
     <Content Include="Content\js\plugins\table\locale\bootstrap-table-en-US.js.template" />
     <Content Include="Content\js\plugins\table\locale\README.md" />
     <Content Include="Views\SystemManage\CreateDeviceType.cshtml" />
+    <Content Include="Views\SystemManage\CreateDevice.cshtml" />
     <None Include="Views\SystemManage\CreateTenant.cshtml" />
     <Content Include="Views\SystemManage\UpdateTenant.cshtml" />
     <Content Include="Views\SystemManage\DeviceType.cshtml" />
     <Content Include="Views\SystemManage\UpdateDeviceType.cshtml" />
+    <Content Include="Views\SystemManage\Device.cshtml" />
+    <Content Include="Views\SystemManage\UpdateDevice.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

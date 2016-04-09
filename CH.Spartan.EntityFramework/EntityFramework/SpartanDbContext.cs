@@ -7,6 +7,11 @@ using CH.Spartan.DeviceTypes;
 using CH.Spartan.MultiTenancy;
 using CH.Spartan.Users;
 using MySql.Data.Entity;
+using CH.Spartan.Areas;
+using CH.Spartan.DealRecords;
+using CH.Spartan.Historys;
+using CH.Spartan.Nodes;
+using CH.Spartan.Reports;
 
 namespace CH.Spartan.EntityFramework
 {
@@ -21,6 +26,32 @@ namespace CH.Spartan.EntityFramework
         /// 设备类型
         /// </summary>
         public IDbSet<DeviceType> DeviceTypes { get; set; }
+
+
+        /// <summary>
+        /// 区域
+        /// </summary>
+        public IDbSet<Area> Areas { get; set; }
+
+        /// <summary>
+        /// 交易记录
+        /// </summary>
+        public IDbSet<DealRecord> DealRecords { get; set; }
+
+        /// <summary>
+        /// 历史
+        /// </summary>
+        public IDbSet<History> Historys { get; set; }
+
+        /// <summary>
+        /// 节点
+        /// </summary>
+        public IDbSet<Node> Nodes { get; set; } 
+        
+        /// <summary>
+        /// 日里程
+        /// </summary>
+        public IDbSet<MileageReportDay> MileageReportDays { get; set; }
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.

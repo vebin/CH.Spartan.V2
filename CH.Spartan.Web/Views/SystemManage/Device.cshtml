@@ -1,0 +1,237 @@
+﻿@section styles
+{
+    @Styles.Render("~/styles/plugins/list")
+}
+@section scripts
+{
+    @Scripts.Render("~/scripts/plugins/list")
+    <script type="text/javascript">
+        //操作
+        function formatterOp(value, row, index) {
+            var edit="";
+			var del="";
+			if(abp.auth.isGranted("@SpartanPermissionNames.PlatformManages_Device_Update"))
+			{
+				edit = '<i class="btn-op fa fa-edit" title="@L("修改")" onclick="update(\'' + row.id + '\')"></i>';
+			}
+			if(abp.auth.isGranted("@SpartanPermissionNames.PlatformManages_Device_Delete"))
+			{
+				del = '<i class="btn-op fa fa-trash-o" title="@L("删除")" onclick="del(\'' + row.id + '\')"></i>';
+			}
+            return edit + del;
+        }
+
+       
+		
+				 //添加
+        function create() {
+            abp.dialog.open("/PlatformManage/CreateDevice", "@L("添加设备")", {
+                               	area: ["775px", "80%"],
+			                //area: ["675px", "80%"],
+                //area: ["775px", "80%"],
+                //area: ["995px", "80%"],
+                //area: ["1250px", "80%"],
+                btn: ["@L("确定")", '@L("取消")'],
+                yes: function(index, layero) {
+                    var iframeWin = layero.find("iframe")[0].contentWindow;
+                    iframeWin.submitForm();
+                },
+                cancel: function(index) {
+                },
+                end: function() {
+                    $("#btn-search").click();
+                }
+            });
+        }
+		    
+		
+          
+				//更新
+        function update(id) {
+            abp.dialog.open("/PlatformManage/UpdateDevice?id=" + id, "@L("修改设备")", {
+                         area: ["775px", "80%"],
+                            //area: ["675px", "80%"],
+                //area: ["775px", "80%"],
+                //area: ["995px", "80%"],
+                //area: ["1250px", "80%"],
+                btn: ["@L("保存")", '@L("取消")'],
+                yes: function(index, layero) {
+                    var iframeWin = layero.find("iframe")[0].contentWindow;
+                    iframeWin.submitForm();
+                },
+                cancel: function(index) {
+                },
+                end: function() {
+                    $("#btn-search").click();
+                }
+            });
+        }
+		    
+        
+
+		
+				//删除
+        function del(ids) {
+            if (typeof ids == "string") {
+                ids = [{ id: ids }];
+            }
+            abp.message.confirm("@L("确定删除")?", function(yes) {
+                if (!yes) return;
+                abp.ajax({
+                    url: "/PlatformManage/DeleteDevice",
+                    data: JSON.stringify(ids)
+                }).done(function (result) {
+                    abp.notify.success("@L("删除成功")");
+					$("#btn-search").click();
+                });
+            });
+        }
+		    
+
+
+        
+
+        (function($) {
+            if (!$) {
+                return;
+            }
+
+            //搜索
+            $("#btn-search").click(function() {
+                var args =
+                {
+                    query: abp.utils.getFormData("#form")
+                }
+                $("#table").bootstrapTable("refresh", args);
+            });
+			
+				//添加
+				$("#btn-add").click(function() {
+					create();
+				});
+			
+				//删除
+				$("#btn-del").click(function() {
+					var rows = $("#table").bootstrapTable("getSelections");
+					var ids = [];
+					$.each(rows,function(index, item) {
+						ids.push({ id: item.id });
+					});
+					if (ids.length == 0) {
+                    abp.notify.error("@L("请选择要删除的数据")");
+                } else {
+                    del(ids);
+                }
+				});
+		    
+
+           
+        })(jQuery);
+    </script>
+}
+<div class="wrapper wrapper-content animated lightSpeedIn list">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content list-toolbar">
+                    <form role="form" class="form-inline" id="form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="@L("请输入关键字")" name="SearchText">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" id="btn-search">@L("查询")</button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="ibox-content list-content">
+                    <div class="btn-group hidden-xs" id="tableToolbar" role="group">
+						@if (IsGranted(SpartanPermissionNames.PlatformManages_Device_Create))
+						{
+							<button type="button" class="btn btn-outline btn-default" id="btn-add"><i class="fa fa-plus" aria-hidden="true"></i></button>
+						}
+						@if (IsGranted(SpartanPermissionNames.PlatformManages_Device_Delete))
+						{
+							 <button type="button" class="btn btn-outline btn-default" id="btn-del"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+						}
+                    </div>
+                    <table id="table"
+                           data-toggle="table"
+                           data-url="/PlatformManage/SearchDevice"
+                           data-toolbar="#tableToolbar"
+                           data-height="550"
+                           data-show-export="true">
+                        <thead>
+                            <tr>
+							 <th data-field="state" data-checkbox="true"></th>
+                                <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
+                                      <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
+							                   <th data-field="bName" data-sortable="true">@L("设备名字")</th>
+                   <th data-field="bLicensePlate" data-sortable="true">@L("车牌号")</th>
+                   <th data-field="bIconType" data-sortable="true">@L("设备图标类型")</th>
+                   <th data-field="bDeviceTypeId" data-sortable="true">@L("设备类型Id")</th>
+                   <th data-field="bNo" data-sortable="true">@L("设备号")</th>
+                   <th data-field="bCode" data-sortable="true">@L("设备唯一编码不同的设备编码生成规则不一样")</th>
+                   <th data-field="bSimNo" data-sortable="true">@L("Sim号")</th>
+                   <th data-field="bExpireTime" data-sortable="true">@L("过期时间")</th>
+                   <th data-field="bNodeId" data-sortable="true">@L("所属节点Id")</th>
+                   <th data-field="sLimitSpeed" data-sortable="true">@L("报警设置超限速")</th>
+                   <th data-field="sInOutArea" data-sortable="true">@L("报警设置进出区域")</th>
+                   <th data-field="gDirection" data-sortable="true">@L("方向0-359,正北为0,顺时针")</th>
+                   <th data-field="gHeight" data-sortable="true">@L("海拔高度,单位为米(m)")</th>
+                   <th data-field="gLatitude" data-sortable="true">@L("纬度")</th>
+                   <th data-field="gLongitude" data-sortable="true">@L("经度")</th>
+                   <th data-field="gSpeed" data-sortable="true">@L("速度(1/10)/km/h")</th>
+                   <th data-field="gReportTime" data-sortable="true">@L("GPS最后定位时间")</th>
+                   <th data-field="gReceiveTime" data-sortable="true">@L("设备最后通讯时间")</th>
+                   <th data-field="gIsLocated" data-sortable="true">@L("是否已经定位状态")</th>
+                   <th data-field="cIsAccOn" data-sortable="true">@L("状态ACC")</th>
+                   <th data-field="cPower" data-sortable="true">@L("状态电量")</th>
+                   <th data-field="cIsRelayEnable" data-sortable="true">@L("状态是否继电器启用")</th>
+                   <th data-field="cRelayBreakTime" data-sortable="true">@L("状态电器启用时间")</th>
+                   <th data-field="cIsMainPowerBreak" data-sortable="true">@L("状态是否外接电源断开")</th>
+                   <th data-field="cMainPowerBreakTime" data-sortable="true">@L("状态外接电源断开时间")</th>
+                   <th data-field="cMainPowerBreakLastAlarmTime" data-sortable="true">@L("状态外接电源断开最后一次报警时间")</th>
+                   <th data-field="cIsSos" data-sortable="true">@L("状态是否SOS求助")</th>
+                   <th data-field="cOverSpeedTime" data-sortable="true">@L("状态超速时间")</th>
+                   <th data-field="cOverSpeedLastAlarmTime" data-sortable="true">@L("状态超速最后报警时间")</th>
+                   <th data-field="cStartupTime" data-sortable="true">@L("状态启动时间")</th>
+                   <th data-field="cStartupLastAlarmTime" data-sortable="true">@L("状态启动最后报警时间")</th>
+                   <th data-field="cLastHaveSpeedTime" data-sortable="true">@L("状态拥有速度时间")</th>
+                   <th data-field="cLastHaveSpeedLastAlarmTime" data-sortable="true">@L("状态拥有速度最后报警时间")</th>
+                   <th data-field="cInAreaList" data-sortable="true">@L("状态进入区域列表")</th>
+                   <th data-field="cIsFortify" data-sortable="true">@L("状态是否处于设防状态")</th>
+                   <th data-field="cFortifyLatLng" data-sortable="true">@L("状态设防时的经纬度")</th>
+                   <th data-field="cLeaveFortifyAreaTime" data-sortable="true">@L("状态离开设防区域时间")</th>
+                   <th data-field="cLeaveFortifyAreaLastAlarmTime" data-sortable="true">@L("状态离开设防区域最后报警时间")</th>
+                   <th data-field="cIsDropOff" data-sortable="true">@L("状态是否脱落")</th>
+                   <th data-field="cDropOffTime" data-sortable="true">@L("状态脱落时间")</th>
+                   <th data-field="cDropOffLastAlarmTime" data-sortable="true">@L("状态脱落最后报警时间")</th>
+                   <th data-field="cIsShake" data-sortable="true">@L("状态是否震动")</th>
+                   <th data-field="cShakeTime" data-sortable="true">@L("状态震动时间")</th>
+                   <th data-field="cIsLowBattery" data-sortable="true">@L("状态是否低电")</th>
+                   <th data-field="cLowBatteryTime" data-sortable="true">@L("状态低电时间")</th>
+                   <th data-field="cLowBatteryLastAlarmTime" data-sortable="true">@L("状态低电最后报警时间")</th>
+                   <th data-field="cIsInBlindArea" data-sortable="true">@L("状态是否进入盲区")</th>
+                   <th data-field="cInBlindAreaTime" data-sortable="true">@L("状态进入盲区时间")</th>
+                   <th data-field="cInBlindAreaLastAlarmTime" data-sortable="true">@L("状态进入盲区最后报警时间")</th>
+                   <th data-field="deviceType" data-sortable="true">@L("设备类型")</th>
+                   <th data-field="node" data-sortable="true">@L("所属节点")</th>
+                   <th data-field="tenantId" data-sortable="true">@L("所属租户Id")</th>
+                   <th data-field="tenant" data-sortable="true">@L("所属租户")</th>
+                   <th data-field="userId" data-sortable="true">@L("所属用户Id")</th>
+                   <th data-field="user" data-sortable="true">@L("所属租户")</th>
+                   <th data-field="lastModificationTime" data-sortable="true">@L("最后编辑时间")</th>
+                   <th data-field="creationTime" data-sortable="true">@L("创建时间")</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

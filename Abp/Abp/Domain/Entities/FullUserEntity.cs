@@ -17,7 +17,7 @@ namespace Abp.Domain.Entities
         /// <summary>
         /// 所属用户Id
         /// </summary>
-        public virtual int UserId { get; set; }
+        public virtual long UserId { get; set; }
 
         /// <summary>
         /// 所属租户

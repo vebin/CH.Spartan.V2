@@ -19,7 +19,7 @@ namespace CH.Spartan.Domain
     /// 领域服务
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public abstract class SpartanManagerBase<T>
+    public abstract class ManagerBase<T>
         : IDomainService
         where T : Entity<int>
     {
@@ -57,7 +57,7 @@ namespace CH.Spartan.Domain
         /// <summary>
         /// 存储
         /// </summary>
-        public SpartanStoreBase<T> Store { get; set; }
+        public StoreBase<T> Store { get; set; }
 
 
         /// <summary>
@@ -68,8 +68,8 @@ namespace CH.Spartan.Domain
         /// <param name="cacheManager">缓存</param>
         /// <param name="iocResolver">Ioc</param>
         /// <param name="unitOfWorkManager">工作单元</param>
-        protected SpartanManagerBase(
-            SpartanStoreBase<T> store,
+        protected ManagerBase(
+            StoreBase<T> store,
             ISettingManager settingManager,
             ICacheManager cacheManager,
             IIocResolver iocResolver,

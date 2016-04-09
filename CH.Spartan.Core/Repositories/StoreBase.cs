@@ -14,14 +14,14 @@ namespace CH.Spartan.Repositories
     /// 存储
     /// </summary>
     /// <typeparam name="T">实体</typeparam>
-    public abstract class SpartanStoreBase<T>: 
+    public abstract class StoreBase<T>: 
         ITransientDependency
         where T : Entity<int> 
     {
         /// <summary>
         /// 仓储
         /// </summary>
-        protected ISpartanRepositoryBase<T> Repository {  get; }
+        protected IRepository<T> Repository {  get; }
 
         /// <summary>
         /// 工作单元
@@ -33,8 +33,8 @@ namespace CH.Spartan.Repositories
         /// </summary>
         /// <param name="repository">仓储</param>
         /// <param name="unitOfWorkManager">工作单元</param>
-        protected SpartanStoreBase(
-            ISpartanRepositoryBase<T> repository, 
+        protected StoreBase(
+            IRepository<T> repository, 
             IUnitOfWorkManager unitOfWorkManager)
         {
             Repository = repository;

@@ -23,7 +23,7 @@ namespace CH.Spartan.Reports
         /// <summary>
         /// 用户Id
         /// </summary>
-        public int UserId { get; set; }
+        public long UserId { get; set; }
 
         /// <summary>
         /// 租户Id

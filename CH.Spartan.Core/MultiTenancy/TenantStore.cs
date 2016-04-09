@@ -11,12 +11,12 @@ using CH.Spartan.Repositories;
 
 namespace CH.Spartan.MultiTenancy
 {
-    public class TenantStore : SpartanStoreBase<Tenant>
+    public class TenantStore : StoreBase<Tenant>
     {
         public virtual IQueryable<Tenant> Tenants => Repository.GetAll();
 
         public TenantStore(
-            ISpartanRepositoryBase<Tenant> tenantRepository, 
+            IRepository<Tenant> tenantRepository, 
             IUnitOfWorkManager unitOfWorkManager) :
             base(tenantRepository, unitOfWorkManager)
         {

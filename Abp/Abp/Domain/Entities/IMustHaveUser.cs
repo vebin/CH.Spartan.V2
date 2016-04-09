@@ -8,6 +8,6 @@ namespace Abp.Domain.Entities
 {
     public interface IMustHaveUser
     {
-        int UserId { get; set; }
+        long UserId { get; set; }
     }
 }

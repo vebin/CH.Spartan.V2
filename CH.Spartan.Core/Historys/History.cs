@@ -9,23 +9,12 @@ using Abp.Domain.Entities.Auditing;
 
 namespace CH.Spartan.Historys
 {
-    public class History : Entity,
-        IMustHaveTenant
+    public class History : Entity
     {
         /// <summary>
         /// 设备Id
         /// </summary>
         public int DeviceId { get; set; }
-
-        /// <summary>
-        /// 用户Id
-        /// </summary>
-        public int UserId { get; set; }
-
-        /// <summary>
-        /// 租户Id
-        /// </summary>
-        public int TenantId { get; set; }
 
         /// <summary>
         /// 设备时间键 设备Id-日期  例如  1-20150821

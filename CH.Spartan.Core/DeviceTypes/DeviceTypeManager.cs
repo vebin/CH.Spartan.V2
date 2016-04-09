@@ -11,7 +11,7 @@ using CH.Spartan.Domain;
 
 namespace CH.Spartan.DeviceTypes
 {
-    public class DeviceTypeManager : SpartanManagerBase<DeviceType>
+    public class DeviceTypeManager : ManagerBase<DeviceType>
     {
         public DeviceTypeManager(
             DeviceTypeStore deviceTypeStore, 

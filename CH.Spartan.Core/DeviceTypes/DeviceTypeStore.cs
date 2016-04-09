@@ -9,10 +9,10 @@ using CH.Spartan.Repositories;
 
 namespace CH.Spartan.DeviceTypes
 {
-   public class DeviceTypeStore: SpartanStoreBase<DeviceType>
+   public class DeviceTypeStore: StoreBase<DeviceType>
    {
        public DeviceTypeStore(
-           ISpartanRepositoryBase<DeviceType> deviceTypeRepository, 
+           IRepository<DeviceType> deviceTypeRepository, 
            IUnitOfWorkManager unitOfWorkManager) 
             : base(deviceTypeRepository, unitOfWorkManager)
        {

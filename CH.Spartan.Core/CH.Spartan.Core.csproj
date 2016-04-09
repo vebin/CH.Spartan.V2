@@ -99,10 +99,9 @@
     <Compile Include="Commons\LinqExtend.cs" />
     <Compile Include="Commons\QueryResultRequestInput.cs" />
     <Compile Include="DeviceTypes\DeviceTypeStore.cs" />
-    <Compile Include="Domain\SpartanManagerBase.cs" />
+    <Compile Include="Domain\ManagerBase.cs" />
     <Compile Include="MultiTenancy\TenantStore.cs" />
-    <Compile Include="Repositories\SpartanStoreBase.cs" />
-    <Compile Include="Repositories\ISpartanRepositoryBase.cs" />
+    <Compile Include="Repositories\StoreBase.cs" />
     <Compile Include="SpartanSettingKeys.cs" />
     <Compile Include="DealRecords\DealRecord.cs" />
     <Compile Include="Devices\Device.cs" />

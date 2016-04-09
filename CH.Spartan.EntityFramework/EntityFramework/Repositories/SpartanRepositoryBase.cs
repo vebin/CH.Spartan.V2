@@ -5,9 +5,9 @@ using CH.Spartan.Repositories;
 
 namespace CH.Spartan.EntityFramework.Repositories
 {
-    public class SpartanRepositoryBase<TEntity, TPrimaryKey> : 
-        EfRepositoryBase<SpartanDbContext, TEntity, TPrimaryKey>,
-        ISpartanRepositoryBase<TEntity, TPrimaryKey>
+   
+    public abstract class SpartanRepositoryBase<TEntity, TPrimaryKey> : 
+        EfRepositoryBase<SpartanDbContext, TEntity, TPrimaryKey>
         where TEntity : class, IEntity<TPrimaryKey>
     {
         protected SpartanRepositoryBase(IDbContextProvider<SpartanDbContext> dbContextProvider)
@@ -19,9 +19,8 @@ namespace CH.Spartan.EntityFramework.Repositories
         //add common methods for all repositories
     }
 
-    public  class SpartanRepositoryBase<TEntity> :
-        SpartanRepositoryBase<TEntity, int>,
-        ISpartanRepositoryBase<TEntity, int>
+    public abstract class SpartanRepositoryBase<TEntity> :
+        SpartanRepositoryBase<TEntity, int>
         where TEntity : class, IEntity<int>
     {
         protected SpartanRepositoryBase(IDbContextProvider<SpartanDbContext> dbContextProvider)

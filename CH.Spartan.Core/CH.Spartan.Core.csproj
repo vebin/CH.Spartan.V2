@@ -141,6 +141,10 @@
     <EmbeddedResource Include="Localization\Source\Spartan-en.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Abp\Abp.EntityFramework\Abp.EntityFramework.csproj">
+      <Project>{948f0caf-3382-4e03-9a0f-0ddb206fe40d}</Project>
+      <Name>Abp.EntityFramework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Abp\Abp.Zero\Abp.Zero.csproj">
       <Project>{70d916f2-9bff-43da-b3f7-3e0655114d48}</Project>
       <Name>Abp.Zero</Name>

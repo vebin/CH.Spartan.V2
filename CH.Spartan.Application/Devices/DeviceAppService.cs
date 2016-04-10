@@ -24,7 +24,7 @@ namespace CH.Spartan.Devices
 	
         public async Task<ListResultOutput<GetDeviceListDto>> GetDeviceListAsync(GetDeviceListInput input)
         {
-            var list = await _deviceManager.Store.Table
+            var list = await _deviceManager.Store.Query
                 .OrderBy(input)
                 .ToListAsync();
             return new ListResultOutput<GetDeviceListDto>(list.MapTo<List<GetDeviceListDto>>());
@@ -32,7 +32,7 @@ namespace CH.Spartan.Devices
 		
         public async Task<PagedResultOutput<GetDeviceListDto>> GetDeviceListPagedAsync(GetDeviceListPagedInput input)
         {
-            var query = _deviceManager.Store.Table;
+            var query = _deviceManager.Store.Query;
                 //.WhereIf(!input.SearchText.IsNullOrEmpty(), p => p.TenancyName.Contains(input.SearchText) || p.Name.Contains(input.SearchText));
 
             var count = await query.CountAsync();

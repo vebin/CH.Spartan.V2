@@ -1,5 +1,6 @@
 ﻿using System.Data.Common;
 using System.Data.Entity;
+using System.Linq;
 using Abp.Zero.EntityFramework;
 using CH.Spartan.Authorization.Roles;
 using CH.Spartan.Devices;
@@ -77,7 +78,7 @@ namespace CH.Spartan.EntityFramework
         public SpartanDbContext(DbConnection connection)
             : base(connection, true)
         {
-
+       
         }
 
     }

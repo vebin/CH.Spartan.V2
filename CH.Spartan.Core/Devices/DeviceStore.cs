@@ -17,7 +17,7 @@ namespace CH.Spartan.Devices
            IUnitOfWorkManager unitOfWorkManager) 
             : base(deviceRepository, unitOfWorkManager)
        {
-          
+         
        }
     }
 }

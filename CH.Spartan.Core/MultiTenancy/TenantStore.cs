@@ -18,7 +18,7 @@ namespace CH.Spartan.MultiTenancy
             IUnitOfWorkManager unitOfWorkManager) :
             base(tenantRepository, unitOfWorkManager)
         {
-      
+            
         }
     }
 }

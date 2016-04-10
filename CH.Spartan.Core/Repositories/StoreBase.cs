@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,6 +8,7 @@ using Abp.Dependency;
 using Abp.Domain.Entities;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
+using Abp.EntityFramework.Repositories;
 
 namespace CH.Spartan.Repositories
 {
@@ -42,9 +44,19 @@ namespace CH.Spartan.Repositories
         }
 
         /// <summary>
-        /// 当前表
+        /// 数据库
         /// </summary>
-        public virtual IQueryable<T> Table => Repository.GetAll();
+        protected virtual Database Database => (Repository as IDataBase<T>)?.Database;
+
+        /// <summary>
+        /// 表
+        /// </summary>
+        protected virtual DbSet<T> Table => (Repository as IDataBase<T>)?.Table;
+
+        /// <summary>
+        /// 查询
+        /// </summary>
+        public virtual IQueryable<T> Query => Repository.GetAll();
 
         /// <summary>
         /// 添加

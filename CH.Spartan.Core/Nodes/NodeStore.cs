@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using CH.Spartan.Repositories;
-using EntityFramework.Extensions;
 
-namespace CH.Spartan.Devices
+namespace CH.Spartan.Nodes
 {
-   public class DeviceStore:StoreBase<Device>
+   public class NodeStore:StoreBase<Node>
    {
-       public DeviceStore(
-           IRepository<Device> deviceRepository, 
+       public NodeStore(
+           IRepository<Node> nodeRepository, 
            IUnitOfWorkManager unitOfWorkManager) 
-            : base(deviceRepository, unitOfWorkManager)
+            : base(nodeRepository, unitOfWorkManager)
        {
-         
+
        }
     }
 }

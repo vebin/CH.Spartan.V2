@@ -33,14 +33,8 @@ namespace CH.Spartan
 
     public enum EnumCodeCreateRule
     {
-        [EnumDisplayName("手机号0前缀")]
-        SimNoWithZeroPrefix = 5,
-        [EnumDisplayName("Gps设备号")]
-        DeviceGpsNo = 3,
-        [EnumDisplayName("Gps设备号0前缀")]
-        DeviceGpsNoWithZeroPrefix = 2,
-        [EnumDisplayName("康凯斯")]
-        Kks = 4
+        [EnumDisplayName("设备号")]
+        No=0
     }
 
     [Flags]
@@ -49,7 +43,7 @@ namespace CH.Spartan
         [EnumDisplayName("离线报警")]
         OffLine =1,
         [EnumDisplayName("断电报警")]
-        MainPowerBrea = 2,
+        MainPowerBreak = 2,
         [EnumDisplayName("SOS求救")]
         Sos = 4,
         [EnumDisplayName("超速报警")]

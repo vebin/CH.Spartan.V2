@@ -85,6 +85,11 @@ namespace CH.Spartan
             systemManageDeviceType.CreateChildPermission(SpartanPermissionNames.SystemManages_DeviceType_Update, L("更新"), multiTenancySides: MultiTenancySides.Host);
             systemManageDeviceType.CreateChildPermission(SpartanPermissionNames.SystemManages_DeviceType_Delete, L("删除"), multiTenancySides: MultiTenancySides.Host);
 
+            var systemManageNodes = systemManage.CreateChildPermission(SpartanPermissionNames.SystemManages_Node, multiTenancySides: MultiTenancySides.Host);
+            systemManageNodes.CreateChildPermission(SpartanPermissionNames.SystemManages_Node_Create, L("添加"), multiTenancySides: MultiTenancySides.Host);
+            systemManageNodes.CreateChildPermission(SpartanPermissionNames.SystemManages_Node_Update, L("修改"), multiTenancySides: MultiTenancySides.Host);
+            systemManageNodes.CreateChildPermission(SpartanPermissionNames.SystemManages_Node_Delete, L("删除"), multiTenancySides: MultiTenancySides.Host);
+
             var systemManageAuditLog = systemManage.CreateChildPermission(SpartanPermissionNames.SystemManages_AuditLog, L("审计日志"), multiTenancySides: MultiTenancySides.Host);
             systemManageAuditLog.CreateChildPermission(SpartanPermissionNames.SystemManages_AuditLog_Delete, L("删除"), multiTenancySides: MultiTenancySides.Host);
 

@@ -19,6 +19,7 @@ namespace CH.Spartan.Migrations.SeedData
             new DefaultEditionsBuilder(_context).Build();
             new DefaultTenantRoleAndUserBuilder(_context).Build();
             new DefaultLanguagesBuilder(_context).Build();
+            new DefaultDataBuilder(_context).Build();
         }
     }
 }

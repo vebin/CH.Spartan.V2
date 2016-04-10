@@ -9,17 +9,17 @@ using Abp.Domain.Uow;
 using Abp.Runtime.Caching;
 using CH.Spartan.Domain;
 
-namespace CH.Spartan.Devices
+namespace CH.Spartan.Nodes
 {
-    public class DeviceManager : ManagerBase<Device>
+    public class NodeManager : ManagerBase<Node>
     {
-        public DeviceManager(
-            DeviceStore deviceStore, 
+        public NodeManager(
+            NodeStore nodeStore, 
             ISettingManager settingManager, 
             ICacheManager cacheManager, 
             IIocResolver iocResolver, 
             IUnitOfWorkManager unitOfWorkManager) 
-			: base(deviceStore, settingManager, cacheManager, iocResolver, unitOfWorkManager)
+			: base(nodeStore, settingManager, cacheManager, iocResolver, unitOfWorkManager)
         {
         }
     }

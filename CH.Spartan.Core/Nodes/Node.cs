@@ -10,11 +10,18 @@ namespace CH.Spartan.Nodes
 {
     public class Node : FullAuditedEntity
     {
-        /// <summary>
-        /// 节点KEY 
-        /// </summary>
-        [MaxLength(50)]
-        public string Key { get; set; }
+
+        #region 常量
+        public const string T1 = "T1";
+
+        public const string T2 = "T2";
+
+        public const string T3 = "T3";
+
+        public const string T4 = "T4";
+
+        public const string T5 = "T5";
+        #endregion
 
         /// <summary>
         /// 节点名字
@@ -27,11 +34,5 @@ namespace CH.Spartan.Nodes
         /// </summary>
         [MaxLength(250)]
         public string HistoryTableName { get; set; }
-
-        /// <summary>
-        /// 据库连接
-        /// </summary>
-        [MaxLength(250)]
-        public string HistoryConnectionString { get; set; }
     }
 }

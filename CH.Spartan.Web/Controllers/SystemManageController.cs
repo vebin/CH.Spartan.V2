@@ -11,11 +11,12 @@ using Abp.Web.Mvc.Models;
 using Abp.WebApi.Authorization;
 using CH.Spartan.Authorization;
 using CH.Spartan.Devices;
-using CH.Spartan.Devices.Dto;
 using CH.Spartan.DeviceTypes;
 using CH.Spartan.DeviceTypes.Dto;
 using CH.Spartan.MultiTenancy;
 using CH.Spartan.MultiTenancy.Dto;
+using CH.Spartan.Nodes;
+using CH.Spartan.Nodes.Dto;
 
 namespace CH.Spartan.Web.Controllers
 {
@@ -26,15 +27,15 @@ namespace CH.Spartan.Web.Controllers
     {
         private readonly ITenantAppService _tenantAppService;
         private readonly IDeviceTypeAppService _deviceTypeAppService;
-        private readonly IDeviceAppService _deviceAppService;
+        private readonly INodeAppService _nodeAppService;
         public SystemManageController(
             ITenantAppService tenantAppService, 
             IDeviceTypeAppService deviceTypeAppService, 
-            IDeviceAppService deviceAppService)
+            INodeAppService nodeAppService)
         {
             _tenantAppService = tenantAppService;
             _deviceTypeAppService = deviceTypeAppService;
-            _deviceAppService = deviceAppService;
+            _nodeAppService = nodeAppService;
         }
 
         #region 租户
@@ -177,11 +178,11 @@ namespace CH.Spartan.Web.Controllers
 
         #endregion
 
-        #region 设备
+        #region 节点
 
         #region 首页
-        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_Device)]
-        public ActionResult Device()
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Node)]
+        public ActionResult Node()
         {
             return View();
         }
@@ -190,56 +191,56 @@ namespace CH.Spartan.Web.Controllers
         #region 搜索
 
         [HttpGet]
-        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_Device)]
-        public async Task<JsonResult> SearchDevice(GetDeviceListPagedInput input)
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Node)]
+        public async Task<JsonResult> SearchNode(GetNodeListPagedInput input)
         {
-            var result = await _deviceAppService.GetDeviceListPagedAsync(input);
+            var result = await _nodeAppService.GetNodeListPagedAsync(input);
             return Json(result, JsonRequestBehavior.AllowGet);
         }
         #endregion
 
         #region 添加
         [HttpGet]
-        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_Device_Create)]
-        public ActionResult CreateDevice()
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Node_Create)]
+        public ActionResult CreateNode()
         {
-            var result = _deviceAppService.GetNewDevice();
+            var result = _nodeAppService.GetNewNode();
             return View(result);
         }
 
         [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_Device_Create)]
-        public async Task<JsonResult> CreateDevice(CreateDeviceInput input)
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Node_Create)]
+        public async Task<JsonResult> CreateNode(CreateNodeInput input)
         {
-            await _deviceAppService.CreateDeviceAsync(input);
+            await _nodeAppService.CreateNodeAsync(input);
             return Json(true, JsonRequestBehavior.AllowGet);
         }
         #endregion
 
         #region 更新
         [HttpGet]
-        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_Device_Update)]
-        public async Task<ActionResult> UpdateDevice(IdInput input)
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Node_Update)]
+        public async Task<ActionResult> UpdateNode(IdInput input)
         {
-            var result = await _deviceAppService.GetUpdateDeviceAsync(input);
+            var result = await _nodeAppService.GetUpdateNodeAsync(input);
             return View(result);
         }
 
         [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_Device_Update)]
-        public async Task<JsonResult> UpdateDevice(UpdateDeviceInput input)
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Node_Update)]
+        public async Task<JsonResult> UpdateNode(UpdateNodeInput input)
         {
-            await _deviceAppService.UpdateDeviceAsync(input);
+            await _nodeAppService.UpdateNodeAsync(input);
             return Json(true, JsonRequestBehavior.AllowGet);
         }
         #endregion
 
         #region 删除
         [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_Device_Delete)]
-        public async Task<JsonResult> DeleteDevice(List<IdInput> input)
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Node_Delete)]
+        public async Task<JsonResult> DeleteNode(List<IdInput> input)
         {
-            await _deviceAppService.DeleteDeviceAsync(input);
+            await _nodeAppService.DeleteNodeAsync(input);
             return Json(true, JsonRequestBehavior.AllowGet);
         }
         #endregion

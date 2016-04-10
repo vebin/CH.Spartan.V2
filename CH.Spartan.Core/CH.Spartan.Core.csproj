@@ -98,11 +98,11 @@
     <Compile Include="Commons\EnumExtend.cs" />
     <Compile Include="Commons\LinqExtend.cs" />
     <Compile Include="Commons\QueryResultRequestInput.cs" />
-    <Compile Include="Devices\DeviceManager.cs" />
-    <Compile Include="Devices\DeviceStore.cs" />
     <Compile Include="DeviceTypes\DeviceTypeStore.cs" />
     <Compile Include="Domain\ManagerBase.cs" />
     <Compile Include="MultiTenancy\TenantStore.cs" />
+    <Compile Include="Nodes\NodeManager.cs" />
+    <Compile Include="Nodes\NodeStore.cs" />
     <Compile Include="Repositories\StoreBase.cs" />
     <Compile Include="SpartanSettingKeys.cs" />
     <Compile Include="DealRecords\DealRecord.cs" />

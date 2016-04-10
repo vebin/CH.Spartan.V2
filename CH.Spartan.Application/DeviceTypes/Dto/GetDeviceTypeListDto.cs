@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using CH.Spartan.Commons;
@@ -7,7 +8,7 @@ namespace CH.Spartan.DeviceTypes.Dto
 {
     [AutoMapFrom(typeof(DeviceType))]
     public class GetDeviceTypeListDto : EntityDto
-    {
+          {
         /// <summary>
         /// 设备类型名字
         /// </summary>
@@ -39,8 +40,6 @@ namespace CH.Spartan.DeviceTypes.Dto
         /// <summary>
         /// 服务费元/年
         /// </summary>
-        [Required]
-        [Range(1, 500)]
         public decimal ServiceCharge { get; set; }
 
         /// <summary>
@@ -50,16 +49,91 @@ namespace CH.Spartan.DeviceTypes.Dto
         public EnumCodeCreateRule CodeCreateRule { get; set; }
 
         /// <summary>
-        /// 是否有继电器
+        /// 是否有继电器1
         /// </summary>
-        public bool IsHaveRelay { get; set; }
+        public bool IsHaveRelay1 { get; set; }
 
         /// <summary>
-        /// 拥有报警
+        /// 是否有继电器2
         /// </summary>
-        public EnumAlarmType HaveAlarmType { get; set; }
+        public bool IsHaveRelay2 { get; set; }
 
-    }
+        /// <summary>
+        /// 是否有继电器3
+        /// </summary>
+        public bool IsHaveRelay3 { get; set; }
+
+        /// <summary>
+        /// 是否有电量数据
+        /// </summary>
+        public bool IsHavePower { get; set; }
+
+        /// <summary>
+        /// 是否有Acc信号
+        /// </summary>
+        public bool IsHaveAcc { get; set; }
+
+        /// <summary>
+        /// 是否有离线报警
+        /// </summary>
+        public bool IsHaveOffLine { get; set; }
+
+        /// <summary>
+        /// 是否有断电报警
+        /// </summary>
+        public bool IsHaveMainPowerBreak { get; set; }
+
+        /// <summary>
+        /// 是否有SOS求救
+        /// </summary>
+        public bool IsHaveSos { get; set; }
+
+        /// <summary>
+        /// 是否有超速报警
+        /// </summary>
+        public bool IsHaveOverSpeed { get; set; }
+
+        /// <summary>
+        /// 是否有进入区域报警
+        /// </summary>
+        public bool IsHaveInArea { get; set; }
+
+        /// <summary>
+        /// 是否有离开设防报警
+        /// </summary>
+        public bool IsHaveFortify { get; set; }
+
+        /// <summary>
+        /// 是否有脱落报警
+        /// </summary>
+        public bool IsHaveDropOff { get; set; }
+
+        /// <summary>
+        /// 是否有震动报警
+        /// </summary>
+        public bool IsHaveShake { get; set; }
+
+        /// <summary>
+        /// 是否有低电报警
+        /// </summary>
+        public bool IsHaveLowBattery { get; set; }
+
+        /// <summary>
+        /// 是否有进入盲区报警
+        /// </summary>
+        public bool IsHaveInBlindArea { get; set; }
+
+        /// <summary>
+        /// 是否有离开盲区报警
+        /// </summary>
+        public bool IsHaveOutBlindArea { get; set; }
+
+        /// <summary>
+        /// 是否有启动报警报警
+        /// </summary>
+        public bool IsHaveStartup { get; set; }
+
+}
 
     public class GetDeviceTypeListInput : QueryListResultRequestInput
     {

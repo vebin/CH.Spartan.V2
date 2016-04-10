@@ -34,16 +34,24 @@ namespace CH.Spartan.Migrations.SeedData
             {
                 adminRoleForHost = _context.Roles.Add(new Role { Name = StaticRoleNames.Host.Admin, DisplayName = StaticRoleNames.Host.Admin, IsStatic = true });
                 _context.SaveChanges();
+            }
 
-                //分配所有 租主权限 给租主管理员角色
-                var permissions = PermissionFinder
-                    .GetAllPermissions(new SpartanAuthorizationProvider())
-                    .Where(p => p.MultiTenancySides.HasFlag(MultiTenancySides.Host))
-                    .ToList();
+            //分配所有 租主权限 给租主管理员角色
+            var permissions = PermissionFinder
+                .GetAllPermissions(new SpartanAuthorizationProvider())
+                .Where(p => p.MultiTenancySides.HasFlag(MultiTenancySides.Host))
+                .ToList();
 
-                foreach (var permission in permissions)
+            foreach (var permission in permissions)
+            {
+                if (!permission.IsGrantedByDefault)
                 {
-                    if (!permission.IsGrantedByDefault)
+
+                    var permissionSetting =
+                        _context.RolePermissions.FirstOrDefault(
+                            p => p.Name == permission.Name && p.IsGranted && p.RoleId == adminRoleForHost.Id);
+
+                    if (permissionSetting == null)
                     {
                         _context.Permissions.Add(
                             new RolePermissionSetting
@@ -54,9 +62,8 @@ namespace CH.Spartan.Migrations.SeedData
                             });
                     }
                 }
-
-                _context.SaveChanges();
             }
+            _context.SaveChanges();
 
             //添加一个租主
             var adminUserForHost = _context.Users.FirstOrDefault(u => u.TenantId == null && u.UserName == User.AdminUserName);
@@ -73,12 +80,72 @@ namespace CH.Spartan.Migrations.SeedData
                         IsEmailConfirmed = true,
                         Password = new Md532PasswordHasher().HashPassword(SpartanConsts.DefaultPassword)
                     });
-                
+
                 _context.SaveChanges();
                 //给租主 赋予租主管理员角色
                 _context.UserRoles.Add(new UserRole(adminUserForHost.Id, adminRoleForHost.Id));
                 _context.SaveChanges();
             }
+
+
+            //给所有租户管理员角色 添加权限
+            var tenantAdminRoles =
+                _context.Roles.Where(p => p.Name == StaticRoleNames.Tenants.Admin && p.TenantId != null).ToList();
+
+            permissions = PermissionFinder
+                .GetAllPermissions(new SpartanAuthorizationProvider())
+                .Where(p => p.MultiTenancySides.HasFlag(MultiTenancySides.Tenant))
+                .ToList();
+
+            foreach (var tenantAdminRole in tenantAdminRoles)
+            {
+                foreach (var permission in permissions)
+                {
+                    if (!permission.IsGrantedByDefault)
+                    {
+
+                        var permissionSetting =
+                            _context.RolePermissions.FirstOrDefault(
+                                p => p.Name == permission.Name && p.IsGranted && p.RoleId == tenantAdminRole.Id);
+
+                        if (permissionSetting == null)
+                        {
+                            _context.Permissions.Add(
+                                new RolePermissionSetting
+                                {
+                                    Name = permission.Name,
+                                    IsGranted = true,
+                                    RoleId = tenantAdminRole.Id
+                                });
+                        }
+                    }
+                }
+                _context.SaveChanges();
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }

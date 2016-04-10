@@ -2,59 +2,59 @@
 using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using CH.Spartan.Devices.Dto;
+using CH.Spartan.Nodes.Dto;
 
-namespace CH.Spartan.Devices
+namespace CH.Spartan.Nodes
 {
 
-    public interface IDeviceAppService : IApplicationService
+    public interface INodeAppService : IApplicationService
     {
         /// <summary>
-        /// 获取 设备
+        /// 获取 节点
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task<ListResultOutput<GetDeviceListDto>> GetDeviceListAsync(GetDeviceListInput input);
+        Task<ListResultOutput<GetNodeListDto>> GetNodeListAsync(GetNodeListInput input);
 
         /// <summary>
-        /// 获取 设备 分页
+        /// 获取 节点 分页
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task<PagedResultOutput<GetDeviceListDto>> GetDeviceListPagedAsync(GetDeviceListPagedInput input);
+        Task<PagedResultOutput<GetNodeListDto>> GetNodeListPagedAsync(GetNodeListPagedInput input);
 
         /// <summary>
-        /// 添加 设备
+        /// 添加 节点
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task CreateDeviceAsync(CreateDeviceInput input);
+        Task CreateNodeAsync(CreateNodeInput input);
 
         /// <summary>
-        /// 更新 设备
+        /// 更新 节点
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task UpdateDeviceAsync(UpdateDeviceInput input);
+        Task UpdateNodeAsync(UpdateNodeInput input);
 
         /// <summary>
-        /// 获取 新设备
+        /// 获取 新节点
         /// </summary>
         /// <returns></returns>
-        CreateDeviceOutput GetNewDevice();
+        CreateNodeOutput GetNewNode();
 
         /// <summary>
-        /// 获取 更新设备
-        /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
-        Task<UpdateDeviceOutput> GetUpdateDeviceAsync(IdInput input);
-
-        /// <summary>
-        /// 删除 设备
+        /// 获取 更新节点
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task DeleteDeviceAsync(List<IdInput> input);
+        Task<UpdateNodeOutput> GetUpdateNodeAsync(IdInput input);
+
+        /// <summary>
+        /// 删除 节点
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task DeleteNodeAsync(List<IdInput> input);
     }
 }

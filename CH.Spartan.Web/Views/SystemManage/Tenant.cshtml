@@ -8,6 +8,8 @@
     <script type="text/javascript">
         //操作
         function formatterOp(value, row, index) {
+            var edit = "";
+            var del = "";
             if (abp.auth.isGranted("@SpartanPermissionNames.SystemManages_Tenant_Update")) {
                 edit = '<i class="btn-op fa fa-edit" title="@L("修改")" onclick="update(\'' + row.id + '\')"></i>';
             }

@@ -1,7 +1,6 @@
 ﻿using Abp.Domain.Entities;
 using Abp.EntityFramework;
 using Abp.EntityFramework.Repositories;
-using CH.Spartan.Repositories;
 
 namespace CH.Spartan.EntityFramework.Repositories
 {

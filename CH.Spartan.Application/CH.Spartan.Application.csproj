@@ -99,7 +99,6 @@
   <ItemGroup>
     <Compile Include="Commons\ComboboxHelper.cs" />
     <Compile Include="Devices\DeviceAppService.cs" />
-    <Compile Include="Devices\DeviceConstants.cs" />
     <Compile Include="Devices\Dto\CreateDeviceDto.cs" />
     <Compile Include="Devices\Dto\GetDeviceListDto.cs" />
     <Compile Include="Devices\Dto\UpdateDeviceDto.cs" />

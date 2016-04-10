@@ -4,7 +4,6 @@ using Abp.Modules;
 using Abp.Zero.EntityFramework;
 using CH.Spartan.EntityFramework;
 using CH.Spartan.EntityFramework.Repositories;
-using CH.Spartan.Repositories;
 
 namespace CH.Spartan
 {

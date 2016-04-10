@@ -7,7 +7,7 @@ using CH.Spartan.Commons;
 namespace CH.Spartan.Devices.Dto
 {
     [AutoMapFrom(typeof(Device))]
-    public class GetDeviceListDto : EntityDto
+    public class GetDeviceListDto : AuditedEntityDto
     {
         /// <summary>
         /// 设备名字

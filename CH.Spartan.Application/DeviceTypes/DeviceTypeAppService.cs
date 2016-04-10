@@ -10,6 +10,7 @@ using Abp.Extensions;
 using System.Data.Entity;
 using CH.Spartan.Commons;
 using CH.Spartan.DeviceTypes.Dto;
+using EntityFramework.Extensions;
 
 namespace CH.Spartan.DeviceTypes
 {
@@ -17,14 +18,16 @@ namespace CH.Spartan.DeviceTypes
     public class DeviceTypeAppService : SpartanAppServiceBase, IDeviceTypeAppService
     {
         private readonly DeviceTypeManager _deviceTypeManager;
-        public DeviceTypeAppService(DeviceTypeManager deviceTypeManager)
+        private readonly IRepository<DeviceType> _deviceTypeRepository; 
+        public DeviceTypeAppService(DeviceTypeManager deviceTypeManager, IRepository<DeviceType> deviceTypeRepository)
         {
             _deviceTypeManager = deviceTypeManager;
+            _deviceTypeRepository = deviceTypeRepository;
         }
-    
+
         public async Task<ListResultOutput<GetDeviceTypeListDto>> GetDeviceTypeListAsync(GetDeviceTypeListInput input)
         {
-            var list = await _deviceTypeManager.Store.Query
+            var list = await _deviceTypeRepository.GetAll()
                 .OrderBy(input)
                 .ToListAsync();
             return new ListResultOutput<GetDeviceTypeListDto>(list.MapTo<List<GetDeviceTypeListDto>>());
@@ -32,7 +35,7 @@ namespace CH.Spartan.DeviceTypes
         
         public async Task<PagedResultOutput<GetDeviceTypeListDto>> GetDeviceTypeListPagedAsync(GetDeviceTypeListPagedInput input)
         {
-            var query = _deviceTypeManager.Store.Query;
+            var query = _deviceTypeRepository.GetAll();
                 //.WhereIf(!input.SearchText.IsNullOrEmpty(), p => p.TenancyName.Contains(input.SearchText) || p.Name.Contains(input.SearchText));
 
             var count = await query.CountAsync();
@@ -45,14 +48,14 @@ namespace CH.Spartan.DeviceTypes
         public async Task CreateDeviceTypeAsync(CreateDeviceTypeInput input)
         {
             var deviceType = input.DeviceType.MapTo<DeviceType>();
-            await _deviceTypeManager.Store.CreateAsync(deviceType);
+            await _deviceTypeRepository.InsertAsync(deviceType);
         }
         
         public async Task UpdateDeviceTypeAsync(UpdateDeviceTypeInput input)
         {
-            var deviceType = await _deviceTypeManager.Store.FindByIdAsync(input.DeviceType.Id);
+            var deviceType = await _deviceTypeRepository.GetAsync(input.DeviceType.Id);
             input.DeviceType.MapTo(deviceType);
-            await _deviceTypeManager.Store.UpdateAsync(deviceType);
+            await _deviceTypeRepository.UpdateAsync(deviceType);
         }
     
         public CreateDeviceTypeOutput GetNewDeviceType()
@@ -62,13 +65,13 @@ namespace CH.Spartan.DeviceTypes
 
         public async Task<UpdateDeviceTypeOutput> GetUpdateDeviceTypeAsync(IdInput input)
         {
-            var result = await _deviceTypeManager.Store.FindByIdAsync(input.Id);
+            var result = await _deviceTypeRepository.GetAsync(input.Id);
             return new UpdateDeviceTypeOutput(result.MapTo<UpdateDeviceTypeDto>());
         }
 
         public async Task DeleteDeviceTypeAsync(List<IdInput> input)
         {
-           await _deviceTypeManager.Store.DeleteByIdsAsync(input.Select(p=>p.Id));
+            await _deviceTypeManager.DeleteByIdsAsync(input.Select(p => p.Id));
         }
         
     }

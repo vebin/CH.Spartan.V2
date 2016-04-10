@@ -13,6 +13,7 @@ using CH.Spartan.Users;
 using Abp.Extensions;
 using System.Data.Entity;
 using CH.Spartan.Commons;
+using EntityFramework.Extensions;
 
 namespace CH.Spartan.MultiTenancy
 {
@@ -21,16 +22,21 @@ namespace CH.Spartan.MultiTenancy
         private readonly TenantManager _tenantManager;
         private readonly RoleManager _roleManager;
         private readonly EditionManager _editionManager;
-        public TenantAppService(TenantManager tenantManager, RoleManager roleManager, EditionManager editionManager)
+        private readonly IRepository<Tenant> _tenantRepository; 
+        public TenantAppService(TenantManager tenantManager, RoleManager roleManager, EditionManager editionManager, IRepository<Tenant> tenantRepository)
         {
             _tenantManager = tenantManager;
             _roleManager = roleManager;
             _editionManager = editionManager;
+            _tenantRepository = tenantRepository;
         }
 
         public async Task DeleteTenantAsync(List<IdInput> input)
         {
-            await _tenantManager.Store.DeleteByIdsAsync(input.Select(p=>p.Id));
+            foreach (var id in input)
+            {
+                await _tenantRepository.DeleteAsync(id.Id);
+            }
         }
 
         public async Task CreateTenantAsync(CreateTenantInput input)
@@ -86,9 +92,9 @@ namespace CH.Spartan.MultiTenancy
 
         public async Task UpdateTenantAsync(UpdateTenantInput input)
         {
-            var tenant = await _tenantManager.Store.FindByIdAsync(input.Tenant.Id);
+            var tenant = await _tenantRepository.GetAsync(input.Tenant.Id);
             input.Tenant.MapTo(tenant);
-            await _tenantManager.Store.UpdateAsync(tenant);
+            await _tenantRepository.UpdateAsync(tenant);
         }
 
         public CreateTenantOutput GetNewTenant()
@@ -98,13 +104,13 @@ namespace CH.Spartan.MultiTenancy
 
         public async Task<UpdateTenantOutput> GetUpdateTenantAsync(IdInput input)
         {
-            var result = await _tenantManager.Store.FindByIdAsync(input.Id);
+            var result = await _tenantRepository.GetAsync(input.Id);
             return new UpdateTenantOutput(result.MapTo<UpdateTenantDto>());
         }
 
         public async Task<ListResultOutput<GetTenantListDto>> GetTenantListAsync(GetTenantListInput input)
         {
-            var list = await _tenantManager.Store.Query
+            var list = await _tenantRepository.GetAll()
                 .OrderBy(input)
                 .ToListAsync();
             return new ListResultOutput<GetTenantListDto>(list.MapTo<List<GetTenantListDto>>());
@@ -112,7 +118,7 @@ namespace CH.Spartan.MultiTenancy
 
         public async Task<PagedResultOutput<GetTenantListDto>> GetTenantListPagedAsync(GetTenantListPagedInput input)
         {
-            var query = _tenantManager.Store.Query
+            var query = _tenantRepository.GetAll()
                 .WhereIf(!input.SearchText.IsNullOrEmpty(), p => p.TenancyName.Contains(input.SearchText) || p.Name.Contains(input.SearchText));
 
             var count = await query.CountAsync();

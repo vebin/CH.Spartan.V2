@@ -5,7 +5,7 @@ using CH.Spartan.Commons;
 namespace CH.Spartan.MultiTenancy.Dto
 {
     [AutoMapFrom(typeof(Tenant))]
-    public class GetTenantListDto : EntityDto
+    public class GetTenantListDto : AuditedEntityDto
     {
         public string TenancyName { get; set; }
 

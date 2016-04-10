@@ -7,8 +7,8 @@ using CH.Spartan.Commons;
 namespace CH.Spartan.DeviceTypes.Dto
 {
     [AutoMapFrom(typeof(DeviceType))]
-    public class GetDeviceTypeListDto : EntityDto
-          {
+    public class GetDeviceTypeListDto : AuditedEntityDto
+    {
         /// <summary>
         /// 设备类型名字
         /// </summary>
@@ -133,7 +133,7 @@ namespace CH.Spartan.DeviceTypes.Dto
         /// </summary>
         public bool IsHaveStartup { get; set; }
 
-}
+    }
 
     public class GetDeviceTypeListInput : QueryListResultRequestInput
     {

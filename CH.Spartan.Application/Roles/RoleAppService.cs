@@ -14,6 +14,7 @@ using CH.Spartan.Authorization.Roles;
 using CH.Spartan.Commons;
 using CH.Spartan.Authorization.Roles.Dto;
 using CH.Spartan.Roles.Dto;
+using EntityFramework.Extensions;
 
 namespace CH.Spartan.Roles
 {
@@ -22,16 +23,17 @@ namespace CH.Spartan.Roles
     {
         private readonly RoleManager _roleManager;
         private readonly IPermissionManager _permissionManager;
-
-        public RoleAppService(RoleManager roleManager, IPermissionManager permissionManager)
+        private readonly IRepository<Role> _roleRepository; 
+        public RoleAppService(RoleManager roleManager, IPermissionManager permissionManager, IRepository<Role> roleRepository)
         {
             _roleManager = roleManager;
             _permissionManager = permissionManager;
+            _roleRepository = roleRepository;
         }
 
         public async Task UpdateRolePermissions(UpdateRolePermissionsInput input)
         {
-            var role = await _roleManager.GetRoleByIdAsync(input.RoleId);
+            var role = await _roleRepository.GetAsync(input.RoleId);
             var grantedPermissions = _permissionManager
                 .GetAllPermissions()
                 .Where(p => input.GrantedPermissionNames.Contains(p.Name))
@@ -42,7 +44,7 @@ namespace CH.Spartan.Roles
 
         public async Task<ListResultOutput<GetRoleListDto>> GetRoleListAsync(GetRoleListInput input)
         {
-            var list = await _roleManager.Roles
+            var list = await _roleRepository.GetAll()
                 .OrderBy(input)
                 .ToListAsync();
             return new ListResultOutput<GetRoleListDto>(list.MapTo<List<GetRoleListDto>>());
@@ -68,7 +70,7 @@ namespace CH.Spartan.Roles
 
         public async Task UpdateRoleAsync(UpdateRoleInput input)
         {
-            var role = await _roleManager.FindByIdAsync(input.Role.Id);
+            var role = await _roleRepository.GetAsync(input.Role.Id);
             input.Role.MapTo(role);
             await _roleManager.UpdateAsync(role);
         }
@@ -80,13 +82,16 @@ namespace CH.Spartan.Roles
 
         public async Task<UpdateRoleOutput> GetUpdateRoleAsync(IdInput input)
         {
-            var result = await _roleManager.FindByIdAsync(input.Id);
+            var result = await _roleRepository.GetAsync(input.Id);
             return new UpdateRoleOutput(result.MapTo<UpdateRoleDto>());
         }
 
         public async Task DeleteRoleAsync(List<IdInput> input)
         {
-            throw  new NotImplementedException();
+            foreach (var id in input)
+            {
+                await _roleRepository.DeleteAsync(id.Id);
+            }
         }
     }
 }

@@ -10,10 +10,8 @@ namespace CH.Spartan.MultiTenancy
     
     public class TenantManager : AbpTenantManager<Tenant, Role, User>
     {
-        public TenantStore Store { get; set; }
 
         public TenantManager(
-            TenantStore store,
             IRepository<Tenant> tenantRepository,
             IRepository<TenantFeatureSetting, long> tenantFeatureRepository,
             EditionManager editionManager)
@@ -24,7 +22,6 @@ namespace CH.Spartan.MultiTenancy
                 editionManager
                 )
         {
-            Store = store;
         }
     }
 }

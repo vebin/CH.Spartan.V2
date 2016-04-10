@@ -2,61 +2,59 @@
 using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using CH.Spartan.Authorization.Roles.Dto;
-using CH.Spartan.Roles.Dto;
+using CH.Spartan.Devices.Dto;
 
-namespace CH.Spartan.Roles
+namespace CH.Spartan.Devices
 {
-    public interface IRoleAppService : IApplicationService
+
+    public interface IDeviceAppService : IApplicationService
     {
-        Task UpdateRolePermissions(UpdateRolePermissionsInput input);
-
         /// <summary>
-        /// 获取 角色
+        /// 获取 设备
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task<ListResultOutput<GetRoleListDto>> GetRoleListAsync(GetRoleListInput input);
+        Task<ListResultOutput<GetDeviceListDto>> GetDeviceListAsync(GetDeviceListInput input);
 
         /// <summary>
-        /// 获取 角色 分页
+        /// 获取 设备 分页
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task<PagedResultOutput<GetRoleListDto>> GetRoleListPagedAsync(GetRoleListPagedInput input);
+        Task<PagedResultOutput<GetDeviceListDto>> GetDeviceListPagedAsync(GetDeviceListPagedInput input);
 
         /// <summary>
-        /// 添加 角色
+        /// 添加 设备
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task CreateRoleAsync(CreateRoleInput input);
+        Task CreateDeviceAsync(CreateDeviceInput input);
 
         /// <summary>
-        /// 更新 角色
+        /// 更新 设备
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task UpdateRoleAsync(UpdateRoleInput input);
+        Task UpdateDeviceAsync(UpdateDeviceInput input);
 
         /// <summary>
-        /// 获取 新角色
+        /// 获取 新设备
         /// </summary>
         /// <returns></returns>
-        CreateRoleOutput GetNewRole();
+        CreateDeviceOutput GetNewDevice();
 
         /// <summary>
-        /// 获取 更新角色
-        /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
-        Task<UpdateRoleOutput> GetUpdateRoleAsync(IdInput input);
-
-        /// <summary>
-        /// 删除 角色
+        /// 获取 更新设备
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task DeleteRoleAsync(List<IdInput> input);
+        Task<UpdateDeviceOutput> GetUpdateDeviceAsync(IdInput input);
+
+        /// <summary>
+        /// 删除 设备
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task DeleteDeviceAsync(List<IdInput> input);
     }
 }

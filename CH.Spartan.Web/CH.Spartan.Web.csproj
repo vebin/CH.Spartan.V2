@@ -541,6 +541,7 @@
     <Compile Include="App_Start\Startup.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PlatformManageController.cs" />
     <Compile Include="Controllers\SystemManageController.cs" />
     <Compile Include="Models\Account\LoginFormViewModel.cs" />
     <Compile Include="Models\Account\LoginViewModel.cs" />
@@ -621,6 +622,9 @@
     <Content Include="Content\js\plugins\table\locale\README.md" />
     <Content Include="Views\SystemManage\CreateDeviceType.cshtml" />
     <Content Include="Views\SystemManage\CreateNode.cshtml" />
+    <Content Include="Views\PlatformManage\CreateDevice.cshtml" />
+    <Content Include="Views\PlatformManage\Device.cshtml" />
+    <Content Include="Views\PlatformManage\UpdateDevice.cshtml" />
     <None Include="Views\SystemManage\CreateTenant.cshtml" />
     <Content Include="Views\SystemManage\UpdateTenant.cshtml" />
     <Content Include="Views\SystemManage\DeviceType.cshtml" />

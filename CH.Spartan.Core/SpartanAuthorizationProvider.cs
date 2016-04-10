@@ -60,6 +60,7 @@ namespace CH.Spartan
             platformManageDevice.CreateChildPermission(SpartanPermissionNames.PlatformManages_Device_Update, L("更新"), multiTenancySides: MultiTenancySides.Tenant);
             platformManageDevice.CreateChildPermission(SpartanPermissionNames.PlatformManages_Device_Delete, L("删除"), multiTenancySides: MultiTenancySides.Tenant);
 
+
             var platformManageDeviceStatistics = platformManages.CreateChildPermission(SpartanPermissionNames.PlatformManages_DeviceStatistics, L("车辆统计"), multiTenancySides: MultiTenancySides.Host);
             var platformManageUserStatistics = platformManages.CreateChildPermission(SpartanPermissionNames.PlatformManages_UserStatistics, L("用户统计"), multiTenancySides: MultiTenancySides.Host);
 

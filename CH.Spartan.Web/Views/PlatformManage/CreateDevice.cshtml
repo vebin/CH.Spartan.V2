@@ -1,0 +1,135 @@
+﻿@model CH.Spartan.Devices.Dto.CreateDeviceOutput
+@section scripts
+{
+    @Scripts.Render("~/scripts/plugins/edit")
+    <script type="text/javascript">
+        var from = $("#form");
+        (function ($) {
+            if (!$) {
+                return;
+            }
+            from.validate({
+                submitHandler: function (form) {
+                    var data =
+                    {
+                        device: abp.utils.getFormData(form)
+                    };
+                    abp.ajax({
+                        url: "/PlatformManage/CreateDevice",
+                        data: JSON.stringify(data)
+                    }).done(function (result) {
+                        abp.message.success("@L("添加成功")");
+                        abp.dialog.close();
+                    });
+                }
+            });
+        })(jQuery);
+
+        function submitForm() {
+            from.submit();
+        }
+    </script>
+}
+
+<div class="ibox float-e-margins animated lightSpeedIn">
+    <form class="form-horizontal" id="form">
+        <div class="ibox-content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("设备名字"):</label>
+                        <div class="col-sm-8 ">
+                            <input class="form-control " type="text" id="BName" name="BName" value="@Model.Device.BName" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("车牌号"):</label>
+                        <div class="col-sm-8">
+                            <input class="form-control " type="text" id="BLicensePlate" name="BLicensePlate" value="@Model.Device.BLicensePlate" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("设备图标类型"):</label>
+                        <div class="col-sm-8 ">
+                            <input class="form-control " type="text" id="BIconType" name="BIconType" value="@Model.Device.BIconType" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("设备类型Id"):</label>
+                        <div class="col-sm-8">
+                            <input class="form-control " type="text" id="BDeviceTypeId" name="BDeviceTypeId" value="@Model.Device.BDeviceTypeId" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("设备号"):</label>
+                        <div class="col-sm-8 ">
+                            <input class="form-control " type="text" id="BNo" name="BNo" value="@Model.Device.BNo" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("设备唯一编码不同的设备编码生成规则不一样"):</label>
+                        <div class="col-sm-8">
+                            <input class="form-control " type="text" id="BCode" name="BCode" value="@Model.Device.BCode" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("Sim号"):</label>
+                        <div class="col-sm-8 ">
+                            <input class="form-control " type="text" id="BSimNo" name="BSimNo" value="@Model.Device.BSimNo" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("过期时间"):</label>
+                        <div class="col-sm-8">
+                            <input class="form-control " type="text" id="BExpireTime" name="BExpireTime" value="@Model.Device.BExpireTime" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("所属节点Id"):</label>
+                        <div class="col-sm-8 ">
+                            <input class="form-control " type="text" id="BNodeId" name="BNodeId" value="@Model.Device.BNodeId" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("报警设置超限速"):</label>
+                        <div class="col-sm-8">
+                            <input class="form-control " type="text" id="SLimitSpeed" name="SLimitSpeed" value="@Model.Device.SLimitSpeed" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("报警设置进出区域"):</label>
+                        <div class="col-sm-8 ">
+                            <select name="SInOutArea" id="SInOutArea" class="form-control"> @Html.GetOptionHtmlByEnable(Model.Device.SInOutArea)</select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">@L("所属租户Id"):</label>
+                            <div class="col-sm-8 ">
+                                <input class="form-control " type="text" id="TenantId" name="TenantId" value="@Model.Device.TenantId" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">@L("所属用户Id"):</label>
+                            <div class="col-sm-8 ">
+                                <input class="form-control " type="text" id="UserId" name="UserId" value="@Model.Device.UserId" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </form>
+</div>
+

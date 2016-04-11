@@ -38,6 +38,7 @@ $.extend( $.validator.messages, {
 	isDigits: $.validator.format("只能输入0-9数字"),
 	isChinese: $.validator.format("只能包含中文字符。"),
 	isEnglish: $.validator.format("只能包含英文字符。"),
+	isEnglishAndNumber: $.validator.format("只能包含英文字符和数字。"),
 	isMobile: $.validator.format("请正确填写您的手机号码。"),
 	isPhone: $.validator.format("请正确填写您的电话号码。"),
 	isTel: $.validator.format("请正确填写您的联系方式"),

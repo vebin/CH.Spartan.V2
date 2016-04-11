@@ -624,6 +624,7 @@
     <Content Include="Views\PlatformManage\CreateDevice.cshtml" />
     <Content Include="Views\PlatformManage\Device.cshtml" />
     <Content Include="Views\PlatformManage\UpdateDevice.cshtml" />
+    <Content Include="Views\SystemManage\AuditLog.cshtml" />
     <None Include="Views\SystemManage\CreateTenant.cshtml" />
     <Content Include="Views\SystemManage\UpdateTenant.cshtml" />
     <Content Include="Views\SystemManage\DeviceType.cshtml" />

@@ -60,7 +60,7 @@ function isPlateNo(plateNo) {
 
 
 //常用验证规则========================================================================================================================
-// 金额验证 
+// 邮件验证 
 jQuery.validator.addMethod("isEmail", function (value, element) {
     var email = /^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/;
     return this.optional(element) || (email.test(value));
@@ -99,6 +99,11 @@ jQuery.validator.addMethod("isChinese", function (value, element) {
 // 判断英文字符 
 jQuery.validator.addMethod("isEnglish", function (value, element) {
     return this.optional(element) || /^[A-Za-z]+$/.test(value);
+});
+
+// 判断英文和数字字符 
+jQuery.validator.addMethod("isEnglishAndNumber", function (value, element) {
+    return this.optional(element) || /^[A-Za-z0-9]+$/.test(value);
 });
 
 // 手机号码验证    

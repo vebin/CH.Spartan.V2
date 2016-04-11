@@ -35,8 +35,8 @@ namespace CH.Spartan.Nodes
 
         public async Task<PagedResultOutput<GetNodeListDto>> GetNodeListPagedAsync(GetNodeListPagedInput input)
         {
-            var query = _nodeRepository.GetAll();
-            //.WhereIf(!input.SearchText.IsNullOrEmpty(), p => p.TenancyName.Contains(input.SearchText) || p.Name.Contains(input.SearchText));
+            var query = _nodeRepository.GetAll()
+             .WhereIf(!input.SearchText.IsNullOrEmpty(), p => p.Name.Contains(input.SearchText) || p.HistoryTableName.Contains(input.SearchText));
 
             var count = await query.CountAsync();
 

@@ -160,7 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\CH.Spartan.Application\CH.Spartan.Application.csproj">
-      <Project>{EDF5D964-4C0F-4F19-B674-58A38A5E5401}</Project>
+      <Project>{edf5d964-4c0f-4f19-b674-58a38a5e5401}</Project>
       <Name>CH.Spartan.Application</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\CH.Spartan.Core\CH.Spartan.Core.csproj">

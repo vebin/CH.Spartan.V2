@@ -339,7 +339,7 @@
         paginationNextText: '&rsaquo;',
         search: false,
         searchPlaceholder: undefined,
-        searchOnEnterKey: true,
+        searchOnEnterKey: false,
         strictSearch: false,
         searchAlign: 'right',
         selectItemName: 'btSelectItem',

@@ -9,22 +9,16 @@
         //操作
         function formatterOp(value, row, index) {
             var edit = "";
-            var del = "";
             if (abp.auth.isGranted("@SpartanPermissionNames.SystemManages_Node_Update")) {
                 edit = '<i class="btn-op fa fa-edit" title="@L("修改")" onclick="update(\'' + row.id + '\')"></i>';
             }
-            if (abp.auth.isGranted("@SpartanPermissionNames.SystemManages_Node_Delete")) {
-                del = '<i class="btn-op fa fa-trash-o" title="@L("删除")" onclick="del(\'' + row.id + '\')"></i>';
-            }
-            return edit + del;
+            return edit;
         }
-
-
 
         //添加
         function create() {
             abp.dialog.open("/SystemManage/CreateNode", "@L("添加节点")", {
-                area: ["500px", "300px"],
+                area: ["500px", "350px"],
                 //area: ["675px", "750px"],
                 //area: ["775px", "750px"],
                 //area: ["995px", "750px"],
@@ -47,7 +41,7 @@
         //更新
         function update(id) {
             abp.dialog.open("/SystemManage/UpdateNode?id=" + id, "@L("修改节点")", {
-                area: ["500px", "350px"],
+                area: ["500px", "400px"],
                 btn: ["@L("保存")", '@L("取消")'],
                 yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
@@ -56,34 +50,10 @@
                 cancel: function (index) {
                 },
                 end: function () {
-                    $("#btn-search").click();
+                    $("#table").bootstrapTable("refresh");
                 }
             });
         }
-
-
-
-
-        //删除
-        function del(ids) {
-            if (typeof ids == "string") {
-                ids = [{ id: ids }];
-            }
-            abp.message.confirm("@L("确定删除")?", function (yes) {
-                if (!yes) return;
-                abp.ajax({
-                    url: "/SystemManage/DeleteNode",
-                    data: JSON.stringify(ids)
-                }).done(function (result) {
-                    abp.notify.success("@L("删除成功")");
-                    $("#btn-search").click();
-                });
-            });
-        }
-
-
-
-
 
         (function ($) {
             if (!$) {
@@ -104,22 +74,6 @@
                 create();
             });
 
-            //删除
-            $("#btn-del").click(function () {
-                var rows = $("#table").bootstrapTable("getSelections");
-                var ids = [];
-                $.each(rows, function (index, item) {
-                    ids.push({ id: item.id });
-                });
-                if (ids.length == 0) {
-                    abp.notify.error("@L("请选择要删除的数据")");
-                } else {
-                    del(ids);
-                }
-            });
-
-
-
         })(jQuery);
     </script>
 }
@@ -127,27 +81,11 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="ibox float-e-margins">
-                <div class="ibox-content list-toolbar">
-                    <form role="form" class="form-inline" id="form">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="@L("请输入关键字")" name="SearchText">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-search">@L("查询")</button>
-                                </span>
-                            </div>
-                        </div>
-                    </form>
-                </div>
                 <div class="ibox-content list-content">
                     <div class="btn-group hidden-xs" id="tableToolbar" role="group">
                         @if (IsGranted(SpartanPermissionNames.SystemManages_Node_Create))
                         {
                             <button type="button" class="btn btn-outline btn-default" id="btn-add"><i class="fa fa-plus" aria-hidden="true"></i></button>
-                        }
-                        @if (IsGranted(SpartanPermissionNames.SystemManages_Node_Delete))
-                        {
-                            <button type="button" class="btn btn-outline btn-default" id="btn-del"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                         }
                     </div>
                     <table id="table"
@@ -155,6 +93,8 @@
                            data-url="/SystemManage/SearchNode"
                            data-toolbar="#tableToolbar"
                            data-height="550"
+                           data-search="true"
+                           data-search-placeholder="@L("请输入关键字")"
                            data-show-export="true">
                         <thead>
                             <tr>

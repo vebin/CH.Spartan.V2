@@ -58,7 +58,7 @@ namespace Abp.Web.Mvc.Controllers.Results
                                                  {
                                                      ContractResolver = new CamelCasePropertyNamesContractResolver()
                                                  };
-
+                jsonSerializerSettings.DateFormatString = "yyyy-MM-dd HH:mm:ss";
                 response.Write(JsonConvert.SerializeObject(Data, Formatting.Indented, jsonSerializerSettings));
             }
         }

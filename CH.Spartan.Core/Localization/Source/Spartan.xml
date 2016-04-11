@@ -80,6 +80,18 @@
     <text name="数据节点" value="数据节点" />
     <text name="节点名字" value="节点名字" />
     <text name="历史数据表" value="历史数据表" />
+
+
+    <text name="所属模块类或者接口" value="所属模块类或者接口" />
+    <text name="执行方法名" value="执行方法名" />
+    <text name="执行方法参数" value="执行方法参数" />
+    <text name="执行方法开始时间" value="执行方法开始时间" />
+    <text name="执行方法耗时毫秒" value="执行方法耗时毫秒" />
+    <text name="客户端IP" value="客户端IP" />
+    <text name="客户端机器名" value="客户端机器名" />
+    <text name="浏览器" value="浏览器" />
+    <text name="异常." value="异常." />
+    <text name="自定义数据" value="自定义数据" />
     
   </texts>
 </localizationDictionary>

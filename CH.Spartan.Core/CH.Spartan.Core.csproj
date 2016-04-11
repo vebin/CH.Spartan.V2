@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Areas\Area.cs" />
+    <Compile Include="AuditLogs\AuditLogManager.cs" />
     <Compile Include="Commons\EnumExtend.cs" />
     <Compile Include="Commons\LinqExtend.cs" />
     <Compile Include="Commons\QueryResultRequestInput.cs" />

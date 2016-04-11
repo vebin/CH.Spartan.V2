@@ -9,6 +9,8 @@ using Abp.Web.Models;
 using Abp.Web.Mvc.Authorization;
 using Abp.Web.Mvc.Models;
 using Abp.WebApi.Authorization;
+using CH.Spartan.AuditLogs;
+using CH.Spartan.AuditLogs.Dto;
 using CH.Spartan.Authorization;
 using CH.Spartan.Devices;
 using CH.Spartan.DeviceTypes;
@@ -25,17 +27,20 @@ namespace CH.Spartan.Web.Controllers
     [AbpMvcAuthorize]
     public class SystemManageController : SpartanControllerBase
     {
+        private readonly IAuditLogAppService _auditLogAppService;
         private readonly ITenantAppService _tenantAppService;
         private readonly IDeviceTypeAppService _deviceTypeAppService;
         private readonly INodeAppService _nodeAppService;
         public SystemManageController(
             ITenantAppService tenantAppService, 
             IDeviceTypeAppService deviceTypeAppService, 
-            INodeAppService nodeAppService)
+            INodeAppService nodeAppService, 
+            IAuditLogAppService auditLogAppService)
         {
             _tenantAppService = tenantAppService;
             _deviceTypeAppService = deviceTypeAppService;
             _nodeAppService = nodeAppService;
+            _auditLogAppService = auditLogAppService;
         }
 
         #region 租户
@@ -206,12 +211,35 @@ namespace CH.Spartan.Web.Controllers
         }
         #endregion
 
+
+        #endregion
+
+        #region 审计日志
+
+        #region 首页
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_AuditLog)]
+        public ActionResult AuditLog()
+        {
+            return View();
+        }
+        #endregion
+
+        #region 搜索
+
+        [HttpGet]
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_AuditLog)]
+        public async Task<JsonResult> SearchAuditLog(GetAuditLogListPagedInput input)
+        {
+            var result = await _auditLogAppService.GetAuditLogListPagedAsync(input);
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
         #region 删除
         [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Node_Delete)]
-        public async Task<JsonResult> DeleteNode(List<IdInput> input)
+        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_AuditLog_Delete)]
+        public async Task<JsonResult> DeleteAuditLog(List<IdInput> input)
         {
-            await _nodeAppService.DeleteNodeAsync(input);
+            await _auditLogAppService.DeleteAuditLogAsync(input);
             return Json(true, JsonRequestBehavior.AllowGet);
         }
         #endregion

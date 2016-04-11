@@ -97,6 +97,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuditLogs\AuditLogAppService.cs" />
+    <Compile Include="AuditLogs\Dto\GetAuditLogListDto.cs" />
+    <Compile Include="AuditLogs\IAuditLogAppService.cs" />
     <Compile Include="Commons\ComboboxHelper.cs" />
     <Compile Include="Devices\DeviceAppService.cs" />
     <Compile Include="Devices\Dto\CreateDeviceDto.cs" />

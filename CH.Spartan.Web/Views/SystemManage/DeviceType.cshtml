@@ -32,7 +32,7 @@
                 cancel: function (index) {
                 },
                 end: function () {
-                    $("#btn-search").click();
+                    $("#table").bootstrapTable("refresh");
                 }
             });
         }
@@ -73,7 +73,7 @@
                            data-toolbar="#tableToolbar"
                            data-height="550"
                            data-search="true"
-                           data-search-placeholder="@L("请输入关键字 按回车查看")"
+                           data-search-placeholder="@L("请输入关键字")"
                            data-show-export="true">
                         <thead>
                             <tr>

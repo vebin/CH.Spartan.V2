@@ -12,7 +12,7 @@ using CH.Spartan.Domain;
 
 namespace CH.Spartan.Nodes
 {
-    public class NodeManager : ManagerBase<Node>
+    public class NodeManager : ManagerBase
     {
         private readonly IRepository<Node> _nodeRepository;
         public NodeManager(

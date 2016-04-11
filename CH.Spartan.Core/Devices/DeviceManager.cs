@@ -12,7 +12,7 @@ using CH.Spartan.Domain;
 
 namespace CH.Spartan.Devices
 {
-    public class DeviceManager : ManagerBase<Device>
+    public class DeviceManager : ManagerBase
     {
         private readonly IRepository<Device> _deviceRepository;
         public DeviceManager(

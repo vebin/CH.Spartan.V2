@@ -20,9 +20,8 @@ namespace CH.Spartan.Domain
     /// 领域服务
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public abstract class ManagerBase<T>
+    public abstract class ManagerBase
         : IDomainService
-        where T : Entity<int>
     {
         
         /// <summary>

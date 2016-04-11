@@ -14,15 +14,24 @@ namespace CH.Spartan.Devices
 {
     public class DeviceManager : ManagerBase<Device>
     {
+        private readonly IRepository<Device> _deviceRepository;
         public DeviceManager(
             IRepository<Device> deviceRepository, 
             ISettingManager settingManager, 
             ICacheManager cacheManager, 
             IIocResolver iocResolver, 
             IUnitOfWorkManager unitOfWorkManager) 
-			: base(deviceRepository, settingManager, cacheManager, iocResolver, unitOfWorkManager)
+			: base(settingManager, cacheManager, iocResolver, unitOfWorkManager)
         {
+            _deviceRepository = deviceRepository;
+        }
 
+        public async Task DeleteByIdsAsync(IEnumerable<int> ids)
+        {
+            foreach (var id in ids)
+            {
+                await _deviceRepository.DeleteAsync(id);
+            }
         }
     }
 }

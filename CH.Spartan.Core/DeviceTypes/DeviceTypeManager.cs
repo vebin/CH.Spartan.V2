@@ -14,15 +14,25 @@ namespace CH.Spartan.DeviceTypes
 {
     public class DeviceTypeManager : ManagerBase<DeviceType>
     {
+        private readonly IRepository<DeviceType> _deviceTypeRepository;
+
         public DeviceTypeManager(
-            IRepository<DeviceType> _deviceTypeRepository, 
+            IRepository<DeviceType> deviceTypeRepository, 
             ISettingManager settingManager, 
             ICacheManager cacheManager, 
             IIocResolver iocResolver, 
             IUnitOfWorkManager unitOfWorkManager) 
-			: base(_deviceTypeRepository, settingManager, cacheManager, iocResolver, unitOfWorkManager)
+			: base(settingManager, cacheManager, iocResolver, unitOfWorkManager)
         {
+            _deviceTypeRepository = deviceTypeRepository;
+        }
 
+        public async Task DeleteByIdsAsync(IEnumerable<int> ids)
+        {
+            foreach (var id in ids)
+            {
+                await _deviceTypeRepository.DeleteAsync(id);
+            }
         }
     }
 }

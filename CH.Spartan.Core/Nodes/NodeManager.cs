@@ -14,14 +14,24 @@ namespace CH.Spartan.Nodes
 {
     public class NodeManager : ManagerBase<Node>
     {
+        private readonly IRepository<Node> _nodeRepository;
         public NodeManager(
             IRepository<Node> nodeRepository, 
             ISettingManager settingManager, 
             ICacheManager cacheManager, 
             IIocResolver iocResolver, 
             IUnitOfWorkManager unitOfWorkManager) 
-			: base(nodeRepository, settingManager, cacheManager, iocResolver, unitOfWorkManager)
+			: base(settingManager, cacheManager, iocResolver, unitOfWorkManager)
         {
+            _nodeRepository = nodeRepository;
+        }
+
+        public async Task DeleteByIdsAsync(IEnumerable<int> ids)
+        {
+            foreach (var id in ids)
+            {
+                await _nodeRepository.DeleteAsync(id);
+            }
         }
     }
 }

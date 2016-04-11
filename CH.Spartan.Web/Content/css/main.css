@@ -5,4 +5,7 @@
 .wrapper-content.list .ibox-content.list-content { padding-top: 0px; }
 .wrapper-content.list .ibox-content.list-content .btn-op{ cursor: pointer;margin-right: 10px;}
 
+.ibox.edit{margin-bottom: 0px;}
 .ibox.edit .form-group{ height: 65px;margin-bottom: 0px;}
+.ibox.edit-col-1{margin-bottom: 0px;}
+.ibox.edit-col-1 .form-group{ height: 85px;margin-bottom: 0px;}

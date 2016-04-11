@@ -10,6 +10,7 @@ namespace CH.Spartan
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
+            SpartanMapping.Map();
         }
     }
 }

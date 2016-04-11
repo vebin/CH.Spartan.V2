@@ -10,6 +10,8 @@ namespace CH.Spartan.MultiTenancy.Dto
         public string TenancyName { get; set; }
 
         public string Name { get; set; }
+
+        public string IsActiveText { get; set; }
     }
 
 

@@ -35,33 +35,33 @@
     </script>
 }
 
-<div class="ibox float-e-margins @(SpartanConsts.DefaultAnimate) edit">
-    <div class="ibox-content">
-        <form class="form-horizontal m-t" id="form">
-            <div class="form-group">
-                <label class="col-sm-3 control-label">@L("公司名")：</label>
-                <div class="col-sm-8">
-                    <input name="Name" class="form-control" type="text" required value="@Model.Tenant.Name">
+<div class="ibox float-e-margins @(SpartanConsts.DefaultAnimate) edit-col-1">
+    <form class="form-horizontal" id="form">
+        <div class="ibox-content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("公司名")：</label>
+                        <div class="col-sm-8">
+                            <input name="Name" class="form-control required stringCheck" type="text" value="@Model.Tenant.Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("租户名")：</label>
+                        <div class="col-sm-8">
+                            <input name="TenancyName" class="form-control required stringCheck" type="text" value="@Model.Tenant.TenancyName">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("电话")：</label>
+                        <div class="col-sm-8">
+                            <input name="Phone" class="form-control required isTel" type="text" value="@Model.Tenant.Phone">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">@L("租户名")：</label>
-                <div class="col-sm-8">
-                    <input name="TenancyName" class="form-control" type="text" required value="@Model.Tenant.TenancyName">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">@L("邮件")：</label>
-                <div class="col-sm-8">
-                    <input name="EmailAddress" class="form-control" type="text" required value="@Model.Tenant.EmailAddress">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-3 control-label">@L("电话")：</label>
-                <div class="col-sm-8">
-                    <input name="Phone" class="form-control" type="text" required value="@Model.Tenant.Phone">
-                </div>
-            </div>
-        </form>
-    </div>
+        </div>
+    </form>
 </div>

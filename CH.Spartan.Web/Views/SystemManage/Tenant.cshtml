@@ -22,11 +22,7 @@
         //添加
         function create() {
             abp.dialog.open("/SystemManage/CreateTenant", "@L("添加租户")", {
-                area: ["775px", "350px"],
-                //area: ["675px", "750px"],
-                //area: ["775px", "750px"],
-                //area: ["995px", "750px"],
-                //area: ["1250px", "750px"],
+                area: ["675px", "450px"],
                 btn: ["@L("确定")", '@L("取消")'],
                 yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
@@ -45,7 +41,7 @@
         //更新
         function update(id) {
             abp.dialog.open("/SystemManage/UpdateTenant?id=" + id, "@L("修改租户")", {
-                area: ["30%", "60%"],
+                area: ["675px", "500px"],
                 btn: ["@L("保存")", '@L("取消")'],
                 yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
@@ -148,6 +144,7 @@
                                 <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
                                 <th data-field="tenancyName" data-sortable="true">@L("租户名")</th>
                                 <th data-field="name" data-sortable="true">@L("公司名")</th>
+                                <th data-field="isActiveText" data-sortable="true">@L("允许登录")</th>
                             </tr>
                         </thead>
                     </table>

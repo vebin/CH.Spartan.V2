@@ -24,11 +24,11 @@
         //添加
         function create() {
             abp.dialog.open("/SystemManage/CreateNode", "@L("添加节点")", {
-                area: ["500px", "350px"],
-                //area: ["675px", "80%"],
-                //area: ["775px", "80%"],
-                //area: ["995px", "80%"],
-                //area: ["1250px", "80%"],
+                area: ["500px", "300px"],
+                //area: ["675px", "750px"],
+                //area: ["775px", "750px"],
+                //area: ["995px", "750px"],
+                //area: ["1250px", "750px"],
                 btn: ["@L("确定")", '@L("取消")'],
                 yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
@@ -48,10 +48,6 @@
         function update(id) {
             abp.dialog.open("/SystemManage/UpdateNode?id=" + id, "@L("修改节点")", {
                 area: ["500px", "350px"],
-                //area: ["675px", "80%"],
-                //area: ["775px", "80%"],
-                //area: ["995px", "80%"],
-                //area: ["1250px", "80%"],
                 btn: ["@L("保存")", '@L("取消")'],
                 yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
@@ -127,7 +123,7 @@
         })(jQuery);
     </script>
 }
-<div class="wrapper wrapper-content animated lightSpeedIn list">
+<div class="wrapper wrapper-content @(SpartanConsts.DefaultAnimate) list">
     <div class="row">
         <div class="col-sm-12">
             <div class="ibox float-e-margins">

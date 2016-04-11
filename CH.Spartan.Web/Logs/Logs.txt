@@ -7575,3 +7575,10 @@ WARN  2016-04-11 13:49:48,411 [153  ] Abp.Logging.LogHelper                    -
 WARN  2016-04-11 13:49:48,411 [153  ] Abp.Logging.LogHelper                    - Can not find '修改设备类型' in localization source 'Spartan'!
 WARN  2016-04-11 13:49:50,378 [123  ] Abp.Logging.LogHelper                    - Can not find '设备号' in localization source 'Spartan'!
 WARN  2016-04-11 13:49:50,382 [123  ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-11 15:04:47,335 [403  ] Abp.Logging.LogHelper                    - Can not find '设备号' in localization source 'Spartan'!
+WARN  2016-04-11 15:04:47,535 [403  ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-11 15:05:39,708 [412  ] Abp.Logging.LogHelper                    - Can not find '请输入关键字 按回车查看' in localization source 'Spartan'!
+WARN  2016-04-11 15:05:39,709 [412  ] Abp.Logging.LogHelper                    - Can not find '最后编辑时间' in localization source 'Spartan'!
+WARN  2016-04-11 15:05:39,710 [412  ] Abp.Logging.LogHelper                    - Can not find '修改设备类型' in localization source 'Spartan'!
+WARN  2016-04-11 15:05:47,304 [412  ] Abp.Logging.LogHelper                    - Can not find '设备号' in localization source 'Spartan'!
+WARN  2016-04-11 15:05:47,310 [412  ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!

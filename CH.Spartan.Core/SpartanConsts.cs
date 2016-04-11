@@ -10,6 +10,7 @@ namespace CH.Spartan
         public const int DefaultMaxResultCount = 10;
         public const string DefaultSorting = "Id DESC";
         public const string DefaultPassword = "123456";
+        public const string DefaultAnimate = "animated lightSpeedIn";
 
     }
     #endregion

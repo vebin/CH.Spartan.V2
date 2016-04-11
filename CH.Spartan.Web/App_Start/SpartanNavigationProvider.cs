@@ -17,29 +17,42 @@ namespace CH.Spartan.Web
             context.Manager.MainMenu
                 .AddItem(
                     new MenuItemDefinition(
-                        "Home",
+                        "Customers",
                         L("我的主页"),
                         url: "#",
                         icon: "fa fa-home",
                         requiresAuthentication:true,
-                        requiredPermissionName:SpartanPermissionNames.Homes
+                        requiredPermissionName:SpartanPermissionNames.Customers
                         )
-                        .AddItem(new MenuItemDefinition("Monitor", L("定位监控"), "fa fa-map-signs", "/Home/Monitor",true,SpartanPermissionNames.Homes_Monitor))
-                        .AddItem(new MenuItemDefinition("HistoryTrack", L("历史轨迹"), "fa fa-reply", "/Home/HistoryTrack", true, SpartanPermissionNames.Homes_HistoryTrack))
-                        .AddItem(new MenuItemDefinition("Notification", L("报警信息"), "fa fa-bell", "/Home/Notification", true, SpartanPermissionNames.Homes_Notification))
-                        .AddItem(new MenuItemDefinition("MileageReport", L("里程统计"), "fa fa-bar-chart", "/Home/MileageReport", true, SpartanPermissionNames.Homes_MileageReport))
+                        .AddItem(new MenuItemDefinition("Monitor", L("定位监控"), "fa fa-map-signs", "/CustomerManage/Monitor", true,SpartanPermissionNames.Customers_Monitor))
+                        .AddItem(new MenuItemDefinition("HistoryTrack", L("历史轨迹"), "fa fa-reply", "/CustomerManage/HistoryTrack", true, SpartanPermissionNames.Customers_HistoryTrack))
+                        .AddItem(new MenuItemDefinition("Notification", L("报警信息"), "fa fa-bell", "/CustomerManage/Notification", true, SpartanPermissionNames.Customers_Notification))
+                        .AddItem(new MenuItemDefinition("MileageReport", L("里程统计"), "fa fa-bar-chart", "/CustomerManage/MileageReport", true, SpartanPermissionNames.Customers_MileageReport))
                 ).AddItem(
                     new MenuItemDefinition(
-                        "MySetting",
+                        "Customers_Setting",
                         L("我的设置"),
                         url: "#",
                         icon: "fa fa-tasks",
                         requiresAuthentication: true,
-                        requiredPermissionName: SpartanPermissionNames.MySettings
+                        requiredPermissionName: SpartanPermissionNames.Customers_Setting
                         )
-                        .AddItem(new MenuItemDefinition("Device", L("车辆设置"), "fa fa-truck", "/MySetting/Device", true, SpartanPermissionNames.MySettings_Device))
-                        .AddItem(new MenuItemDefinition("Area", L("区域设置"), "fa fa-flag-o", "/MySetting/Area", true, SpartanPermissionNames.MySettings_Area))
+                        .AddItem(new MenuItemDefinition("Device", L("车辆设置"), "fa fa-truck", "/CustomerManage/Device", true, SpartanPermissionNames.Customers_Setting_Device))
+                        .AddItem(new MenuItemDefinition("Area", L("区域设置"), "fa fa-flag-o", "/CustomerManage/Area", true, SpartanPermissionNames.Customers_Setting_Area))
                 ).AddItem(
+                    new MenuItemDefinition(
+                        "AgentManage",
+                        L("代理管理"),
+                        url: "#",
+                        icon: "fa fa-desktop",
+                        requiresAuthentication: true,
+                        requiredPermissionName: SpartanPermissionNames.AgentManages
+                        )
+                        .AddItem(new MenuItemDefinition("User", L("客户管理"), "fa fa-user", "/AgentManage/User", true, SpartanPermissionNames.AgentManages_User))
+                        .AddItem(new MenuItemDefinition("Role", L("角色管理"), "fa fa-check", "/AgentManage/Role", true, SpartanPermissionNames.AgentManages_Role))
+                        .AddItem(new MenuItemDefinition("Device", L("车辆管理"), "fa fa-truck", "/AgentManage/Device", true, SpartanPermissionNames.AgentManages_Device))
+                )
+                .AddItem(
                     new MenuItemDefinition(
                         "PlatformManage",
                         L("平台管理"),
@@ -49,10 +62,7 @@ namespace CH.Spartan.Web
                         requiredPermissionName: SpartanPermissionNames.PlatformManages
                         )
                         .AddItem(new MenuItemDefinition("User", L("客户管理"), "fa fa-user", "/PlatformManage/User", true, SpartanPermissionNames.PlatformManages_User))
-                        .AddItem(new MenuItemDefinition("Role", L("角色管理"), "fa fa-check", "/PlatformManage/Role", true, SpartanPermissionNames.PlatformManages_Role))
                         .AddItem(new MenuItemDefinition("Device", L("车辆管理"), "fa fa-truck", "/PlatformManage/Device", true, SpartanPermissionNames.PlatformManages_Device))
-                        .AddItem(new MenuItemDefinition("DeviceStatistics", L("车辆统计"), "fa fa-truck", "/PlatformManage/DeviceStatistics", true, SpartanPermissionNames.PlatformManages_DeviceStatistics))
-                        .AddItem(new MenuItemDefinition("UserStatistics", L("用户统计"), "fa fa-user", "/PlatformManage/UserStatistics", true, SpartanPermissionNames.PlatformManages_UserStatistics))
                         .AddItem(new MenuItemDefinition("DealRecord", L("交易记录"), "fa fa-credit-card", "/PlatformManage/DealRecord", true, SpartanPermissionNames.PlatformManages_DealRecord))
                 ).AddItem(
                     new MenuItemDefinition(

@@ -35,9 +35,9 @@ namespace CH.Spartan.Authorization.Roles
         {
             var permissions =
                 _permissionManager.GetAllPermissions(MultiTenancySides.Tenant).Where(p =>
-                    !p.Name.StartsWith(SpartanPermissionNames.PlatformManages)&&
-                    !p.Name.Equals(SpartanPermissionNames.MySettings_Device_Create) &&
-                    !p.Name.Equals(SpartanPermissionNames.MySettings_Device_Delete)
+                    !p.Name.StartsWith(SpartanPermissionNames.AgentManages)&&
+                    !p.Name.Equals(SpartanPermissionNames.Customers_Setting_Device_Create) &&
+                    !p.Name.Equals(SpartanPermissionNames.Customers_Setting_Device_Delete)
                     );
             await SetGrantedPermissionsAsync(role,permissions);
         }

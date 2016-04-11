@@ -2,53 +2,59 @@
 {
     public static class SpartanPermissionNames
     {
-      
-        public const string Homes = "Homes";
-        public const string Homes_Monitor = "Homes.Monitor";
-        public const string Homes_HistoryTrack = "Homes.HistoryTrack";
-        public const string Homes_Notification = "Homes.Notification";
-        public const string Homes_MileageReport = "Homes.MileageReport";
+        //客户
+        public const string Customers = "Customers";
+        public const string Customers_Monitor = "Customers.Monitor";
+        public const string Customers_HistoryTrack = "Customers.HistoryTrack";
+        public const string Customers_Notification = "Customers.Notification";
+        public const string Customers_MileageReport = "Customers.MileageReport";
 
-        public const string MySettings = "MySettings";
+        public const string Customers_Setting = "Customers_Setting";
+        public const string Customers_Setting_Device = "Customers_Setting.Device";
+        public const string Customers_Setting_Device_Create = "Customers_Setting.Device.Create";
+        public const string Customers_Setting_Device_Update = "Customers_Setting.Device.Update";
+        public const string Customers_Setting_Device_Delete = "Customers_Setting.Device.Delete";
 
-        public const string MySettings_Device = "MySettings.Device";
-        public const string MySettings_Device_Create = "MySettings.Device.Create";
-        public const string MySettings_Device_Update = "MySettings.Device.Update";
-        public const string MySettings_Device_Delete = "MySettings.Device.Delete";
+        public const string Customers_Setting_Area = "Customers_Setting.Area";
+        public const string Customers_Setting_Area_Create = "Customers_Setting.Area.Create";
+        public const string Customers_Setting_Area_Update = "Customers_Setting.Area.Update";
+        public const string Customers_Setting_Area_Delete = "Customers_Setting.Area.Delete";
+        
+        //代理
+        public const string AgentManages = "AgentManages";
+        public const string AgentManages_User = "AgentManages.User";
+        public const string AgentManages_User_Create = "AgentManages.User.Create";
+        public const string AgentManages_User_Update = "AgentManages.User.Update";
+        public const string AgentManages_User_Delete = "AgentManages.User.Delete";
 
-        public const string MySettings_Area = "MySettings.Area";
-        public const string MySettings_Area_Create = "MySettings.Area.Create";
-        public const string MySettings_Area_Update = "MySettings.Area.Update";
-        public const string MySettings_Area_Delete = "MySettings.Area.Delete";
+        public const string AgentManages_Role = "AgentManages.Role";
+        public const string AgentManages_Role_Create = "AgentManages.Role.Create";
+        public const string AgentManages_Role_Update = "AgentManages.Role.Update";
+        public const string AgentManages_Role_Delete = "AgentManages.Role.Delete";
 
+        public const string AgentManages_Device = "AgentManages.Device";
+        public const string AgentManages_Device_Create = "AgentManages.Device.Create";
+        public const string AgentManages_Device_Update = "AgentManages.Device.Update";
+        public const string AgentManages_Device_Delete = "AgentManages.Device.Delete";
+
+        //平台
         public const string PlatformManages = "PlatformManages";
         public const string PlatformManages_User = "PlatformManages.User";
         public const string PlatformManages_User_Create = "PlatformManages.User.Create";
         public const string PlatformManages_User_Update = "PlatformManages.User.Update";
         public const string PlatformManages_User_Delete = "PlatformManages.User.Delete";
 
-        public const string PlatformManages_Role = "PlatformManages.Role";
-        public const string PlatformManages_Role_Create = "PlatformManages.Role.Create";
-        public const string PlatformManages_Role_Update = "PlatformManages.Role.Update";
-        public const string PlatformManages_Role_Delete = "PlatformManages.Role.Delete";
-
         public const string PlatformManages_Device = "PlatformManages.Device";
         public const string PlatformManages_Device_Create = "PlatformManages.Device.Create";
         public const string PlatformManages_Device_Update = "PlatformManages.Device.Update";
         public const string PlatformManages_Device_Delete = "PlatformManages.Device.Delete";
 
-        public const string PlatformManages_DeviceStatistics = "PlatformManages.DeviceStatistics";
-
-        public const string PlatformManages_UserStatistics = "PlatformManages.UserStatistics";
-
         public const string PlatformManages_DealRecord = "PlatformManages.DealRecord";
         public const string PlatformManages_DealRecord_Delete = "PlatformManages.DealRecord.Delete";
 
 
-
+        //系统
         public const string SystemManages = "SystemManages";
-
-  
 
         public const string SystemManages_Tenant = "SystemManages.Tenant";
         public const string SystemManages_Tenant_Create = "SystemManages.Tenant.Create";

@@ -23,7 +23,9 @@ using CH.Spartan.Nodes.Dto;
 namespace CH.Spartan.Web.Controllers
 {
 
-
+    /// <summary>
+    /// 系统设置
+    /// </summary>
     [AbpMvcAuthorize]
     public class SystemManageController : SpartanControllerBase
     {

@@ -19,16 +19,14 @@
             return edit + del;
         }
 
-
-
         //添加
         function create() {
             abp.dialog.open("/PlatformManage/CreateDevice", "@L("添加设备")", {
-                area: ["775px", "80%"],
-                //area: ["675px", "80%"],
-                //area: ["775px", "80%"],
-                //area: ["995px", "80%"],
-                //area: ["1250px", "80%"],
+                area: ["775px", "750px"],
+                //area: ["675px", "750px"],
+                //area: ["775px", "750px"],
+                //area: ["995px", "750px"],
+                //area: ["1250px", "750px"],
                 btn: ["@L("确定")", '@L("取消")'],
                 yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
@@ -47,11 +45,11 @@
         //更新
         function update(id) {
             abp.dialog.open("/PlatformManage/UpdateDevice?id=" + id, "@L("修改设备")", {
-                area: ["775px", "80%"],
-                //area: ["675px", "80%"],
-                //area: ["775px", "80%"],
-                //area: ["995px", "80%"],
-                //area: ["1250px", "80%"],
+                area: ["775px", "750px"],
+                //area: ["675px", "750px"],
+                //area: ["775px", "750px"],
+                //area: ["995px", "750px"],
+                //area: ["1250px", "750px"],
                 btn: ["@L("保存")", '@L("取消")'],
                 yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
@@ -64,9 +62,6 @@
                 }
             });
         }
-
-
-
 
         //删除
         function del(ids) {
@@ -84,10 +79,6 @@
                 });
             });
         }
-
-
-
-
 
         (function ($) {
             if (!$) {

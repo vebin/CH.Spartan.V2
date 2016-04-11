@@ -2437,3 +2437,1673 @@ WARN  2016-04-11 18:49:16,870 [27   ] Abp.Logging.LogHelper                    -
 WARN  2016-04-11 18:49:16,871 [27   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
 WARN  2016-04-11 18:49:16,871 [27   ] Abp.Logging.LogHelper                    - Can not find '删除成功' in localization source 'Spartan'!
 WARN  2016-04-11 18:49:16,872 [27   ] Abp.Logging.LogHelper                    - Can not find '请选择要删除的数据' in localization source 'Spartan'!
+DEBUG 2016-04-11 19:56:23,029 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-11 19:56:27,281 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-11 19:56:27,285 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,290 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,290 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,290 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 19:56:27,295 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-11 19:56:27,351 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 19:56:27,351 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 19:56:27,351 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 19:56:27,351 [1    ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 19:56:28,795 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-11 19:56:28,804 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-11 19:56:28,805 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-11 19:56:28,808 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-11 19:56:28,809 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-11 19:56:28,815 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-11 19:56:28,869 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-11 19:56:28,870 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-11 19:56:28,870 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-11 19:56:28,870 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-11 19:56:28,870 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-11 19:56:28,870 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-11 19:56:28,870 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-11 19:56:28,917 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-11 19:56:29,088 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-11 19:56:29,094 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-11 19:56:29,100 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-11 19:56:29,106 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-11 19:56:29,113 [2c5d0] Hangfire.Server.Worker                   - Background process 'Worker #03c2c5d0' started.
+DEBUG 2016-04-11 19:56:29,116 [0f480] Hangfire.Server.Worker                   - Background process 'Worker #d6d0f480' started.
+DEBUG 2016-04-11 19:56:29,119 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 17 classes defines auto mapping attributes
+DEBUG 2016-04-11 19:56:29,119 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-11 19:56:29,122 [7da2e] Hangfire.Server.Worker                   - Background process 'Worker #bce7da2e' started.
+DEBUG 2016-04-11 19:56:29,149 [c73ea] Hangfire.Server.Worker                   - Background process 'Worker #1e2c73ea' started.
+DEBUG 2016-04-11 19:56:29,150 [d5874] Hangfire.Server.Worker                   - Background process 'Worker #b7cd5874' started.
+DEBUG 2016-04-11 19:56:29,154 [feed3] Hangfire.Server.Worker                   - Background process 'Worker #5e1feed3' started.
+DEBUG 2016-04-11 19:56:29,158 [e7326] Hangfire.Server.Worker                   - Background process 'Worker #6ebe7326' started.
+DEBUG 2016-04-11 19:56:29,160 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-11 19:56:29,161 [4c8e2] Hangfire.Server.Worker                   - Background process 'Worker #00b4c8e2' started.
+DEBUG 2016-04-11 19:56:29,166 [2d521] Hangfire.Server.Worker                   - Background process 'Worker #ae72d521' started.
+DEBUG 2016-04-11 19:56:29,170 [9c8ec] Hangfire.Server.Worker                   - Background process 'Worker #6fb9c8ec' started.
+DEBUG 2016-04-11 19:56:29,174 [483d1] Hangfire.Server.Worker                   - Background process 'Worker #0ef483d1' started.
+DEBUG 2016-04-11 19:56:29,178 [5b3c6] Hangfire.Server.Worker                   - Background process 'Worker #7265b3c6' started.
+DEBUG 2016-04-11 19:56:29,181 [d9cb4] Hangfire.Server.Worker                   - Background process 'Worker #803d9cb4' started.
+DEBUG 2016-04-11 19:56:29,185 [467c7] Hangfire.Server.Worker                   - Background process 'Worker #ce2467c7' started.
+DEBUG 2016-04-11 19:56:29,189 [3eda8] Hangfire.Server.Worker                   - Background process 'Worker #5f03eda8' started.
+DEBUG 2016-04-11 19:56:29,194 [8adaf] Hangfire.Server.Worker                   - Background process 'Worker #2048adaf' started.
+DEBUG 2016-04-11 19:56:29,198 [e0e01] Hangfire.Server.Worker                   - Background process 'Worker #186e0e01' started.
+DEBUG 2016-04-11 19:56:29,200 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2016-04-11 19:56:29,204 [3f8d5] Hangfire.Server.Worker                   - Background process 'Worker #f123f8d5' started.
+DEBUG 2016-04-11 19:56:29,210 [ca527] Hangfire.Server.Worker                   - Background process 'Worker #bcbca527' started.
+DEBUG 2016-04-11 19:56:29,215 [cb83f] Hangfire.Server.Worker                   - Background process 'Worker #14dcb83f' started.
+DEBUG 2016-04-11 19:56:29,220 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-11 19:56:29,227 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-11 19:56:29,227 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.GetRoleListDto
+DEBUG 2016-04-11 19:56:29,229 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.UpdateRoleDto
+DEBUG 2016-04-11 19:56:29,231 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.CreateNodeDto
+DEBUG 2016-04-11 19:56:29,233 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.GetNodeListDto
+DEBUG 2016-04-11 19:56:29,233 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.UpdateNodeDto
+DEBUG 2016-04-11 19:56:29,235 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2016-04-11 19:56:29,257 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.GetTenantListDto
+DEBUG 2016-04-11 19:56:29,257 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.UpdateTenantDto
+DEBUG 2016-04-11 19:56:29,259 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.GetDeviceTypeListDto
+DEBUG 2016-04-11 19:56:29,261 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.UpdateDeviceTypeDto
+DEBUG 2016-04-11 19:56:29,265 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.CreateDeviceDto
+DEBUG 2016-04-11 19:56:29,282 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.GetDeviceListDto
+DEBUG 2016-04-11 19:56:29,285 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.UpdateDeviceDto
+DEBUG 2016-04-11 19:56:29,308 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.AuditLogs.Dto.GetAuditLogListDto
+DEBUG 2016-04-11 19:56:47,033 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"0746b993-6c7a-4293-8932-3d2129f2d3e6","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-11T19:56:47.0245446+08:00","Properties":{}}
+DEBUG 2016-04-11 19:56:47,063 [6    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 0746b993-6c7a-4293-8932-3d2129f2d3e6
+WARN  2016-04-11 19:56:50,180 [6    ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-11 19:56:50,181 [6    ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-11 19:56:50,196 [6    ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-11 19:56:50,197 [6    ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-11 19:56:50,198 [6    ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-11 19:56:50,333 [6    ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-11 19:56:50,335 [6    ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-11 19:56:50,336 [6    ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-11 19:56:52,987 [6    ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-11 19:56:52,989 [6    ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-11 19:56:52,990 [6    ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-11 19:56:53,108 [6    ] Abp.Logging.LogHelper                    - Can not find '添加成功' in localization source 'Spartan'!
+WARN  2016-04-11 19:56:58,418 [6    ] Abp.Logging.LogHelper                    - Can not find '请输入关键字' in localization source 'Spartan'!
+WARN  2016-04-11 19:56:58,420 [6    ] Abp.Logging.LogHelper                    - Can not find '最后编辑时间' in localization source 'Spartan'!
+WARN  2016-04-11 19:56:58,423 [6    ] Abp.Logging.LogHelper                    - Can not find '修改设备类型' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:01,252 [5    ] Abp.Logging.LogHelper                    - Can not find '设备号' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:01,269 [5    ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:08,074 [8    ] Abp.Logging.LogHelper                    - Can not find '设备号' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:08,093 [8    ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:10,913 [42   ] Abp.Logging.LogHelper                    - Can not find '设备号' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:10,938 [42   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:22,572 [7    ] Abp.Logging.LogHelper                    - Can not find '设备号' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:22,591 [7    ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:28,658 [42   ] Abp.Logging.LogHelper                    - Can not find '请输入关键字' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:28,660 [42   ] Abp.Logging.LogHelper                    - Can not find '最后编辑时间' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:28,660 [42   ] Abp.Logging.LogHelper                    - Can not find '创建时间' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:28,662 [42   ] Abp.Logging.LogHelper                    - Can not find '添加节点' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:28,663 [42   ] Abp.Logging.LogHelper                    - Can not find '修改节点' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:32,125 [41   ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:36,198 [42   ] Abp.Logging.LogHelper                    - Can not find '添加成功' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:43,472 [7    ] Abp.Logging.LogHelper                    - Can not find '请输入关键字' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:43,472 [7    ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:43,478 [7    ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:43,478 [7    ] Abp.Logging.LogHelper                    - Can not find '删除成功' in localization source 'Spartan'!
+WARN  2016-04-11 19:57:43,479 [7    ] Abp.Logging.LogHelper                    - Can not find '请选择要删除的数据' in localization source 'Spartan'!
+WARN  2016-04-11 19:58:05,758 [7    ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-11 19:58:05,758 [7    ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-11 19:58:05,759 [7    ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-11 19:58:05,760 [7    ] Abp.Logging.LogHelper                    - Can not find '添加成功' in localization source 'Spartan'!
+DEBUG 2016-04-11 20:10:14,512 [73   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-11 20:10:14,513 [2d521] Hangfire.Server.Worker                   - Background process 'Worker #ae72d521' stopped.
+DEBUG 2016-04-11 20:10:14,513 [e7326] Hangfire.Server.Worker                   - Background process 'Worker #6ebe7326' stopped.
+DEBUG 2016-04-11 20:10:14,513 [4c8e2] Hangfire.Server.Worker                   - Background process 'Worker #00b4c8e2' stopped.
+DEBUG 2016-04-11 20:10:14,514 [0f480] Hangfire.Server.Worker                   - Background process 'Worker #d6d0f480' stopped.
+DEBUG 2016-04-11 20:10:14,514 [c73ea] Hangfire.Server.Worker                   - Background process 'Worker #1e2c73ea' stopped.
+DEBUG 2016-04-11 20:10:14,514 [483d1] Hangfire.Server.Worker                   - Background process 'Worker #0ef483d1' stopped.
+DEBUG 2016-04-11 20:10:14,514 [d5874] Hangfire.Server.Worker                   - Background process 'Worker #b7cd5874' stopped.
+DEBUG 2016-04-11 20:10:14,514 [9c8ec] Hangfire.Server.Worker                   - Background process 'Worker #6fb9c8ec' stopped.
+DEBUG 2016-04-11 20:10:14,514 [7da2e] Hangfire.Server.Worker                   - Background process 'Worker #bce7da2e' stopped.
+DEBUG 2016-04-11 20:10:14,514 [feed3] Hangfire.Server.Worker                   - Background process 'Worker #5e1feed3' stopped.
+DEBUG 2016-04-11 20:10:14,514 [2c5d0] Hangfire.Server.Worker                   - Background process 'Worker #03c2c5d0' stopped.
+DEBUG 2016-04-11 20:10:14,514 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-11 20:10:14,514 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-11 20:10:14,515 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-11 20:10:14,515 [cb83f] Hangfire.Server.Worker                   - Background process 'Worker #14dcb83f' stopped.
+DEBUG 2016-04-11 20:10:14,515 [8adaf] Hangfire.Server.Worker                   - Background process 'Worker #2048adaf' stopped.
+DEBUG 2016-04-11 20:10:14,515 [5b3c6] Hangfire.Server.Worker                   - Background process 'Worker #7265b3c6' stopped.
+DEBUG 2016-04-11 20:10:14,515 [ca527] Hangfire.Server.Worker                   - Background process 'Worker #bcbca527' stopped.
+DEBUG 2016-04-11 20:10:14,515 [e0e01] Hangfire.Server.Worker                   - Background process 'Worker #186e0e01' stopped.
+DEBUG 2016-04-11 20:10:14,515 [3eda8] Hangfire.Server.Worker                   - Background process 'Worker #5f03eda8' stopped.
+DEBUG 2016-04-11 20:10:14,515 [3f8d5] Hangfire.Server.Worker                   - Background process 'Worker #f123f8d5' stopped.
+DEBUG 2016-04-11 20:10:14,515 [467c7] Hangfire.Server.Worker                   - Background process 'Worker #ce2467c7' stopped.
+DEBUG 2016-04-11 20:10:14,515 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-11 20:10:14,515 [d9cb4] Hangfire.Server.Worker                   - Background process 'Worker #803d9cb4' stopped.
+DEBUG 2016-04-11 20:10:14,515 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-11 20:10:14,515 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-11 20:10:14,517 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-11 20:10:14,517 [73   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-11 20:10:14,517 [73   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-11 20:10:17,818 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-11 20:10:22,500 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-11 20:10:22,505 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,507 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,508 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,508 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,508 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,508 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,509 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,510 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:10:22,514 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-11 20:10:22,560 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 20:10:22,560 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 20:10:22,560 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 20:10:22,560 [1    ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 20:10:23,237 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-11 20:10:23,243 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-11 20:10:23,244 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-11 20:10:23,245 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-11 20:10:23,246 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-11 20:10:23,251 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-11 20:10:23,276 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-11 20:10:23,276 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-11 20:10:23,276 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-11 20:10:23,276 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-11 20:10:23,276 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-11 20:10:23,276 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-11 20:10:23,276 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-11 20:10:23,288 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-11 20:10:23,513 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-11 20:10:23,515 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-11 20:10:23,517 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-11 20:10:23,519 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-11 20:10:23,522 [75858] Hangfire.Server.Worker                   - Background process 'Worker #58275858' started.
+DEBUG 2016-04-11 20:10:23,529 [0d742] Hangfire.Server.Worker                   - Background process 'Worker #7780d742' started.
+DEBUG 2016-04-11 20:10:23,532 [e369a] Hangfire.Server.Worker                   - Background process 'Worker #96be369a' started.
+DEBUG 2016-04-11 20:10:23,557 [e4ff4] Hangfire.Server.Worker                   - Background process 'Worker #740e4ff4' started.
+DEBUG 2016-04-11 20:10:23,557 [e8041] Hangfire.Server.Worker                   - Background process 'Worker #3cbe8041' started.
+DEBUG 2016-04-11 20:10:23,559 [3a7d3] Hangfire.Server.Worker                   - Background process 'Worker #bff3a7d3' started.
+DEBUG 2016-04-11 20:10:23,560 [65d79] Hangfire.Server.Worker                   - Background process 'Worker #9eb65d79' started.
+DEBUG 2016-04-11 20:10:23,561 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 17 classes defines auto mapping attributes
+DEBUG 2016-04-11 20:10:23,561 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-11 20:10:23,563 [2b228] Hangfire.Server.Worker                   - Background process 'Worker #dbb2b228' started.
+DEBUG 2016-04-11 20:10:23,565 [6e077] Hangfire.Server.Worker                   - Background process 'Worker #74d6e077' started.
+DEBUG 2016-04-11 20:10:23,566 [a0858] Hangfire.Server.Worker                   - Background process 'Worker #23fa0858' started.
+DEBUG 2016-04-11 20:10:23,567 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-11 20:10:23,569 [52e52] Hangfire.Server.Worker                   - Background process 'Worker #f8952e52' started.
+DEBUG 2016-04-11 20:10:23,577 [ecf2e] Hangfire.Server.Worker                   - Background process 'Worker #89fecf2e' started.
+DEBUG 2016-04-11 20:10:23,578 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2016-04-11 20:10:23,578 [bac05] Hangfire.Server.Worker                   - Background process 'Worker #ecfbac05' started.
+DEBUG 2016-04-11 20:10:23,580 [a60ab] Hangfire.Server.Worker                   - Background process 'Worker #9fca60ab' started.
+DEBUG 2016-04-11 20:10:23,582 [1c03b] Hangfire.Server.Worker                   - Background process 'Worker #d101c03b' started.
+DEBUG 2016-04-11 20:10:23,582 [dc77d] Hangfire.Server.Worker                   - Background process 'Worker #708dc77d' started.
+DEBUG 2016-04-11 20:10:23,583 [fe1d4] Hangfire.Server.Worker                   - Background process 'Worker #c8bfe1d4' started.
+DEBUG 2016-04-11 20:10:23,584 [fd0be] Hangfire.Server.Worker                   - Background process 'Worker #462fd0be' started.
+DEBUG 2016-04-11 20:10:23,585 [0bab2] Hangfire.Server.Worker                   - Background process 'Worker #2240bab2' started.
+DEBUG 2016-04-11 20:10:23,587 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.GetRoleListDto
+DEBUG 2016-04-11 20:10:23,587 [97110] Hangfire.Server.Worker                   - Background process 'Worker #67f97110' started.
+DEBUG 2016-04-11 20:10:23,589 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.UpdateRoleDto
+DEBUG 2016-04-11 20:10:23,591 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-11 20:10:23,593 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.CreateNodeDto
+DEBUG 2016-04-11 20:10:23,596 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.GetNodeListDto
+DEBUG 2016-04-11 20:10:23,596 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-11 20:10:23,597 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.UpdateNodeDto
+DEBUG 2016-04-11 20:10:23,599 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2016-04-11 20:10:23,602 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.GetTenantListDto
+DEBUG 2016-04-11 20:10:23,602 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.UpdateTenantDto
+DEBUG 2016-04-11 20:10:23,604 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.GetDeviceTypeListDto
+DEBUG 2016-04-11 20:10:23,607 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.UpdateDeviceTypeDto
+DEBUG 2016-04-11 20:10:23,612 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.CreateDeviceDto
+DEBUG 2016-04-11 20:10:23,642 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.GetDeviceListDto
+DEBUG 2016-04-11 20:10:23,644 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.UpdateDeviceDto
+DEBUG 2016-04-11 20:10:23,671 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.AuditLogs.Dto.GetAuditLogListDto
+DEBUG 2016-04-11 20:10:54,336 [71   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-11 20:10:54,337 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-11 20:10:54,337 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-11 20:10:54,337 [0bab2] Hangfire.Server.Worker                   - Background process 'Worker #2240bab2' stopped.
+DEBUG 2016-04-11 20:10:54,338 [97110] Hangfire.Server.Worker                   - Background process 'Worker #67f97110' stopped.
+DEBUG 2016-04-11 20:10:54,338 [fd0be] Hangfire.Server.Worker                   - Background process 'Worker #462fd0be' stopped.
+DEBUG 2016-04-11 20:10:54,338 [fe1d4] Hangfire.Server.Worker                   - Background process 'Worker #c8bfe1d4' stopped.
+DEBUG 2016-04-11 20:10:54,338 [dc77d] Hangfire.Server.Worker                   - Background process 'Worker #708dc77d' stopped.
+DEBUG 2016-04-11 20:10:54,338 [1c03b] Hangfire.Server.Worker                   - Background process 'Worker #d101c03b' stopped.
+DEBUG 2016-04-11 20:10:54,338 [a60ab] Hangfire.Server.Worker                   - Background process 'Worker #9fca60ab' stopped.
+DEBUG 2016-04-11 20:10:54,338 [bac05] Hangfire.Server.Worker                   - Background process 'Worker #ecfbac05' stopped.
+DEBUG 2016-04-11 20:10:54,338 [ecf2e] Hangfire.Server.Worker                   - Background process 'Worker #89fecf2e' stopped.
+DEBUG 2016-04-11 20:10:54,338 [52e52] Hangfire.Server.Worker                   - Background process 'Worker #f8952e52' stopped.
+DEBUG 2016-04-11 20:10:54,338 [3a7d3] Hangfire.Server.Worker                   - Background process 'Worker #bff3a7d3' stopped.
+DEBUG 2016-04-11 20:10:54,338 [65d79] Hangfire.Server.Worker                   - Background process 'Worker #9eb65d79' stopped.
+DEBUG 2016-04-11 20:10:54,338 [2b228] Hangfire.Server.Worker                   - Background process 'Worker #dbb2b228' stopped.
+DEBUG 2016-04-11 20:10:54,338 [6e077] Hangfire.Server.Worker                   - Background process 'Worker #74d6e077' stopped.
+DEBUG 2016-04-11 20:10:54,339 [a0858] Hangfire.Server.Worker                   - Background process 'Worker #23fa0858' stopped.
+DEBUG 2016-04-11 20:10:54,339 [e4ff4] Hangfire.Server.Worker                   - Background process 'Worker #740e4ff4' stopped.
+DEBUG 2016-04-11 20:10:54,339 [e8041] Hangfire.Server.Worker                   - Background process 'Worker #3cbe8041' stopped.
+DEBUG 2016-04-11 20:10:54,339 [e369a] Hangfire.Server.Worker                   - Background process 'Worker #96be369a' stopped.
+DEBUG 2016-04-11 20:10:54,339 [0d742] Hangfire.Server.Worker                   - Background process 'Worker #7780d742' stopped.
+DEBUG 2016-04-11 20:10:54,339 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-11 20:10:54,339 [75858] Hangfire.Server.Worker                   - Background process 'Worker #58275858' stopped.
+DEBUG 2016-04-11 20:10:54,339 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-11 20:10:54,339 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-11 20:10:54,339 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-11 20:10:54,340 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-11 20:10:54,340 [71   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-11 20:10:54,340 [71   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-11 20:10:57,578 [82   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-11 20:11:01,741 [82   ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-11 20:11:01,746 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,747 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,747 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,748 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,748 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,748 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,748 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,748 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,748 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,749 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,749 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,749 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,749 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,749 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,749 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,749 [82   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 20:11:01,757 [82   ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-11 20:11:01,788 [82   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 20:11:01,788 [82   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 20:11:01,788 [82   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 20:11:01,788 [82   ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 20:11:02,435 [82   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-11 20:11:02,438 [82   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-11 20:11:02,439 [82   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-11 20:11:02,446 [82   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-11 20:11:02,447 [82   ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-11 20:11:02,450 [82   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-11 20:11:02,486 [82   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-11 20:11:02,487 [82   ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-11 20:11:02,487 [82   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-11 20:11:02,487 [82   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-11 20:11:02,487 [82   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-11 20:11:02,487 [82   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-11 20:11:02,487 [82   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-11 20:11:02,521 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-11 20:11:02,775 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-11 20:11:02,776 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-11 20:11:02,778 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-11 20:11:02,779 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-11 20:11:02,787 [b0858] Hangfire.Server.Worker                   - Background process 'Worker #3a2b0858' started.
+DEBUG 2016-04-11 20:11:02,813 [3fc88] Hangfire.Server.Worker                   - Background process 'Worker #39d3fc88' started.
+DEBUG 2016-04-11 20:11:02,814 [9e647] Hangfire.Server.Worker                   - Background process 'Worker #18e9e647' started.
+DEBUG 2016-04-11 20:11:02,817 [94f92] Hangfire.Server.Worker                   - Background process 'Worker #6ce94f92' started.
+DEBUG 2016-04-11 20:11:02,819 [12ede] Hangfire.Server.Worker                   - Background process 'Worker #55112ede' started.
+DEBUG 2016-04-11 20:11:02,845 [f27a9] Hangfire.Server.Worker                   - Background process 'Worker #0bff27a9' started.
+DEBUG 2016-04-11 20:11:02,858 [52ece] Hangfire.Server.Worker                   - Background process 'Worker #d8a52ece' started.
+DEBUG 2016-04-11 20:11:02,859 [8e5d4] Hangfire.Server.Worker                   - Background process 'Worker #d1a8e5d4' started.
+DEBUG 2016-04-11 20:11:02,862 [6e156] Hangfire.Server.Worker                   - Background process 'Worker #c336e156' started.
+DEBUG 2016-04-11 20:11:02,863 [8fb7a] Hangfire.Server.Worker                   - Background process 'Worker #0ff8fb7a' started.
+DEBUG 2016-04-11 20:11:02,866 [4dfcd] Hangfire.Server.Worker                   - Background process 'Worker #ab84dfcd' started.
+DEBUG 2016-04-11 20:11:02,887 [cb785] Hangfire.Server.Worker                   - Background process 'Worker #3fccb785' started.
+DEBUG 2016-04-11 20:11:02,896 [84708] Hangfire.Server.Worker                   - Background process 'Worker #f3e84708' started.
+DEBUG 2016-04-11 20:11:02,897 [6e028] Hangfire.Server.Worker                   - Background process 'Worker #bef6e028' started.
+DEBUG 2016-04-11 20:11:02,898 [0e6e4] Hangfire.Server.Worker                   - Background process 'Worker #88c0e6e4' started.
+DEBUG 2016-04-11 20:11:02,899 [c7e05] Hangfire.Server.Worker                   - Background process 'Worker #cb8c7e05' started.
+DEBUG 2016-04-11 20:11:02,900 [22222] Hangfire.Server.Worker                   - Background process 'Worker #c9722222' started.
+DEBUG 2016-04-11 20:11:02,901 [a4341] Hangfire.Server.Worker                   - Background process 'Worker #ab3a4341' started.
+DEBUG 2016-04-11 20:11:02,901 [c157f] Hangfire.Server.Worker                   - Background process 'Worker #008c157f' started.
+DEBUG 2016-04-11 20:11:02,903 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 17 classes defines auto mapping attributes
+DEBUG 2016-04-11 20:11:02,903 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-11 20:11:02,904 [7f6eb] Hangfire.Server.Worker                   - Background process 'Worker #39d7f6eb' started.
+DEBUG 2016-04-11 20:11:02,905 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-11 20:11:02,916 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-11 20:11:02,946 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-11 20:11:02,948 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2016-04-11 20:11:02,968 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.GetRoleListDto
+DEBUG 2016-04-11 20:11:02,970 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.UpdateRoleDto
+DEBUG 2016-04-11 20:11:02,975 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.CreateNodeDto
+DEBUG 2016-04-11 20:11:02,980 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.GetNodeListDto
+DEBUG 2016-04-11 20:11:02,982 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.UpdateNodeDto
+DEBUG 2016-04-11 20:11:02,985 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2016-04-11 20:11:03,003 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.GetTenantListDto
+DEBUG 2016-04-11 20:11:03,003 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.UpdateTenantDto
+DEBUG 2016-04-11 20:11:03,008 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.GetDeviceTypeListDto
+DEBUG 2016-04-11 20:11:03,011 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.UpdateDeviceTypeDto
+DEBUG 2016-04-11 20:11:03,024 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.CreateDeviceDto
+DEBUG 2016-04-11 20:11:03,060 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.GetDeviceListDto
+DEBUG 2016-04-11 20:11:03,063 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.UpdateDeviceDto
+DEBUG 2016-04-11 20:11:03,129 [82   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.AuditLogs.Dto.GetAuditLogListDto
+DEBUG 2016-04-11 20:11:33,388 [66   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-11 20:11:33,388 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-11 20:11:33,388 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-11 20:11:33,388 [7f6eb] Hangfire.Server.Worker                   - Background process 'Worker #39d7f6eb' stopped.
+DEBUG 2016-04-11 20:11:33,388 [c157f] Hangfire.Server.Worker                   - Background process 'Worker #008c157f' stopped.
+DEBUG 2016-04-11 20:11:33,388 [a4341] Hangfire.Server.Worker                   - Background process 'Worker #ab3a4341' stopped.
+DEBUG 2016-04-11 20:11:33,388 [22222] Hangfire.Server.Worker                   - Background process 'Worker #c9722222' stopped.
+DEBUG 2016-04-11 20:11:33,388 [c7e05] Hangfire.Server.Worker                   - Background process 'Worker #cb8c7e05' stopped.
+DEBUG 2016-04-11 20:11:33,388 [0e6e4] Hangfire.Server.Worker                   - Background process 'Worker #88c0e6e4' stopped.
+DEBUG 2016-04-11 20:11:33,388 [6e028] Hangfire.Server.Worker                   - Background process 'Worker #bef6e028' stopped.
+DEBUG 2016-04-11 20:11:33,389 [cb785] Hangfire.Server.Worker                   - Background process 'Worker #3fccb785' stopped.
+DEBUG 2016-04-11 20:11:33,389 [4dfcd] Hangfire.Server.Worker                   - Background process 'Worker #ab84dfcd' stopped.
+DEBUG 2016-04-11 20:11:33,389 [84708] Hangfire.Server.Worker                   - Background process 'Worker #f3e84708' stopped.
+DEBUG 2016-04-11 20:11:33,389 [6e156] Hangfire.Server.Worker                   - Background process 'Worker #c336e156' stopped.
+DEBUG 2016-04-11 20:11:33,389 [8fb7a] Hangfire.Server.Worker                   - Background process 'Worker #0ff8fb7a' stopped.
+DEBUG 2016-04-11 20:11:33,389 [52ece] Hangfire.Server.Worker                   - Background process 'Worker #d8a52ece' stopped.
+DEBUG 2016-04-11 20:11:33,389 [8e5d4] Hangfire.Server.Worker                   - Background process 'Worker #d1a8e5d4' stopped.
+DEBUG 2016-04-11 20:11:33,389 [f27a9] Hangfire.Server.Worker                   - Background process 'Worker #0bff27a9' stopped.
+DEBUG 2016-04-11 20:11:33,389 [12ede] Hangfire.Server.Worker                   - Background process 'Worker #55112ede' stopped.
+DEBUG 2016-04-11 20:11:33,389 [94f92] Hangfire.Server.Worker                   - Background process 'Worker #6ce94f92' stopped.
+DEBUG 2016-04-11 20:11:33,389 [9e647] Hangfire.Server.Worker                   - Background process 'Worker #18e9e647' stopped.
+DEBUG 2016-04-11 20:11:33,389 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-11 20:11:33,389 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-11 20:11:33,389 [3fc88] Hangfire.Server.Worker                   - Background process 'Worker #39d3fc88' stopped.
+DEBUG 2016-04-11 20:11:33,389 [b0858] Hangfire.Server.Worker                   - Background process 'Worker #3a2b0858' stopped.
+DEBUG 2016-04-11 20:11:33,389 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-11 20:11:33,389 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-11 20:11:33,390 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-11 20:11:33,390 [66   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-11 20:11:33,390 [66   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-11 21:06:56,981 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-11 21:07:01,402 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-11 21:07:01,405 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,407 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,407 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,407 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,408 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,408 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,408 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,408 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,408 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,408 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,408 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,408 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,408 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,409 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:07:01,414 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-11 21:07:01,465 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:07:01,465 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:07:01,465 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:07:01,465 [1    ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:07:02,797 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-11 21:07:02,807 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-11 21:07:02,809 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-11 21:07:02,810 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-11 21:07:02,811 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-11 21:07:02,817 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-11 21:07:02,860 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-11 21:07:02,860 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-11 21:07:02,860 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-11 21:07:02,860 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-11 21:07:02,860 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-11 21:07:02,860 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-11 21:07:02,860 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-11 21:07:02,920 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-11 21:07:03,090 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-11 21:07:03,096 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-11 21:07:03,100 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-11 21:07:03,133 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-11 21:07:03,135 [4b76a] Hangfire.Server.Worker                   - Background process 'Worker #6ed4b76a' started.
+DEBUG 2016-04-11 21:07:03,138 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 17 classes defines auto mapping attributes
+DEBUG 2016-04-11 21:07:03,138 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-11 21:07:03,143 [82725] Hangfire.Server.Worker                   - Background process 'Worker #3cf82725' started.
+DEBUG 2016-04-11 21:07:03,149 [3ea9d] Hangfire.Server.Worker                   - Background process 'Worker #f683ea9d' started.
+DEBUG 2016-04-11 21:07:03,154 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-11 21:07:03,160 [9039e] Hangfire.Server.Worker                   - Background process 'Worker #1ca9039e' started.
+DEBUG 2016-04-11 21:07:03,163 [18c0c] Hangfire.Server.Worker                   - Background process 'Worker #ffa18c0c' started.
+DEBUG 2016-04-11 21:07:03,164 [87377] Hangfire.Server.Worker                   - Background process 'Worker #f7587377' started.
+DEBUG 2016-04-11 21:07:03,168 [de9d3] Hangfire.Server.Worker                   - Background process 'Worker #6c8de9d3' started.
+DEBUG 2016-04-11 21:07:03,172 [b45ff] Hangfire.Server.Worker                   - Background process 'Worker #b4eb45ff' started.
+DEBUG 2016-04-11 21:07:03,175 [b1add] Hangfire.Server.Worker                   - Background process 'Worker #566b1add' started.
+DEBUG 2016-04-11 21:07:03,180 [6d219] Hangfire.Server.Worker                   - Background process 'Worker #6da6d219' started.
+DEBUG 2016-04-11 21:07:03,183 [0567a] Hangfire.Server.Worker                   - Background process 'Worker #1810567a' started.
+DEBUG 2016-04-11 21:07:03,187 [e5344] Hangfire.Server.Worker                   - Background process 'Worker #b4be5344' started.
+DEBUG 2016-04-11 21:07:03,194 [2c83a] Hangfire.Server.Worker                   - Background process 'Worker #b762c83a' started.
+DEBUG 2016-04-11 21:07:03,195 [07e28] Hangfire.Server.Worker                   - Background process 'Worker #20407e28' started.
+DEBUG 2016-04-11 21:07:03,198 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2016-04-11 21:07:03,199 [4a2b6] Hangfire.Server.Worker                   - Background process 'Worker #6894a2b6' started.
+DEBUG 2016-04-11 21:07:03,203 [c52ef] Hangfire.Server.Worker                   - Background process 'Worker #4fcc52ef' started.
+DEBUG 2016-04-11 21:07:03,207 [e34fa] Hangfire.Server.Worker                   - Background process 'Worker #36ee34fa' started.
+DEBUG 2016-04-11 21:07:03,211 [61ac1] Hangfire.Server.Worker                   - Background process 'Worker #9b861ac1' started.
+DEBUG 2016-04-11 21:07:03,216 [08779] Hangfire.Server.Worker                   - Background process 'Worker #61b08779' started.
+DEBUG 2016-04-11 21:07:03,220 [7fa12] Hangfire.Server.Worker                   - Background process 'Worker #31d7fa12' started.
+DEBUG 2016-04-11 21:07:03,224 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-11 21:07:03,227 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.GetRoleListDto
+DEBUG 2016-04-11 21:07:03,229 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-11 21:07:03,229 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.UpdateRoleDto
+DEBUG 2016-04-11 21:07:03,232 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.CreateNodeDto
+DEBUG 2016-04-11 21:07:03,233 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.GetNodeListDto
+DEBUG 2016-04-11 21:07:03,234 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.UpdateNodeDto
+DEBUG 2016-04-11 21:07:03,236 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2016-04-11 21:07:03,239 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.GetTenantListDto
+DEBUG 2016-04-11 21:07:03,239 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.UpdateTenantDto
+DEBUG 2016-04-11 21:07:03,241 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.GetDeviceTypeListDto
+DEBUG 2016-04-11 21:07:03,243 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.UpdateDeviceTypeDto
+DEBUG 2016-04-11 21:07:03,266 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.CreateDeviceDto
+DEBUG 2016-04-11 21:07:03,280 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.GetDeviceListDto
+DEBUG 2016-04-11 21:07:03,282 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.UpdateDeviceDto
+DEBUG 2016-04-11 21:07:03,301 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.AuditLogs.Dto.GetAuditLogListDto
+WARN  2016-04-11 21:07:07,132 [6    ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:11,640 [39   ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:12,300 [6    ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:12,858 [9    ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+DEBUG 2016-04-11 21:07:12,973 [9    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"f5420f90-c712-420c-b47d-2888b98de63c","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-11T21:07:12.9664042+08:00","Properties":{}}
+DEBUG 2016-04-11 21:07:13,009 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: f5420f90-c712-420c-b47d-2888b98de63c
+WARN  2016-04-11 21:07:23,863 [9    ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:23,864 [9    ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:23,877 [9    ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:23,878 [9    ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:23,879 [9    ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:24,016 [9    ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:24,017 [9    ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:24,019 [9    ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:24,170 [8    ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:26,159 [39   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:26,161 [39   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:26,162 [39   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:26,301 [39   ] Abp.Logging.LogHelper                    - Can not find '添加成功' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:26,561 [6    ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+WARN  2016-04-11 21:07:52,051 [39   ] n.Web.Controllers.SystemManageController - Method arguments are not valid! See ValidationErrors for details.
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   在 Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\MethodInvocationValidator.cs:行号 72
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:行号 12
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.TenantAppServiceProxy.CreateTenantAsync(CreateTenantInput input)
+   在 CH.Spartan.Web.Controllers.SystemManageController.<CreateTenant>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\SystemManageController.cs:行号 82
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-04-11 21:07:52,053 [39   ] n.Web.Controllers.SystemManageController - There are 1 validation errors:
+WARN  2016-04-11 21:07:52,053 [39   ] n.Web.Controllers.SystemManageController - EmailAddress 字段是必需的。 (EmailAddress)
+WARN  2016-04-11 21:11:07,282 [39   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:07,283 [39   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:07,283 [39   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:07,284 [39   ] Abp.Logging.LogHelper                    - Can not find '邮件' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:07,285 [39   ] Abp.Logging.LogHelper                    - Can not find '添加成功' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:07,444 [6    ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:26,459 [39   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:26,460 [39   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:26,461 [39   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:26,462 [39   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:26,463 [39   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:26,466 [39   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:26,467 [39   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:26,468 [39   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:26,645 [39   ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:28,201 [44   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:28,202 [44   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:28,203 [44   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:28,204 [44   ] Abp.Logging.LogHelper                    - Can not find '邮件' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:28,207 [44   ] Abp.Logging.LogHelper                    - Can not find '添加成功' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:28,339 [47   ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:59,062 [7    ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:59,063 [7    ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:59,064 [7    ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:59,065 [7    ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:59,069 [7    ] Abp.Logging.LogHelper                    - Can not find '保存成功' in localization source 'Spartan'!
+WARN  2016-04-11 21:11:59,504 [6    ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+DEBUG 2016-04-11 21:12:12,290 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"a790d373-60c7-403d-bcb5-bb6237e0cca8","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-04-11T21:12:12.2901833+08:00","Properties":{}}
+DEBUG 2016-04-11 21:12:12,300 [44   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: a790d373-60c7-403d-bcb5-bb6237e0cca8
+DEBUG 2016-04-11 21:12:38,218 [8    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: f5420f90-c712-420c-b47d-2888b98de63c
+DEBUG 2016-04-11 21:13:52,495 [8    ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-11 21:13:52,497 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-11 21:13:52,497 [7fa12] Hangfire.Server.Worker                   - Background process 'Worker #31d7fa12' stopped.
+DEBUG 2016-04-11 21:13:52,497 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-11 21:13:52,497 [61ac1] Hangfire.Server.Worker                   - Background process 'Worker #9b861ac1' stopped.
+DEBUG 2016-04-11 21:13:52,497 [08779] Hangfire.Server.Worker                   - Background process 'Worker #61b08779' stopped.
+DEBUG 2016-04-11 21:13:52,497 [c52ef] Hangfire.Server.Worker                   - Background process 'Worker #4fcc52ef' stopped.
+DEBUG 2016-04-11 21:13:52,497 [e34fa] Hangfire.Server.Worker                   - Background process 'Worker #36ee34fa' stopped.
+DEBUG 2016-04-11 21:13:52,498 [4a2b6] Hangfire.Server.Worker                   - Background process 'Worker #6894a2b6' stopped.
+DEBUG 2016-04-11 21:13:52,498 [2c83a] Hangfire.Server.Worker                   - Background process 'Worker #b762c83a' stopped.
+DEBUG 2016-04-11 21:13:52,498 [07e28] Hangfire.Server.Worker                   - Background process 'Worker #20407e28' stopped.
+DEBUG 2016-04-11 21:13:52,498 [e5344] Hangfire.Server.Worker                   - Background process 'Worker #b4be5344' stopped.
+DEBUG 2016-04-11 21:13:52,498 [0567a] Hangfire.Server.Worker                   - Background process 'Worker #1810567a' stopped.
+DEBUG 2016-04-11 21:13:52,498 [6d219] Hangfire.Server.Worker                   - Background process 'Worker #6da6d219' stopped.
+DEBUG 2016-04-11 21:13:52,498 [b1add] Hangfire.Server.Worker                   - Background process 'Worker #566b1add' stopped.
+DEBUG 2016-04-11 21:13:52,498 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-11 21:13:52,499 [b45ff] Hangfire.Server.Worker                   - Background process 'Worker #b4eb45ff' stopped.
+DEBUG 2016-04-11 21:13:52,499 [de9d3] Hangfire.Server.Worker                   - Background process 'Worker #6c8de9d3' stopped.
+DEBUG 2016-04-11 21:13:52,499 [87377] Hangfire.Server.Worker                   - Background process 'Worker #f7587377' stopped.
+DEBUG 2016-04-11 21:13:52,499 [18c0c] Hangfire.Server.Worker                   - Background process 'Worker #ffa18c0c' stopped.
+DEBUG 2016-04-11 21:13:52,499 [9039e] Hangfire.Server.Worker                   - Background process 'Worker #1ca9039e' stopped.
+DEBUG 2016-04-11 21:13:52,499 [3ea9d] Hangfire.Server.Worker                   - Background process 'Worker #f683ea9d' stopped.
+DEBUG 2016-04-11 21:13:52,499 [82725] Hangfire.Server.Worker                   - Background process 'Worker #3cf82725' stopped.
+DEBUG 2016-04-11 21:13:52,499 [4b76a] Hangfire.Server.Worker                   - Background process 'Worker #6ed4b76a' stopped.
+DEBUG 2016-04-11 21:13:52,499 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-11 21:13:52,499 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-11 21:13:52,499 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-11 21:13:52,501 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-11 21:13:52,506 [8    ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-11 21:13:52,507 [8    ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-11 21:13:55,390 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-11 21:14:00,993 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-11 21:14:00,998 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:00,999 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,001 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,001 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,001 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,001 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,001 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,001 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,001 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:14:01,005 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-11 21:14:01,111 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:14:01,111 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:14:01,111 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:14:01,111 [1    ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:14:02,123 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-11 21:14:02,129 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-11 21:14:02,131 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-11 21:14:02,133 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-11 21:14:02,133 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-11 21:14:02,139 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-11 21:14:02,166 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-11 21:14:02,167 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-11 21:14:02,167 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-11 21:14:02,167 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-11 21:14:02,167 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-11 21:14:02,167 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-11 21:14:02,167 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-11 21:14:02,175 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-11 21:14:02,326 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-11 21:14:02,327 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-11 21:14:02,328 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-11 21:14:02,331 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-11 21:14:02,332 [ff680] Hangfire.Server.Worker                   - Background process 'Worker #9a7ff680' started.
+DEBUG 2016-04-11 21:14:02,334 [9bddf] Hangfire.Server.Worker                   - Background process 'Worker #e0d9bddf' started.
+DEBUG 2016-04-11 21:14:02,337 [27aab] Hangfire.Server.Worker                   - Background process 'Worker #41327aab' started.
+DEBUG 2016-04-11 21:14:02,338 [cb29a] Hangfire.Server.Worker                   - Background process 'Worker #9d8cb29a' started.
+DEBUG 2016-04-11 21:14:02,338 [1fe27] Hangfire.Server.Worker                   - Background process 'Worker #c691fe27' started.
+DEBUG 2016-04-11 21:14:02,339 [b1472] Hangfire.Server.Worker                   - Background process 'Worker #025b1472' started.
+DEBUG 2016-04-11 21:14:02,339 [4984d] Hangfire.Server.Worker                   - Background process 'Worker #a6a4984d' started.
+DEBUG 2016-04-11 21:14:02,340 [791f2] Hangfire.Server.Worker                   - Background process 'Worker #75f791f2' started.
+DEBUG 2016-04-11 21:14:02,341 [ba5d5] Hangfire.Server.Worker                   - Background process 'Worker #abfba5d5' started.
+DEBUG 2016-04-11 21:14:02,341 [1916a] Hangfire.Server.Worker                   - Background process 'Worker #28e1916a' started.
+DEBUG 2016-04-11 21:14:02,342 [8f9ca] Hangfire.Server.Worker                   - Background process 'Worker #e318f9ca' started.
+DEBUG 2016-04-11 21:14:02,343 [55131] Hangfire.Server.Worker                   - Background process 'Worker #01b55131' started.
+DEBUG 2016-04-11 21:14:02,343 [15435] Hangfire.Server.Worker                   - Background process 'Worker #02115435' started.
+DEBUG 2016-04-11 21:14:02,344 [0f7ba] Hangfire.Server.Worker                   - Background process 'Worker #9890f7ba' started.
+DEBUG 2016-04-11 21:14:02,344 [52b2c] Hangfire.Server.Worker                   - Background process 'Worker #79e52b2c' started.
+DEBUG 2016-04-11 21:14:02,345 [50ae0] Hangfire.Server.Worker                   - Background process 'Worker #b0950ae0' started.
+DEBUG 2016-04-11 21:14:02,345 [d8006] Hangfire.Server.Worker                   - Background process 'Worker #976d8006' started.
+DEBUG 2016-04-11 21:14:02,346 [e4c87] Hangfire.Server.Worker                   - Background process 'Worker #7aee4c87' started.
+DEBUG 2016-04-11 21:14:02,346 [cf110] Hangfire.Server.Worker                   - Background process 'Worker #eaecf110' started.
+DEBUG 2016-04-11 21:14:02,348 [3db80] Hangfire.Server.Worker                   - Background process 'Worker #4d73db80' started.
+DEBUG 2016-04-11 21:14:02,348 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-11 21:14:02,352 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-11 21:14:02,360 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 17 classes defines auto mapping attributes
+DEBUG 2016-04-11 21:14:02,360 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-11 21:14:02,364 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-11 21:14:02,368 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2016-04-11 21:14:02,373 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.GetRoleListDto
+DEBUG 2016-04-11 21:14:02,374 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.UpdateRoleDto
+DEBUG 2016-04-11 21:14:02,375 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.CreateNodeDto
+DEBUG 2016-04-11 21:14:02,377 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.GetNodeListDto
+DEBUG 2016-04-11 21:14:02,378 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.UpdateNodeDto
+DEBUG 2016-04-11 21:14:02,379 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2016-04-11 21:14:02,383 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.GetTenantListDto
+DEBUG 2016-04-11 21:14:02,384 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.UpdateTenantDto
+DEBUG 2016-04-11 21:14:02,386 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.GetDeviceTypeListDto
+DEBUG 2016-04-11 21:14:02,388 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.UpdateDeviceTypeDto
+DEBUG 2016-04-11 21:14:02,392 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.CreateDeviceDto
+DEBUG 2016-04-11 21:14:02,407 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.GetDeviceListDto
+DEBUG 2016-04-11 21:14:02,408 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.UpdateDeviceDto
+DEBUG 2016-04-11 21:14:02,449 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.AuditLogs.Dto.GetAuditLogListDto
+DEBUG 2016-04-11 21:16:44,535 [81   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-11 21:16:44,536 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-11 21:16:44,537 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-11 21:16:44,537 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-11 21:16:44,537 [3db80] Hangfire.Server.Worker                   - Background process 'Worker #4d73db80' stopped.
+DEBUG 2016-04-11 21:16:44,538 [e4c87] Hangfire.Server.Worker                   - Background process 'Worker #7aee4c87' stopped.
+DEBUG 2016-04-11 21:16:44,538 [cf110] Hangfire.Server.Worker                   - Background process 'Worker #eaecf110' stopped.
+DEBUG 2016-04-11 21:16:44,538 [52b2c] Hangfire.Server.Worker                   - Background process 'Worker #79e52b2c' stopped.
+DEBUG 2016-04-11 21:16:44,539 [0f7ba] Hangfire.Server.Worker                   - Background process 'Worker #9890f7ba' stopped.
+DEBUG 2016-04-11 21:16:44,539 [791f2] Hangfire.Server.Worker                   - Background process 'Worker #75f791f2' stopped.
+DEBUG 2016-04-11 21:16:44,539 [55131] Hangfire.Server.Worker                   - Background process 'Worker #01b55131' stopped.
+DEBUG 2016-04-11 21:16:44,539 [8f9ca] Hangfire.Server.Worker                   - Background process 'Worker #e318f9ca' stopped.
+DEBUG 2016-04-11 21:16:44,539 [d8006] Hangfire.Server.Worker                   - Background process 'Worker #976d8006' stopped.
+DEBUG 2016-04-11 21:16:44,540 [15435] Hangfire.Server.Worker                   - Background process 'Worker #02115435' stopped.
+DEBUG 2016-04-11 21:16:44,540 [1916a] Hangfire.Server.Worker                   - Background process 'Worker #28e1916a' stopped.
+DEBUG 2016-04-11 21:16:44,540 [ba5d5] Hangfire.Server.Worker                   - Background process 'Worker #abfba5d5' stopped.
+DEBUG 2016-04-11 21:16:44,540 [1fe27] Hangfire.Server.Worker                   - Background process 'Worker #c691fe27' stopped.
+DEBUG 2016-04-11 21:16:44,540 [cb29a] Hangfire.Server.Worker                   - Background process 'Worker #9d8cb29a' stopped.
+DEBUG 2016-04-11 21:16:44,540 [4984d] Hangfire.Server.Worker                   - Background process 'Worker #a6a4984d' stopped.
+DEBUG 2016-04-11 21:16:44,540 [9bddf] Hangfire.Server.Worker                   - Background process 'Worker #e0d9bddf' stopped.
+DEBUG 2016-04-11 21:16:44,540 [ff680] Hangfire.Server.Worker                   - Background process 'Worker #9a7ff680' stopped.
+DEBUG 2016-04-11 21:16:44,541 [b1472] Hangfire.Server.Worker                   - Background process 'Worker #025b1472' stopped.
+DEBUG 2016-04-11 21:16:44,541 [27aab] Hangfire.Server.Worker                   - Background process 'Worker #41327aab' stopped.
+DEBUG 2016-04-11 21:16:44,541 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-11 21:16:44,541 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-11 21:16:44,541 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-11 21:16:44,542 [50ae0] Hangfire.Server.Worker                   - Background process 'Worker #b0950ae0' stopped.
+DEBUG 2016-04-11 21:16:44,543 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-11 21:16:44,543 [81   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-11 21:16:44,543 [81   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-11 21:16:53,511 [48   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-11 21:16:57,902 [48   ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-11 21:16:57,906 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,908 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,909 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,909 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,909 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,909 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,909 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,909 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,909 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,909 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,910 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,910 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,910 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,910 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,910 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,910 [48   ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:16:57,915 [48   ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-11 21:16:57,967 [48   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:16:57,967 [48   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:16:57,967 [48   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:16:57,967 [48   ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:16:58,963 [48   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-11 21:16:58,969 [48   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-11 21:16:58,970 [48   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-11 21:16:58,971 [48   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-11 21:16:58,972 [48   ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-11 21:16:58,980 [48   ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-11 21:16:59,022 [48   ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-11 21:16:59,022 [48   ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-11 21:16:59,023 [48   ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-11 21:16:59,023 [48   ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-11 21:16:59,023 [48   ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-11 21:16:59,023 [48   ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-11 21:16:59,023 [48   ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-11 21:16:59,061 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-11 21:16:59,256 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-11 21:16:59,265 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-11 21:16:59,319 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-11 21:16:59,332 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-11 21:16:59,340 [68c3f] Hangfire.Server.Worker                   - Background process 'Worker #40268c3f' started.
+DEBUG 2016-04-11 21:16:59,347 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 17 classes defines auto mapping attributes
+DEBUG 2016-04-11 21:16:59,347 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-11 21:16:59,347 [2804d] Hangfire.Server.Worker                   - Background process 'Worker #6412804d' started.
+DEBUG 2016-04-11 21:16:59,350 [a20cc] Hangfire.Server.Worker                   - Background process 'Worker #7f7a20cc' started.
+DEBUG 2016-04-11 21:16:59,357 [8ac76] Hangfire.Server.Worker                   - Background process 'Worker #30f8ac76' started.
+DEBUG 2016-04-11 21:16:59,363 [ac39f] Hangfire.Server.Worker                   - Background process 'Worker #b10ac39f' started.
+DEBUG 2016-04-11 21:16:59,366 [d39ed] Hangfire.Server.Worker                   - Background process 'Worker #210d39ed' started.
+DEBUG 2016-04-11 21:16:59,370 [44901] Hangfire.Server.Worker                   - Background process 'Worker #9af44901' started.
+DEBUG 2016-04-11 21:16:59,374 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-11 21:16:59,374 [d51bf] Hangfire.Server.Worker                   - Background process 'Worker #8d3d51bf' started.
+DEBUG 2016-04-11 21:16:59,377 [3691c] Hangfire.Server.Worker                   - Background process 'Worker #b503691c' started.
+DEBUG 2016-04-11 21:16:59,382 [8342e] Hangfire.Server.Worker                   - Background process 'Worker #5558342e' started.
+DEBUG 2016-04-11 21:16:59,386 [28ff9] Hangfire.Server.Worker                   - Background process 'Worker #83a28ff9' started.
+DEBUG 2016-04-11 21:16:59,391 [492b6] Hangfire.Server.Worker                   - Background process 'Worker #b92492b6' started.
+DEBUG 2016-04-11 21:16:59,396 [dce54] Hangfire.Server.Worker                   - Background process 'Worker #0b2dce54' started.
+DEBUG 2016-04-11 21:16:59,400 [242e6] Hangfire.Server.Worker                   - Background process 'Worker #0ab242e6' started.
+DEBUG 2016-04-11 21:16:59,404 [acaca] Hangfire.Server.Worker                   - Background process 'Worker #848acaca' started.
+DEBUG 2016-04-11 21:16:59,408 [40053] Hangfire.Server.Worker                   - Background process 'Worker #12440053' started.
+DEBUG 2016-04-11 21:16:59,411 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2016-04-11 21:16:59,412 [d971f] Hangfire.Server.Worker                   - Background process 'Worker #e25d971f' started.
+DEBUG 2016-04-11 21:16:59,417 [fdd5a] Hangfire.Server.Worker                   - Background process 'Worker #7e1fdd5a' started.
+DEBUG 2016-04-11 21:16:59,421 [3251e] Hangfire.Server.Worker                   - Background process 'Worker #6c13251e' started.
+DEBUG 2016-04-11 21:16:59,425 [8e057] Hangfire.Server.Worker                   - Background process 'Worker #7fe8e057' started.
+DEBUG 2016-04-11 21:16:59,430 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-11 21:16:59,435 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-11 21:16:59,436 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.GetRoleListDto
+DEBUG 2016-04-11 21:16:59,437 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.UpdateRoleDto
+DEBUG 2016-04-11 21:16:59,439 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.CreateNodeDto
+DEBUG 2016-04-11 21:16:59,440 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.GetNodeListDto
+DEBUG 2016-04-11 21:16:59,441 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.UpdateNodeDto
+DEBUG 2016-04-11 21:16:59,442 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2016-04-11 21:16:59,446 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.GetTenantListDto
+DEBUG 2016-04-11 21:16:59,447 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.UpdateTenantDto
+DEBUG 2016-04-11 21:16:59,449 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.GetDeviceTypeListDto
+DEBUG 2016-04-11 21:16:59,452 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.UpdateDeviceTypeDto
+DEBUG 2016-04-11 21:16:59,457 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.CreateDeviceDto
+DEBUG 2016-04-11 21:16:59,481 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.GetDeviceListDto
+DEBUG 2016-04-11 21:16:59,483 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.UpdateDeviceDto
+DEBUG 2016-04-11 21:16:59,498 [48   ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.AuditLogs.Dto.GetAuditLogListDto
+ERROR 2016-04-11 21:17:32,714 [49   ] H.Spartan.Web.Controllers.HomeController - UserId not found.
+System.InvalidOperationException: UserId not found.
+   在 Microsoft.AspNet.Identity.UserManager`2.<GetRolesAsync>d__ac.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<>c__DisplayClass81_0.<<GetUserPermissionCacheItemAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 808
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<>c__DisplayClass5_0`2.<<GetAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 40
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheBase.<GetAsync>d__12.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheBase.cs:行号 67
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<GetAsync>d__5`2.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 38
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<GetUserPermissionCacheItemAsync>d__81.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 804
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__45.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 179
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__43.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 140
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__11.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\PermissionChecker.cs:行号 46
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<FillUserMenuItems>d__14.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Application\Navigation\UserNavigationManager.cs:行号 75
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenuAsync>d__12.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Application\Navigation\UserNavigationManager.cs:行号 44
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass7`1.<Run>b__5(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.Threading.AsyncHelper.RunSync[TResult](Func`1 func) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\AsyncHelper.cs:行号 33
+   在 CH.Spartan.Web.Controllers.HomeController.Index() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\HomeController.cs:行号 34
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.ActionInvocation.InvokeSynchronousActionMethod()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2016-04-11 21:17:37,627 [45   ] Web.Mvc.Controllers.AbpScriptsController - UserId not found.
+System.InvalidOperationException: UserId not found.
+   在 Microsoft.AspNet.Identity.UserManager`2.<GetRolesAsync>d__ac.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<>c__DisplayClass81_0.<<GetUserPermissionCacheItemAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 808
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<>c__DisplayClass5_0`2.<<GetAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 40
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheBase.<GetAsync>d__12.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheBase.cs:行号 67
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<GetAsync>d__5`2.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 38
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<GetUserPermissionCacheItemAsync>d__81.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 804
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__45.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 179
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__43.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 140
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__11.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\PermissionChecker.cs:行号 46
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Authorization.AuthorizationScriptManager.<GetScriptAsync>d__10.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Web\Web\Authorization\AuthorizationScriptManager.cs:行号 42
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Mvc.Controllers.AbpScriptsController.<GetScripts>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Web.Mvc\Web\Mvc\Controllers\AbpScriptsController.cs:行号 78
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2016-04-11 21:17:38,878 [84   ] Web.Mvc.Controllers.AbpScriptsController - UserId not found.
+System.InvalidOperationException: UserId not found.
+   在 Microsoft.AspNet.Identity.UserManager`2.<GetRolesAsync>d__ac.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<>c__DisplayClass81_0.<<GetUserPermissionCacheItemAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 808
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<>c__DisplayClass5_0`2.<<GetAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 40
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheBase.<GetAsync>d__12.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheBase.cs:行号 67
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<GetAsync>d__5`2.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 38
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<GetUserPermissionCacheItemAsync>d__81.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 804
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__45.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 179
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__43.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 140
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__11.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\PermissionChecker.cs:行号 46
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Authorization.AuthorizationScriptManager.<GetScriptAsync>d__10.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Web\Web\Authorization\AuthorizationScriptManager.cs:行号 42
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Mvc.Controllers.AbpScriptsController.<GetScripts>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Web.Mvc\Web\Mvc\Controllers\AbpScriptsController.cs:行号 78
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2016-04-11 21:17:54,596 [41   ] H.Spartan.Web.Controllers.HomeController - UserId not found.
+System.InvalidOperationException: UserId not found.
+   在 Microsoft.AspNet.Identity.UserManager`2.<GetRolesAsync>d__ac.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<>c__DisplayClass81_0.<<GetUserPermissionCacheItemAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 808
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<>c__DisplayClass5_0`2.<<GetAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 40
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheBase.<GetAsync>d__12.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheBase.cs:行号 67
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<GetAsync>d__5`2.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 38
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<GetUserPermissionCacheItemAsync>d__81.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 804
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__45.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 179
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__43.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 140
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__11.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\PermissionChecker.cs:行号 46
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<FillUserMenuItems>d__14.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Application\Navigation\UserNavigationManager.cs:行号 75
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenuAsync>d__12.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Application\Navigation\UserNavigationManager.cs:行号 44
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass7`1.<Run>b__5(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.Threading.AsyncHelper.RunSync[TResult](Func`1 func) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\AsyncHelper.cs:行号 33
+   在 CH.Spartan.Web.Controllers.HomeController.Index() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\HomeController.cs:行号 34
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.ActionInvocation.InvokeSynchronousActionMethod()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2016-04-11 21:17:54,966 [51   ] Web.Mvc.Controllers.AbpScriptsController - UserId not found.
+System.InvalidOperationException: UserId not found.
+   在 Microsoft.AspNet.Identity.UserManager`2.<GetRolesAsync>d__ac.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<>c__DisplayClass81_0.<<GetUserPermissionCacheItemAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 808
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<>c__DisplayClass5_0`2.<<GetAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 40
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheBase.<GetAsync>d__12.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheBase.cs:行号 67
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<GetAsync>d__5`2.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 38
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<GetUserPermissionCacheItemAsync>d__81.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 804
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__45.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 179
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__43.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 140
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__11.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\PermissionChecker.cs:行号 46
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Authorization.AuthorizationScriptManager.<GetScriptAsync>d__10.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Web\Web\Authorization\AuthorizationScriptManager.cs:行号 42
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Mvc.Controllers.AbpScriptsController.<GetScripts>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Web.Mvc\Web\Mvc\Controllers\AbpScriptsController.cs:行号 78
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2016-04-11 21:17:55,993 [72   ] Web.Mvc.Controllers.AbpScriptsController - UserId not found.
+System.InvalidOperationException: UserId not found.
+   在 Microsoft.AspNet.Identity.UserManager`2.<GetRolesAsync>d__ac.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<>c__DisplayClass81_0.<<GetUserPermissionCacheItemAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 808
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<>c__DisplayClass5_0`2.<<GetAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 40
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheBase.<GetAsync>d__12.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheBase.cs:行号 67
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<GetAsync>d__5`2.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 38
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<GetUserPermissionCacheItemAsync>d__81.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 804
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__45.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 179
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__43.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 140
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__11.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\PermissionChecker.cs:行号 46
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Authorization.AuthorizationScriptManager.<GetScriptAsync>d__10.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Web\Web\Authorization\AuthorizationScriptManager.cs:行号 42
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Mvc.Controllers.AbpScriptsController.<GetScripts>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Web.Mvc\Web\Mvc\Controllers\AbpScriptsController.cs:行号 78
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-04-11 21:18:21,527 [76   ] bp.Hangfire.HangfireBackgroundJobManager - Stop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-11 21:18:21,528 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' stopped.
+DEBUG 2016-04-11 21:18:21,528 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' stopped.
+DEBUG 2016-04-11 21:18:21,528 [d51bf] Hangfire.Server.Worker                   - Background process 'Worker #8d3d51bf' stopped.
+DEBUG 2016-04-11 21:18:21,528 [d971f] Hangfire.Server.Worker                   - Background process 'Worker #e25d971f' stopped.
+DEBUG 2016-04-11 21:18:21,528 [2804d] Hangfire.Server.Worker                   - Background process 'Worker #6412804d' stopped.
+DEBUG 2016-04-11 21:18:21,528 [68c3f] Hangfire.Server.Worker                   - Background process 'Worker #40268c3f' stopped.
+DEBUG 2016-04-11 21:18:21,528 [8ac76] Hangfire.Server.Worker                   - Background process 'Worker #30f8ac76' stopped.
+DEBUG 2016-04-11 21:18:21,528 [ac39f] Hangfire.Server.Worker                   - Background process 'Worker #b10ac39f' stopped.
+DEBUG 2016-04-11 21:18:21,528 [d39ed] Hangfire.Server.Worker                   - Background process 'Worker #210d39ed' stopped.
+DEBUG 2016-04-11 21:18:21,528 [44901] Hangfire.Server.Worker                   - Background process 'Worker #9af44901' stopped.
+DEBUG 2016-04-11 21:18:21,528 [8342e] Hangfire.Server.Worker                   - Background process 'Worker #5558342e' stopped.
+DEBUG 2016-04-11 21:18:21,529 [3691c] Hangfire.Server.Worker                   - Background process 'Worker #b503691c' stopped.
+DEBUG 2016-04-11 21:18:21,529 [28ff9] Hangfire.Server.Worker                   - Background process 'Worker #83a28ff9' stopped.
+DEBUG 2016-04-11 21:18:21,529 [492b6] Hangfire.Server.Worker                   - Background process 'Worker #b92492b6' stopped.
+DEBUG 2016-04-11 21:18:21,529 [242e6] Hangfire.Server.Worker                   - Background process 'Worker #0ab242e6' stopped.
+DEBUG 2016-04-11 21:18:21,529 [dce54] Hangfire.Server.Worker                   - Background process 'Worker #0b2dce54' stopped.
+DEBUG 2016-04-11 21:18:21,529 [acaca] Hangfire.Server.Worker                   - Background process 'Worker #848acaca' stopped.
+DEBUG 2016-04-11 21:18:21,529 [40053] Hangfire.Server.Worker                   - Background process 'Worker #12440053' stopped.
+DEBUG 2016-04-11 21:18:21,529 [fdd5a] Hangfire.Server.Worker                   - Background process 'Worker #7e1fdd5a' stopped.
+DEBUG 2016-04-11 21:18:21,529 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' stopped.
+DEBUG 2016-04-11 21:18:21,529 [8e057] Hangfire.Server.Worker                   - Background process 'Worker #7fe8e057' stopped.
+DEBUG 2016-04-11 21:18:21,529 [3251e] Hangfire.Server.Worker                   - Background process 'Worker #6c13251e' stopped.
+DEBUG 2016-04-11 21:18:21,529 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' stopped.
+DEBUG 2016-04-11 21:18:21,529 [a20cc] Hangfire.Server.Worker                   - Background process 'Worker #7f7a20cc' stopped.
+DEBUG 2016-04-11 21:18:21,529 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' stopped.
+DEBUG 2016-04-11 21:18:21,529 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' stopped.
+DEBUG 2016-04-11 21:18:21,530 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' stopped.
+INFO  2016-04-11 21:18:21,531 [76   ] Hangfire.BackgroundJobServer             - Hangfire Server stopped.
+DEBUG 2016-04-11 21:18:21,531 [76   ] bp.Hangfire.HangfireBackgroundJobManager - WaitToStop background worker: Abp.Hangfire.HangfireBackgroundJobManager
+DEBUG 2016-04-11 21:18:42,821 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-11 21:18:49,624 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-11 21:18:49,628 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,630 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,631 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,631 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,632 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,632 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,632 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,632 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,632 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,632 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-11 21:18:49,638 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-11 21:18:49,681 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:18:49,681 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:18:49,682 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:18:49,682 [1    ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-11 21:18:50,659 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-11 21:18:50,682 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-11 21:18:50,684 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-11 21:18:50,686 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-11 21:18:50,687 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-11 21:18:50,695 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-11 21:18:50,737 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-11 21:18:50,737 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-11 21:18:50,737 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-11 21:18:50,737 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 20.
+INFO  2016-04-11 21:18:50,737 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-11 21:18:50,737 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-11 21:18:50,737 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-11 21:18:50,770 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-11 21:18:50,948 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-11 21:18:50,950 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-11 21:18:50,954 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-11 21:18:50,960 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-11 21:18:50,964 [beceb] Hangfire.Server.Worker                   - Background process 'Worker #c3ebeceb' started.
+DEBUG 2016-04-11 21:18:50,974 [637e0] Hangfire.Server.Worker                   - Background process 'Worker #808637e0' started.
+DEBUG 2016-04-11 21:18:50,997 [935f3] Hangfire.Server.Worker                   - Background process 'Worker #41b935f3' started.
+DEBUG 2016-04-11 21:18:50,998 [d0c4f] Hangfire.Server.Worker                   - Background process 'Worker #529d0c4f' started.
+DEBUG 2016-04-11 21:18:51,003 [07185] Hangfire.Server.Worker                   - Background process 'Worker #3db07185' started.
+DEBUG 2016-04-11 21:18:51,011 [1b990] Hangfire.Server.Worker                   - Background process 'Worker #3cf1b990' started.
+DEBUG 2016-04-11 21:18:51,014 [1fe46] Hangfire.Server.Worker                   - Background process 'Worker #7e11fe46' started.
+DEBUG 2016-04-11 21:18:51,020 [c69ed] Hangfire.Server.Worker                   - Background process 'Worker #a68c69ed' started.
+DEBUG 2016-04-11 21:18:51,024 [cfcea] Hangfire.Server.Worker                   - Background process 'Worker #dcdcfcea' started.
+DEBUG 2016-04-11 21:18:51,030 [859fd] Hangfire.Server.Worker                   - Background process 'Worker #2b2859fd' started.
+DEBUG 2016-04-11 21:18:51,031 [7bd8a] Hangfire.Server.Worker                   - Background process 'Worker #01a7bd8a' started.
+DEBUG 2016-04-11 21:18:51,035 [01d3e] Hangfire.Server.Worker                   - Background process 'Worker #22d01d3e' started.
+DEBUG 2016-04-11 21:18:51,039 [21a46] Hangfire.Server.Worker                   - Background process 'Worker #35b21a46' started.
+DEBUG 2016-04-11 21:18:51,044 [38f11] Hangfire.Server.Worker                   - Background process 'Worker #8fe38f11' started.
+DEBUG 2016-04-11 21:18:51,047 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 17 classes defines auto mapping attributes
+DEBUG 2016-04-11 21:18:51,047 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-11 21:18:51,048 [48935] Hangfire.Server.Worker                   - Background process 'Worker #45e48935' started.
+DEBUG 2016-04-11 21:18:51,052 [2bf44] Hangfire.Server.Worker                   - Background process 'Worker #7d82bf44' started.
+DEBUG 2016-04-11 21:18:51,076 [be9eb] Hangfire.Server.Worker                   - Background process 'Worker #d38be9eb' started.
+DEBUG 2016-04-11 21:18:51,081 [cf184] Hangfire.Server.Worker                   - Background process 'Worker #f3fcf184' started.
+DEBUG 2016-04-11 21:18:51,087 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-11 21:18:51,093 [6201f] Hangfire.Server.Worker                   - Background process 'Worker #6736201f' started.
+DEBUG 2016-04-11 21:18:51,098 [d7266] Hangfire.Server.Worker                   - Background process 'Worker #c3cd7266' started.
+DEBUG 2016-04-11 21:18:51,107 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-11 21:18:51,114 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2016-04-11 21:18:51,114 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-11 21:18:51,123 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.GetRoleListDto
+DEBUG 2016-04-11 21:18:51,124 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.UpdateRoleDto
+DEBUG 2016-04-11 21:18:51,126 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.CreateNodeDto
+DEBUG 2016-04-11 21:18:51,128 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.GetNodeListDto
+DEBUG 2016-04-11 21:18:51,129 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.UpdateNodeDto
+DEBUG 2016-04-11 21:18:51,131 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2016-04-11 21:18:51,135 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.GetTenantListDto
+DEBUG 2016-04-11 21:18:51,135 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.UpdateTenantDto
+DEBUG 2016-04-11 21:18:51,154 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.GetDeviceTypeListDto
+DEBUG 2016-04-11 21:18:51,156 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.UpdateDeviceTypeDto
+DEBUG 2016-04-11 21:18:51,159 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.CreateDeviceDto
+DEBUG 2016-04-11 21:18:51,175 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.GetDeviceListDto
+DEBUG 2016-04-11 21:18:51,177 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.UpdateDeviceDto
+DEBUG 2016-04-11 21:18:51,190 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.AuditLogs.Dto.GetAuditLogListDto
+ERROR 2016-04-11 21:20:00,625 [36   ] H.Spartan.Web.Controllers.HomeController - UserId not found.
+System.InvalidOperationException: UserId not found.
+   在 Microsoft.AspNet.Identity.UserManager`2.<GetRolesAsync>d__ac.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<>c__DisplayClass81_0.<<GetUserPermissionCacheItemAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 808
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<>c__DisplayClass5_0`2.<<GetAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 40
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheBase.<GetAsync>d__12.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheBase.cs:行号 67
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<GetAsync>d__5`2.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 38
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<GetUserPermissionCacheItemAsync>d__81.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 804
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__45.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 179
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__43.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 140
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__11.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\PermissionChecker.cs:行号 46
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<FillUserMenuItems>d__14.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Application\Navigation\UserNavigationManager.cs:行号 75
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Application.Navigation.UserNavigationManager.<GetMenuAsync>d__12.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Application\Navigation\UserNavigationManager.cs:行号 44
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.<>c__DisplayClass7`1.<Run>b__5(Task`1 t)
+   在 System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException[TResult](Task`1 task)
+   在 Nito.AsyncEx.AsyncContext.Run[TResult](Func`1 action)
+   在 Abp.Threading.AsyncHelper.RunSync[TResult](Func`1 func) 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\AsyncHelper.cs:行号 33
+   在 CH.Spartan.Web.Controllers.HomeController.Index() 位置 D:\Codes\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\HomeController.cs:行号 34
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.ActionInvocation.InvokeSynchronousActionMethod()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2016-04-11 21:20:03,536 [36   ] Web.Mvc.Controllers.AbpScriptsController - UserId not found.
+System.InvalidOperationException: UserId not found.
+   在 Microsoft.AspNet.Identity.UserManager`2.<GetRolesAsync>d__ac.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<>c__DisplayClass81_0.<<GetUserPermissionCacheItemAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 808
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<>c__DisplayClass5_0`2.<<GetAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 40
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheBase.<GetAsync>d__12.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheBase.cs:行号 67
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<GetAsync>d__5`2.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 38
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<GetUserPermissionCacheItemAsync>d__81.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 804
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__45.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 179
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__43.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 140
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__11.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\PermissionChecker.cs:行号 46
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Authorization.AuthorizationScriptManager.<GetScriptAsync>d__10.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Web\Web\Authorization\AuthorizationScriptManager.cs:行号 42
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Mvc.Controllers.AbpScriptsController.<GetScripts>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Web.Mvc\Web\Mvc\Controllers\AbpScriptsController.cs:行号 78
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2016-04-11 21:20:04,826 [37   ] Web.Mvc.Controllers.AbpScriptsController - UserId not found.
+System.InvalidOperationException: UserId not found.
+   在 Microsoft.AspNet.Identity.UserManager`2.<GetRolesAsync>d__ac.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<>c__DisplayClass81_0.<<GetUserPermissionCacheItemAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 808
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<>c__DisplayClass5_0`2.<<GetAsync>b__0>d.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 40
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheBase.<GetAsync>d__12.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheBase.cs:行号 67
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Runtime.Caching.CacheExtensions.<GetAsync>d__5`2.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Caching\CacheExtensions.cs:行号 38
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<GetUserPermissionCacheItemAsync>d__81.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 804
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__45.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 179
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.Users.AbpUserManager`3.<IsGrantedAsync>d__43.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\Users\AbpUserManager.cs:行号 140
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Authorization.PermissionChecker`3.<IsGrantedAsync>d__11.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\Authorization\PermissionChecker.cs:行号 46
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Authorization.AuthorizationScriptManager.<GetScriptAsync>d__10.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Web\Web\Authorization\AuthorizationScriptManager.cs:行号 42
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   在 Abp.Web.Mvc.Controllers.AbpScriptsController.<GetScripts>d__8.MoveNext() 位置 D:\Codes\MyProjects\CH.Spartan.V2\Abp\Abp.Web.Mvc\Web\Mvc\Controllers\AbpScriptsController.cs:行号 78
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   在 System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   在 System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2016-04-11 21:20:45,004 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4baf1bce-73ba-4a87-b980-2ce265875ff2","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-11T21:20:44.9976038+08:00","Properties":{}}
+DEBUG 2016-04-11 21:20:45,038 [36   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4baf1bce-73ba-4a87-b980-2ce265875ff2
+WARN  2016-04-11 21:20:49,542 [39   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-11 21:20:49,543 [39   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-11 21:20:49,552 [39   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-11 21:20:49,553 [39   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-11 21:20:49,553 [39   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-11 21:20:49,712 [39   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-11 21:20:49,714 [39   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-11 21:20:49,715 [39   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-11 21:20:51,576 [37   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-11 21:20:51,576 [37   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-11 21:20:51,577 [37   ] Abp.Logging.LogHelper                    - Can not find '电话' in localization source 'Spartan'!
+WARN  2016-04-11 21:20:51,578 [37   ] Abp.Logging.LogHelper                    - Can not find '邮件' in localization source 'Spartan'!
+WARN  2016-04-11 21:20:51,720 [37   ] Abp.Logging.LogHelper                    - Can not find '添加成功' in localization source 'Spartan'!
+WARN  2016-04-11 21:21:23,392 [37   ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+WARN  2016-04-11 21:21:23,972 [38   ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+WARN  2016-04-11 21:21:24,355 [37   ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+DEBUG 2016-04-11 21:21:24,945 [37   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ea02c836-bf7f-4855-a0c9-69604a8465fa","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-04-11T21:21:24.9458948+08:00","Properties":{}}
+DEBUG 2016-04-11 21:21:24,960 [39   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ea02c836-bf7f-4855-a0c9-69604a8465fa
+WARN  2016-04-11 21:21:25,032 [44   ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+DEBUG 2016-04-11 21:21:49,797 [51   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: 4baf1bce-73ba-4a87-b980-2ce265875ff2
+ERROR 2016-04-11 21:21:58,154 [49   ] an.Web.Controllers.AgentManageController - The view 'Device' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/AgentManage/Device.aspx
+~/Views/AgentManage/Device.ascx
+~/Views/Shared/Device.aspx
+~/Views/Shared/Device.ascx
+~/Views/AgentManage/Device.cshtml
+~/Views/AgentManage/Device.vbhtml
+~/Views/Shared/Device.cshtml
+~/Views/Shared/Device.vbhtml
+System.InvalidOperationException: The view 'Device' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/AgentManage/Device.aspx
+~/Views/AgentManage/Device.ascx
+~/Views/Shared/Device.aspx
+~/Views/Shared/Device.ascx
+~/Views/AgentManage/Device.cshtml
+~/Views/AgentManage/Device.vbhtml
+~/Views/Shared/Device.cshtml
+~/Views/Shared/Device.vbhtml
+   在 System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-04-11 21:21:58,358 [48   ] Abp.Logging.LogHelper                    - Can not find '代理管理' in localization source 'Spartan'!
+DEBUG 2016-04-11 21:24:32,691 [36   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"fb53c213-c9f5-48d1-b93a-83b6f991d20b","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-11T21:24:32.6914311+08:00","Properties":{}}
+DEBUG 2016-04-11 21:24:32,712 [38   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: fb53c213-c9f5-48d1-b93a-83b6f991d20b
+WARN  2016-04-11 21:24:35,383 [53   ] Abp.Logging.LogHelper                    - Can not find '请输入租户名或者昵称' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:35,383 [53   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:35,385 [53   ] Abp.Logging.LogHelper                    - Can not find '租户名' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:35,385 [53   ] Abp.Logging.LogHelper                    - Can not find '公司名' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:35,386 [53   ] Abp.Logging.LogHelper                    - Can not find '允许登录' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:35,387 [53   ] Abp.Logging.LogHelper                    - Can not find '添加租户' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:35,388 [53   ] Abp.Logging.LogHelper                    - Can not find '修改租户' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:35,389 [53   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:36,458 [38   ] Abp.Logging.LogHelper                    - Can not find '请输入关键字' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:36,461 [38   ] Abp.Logging.LogHelper                    - Can not find '最后编辑时间' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:36,463 [38   ] Abp.Logging.LogHelper                    - Can not find '修改设备类型' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:37,674 [50   ] Abp.Logging.LogHelper                    - Can not find '请输入关键字' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:37,677 [50   ] Abp.Logging.LogHelper                    - Can not find '最后编辑时间' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:37,678 [50   ] Abp.Logging.LogHelper                    - Can not find '创建时间' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:37,682 [50   ] Abp.Logging.LogHelper                    - Can not find '添加节点' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:37,683 [50   ] Abp.Logging.LogHelper                    - Can not find '修改节点' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:38,956 [50   ] Abp.Logging.LogHelper                    - Can not find '请输入关键字' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:38,956 [50   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:38,964 [50   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:38,965 [50   ] Abp.Logging.LogHelper                    - Can not find '删除成功' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:38,966 [50   ] Abp.Logging.LogHelper                    - Can not find '请选择要删除的数据' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:44,141 [53   ] Abp.Logging.LogHelper                    - Can not find '请输入关键字' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:44,141 [53   ] Abp.Logging.LogHelper                    - Can not find '查询' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:44,143 [53   ] Abp.Logging.LogHelper                    - Can not find '设备名字' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:44,143 [53   ] Abp.Logging.LogHelper                    - Can not find '车牌号' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:44,144 [53   ] Abp.Logging.LogHelper                    - Can not find '设备号' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:44,144 [53   ] Abp.Logging.LogHelper                    - Can not find 'Sim号' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:44,145 [53   ] Abp.Logging.LogHelper                    - Can not find '过期时间' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:44,146 [53   ] Abp.Logging.LogHelper                    - Can not find '最后编辑时间' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:44,146 [53   ] Abp.Logging.LogHelper                    - Can not find '创建时间' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:44,149 [53   ] Abp.Logging.LogHelper                    - Can not find '添加设备' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:44,150 [53   ] Abp.Logging.LogHelper                    - Can not find '修改设备' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:44,151 [53   ] Abp.Logging.LogHelper                    - Can not find '确定删除' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:44,152 [53   ] Abp.Logging.LogHelper                    - Can not find '删除成功' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:44,153 [53   ] Abp.Logging.LogHelper                    - Can not find '请选择要删除的数据' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:47,644 [50   ] Abp.Logging.LogHelper                    - Can not find '设备名字' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:47,645 [50   ] Abp.Logging.LogHelper                    - Can not find '车牌号' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:47,646 [50   ] Abp.Logging.LogHelper                    - Can not find '设备图标类型' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:47,647 [50   ] Abp.Logging.LogHelper                    - Can not find '设备类型Id' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:47,648 [50   ] Abp.Logging.LogHelper                    - Can not find '设备号' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:47,649 [50   ] Abp.Logging.LogHelper                    - Can not find '设备唯一编码不同的设备编码生成规则不一样' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:47,650 [50   ] Abp.Logging.LogHelper                    - Can not find 'Sim号' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:47,651 [50   ] Abp.Logging.LogHelper                    - Can not find '过期时间' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:47,652 [50   ] Abp.Logging.LogHelper                    - Can not find '所属节点Id' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:47,653 [50   ] Abp.Logging.LogHelper                    - Can not find '报警设置超限速' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:47,654 [50   ] Abp.Logging.LogHelper                    - Can not find '报警设置进出区域' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:47,658 [50   ] Abp.Logging.LogHelper                    - Can not find '所属租户Id' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:47,659 [50   ] Abp.Logging.LogHelper                    - Can not find '所属用户Id' in localization source 'Spartan'!
+WARN  2016-04-11 21:24:47,660 [50   ] Abp.Logging.LogHelper                    - Can not find '添加成功' in localization source 'Spartan'!
+DEBUG 2016-04-11 21:24:55,007 [59   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ea02c836-bf7f-4855-a0c9-69604a8465fa

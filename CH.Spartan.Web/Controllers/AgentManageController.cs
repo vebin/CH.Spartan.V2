@@ -12,14 +12,13 @@ using CH.Spartan.Devices.Dto;
 namespace CH.Spartan.Web.Controllers
 {
     /// <summary>
-    /// 平台管理
+    /// 代理商管理
     /// </summary>
-    [AbpMvcAuthorize]
-    public class PlatformManageController : SpartanControllerBase
+    public class AgentManageController : SpartanControllerBase
     {
         private readonly IDeviceAppService _deviceAppService;
 
-        public PlatformManageController(IDeviceAppService deviceAppService)
+        public AgentManageController(IDeviceAppService deviceAppService)
         {
             _deviceAppService = deviceAppService;
         }
@@ -27,7 +26,7 @@ namespace CH.Spartan.Web.Controllers
         #region 设备
 
         #region 首页
-        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_Device)]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_Device)]
         public ActionResult Device()
         {
             return View();
@@ -37,7 +36,7 @@ namespace CH.Spartan.Web.Controllers
         #region 搜索
 
         [HttpGet]
-        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_Device)]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_Device)]
         public async Task<JsonResult> SearchDevice(GetDeviceListPagedInput input)
         {
             var result = await _deviceAppService.GetDeviceListPagedAsync(input);
@@ -47,7 +46,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 添加
         [HttpGet]
-        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_Device_Create)]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_Device_Create)]
         public ActionResult CreateDevice()
         {
             var result = _deviceAppService.GetNewDevice();
@@ -55,7 +54,7 @@ namespace CH.Spartan.Web.Controllers
         }
 
         [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_Device_Create)]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_Device_Create)]
         public async Task<JsonResult> CreateDevice(CreateDeviceInput input)
         {
             await _deviceAppService.CreateDeviceAsync(input);
@@ -65,7 +64,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 更新
         [HttpGet]
-        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_Device_Update)]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_Device_Update)]
         public async Task<ActionResult> UpdateDevice(IdInput input)
         {
             var result = await _deviceAppService.GetUpdateDeviceAsync(input);
@@ -73,7 +72,7 @@ namespace CH.Spartan.Web.Controllers
         }
 
         [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_Device_Update)]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_Device_Update)]
         public async Task<JsonResult> UpdateDevice(UpdateDeviceInput input)
         {
             await _deviceAppService.UpdateDeviceAsync(input);
@@ -83,7 +82,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 删除
         [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_Device_Delete)]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_Device_Delete)]
         public async Task<JsonResult> DeleteDevice(List<IdInput> input)
         {
             await _deviceAppService.DeleteDeviceAsync(input);

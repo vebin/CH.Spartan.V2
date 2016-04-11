@@ -23,12 +23,6 @@ namespace CH.Spartan.DeviceTypes
         /// <returns></returns>
         Task<PagedResultOutput<GetDeviceTypeListDto>> GetDeviceTypeListPagedAsync(GetDeviceTypeListPagedInput input);
 
-        /// <summary>
-        /// 添加 设备类型
-        /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
-        Task CreateDeviceTypeAsync(CreateDeviceTypeInput input);
 
         /// <summary>
         /// 更新 设备类型
@@ -38,23 +32,10 @@ namespace CH.Spartan.DeviceTypes
         Task UpdateDeviceTypeAsync(UpdateDeviceTypeInput input);
 
         /// <summary>
-        /// 获取 新设备类型
-        /// </summary>
-        /// <returns></returns>
-        CreateDeviceTypeOutput GetNewDeviceType();
-
-        /// <summary>
         /// 获取 更新设备类型
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
         Task<UpdateDeviceTypeOutput> GetUpdateDeviceTypeAsync(IdInput input);
-
-        /// <summary>
-        /// 删除 设备类型
-        /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
-        Task DeleteDeviceTypeAsync(List<IdInput> input);
     }
 }

@@ -112,11 +112,10 @@
         {
             type: 2,
             title: title,
-            shadeClose: true,
-            shade: false,
+            shade: 0.1,
             maxmin: true,
             area: ["80%", "80%"],
-            content: [url,"yes"]
+            content: url
         };
         var args = $.extend({}, opts, options);
         dialog.open(args);

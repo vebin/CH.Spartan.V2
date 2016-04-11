@@ -57,9 +57,7 @@
         public const string SystemManages_Tenant_Deposit = "SystemManages.Tenant.Deposit";
 
         public const string SystemManages_DeviceType = "SystemManages.DeviceType";
-        public const string SystemManages_DeviceType_Create = "SystemManages.DeviceType.Create";
         public const string SystemManages_DeviceType_Update = "SystemManages.DeviceType.Update";
-        public const string SystemManages_DeviceType_Delete = "SystemManages.DeviceType.Delete";
 
         public const string SystemManages_Node = "SystemManages.Node";
         public const string SystemManages_Node_Create = "SystemManages.Node.Create";

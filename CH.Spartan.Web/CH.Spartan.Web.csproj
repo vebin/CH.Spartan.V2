@@ -620,7 +620,6 @@
     <Content Include="Content\js\plugins\table\extensions\toolbar\README.md" />
     <Content Include="Content\js\plugins\table\locale\bootstrap-table-en-US.js.template" />
     <Content Include="Content\js\plugins\table\locale\README.md" />
-    <Content Include="Views\SystemManage\CreateDeviceType.cshtml" />
     <Content Include="Views\SystemManage\CreateNode.cshtml" />
     <Content Include="Views\PlatformManage\CreateDevice.cshtml" />
     <Content Include="Views\PlatformManage\Device.cshtml" />

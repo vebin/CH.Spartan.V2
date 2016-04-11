@@ -338,7 +338,8 @@
         paginationPreText: '&lsaquo;',
         paginationNextText: '&rsaquo;',
         search: false,
-        searchOnEnterKey: false,
+        searchPlaceholder: undefined,
+        searchOnEnterKey: true,
         strictSearch: false,
         searchAlign: 'right',
         selectItemName: 'btSelectItem',
@@ -1162,10 +1163,10 @@
             html = [];
             html.push(
                 '<div class="pull-' + this.options.searchAlign + ' search">',
-                sprintf('<input class="form-control' +
+                sprintf('<input class="form-control w300' +
                     sprintf(' input-%s', this.options.iconSize) +
                     '" type="text" placeholder="%s">',
-                    this.options.formatSearch()),
+                   this.options.searchPlaceholder ? this.options.searchPlaceholder : this.options.formatSearch()),
                 '</div>');
 
             this.$toolbar.append(html.join(''));

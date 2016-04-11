@@ -1298,7 +1298,8 @@ $.extend( $.validator, {
 
 	// http://jqueryvalidation.org/jQuery.validator.addMethod/
 	addMethod: function( name, method, message ) {
-		$.validator.methods[ name ] = method;
+	    debugger;
+	    $.validator.methods[name] = method;
 		$.validator.messages[ name ] = message !== undefined ? message : $.validator.messages[ name ];
 		if ( method.length < 3 ) {
 			$.validator.addClassRules( name, $.validator.normalizeRule( name ) );

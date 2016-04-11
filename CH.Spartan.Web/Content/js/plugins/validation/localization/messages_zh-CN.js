@@ -29,7 +29,17 @@ $.extend( $.validator.messages, {
 	rangelength: $.validator.format( "请输入长度在 {0} 到 {1} 之间的字符串" ),
 	range: $.validator.format( "请输入范围在 {0} 到 {1} 之间的数值" ),
 	max: $.validator.format( "请输入不大于 {0} 的数值" ),
-	min: $.validator.format( "请输入不小于 {0} 的数值" )
+	min: $.validator.format("请输入不小于 {0} 的数值"),
+	mobile: "手机号码格式错误",
+	phone: "电话号码格式错误",
+	zipCode: "邮政编码格式错误",
+	qq: "qq号码格式错误",
+	ip: "ip地址格式错误",
+	chrnum: "只能输入数字和字母(字符A-Z, a-z, 0-9)",
+	chinese: "只能输入中文",
+	selectNone: "必须选择一项",
+	money: "请输入有效的金额",
+	byteRangeLength: $.validator.format("请确保输入的值在{0}-{1}个字节之间(一个中文字算2个字节)")
 } );
 
 }));

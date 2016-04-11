@@ -129,24 +129,6 @@ namespace CH.Spartan.Web.Controllers
         }
         #endregion
 
-        #region 添加
-        [HttpGet]
-        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_DeviceType_Create)]
-        public ActionResult CreateDeviceType()
-        {
-            var result = _deviceTypeAppService.GetNewDeviceType();
-            return View(result);
-        }
-
-        [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_DeviceType_Create)]
-        public async Task<JsonResult> CreateDeviceType(CreateDeviceTypeInput input)
-        {
-            await _deviceTypeAppService.CreateDeviceTypeAsync(input);
-            return Json(true, JsonRequestBehavior.AllowGet);
-        }
-        #endregion
-
         #region 更新
         [HttpGet]
         [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_DeviceType_Update)]
@@ -164,17 +146,6 @@ namespace CH.Spartan.Web.Controllers
             return Json(true, JsonRequestBehavior.AllowGet);
         }
         #endregion
-
-        #region 删除
-        [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_DeviceType_Delete)]
-        public async Task<JsonResult> DeleteDeviceType(List<IdInput> input)
-        {
-            await _deviceTypeAppService.DeleteDeviceTypeAsync(input);
-            return Json(true, JsonRequestBehavior.AllowGet);
-        }
-        #endregion
-
 
         #endregion
 

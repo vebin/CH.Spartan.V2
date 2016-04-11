@@ -35,20 +35,19 @@ namespace CH.Spartan.DeviceTypes
         
         public async Task<PagedResultOutput<GetDeviceTypeListDto>> GetDeviceTypeListPagedAsync(GetDeviceTypeListPagedInput input)
         {
-            var query = _deviceTypeRepository.GetAll();
-                //.WhereIf(!input.SearchText.IsNullOrEmpty(), p => p.TenancyName.Contains(input.SearchText) || p.Name.Contains(input.SearchText));
+            var query = _deviceTypeRepository.GetAll()
+                .WhereIf(!input.SearchText.IsNullOrEmpty(),
+                    p => p.Name.Contains(input.SearchText) ||
+                         p.SwitchInGateway.Contains(input.SearchText) ||
+                         p.Supplier.Contains(input.SearchText) ||
+                         p.Manufacturer.Contains(input.SearchText)
+                );
 
             var count = await query.CountAsync();
 
             var list = await query.OrderBy(input).PageBy(input).ToListAsync();
 
             return new PagedResultOutput<GetDeviceTypeListDto>(count, list.MapTo<List<GetDeviceTypeListDto>>());
-        }
-    
-        public async Task CreateDeviceTypeAsync(CreateDeviceTypeInput input)
-        {
-            var deviceType = input.DeviceType.MapTo<DeviceType>();
-            await _deviceTypeRepository.InsertAsync(deviceType);
         }
         
         public async Task UpdateDeviceTypeAsync(UpdateDeviceTypeInput input)
@@ -57,21 +56,11 @@ namespace CH.Spartan.DeviceTypes
             input.DeviceType.MapTo(deviceType);
             await _deviceTypeRepository.UpdateAsync(deviceType);
         }
-    
-        public CreateDeviceTypeOutput GetNewDeviceType()
-        {
-            return new CreateDeviceTypeOutput(new CreateDeviceTypeDto());
-        }
 
         public async Task<UpdateDeviceTypeOutput> GetUpdateDeviceTypeAsync(IdInput input)
         {
             var result = await _deviceTypeRepository.GetAsync(input.Id);
             return new UpdateDeviceTypeOutput(result.MapTo<UpdateDeviceTypeDto>());
-        }
-
-        public async Task DeleteDeviceTypeAsync(List<IdInput> input)
-        {
-            await _deviceTypeManager.DeleteByIdsAsync(input.Select(p => p.Id));
         }
         
     }

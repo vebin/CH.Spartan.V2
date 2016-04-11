@@ -104,7 +104,6 @@
     <Compile Include="Devices\Dto\UpdateDeviceDto.cs" />
     <Compile Include="Devices\IDeviceAppService.cs" />
     <Compile Include="DeviceTypes\DeviceTypeAppService.cs" />
-    <Compile Include="DeviceTypes\Dto\CreateDeviceTypeDto.cs" />
     <Compile Include="DeviceTypes\Dto\GetDeviceTypeListDto.cs" />
     <Compile Include="DeviceTypes\Dto\UpdateDeviceTypeDto.cs" />
     <Compile Include="DeviceTypes\IDeviceTypeAppService.cs" />

@@ -50,10 +50,8 @@
     
     <text name="编号" value="编号" />
 
-
-
-
-    <text name="设备类型名字" value="设备类型名字" />
+    <text name="名称" value="名称" />
+   
     <text name="接入网关" value="接入网关" />
     <text name="供应商" value="供应商" />
     <text name="制造商" value="制造商" />

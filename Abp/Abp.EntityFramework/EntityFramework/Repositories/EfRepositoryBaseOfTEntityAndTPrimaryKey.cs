@@ -9,11 +9,9 @@ using Abp.Domain.Repositories;
 
 namespace Abp.EntityFramework.Repositories
 {
-    public interface IDataBase<TEntity> where TEntity : class
+    public interface ISqlCommand
     {
         Database Database { get; }
-
-        DbSet<TEntity> Table { get; }
     }
 
     /// <summary>
@@ -22,7 +20,7 @@ namespace Abp.EntityFramework.Repositories
     /// <typeparam name="TDbContext">DbContext which contains <see cref="TEntity"/>.</typeparam>
     /// <typeparam name="TEntity">Type of the Entity for this repository</typeparam>
     /// <typeparam name="TPrimaryKey">Primary key of the entity</typeparam>
-    public class EfRepositoryBase<TDbContext, TEntity, TPrimaryKey> : AbpRepositoryBase<TEntity, TPrimaryKey>, IDataBase<TEntity>
+    public class EfRepositoryBase<TDbContext, TEntity, TPrimaryKey> : AbpRepositoryBase<TEntity, TPrimaryKey>, ISqlCommand
         where TEntity : class, IEntity<TPrimaryKey>
         where TDbContext : DbContext
     {

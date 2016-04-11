@@ -10,7 +10,6 @@ using Abp.Domain.Entities;
 using Abp.Domain.Repositories;
 using Abp.Domain.Services;
 using Abp.Domain.Uow;
-using Abp.EntityFramework.Repositories;
 using Abp.Localization;
 using Abp.Runtime.Caching;
 using Abp.Runtime.Session;
@@ -60,16 +59,6 @@ namespace CH.Spartan.Domain
         /// 存储
         /// </summary>
         public IRepository<T> Repository { get; set; }
-
-        /// <summary>
-        /// 数据库
-        /// </summary>
-        protected virtual Database Database => (Repository as IDataBase<T>)?.Database;
-
-        /// <summary>
-        /// 表
-        /// </summary>
-        protected virtual DbSet<T> Table => (Repository as IDataBase<T>)?.Table;
 
         /// <summary>
         /// 查询

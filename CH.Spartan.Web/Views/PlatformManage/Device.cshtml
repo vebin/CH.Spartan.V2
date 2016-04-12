@@ -113,7 +113,14 @@
                 }
             });
 
-
+            $("#UserId").select2({
+                allowClear: true,
+                placeholder: "请选择车辆"
+            }).on("select2:select", function (e) {
+                $("#UserId").val(e.params.data.id);
+            }).on("select2:unselect", function (e) {
+                $("#UserId").val("");
+            });
 
         })(jQuery);
     </script>
@@ -125,8 +132,26 @@
                 <div class="ibox-content list-toolbar">
                     <form role="form" class="form-inline" id="form">
                         <div class="form-group">
+                            <select class="form-control" name="SearchTime">
+                                <option value="CreateTime">@L("安装时间")</option>
+                                <option value="ExpireTime">@L("过期时间")</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control"
+                                   id="StartTime" name="StartTime" placeholder="@L("开始时间")" onfocus="WdatePicker({ dateFmt: 'yyyy/MM/dd HH:mm:ss', maxDate: '#F{$dp.$D(\'EndTime\')}' })"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control"
+                                   id="EndTime" name="EndTime" placeholder="@L("结束时间")" onfocus="WdatePicker({ dateFmt: 'yyyy/MM/dd HH:mm:ss', minDate: '#F{$dp.$D(\'StartTime\')}' })"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" name="UserId" class="UserId" />
+                            <select class="form-control w150" id="UserName"></select>
+                        </div>
+                        <div class="form-group">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="@L("请输入关键字")" name="SearchText">
+                                <input type="text" class="form-control w300" placeholder="@L("设备名字/车牌号/设备号/Sim卡号")" name="SearchText">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="button" id="btn-search">@L("查询")</button>
                                 </span>
@@ -161,8 +186,7 @@
                                 <th data-field="bNo" data-sortable="true">@L("设备号")</th>
                                 <th data-field="bSimNo" data-sortable="true">@L("Sim号")</th>
                                 <th data-field="bExpireTime" data-sortable="true">@L("过期时间")</th>
-                                <th data-field="lastModificationTime" data-sortable="true">@L("最后编辑时间")</th>
-                                <th data-field="creationTime" data-sortable="true">@L("创建时间")</th>
+                                <th data-field="creationTime" data-sortable="true">@L("安装时间")</th>
                             </tr>
                         </thead>
                     </table>

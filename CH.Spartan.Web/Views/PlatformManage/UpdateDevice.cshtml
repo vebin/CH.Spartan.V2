@@ -18,7 +18,7 @@
                         url: "/PlatformManage/UpdateDevice",
                         data: JSON.stringify(data)
                     }).done(function (result) {
-                        abp.message.success("@L("保存成功")");
+                        abp.notify.success("@L("保存成功")");
                         abp.dialog.close();
                     });
                 }
@@ -131,5 +131,6 @@
                     </div>
                 </div>
             </div>
+        </div>
     </form>
 </div>

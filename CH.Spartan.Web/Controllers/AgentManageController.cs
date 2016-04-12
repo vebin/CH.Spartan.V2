@@ -8,19 +8,23 @@ using Abp.Application.Services.Dto;
 using Abp.Web.Mvc.Authorization;
 using CH.Spartan.Devices;
 using CH.Spartan.Devices.Dto;
+using CH.Spartan.Users;
+using CH.Spartan.Users.Dto;
 
 namespace CH.Spartan.Web.Controllers
 {
     /// <summary>
     /// 代理商管理
     /// </summary>
+    [AbpMvcAuthorize]
     public class AgentManageController : SpartanControllerBase
     {
         private readonly IDeviceAppService _deviceAppService;
-
-        public AgentManageController(IDeviceAppService deviceAppService)
+        private readonly IUserAppService _userAppService;
+        public AgentManageController(IDeviceAppService deviceAppService, IUserAppService userAppService)
         {
             _deviceAppService = deviceAppService;
+            _userAppService = userAppService;
         }
 
         #region 设备
@@ -86,6 +90,76 @@ namespace CH.Spartan.Web.Controllers
         public async Task<JsonResult> DeleteDevice(List<IdInput> input)
         {
             await _deviceAppService.DeleteDeviceAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+
+        #endregion
+
+        #region 用户
+
+        #region 首页
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_User)]
+        public new ActionResult User()
+        {
+            return View();
+        }
+        #endregion
+
+        #region 搜索
+
+        [HttpGet]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_User)]
+        public async Task<JsonResult> SearchUser(GetUserListPagedInput input)
+        {
+            var result = await _userAppService.GetUserListPagedAsync(input);
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+        #region 添加
+        [HttpGet]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_User_Create)]
+        public ActionResult CreateUser()
+        {
+            var result = _userAppService.GetNewUser();
+            return View(result);
+        }
+
+        [HttpPost]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_User_Create)]
+        public async Task<JsonResult> CreateUser(CreateUserInput input)
+        {
+            await _userAppService.CreateUserAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+        #region 更新
+        [HttpGet]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_User_Update)]
+        public async Task<ActionResult> UpdateUser(IdInput input)
+        {
+            var result = await _userAppService.GetUpdateUserAsync(input);
+            return View(result);
+        }
+
+        [HttpPost]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_User_Update)]
+        public async Task<JsonResult> UpdateUser(UpdateUserInput input)
+        {
+            await _userAppService.UpdateUserAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+        #region 删除
+        [HttpPost]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_User_Delete)]
+        public async Task<JsonResult> DeleteUser(List<IdInput> input)
+        {
+            await _userAppService.DeleteUserAsync(input);
             return Json(true, JsonRequestBehavior.AllowGet);
         }
         #endregion

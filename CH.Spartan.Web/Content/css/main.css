@@ -2,6 +2,7 @@
 .wrapper-content.list { padding: 0px; }
 .wrapper-content.list .ibox-content { border: 0px; }
 .wrapper-content.list .ibox-content.list-toolbar { padding-bottom: 0px;padding-top: 20px; }
+.wrapper-content.list .ibox-content.list-toolbar .form-group{ height: 39px !important; }
 .wrapper-content.list .ibox-content.list-content { padding-top: 0px; }
 .wrapper-content.list .ibox-content.list-content .btn-op{ cursor: pointer;margin-right: 10px;}
 

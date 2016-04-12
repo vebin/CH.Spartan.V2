@@ -1,0 +1,63 @@
+﻿@model CH.Spartan.Users.Dto.CreateUserOutput
+@section scripts
+{
+    @Scripts.Render("~/scripts/plugins/edit")
+    <script type="text/javascript">
+        var from = $("#form");
+        (function ($) {
+            if (!$) {
+                return;
+            }
+            from.validate({
+                submitHandler: function (form) {
+                    var data =
+                    {
+                        user: abp.utils.getFormData(form)
+                    };
+                    abp.ajax({
+                        url: "/PlatformManage/CreateUser",
+                        data: JSON.stringify(data)
+                    }).done(function (result) {
+                        abp.notify.success("@L("添加成功")");
+                        abp.dialog.close();
+                    });
+                }
+            });
+        })(jQuery);
+
+        function submitForm() {
+            from.submit();
+        }
+    </script>
+}
+
+<div class="ibox float-e-margins @(SpartanConsts.DefaultAnimate) edit-col-1">
+    <form class="form-horizontal" id="form">
+        <div class="ibox-content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("所属租户"):</label>
+                        <div class="col-sm-8">
+                            <select name="TenantId" id="TenantId" class="form-control required"> @Html.GetOptionHtmlByList(Model.Tenants)</select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("用户名"):</label>
+                        <div class="col-sm-8">
+                            <input class="form-control required stringCheck" type="text" id="UserName" name="UserName" value="@Model.User.UserName"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("邮件"):</label>
+                        <div class="col-sm-8">
+                            <input class="form-control required isEmail" type="text" id="EmailAddress" name="EmailAddress" value="@Model.User.EmailAddress" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

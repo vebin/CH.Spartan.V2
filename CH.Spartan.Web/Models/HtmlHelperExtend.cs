@@ -12,6 +12,11 @@ namespace CH.Spartan.Web.Models
 {
     public static class HtmlHelperExtend
     {
+        public static MvcHtmlString GetOptionHtmlByList(this HtmlHelper helper, List<ComboboxItemDto> list, bool? value = null,
+          bool? isHaveAll = null, string allText = "全部")
+        {
+            return GetOptionHtml(list, value);
+        }
 
         public static MvcHtmlString GetOptionHtmlByEnum(this HtmlHelper helper, Type enumType, object value = null,
             bool? isHaveAll = null, string allText = "全部")

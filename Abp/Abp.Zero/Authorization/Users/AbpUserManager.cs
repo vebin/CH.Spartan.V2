@@ -122,7 +122,7 @@ namespace Abp.Authorization.Users
                 return result;
             }
 
-            if (AbpSession.TenantId.HasValue)
+            if (AbpSession.TenantId.HasValue&& !user.TenantId.HasValue)
             {
                 user.TenantId = AbpSession.TenantId.Value;
             }

@@ -92,6 +92,20 @@
     <text name="浏览器" value="浏览器" />
     <text name="异常." value="异常." />
     <text name="自定义数据" value="自定义数据" />
+
+
+    <text name="用户" value="用户" />
+    <text name="是否初始用户名" value="是否初始用户名" />
+    <text name="是否初始密码" value="是否初始密码" />
+    <text name="QQ互联唯一Id" value="QQ互联唯一Id" />
+    <text name="QQ互联访问口令" value="QQ互联访问口令" />
+    <text name="QQ互联访问过期时间" value="QQ互联访问过期时间" />
+    <text name="微信唯一Id" value="微信唯一Id" />
+    <text name="微信访问口令" value="微信访问口令" />
+    <text name="微信访问过期时间" value="微信访问过期时间" />
+    <text name="微博唯一Id" value="微博唯一Id" />
+    <text name="微博访问口令" value="微博访问口令" />
+    <text name="微博访问过期时间" value="微博访问过期时间" />
     
   </texts>
 </localizationDictionary>

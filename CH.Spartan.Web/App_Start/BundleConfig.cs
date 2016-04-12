@@ -45,6 +45,7 @@ namespace CH.Spartan.Web
             bundles.Add(
                 new StyleBundle("~/styles/plugins/list")
                 .Include("~/Content/js/plugins/table/bootstrap-table.css", new CssRewriteUrlTransform())
+                .Include("~/Content/js/plugins/select2/js/select2.min.css", new CssRewriteUrlTransform())
                 );
 
             bundles.Add(
@@ -57,14 +58,20 @@ namespace CH.Spartan.Web
                         "~/Content/js/plugins/table/extensions/export/bootstrap-table-export.js"
                     ).Include(
                         "~/Content/js/plugins/table/extensions/export/tableExport.js"
-                    )
+                    ).Include(
+                       "~/Content/js/plugins/my97/wdatepicker.js"
+                   ).Include(
+                       "~/Content/js/plugins/select2/js/select2.full.min.js"
+                   ).Include(
+                       "~/Content/js/plugins/select2/js/i18n/"+ currentLanguage + ".js"
+                   ).Include(
+                       "~/Content/js/plugins/select2/js/select2.default.js"
+                   )
                 );
 
             bundles.Add(
                 new StyleBundle("~/styles/plugins/edit")
-                .Include("~/Content/js/plugins/icheck/skins/all.css", new CssRewriteUrlTransform())
-                .Include("~/Content/js/plugins/layer/laydate/need/laydate.css", new CssRewriteUrlTransform())
-                .Include("~/Content/js/plugins/layer/laydate/skins/default/laydate.css", new CssRewriteUrlTransform())
+                     .Include("~/Content/js/plugins/select2/js/select2.min.css", new CssRewriteUrlTransform())
                 );
 
             bundles.Add(
@@ -76,9 +83,13 @@ namespace CH.Spartan.Web
                    ).Include(
                        "~/Content/js/plugins/validation/jquery.validate.default.js"
                    ).Include(
-                       "~/Content/js/plugins/layer/laydate/laydate.js"
+                       "~/Content/js/plugins/my97/wdatepicker.js"
                    ).Include(
-                       "~/Content/js/plugins/layer/laydate/laydate.default.js"
+                       "~/Content/js/plugins/select2/js/select2.full.min.js"
+                   ).Include(
+                       "~/Content/js/plugins/select2/js/i18n/" + currentLanguage + ".js"
+                   ).Include(
+                       "~/Content/js/plugins/select2/js/select2.default.js"
                    )
                );
         }

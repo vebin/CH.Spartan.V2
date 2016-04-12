@@ -18,6 +18,7 @@ namespace CH.Spartan.Commons
     {
         DateTime? StarTime { get; set; }
         DateTime? EndTime { get; set; }
+        string SearchTime { get; set; }
     }
 
     public class QueryResultRequestInput :
@@ -29,6 +30,8 @@ namespace CH.Spartan.Commons
         public DateTime? StarTime { get; set; }
 
         public DateTime? EndTime { get; set; }
+
+        public string SearchTime { get; set; }
 
         public string SearchText { get; set; }
 

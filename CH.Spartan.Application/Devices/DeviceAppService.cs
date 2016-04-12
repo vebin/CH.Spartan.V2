@@ -35,8 +35,12 @@ namespace CH.Spartan.Devices
         
         public async Task<PagedResultOutput<GetDeviceListDto>> GetDeviceListPagedAsync(GetDeviceListPagedInput input)
         {
-            var query = _deviceRepository.GetAll();
-                //.WhereIf(!input.SearchText.IsNullOrEmpty(), p => p.TenancyName.Contains(input.SearchText) || p.Name.Contains(input.SearchText));
+            var query = _deviceRepository.GetAll()
+                .WhereIf(!input.SearchText.IsNullOrEmpty(), 
+                p => p.BName.Contains(input.SearchText)||
+                p.BLicensePlate.Contains(input.SearchText) ||
+                p.BSimNo.Contains(input.SearchText) ||
+                p.BNo.Contains(input.SearchText));
 
             var count = await query.CountAsync();
 

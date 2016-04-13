@@ -1,4 +1,5 @@
-﻿@section styles
+﻿@using Abp.Timing
+@section styles
 {
     @Styles.Render("~/styles/plugins/list")
 }
@@ -113,7 +114,7 @@
                 }
             });
 
-            $("#UserId").select2({
+            $("#UserName").select2({
                 allowClear: true,
                 placeholder: "请选择车辆"
             }).on("select2:select", function (e) {
@@ -121,7 +122,7 @@
             }).on("select2:unselect", function (e) {
                 $("#UserId").val("");
             });
-
+           
         })(jQuery);
     </script>
 }
@@ -133,18 +134,24 @@
                     <form role="form" class="form-inline" id="form">
                         <div class="form-group">
                             <select class="form-control" name="SearchTime">
-                                <option value="CreateTime">@L("安装时间")</option>
-                                <option value="ExpireTime">@L("过期时间")</option>
+                                <option value="CreationTime">@L("安装时间")</option>
+                                <option value="BExpireTime">@L("过期时间")</option>
+                                <option value="GReceiveTime">@L("通讯时间")</option>
+                                <option value="GReportTime">@L("定为时间")</option>
+                            </select>
+                        </div>
+                        @Html.DateTimeRange()
+                        <div class="form-group">
+                            <select class="form-control" name="IsOnline">
+                                @Html.GetOptionHtmlByEnable(null, true, "不限(是否在线)")
                             </select>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control"
-                                   id="StartTime" name="StartTime" placeholder="@L("开始时间")" onfocus="WdatePicker({ dateFmt: 'yyyy/MM/dd HH:mm:ss', maxDate: '#F{$dp.$D(\'EndTime\')}' })"/>
+                            <select class="form-control" name="IsLocated">
+                                @Html.GetOptionHtmlByEnable(null, true, "不限(是否定位)")
+                            </select>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control"
-                                   id="EndTime" name="EndTime" placeholder="@L("结束时间")" onfocus="WdatePicker({ dateFmt: 'yyyy/MM/dd HH:mm:ss', minDate: '#F{$dp.$D(\'StartTime\')}' })"/>
-                        </div>
+                        <div class="clearfix"></div>
                         <div class="form-group">
                             <input type="hidden" name="UserId" class="UserId" />
                             <select class="form-control w150" id="UserName"></select>

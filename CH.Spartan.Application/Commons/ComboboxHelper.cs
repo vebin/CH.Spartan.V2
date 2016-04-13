@@ -40,15 +40,13 @@ namespace CH.Spartan.Commons
             var localizationSource =
                 IocManager.Instance.Resolve<ILocalizationManager>().GetSource(SpartanConsts.LocalizationSourceName);
             var list = new List<ComboboxItemDto>();
-
-            list.Add(new ComboboxItemDto("True", localizationSource.GetString("是")));
-            list.Add(new ComboboxItemDto("False", localizationSource.GetString("否")));
-
             if (isHaveAll.HasValue)
             {
                 var name = localizationSource.GetString(allText);
                 list.Add(new ComboboxItemDto("", name));
             }
+            list.Add(new ComboboxItemDto("True", localizationSource.GetString("是")));
+            list.Add(new ComboboxItemDto("False", localizationSource.GetString("否")));
             return list;
        }
     }

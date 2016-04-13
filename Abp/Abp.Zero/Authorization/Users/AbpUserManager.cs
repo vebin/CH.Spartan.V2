@@ -557,19 +557,25 @@ namespace Abp.Authorization.Users
 
         public async override Task<IdentityResult> UpdateAsync(TUser user)
         {
-            var result = await CheckDuplicateUsernameOrEmailAddressAsync(user.Id, user.UserName, user.EmailAddress);
-            if (!result.Succeeded)
+            using (_unitOfWorkManager.Current.DisableFilter(AbpDataFilters.MayHaveTenant))
             {
-                return result;
-            }
+                var result = await CheckDuplicateUsernameOrEmailAddressAsync(user.Id, user.UserName, user.EmailAddress);
+                if (!result.Succeeded)
+                {
+                    return result;
+                }
 
-            var oldUserName = (await GetUserByIdAsync(user.Id)).UserName;
-            if (oldUserName == AbpUser<TTenant, TUser>.AdminUserName && user.UserName != AbpUser<TTenant, TUser>.AdminUserName)
-            {
-                return AbpIdentityResult.Failed(string.Format(L("CanNotRenameAdminUser"), AbpUser<TTenant, TUser>.AdminUserName));
-            }
+                var oldUserName = (await GetUserByIdAsync(user.Id)).UserName;
+                if (oldUserName == AbpUser<TTenant, TUser>.AdminUserName &&
+                    user.UserName != AbpUser<TTenant, TUser>.AdminUserName)
+                {
+                    return
+                        AbpIdentityResult.Failed(string.Format(L("CanNotRenameAdminUser"),
+                            AbpUser<TTenant, TUser>.AdminUserName));
+                }
 
-            return await base.UpdateAsync(user);
+                return await base.UpdateAsync(user);
+            }
         }
 
         public async override Task<IdentityResult> DeleteAsync(TUser user)

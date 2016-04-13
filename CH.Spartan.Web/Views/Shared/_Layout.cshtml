@@ -16,13 +16,14 @@
     <![endif]-->
     @Styles.Render("~/styles")
     @RenderSection("styles", required: false)
+    @Scripts.Render("~/scripts/top")
     <script type="text/javascript">
         var abp = abp || {}; abp.appPath = '@ApplicationPath';
     </script>
 </head>
 <body class="fixed-sidebar full-height-layout">
     @RenderBody()
-    @Scripts.Render("~/scripts")
+    @Scripts.Render("~/scripts/bottom")
     <script src="/api/AbpServiceProxies/GetAll?v=@(Clock.Now.Ticks)"></script>
     <script src="/AbpScripts/GetScripts?v=@(Clock.Now.Ticks)" type="text/javascript"></script>
     <script src="/Content/js/main.js"></script>

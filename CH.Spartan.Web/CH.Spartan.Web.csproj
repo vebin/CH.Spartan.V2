@@ -614,6 +614,7 @@
     <Compile Include="Controllers\AutoCompleteController.cs" />
     <Compile Include="Controllers\CustomerManageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LayoutController.cs" />
     <Compile Include="Controllers\PlatformManageController.cs" />
     <Compile Include="Controllers\SystemManageController.cs" />
     <Compile Include="Models\Account\LoginFormViewModel.cs" />
@@ -703,6 +704,7 @@
     <Content Include="Views\AgentManage\User.cshtml" />
     <Content Include="Views\AgentManage\UpdateUser.cshtml" />
     <Content Include="Views\PlatformManage\CreateUser.cshtml" />
+    <Content Include="Views\Shared\_DateTimeRange.cshtml" />
     <None Include="Views\SystemManage\CreateTenant.cshtml" />
     <Content Include="Views\SystemManage\UpdateTenant.cshtml" />
     <Content Include="Views\SystemManage\DeviceType.cshtml" />
@@ -783,7 +785,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\AutoComplete\" />
     <Folder Include="Views\CustomerManage\" />
   </ItemGroup>
   <PropertyGroup>

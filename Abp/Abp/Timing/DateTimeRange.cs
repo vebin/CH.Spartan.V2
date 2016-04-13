@@ -219,7 +219,7 @@ namespace Abp.Timing
         /// <returns>A <see cref="System.String"/> that represents the current <see cref="DateTimeRange"/>.</returns>
         public override string ToString()
         {
-            return string.Format("[{0} - {1}]", StartTime, EndTime);
+            return $"{StartTime.ToString("yyyy-MM-dd HH:mm:ss")}/{EndTime.ToString("yyyy-MM-dd HH:mm:ss")}";
         }
     }
 }

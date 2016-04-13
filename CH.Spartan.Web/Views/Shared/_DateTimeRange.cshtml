@@ -1,0 +1,47 @@
+﻿@using Abp.Timing
+
+<div class="form-group">
+    <select class="form-control" name="DateTimeRange" id="DateTimeRange">
+        <option value="">@L("自定义")</option>
+        <option value="@DateTimeRange.Today.ToString()">@L("今天")</option>
+        <option value="@DateTimeRange.Yesterday.ToString()">@L("昨天")</option>
+        <option value="@DateTimeRange.Last7Days.ToString()">@L("最近7天")</option>
+        <option value="@DateTimeRange.Last7DaysExceptToday.ToString()">@L("最近7天 除今天外")</option>
+        <option value="@DateTimeRange.ThisMonth.ToString()">@L("本月")</option>
+        <option value="@DateTimeRange.LastMonth.ToString()">@L("上个月")</option>
+        <option value="@DateTimeRange.Last30Days.ToString()">@L("最近30天")</option>
+        <option value="@DateTimeRange.Last30DaysExceptToday.ToString()">@L("最近30天 除今天外")</option>
+        <option value="@DateTimeRange.ThisYear.ToString()">@L("今年")</option>
+    </select>
+</div>
+<div class="form-group">
+    <input type="text" class="form-control"
+           id="StartTime" name="StartTime" placeholder="@L("开始时间")" onfocus="WdatePicker({ dateFmt: 'yyyy/MM/dd HH:mm:ss', maxDate: '#F{$dp.$D(\'EndTime\')}' })" />
+</div>
+<div class="form-group">
+    <input type="text" class="form-control"
+           id="EndTime" name="EndTime" placeholder="@L("结束时间")" onfocus="WdatePicker({ dateFmt: 'yyyy/MM/dd HH:mm:ss', minDate: '#F{$dp.$D(\'StartTime\')}' })"/>
+</div>
+<script type="text/javascript">
+    (function($) {
+        $(function() {
+
+            $("#DateTimeRange").change(function() {
+                var range = $(this).val();
+                if (range == "") {
+                    $("#StartTime").val("");
+                    $("#EndTime").val("");
+                } else {
+                    debugger;
+                    var dts = range.split("/");
+                    var st = dts[0];
+                    var et = dts[1];
+                    $("#StartTime").val(st);
+                    $("#EndTime").val(et);
+                }
+            });
+
+        });
+    })(jQuery);
+
+</script>

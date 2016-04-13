@@ -1,5 +1,5 @@
 ﻿//$("#selectCenter").select2Remote({
-//    blankMsg: '请输入上级专业名称',//这里填写空选项时显示的文字  
+//    placeholder: '请输入上级专业名称',//这里填写空选项时显示的文字  
 //    url: 'url',//远程加载的url  
 //    initUrl: 'initurl',//初始化url  
 //    valueField: 'id',//value名   在vo中对应id的属性名  
@@ -15,7 +15,7 @@
         var opts = $.extend({}, $.fn.select2Remote.defaults, options);
         this.select2({
             allowClear: true,
-            placeholder: opts.blankMsg,
+            placeholder: opts.placeholder,
             minimumInputLength: opts.minLength,
             id: function (obj) { return obj[opts.valueField] },
             ajax: {

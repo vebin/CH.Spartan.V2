@@ -10,6 +10,7 @@ using Abp.Linq.Extensions;
 using Abp.Extensions;
 using System.Data.Entity;
 using Abp.Authorization;
+using Abp.Authorization.Interceptors;
 using CH.Spartan.Authorization.Roles;
 using CH.Spartan.Commons;
 using CH.Spartan.Authorization.Roles.Dto;
@@ -67,7 +68,7 @@ namespace CH.Spartan.Roles
             var role = input.Role.MapTo<Role>();
             await _roleManager.CreateAsync(role);
         }
-
+    
         public async Task UpdateRoleAsync(UpdateRoleInput input)
         {
             var role = await _roleRepository.GetAsync(input.Role.Id);

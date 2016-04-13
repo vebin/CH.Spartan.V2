@@ -88,6 +88,8 @@
   <ItemGroup>
     <Compile Include="AbpConsts.cs" />
     <Compile Include="AbpServiceBase.cs" />
+    <Compile Include="Authorization\Interceptors\DisableFilterIfHostInterceptor.cs" />
+    <Compile Include="Authorization\Interceptors\DisableFilterIfHostInterceptorRegister.cs" />
     <Compile Include="Authorization\PermissionDependencyContext.cs" />
     <Compile Include="Authorization\PermissionDependencyExtensions.cs" />
     <Compile Include="BackgroundJobs\BackgroundJobConfiguration.cs" />

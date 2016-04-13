@@ -6,12 +6,19 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Html;
 using Abp.Application.Services.Dto;
+using Abp.Timing;
 using CH.Spartan.Commons;
 
 namespace CH.Spartan.Web.Models
 {
     public static class HtmlHelperExtend
     {
+
+        public static MvcHtmlString DateTimeRange(this HtmlHelper helper)
+        {
+            return helper.Action("DateTimeRange", "Layout");
+        }
+
         public static MvcHtmlString GetOptionHtmlByList(this HtmlHelper helper, List<ComboboxItemDto> list, bool? value = null,
           bool? isHaveAll = null, string allText = "全部")
         {

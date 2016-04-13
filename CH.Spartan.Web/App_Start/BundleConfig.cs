@@ -23,12 +23,18 @@ namespace CH.Spartan.Web
                 );
 
             bundles.Add(
-                new ScriptBundle("~/scripts")
+              new ScriptBundle("~/scripts/top")
+                  .Include(
+                      "~/Content/js/jquery.min.js",
+                      "~/Content/js/bootstrap.min.js",
+                      "~/Content/js/json2.min.js"
+                  )
+              );
+
+            bundles.Add(
+                new ScriptBundle("~/scripts/bottom")
                     .Include(
-                        "~/Content/js/jquery.min.js",
-                        "~/Content/js/bootstrap.min.js",
-                        "~/Content/js/json2.min.js",
-                        "~/Content/js/contabs.min.js",
+                       "~/Content/js/contabs.min.js",
                         "~/Content/js/plugins/pace/pace.min.js",
                         "~/Content/js/plugins/layer/layer.min.js",
                         "~/Content/js/plugins/metisMenu/jquery.metisMenu.js",
@@ -45,7 +51,7 @@ namespace CH.Spartan.Web
             bundles.Add(
                 new StyleBundle("~/styles/plugins/list")
                 .Include("~/Content/js/plugins/table/bootstrap-table.css", new CssRewriteUrlTransform())
-                .Include("~/Content/js/plugins/select2/js/select2.min.css", new CssRewriteUrlTransform())
+                .Include("~/Content/js/plugins/select2/css/select2.css", new CssRewriteUrlTransform())
                 );
 
             bundles.Add(

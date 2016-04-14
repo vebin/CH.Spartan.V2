@@ -62,20 +62,23 @@ namespace CH.Spartan.Users
             return new ListResultOutput<GetUserListDto>(list.MapTo<List<GetUserListDto>>());
         }
 
+        [DisableFilterIfHost(AbpDataFilters.MayHaveTenant)]
         public async Task<PagedResultOutput<GetUserListDto>> GetUserListPagedAsync(GetUserListPagedInput input)
         {
-            if (!AbpSession.TenantId.HasValue)
+            if (input.TenantId.HasValue)
             {
-                //host
-                CurrentUnitOfWork.DisableFilter(AbpDataFilters.MayHaveTenant);
+                CurrentUnitOfWork.EnableFilter(AbpDataFilters.MayHaveTenant);
+                CurrentUnitOfWork.SetFilterParameter(AbpDataFilters.MayHaveTenant, AbpDataFilters.Parameters.TenantId,input.TenantId);
             }
 
             var query = _userRepository.GetAll()
-                .Include(p=>p.Tenant)
+                .Include(p => p.Tenant)
                 .WhereIf(!input.SearchText.IsNullOrEmpty(),
                     p => p.UserName.Contains(input.SearchText) ||
-                    p.Name.Contains(input.SearchText))
-                .WhereIf(input.IsActive.HasValue, p => p.IsActive == input.IsActive.Value);
+                         p.Name.Contains(input.SearchText))
+                .WhereIf(input.IsActive.HasValue, p => p.IsActive == input.IsActive.Value)
+                .WhereIfDynamic(input.StartTime.HasValue, input.SearchTime + ">", input.StartTime)
+                .WhereIfDynamic(input.EndTime.HasValue, input.SearchTime + "<", input.EndTime);
 
             var count = await query.CountAsync();
 

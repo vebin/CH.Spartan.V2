@@ -132,6 +132,19 @@
                 <div class="ibox-content list-toolbar">
                     <form role="form" class="form-inline" id="form">
                         <div class="form-group">
+                            <select class="form-control w180" name="SearchTime">
+                                <option value="CreationTime">@L("创建时间")</option>
+                                <option value="LastLoginTime">@L("登录时间")</option>
+                            </select>
+                        </div>
+                        @Html.DateTimeRange()
+                        <div class="form-group">
+                            @Html.AutoCompleteTenant("TenantId", L("全部(租户)"))
+                        </div>
+                        <div class="form-group">
+                            @Html.GetSelectByEnable("IsActive",L("不限(允许登录)"))
+                        </div>
+                        <div class="form-group">
                             @Html.SearchText(L("请输入用户名/名称"), L("查询"))
                         </div>
                     </form>

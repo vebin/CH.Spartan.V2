@@ -22,7 +22,7 @@ namespace CH.Spartan
 
            Mapper.CreateMap<User, GetUserListDto>()
                .ForMember(d => d.IsActiveText, opt => opt.MapFrom(o => o.IsActive ? L("是") : L("否")))
-               .ForMember(d => d.TenantText, opt => opt.MapFrom(o => o.Tenant != null ? o.Tenant.TenancyName + "(" + o.Tenant.Name + ")" : ""));
+               .ForMember(d => d.TenantText, opt => opt.MapFrom(o => o.Tenant != null ? o.Tenant.Name : "-"));
        }
 
        private static string L(string name)

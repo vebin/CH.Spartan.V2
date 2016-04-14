@@ -16,7 +16,7 @@ namespace CH.Spartan.Commons
 
     public interface IDateTimeResultRequest
     {
-        DateTime? StarTime { get; set; }
+        DateTime? StartTime { get; set; }
         DateTime? EndTime { get; set; }
         string SearchTime { get; set; }
     }
@@ -27,7 +27,7 @@ namespace CH.Spartan.Commons
         ISortedResultRequest
         
     {
-        public DateTime? StarTime { get; set; }
+        public DateTime? StartTime { get; set; }
 
         public DateTime? EndTime { get; set; }
 

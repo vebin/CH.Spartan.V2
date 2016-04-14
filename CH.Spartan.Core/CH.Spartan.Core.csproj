@@ -99,6 +99,7 @@
     <Compile Include="Commons\EnumExtend.cs" />
     <Compile Include="Commons\LinqExtend.cs" />
     <Compile Include="Commons\QueryResultRequestInput.cs" />
+    <Compile Include="Devices\DeviceHelper.cs" />
     <Compile Include="Devices\DeviceManager.cs" />
     <Compile Include="Domain\ManagerBase.cs" />
     <Compile Include="Nodes\NodeManager.cs" />

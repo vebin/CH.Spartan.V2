@@ -590,5 +590,14 @@ var abp = abp || {};
         return serializeObj;
     }
 
+    abp.utils.isExitsFunction = function (funcName) {
+        try {
+            if (typeof (eval(funcName)) == "function") {
+                return true;
+            }
+        } catch (e) { }
+        return false;
+    }
+
 
 })(jQuery);

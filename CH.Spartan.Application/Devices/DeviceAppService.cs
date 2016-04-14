@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
@@ -38,12 +39,25 @@ namespace CH.Spartan.Devices
         [DisableFilterIfHost]
         public async Task<PagedResultOutput<GetDeviceListDto>> GetDeviceListPagedAsync(GetDeviceListPagedInput input)
         {
+            if (input.TenantId.HasValue)
+            {
+                CurrentUnitOfWork.EnableFilter(AbpDataFilters.MayHaveTenant);
+                CurrentUnitOfWork.SetFilterParameter(AbpDataFilters.MayHaveTenant, AbpDataFilters.Parameters.TenantId, input.TenantId);
+            }
+
             var query = _deviceRepository.GetAll()
-                .WhereIf(!input.SearchText.IsNullOrEmpty(), 
-                p => p.BName.Contains(input.SearchText)||
-                p.BLicensePlate.Contains(input.SearchText) ||
-                p.BSimNo.Contains(input.SearchText) ||
-                p.BNo.Contains(input.SearchText));
+                .Include(p=>p.Tenant)
+                .Include(p=>p.User)
+                .Include(p=>p.DeviceType)
+                .WhereIf(!input.SearchText.IsNullOrEmpty(),
+                    p => p.BName.Contains(input.SearchText) ||
+                         p.BLicensePlate.Contains(input.SearchText) ||
+                         p.BSimNo.Contains(input.SearchText) ||
+                         p.BNo.Contains(input.SearchText))
+                .WhereIf(input.DeviceTypeId.HasValue, p => p.BDeviceTypeId == input.DeviceTypeId.Value)
+                .WhereIf(input.IsLocated.HasValue, p => p.GIsLocated)
+                .WhereIfDynamic(input.StartTime.HasValue, input.SearchTime + ">", input.StartTime)
+                .WhereIfDynamic(input.EndTime.HasValue, input.SearchTime + "<", input.EndTime);
 
             var count = await query.CountAsync();
 

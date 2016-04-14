@@ -29,8 +29,7 @@ namespace CH.Spartan.Commons
 
             if (!allText.IsNullOrEmpty())
             {
-                var name = allText;
-                list.Add(new ComboboxItemDto("", name));
+                list.Add(new ComboboxItemDto("", allText));
             }
 
             return list;
@@ -43,8 +42,7 @@ namespace CH.Spartan.Commons
             var list = new List<ComboboxItemDto>();
             if (!allText.IsNullOrEmpty())
             {
-                var name = allText;
-                list.Add(new ComboboxItemDto("", name));
+                list.Add(new ComboboxItemDto("", allText));
             }
             list.Add(new ComboboxItemDto("True", localizationSource.GetString("是")));
             list.Add(new ComboboxItemDto("False", localizationSource.GetString("否")));

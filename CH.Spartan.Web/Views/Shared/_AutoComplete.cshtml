@@ -24,9 +24,14 @@
                     dataType: "json",
                     delay: 250,
                     data: function(params) {
+                        debugger;
+                        var dataQueryFun = "@(ViewBag.Name)Query";
+                        if (abp.utils.isExitsFunction(dataQueryFun)) {
+                            return eval(dataQueryFun)(params);
+                        }
                         return {
                             searchText: params.term
-                        };
+                        }
                     },
                     processResults: function(data, params) {
                         return {

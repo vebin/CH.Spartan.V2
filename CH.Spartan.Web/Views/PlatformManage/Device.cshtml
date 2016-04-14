@@ -29,19 +29,17 @@
                 //area: ["995px", "750px"],
                 //area: ["1250px", "750px"],
                 btn: ["@L("确定")", '@L("取消")'],
-                yes: function (index, layero) {
+                yes: function(index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
                     iframeWin.submitForm();
                 },
-                cancel: function (index) {
+                cancel: function(index) {
                 },
-                end: function () {
+                end: function() {
                     $("#btn-search").click();
                 }
             });
         }
-
-
 
         //更新
         function update(id) {
@@ -52,13 +50,13 @@
                 //area: ["995px", "750px"],
                 //area: ["1250px", "750px"],
                 btn: ["@L("保存")", '@L("取消")'],
-                yes: function (index, layero) {
+                yes: function(index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
                     iframeWin.submitForm();
                 },
-                cancel: function (index) {
+                cancel: function(index) {
                 },
-                end: function () {
+                end: function() {
                     $("#btn-search").click();
                 }
             });
@@ -69,25 +67,32 @@
             if (typeof ids == "string") {
                 ids = [{ id: ids }];
             }
-            abp.message.confirm("@L("确定删除")?", function (yes) {
+            abp.message.confirm("@L("确定删除")?", function(yes) {
                 if (!yes) return;
                 abp.ajax({
                     url: "/PlatformManage/DeleteDevice",
                     data: JSON.stringify(ids)
-                }).done(function (result) {
+                }).done(function(result) {
                     abp.notify.success("@L("删除成功")");
                     $("#btn-search").click();
                 });
             });
         }
 
-        (function ($) {
+        function TenantIdQuery(params) {
+            var query = {
+                searchText: params.term
+            };
+            return query;
+        }
+
+        (function($) {
             if (!$) {
                 return;
             }
 
             //搜索
-            $("#btn-search").click(function () {
+            $("#btn-search").click(function() {
                 var args =
                 {
                     query: abp.utils.getFormData("#form")
@@ -96,15 +101,15 @@
             });
 
             //添加
-            $("#btn-add").click(function () {
+            $("#btn-add").click(function() {
                 create();
             });
 
             //删除
-            $("#btn-del").click(function () {
+            $("#btn-del").click(function() {
                 var rows = $("#table").bootstrapTable("getSelections");
                 var ids = [];
-                $.each(rows, function (index, item) {
+                $.each(rows, function(index, item) {
                     ids.push({ id: item.id });
                 });
                 if (ids.length == 0) {
@@ -127,7 +132,7 @@
                                 <option value="CreationTime">@L("安装时间")</option>
                                 <option value="BExpireTime">@L("过期时间")</option>
                                 <option value="GReceiveTime">@L("通讯时间")</option>
-                                <option value="GReportTime">@L("定为时间")</option>
+                                <option value="GReportTime">@L("定位时间")</option>
                             </select>
                         </div>
                         @Html.DateTimeRange()
@@ -135,8 +140,9 @@
                             @Html.AutoCompleteTenant("TenantId", L("全部(租户)"))
                         </div>
                         <div class="form-group">
-                            @Html.GetSelectByEnable("IsOnline", L("不限(是否在线)"))
+                            @Html.GetSelectByDeviceType("DeviceTypeId", L("全部(设备类型)"))
                         </div>
+                        <div class="clearfix"></div>
                         <div class="form-group">
                             @Html.GetSelectByEnable("IsLocated",L("不限(是否定位)"))
                         </div>
@@ -168,10 +174,18 @@
                                 <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
                                 <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
                                 <th data-field="bName" data-sortable="true">@L("设备名字")</th>
+                                <th data-field="deviceTypeName" data-sortable="true">@L("设备类型")</th>
                                 <th data-field="bLicensePlate" data-sortable="true">@L("车牌号")</th>
                                 <th data-field="bNo" data-sortable="true">@L("设备号")</th>
                                 <th data-field="bSimNo" data-sortable="true">@L("Sim号")</th>
+                                <th data-field="tenancyName" data-sortable="true">@L("所属租户")</th>
+                                <th data-field="userName" data-sortable="true">@L("所属客户")</th>
+                                <th data-field="isExpireText" data-sortable="true">@L("是否过期")</th>
                                 <th data-field="bExpireTime" data-sortable="true">@L("过期时间")</th>
+                                <th data-field="isOnlineText" data-sortable="true">@L("是否在线")</th>
+                                <th data-field="gReceiveTime" data-sortable="true">@L("通讯时间")</th>
+                                <th data-field="isLocatedText" data-sortable="true">@L("是否定位")</th>
+                                <th data-field="gReportTime" data-sortable="true">@L("定位时间")</th>
                                 <th data-field="creationTime" data-sortable="true">@L("安装时间")</th>
                             </tr>
                         </thead>

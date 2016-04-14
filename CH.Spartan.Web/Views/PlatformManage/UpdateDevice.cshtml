@@ -110,7 +110,7 @@
                     <div class="form-group">
                         <label class="col-sm-4 control-label">@L("报警设置进出区域"):</label>
                         <div class="col-sm-8">
-                            <select name="SInOutArea" id="SInOutArea" class="form-control"> @Html.GetOptionHtmlByEnable(Model.Device.SInOutArea)</select>
+                            @Html.GetSelectByEnable("SInOutArea", "", Model.Device.SInOutArea, "")
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">

@@ -110,6 +110,7 @@
     <Compile Include="DeviceTypes\Dto\GetDeviceTypeListDto.cs" />
     <Compile Include="DeviceTypes\Dto\UpdateDeviceTypeDto.cs" />
     <Compile Include="DeviceTypes\IDeviceTypeAppService.cs" />
+    <Compile Include="MultiTenancy\Dto\GetTenantDto.cs" />
     <Compile Include="MultiTenancy\Dto\CreateTenantDto.cs" />
     <Compile Include="MultiTenancy\Dto\GetTenantListDto.cs" />
     <Compile Include="MultiTenancy\Dto\UpdateTenantDto.cs" />

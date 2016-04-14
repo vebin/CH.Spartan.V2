@@ -18,5 +18,20 @@ namespace CH.Spartan.Web.Controllers
         {
             return PartialView("_DateTimeRange");
         }
+
+        [ChildActionOnly]
+        public PartialViewResult AutoComplete(string name, string url, string placeholder, int? value,string text,string cls,string valueField,string textField)
+        {
+            ViewBag.Name = name;
+            ViewBag.Url = url;
+            ViewBag.Class = cls;
+            ViewBag.Placeholder = placeholder;
+            ViewBag.Value = value;
+            ViewBag.Text = text;
+            ViewBag.ValueField = valueField;
+            ViewBag.TextField = textField;
+            ViewBag.HasInitValue = value.HasValue;
+            return PartialView("_AutoComplete");
+        }
     }
 }

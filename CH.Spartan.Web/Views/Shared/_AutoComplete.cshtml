@@ -1,0 +1,57 @@
+﻿@using System.Threading
+<select class="form-control @ViewBag.Class" name="@ViewBag.Name" id="@ViewBag.Name">
+    @if (ViewBag.HasInitValue)
+    {
+        <option value="@ViewBag.Value" selected="selected">@ViewBag.Text</option>
+    }
+</select>
+<script type="text/javascript">
+    (function($) {
+        if (!$) {
+            return;
+        }
+        $(function () {
+
+            $("#@ViewBag.Name").select2({
+                language: "@Thread.CurrentThread.CurrentUICulture.Name",
+                allowClear: true,
+                placeholder: {
+                    "@ViewBag.ValueField": "",
+                    "@ViewBag.TextField": "@ViewBag.Placeholder"
+                },
+                ajax: {
+                    url: "@ViewBag.Url",
+                    dataType: "json",
+                    delay: 250,
+                    data: function(params) {
+                        return {
+                            searchText: params.term
+                        };
+                    },
+                    processResults: function(data, params) {
+                        return {
+                            results: data.result.items
+                        };
+                    },
+                    cache: true
+                },
+                escapeMarkup: function(markup) { return markup; },
+                templateResult: function(obj) {
+                    return obj["@ViewBag.TextField"];
+                },
+                templateSelection: function(obj) {
+                    if (obj.selected) {
+                        //默认值
+                        return obj["text"];
+                    }
+                    if (obj["@ViewBag.ValueField"] === "") {
+                        //placeholder
+                        return obj["@ViewBag.TextField"];
+                    }
+                    return obj["@ViewBag.TextField"];
+                }
+            });
+        });
+    })(jQuery);
+
+</script>

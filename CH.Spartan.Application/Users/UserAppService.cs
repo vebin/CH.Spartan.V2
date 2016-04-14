@@ -110,6 +110,7 @@ namespace CH.Spartan.Users
 
             return output;
         }
+
         [DisableFilterIfHost(AbpDataFilters.MayHaveTenant)]
         public async Task<UpdateUserOutput> GetUpdateUserAsync(IdInput input)
         {

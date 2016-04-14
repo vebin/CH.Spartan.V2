@@ -69,12 +69,7 @@
                 <div class="ibox-content list-toolbar">
                     <form role="form" class="form-inline" id="form">
                         <div class="form-group">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="@L("请输入关键字")" name="SearchText">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-search">@L("查询")</button>
-                                </span>
-                            </div>
+                            @Html.SearchText(L("请输入关键字"), L("查询"))
                         </div>
                     </form>
                 </div>

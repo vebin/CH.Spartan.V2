@@ -1,4 +1,8 @@
 ﻿@model CH.Spartan.Users.Dto.CreateUserOutput
+@section styles
+{
+    @Styles.Render("~/styles/plugins/edit")
+}
 @section scripts
 {
     @Scripts.Render("~/scripts/plugins/edit")
@@ -39,7 +43,7 @@
                     <div class="form-group">
                         <label class="col-sm-4 control-label">@L("所属租户"):</label>
                         <div class="col-sm-8">
-                            <select name="TenantId" id="TenantId" class="form-control required"> @Html.GetOptionHtmlByList(Model.Tenants)</select>
+                            @Html.AutoCompleteTenant("TenantId", "", null, "required")
                         </div>
                     </div>
                 </div>

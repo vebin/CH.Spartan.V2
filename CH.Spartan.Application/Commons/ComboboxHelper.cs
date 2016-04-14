@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.Dependency;
 using Abp.Localization;
+using Castle.Core.Internal;
 
 namespace CH.Spartan.Commons
 {
    public static class ComboboxHelper
     {
-        public static List<ComboboxItemDto> GetListForEnum(Type enumType, bool? isHaveAll = null, string allText = "全部")
+        public static List<ComboboxItemDto> GetListForEnum(Type enumType, string allText)
         {
             var localizationSource =
                 IocManager.Instance.Resolve<ILocalizationManager>().GetSource(SpartanConsts.LocalizationSourceName);
@@ -26,23 +27,23 @@ namespace CH.Spartan.Commons
                 list.Add(new ComboboxItemDto(val.ToString(), localName));
             }
 
-            if (isHaveAll.HasValue)
+            if (!allText.IsNullOrEmpty())
             {
-                var name = localizationSource.GetString(allText);
+                var name = allText;
                 list.Add(new ComboboxItemDto("", name));
             }
 
             return list;
         }
 
-       public static List<ComboboxItemDto> GetListForEnable(bool? isHaveAll = null, string allText = "全部")
+       public static List<ComboboxItemDto> GetListForEnable(string allText)
        {
             var localizationSource =
                 IocManager.Instance.Resolve<ILocalizationManager>().GetSource(SpartanConsts.LocalizationSourceName);
             var list = new List<ComboboxItemDto>();
-            if (isHaveAll.HasValue)
+            if (!allText.IsNullOrEmpty())
             {
-                var name = localizationSource.GetString(allText);
+                var name = allText;
                 list.Add(new ComboboxItemDto("", name));
             }
             list.Add(new ComboboxItemDto("True", localizationSource.GetString("是")));

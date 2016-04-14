@@ -20,5 +20,15 @@ namespace CH.Spartan.Commons
 
             return source.OrderBy(sorted.Sorting);
         }
+
+        public static IQueryable<T> Take<T>(this IQueryable<T> source, ILimitedResultRequest limited)
+        {
+            if (limited.MaxResultCount<=0)
+            {
+                return source;
+            }
+
+            return source.Take(limited.MaxResultCount);
+        }
     }
 }

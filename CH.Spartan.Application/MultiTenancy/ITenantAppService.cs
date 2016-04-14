@@ -9,6 +9,13 @@ namespace CH.Spartan.MultiTenancy
     public interface ITenantAppService : IApplicationService
     {
         /// <summary>
+        /// 获取
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task<GetTenantOutput> GetTenantAsync(IdInput input);
+
+        /// <summary>
         /// 获取 集合
         /// </summary>
         /// <param name="input"></param>

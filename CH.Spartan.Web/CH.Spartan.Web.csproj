@@ -392,7 +392,6 @@
     <Content Include="Content\js\plugins\select2\js\i18n\vi.js" />
     <Content Include="Content\js\plugins\select2\js\i18n\zh-CN.js" />
     <Content Include="Content\js\plugins\select2\js\i18n\zh-TW.js" />
-    <Content Include="Content\js\plugins\select2\js\select2.default.js" />
     <Content Include="Content\js\plugins\select2\js\select2.full.js" />
     <Content Include="Content\js\plugins\select2\js\select2.full.min.js" />
     <Content Include="Content\js\plugins\select2\js\select2.js" />
@@ -705,6 +704,7 @@
     <Content Include="Views\AgentManage\UpdateUser.cshtml" />
     <Content Include="Views\PlatformManage\CreateUser.cshtml" />
     <Content Include="Views\Shared\_DateTimeRange.cshtml" />
+    <Content Include="Views\Shared\_AutoComplete.cshtml" />
     <None Include="Views\SystemManage\CreateTenant.cshtml" />
     <Content Include="Views\SystemManage\UpdateTenant.cshtml" />
     <Content Include="Views\SystemManage\DeviceType.cshtml" />

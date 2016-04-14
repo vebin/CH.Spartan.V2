@@ -67,17 +67,13 @@ namespace CH.Spartan.Web
                     ).Include(
                        "~/Content/js/plugins/my97/wdatepicker.js"
                    ).Include(
-                       "~/Content/js/plugins/select2/js/select2.full.min.js"
-                   ).Include(
-                       "~/Content/js/plugins/select2/js/i18n/"+ currentLanguage + ".js"
-                   ).Include(
-                       "~/Content/js/plugins/select2/js/select2.default.js"
+                       "~/Content/js/plugins/select2/js/select2.full.js"
                    )
                 );
 
             bundles.Add(
                 new StyleBundle("~/styles/plugins/edit")
-                     .Include("~/Content/js/plugins/select2/js/select2.min.css", new CssRewriteUrlTransform())
+                     .Include("~/Content/js/plugins/select2/css/select2.css", new CssRewriteUrlTransform())
                 );
 
             bundles.Add(
@@ -91,11 +87,7 @@ namespace CH.Spartan.Web
                    ).Include(
                        "~/Content/js/plugins/my97/wdatepicker.js"
                    ).Include(
-                       "~/Content/js/plugins/select2/js/select2.full.min.js"
-                   ).Include(
-                       "~/Content/js/plugins/select2/js/i18n/" + currentLanguage + ".js"
-                   ).Include(
-                       "~/Content/js/plugins/select2/js/select2.default.js"
+                       "~/Content/js/plugins/select2/js/select2.full.js"
                    )
                );
         }

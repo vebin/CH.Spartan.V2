@@ -64,9 +64,7 @@
                     <div class="form-group">
                         <label class="col-sm-4 control-label">@L("允许登录")：</label>
                         <div class="col-sm-8">
-                            <select name="IsActive" class="form-control">
-                                @Html.GetOptionHtmlByEnable(Model.Tenant.IsActive)
-                            </select>
+                            @Html.GetSelectByEnable("IsActive","", Model.Tenant.IsActive,"")
                         </div>
                     </div>
                 </div>

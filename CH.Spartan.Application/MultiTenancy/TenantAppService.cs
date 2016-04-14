@@ -111,10 +111,19 @@ namespace CH.Spartan.MultiTenancy
             return new UpdateTenantOutput(result.MapTo<UpdateTenantDto>());
         }
 
+        public async Task<GetTenantOutput> GetTenantAsync(IdInput input)
+        {
+            var result = await _tenantRepository.GetAsync(input.Id);
+            return new GetTenantOutput(result.MapTo<GetTenantDto>());
+        }
+
         public async Task<ListResultOutput<GetTenantListDto>> GetTenantListAsync(GetTenantListInput input)
         {
             var list = await _tenantRepository.GetAll()
+                .WhereIf(!input.SearchText.IsNullOrEmpty(),
+                    p => p.Name.Contains(input.SearchText))
                 .OrderBy(input)
+                .Take(input)
                 .ToListAsync();
             return new ListResultOutput<GetTenantListDto>(list.MapTo<List<GetTenantListDto>>());
         }

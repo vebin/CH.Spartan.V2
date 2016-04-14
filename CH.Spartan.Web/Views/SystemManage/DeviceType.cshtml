@@ -66,27 +66,32 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="ibox float-e-margins">
+                <div class="ibox-content list-toolbar">
+                    <form role="form" class="form-inline" id="form">
+                        <div class="form-group">
+                            @Html.SearchText(L("请输入关键字"), L("查询"))
+                        </div>
+                    </form>
+                </div>
                 <div class="ibox-content list-content">
                     <table id="table"
                            data-toggle="table"
                            data-url="/SystemManage/SearchDeviceType"
                            data-toolbar="#tableToolbar"
                            data-height="550"
-                           data-search="true"
-                           data-search-placeholder="@L("请输入关键字")"
                            data-show-export="true">
                         <thead>
-                            <tr>
-                                <th data-field="state" data-checkbox="true"></th>
-                                <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
-                                <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
-                                <th data-field="name" data-sortable="true">@L("名称")</th>
-                                <th data-field="switchInGateway" data-sortable="true">@L("接入网关")</th>
-                                <th data-field="supplier" data-sortable="true">@L("供应商")</th>
-                                <th data-field="manufacturer" data-sortable="true">@L("制造商")</th>
-                                <th data-field="serviceCharge" data-sortable="true">@L("服务费元/年")</th>
-                                <th data-field="lastModificationTime" data-sortable="true">@L("最后编辑时间")</th>
-                            </tr>
+                        <tr>
+                            <th data-field="state" data-checkbox="true"></th>
+                            <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
+                            <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
+                            <th data-field="name" data-sortable="true">@L("名称")</th>
+                            <th data-field="switchInGateway" data-sortable="true">@L("接入网关")</th>
+                            <th data-field="supplier" data-sortable="true">@L("供应商")</th>
+                            <th data-field="manufacturer" data-sortable="true">@L("制造商")</th>
+                            <th data-field="serviceCharge" data-sortable="true">@L("服务费元/年")</th>
+                            <th data-field="lastModificationTime" data-sortable="true">@L("最后编辑时间")</th>
+                        </tr>
                         </thead>
                     </table>
                 </div>

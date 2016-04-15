@@ -57,10 +57,5 @@ namespace CH.Spartan.Users.Dto
         /// 是否激活
         /// </summary>
        public bool? IsActive { get; set; }
-       
-        /// <summary>
-        /// 所属租户 Id
-        /// </summary>
-       public int? TenantId { get; set; }
     }
 }

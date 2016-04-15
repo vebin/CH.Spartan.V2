@@ -73,41 +73,33 @@ namespace CH.Spartan.Users
 
         public async Task<IdentityResult> CreateUserAsync(User user)
         {
-            using (_unitOfWorkManager.Current.DisableFilter(AbpDataFilters.MayHaveTenant))
+            user.Name = user.UserName;
+            user.Surname = user.UserName;
+            user.Password = new Md532PasswordHasher().HashPassword(SpartanConsts.DefaultPassword);
+            user.IsInitPassword = true;
+            user.IsInitUserName = true;
+            user.IsActive = true;
+            user.IsEmailConfirmed = true;
+            var result = await CreateAsync(user);
+            if (!result.Succeeded)
             {
-                user.Name = user.UserName;
-                user.Surname = user.UserName;
-                user.Password = new Md532PasswordHasher().HashPassword(SpartanConsts.DefaultPassword);
-                user.IsInitPassword = true;
-                user.IsInitUserName = true;
-                user.IsActive = true;
-                user.IsEmailConfirmed = true;
-                var result=await CreateAsync(user);
-                if (!result.Succeeded)
-                {
-                    return result;
-                }
-
-                await _unitOfWorkManager.Current.SaveChangesAsync();
-                using (_unitOfWorkManager.Current.EnableFilter(AbpDataFilters.MayHaveTenant))
-                {
-                    using (_unitOfWorkManager.Current.SetFilterParameter(AbpDataFilters.MayHaveTenant, AbpDataFilters.Parameters.TenantId, user.TenantId))
-                    {
-
-                        var roles = RoleManager.Roles.Where(p => p.IsDefault).ToList();
-                        foreach (var role in roles)
-                        {
-                            result= await AddToRoleAsync(user.Id, role.Name);
-                            if (!result.Succeeded)
-                            {
-                                return result;
-                            }
-                        }
-                        await _unitOfWorkManager.Current.SaveChangesAsync();
-                    }
-                }
+                return result;
             }
 
+            await _unitOfWorkManager.Current.SaveChangesAsync();
+            using (_unitOfWorkManager.Current.SetFilterParameter(AbpDataFilters.MayHaveTenant,AbpDataFilters.Parameters.TenantId, user.TenantId))
+            {
+                var roles = RoleManager.Roles.Where(p => p.IsDefault).ToList();
+                foreach (var role in roles)
+                {
+                    result = await AddToRoleAsync(user.Id, role.Name);
+                    if (!result.Succeeded)
+                    {
+                        return result;
+                    }
+                }
+                await _unitOfWorkManager.Current.SaveChangesAsync();
+            }
             return IdentityResult.Success;
         }
     }

@@ -61,8 +61,6 @@ namespace CH.Spartan.Web
                         requiresAuthentication: true,
                         requiredPermissionName: SpartanPermissionNames.PlatformManages
                         )
-                        .AddItem(new MenuItemDefinition("User", L("客户管理"), "fa fa-user", "/PlatformManage/User", true, SpartanPermissionNames.PlatformManages_User))
-                        .AddItem(new MenuItemDefinition("Device", L("车辆管理"), "fa fa-truck", "/PlatformManage/Device", true, SpartanPermissionNames.PlatformManages_Device))
                         .AddItem(new MenuItemDefinition("DealRecord", L("交易记录"), "fa fa-credit-card", "/PlatformManage/DealRecord", true, SpartanPermissionNames.PlatformManages_DealRecord))
                 ).AddItem(
                     new MenuItemDefinition(

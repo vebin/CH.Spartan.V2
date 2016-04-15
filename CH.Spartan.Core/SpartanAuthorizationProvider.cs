@@ -65,16 +65,6 @@ namespace CH.Spartan
             {
                 platformManages = context.CreatePermission(SpartanPermissionNames.PlatformManages, L("平台管理"), multiTenancySides: MultiTenancySides.Host);
             }
-
-            var platformManageUser=  platformManages.CreateChildPermission(SpartanPermissionNames.PlatformManages_User, L("客户管理"), multiTenancySides: MultiTenancySides.Host);
-            platformManageUser.CreateChildPermission(SpartanPermissionNames.PlatformManages_User_Create, L("添加"), multiTenancySides: MultiTenancySides.Host);
-            platformManageUser.CreateChildPermission(SpartanPermissionNames.PlatformManages_User_Update, L("更新"), multiTenancySides: MultiTenancySides.Host);
-            platformManageUser.CreateChildPermission(SpartanPermissionNames.PlatformManages_User_Delete, L("删除"), multiTenancySides: MultiTenancySides.Host);
-
-            var platformManageDevice = platformManages.CreateChildPermission(SpartanPermissionNames.PlatformManages_Device, L("车辆管理"), multiTenancySides: MultiTenancySides.Host);
-            platformManageDevice.CreateChildPermission(SpartanPermissionNames.PlatformManages_Device_Create, L("添加"), multiTenancySides: MultiTenancySides.Host);
-            platformManageDevice.CreateChildPermission(SpartanPermissionNames.PlatformManages_Device_Update, L("更新"), multiTenancySides: MultiTenancySides.Host);
-            platformManageDevice.CreateChildPermission(SpartanPermissionNames.PlatformManages_Device_Delete, L("删除"), multiTenancySides: MultiTenancySides.Host);
            
             var platformManageDealRecord = platformManages.CreateChildPermission(SpartanPermissionNames.PlatformManages_DealRecord, L("交易记录"), multiTenancySides: MultiTenancySides.Host);
             platformManageDealRecord.CreateChildPermission(SpartanPermissionNames.PlatformManages_DealRecord_Delete, L("删除"), multiTenancySides: MultiTenancySides.Host);

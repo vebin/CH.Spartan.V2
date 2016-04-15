@@ -39,15 +39,6 @@
 
         //平台
         public const string PlatformManages = "PlatformManages";
-        public const string PlatformManages_User = "PlatformManages.User";
-        public const string PlatformManages_User_Create = "PlatformManages.User.Create";
-        public const string PlatformManages_User_Update = "PlatformManages.User.Update";
-        public const string PlatformManages_User_Delete = "PlatformManages.User.Delete";
-
-        public const string PlatformManages_Device = "PlatformManages.Device";
-        public const string PlatformManages_Device_Create = "PlatformManages.Device.Create";
-        public const string PlatformManages_Device_Update = "PlatformManages.Device.Update";
-        public const string PlatformManages_Device_Delete = "PlatformManages.Device.Delete";
 
         public const string PlatformManages_DealRecord = "PlatformManages.DealRecord";
         public const string PlatformManages_DealRecord_Delete = "PlatformManages.DealRecord.Delete";

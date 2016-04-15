@@ -23,9 +23,9 @@
 
         //添加
         function create() {
-            abp.dialog.open("/PlatformManage/CreateUser", "@L("添加用户")", {
-                area: ["775px", "750px"],
-                //area: ["675px", "750px"],
+            abp.dialog.open("/AgentManage/CreateUser", "@L("添加用户")", {
+                //area: ["775px", "750px"],
+                area: ["675px", "750px"],
                 //area: ["775px", "750px"],
                 //area: ["995px", "750px"],
                 //area: ["1250px", "750px"],
@@ -42,13 +42,11 @@
             });
         }
 
-
-
         //更新
         function update(id) {
-            abp.dialog.open("/PlatformManage/UpdateUser?id=" + id, "@L("修改用户")", {
-                area: ["775px", "750px"],
-                //area: ["675px", "750px"],
+            abp.dialog.open("/AgentManage/UpdateUser?id=" + id, "@L("修改用户")", {
+                //area: ["775px", "750px"],
+                area: ["675px", "750px"],
                 //area: ["775px", "750px"],
                 //area: ["995px", "750px"],
                 //area: ["1250px", "750px"],
@@ -76,7 +74,7 @@
             abp.message.confirm("@L("确定删除")?", function (yes) {
                 if (!yes) return;
                 abp.ajax({
-                    url: "/PlatformManage/DeleteUser",
+                    url: "/AgentManage/DeleteUser",
                     data: JSON.stringify(ids)
                 }).done(function (result) {
                     abp.notify.success("@L("删除成功")");
@@ -134,12 +132,17 @@
                 <div class="ibox-content list-toolbar">
                     <form role="form" class="form-inline" id="form">
                         <div class="form-group">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="@L("用户名/名称")" name="SearchText">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-search">@L("查询")</button>
-                                </span>
-                            </div>
+                            <select class="form-control w180" name="SearchTime">
+                                <option value="CreationTime">@L("创建时间")</option>
+                                <option value="LastLoginTime">@L("登录时间")</option>
+                            </select>
+                        </div>
+                        @Html.DateTimeRange()
+                        <div class="form-group">
+                            @Html.GetSelectByEnable("IsActive",L("不限(允许登录)"))
+                        </div>
+                        <div class="form-group">
+                            @Html.SearchText(L("请输入用户名/名称"), L("查询"))
                         </div>
                     </form>
                 </div>
@@ -156,7 +159,7 @@
                     </div>
                     <table id="table"
                            data-toggle="table"
-                           data-url="/PlatformManage/SearchUser"
+                           data-url="/AgentManage/SearchUser"
                            data-toolbar="#tableToolbar"
                            data-height="550"
                            data-show-export="true">
@@ -165,10 +168,11 @@
                                 <th data-field="state" data-checkbox="true"></th>
                                 <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
                                 <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
-                                <th data-field="userName" data-sortable="true">@L("用户名")</th>
+                                <th data-field="tenantText" data-sortable="true">@L("所属租户")</th>
+                                <th data-field="userName" data-sortable="true">@L("客户名")</th>
                                 <th data-field="name" data-sortable="true">@L("名称")</th>
                                 <th data-field="emailAddress" data-sortable="true">@L("邮件")</th>
-                                <th data-field="isActive" data-sortable="true">@L("是否激活")</th>
+                                <th data-field="isActiveText" data-sortable="true">@L("允许登录")</th>
                                 <th data-field="lastLoginTime" data-sortable="true">@L("最后登录时间")</th>
                                 <th data-field="creationTime" data-sortable="true">@L("创建时间")</th>
                             </tr>

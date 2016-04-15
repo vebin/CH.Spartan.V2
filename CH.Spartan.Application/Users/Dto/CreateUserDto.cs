@@ -38,8 +38,6 @@ namespace CH.Spartan.Users.Dto
         }
 
         public CreateUserDto User { get; set; }
-
-        public List<ComboboxItemDto> Tenants { get; set; }
     }
 }
 

@@ -557,25 +557,22 @@ namespace Abp.Authorization.Users
 
         public async override Task<IdentityResult> UpdateAsync(TUser user)
         {
-            using (_unitOfWorkManager.Current.DisableFilter(AbpDataFilters.MayHaveTenant))
+            var result = await CheckDuplicateUsernameOrEmailAddressAsync(user.Id, user.UserName, user.EmailAddress);
+            if (!result.Succeeded)
             {
-                var result = await CheckDuplicateUsernameOrEmailAddressAsync(user.Id, user.UserName, user.EmailAddress);
-                if (!result.Succeeded)
-                {
-                    return result;
-                }
-
-                var oldUserName = (await GetUserByIdAsync(user.Id)).UserName;
-                if (oldUserName == AbpUser<TTenant, TUser>.AdminUserName &&
-                    user.UserName != AbpUser<TTenant, TUser>.AdminUserName)
-                {
-                    return
-                        AbpIdentityResult.Failed(string.Format(L("CanNotRenameAdminUser"),
-                            AbpUser<TTenant, TUser>.AdminUserName));
-                }
-
-                return await base.UpdateAsync(user);
+                return result;
             }
+
+            var oldUserName = (await GetUserByIdAsync(user.Id)).UserName;
+            if (oldUserName == AbpUser<TTenant, TUser>.AdminUserName &&
+                user.UserName != AbpUser<TTenant, TUser>.AdminUserName)
+            {
+                return
+                    AbpIdentityResult.Failed(string.Format(L("CanNotRenameAdminUser"),
+                        AbpUser<TTenant, TUser>.AdminUserName));
+            }
+
+            return await base.UpdateAsync(user);
         }
 
         public async override Task<IdentityResult> DeleteAsync(TUser user)
@@ -601,19 +598,22 @@ namespace Abp.Authorization.Users
 
         public virtual async Task<IdentityResult> CheckDuplicateUsernameOrEmailAddressAsync(long? expectedUserId, string userName, string emailAddress)
         {
-            var user = (await FindByNameAsync(userName));
-            if (user != null && user.Id != expectedUserId)
+            //全范围内查找 不区分租户
+            using (_unitOfWorkManager.Current.DisableFilter(AbpDataFilters.MayHaveTenant))
             {
-                return AbpIdentityResult.Failed(string.Format(L("Identity.DuplicateName"), userName));
-            }
+                var user = (await FindByNameAsync(userName));
+                if (user != null && user.Id != expectedUserId)
+                {
+                    return AbpIdentityResult.Failed(string.Format(L("Identity.DuplicateName"), userName));
+                }
 
-            user = (await FindByEmailAsync(emailAddress));
-            if (user != null && user.Id != expectedUserId)
-            {
-                return AbpIdentityResult.Failed(string.Format(L("Identity.DuplicateEmail"), emailAddress));
+                user = (await FindByEmailAsync(emailAddress));
+                if (user != null && user.Id != expectedUserId)
+                {
+                    return AbpIdentityResult.Failed(string.Format(L("Identity.DuplicateEmail"), emailAddress));
+                }
+                return IdentityResult.Success;
             }
-
-            return IdentityResult.Success;
         }
 
         public virtual async Task<IdentityResult> SetRoles(TUser user, string[] roleNames)

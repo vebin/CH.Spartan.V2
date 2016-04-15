@@ -15,7 +15,7 @@
                         device: abp.utils.getFormData(form)
                     };
                     abp.ajax({
-                        url: "/PlatformManage/UpdateDevice",
+                        url: "/AgentManage/UpdateDevice",
                         data: JSON.stringify(data)
                     }).done(function (result) {
                         abp.notify.success("@L("保存成功")");

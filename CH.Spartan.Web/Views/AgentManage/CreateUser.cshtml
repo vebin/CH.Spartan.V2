@@ -19,7 +19,7 @@
                         user: abp.utils.getFormData(form)
                     };
                     abp.ajax({
-                        url: "/PlatformManage/CreateUser",
+                        url: "/AgentManage/CreateUser",
                         data: JSON.stringify(data)
                     }).done(function (result) {
                         abp.notify.success("@L("添加成功")");
@@ -41,15 +41,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("所属租户"):</label>
-                        <div class="col-sm-8">
-                            @Html.AutoCompleteTenant("TenantId", "", null, "required")
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("用户名"):</label>
+                        <label class="col-sm-4 control-label">@L("客户名"):</label>
                         <div class="col-sm-8">
                             <input class="form-control required stringCheck" type="text" id="UserName" name="UserName" value="@Model.User.UserName"/>
                         </div>

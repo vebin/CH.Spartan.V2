@@ -694,15 +694,13 @@
     <Content Include="Content\js\plugins\table\locale\bootstrap-table-en-US.js.template" />
     <Content Include="Content\js\plugins\table\locale\README.md" />
     <Content Include="Views\SystemManage\CreateNode.cshtml" />
-    <Content Include="Views\PlatformManage\CreateDevice.cshtml" />
-    <Content Include="Views\PlatformManage\Device.cshtml" />
-    <Content Include="Views\PlatformManage\UpdateDevice.cshtml" />
+    <Content Include="Views\AgentManage\CreateDevice.cshtml" />
+    <Content Include="Views\AgentManage\Device.cshtml" />
+    <Content Include="Views\AgentManage\UpdateDevice.cshtml" />
     <Content Include="Views\SystemManage\AuditLog.cshtml" />
-    <Content Include="Views\PlatformManage\UpdateUser.cshtml" />
-    <Content Include="Views\PlatformManage\User.cshtml" />
-    <Content Include="Views\AgentManage\User.cshtml" />
     <Content Include="Views\AgentManage\UpdateUser.cshtml" />
-    <Content Include="Views\PlatformManage\CreateUser.cshtml" />
+    <Content Include="Views\AgentManage\User.cshtml" />
+    <Content Include="Views\AgentManage\CreateUser.cshtml" />
     <Content Include="Views\Shared\_DateTimeRange.cshtml" />
     <Content Include="Views\Shared\_AutoComplete.cshtml" />
     <None Include="Views\SystemManage\CreateTenant.cshtml" />
@@ -786,6 +784,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\CustomerManage\" />
+    <Folder Include="Views\PlatformManage\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

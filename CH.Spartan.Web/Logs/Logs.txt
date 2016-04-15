@@ -4270,3 +4270,432 @@ System.Web.HttpParseException (0x80004005): ¡°<¡±ÔÚ´úÂë¿é¿ªÍ·ÎÞÐ§¡£Ö»ÓÐ±êÊ¶·û¡¢¹
    ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
    ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
 WARN  2016-04-14 18:06:06,252 [305  ] Abp.Logging.LogHelper                    - Can not find 'Ìí¼Ó³É¹¦' in localization source 'Spartan'!
+DEBUG 2016-04-15 09:18:49,750 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-04-15 09:18:53,338 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2016-04-15 09:18:53,341 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,342 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,342 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,343 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,343 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Owin.AbpOwinModule, Abp.Owin, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,343 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,343 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,343 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,343 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=0.8.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,343 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,343 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=0.8.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,343 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanApplicationModule, CH.Spartan.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,343 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanCoreModule, CH.Spartan.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,343 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.SpartanDataModule, CH.Spartan.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,344 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Web.SpartanWebModule, CH.Spartan.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,344 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: CH.Spartan.Api.SpartanWebApiModule, CH.Spartan.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-04-15 09:18:53,347 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2016-04-15 09:18:53,409 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-15 09:18:53,409 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-15 09:18:53,409 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-15 09:18:53,409 [1    ] o.Configuration.LanguageManagementConfig - Converted Spartan (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2016-04-15 09:18:58,806 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2016-04-15 09:18:58,811 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-04-15 09:18:58,812 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-04-15 09:18:58,812 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2016-04-15 09:18:58,813 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Spartan
+DEBUG 2016-04-15 09:18:58,818 [1    ] bp.Hangfire.HangfireBackgroundJobManager - Start background worker: Abp.Hangfire.HangfireBackgroundJobManager
+INFO  2016-04-15 09:18:59,037 [1    ] Hangfire.BackgroundJobServer             - Starting Hangfire Server
+INFO  2016-04-15 09:18:59,037 [1    ] Hangfire.BackgroundJobServer             - Using job storage: 'Hangfire.MemoryStorage.MemoryStorage'.
+INFO  2016-04-15 09:18:59,037 [1    ] Hangfire.BackgroundJobServer             - Using the following options for Hangfire Server:
+INFO  2016-04-15 09:18:59,037 [1    ] Hangfire.BackgroundJobServer             -     Worker count: 40.
+INFO  2016-04-15 09:18:59,037 [1    ] Hangfire.BackgroundJobServer             -     Listening queues: 'default'.
+INFO  2016-04-15 09:18:59,037 [1    ] Hangfire.BackgroundJobServer             -     Shutdown timeout: 00:00:15.
+INFO  2016-04-15 09:18:59,037 [1    ] Hangfire.BackgroundJobServer             -     Schedule polling interval: 00:00:15.
+DEBUG 2016-04-15 09:18:59,172 [erver] ngfire.Server.BackgroundProcessingServer - Background process 'BackgroundProcessingServer' started.
+DEBUG 2016-04-15 09:18:59,403 [tbeat] Hangfire.Server.ServerHeartbeat          - Background process 'ServerHeartbeat' started.
+DEBUG 2016-04-15 09:18:59,407 [chdog] Hangfire.Server.ServerWatchdog           - Background process 'ServerWatchdog' started.
+DEBUG 2016-04-15 09:18:59,417 [nager] Hangfire.MemoryStorage.ExpirationManager - Background process 'Composite C1 Records Expiration Manager' started.
+DEBUG 2016-04-15 09:18:59,423 [gator] angfire.MemoryStorage.CountersAggregator - Background process 'Counter Table Aggregator' started.
+DEBUG 2016-04-15 09:18:59,428 [5ba19] Hangfire.Server.Worker                   - Background process 'Worker #0955ba19' started.
+DEBUG 2016-04-15 09:18:59,436 [158c9] Hangfire.Server.Worker                   - Background process 'Worker #d33158c9' started.
+DEBUG 2016-04-15 09:18:59,439 [2048b] Hangfire.Server.Worker                   - Background process 'Worker #33a2048b' started.
+DEBUG 2016-04-15 09:18:59,441 [7bab3] Hangfire.Server.Worker                   - Background process 'Worker #b1e7bab3' started.
+DEBUG 2016-04-15 09:18:59,446 [c597d] Hangfire.Server.Worker                   - Background process 'Worker #2d2c597d' started.
+DEBUG 2016-04-15 09:18:59,450 [88786] Hangfire.Server.Worker                   - Background process 'Worker #fc088786' started.
+DEBUG 2016-04-15 09:18:59,454 [b8788] Hangfire.Server.Worker                   - Background process 'Worker #a63b8788' started.
+DEBUG 2016-04-15 09:18:59,460 [322aa] Hangfire.Server.Worker                   - Background process 'Worker #c52322aa' started.
+DEBUG 2016-04-15 09:18:59,463 [c006d] Hangfire.Server.Worker                   - Background process 'Worker #19ac006d' started.
+DEBUG 2016-04-15 09:18:59,466 [eafbe] Hangfire.Server.Worker                   - Background process 'Worker #a22eafbe' started.
+DEBUG 2016-04-15 09:18:59,477 [0a46f] Hangfire.Server.Worker                   - Background process 'Worker #c5d0a46f' started.
+DEBUG 2016-04-15 09:18:59,477 [378f9] Hangfire.Server.Worker                   - Background process 'Worker #a54378f9' started.
+DEBUG 2016-04-15 09:18:59,480 [af608] Hangfire.Server.Worker                   - Background process 'Worker #d09af608' started.
+DEBUG 2016-04-15 09:18:59,487 [2e480] Hangfire.Server.Worker                   - Background process 'Worker #5902e480' started.
+DEBUG 2016-04-15 09:18:59,494 [b672e] Hangfire.Server.Worker                   - Background process 'Worker #787b672e' started.
+DEBUG 2016-04-15 09:18:59,507 [100a8] Hangfire.Server.Worker                   - Background process 'Worker #626100a8' started.
+DEBUG 2016-04-15 09:18:59,508 [062a1] Hangfire.Server.Worker                   - Background process 'Worker #2e9062a1' started.
+DEBUG 2016-04-15 09:18:59,511 [f5b82] Hangfire.Server.Worker                   - Background process 'Worker #591f5b82' started.
+DEBUG 2016-04-15 09:18:59,519 [f9b94] Hangfire.Server.Worker                   - Background process 'Worker #4a9f9b94' started.
+DEBUG 2016-04-15 09:18:59,523 [71042] Hangfire.Server.Worker                   - Background process 'Worker #6a471042' started.
+DEBUG 2016-04-15 09:18:59,533 [bb55a] Hangfire.Server.Worker                   - Background process 'Worker #7fbbb55a' started.
+DEBUG 2016-04-15 09:18:59,545 [826f4] Hangfire.Server.Worker                   - Background process 'Worker #2d5826f4' started.
+DEBUG 2016-04-15 09:18:59,562 [b413d] Hangfire.Server.Worker                   - Background process 'Worker #a74b413d' started.
+DEBUG 2016-04-15 09:18:59,567 [2e04d] Hangfire.Server.Worker                   - Background process 'Worker #9272e04d' started.
+DEBUG 2016-04-15 09:18:59,610 [b6603] Hangfire.Server.Worker                   - Background process 'Worker #33ab6603' started.
+DEBUG 2016-04-15 09:18:59,622 [b749a] Hangfire.Server.Worker                   - Background process 'Worker #551b749a' started.
+DEBUG 2016-04-15 09:18:59,637 [26a64] Hangfire.Server.Worker                   - Background process 'Worker #64c26a64' started.
+DEBUG 2016-04-15 09:18:59,669 [816f6] Hangfire.Server.Worker                   - Background process 'Worker #498816f6' started.
+DEBUG 2016-04-15 09:18:59,695 [4085c] Hangfire.Server.Worker                   - Background process 'Worker #1c24085c' started.
+DEBUG 2016-04-15 09:18:59,704 [dc487] Hangfire.Server.Worker                   - Background process 'Worker #7c7dc487' started.
+DEBUG 2016-04-15 09:18:59,709 [34773] Hangfire.Server.Worker                   - Background process 'Worker #72e34773' started.
+DEBUG 2016-04-15 09:18:59,712 [5b719] Hangfire.Server.Worker                   - Background process 'Worker #b2d5b719' started.
+DEBUG 2016-04-15 09:18:59,719 [61dd8] Hangfire.Server.Worker                   - Background process 'Worker #4f061dd8' started.
+DEBUG 2016-04-15 09:18:59,724 [12a92] Hangfire.Server.Worker                   - Background process 'Worker #a1d12a92' started.
+DEBUG 2016-04-15 09:18:59,736 [7fe41] Hangfire.Server.Worker                   - Background process 'Worker #5747fe41' started.
+DEBUG 2016-04-15 09:18:59,740 [dcebb] Hangfire.Server.Worker                   - Background process 'Worker #d4bdcebb' started.
+DEBUG 2016-04-15 09:18:59,761 [52ac6] Hangfire.Server.Worker                   - Background process 'Worker #4d852ac6' started.
+DEBUG 2016-04-15 09:18:59,772 [b1b7b] Hangfire.Server.Worker                   - Background process 'Worker #0d9b1b7b' started.
+DEBUG 2016-04-15 09:18:59,781 [5969f] Hangfire.Server.Worker                   - Background process 'Worker #9455969f' started.
+DEBUG 2016-04-15 09:18:59,785 [19c12] Hangfire.Server.Worker                   - Background process 'Worker #6a219c12' started.
+DEBUG 2016-04-15 09:18:59,810 [duler] Hangfire.Server.DelayedJobScheduler      - Background process 'DelayedJobScheduler' started.
+DEBUG 2016-04-15 09:18:59,821 [duler] Hangfire.Server.RecurringJobScheduler    - Background process 'RecurringJobScheduler' started.
+DEBUG 2016-04-15 09:18:59,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 21 classes defines auto mapping attributes
+DEBUG 2016-04-15 09:18:59,827 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2016-04-15 09:18:59,829 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Sessions.Dto.UserLoginInfoDto
+DEBUG 2016-04-15 09:18:59,830 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Users.Dto.CreateUserDto
+DEBUG 2016-04-15 09:18:59,833 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Users.Dto.GetUserListDto
+DEBUG 2016-04-15 09:18:59,833 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Users.Dto.UpdateUserDto
+DEBUG 2016-04-15 09:18:59,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.CreateRoleDto
+DEBUG 2016-04-15 09:18:59,840 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.GetRoleListDto
+DEBUG 2016-04-15 09:18:59,840 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Authorization.Roles.Dto.UpdateRoleDto
+DEBUG 2016-04-15 09:18:59,842 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.CreateNodeDto
+DEBUG 2016-04-15 09:18:59,843 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.GetNodeListDto
+DEBUG 2016-04-15 09:18:59,844 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Nodes.Dto.UpdateNodeDto
+DEBUG 2016-04-15 09:18:59,845 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.GetTenantDto
+DEBUG 2016-04-15 09:18:59,847 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2016-04-15 09:18:59,848 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.GetTenantListDto
+DEBUG 2016-04-15 09:18:59,848 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.MultiTenancy.Dto.UpdateTenantDto
+DEBUG 2016-04-15 09:18:59,850 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.GetDeviceTypeListDto
+DEBUG 2016-04-15 09:18:59,851 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.DeviceTypes.Dto.UpdateDeviceTypeDto
+DEBUG 2016-04-15 09:18:59,865 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.CreateDeviceDto
+DEBUG 2016-04-15 09:18:59,875 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.GetDeviceListDto
+DEBUG 2016-04-15 09:18:59,876 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.Devices.Dto.UpdateDeviceDto
+DEBUG 2016-04-15 09:18:59,887 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - CH.Spartan.AuditLogs.Dto.GetAuditLogListDto
+DEBUG 2016-04-15 09:21:26,074 [68   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"ec75112d-56d1-45fc-9a07-9983266bcf77","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2016-04-15T09:21:26.0697363+08:00","Properties":{}}
+DEBUG 2016-04-15 09:21:26,108 [7    ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: ec75112d-56d1-45fc-9a07-9983266bcf77
+WARN  2016-04-15 09:21:34,684 [8    ] Abp.Logging.LogHelper                    - Can not find 'ÇëÊäÈë×â»§Ãû/Ãû³Æ' in localization source 'Spartan'!
+WARN  2016-04-15 09:21:34,684 [8    ] Abp.Logging.LogHelper                    - Can not find '²éÑ¯' in localization source 'Spartan'!
+WARN  2016-04-15 09:21:34,691 [8    ] Abp.Logging.LogHelper                    - Can not find '×â»§Ãû' in localization source 'Spartan'!
+WARN  2016-04-15 09:21:34,691 [8    ] Abp.Logging.LogHelper                    - Can not find '¹«Ë¾Ãû' in localization source 'Spartan'!
+WARN  2016-04-15 09:21:34,691 [8    ] Abp.Logging.LogHelper                    - Can not find 'ÔÊÐíµÇÂ¼' in localization source 'Spartan'!
+WARN  2016-04-15 09:21:35,130 [8    ] Abp.Logging.LogHelper                    - Can not find 'Ìí¼Ó×â»§' in localization source 'Spartan'!
+WARN  2016-04-15 09:21:35,131 [8    ] Abp.Logging.LogHelper                    - Can not find 'ÐÞ¸Ä×â»§' in localization source 'Spartan'!
+WARN  2016-04-15 09:21:35,131 [8    ] Abp.Logging.LogHelper                    - Can not find 'È·¶¨É¾³ý' in localization source 'Spartan'!
+WARN  2016-04-15 09:21:37,186 [72   ] Abp.Logging.LogHelper                    - Can not find '¹«Ë¾Ãû' in localization source 'Spartan'!
+WARN  2016-04-15 09:21:37,187 [72   ] Abp.Logging.LogHelper                    - Can not find '×â»§Ãû' in localization source 'Spartan'!
+WARN  2016-04-15 09:21:37,187 [72   ] Abp.Logging.LogHelper                    - Can not find 'µç»°' in localization source 'Spartan'!
+WARN  2016-04-15 09:21:37,188 [72   ] Abp.Logging.LogHelper                    - Can not find 'ÓÊ¼þ' in localization source 'Spartan'!
+WARN  2016-04-15 09:21:37,444 [72   ] Abp.Logging.LogHelper                    - Can not find 'Ìí¼Ó³É¹¦' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:16,781 [121  ] Abp.Logging.LogHelper                    - Can not find '´úÀí¹ÜÀí' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:17,257 [117  ] Abp.Logging.LogHelper                    - Can not find '´úÀí¹ÜÀí' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:17,544 [122  ] Abp.Logging.LogHelper                    - Can not find '´úÀí¹ÜÀí' in localization source 'Spartan'!
+DEBUG 2016-04-15 09:26:17,846 [116  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"221482f4-e675-4052-be3f-74e9c02aa57b","IpAddress":"::1","TenantId":1,"UserId":2,"ConnectTime":"2016-04-15T09:26:17.8456958+08:00","Properties":{}}
+DEBUG 2016-04-15 09:26:17,864 [108  ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 221482f4-e675-4052-be3f-74e9c02aa57b
+WARN  2016-04-15 09:26:17,930 [114  ] Abp.Logging.LogHelper                    - Can not find '´úÀí¹ÜÀí' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,009 [97   ] Abp.Logging.LogHelper                    - Can not find '´´½¨Ê±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,009 [97   ] Abp.Logging.LogHelper                    - Can not find 'µÇÂ¼Ê±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,023 [97   ] Abp.Logging.LogHelper                    - Can not find '×Ô¶¨ÒåÊ±¼ä¶Î' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,024 [97   ] Abp.Logging.LogHelper                    - Can not find '½ñÌì' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,025 [97   ] Abp.Logging.LogHelper                    - Can not find '×òÌì' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,025 [97   ] Abp.Logging.LogHelper                    - Can not find '×î½ü7Ìì' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,025 [97   ] Abp.Logging.LogHelper                    - Can not find '×î½ü7Ìì ³ý½ñÌìÍâ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,026 [97   ] Abp.Logging.LogHelper                    - Can not find '±¾ÔÂ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,026 [97   ] Abp.Logging.LogHelper                    - Can not find 'ÉÏ¸öÔÂ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,026 [97   ] Abp.Logging.LogHelper                    - Can not find '×î½ü30Ìì' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,027 [97   ] Abp.Logging.LogHelper                    - Can not find '×î½ü30Ìì ³ý½ñÌìÍâ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,027 [97   ] Abp.Logging.LogHelper                    - Can not find '½ñÄê' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,027 [97   ] Abp.Logging.LogHelper                    - Can not find '¿ªÊ¼Ê±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,027 [97   ] Abp.Logging.LogHelper                    - Can not find '½áÊøÊ±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,028 [97   ] Abp.Logging.LogHelper                    - Can not find '²»ÏÞ(ÔÊÐíµÇÂ¼)' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,030 [97   ] Abp.Logging.LogHelper                    - Can not find 'ÇëÊäÈëÓÃ»§Ãû/Ãû³Æ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,030 [97   ] Abp.Logging.LogHelper                    - Can not find '²éÑ¯' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,030 [97   ] Abp.Logging.LogHelper                    - Can not find 'ËùÊô×â»§' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,031 [97   ] Abp.Logging.LogHelper                    - Can not find '¿Í»§Ãû' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,031 [97   ] Abp.Logging.LogHelper                    - Can not find 'ÓÊ¼þ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,031 [97   ] Abp.Logging.LogHelper                    - Can not find 'ÔÊÐíµÇÂ¼' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,031 [97   ] Abp.Logging.LogHelper                    - Can not find '×îºóµÇÂ¼Ê±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,031 [97   ] Abp.Logging.LogHelper                    - Can not find '´´½¨Ê±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,033 [97   ] Abp.Logging.LogHelper                    - Can not find 'Ìí¼ÓÓÃ»§' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,033 [97   ] Abp.Logging.LogHelper                    - Can not find 'ÐÞ¸ÄÓÃ»§' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,034 [97   ] Abp.Logging.LogHelper                    - Can not find 'È·¶¨É¾³ý' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,034 [97   ] Abp.Logging.LogHelper                    - Can not find 'É¾³ý³É¹¦' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,034 [97   ] Abp.Logging.LogHelper                    - Can not find 'ÇëÑ¡ÔñÒªÉ¾³ýµÄÊý¾Ý' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:30,141 [110  ] Abp.Logging.LogHelper                    - Can not find '´úÀí¹ÜÀí' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,209 [103  ] Abp.Logging.LogHelper                    - Can not find '°²×°Ê±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,209 [103  ] Abp.Logging.LogHelper                    - Can not find '¹ýÆÚÊ±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,210 [103  ] Abp.Logging.LogHelper                    - Can not find 'Í¨Ñ¶Ê±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,210 [103  ] Abp.Logging.LogHelper                    - Can not find '¶¨Î»Ê±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,215 [103  ] Abp.Logging.LogHelper                    - Can not find '×Ô¶¨ÒåÊ±¼ä¶Î' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,216 [103  ] Abp.Logging.LogHelper                    - Can not find '½ñÌì' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,216 [103  ] Abp.Logging.LogHelper                    - Can not find '×òÌì' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,217 [103  ] Abp.Logging.LogHelper                    - Can not find '×î½ü7Ìì' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,217 [103  ] Abp.Logging.LogHelper                    - Can not find '×î½ü7Ìì ³ý½ñÌìÍâ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,217 [103  ] Abp.Logging.LogHelper                    - Can not find '±¾ÔÂ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,218 [103  ] Abp.Logging.LogHelper                    - Can not find 'ÉÏ¸öÔÂ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,218 [103  ] Abp.Logging.LogHelper                    - Can not find '×î½ü30Ìì' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,218 [103  ] Abp.Logging.LogHelper                    - Can not find '×î½ü30Ìì ³ý½ñÌìÍâ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,218 [103  ] Abp.Logging.LogHelper                    - Can not find '½ñÄê' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,219 [103  ] Abp.Logging.LogHelper                    - Can not find '¿ªÊ¼Ê±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,219 [103  ] Abp.Logging.LogHelper                    - Can not find '½áÊøÊ±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,219 [103  ] Abp.Logging.LogHelper                    - Can not find 'È«²¿(Éè±¸ÀàÐÍ)' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,248 [103  ] Abp.Logging.LogHelper                    - Can not find '²»ÏÞ(ÊÇ·ñ¶¨Î»)' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,248 [103  ] Abp.Logging.LogHelper                    - Can not find 'Éè±¸Ãû×Ö/³µÅÆºÅ/Éè±¸ºÅ/Sim¿¨ºÅ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,248 [103  ] Abp.Logging.LogHelper                    - Can not find '²éÑ¯' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,249 [103  ] Abp.Logging.LogHelper                    - Can not find 'Éè±¸Ãû×Ö' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,250 [103  ] Abp.Logging.LogHelper                    - Can not find '³µÅÆºÅ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,250 [103  ] Abp.Logging.LogHelper                    - Can not find 'Éè±¸ºÅ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,250 [103  ] Abp.Logging.LogHelper                    - Can not find 'SimºÅ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,250 [103  ] Abp.Logging.LogHelper                    - Can not find 'ËùÊô×â»§' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,251 [103  ] Abp.Logging.LogHelper                    - Can not find 'ËùÊô¿Í»§' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,251 [103  ] Abp.Logging.LogHelper                    - Can not find 'ÊÇ·ñ¹ýÆÚ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,251 [103  ] Abp.Logging.LogHelper                    - Can not find '¹ýÆÚÊ±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,252 [103  ] Abp.Logging.LogHelper                    - Can not find 'ÊÇ·ñÔÚÏß' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,252 [103  ] Abp.Logging.LogHelper                    - Can not find 'Í¨Ñ¶Ê±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,252 [103  ] Abp.Logging.LogHelper                    - Can not find 'ÊÇ·ñ¶¨Î»' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,253 [103  ] Abp.Logging.LogHelper                    - Can not find '¶¨Î»Ê±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,253 [103  ] Abp.Logging.LogHelper                    - Can not find '°²×°Ê±¼ä' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,255 [103  ] Abp.Logging.LogHelper                    - Can not find 'Ìí¼ÓÉè±¸' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,256 [103  ] Abp.Logging.LogHelper                    - Can not find 'ÐÞ¸ÄÉè±¸' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,256 [103  ] Abp.Logging.LogHelper                    - Can not find 'È·¶¨É¾³ý' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,257 [103  ] Abp.Logging.LogHelper                    - Can not find 'É¾³ý³É¹¦' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,257 [103  ] Abp.Logging.LogHelper                    - Can not find 'ÇëÑ¡ÔñÒªÉ¾³ýµÄÊý¾Ý' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:40,353 [94   ] Abp.Logging.LogHelper                    - Can not find '´úÀí¹ÜÀí' in localization source 'Spartan'!
+DEBUG 2016-04-15 09:26:43,634 [97   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: ec75112d-56d1-45fc-9a07-9983266bcf77
+WARN  2016-04-15 09:26:51,006 [88   ] Abp.Logging.LogHelper                    - Can not find '¿Í»§Ãû' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:51,006 [88   ] Abp.Logging.LogHelper                    - Can not find 'ÓÊ¼þ' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:51,007 [88   ] Abp.Logging.LogHelper                    - Can not find 'Ìí¼Ó³É¹¦' in localization source 'Spartan'!
+WARN  2016-04-15 09:26:51,110 [80   ] Abp.Logging.LogHelper                    - Can not find '´úÀí¹ÜÀí' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:16,047 [91   ] Abp.Logging.LogHelper                    - Can not find '¿Í»§Ãû' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:16,047 [91   ] Abp.Logging.LogHelper                    - Can not find 'ÓÊ¼þ' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:16,048 [91   ] Abp.Logging.LogHelper                    - Can not find 'Ìí¼Ó³É¹¦' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:16,354 [83   ] Abp.Logging.LogHelper                    - Can not find '´úÀí¹ÜÀí' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:29,634 [87   ] an.Web.Controllers.AgentManageController - Ãû×Öyugps1ÒÑ±»Õ¼ÓÃ.
+Abp.UI.UserFriendlyException: Ãû×Öyugps1ÒÑ±»Õ¼ÓÃ.
+   ÔÚ Abp.IdentityFramework.IdentityResultExtensions.CheckErrors(IdentityResult identityResult, ILocalizationManager localizationManager) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\IdentityFramework\IdentityResultExtensions.cs:ÐÐºÅ 68
+   ÔÚ CH.Spartan.SpartanAppServiceBase.CheckErrors(IdentityResult identityResult) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\CH.Spartan.Application\SpartanAppServiceBase.cs:ÐÐºÅ 44
+   ÔÚ Castle.Proxies.UserAppServiceProxy.CheckErrors_callback(IdentityResult identityResult)
+   ÔÚ Castle.Proxies.Invocations.SpartanAppServiceBase_CheckErrors_1.InvokeMethodOnTarget()
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:ÐÐºÅ 31
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:ÐÐºÅ 28
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Auditing\AuditingInterceptor.cs:ÐÐºÅ 45
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:ÐÐºÅ 17
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Castle.Proxies.UserAppServiceProxy.CheckErrors(IdentityResult identityResult)
+   ÔÚ CH.Spartan.Users.UserAppService.<CreateUserAsync>d__10.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\CH.Spartan.Application\Users\UserAppService.cs:ÐÐºÅ 86
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinally>d__1.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:ÐÐºÅ 40
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinally>d__0.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:ÐÐºÅ 20
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ CH.Spartan.Web.Controllers.AgentManageController.<CreateUser>d__13.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\AgentManageController.cs:ÐÐºÅ 134
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   ÔÚ System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-04-15 09:27:35,398 [83   ] an.Web.Controllers.AgentManageController - ÓÊÏäµØÖ· 'yugps1@gmail.com' ÒÑ±»Õ¼ÓÃ.
+Abp.UI.UserFriendlyException: ÓÊÏäµØÖ· 'yugps1@gmail.com' ÒÑ±»Õ¼ÓÃ.
+   ÔÚ Abp.IdentityFramework.IdentityResultExtensions.CheckErrors(IdentityResult identityResult, ILocalizationManager localizationManager) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\IdentityFramework\IdentityResultExtensions.cs:ÐÐºÅ 68
+   ÔÚ CH.Spartan.SpartanAppServiceBase.CheckErrors(IdentityResult identityResult) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\CH.Spartan.Application\SpartanAppServiceBase.cs:ÐÐºÅ 44
+   ÔÚ Castle.Proxies.UserAppServiceProxy.CheckErrors_callback(IdentityResult identityResult)
+   ÔÚ Castle.Proxies.Invocations.SpartanAppServiceBase_CheckErrors_1.InvokeMethodOnTarget()
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:ÐÐºÅ 31
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:ÐÐºÅ 28
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Auditing\AuditingInterceptor.cs:ÐÐºÅ 45
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:ÐÐºÅ 17
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Castle.Proxies.UserAppServiceProxy.CheckErrors(IdentityResult identityResult)
+   ÔÚ CH.Spartan.Users.UserAppService.<CreateUserAsync>d__10.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\CH.Spartan.Application\Users\UserAppService.cs:ÐÐºÅ 86
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinally>d__1.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:ÐÐºÅ 40
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinally>d__0.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:ÐÐºÅ 20
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ CH.Spartan.Web.Controllers.AgentManageController.<CreateUser>d__13.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\AgentManageController.cs:ÐÐºÅ 134
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   ÔÚ System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-04-15 09:27:42,470 [75   ] Abp.Logging.LogHelper                    - Can not find '¿Í»§Ãû' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:42,470 [75   ] Abp.Logging.LogHelper                    - Can not find 'êÇ³Æ' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:42,471 [75   ] Abp.Logging.LogHelper                    - Can not find 'ÓÊ¼þ' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:42,471 [75   ] Abp.Logging.LogHelper                    - Can not find 'ÔÊÐíµÇÂ¼' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:42,472 [75   ] Abp.Logging.LogHelper                    - Can not find '±£´æ³É¹¦' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:43,030 [75   ] Abp.Logging.LogHelper                    - Can not find '´úÀí¹ÜÀí' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:47,475 [83   ] Abp.Logging.LogHelper                    - Can not find '¿Í»§Ãû' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:47,476 [83   ] Abp.Logging.LogHelper                    - Can not find 'êÇ³Æ' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:47,476 [83   ] Abp.Logging.LogHelper                    - Can not find 'ÓÊ¼þ' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:47,476 [83   ] Abp.Logging.LogHelper                    - Can not find 'ÔÊÐíµÇÂ¼' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:47,477 [83   ] Abp.Logging.LogHelper                    - Can not find '±£´æ³É¹¦' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:47,751 [75   ] Abp.Logging.LogHelper                    - Can not find '´úÀí¹ÜÀí' in localization source 'Spartan'!
+WARN  2016-04-15 09:27:51,305 [102  ] an.Web.Controllers.AgentManageController - Ãû×Öyugps1ÒÑ±»Õ¼ÓÃ.
+Abp.UI.UserFriendlyException: Ãû×Öyugps1ÒÑ±»Õ¼ÓÃ.
+   ÔÚ Abp.IdentityFramework.IdentityResultExtensions.CheckErrors(IdentityResult identityResult, ILocalizationManager localizationManager) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\IdentityFramework\IdentityResultExtensions.cs:ÐÐºÅ 68
+   ÔÚ CH.Spartan.SpartanAppServiceBase.CheckErrors(IdentityResult identityResult) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\CH.Spartan.Application\SpartanAppServiceBase.cs:ÐÐºÅ 44
+   ÔÚ Castle.Proxies.UserAppServiceProxy.CheckErrors_callback(IdentityResult identityResult)
+   ÔÚ Castle.Proxies.Invocations.SpartanAppServiceBase_CheckErrors_1.InvokeMethodOnTarget()
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:ÐÐºÅ 31
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:ÐÐºÅ 28
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Auditing\AuditingInterceptor.cs:ÐÐºÅ 45
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:ÐÐºÅ 17
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Castle.Proxies.UserAppServiceProxy.CheckErrors(IdentityResult identityResult)
+   ÔÚ CH.Spartan.Users.UserAppService.<UpdateUserAsync>d__11.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\CH.Spartan.Application\Users\UserAppService.cs:ÐÐºÅ 92
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinally>d__1.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:ÐÐºÅ 40
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinally>d__0.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:ÐÐºÅ 20
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ CH.Spartan.Web.Controllers.AgentManageController.<UpdateUser>d__15.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\AgentManageController.cs:ÐÐºÅ 152
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   ÔÚ System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-04-15 09:27:59,547 [102  ] an.Web.Controllers.AgentManageController - ÓÊÏäµØÖ· 'yugps1@gmail.com' ÒÑ±»Õ¼ÓÃ.
+Abp.UI.UserFriendlyException: ÓÊÏäµØÖ· 'yugps1@gmail.com' ÒÑ±»Õ¼ÓÃ.
+   ÔÚ Abp.IdentityFramework.IdentityResultExtensions.CheckErrors(IdentityResult identityResult, ILocalizationManager localizationManager) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp.Zero\IdentityFramework\IdentityResultExtensions.cs:ÐÐºÅ 68
+   ÔÚ CH.Spartan.SpartanAppServiceBase.CheckErrors(IdentityResult identityResult) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\CH.Spartan.Application\SpartanAppServiceBase.cs:ÐÐºÅ 44
+   ÔÚ Castle.Proxies.UserAppServiceProxy.CheckErrors_callback(IdentityResult identityResult)
+   ÔÚ Castle.Proxies.Invocations.SpartanAppServiceBase_CheckErrors_1.InvokeMethodOnTarget()
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Authorization.Interceptors.AuthorizationInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Authorization\Interceptors\AuthorizationInterceptor.cs:ÐÐºÅ 31
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Domain\Uow\UnitOfWorkInterceptor.cs:ÐÐºÅ 28
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Auditing\AuditingInterceptor.cs:ÐÐºÅ 45
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation) Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Runtime\Validation\Interception\ValidationInterceptor.cs:ÐÐºÅ 17
+   ÔÚ Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ÔÚ Castle.Proxies.UserAppServiceProxy.CheckErrors(IdentityResult identityResult)
+   ÔÚ CH.Spartan.Users.UserAppService.<UpdateUserAsync>d__11.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\CH.Spartan.Application\Users\UserAppService.cs:ÐÐºÅ 92
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ Abp.Threading.InternalAsyncHelper.<AwaitTaskWithPostActionAndFinally>d__1.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:ÐÐºÅ 40
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ Abp.Threading.InternalAsyncHelper.<AwaitTaskWithFinally>d__0.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\Abp\Abp\Threading\InternalAsyncHelper.cs:ÐÐºÅ 20
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ CH.Spartan.Web.Controllers.AgentManageController.<UpdateUser>d__15.MoveNext() Î»ÖÃ D:\MyProjects\CH.Spartan.V2\CH.Spartan.Web\Controllers\AgentManageController.cs:ÐÐºÅ 152
+--- Òý·¢Òì³£µÄÉÏÒ»Î»ÖÃÖÐ¶ÑÕ»¸ú×ÙµÄÄ©Î² ---
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   ÔÚ System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   ÔÚ System.Threading.Tasks.TaskHelpersExtensions.ThrowIfFaulted(Task task)
+   ÔÚ System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   ÔÚ System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2016-04-15 09:28:04,680 [123  ] Abp.Logging.LogHelper                    - Can not find '¿Í»§Ãû' in localization source 'Spartan'!
+WARN  2016-04-15 09:28:04,680 [123  ] Abp.Logging.LogHelper                    - Can not find 'êÇ³Æ' in localization source 'Spartan'!
+WARN  2016-04-15 09:28:04,681 [123  ] Abp.Logging.LogHelper                    - Can not find 'ÓÊ¼þ' in localization source 'Spartan'!
+WARN  2016-04-15 09:28:04,681 [123  ] Abp.Logging.LogHelper                    - Can not find 'ÔÊÐíµÇÂ¼' in localization source 'Spartan'!
+WARN  2016-04-15 09:28:04,681 [123  ] Abp.Logging.LogHelper                    - Can not find '±£´æ³É¹¦' in localization source 'Spartan'!
+WARN  2016-04-15 09:28:04,781 [106  ] Abp.Logging.LogHelper                    - Can not find '´úÀí¹ÜÀí' in localization source 'Spartan'!

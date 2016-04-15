@@ -11,10 +11,10 @@
         function formatterOp(value, row, index) {
             var edit = "";
             var del = "";
-            if (abp.auth.isGranted("@SpartanPermissionNames.PlatformManages_Device_Update")) {
+            if (abp.auth.isGranted("@SpartanPermissionNames.AgentManages_Device_Update")) {
                 edit = '<i class="btn-op fa fa-edit" title="@L("修改")" onclick="update(\'' + row.id + '\')"></i>';
             }
-            if (abp.auth.isGranted("@SpartanPermissionNames.PlatformManages_Device_Delete")) {
+            if (abp.auth.isGranted("@SpartanPermissionNames.AgentManages_Device_Delete")) {
                 del = '<i class="btn-op fa fa-trash-o" title="@L("删除")" onclick="del(\'' + row.id + '\')"></i>';
             }
             return edit + del;
@@ -22,7 +22,7 @@
 
         //添加
         function create() {
-            abp.dialog.open("/PlatformManage/CreateDevice", "@L("添加设备")", {
+            abp.dialog.open("/AgentManage/CreateDevice", "@L("添加设备")", {
                 area: ["775px", "750px"],
                 //area: ["675px", "750px"],
                 //area: ["775px", "750px"],
@@ -43,7 +43,7 @@
 
         //更新
         function update(id) {
-            abp.dialog.open("/PlatformManage/UpdateDevice?id=" + id, "@L("修改设备")", {
+            abp.dialog.open("/AgentManage/UpdateDevice?id=" + id, "@L("修改设备")", {
                 area: ["775px", "750px"],
                 //area: ["675px", "750px"],
                 //area: ["775px", "750px"],
@@ -70,7 +70,7 @@
             abp.message.confirm("@L("确定删除")?", function(yes) {
                 if (!yes) return;
                 abp.ajax({
-                    url: "/PlatformManage/DeleteDevice",
+                    url: "/AgentManage/DeleteDevice",
                     data: JSON.stringify(ids)
                 }).done(function(result) {
                     abp.notify.success("@L("删除成功")");
@@ -137,9 +137,6 @@
                         </div>
                         @Html.DateTimeRange()
                         <div class="form-group">
-                            @Html.AutoCompleteTenant("TenantId", L("全部(租户)"))
-                        </div>
-                        <div class="form-group">
                             @Html.GetSelectByDeviceType("DeviceTypeId", L("全部(设备类型)"))
                         </div>
                         <div class="clearfix"></div>
@@ -153,18 +150,18 @@
                 </div>
                 <div class="ibox-content list-content">
                     <div class="btn-group hidden-xs" id="tableToolbar" role="group">
-                        @if (IsGranted(SpartanPermissionNames.PlatformManages_Device_Create))
+                        @if (IsGranted(SpartanPermissionNames.AgentManages_Device_Create))
                         {
                             <button type="button" class="btn btn-outline btn-default" id="btn-add"><i class="fa fa-plus" aria-hidden="true"></i></button>
                         }
-                        @if (IsGranted(SpartanPermissionNames.PlatformManages_Device_Delete))
+                        @if (IsGranted(SpartanPermissionNames.AgentManages_Device_Delete))
                         {
                             <button type="button" class="btn btn-outline btn-default" id="btn-del"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                         }
                     </div>
                     <table id="table"
                            data-toggle="table"
-                           data-url="/PlatformManage/SearchDevice"
+                           data-url="/AgentManage/SearchDevice"
                            data-toolbar="#tableToolbar"
                            data-height="550"
                            data-show-export="true">

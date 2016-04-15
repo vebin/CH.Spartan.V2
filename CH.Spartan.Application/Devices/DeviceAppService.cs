@@ -27,7 +27,6 @@ namespace CH.Spartan.Devices
             _deviceManager = deviceManager;
         }
 
-        [DisableFilterIfHost]
         public async Task<ListResultOutput<GetDeviceListDto>> GetDeviceListAsync(GetDeviceListInput input)
         {
             var list = await _deviceRepository.GetAll()
@@ -36,15 +35,8 @@ namespace CH.Spartan.Devices
             return new ListResultOutput<GetDeviceListDto>(list.MapTo<List<GetDeviceListDto>>());
         }
 
-        [DisableFilterIfHost]
         public async Task<PagedResultOutput<GetDeviceListDto>> GetDeviceListPagedAsync(GetDeviceListPagedInput input)
         {
-            if (input.TenantId.HasValue)
-            {
-                CurrentUnitOfWork.EnableFilter(AbpDataFilters.MayHaveTenant);
-                CurrentUnitOfWork.SetFilterParameter(AbpDataFilters.MayHaveTenant, AbpDataFilters.Parameters.TenantId, input.TenantId);
-            }
-
             var query = _deviceRepository.GetAll()
                 .Include(p=>p.Tenant)
                 .Include(p=>p.User)
@@ -66,14 +58,12 @@ namespace CH.Spartan.Devices
             return new PagedResultOutput<GetDeviceListDto>(count, list.MapTo<List<GetDeviceListDto>>());
         }
 
-        [DisableFilterIfHost]
         public async Task CreateDeviceAsync(CreateDeviceInput input)
         {
             var device = input.Device.MapTo<Device>();
             await _deviceRepository.InsertAsync(device);
         }
 
-        [DisableFilterIfHost]
         public async Task UpdateDeviceAsync(UpdateDeviceInput input)
         {
             var device = await _deviceRepository.GetAsync(input.Device.Id);
@@ -86,14 +76,12 @@ namespace CH.Spartan.Devices
             return new CreateDeviceOutput(new CreateDeviceDto());
         }
 
-        [DisableFilterIfHost]
         public async Task<UpdateDeviceOutput> GetUpdateDeviceAsync(IdInput input)
         {
             var result = await _deviceRepository.GetAsync(input.Id);
             return new UpdateDeviceOutput(result.MapTo<UpdateDeviceDto>());
         }
 
-        [DisableFilterIfHost]
         public async Task DeleteDeviceAsync(List<IdInput> input)
         {
            await _deviceManager.DeleteByIdsAsync(input.Select(p => p.Id));

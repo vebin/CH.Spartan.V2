@@ -82,10 +82,6 @@ namespace CH.Spartan.Devices.Dto
 
     public class GetDeviceListPagedInput : QueryListPagedResultRequestInput
     {
-        /// <summary>
-        /// 所属租户Id
-        /// </summary>
-        public int? TenantId { get; set; }
 
         /// <summary>
         /// 设备类型Id

@@ -55,8 +55,7 @@ namespace CH.Spartan.MultiTenancy
             //添加租户
             CheckErrors(await TenantManager.CreateAsync(tenant));
             CurrentUnitOfWork.SaveChanges();
-            
-            using (CurrentUnitOfWork.SetFilterParameter(AbpDataFilters.MayHaveTenant, AbpDataFilters.Parameters.TenantId, tenant.Id))
+            using (CurrentUnitOfWork.SetFilterParameter(AbpDataFilters.MayHaveTenant, AbpDataFilters.Parameters.TenantId,tenant.Id))
             {
                 //添加租户静态角色(管理员角色 普通用户角色)
                 CheckErrors(await _roleManager.CreateStaticRoles(tenant.Id));
@@ -71,26 +70,16 @@ namespace CH.Spartan.MultiTenancy
                 //设置为新添加用户时默认添加的角色
                 userRole.IsDefault = true;
                 await _roleManager.GrantAllUserPermissionsAsync(userRole);
-
-                using (CurrentUnitOfWork.DisableFilter(AbpDataFilters.MayHaveTenant))
-                {
-                    //管理员账户
-                    var adminUser = User.CreateTenantAdminUser(tenant.Id, input.Tenant.TenancyName, input.Tenant.EmailAddress, SpartanConsts.DefaultPassword);
-                    CheckErrors(await UserManager.CreateAsync(adminUser));
-                    await CurrentUnitOfWork.SaveChangesAsync();
-                    using (CurrentUnitOfWork.EnableFilter(AbpDataFilters.MayHaveTenant))
-                    {
-                        using ( CurrentUnitOfWork.SetFilterParameter(AbpDataFilters.MayHaveTenant,AbpDataFilters.Parameters.TenantId, tenant.Id))
-                        {
-                            //给管理员赋予管理员角色
-                            CheckErrors(await UserManager.AddToRoleAsync(adminUser.Id, adminRole.Name));
-                            await CurrentUnitOfWork.SaveChangesAsync();
-                        }
-                    }
-                }
-
+                //管理员账户
+                var adminUser = User.CreateTenantAdminUser(tenant.Id, input.Tenant.TenancyName,input.Tenant.EmailAddress, SpartanConsts.DefaultPassword);
+                CheckErrors(await UserManager.CreateAsync(adminUser));
+                await CurrentUnitOfWork.SaveChangesAsync();
+                
+                //给管理员赋予管理员角色
+                CheckErrors(await UserManager.AddToRoleAsync(adminUser.Id, adminRole.Name));
+                await CurrentUnitOfWork.SaveChangesAsync();
             }
-            
+
         }
 
         public async Task UpdateTenantAsync(UpdateTenantInput input)

@@ -62,15 +62,8 @@ namespace CH.Spartan.Users
             return new ListResultOutput<GetUserListDto>(list.MapTo<List<GetUserListDto>>());
         }
 
-        [DisableFilterIfHost(AbpDataFilters.MayHaveTenant)]
         public async Task<PagedResultOutput<GetUserListDto>> GetUserListPagedAsync(GetUserListPagedInput input)
         {
-            if (input.TenantId.HasValue)
-            {
-                CurrentUnitOfWork.EnableFilter(AbpDataFilters.MayHaveTenant);
-                CurrentUnitOfWork.SetFilterParameter(AbpDataFilters.MayHaveTenant, AbpDataFilters.Parameters.TenantId,input.TenantId);
-            }
-
             var query = _userRepository.GetAll()
                 .Include(p => p.Tenant)
                 .WhereIf(!input.SearchText.IsNullOrEmpty(),
@@ -87,13 +80,11 @@ namespace CH.Spartan.Users
             return new PagedResultOutput<GetUserListDto>(count, list.MapTo<List<GetUserListDto>>());
         }
 
-        [DisableFilterIfHost(AbpDataFilters.MayHaveTenant)]
         public async Task CreateUserAsync(CreateUserInput input)
         {
             var user = input.User.MapTo<User>();
             CheckErrors(await _userManager.CreateUserAsync(user));
         }
-        [DisableFilterIfHost(AbpDataFilters.MayHaveTenant)]
         public async Task UpdateUserAsync(UpdateUserInput input)
         {
             var user = await _userRepository.GetAsync(input.User.Id);
@@ -104,24 +95,15 @@ namespace CH.Spartan.Users
         public CreateUserOutput GetNewUser()
         {
             var output = new CreateUserOutput(new CreateUserDto());
-            if (!AbpSession.TenantId.HasValue)
-            {
-                //host
-                output.Tenants = _tenantRepository.GetAllList().Select(
-                    p => new ComboboxItemDto(p.Id.ToString(), p.TenancyName + "(" + p.Name + ")")).ToList();
-            }
-
             return output;
         }
 
-        [DisableFilterIfHost(AbpDataFilters.MayHaveTenant)]
         public async Task<UpdateUserOutput> GetUpdateUserAsync(IdInput input)
         {
             var result = await _userRepository.GetAsync(input.Id);
             return new UpdateUserOutput(result.MapTo<UpdateUserDto>());
         }
 
-        [DisableFilterIfHost(AbpDataFilters.MayHaveTenant)]
         public async Task DeleteUserAsync(List<IdInput> input)
         {
             await _userManager.DeleteByIdsAsync(input.Select(p => p.Id));

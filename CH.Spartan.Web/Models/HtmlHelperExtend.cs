@@ -55,7 +55,7 @@ namespace CH.Spartan.Web.Models
             }
             var valueField = "value";
             var textField = "displayText";
-            var url = "/AutoComplete/Tenant";
+            var url = "/AutoComplete/GetTenantList";
             return helper.Action("AutoComplete", "Layout",new { name, url, placeholder, value, text, cls, valueField, textField });
         }
 
@@ -72,7 +72,7 @@ namespace CH.Spartan.Web.Models
             }
             var valueField = "value";
             var textField = "displayText";
-            var url = "/AutoComplete/User";
+            var url = "/AutoComplete/GetUserList";
             return helper.Action("AutoComplete", "Layout",
                 new { name, url, placeholder, value, text, cls, valueField, textField });
         }

@@ -54,15 +54,15 @@ namespace CH.Spartan.Web.Controllers
         [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_Device_Create)]
         public ActionResult CreateDevice()
         {
-            var result = _deviceAppService.GetNewDevice();
+            var result = _deviceAppService.GetNewDeviceByAgent();
             return View(result);
         }
 
         [HttpPost]
         [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_Device_Create)]
-        public async Task<JsonResult> CreateDevice(CreateDeviceInput input)
+        public async Task<JsonResult> CreateDevice(CreateDeviceByAgentInput input)
         {
-            await _deviceAppService.CreateDeviceAsync(input);
+            await _deviceAppService.CreateDeviceByAgentAsync(input);
             return Json(true, JsonRequestBehavior.AllowGet);
         }
         #endregion
@@ -72,15 +72,15 @@ namespace CH.Spartan.Web.Controllers
         [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_Device_Update)]
         public async Task<ActionResult> UpdateDevice(IdInput input)
         {
-            var result = await _deviceAppService.GetUpdateDeviceAsync(input);
+            var result = await _deviceAppService.GetUpdateDeviceByAgentAsync(input);
             return View(result);
         }
 
         [HttpPost]
         [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_Device_Update)]
-        public async Task<JsonResult> UpdateDevice(UpdateDeviceInput input)
+        public async Task<JsonResult> UpdateDevice(UpdateDeviceByAgentInput input)
         {
-            await _deviceAppService.UpdateDeviceAsync(input);
+            await _deviceAppService.UpdateDeviceByAgentAsync(input);
             return Json(true, JsonRequestBehavior.AllowGet);
         }
         #endregion

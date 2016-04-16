@@ -6,8 +6,8 @@ using Abp.AutoMapper;
 namespace CH.Spartan.Devices.Dto
 {
     [AutoMap(typeof(Device))]
-    public class CreateDeviceDto : IDoubleWayDto
-       {
+    public class UpdateDeviceByAgentDto : EntityDto, IDoubleWayDto
+    {
         /// <summary>
         /// 设备名字
         /// </summary>
@@ -87,20 +87,18 @@ namespace CH.Spartan.Devices.Dto
 
     }
 
-    public class CreateDeviceInput : IInputDto
+    public class UpdateDeviceByAgentInput : IInputDto
     {
-        public CreateDeviceDto Device { get; set; }
+        public UpdateDeviceByAgentDto Device { get; set; }
     }
 
-    public class CreateDeviceOutput : IOutputDto
+    public class UpdateDeviceByAgentOutput : IOutputDto
     {
-        public CreateDeviceOutput(CreateDeviceDto device)
+        public UpdateDeviceByAgentOutput(UpdateDeviceByAgentDto device)
         {
             Device = device;
         }
 
-        public CreateDeviceDto Device { get; set; }
+        public UpdateDeviceByAgentDto Device { get; set; }
     }
 }
-
-

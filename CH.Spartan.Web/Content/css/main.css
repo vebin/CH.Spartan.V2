@@ -8,5 +8,7 @@
 
 .ibox.edit{margin-bottom: 0px;}
 .ibox.edit .form-group{ height: 65px;margin-bottom: 0px;}
+.ibox.edit-col-1 .form-group.has-error .select2-selection--single{ border-color: #ed5565 !important;}
+.ibox.edit-col-1 .form-group.has-success .select2-selection--single{ border-color: #1ab394 !important;}
 .ibox.edit-col-1{margin-bottom: 0px;}
 .ibox.edit-col-1 .form-group{ height: 85px;margin-bottom: 0px;}

@@ -28,5 +28,15 @@ namespace CH.Spartan.Devices
         {
             return device.BExpireTime > DateTime.Now;
         }
+
+        /// <summary>
+        /// 生成设备唯一编码
+        /// </summary>
+        /// <param name="device"></param>
+        /// <returns></returns>
+        public static string CreateCode(Device device)
+        {
+            return "";
+        }
     }
 }

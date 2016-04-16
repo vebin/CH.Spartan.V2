@@ -54,28 +54,28 @@ namespace CH.Spartan.Devices
             return new PagedResultOutput<GetDeviceListDto>(count, list.MapTo<List<GetDeviceListDto>>());
         }
 
-        public async Task CreateDeviceAsync(CreateDeviceInput input)
+        public async Task CreateDeviceByAgentAsync(CreateDeviceByAgentInput input)
         {
             var device = input.Device.MapTo<Device>();
-            await _deviceRepository.InsertAsync(device);
+            await _deviceManager.CreateDeviceByAgentAsync(device);
         }
 
-        public async Task UpdateDeviceAsync(UpdateDeviceInput input)
+        public async Task UpdateDeviceByAgentAsync(UpdateDeviceByAgentInput input)
         {
             var device = await _deviceRepository.GetAsync(input.Device.Id);
             input.Device.MapTo(device);
             await _deviceRepository.UpdateAsync(device);
         }
     
-        public CreateDeviceOutput GetNewDevice()
+        public CreateDeviceByAgentOutput GetNewDeviceByAgent()
         {
-            return new CreateDeviceOutput(new CreateDeviceDto());
+            return new CreateDeviceByAgentOutput(new CreateDeviceByAgentDto());
         }
 
-        public async Task<UpdateDeviceOutput> GetUpdateDeviceAsync(IdInput input)
+        public async Task<UpdateDeviceByAgentOutput> GetUpdateDeviceByAgentAsync(IdInput input)
         {
             var result = await _deviceRepository.GetAsync(input.Id);
-            return new UpdateDeviceOutput(result.MapTo<UpdateDeviceDto>());
+            return new UpdateDeviceByAgentOutput(result.MapTo<UpdateDeviceByAgentDto>());
         }
 
         public async Task DeleteDeviceAsync(List<IdInput> input)

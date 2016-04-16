@@ -53,7 +53,7 @@ namespace CH.Spartan.Users
 
         public async Task<ListResultOutput<ComboboxItemDto>> GetUserListAutoCompleteAsync(GetUserListInput input)
         {
-            var list = await _tenantRepository.GetAll()
+            var list = await _userRepository.GetAll()
                 .WhereIf(!input.SearchText.IsNullOrEmpty(),
                     p => p.Name.Contains(input.SearchText))
                 .OrderBy(input)

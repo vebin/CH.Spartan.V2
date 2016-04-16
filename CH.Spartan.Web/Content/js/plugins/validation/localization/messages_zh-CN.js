@@ -30,6 +30,7 @@ $.extend( $.validator.messages, {
 	range: $.validator.format( "请输入范围在 {0} 到 {1} 之间的数值" ),
 	max: $.validator.format( "请输入不大于 {0} 的数值" ),
 	min: $.validator.format("请输入不小于 {0} 的数值"),
+	isLicensePlate: "请输入有效的车牌号码",
 	isEmail: "请输入有效的电子邮件地址",
 	isMoney: $.validator.format("请输入有效的金额 例如120.55"),
 	isFloat: $.validator.format("只能包含数字、小数点等字符"),

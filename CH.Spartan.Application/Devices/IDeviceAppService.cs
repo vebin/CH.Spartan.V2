@@ -28,27 +28,27 @@ namespace CH.Spartan.Devices
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task CreateDeviceAsync(CreateDeviceInput input);
+        Task CreateDeviceByAgentAsync(CreateDeviceByAgentInput input);
 
         /// <summary>
         /// 更新 设备
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task UpdateDeviceAsync(UpdateDeviceInput input);
+        Task UpdateDeviceByAgentAsync(UpdateDeviceByAgentInput input);
 
         /// <summary>
         /// 获取 新设备
         /// </summary>
         /// <returns></returns>
-        CreateDeviceOutput GetNewDevice();
+        CreateDeviceByAgentOutput GetNewDeviceByAgent();
 
         /// <summary>
         /// 获取 更新设备
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task<UpdateDeviceOutput> GetUpdateDeviceAsync(IdInput input);
+        Task<UpdateDeviceByAgentOutput> GetUpdateDeviceByAgentAsync(IdInput input);
 
         /// <summary>
         /// 删除 设备

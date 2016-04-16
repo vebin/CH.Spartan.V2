@@ -1,4 +1,13 @@
 ﻿@model CH.Spartan.Devices.Dto.UpdateDeviceOutput
+@section styles
+{
+    @Styles.Render("~/styles/plugins/edit")
+    <style type="text/css">
+        .tabs-container ul > li > a {
+            border-radius: 0px;
+        }
+    </style>
+}
 @section scripts
 {
     @Scripts.Render("~/scripts/plugins/edit")

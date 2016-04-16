@@ -6,7 +6,7 @@
     }
 </select>
 <script type="text/javascript">
-    (function($) {
+    (function ($) {
         if (!$) {
             return;
         }
@@ -15,36 +15,40 @@
             $("#@ViewBag.Name").select2({
                 language: "@Thread.CurrentThread.CurrentUICulture.Name",
                 allowClear: true,
-                placeholder: {
-                    "@ViewBag.ValueField": "",
-                    "@ViewBag.TextField": "@ViewBag.Placeholder"
-                },
+                placeholder: "@ViewBag.Placeholder",
                 ajax: {
                     url: "@ViewBag.Url",
                     dataType: "json",
                     delay: 250,
-                    data: function(params) {
-                        debugger;
+                    data: function (params) {
                         var dataQueryFun = "@(ViewBag.Name)Query";
+                        var args = {
+                            searchText: params.term,
+                            maxResultCount: "@SpartanConsts.DefaultMaxResultCount"
+                        }
                         if (abp.utils.isExitsFunction(dataQueryFun)) {
-                            return eval(dataQueryFun)(params);
+                            return eval(dataQueryFun)(args, params);
                         }
-                        return {
-                            searchText: params.term
-                        }
+                        return args;
                     },
-                    processResults: function(data, params) {
+                    processResults: function (data, params) {
+                        var result = $.map(data.result.items, function (obj) {
+                            obj.id = obj.id || obj["@ViewBag.ValueField"];
+                            obj.text = obj.text || obj["@ViewBag.TextField"];
+                            return obj;
+                        });
                         return {
-                            results: data.result.items
+                            results: result
                         };
                     },
                     cache: true
                 },
-                escapeMarkup: function(markup) { return markup; },
-                templateResult: function(obj) {
+                escapeMarkup: function (markup) { return markup; }
+                @*templateResult: function(obj) {
                     return obj["@ViewBag.TextField"];
                 },
                 templateSelection: function(obj) {
+                    debugger;
                     if (obj.selected) {
                         //默认值
                         return obj["text"];
@@ -54,7 +58,7 @@
                         return obj["@ViewBag.TextField"];
                     }
                     return obj["@ViewBag.TextField"];
-                }
+                }*@
             });
         });
     })(jQuery);

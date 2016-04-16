@@ -33,5 +33,10 @@ namespace CH.Spartan.Devices
                 await _deviceRepository.DeleteAsync(id);
             }
         }
+
+        public async Task CreateDeviceByAgentAsync(Device device)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

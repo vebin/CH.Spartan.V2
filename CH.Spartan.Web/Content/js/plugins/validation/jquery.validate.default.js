@@ -61,6 +61,11 @@ function isPlateNo(plateNo) {
 
 //常用验证规则========================================================================================================================
 // 邮件验证 
+jQuery.validator.addMethod("isLicensePlate", function (value, element) {
+    var licensePlate = /^[\u4e00-\u9fa5]{1}[A-Z]{1}[A-Z_0-9]{5}$/;
+    return this.optional(element) || (licensePlate.test(value));
+});
+// 邮件验证 
 jQuery.validator.addMethod("isEmail", function (value, element) {
     var email = /^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/;
     return this.optional(element) || (email.test(value));

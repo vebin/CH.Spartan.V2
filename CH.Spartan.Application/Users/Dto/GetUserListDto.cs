@@ -1,8 +1,7 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using CH.Spartan.Commons;
+using CH.Spartan.Infrastructure;
 
 namespace CH.Spartan.Users.Dto
 {

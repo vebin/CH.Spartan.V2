@@ -9,7 +9,7 @@ using Abp.Domain.Uow;
 using Abp.Runtime.Session;
 using Castle.DynamicProxy;
 
-namespace Abp.Authorization.Interceptors
+namespace CH.Spartan.Infrastructure
 {
 
     [AttributeUsage(AttributeTargets.Method)]

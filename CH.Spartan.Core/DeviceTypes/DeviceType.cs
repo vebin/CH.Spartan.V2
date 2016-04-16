@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Abp.Domain.Entities.Auditing;
 using CH.Spartan.Devices;
+using CH.Spartan.Infrastructure;
 
 namespace CH.Spartan.DeviceTypes
 {

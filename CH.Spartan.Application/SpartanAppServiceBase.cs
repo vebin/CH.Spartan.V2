@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.IdentityFramework;
 using Abp.Runtime.Session;
+using CH.Spartan.Infrastructure;
 using CH.Spartan.MultiTenancy;
 using CH.Spartan.Users;
 using Microsoft.AspNet.Identity;

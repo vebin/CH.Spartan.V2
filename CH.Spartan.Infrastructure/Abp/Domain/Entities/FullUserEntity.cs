@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Abp.Domain.Entities.Auditing;
 
-namespace Abp.Domain.Entities
+namespace CH.Spartan.Infrastructure
 {
     /// <summary>
     /// This class can be used to simplify implementing .

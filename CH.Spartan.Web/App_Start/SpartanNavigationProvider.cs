@@ -1,6 +1,7 @@
 ﻿using Abp.Application.Navigation;
 using Abp.Localization;
 using CH.Spartan.Authorization;
+using CH.Spartan.Infrastructure;
 
 namespace CH.Spartan.Web
 {

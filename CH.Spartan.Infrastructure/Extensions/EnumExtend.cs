@@ -7,7 +7,7 @@ using Abp.Application.Services.Dto;
 using Abp.Dependency;
 using Abp.Localization;
 
-namespace CH.Spartan.Commons
+namespace CH.Spartan.Infrastructure
 {
     #region Enum扩展
 

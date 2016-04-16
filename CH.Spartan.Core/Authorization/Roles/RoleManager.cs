@@ -8,6 +8,7 @@ using Abp.Extensions;
 using Abp.MultiTenancy;
 using Abp.Runtime.Caching;
 using Abp.Zero.Configuration;
+using CH.Spartan.Infrastructure;
 using CH.Spartan.MultiTenancy;
 using CH.Spartan.Users;
 using Microsoft.AspNet.Identity;

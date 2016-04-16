@@ -165,6 +165,10 @@
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>CH.Spartan.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CH.Spartan.Infrastructure\CH.Spartan.Infrastructure.csproj">
+      <Project>{eeef20d1-6774-41a7-a721-4bf0c8363eb1}</Project>
+      <Name>CH.Spartan.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201604110343221_Init.resx">

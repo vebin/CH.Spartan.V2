@@ -15,6 +15,7 @@ using CH.Spartan.Authorization;
 using CH.Spartan.Devices;
 using CH.Spartan.DeviceTypes;
 using CH.Spartan.DeviceTypes.Dto;
+using CH.Spartan.Infrastructure;
 using CH.Spartan.MultiTenancy;
 using CH.Spartan.MultiTenancy.Dto;
 using CH.Spartan.Nodes;

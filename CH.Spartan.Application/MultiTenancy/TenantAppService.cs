@@ -12,9 +12,7 @@ using CH.Spartan.MultiTenancy.Dto;
 using CH.Spartan.Users;
 using Abp.Extensions;
 using System.Data.Entity;
-using CH.Spartan.Commons;
-using EntityFramework.Extensions;
-using System;
+using CH.Spartan.Infrastructure;
 
 namespace CH.Spartan.MultiTenancy
 {
@@ -108,11 +106,10 @@ namespace CH.Spartan.MultiTenancy
 
         public async Task<ListResultOutput<GetTenantListDto>> GetTenantListAsync(GetTenantListInput input)
         {
-            var list = await _tenantRepository.GetAll()
-                .WhereIf(!input.SearchText.IsNullOrEmpty(),
-                    p => p.Name.Contains(input.SearchText))
-                .OrderBy(input)
-                .Take(input)
+            var list = await LinqExtend.Take<Tenant>(_tenantRepository.GetAll()
+                    .WhereIf(!input.SearchText.IsNullOrEmpty(),
+                        p => p.Name.Contains(input.SearchText))
+                    .OrderBy(input), input)
                 .ToListAsync();
             return new ListResultOutput<GetTenantListDto>(list.MapTo<List<GetTenantListDto>>());
         }
@@ -124,7 +121,7 @@ namespace CH.Spartan.MultiTenancy
 
             var count = await query.CountAsync();
 
-            var list = await query.OrderBy(input).PageBy(input).ToListAsync();
+            var list = await LinqExtend.OrderBy(query, input).PageBy(input).ToListAsync();
 
             return new PagedResultOutput<GetTenantListDto>(count, list.MapTo<List<GetTenantListDto>>());
         }

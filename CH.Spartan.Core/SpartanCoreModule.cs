@@ -6,6 +6,7 @@ using Abp.Zero;
 using Abp.Zero.Configuration;
 using CH.Spartan.Authorization;
 using CH.Spartan.Authorization.Roles;
+using CH.Spartan.Infrastructure;
 
 namespace CH.Spartan
 {
@@ -31,6 +32,9 @@ namespace CH.Spartan
 
             Configuration.Authorization.Providers.Add<SpartanAuthorizationProvider>();
             Configuration.Settings.Providers.Add<SpartanSettingProvider>();
+
+
+            DisableFilterIfHostInterceptorRegister.Initialize(IocManager);
         }
 
         public override void Initialize()

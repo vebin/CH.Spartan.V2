@@ -6,8 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Abp.Configuration;
 using Abp.Localization;
+using CH.Spartan.Infrastructure;
 
-namespace CH.Spartan
+namespace CH.Spartan.Infrastructure
 {
     public class SpartanSettingProvider : SettingProvider
     {

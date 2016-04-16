@@ -7,7 +7,7 @@ using Abp.Application.Services.Dto;
 using Abp.Extensions;
 using Abp.Runtime.Validation;
 
-namespace CH.Spartan.Commons
+namespace CH.Spartan.Infrastructure
 {
     public interface IFilterResultRequest
     {

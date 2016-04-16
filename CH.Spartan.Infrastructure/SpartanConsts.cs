@@ -1,7 +1,6 @@
 ﻿using System;
-using CH.Spartan.Commons;
 
-namespace CH.Spartan
+namespace CH.Spartan.Infrastructure
 {
     #region 常量
     public class SpartanConsts

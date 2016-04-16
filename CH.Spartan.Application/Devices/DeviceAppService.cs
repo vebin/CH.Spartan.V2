@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Abp.Domain.Repositories;
-using Abp.Domain.Uow;
 using Abp.Linq.Extensions;
 using Abp.Extensions;
 using System.Data.Entity;
-using Abp.Authorization.Interceptors;
-using CH.Spartan.Commons;
 using CH.Spartan.Devices.Dto;
-using EntityFramework.Extensions;
+using CH.Spartan.Infrastructure;
 
 namespace CH.Spartan.Devices
 {

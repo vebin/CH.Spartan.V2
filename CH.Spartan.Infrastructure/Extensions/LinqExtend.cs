@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.Extensions;
 
-namespace CH.Spartan.Commons
+namespace CH.Spartan.Infrastructure
 {
     public static class LinqExtend
     {

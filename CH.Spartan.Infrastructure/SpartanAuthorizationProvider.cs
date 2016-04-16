@@ -2,7 +2,7 @@
 using Abp.Localization;
 using Abp.MultiTenancy;
 
-namespace CH.Spartan
+namespace CH.Spartan.Infrastructure
 {
     public class SpartanAuthorizationProvider : AuthorizationProvider
     {

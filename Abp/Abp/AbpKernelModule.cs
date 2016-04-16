@@ -45,8 +45,6 @@ namespace Abp
 
             AuthorizationInterceptorRegistrar.Initialize(IocManager);
 
-            DisableFilterIfHostInterceptorRegister.Initialize(IocManager);
-
             Configuration.Auditing.Selectors.Add(
                 new NamedTypeSelector(
                     "Abp.ApplicationServices",

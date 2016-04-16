@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Abp.Domain.Entities
+namespace CH.Spartan.Infrastructure
 {
     public interface IMustHaveUser
     {

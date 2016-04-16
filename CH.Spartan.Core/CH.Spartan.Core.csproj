@@ -96,25 +96,18 @@
   <ItemGroup>
     <Compile Include="Areas\Area.cs" />
     <Compile Include="AuditLogs\AuditLogManager.cs" />
-    <Compile Include="Commons\EnumExtend.cs" />
-    <Compile Include="Commons\LinqExtend.cs" />
-    <Compile Include="Commons\QueryResultRequestInput.cs" />
     <Compile Include="Devices\DeviceHelper.cs" />
     <Compile Include="Devices\DeviceManager.cs" />
     <Compile Include="Domain\ManagerBase.cs" />
     <Compile Include="Nodes\NodeManager.cs" />
-    <Compile Include="SpartanSettingKeys.cs" />
     <Compile Include="DealRecords\DealRecord.cs" />
     <Compile Include="Devices\Device.cs" />
     <Compile Include="DeviceTypes\DeviceType.cs" />
     <Compile Include="Historys\History.cs" />
     <Compile Include="Nodes\Node.cs" />
     <Compile Include="Reports\MileageReportDay.cs" />
-    <Compile Include="SpartanConsts.cs" />
     <Compile Include="SpartanCoreModule.cs" />
-    <Compile Include="SpartanAuthorizationProvider.cs" />
     <Compile Include="Authorization\PermissionChecker.cs" />
-    <Compile Include="SpartanPermissionNames.cs" />
     <Compile Include="Authorization\Roles\AppRoleConfig.cs" />
     <Compile Include="Authorization\Roles\StaticRoleNames.cs" />
     <Compile Include="Editions\EditionManager.cs" />
@@ -125,7 +118,6 @@
     <Compile Include="Authorization\Roles\Role.cs" />
     <Compile Include="Authorization\Roles\RoleManager.cs" />
     <Compile Include="Authorization\Roles\RoleStore.cs" />
-    <Compile Include="SpartanSettingProvider.cs" />
     <Compile Include="Users\User.cs" />
     <Compile Include="Users\UserManager.cs" />
     <Compile Include="Users\UserStore.cs" />
@@ -151,6 +143,10 @@
     <ProjectReference Include="..\Abp\Abp\Abp.csproj">
       <Project>{2c221d3b-5f54-4c5b-8082-318636415132}</Project>
       <Name>Abp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CH.Spartan.Infrastructure\CH.Spartan.Infrastructure.csproj">
+      <Project>{eeef20d1-6774-41a7-a721-4bf0c8363eb1}</Project>
+      <Name>CH.Spartan.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

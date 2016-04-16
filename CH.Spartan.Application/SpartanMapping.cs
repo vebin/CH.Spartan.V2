@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Abp.Dependency;
-using Abp.Localization;
+﻿using Abp.Localization;
 using AutoMapper;
 using CH.Spartan.Devices;
 using CH.Spartan.Devices.Dto;
+using CH.Spartan.Infrastructure;
 using CH.Spartan.MultiTenancy;
 using CH.Spartan.MultiTenancy.Dto;
 using CH.Spartan.Users;

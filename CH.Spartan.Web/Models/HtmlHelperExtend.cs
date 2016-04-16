@@ -11,8 +11,8 @@ using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.Extensions;
 using Abp.Timing;
-using CH.Spartan.Commons;
 using CH.Spartan.DeviceTypes;
+using CH.Spartan.Infrastructure;
 using CH.Spartan.MultiTenancy;
 
 namespace CH.Spartan.Web.Models

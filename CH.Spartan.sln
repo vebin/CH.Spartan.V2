@@ -60,6 +60,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abp.Zero.Ldap", "Abp\Abp.Ze
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH.Spartan.Application", "CH.Spartan.Application\CH.Spartan.Application.csproj", "{EDF5D964-4C0F-4F19-B674-58A38A5E5401}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH.Spartan.Infrastructure", "CH.Spartan.Infrastructure\CH.Spartan.Infrastructure.csproj", "{EEEF20D1-6774-41A7-A721-4BF0C8363EB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -158,6 +160,10 @@ Global
 		{EDF5D964-4C0F-4F19-B674-58A38A5E5401}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDF5D964-4C0F-4F19-B674-58A38A5E5401}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDF5D964-4C0F-4F19-B674-58A38A5E5401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEEF20D1-6774-41A7-A721-4BF0C8363EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEEF20D1-6774-41A7-A721-4BF0C8363EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEEF20D1-6774-41A7-A721-4BF0C8363EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEEF20D1-6774-41A7-A721-4BF0C8363EB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

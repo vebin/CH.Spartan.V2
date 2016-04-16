@@ -10,7 +10,7 @@ using Abp.Domain.Uow;
 using Castle.Core;
 using Castle.MicroKernel;
 
-namespace Abp.Authorization.Interceptors
+namespace CH.Spartan.Infrastructure
 {
    public class DisableFilterIfHostInterceptorRegister
     {

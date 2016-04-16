@@ -1,4 +1,5 @@
 ﻿using Abp.Web.Mvc.Views;
+using CH.Spartan.Infrastructure;
 
 namespace CH.Spartan.Web.Views
 {

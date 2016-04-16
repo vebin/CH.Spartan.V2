@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CH.Spartan.DeviceTypes;
 using CH.Spartan.EntityFramework;
+using CH.Spartan.Infrastructure;
 using CH.Spartan.Nodes;
 
 namespace CH.Spartan.Migrations.SeedData

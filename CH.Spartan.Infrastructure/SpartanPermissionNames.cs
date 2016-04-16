@@ -1,4 +1,4 @@
-﻿namespace CH.Spartan
+﻿namespace CH.Spartan.Infrastructure
 {
     public static class SpartanPermissionNames
     {

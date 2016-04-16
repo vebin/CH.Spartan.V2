@@ -6,6 +6,7 @@ using Abp.MultiTenancy;
 using CH.Spartan.Authorization;
 using CH.Spartan.Authorization.Roles;
 using CH.Spartan.EntityFramework;
+using CH.Spartan.Infrastructure;
 using CH.Spartan.MultiTenancy;
 using CH.Spartan.Users;
 using Microsoft.AspNet.Identity;

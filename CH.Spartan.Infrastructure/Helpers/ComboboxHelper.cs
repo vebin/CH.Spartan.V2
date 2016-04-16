@@ -8,7 +8,7 @@ using Abp.Dependency;
 using Abp.Localization;
 using Castle.Core.Internal;
 
-namespace CH.Spartan.Commons
+namespace CH.Spartan.Infrastructure
 {
    public static class ComboboxHelper
     {

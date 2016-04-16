@@ -8,6 +8,7 @@ using Abp.Application.Services.Dto;
 using Abp.Web.Mvc.Authorization;
 using CH.Spartan.Devices;
 using CH.Spartan.Devices.Dto;
+using CH.Spartan.Infrastructure;
 using CH.Spartan.Users;
 using CH.Spartan.Users.Dto;
 

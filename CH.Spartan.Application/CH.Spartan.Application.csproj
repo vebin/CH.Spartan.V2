@@ -100,7 +100,6 @@
     <Compile Include="AuditLogs\AuditLogAppService.cs" />
     <Compile Include="AuditLogs\Dto\GetAuditLogListDto.cs" />
     <Compile Include="AuditLogs\IAuditLogAppService.cs" />
-    <Compile Include="Commons\ComboboxHelper.cs" />
     <Compile Include="Devices\DeviceAppService.cs" />
     <Compile Include="Devices\Dto\CreateDeviceDto.cs" />
     <Compile Include="Devices\Dto\GetDeviceListDto.cs" />
@@ -163,6 +162,10 @@
     <ProjectReference Include="..\CH.Spartan.Core\CH.Spartan.Core.csproj">
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>
       <Name>CH.Spartan.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CH.Spartan.Infrastructure\CH.Spartan.Infrastructure.csproj">
+      <Project>{eeef20d1-6774-41a7-a721-4bf0c8363eb1}</Project>
+      <Name>CH.Spartan.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

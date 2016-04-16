@@ -9,6 +9,7 @@ using Abp.Authorization.Users;
 using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 using CH.Spartan.DeviceTypes;
+using CH.Spartan.Infrastructure;
 using CH.Spartan.MultiTenancy;
 using CH.Spartan.Nodes;
 using CH.Spartan.Users;

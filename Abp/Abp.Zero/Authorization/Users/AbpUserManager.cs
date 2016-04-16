@@ -587,33 +587,30 @@ namespace Abp.Authorization.Users
 
         public virtual async Task<IdentityResult> ChangePasswordAsync(TUser user, string newPassword)
         {
-            //var result = await PasswordValidator.ValidateAsync(newPassword);
-            //if (!result.Succeeded)
-            //{
-            //    return result;
-            //}
-            await AbpStore.SetPasswordHashAsync(user,new Md532PasswordHasher().HashPassword(newPassword));
+            var result = await PasswordValidator.ValidateAsync(newPassword);
+            if (!result.Succeeded)
+            {
+                return result;
+            }
+            await AbpStore.SetPasswordHashAsync(user,PasswordHasher.HashPassword(newPassword));
             return IdentityResult.Success;
         }
 
-        public virtual async Task<IdentityResult> CheckDuplicateUsernameOrEmailAddressAsync(long? expectedUserId, string userName, string emailAddress)
+        public virtual async Task<IdentityResult> CheckDuplicateUsernameOrEmailAddressAsync(long? expectedUserId,
+            string userName, string emailAddress)
         {
-            //全范围内查找 不区分租户
-            using (_unitOfWorkManager.Current.DisableFilter(AbpDataFilters.MayHaveTenant))
+            var user = (await FindByNameAsync(userName));
+            if (user != null && user.Id != expectedUserId)
             {
-                var user = (await FindByNameAsync(userName));
-                if (user != null && user.Id != expectedUserId)
-                {
-                    return AbpIdentityResult.Failed(string.Format(L("Identity.DuplicateName"), userName));
-                }
-
-                user = (await FindByEmailAsync(emailAddress));
-                if (user != null && user.Id != expectedUserId)
-                {
-                    return AbpIdentityResult.Failed(string.Format(L("Identity.DuplicateEmail"), emailAddress));
-                }
-                return IdentityResult.Success;
+                return AbpIdentityResult.Failed(string.Format(L("Identity.DuplicateName"), userName));
             }
+
+            user = (await FindByEmailAsync(emailAddress));
+            if (user != null && user.Id != expectedUserId)
+            {
+                return AbpIdentityResult.Failed(string.Format(L("Identity.DuplicateEmail"), emailAddress));
+            }
+            return IdentityResult.Success;
         }
 
         public virtual async Task<IdentityResult> SetRoles(TUser user, string[] roleNames)

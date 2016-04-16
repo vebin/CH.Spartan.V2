@@ -9,8 +9,11 @@ using Abp.Configuration.Startup;
 using Abp.Dependency;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
+using Abp.IdentityFramework;
+using Abp.Localization;
 using Abp.Organizations;
 using Abp.Runtime.Caching;
+using Abp.Zero;
 using Abp.Zero.Configuration;
 using CH.Spartan.Authorization.Roles;
 using CH.Spartan.Infrastructure;
@@ -58,6 +61,11 @@ namespace CH.Spartan.Users
             _unitOfWorkManager = unitOfWorkManager;
         }
 
+        private string L(string name)
+        {
+            return LocalizationManager.GetString(AbpZeroConsts.LocalizationSourceName, name);
+        }
+
         public async Task<string> GetTenancyNameAsync(string userName)
         {
             var user = await Store.FindByNameAsync(userName);
@@ -69,6 +77,32 @@ namespace CH.Spartan.Users
             foreach (var id in ids)
             {
                 await _userRepository.DeleteAsync(id);
+            }
+        }
+
+        public override async Task<IdentityResult> ChangePasswordAsync(User user, string newPassword)
+        {
+            await AbpStore.SetPasswordHashAsync(user, new Md532PasswordHasher().HashPassword(newPassword));
+            return IdentityResult.Success;
+        }
+
+        public override async Task<IdentityResult> CheckDuplicateUsernameOrEmailAddressAsync(long? expectedUserId, string userName, string emailAddress)
+        {
+            //全范围内查找 不区分租户
+            using (_unitOfWorkManager.Current.DisableFilter(AbpDataFilters.MayHaveTenant))
+            {
+                var user = (await FindByNameAsync(userName));
+                if (user != null && user.Id != expectedUserId)
+                {
+                    return AbpIdentityResult.Failed(string.Format(L("Identity.DuplicateName"), userName));
+                }
+
+                user = (await FindByEmailAsync(emailAddress));
+                if (user != null && user.Id != expectedUserId)
+                {
+                    return AbpIdentityResult.Failed(string.Format(L("Identity.DuplicateEmail"), emailAddress));
+                }
+                return IdentityResult.Success;
             }
         }
 

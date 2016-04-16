@@ -9,7 +9,7 @@ namespace CH.Spartan.Infrastructure
         public const int DefaultMaxResultCount = 10;
         public const string DefaultSorting = "Id DESC";
         public const string DefaultPassword = "123456";
-        public const string DefaultAnimate = "animated lightSpeedIn";
+        public const string DefaultAnimate = "animated fadeInRight";
 
     }
     #endregion

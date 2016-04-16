@@ -56,11 +56,11 @@ namespace CH.Spartan.Web.Controllers
         }
         #endregion
 
-        #region 搜索
+        #region 查询
 
         [HttpGet]
         [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Tenant)]
-        public async Task<JsonResult> SearchTenant(GetTenantListPagedInput input)
+        public async Task<JsonResult> GetTenantListPaged(GetTenantListPagedInput input)
         {
             var result = await _tenantAppService.GetTenantListPagedAsync(input);
             return Json(result, JsonRequestBehavior.AllowGet);
@@ -126,11 +126,11 @@ namespace CH.Spartan.Web.Controllers
         }
         #endregion
 
-        #region 搜索
+        #region 查询
 
         [HttpGet]
         [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_DeviceType)]
-        public async Task<JsonResult> SearchDeviceType(GetDeviceTypeListPagedInput input)
+        public async Task<JsonResult> GetDeviceTypeListPaged(GetDeviceTypeListPagedInput input)
         {
             var result = await _deviceTypeAppService.GetDeviceTypeListPagedAsync(input);
             return Json(result, JsonRequestBehavior.AllowGet);
@@ -167,11 +167,11 @@ namespace CH.Spartan.Web.Controllers
         }
         #endregion
 
-        #region 搜索
+        #region 查询
 
         [HttpGet]
         [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_Node)]
-        public async Task<JsonResult> SearchNode(GetNodeListPagedInput input)
+        public async Task<JsonResult> GetNodeListPaged(GetNodeListPagedInput input)
         {
             var result = await _nodeAppService.GetNodeListPagedAsync(input);
             return Json(result, JsonRequestBehavior.AllowGet);
@@ -227,16 +227,17 @@ namespace CH.Spartan.Web.Controllers
         }
         #endregion
 
-        #region 搜索
+        #region 查询
 
         [HttpGet]
         [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_AuditLog)]
-        public async Task<JsonResult> SearchAuditLog(GetAuditLogListPagedInput input)
+        public async Task<JsonResult> GetAuditLogListPaged(GetAuditLogListPagedInput input)
         {
             var result = await _auditLogAppService.GetAuditLogListPagedAsync(input);
             return Json(result, JsonRequestBehavior.AllowGet);
         }
         #endregion
+
         #region 删除
         [HttpPost]
         [AbpMvcAuthorize(SpartanPermissionNames.SystemManages_AuditLog_Delete)]

@@ -38,11 +38,11 @@ namespace CH.Spartan.Web.Controllers
         }
         #endregion
 
-        #region 搜索
+        #region 查询
 
         [HttpGet]
         [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_Device)]
-        public async Task<JsonResult> SearchDevice(GetDeviceListPagedInput input)
+        public async Task<JsonResult> GetDeviceListPaged(GetDeviceListPagedInput input)
         {
             var result = await _deviceAppService.GetDeviceListPagedAsync(input);
             return Json(result, JsonRequestBehavior.AllowGet);
@@ -108,11 +108,11 @@ namespace CH.Spartan.Web.Controllers
         }
         #endregion
 
-        #region 搜索
+        #region 查询
 
         [HttpGet]
         [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_User)]
-        public async Task<JsonResult> SearchUser(GetUserListPagedInput input)
+        public async Task<JsonResult> GetUserListPaged(GetUserListPagedInput input)
         {
             var result = await _userAppService.GetUserListPagedAsync(input);
             return Json(result, JsonRequestBehavior.AllowGet);
@@ -140,7 +140,7 @@ namespace CH.Spartan.Web.Controllers
         #region 更新
         [HttpGet]
         [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_User_Update)]
-        public async Task<ActionResult> UpdateUser(IdInput input)
+        public async Task<ActionResult> UpdateUser(IdInput<long> input)
         {
             var result = await _userAppService.GetUpdateUserAsync(input);
             return View(result);
@@ -158,7 +158,7 @@ namespace CH.Spartan.Web.Controllers
         #region 删除
         [HttpPost]
         [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_User_Delete)]
-        public async Task<JsonResult> DeleteUser(List<IdInput> input)
+        public async Task<JsonResult> DeleteUser(List<IdInput<long>> input)
         {
             await _userAppService.DeleteUserAsync(input);
             return Json(true, JsonRequestBehavior.AllowGet);

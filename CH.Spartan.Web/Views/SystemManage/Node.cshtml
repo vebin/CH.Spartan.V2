@@ -10,7 +10,7 @@
         function formatterOp(value, row, index) {
             var edit = "";
             if (abp.auth.isGranted("@SpartanPermissionNames.SystemManages_Node_Update")) {
-                edit = '<i class="btn-op fa fa-edit" title="@L("修改")" onclick="update(\'' + row.id + '\')"></i>';
+                edit = '<button type="button" class="btn btn-link btn-op" title="@L("修改")" onclick="update(\'' + row.id + '\')"><i class="fa fa-edit" ></i> @L("修改")</button>';
             }
             return edit;
         }
@@ -97,20 +97,20 @@
                     </div>
                     <table id="table"
                            data-toggle="table"
-                           data-url="/SystemManage/SearchNode"
+                           data-url="/SystemManage/GetNodeListPaged"
                            data-toolbar="#tableToolbar"
                            data-height="550"
                            data-show-export="true">
                         <thead>
-                        <tr>
-                            <th data-field="state" data-checkbox="true"></th>
-                            <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
-                            <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
-                            <th data-field="name" data-sortable="true">@L("节点名字")</th>
-                            <th data-field="historyTableName" data-sortable="true">@L("历史数据表")</th>
-                            <th data-field="lastModificationTime" data-sortable="true">@L("最后编辑时间")</th>
-                            <th data-field="creationTime" data-sortable="true">@L("创建时间")</th>
-                        </tr>
+                            <tr>
+                                <th data-field="state" data-checkbox="true"></th>
+                                <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
+                                <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
+                                <th data-field="name" data-sortable="true">@L("节点名字")</th>
+                                <th data-field="historyTableName" data-sortable="true">@L("历史数据表")</th>
+                                <th data-field="lastModificationTime" data-sortable="true">@L("最后编辑时间")</th>
+                                <th data-field="creationTime" data-sortable="true">@L("创建时间")</th>
+                            </tr>
                         </thead>
                     </table>
                 </div>

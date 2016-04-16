@@ -14,6 +14,7 @@ using Abp.Timing;
 using CH.Spartan.DeviceTypes;
 using CH.Spartan.Infrastructure;
 using CH.Spartan.MultiTenancy;
+using CH.Spartan.Users;
 
 namespace CH.Spartan.Web.Models
 {
@@ -41,20 +42,37 @@ namespace CH.Spartan.Web.Models
         #endregion
 
         #region AutoComplete
-        public static MvcHtmlString AutoCompleteTenant(this HtmlHelper helper, string name, string placeholder,
-    int? value = null, string cls = "w180")
+        public static MvcHtmlString AutoCompleteTenant(this HtmlHelper helper, string name, string placeholder, int? value = null, string cls = "w180")
         {
             var text = "";
             if (value.HasValue)
             {
-                text =
-                    IocManager.Instance.Resolve<ITenantAppService>()
-                        .GetTenantAsync(new IdInput(value.Value))
-                        .Result.Tenant?.Name;
+                var def = IocManager.Instance.Resolve<IRepository<Tenant>>().Get(value.Value);
+                if (def != null)
+                {
+                    text = $"{def.Name}";
+                }
             }
-            var valueField = "id";
-            var textField = "name";
+            var valueField = "value";
+            var textField = "displayText";
             var url = "/AutoComplete/Tenant";
+            return helper.Action("AutoComplete", "Layout",new { name, url, placeholder, value, text, cls, valueField, textField });
+        }
+
+        public static MvcHtmlString AutoCompleteUser(this HtmlHelper helper, string name, string placeholder, long? value = null, string cls = "w180")
+        {
+            var text = "";
+            if (value.HasValue)
+            {
+                var def = IocManager.Instance.Resolve<IRepository<User,long>>().Get(value.Value);
+                if (def != null)
+                {
+                    text = $"{def.Name}";
+                }
+            }
+            var valueField = "value";
+            var textField = "displayText";
+            var url = "/AutoComplete/User";
             return helper.Action("AutoComplete", "Layout",
                 new { name, url, placeholder, value, text, cls, valueField, textField });
         }

@@ -38,6 +38,20 @@ namespace CH.Spartan.MultiTenancy
             }
         }
 
+        public async Task<ListResultOutput<ComboboxItemDto>> GetTenantListAutoCompleteAsync(GetTenantListInput input)
+        {
+            var list = await _tenantRepository.GetAll()
+                .WhereIf(!input.SearchText.IsNullOrEmpty(),
+                    p => p.Name.Contains(input.SearchText))
+                .OrderBy(input)
+                .Take(input)
+                .ToListAsync();
+
+            return
+                new ListResultOutput<ComboboxItemDto>(
+                    list.Select(p => new ComboboxItemDto {Value = p.Id.ToString(), DisplayText = p.Name}).ToList());
+        }
+
         public async Task CreateTenantAsync(CreateTenantInput input)
         {
             var tenant = input.Tenant.MapTo<Tenant>();
@@ -106,10 +120,11 @@ namespace CH.Spartan.MultiTenancy
 
         public async Task<ListResultOutput<GetTenantListDto>> GetTenantListAsync(GetTenantListInput input)
         {
-            var list = await LinqExtend.Take<Tenant>(_tenantRepository.GetAll()
-                    .WhereIf(!input.SearchText.IsNullOrEmpty(),
-                        p => p.Name.Contains(input.SearchText))
-                    .OrderBy(input), input)
+            var list = await _tenantRepository.GetAll()
+                .WhereIf(!input.SearchText.IsNullOrEmpty(),
+                    p => p.Name.Contains(input.SearchText))
+                .OrderBy(input)
+                .Take(input)
                 .ToListAsync();
             return new ListResultOutput<GetTenantListDto>(list.MapTo<List<GetTenantListDto>>());
         }

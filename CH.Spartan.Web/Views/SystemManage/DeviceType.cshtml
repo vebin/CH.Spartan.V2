@@ -10,7 +10,7 @@
         function formatterOp(value, row, index) {
             var edit = "";
             if (abp.auth.isGranted("@SpartanPermissionNames.SystemManages_DeviceType_Update")) {
-                edit = '<i class="btn-op fa fa-edit" title="@L("修改")" onclick="update(\'' + row.id + '\')"></i>';
+                edit = '<button type="button" class="btn btn-link btn-op" title="@L("修改")" onclick="update(\'' + row.id + '\')"><i class="fa fa-edit" ></i> @L("修改")</button>';
             }
             return edit;
         }
@@ -76,7 +76,7 @@
                 <div class="ibox-content list-content">
                     <table id="table"
                            data-toggle="table"
-                           data-url="/SystemManage/SearchDeviceType"
+                           data-url="/SystemManage/GetDeviceTypeListPaged"
                            data-toolbar="#tableToolbar"
                            data-height="550"
                            data-show-export="true">

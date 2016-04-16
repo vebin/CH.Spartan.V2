@@ -30,6 +30,13 @@ namespace CH.Spartan.MultiTenancy
         Task<PagedResultOutput<GetTenantListDto>> GetTenantListPagedAsync(GetTenantListPagedInput input);
 
         /// <summary>
+        /// 获取 集合 自动补全
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task<ListResultOutput<ComboboxItemDto>> GetTenantListAutoCompleteAsync(GetTenantListInput input);
+
+        /// <summary>
         /// 添加
         /// </summary>
         /// <param name="input"></param>

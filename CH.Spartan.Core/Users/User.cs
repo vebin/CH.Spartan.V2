@@ -21,6 +21,13 @@ namespace CH.Spartan.Users
         /// </summary>
         public bool IsInitPassword { get; set; }
 
+        /// <summary>
+        /// 静态用户
+        /// 静态用户不能删除 也不能修改用户名
+        /// 一般是某个租户的管理员
+        /// </summary>
+        public bool IsStatic { get; set; }
+
         #endregion
 
         #region 绑定
@@ -100,6 +107,7 @@ namespace CH.Spartan.Users
                 IsActive = true,
                 IsInitPassword = true,
                 IsInitUserName = true,
+                IsStatic = true,
                 Password = new Md532PasswordHasher().HashPassword(password)
             };
         }
@@ -116,6 +124,7 @@ namespace CH.Spartan.Users
                 IsActive = true,
                 IsInitPassword = true,
                 IsInitUserName = true,
+                IsStatic = false,
                 Password = new Md532PasswordHasher().HashPassword(password)
             };
         }

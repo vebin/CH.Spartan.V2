@@ -50,7 +50,7 @@ namespace CH.Spartan.Web
                         requiredPermissionName: SpartanPermissionNames.AgentManages
                         )
                         .AddItem(new MenuItemDefinition("User", L("客户管理"), "fa fa-user", "/AgentManage/User", true, SpartanPermissionNames.AgentManages_User))
-                        .AddItem(new MenuItemDefinition("Role", L("角色管理"), "fa fa-check", "/AgentManage/Role", true, SpartanPermissionNames.AgentManages_Role))
+                        //.AddItem(new MenuItemDefinition("Role", L("角色管理"), "fa fa-check", "/AgentManage/Role", true, SpartanPermissionNames.AgentManages_Role))
                         .AddItem(new MenuItemDefinition("Device", L("车辆管理"), "fa fa-truck", "/AgentManage/Device", true, SpartanPermissionNames.AgentManages_Device))
                 )
                 .AddItem(

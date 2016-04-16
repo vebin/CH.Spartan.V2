@@ -10,6 +10,7 @@ using Abp.Web.Mvc.Authorization;
 using CH.Spartan.MultiTenancy;
 using CH.Spartan.MultiTenancy.Dto;
 using CH.Spartan.Users;
+using CH.Spartan.Users.Dto;
 using CH.Spartan.Web.Models;
 
 namespace CH.Spartan.Web.Controllers
@@ -24,9 +25,15 @@ namespace CH.Spartan.Web.Controllers
             _userAppService = userAppService;
             _tenantAppService = tenantAppService;
         }
-        public async Task<JsonResult> Tenant(GetTenantListInput input)
+        public async Task<JsonResult> GetTenantList(GetTenantListInput input)
         {
-            var result = await _tenantAppService.GetTenantListAsync(input);
+            var result = await _tenantAppService.GetTenantListAutoCompleteAsync(input);
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
+        public async Task<JsonResult> GetUserList(GetUserListInput input)
+        {
+            var result = await _userAppService.GetUserListAutoCompleteAsync(input);
             return Json(result, JsonRequestBehavior.AllowGet);
         }
     }

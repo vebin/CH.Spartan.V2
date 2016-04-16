@@ -29,6 +29,13 @@ namespace CH.Spartan.Users
         Task<PagedResultOutput<GetUserListDto>> GetUserListPagedAsync(GetUserListPagedInput input);
 
         /// <summary>
+        /// 获取 用户 自动补全
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task<ListResultOutput<ComboboxItemDto>> GetUserListAutoCompleteAsync(GetUserListInput input);
+
+        /// <summary>
         /// 添加 用户
         /// </summary>
         /// <param name="input"></param>
@@ -53,14 +60,14 @@ namespace CH.Spartan.Users
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task<UpdateUserOutput> GetUpdateUserAsync(IdInput input);
+        Task<UpdateUserOutput> GetUpdateUserAsync(IdInput<long> input);
 
         /// <summary>
         /// 删除 用户
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task DeleteUserAsync(List<IdInput> input);
+        Task DeleteUserAsync(List<IdInput<long>> input);
 
     }
 }

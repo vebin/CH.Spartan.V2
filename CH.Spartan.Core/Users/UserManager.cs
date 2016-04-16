@@ -72,10 +72,12 @@ namespace CH.Spartan.Users
             return user?.Tenant != null ? user.Tenant.TenancyName : "";
         }
 
-        public async Task DeleteByIdsAsync(IEnumerable<int> ids)
+        public async Task DeleteByIdsAsync(IEnumerable<long> ids)
         {
             foreach (var id in ids)
             {
+                var user = _userRepository.Get(id);
+                if (user.IsStatic) continue;
                 await _userRepository.DeleteAsync(id);
             }
         }
@@ -115,6 +117,7 @@ namespace CH.Spartan.Users
             user.IsInitUserName = true;
             user.IsActive = true;
             user.IsEmailConfirmed = true;
+            user.IsStatic = false;
             var result = await CreateAsync(user);
             if (!result.Succeeded)
             {

@@ -11,32 +11,37 @@
             var edit = "";
             var del = "";
             if (abp.auth.isGranted("@SpartanPermissionNames.AgentManages_User_Update")) {
-                edit = '<i class="btn-op fa fa-edit" title="@L("修改")" onclick="update(\'' + row.id + '\')"></i>';
+                edit = '<button type="button" class="btn btn-link btn-op" title="@L("修改")" onclick="update(\'' + row.id + '\')"><i class="fa fa-edit" ></i> @L("修改")</button>';
             }
+
             if (abp.auth.isGranted("@SpartanPermissionNames.AgentManages_User_Delete")) {
-                del = '<i class="btn-op fa fa-trash-o" title="@L("删除")" onclick="del(\'' + row.id + '\')"></i>';
+                debugger;
+                if (row.isStatic) {
+                    del = '<button type="button" class="btn btn-link btn-op" disabled title="@L("静态用户不允许删除")" onclick="del(\'' + row.id + '\')"><i class="fa fa-trash-o"></i> @L("删除")</button>';
+                } else {
+                    del = '<button type="button" class="btn btn-link btn-op" title="@L("删除")" onclick="del(\'' + row.id + '\')"><i class="fa fa-trash-o""></i> @L("删除")</button>';
+                }
             }
             return edit + del;
         }
 
 
-
         //添加
         function create() {
-            abp.dialog.open("/AgentManage/CreateUser", "@L("添加用户")", {
+            abp.dialog.open("/AgentManage/CreateUser", "@L("添加客户")", {
                 //area: ["775px", "750px"],
-                area: ["675px", "750px"],
+                area: ["475px", "350px"],
                 //area: ["775px", "750px"],
                 //area: ["995px", "750px"],
                 //area: ["1250px", "750px"],
                 btn: ["@L("确定")", '@L("取消")'],
-                yes: function (index, layero) {
+                yes: function(index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
                     iframeWin.submitForm();
                 },
-                cancel: function (index) {
+                cancel: function(index) {
                 },
-                end: function () {
+                end: function() {
                     $("#btn-search").click();
                 }
             });
@@ -44,26 +49,24 @@
 
         //更新
         function update(id) {
-            abp.dialog.open("/AgentManage/UpdateUser?id=" + id, "@L("修改用户")", {
+            abp.dialog.open("/AgentManage/UpdateUser?id=" + id, "@L("修改客户")", {
                 //area: ["775px", "750px"],
-                area: ["675px", "750px"],
+                area: ["475px", "550px"],
                 //area: ["775px", "750px"],
                 //area: ["995px", "750px"],
                 //area: ["1250px", "750px"],
                 btn: ["@L("保存")", '@L("取消")'],
-                yes: function (index, layero) {
+                yes: function(index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
                     iframeWin.submitForm();
                 },
-                cancel: function (index) {
+                cancel: function(index) {
                 },
-                end: function () {
+                end: function() {
                     $("#btn-search").click();
                 }
             });
         }
-
-
 
 
         //删除
@@ -71,12 +74,12 @@
             if (typeof ids == "string") {
                 ids = [{ id: ids }];
             }
-            abp.message.confirm("@L("确定删除")?", function (yes) {
+            abp.message.confirm("@L("确定删除")?", function(yes) {
                 if (!yes) return;
                 abp.ajax({
                     url: "/AgentManage/DeleteUser",
                     data: JSON.stringify(ids)
-                }).done(function (result) {
+                }).done(function(result) {
                     abp.notify.success("@L("删除成功")");
                     $("#btn-search").click();
                 });
@@ -84,16 +87,13 @@
         }
 
 
-
-
-
-        (function ($) {
+        (function($) {
             if (!$) {
                 return;
             }
 
             //搜索
-            $("#btn-search").click(function () {
+            $("#btn-search").click(function() {
                 var args =
                 {
                     query: abp.utils.getFormData("#form")
@@ -102,15 +102,15 @@
             });
 
             //添加
-            $("#btn-add").click(function () {
+            $("#btn-add").click(function() {
                 create();
             });
 
             //删除
-            $("#btn-del").click(function () {
+            $("#btn-del").click(function() {
                 var rows = $("#table").bootstrapTable("getSelections");
                 var ids = [];
-                $.each(rows, function (index, item) {
+                $.each(rows, function(index, item) {
                     ids.push({ id: item.id });
                 });
                 if (ids.length == 0) {
@@ -119,7 +119,6 @@
                     del(ids);
                 }
             });
-
 
 
         })(jQuery);
@@ -159,7 +158,7 @@
                     </div>
                     <table id="table"
                            data-toggle="table"
-                           data-url="/AgentManage/SearchUser"
+                           data-url="/AgentManage/GetUserListPaged"
                            data-toolbar="#tableToolbar"
                            data-height="550"
                            data-show-export="true">
@@ -167,8 +166,7 @@
                             <tr>
                                 <th data-field="state" data-checkbox="true"></th>
                                 <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
-                                <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
-                                <th data-field="tenantText" data-sortable="true">@L("所属租户")</th>
+                                <th data-field="op" data-formatter="formatterOp" data-width="120">@L("操作")</th>
                                 <th data-field="userName" data-sortable="true">@L("客户名")</th>
                                 <th data-field="name" data-sortable="true">@L("名称")</th>
                                 <th data-field="emailAddress" data-sortable="true">@L("邮件")</th>

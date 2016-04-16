@@ -11,10 +11,10 @@
             var edit = "";
             var del = "";
             if (abp.auth.isGranted("@SpartanPermissionNames.SystemManages_Tenant_Update")) {
-                edit = '<i class="btn-op fa fa-edit" title="@L("修改")" onclick="update(\'' + row.id + '\')"></i>';
+                 edit = '<button type="button" class="btn btn-link btn-op" title="@L("修改")" onclick="update(\'' + row.id + '\')"><i class="fa fa-edit" ></i> @L("修改")</button>';
             }
             if (abp.auth.isGranted("@SpartanPermissionNames.SystemManages_Tenant_Delete")) {
-                del = '<i class="btn-op fa fa-trash-o" title="@L("删除")" onclick="del(\'' + row.id + '\')"></i>';
+                 del = '<button type="button" class="btn btn-link btn-op" title="@L("删除")" onclick="del(\'' + row.id + '\')"><i class="fa fa-trash-o""></i> @L("删除")</button>';
             }
             return edit + del;
         }
@@ -128,7 +128,7 @@
                     </div>
                     <table id="table"
                            data-toggle="table"
-                           data-url="/SystemManage/SearchTenant"
+                           data-url="/SystemManage/GetTenantListPaged"
                            data-toolbar="#tableToolbar"
                            data-height="550"
                            data-show-export="true">
@@ -136,7 +136,7 @@
                             <tr>
                                 <th data-field="state" data-checkbox="true"></th>
                                 <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
-                                <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
+                                <th data-field="op" data-formatter="formatterOp" data-width="120">@L("操作")</th>
                                 <th data-field="tenancyName" data-sortable="true">@L("租户名")</th>
                                 <th data-field="name" data-sortable="true">@L("公司名")</th>
                                 <th data-field="isActiveText" data-sortable="true">@L("允许登录")</th>

@@ -19,11 +19,6 @@ namespace CH.Spartan.Users.Dto
         public string Name { get; set; }
 
         /// <summary>
-        /// 昵称 西瓜
-        /// </summary>
-        public string Surname { get; set; }
-
-        /// <summary>
         /// 邮件
         /// </summary>
         public string EmailAddress { get; set; }
@@ -42,6 +37,11 @@ namespace CH.Spartan.Users.Dto
         /// 所属租户
         /// </summary>
         public string TenantText { get; set; }
+
+        /// <summary>
+        /// 静态用户
+        /// </summary>
+        public bool IsStatic { get; set; }
 
     }
 

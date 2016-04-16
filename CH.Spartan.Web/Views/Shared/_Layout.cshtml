@@ -21,7 +21,7 @@
         var abp = abp || {}; abp.appPath = '@ApplicationPath';
     </script>
 </head>
-<body class="fixed-sidebar full-height-layout">
+<body class="fixed-sidebar full-height-layout ">
     @RenderBody()
     @Scripts.Render("~/scripts/bottom")
     <script src="/api/AbpServiceProxies/GetAll?v=@(Clock.Now.Ticks)"></script>

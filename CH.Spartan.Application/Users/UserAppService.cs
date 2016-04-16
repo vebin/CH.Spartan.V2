@@ -51,10 +51,28 @@ namespace CH.Spartan.Users
             return await _userManager.GetTenancyNameAsync(userName);
         }
 
+        public async Task<ListResultOutput<ComboboxItemDto>> GetUserListAutoCompleteAsync(GetUserListInput input)
+        {
+            var list = await _tenantRepository.GetAll()
+                .WhereIf(!input.SearchText.IsNullOrEmpty(),
+                    p => p.Name.Contains(input.SearchText))
+                .OrderBy(input)
+                .Take(input)
+                .ToListAsync();
+
+            return
+                new ListResultOutput<ComboboxItemDto>(
+                    list.Select(p => new ComboboxItemDto { Value = p.Id.ToString(), DisplayText = p.Name }).ToList());
+        }
+
         public async Task<ListResultOutput<GetUserListDto>> GetUserListAsync(GetUserListInput input)
         {
             var list = await _userRepository.GetAll()
+                .WhereIf(!input.SearchText.IsNullOrEmpty(),
+                    p => p.UserName.Contains(input.SearchText) ||
+                         p.Name.Contains(input.SearchText))
                 .OrderBy(input)
+                .Take(input)
                 .ToListAsync();
             return new ListResultOutput<GetUserListDto>(list.MapTo<List<GetUserListDto>>());
         }
@@ -95,13 +113,13 @@ namespace CH.Spartan.Users
             return output;
         }
 
-        public async Task<UpdateUserOutput> GetUpdateUserAsync(IdInput input)
+        public async Task<UpdateUserOutput> GetUpdateUserAsync(IdInput<long> input)
         {
             var result = await _userRepository.GetAsync(input.Id);
             return new UpdateUserOutput(result.MapTo<UpdateUserDto>());
         }
 
-        public async Task DeleteUserAsync(List<IdInput> input)
+        public async Task DeleteUserAsync(List<IdInput<long>> input)
         {
             await _userManager.DeleteByIdsAsync(input.Select(p => p.Id));
         }

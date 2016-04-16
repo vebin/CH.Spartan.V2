@@ -130,7 +130,7 @@ namespace CH.Spartan.Infrastructure
         /// <summary>
         /// 报警是否开启
         /// </summary>
-        public const string User_IsEnableAlarm = "User.IsEnableAlarm";
+        public const string User_IsEnableAlarm = "User.IsEnabl.eAlarm";
 
         /// <summary>
         /// 报警信息报警声音

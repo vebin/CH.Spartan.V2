@@ -17,7 +17,7 @@
             if (abp.auth.isGranted("@SpartanPermissionNames.AgentManages_User_Delete")) {
                 debugger;
                 if (row.isStatic) {
-                    del = '<button type="button" class="btn btn-link btn-op" disabled title="@L("静态用户不允许删除")" onclick="del(\'' + row.id + '\')"><i class="fa fa-trash-o"></i> @L("删除")</button>';
+                    del = '<button type="button" class="btn btn-link btn-op" disabled title="@L("不能删除系统用户")" onclick="del(\'' + row.id + '\')"><i class="fa fa-trash-o"></i> @L("删除")</button>';
                 } else {
                     del = '<button type="button" class="btn btn-link btn-op" title="@L("删除")" onclick="del(\'' + row.id + '\')"><i class="fa fa-trash-o""></i> @L("删除")</button>';
                 }

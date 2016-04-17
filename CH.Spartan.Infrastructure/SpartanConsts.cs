@@ -10,6 +10,8 @@ namespace CH.Spartan.Infrastructure
         public const string DefaultSorting = "Id DESC";
         public const string DefaultPassword = "123456";
         public const string DefaultAnimate = "animated fadeInRight";
+        public const int DefaultNodeMaxUsageCount = 1000;
+        public const int DefaultOfflineMinutes = -5;
 
     }
     #endregion
@@ -34,7 +36,9 @@ namespace CH.Spartan.Infrastructure
     public enum EnumCodeCreateRule
     {
         [EnumDisplayName("设备号")]
-        No=0
+        No=0,
+        [EnumDisplayName("前缀0加设备号")]
+        PrefixZeroAndNo =1
     }
 
     [Flags]

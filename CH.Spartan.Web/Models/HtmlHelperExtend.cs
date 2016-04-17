@@ -80,7 +80,7 @@ namespace CH.Spartan.Web.Models
 
         #region Select
 
-        public static MvcHtmlString GetSelectByDeviceType(this HtmlHelper helper, string name, string allText = "", bool? value = null, string cls = "w180")
+        public static MvcHtmlString GetSelectByDeviceType(this HtmlHelper helper, string name, string allText = "", int? value = null, string cls = "w180")
         {
             using (IocManager.Instance.Resolve<IUnitOfWorkManager>().Begin())
             {

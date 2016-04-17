@@ -264,7 +264,7 @@ namespace Abp.MultiTenancy
             return IdentityResult.Success;
         }
 
-        private string L(string name)
+        protected string L(string name)
         {
             return LocalizationManager.GetString(AbpZeroConsts.LocalizationSourceName, name);
         }

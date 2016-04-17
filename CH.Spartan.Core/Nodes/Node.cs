@@ -21,6 +21,7 @@ namespace CH.Spartan.Nodes
         public const string T4 = "T4";
 
         public const string T5 = "T5";
+
         #endregion
 
         /// <summary>
@@ -34,5 +35,10 @@ namespace CH.Spartan.Nodes
         /// </summary>
         [MaxLength(250)]
         public string HistoryTableName { get; set; }
+
+        /// <summary>
+        /// 使用量
+        /// </summary>
+        public int UsageCount { get; set; }
     }
 }

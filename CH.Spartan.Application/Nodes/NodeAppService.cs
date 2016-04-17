@@ -16,7 +16,7 @@ namespace CH.Spartan.Nodes
     public class NodeAppService : SpartanAppServiceBase, INodeAppService
     {
         private readonly NodeManager _nodeManager;
-        private IRepository<Node> _nodeRepository; 
+        private readonly IRepository<Node> _nodeRepository; 
         public NodeAppService(NodeManager nodeManager, IRepository<Node> nodeRepository)
         {
             _nodeManager = nodeManager;

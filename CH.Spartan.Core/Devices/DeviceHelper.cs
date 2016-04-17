@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CH.Spartan.Infrastructure;
 
 namespace CH.Spartan.Devices
 {
@@ -16,7 +17,7 @@ namespace CH.Spartan.Devices
         /// <returns></returns>
         public static bool IsOnline(Device device)
         {
-            return device.GReceiveTime > DateTime.Now.AddMinutes(-5);
+            return device.GReceiveTime > DateTime.Now.AddMinutes(SpartanConsts.DefaultOfflineMinutes);
         }
 
         /// <summary>
@@ -26,17 +27,7 @@ namespace CH.Spartan.Devices
         /// <returns></returns>
         public static bool IsExpire(Device device)
         {
-            return device.BExpireTime > DateTime.Now;
-        }
-
-        /// <summary>
-        /// 生成设备唯一编码
-        /// </summary>
-        /// <param name="device"></param>
-        /// <returns></returns>
-        public static string CreateCode(Device device)
-        {
-            return "";
+            return device.BExpireTime < DateTime.Now;
         }
     }
 }

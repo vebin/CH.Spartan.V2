@@ -16,43 +16,27 @@ namespace CH.Spartan.Devices.Dto
         public string BName { get; set; }
 
         /// <summary>
-        /// 车牌号
+        /// 设备描述
         /// </summary>
-        [Required]
         [MaxLength(100)]
-        public string BLicensePlate { get; set; }
-
-        /// <summary>
-        /// 设备图标类型
-        /// </summary>
-        [Required]
-        [MaxLength(50)]
-        public string BIconType { get; set; }
+        public string BDscription { get; set; }
 
         /// <summary>
         /// 设备类型Id
         /// </summary>
+        [Required, Range(1, int.MaxValue)]
         public int BDeviceTypeId { get; set; }
 
         /// <summary>
         /// 设备号
         /// </summary>
         [Required]
-        [MaxLength(50)]
         public string BNo { get; set; }
 
         /// <summary>
-        /// 设备唯一编码不同的设备编码生成规则不一样
+        /// 设备卡号
         /// </summary>
         [Required]
-        [MaxLength(50)]
-        public string BCode { get; set; }
-
-        /// <summary>
-        /// Sim号
-        /// </summary>
-        [Required]
-        [MaxLength(50)]
         public string BSimNo { get; set; }
 
         /// <summary>
@@ -61,9 +45,10 @@ namespace CH.Spartan.Devices.Dto
         public DateTime? BExpireTime { get; set; }
 
         /// <summary>
-        /// 所属节点Id
+        /// 所属用户Id
         /// </summary>
-        public int BNodeId { get; set; }
+        [Required, Range(1, long.MaxValue)]
+        public long UserId { get; set; }
 
         /// <summary>
         /// 报警设置超限速
@@ -73,17 +58,7 @@ namespace CH.Spartan.Devices.Dto
         /// <summary>
         /// 报警设置进出区域
         /// </summary>
-        public bool SInOutArea { get; set; }
-
-        /// <summary>
-        /// 所属租户Id
-        /// </summary>
-        public int TenantId { get; set; }
-
-        /// <summary>
-        /// 所属用户Id
-        /// </summary>
-        public long UserId { get; set; }
+        public string SInOutArea { get; set; }
 
     }
 

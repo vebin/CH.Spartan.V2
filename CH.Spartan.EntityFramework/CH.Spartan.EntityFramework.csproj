@@ -133,6 +133,14 @@
     <Compile Include="Migrations\201604160542521_Edit_User.Designer.cs">
       <DependentUpon>201604160542521_Edit_User.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604170944239_Edit_Device.cs" />
+    <Compile Include="Migrations\201604170944239_Edit_Device.Designer.cs">
+      <DependentUpon>201604170944239_Edit_Device.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604171030222_Edit_Device1.cs" />
+    <Compile Include="Migrations\201604171030222_Edit_Device1.Designer.cs">
+      <DependentUpon>201604171030222_Edit_Device1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\SeedData\DefaultDataBuilder.cs" />
     <Compile Include="SpartanDataModule.cs" />
@@ -180,6 +188,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604160542521_Edit_User.resx">
       <DependentUpon>201604160542521_Edit_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604170944239_Edit_Device.resx">
+      <DependentUpon>201604170944239_Edit_Device.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604171030222_Edit_Device1.resx">
+      <DependentUpon>201604171030222_Edit_Device1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -8,7 +8,10 @@ using Abp.Dependency;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.Runtime.Caching;
+using Abp.UI;
+using CH.Spartan.Devices;
 using CH.Spartan.Domain;
+using CH.Spartan.Infrastructure;
 
 namespace CH.Spartan.DeviceTypes
 {
@@ -32,6 +35,24 @@ namespace CH.Spartan.DeviceTypes
             foreach (var id in ids)
             {
                 await _deviceTypeRepository.DeleteAsync(id);
+            }
+        }
+
+        public async Task<string> CreateCodeAsync(Device device,DeviceType deviceType)
+        {
+            if (deviceType == null)
+            {
+                throw new UserFriendlyException($"{L("不存在设备类型")}{device.BDeviceTypeId}");
+            }
+
+            switch (deviceType.CodeCreateRule)
+            {
+                case EnumCodeCreateRule.No:
+                    return device.BNo; 
+                case EnumCodeCreateRule.PrefixZeroAndNo:
+                    return $"0{device.BNo}";
+                default:
+                    return device.BNo;
             }
         }
     }

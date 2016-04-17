@@ -4,15 +4,20 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Abp;
 using Abp.Configuration;
 using Abp.Dependency;
 using Abp.Domain.Entities;
 using Abp.Domain.Repositories;
 using Abp.Domain.Services;
 using Abp.Domain.Uow;
+using Abp.IdentityFramework;
 using Abp.Localization;
+using Abp.Logging;
 using Abp.Runtime.Caching;
 using Abp.Runtime.Session;
+using Abp.UI;
+using CH.Spartan.Infrastructure;
 
 namespace CH.Spartan.Domain
 {
@@ -75,6 +80,11 @@ namespace CH.Spartan.Domain
             IocResolver = iocResolver;
             UnitOfWorkManager = unitOfWorkManager;
         }
-        
+
+        protected string L(string name)
+        {
+            return LocalizationManager.GetString(SpartanConsts.LocalizationSourceName, name);
+        }
+
     }
 }

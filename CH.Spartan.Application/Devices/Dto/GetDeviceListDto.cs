@@ -19,9 +19,9 @@ namespace CH.Spartan.Devices.Dto
         public string DeviceTypeName { get; set; }
 
         /// <summary>
-        /// 车牌号
+        /// 设备描述
         /// </summary>
-        public string BLicensePlate { get; set; }
+        public string BDscription { get; set; }
 
         /// <summary>
         /// 设备号
@@ -91,6 +91,5 @@ namespace CH.Spartan.Devices.Dto
         /// 是否定位
         /// </summary>
         public bool? IsLocated { get; set; }
-
     }
 }

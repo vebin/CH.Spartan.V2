@@ -45,8 +45,8 @@
         //更新
         function update(id) {
             abp.dialog.open("/AgentManage/UpdateDevice?id=" + id, "@L("修改车辆")", {
-                area: ["775px", "750px"],
-                //area: ["675px", "750px"],
+                //area: ["775px", "750px"],
+                area: ["575px", "750px"],
                 //area: ["775px", "750px"],
                 //area: ["995px", "750px"],
                 //area: ["1250px", "750px"],
@@ -137,15 +137,15 @@
                             </select>
                         </div>
                         @Html.DateTimeRange()
-                        <div class="form-group">
+                        <div class="form-group" data-toggle="tooltip" data-placement="bottom" title="@L("设备类型")">
                             @Html.GetSelectByDeviceType("DeviceTypeId", L("全部(设备类型)"))
                         </div>
                         <div class="clearfix"></div>
-                        <div class="form-group">
+                        <div class="form-group" data-toggle="tooltip" data-placement="bottom" title="@L("是否定位")">
                             @Html.GetSelectByEnable("IsLocated", L("不限(是否定位)"))
                         </div>
-                        <div class="form-group ">
-                            @Html.SearchText(L("设备名字/车牌号/设备号/Sim卡号"), L("查询"))
+                        <div class="form-group">
+                            @Html.SearchText(L("设备名字/设备描述/设备号/设备卡号"), L("查询"))
                         </div>
                     </form>
                 </div>
@@ -172,17 +172,16 @@
                                 <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
                                 <th data-field="op" data-formatter="formatterOp" data-width="120">@L("操作")</th>
                                 <th data-field="bName" data-sortable="true">@L("设备名字")</th>
-                                <th data-field="deviceTypeName" data-sortable="true">@L("设备类型")</th>
-                                <th data-field="bLicensePlate" data-sortable="true">@L("车牌号")</th>
+                                <th data-field="bDscription">@L("设备描述")</th>
+                                <th data-field="deviceTypeName" data-sortable="true" data-sort-name="bDeviceTypeId">@L("设备类型")</th>
                                 <th data-field="bNo" data-sortable="true">@L("设备号")</th>
                                 <th data-field="bSimNo" data-sortable="true">@L("设备卡号")</th>
-                                <th data-field="tenancyName" data-sortable="true">@L("所属租户")</th>
-                                <th data-field="userName" data-sortable="true">@L("所属客户")</th>
+                                <th data-field="userName" data-sortable="true" data-sort-name="userId">@L("所属客户")</th>
                                 <th data-field="isExpireText" data-sortable="true">@L("是否过期")</th>
                                 <th data-field="bExpireTime" data-sortable="true">@L("过期时间")</th>
                                 <th data-field="isOnlineText" data-sortable="true">@L("是否在线")</th>
                                 <th data-field="gReceiveTime" data-sortable="true">@L("通讯时间")</th>
-                                <th data-field="isLocatedText" data-sortable="true">@L("是否定位")</th>
+                                <th data-field="isLocatedText" data-sortable="true" data-sort-name="isLocated">@L("是否定位")</th>
                                 <th data-field="gReportTime" data-sortable="true">@L("定位时间")</th>
                                 <th data-field="creationTime" data-sortable="true">@L("安装时间")</th>
                             </tr>

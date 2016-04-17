@@ -74,14 +74,14 @@
                         <label class="col-sm-4 control-label">@L("设备名字"):</label>
                         <div class="col-sm-8 ">
                             <input class="form-control required" type="text" id="BName" name="BName"/>
-                            <span class="help-block m-b-none"></span>
+                            <span class="help-block m-b-none">例如：粤B95270</span>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">@L("车牌号"):</label>
+                        <label class="col-sm-4 control-label">@L("设备描述"):</label>
                         <div class="col-sm-8">
-                            <input class="form-control required isLicensePlate" type="text" id="BLicensePlate" name="BLicensePlate" />
-                            <span class="help-block m-b-none">例如：粤B95270</span>
+                            <input class="form-control required" type="text" id="BDscription" name="BDscription" />
+                            <span class="help-block m-b-none">例如：隐藏安装/安装在车头</span>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                     <div class="form-group">
                         <label class="col-sm-4 control-label">@L("过期时间"):</label>
                         <div class="col-sm-8">
-                            <input class="form-control required" type="text" id="BExpireTime" name="BExpireTime" onfocus="WdatePicker()"/>
+                            <input class="form-control required" type="text" id="BExpireTime" name="BExpireTime" onfocus="WdatePicker()" value="@Model.Device.BExpireTime"/>
                             <span class="help-block m-b-none"></span>
                         </div>
                     </div>

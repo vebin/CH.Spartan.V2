@@ -26,10 +26,23 @@ namespace CH.Spartan.Devices
         public string BName { get; set; }
 
         /// <summary>
-        /// 车牌号
+        /// 设备号
         /// </summary>
-        [Required, MaxLength(100)]
-        public string BLicensePlate { get; set; }
+        [Required, MaxLength(50)]
+        public string BNo { get; set; }
+
+        /// <summary>
+        /// Sim号
+        /// </summary>
+        [Required, MaxLength(50)]
+        public string BSimNo { get; set; }
+
+
+        /// <summary>
+        /// 设备描述
+        /// </summary>
+        [MaxLength(50)]
+        public string BDscription { get; set; }
 
         /// <summary>
         /// 设备图标类型
@@ -43,23 +56,11 @@ namespace CH.Spartan.Devices
         public int BDeviceTypeId { get; set; }
 
         /// <summary>
-        /// 设备号
-        /// </summary>
-        [Required, MaxLength(50)]
-        public string BNo { get; set; }
-
-        /// <summary>
         /// 设备唯一编码 
         /// 不同的设备编码生成规则不一样
         /// </summary>
         [Required, MaxLength(50)]
         public string BCode { get; set; }
-
-        /// <summary>
-        /// Sim号
-        /// </summary>
-        [Required, MaxLength(50)]
-        public string BSimNo { get; set; }
 
         /// <summary>
         /// 过期时间
@@ -116,12 +117,12 @@ namespace CH.Spartan.Devices
         /// <summary>
         /// GPS最后定位时间
         /// </summary>
-        public DateTime GReportTime { get; set; }
+        public DateTime? GReportTime { get; set; }
 
         /// <summary>
         /// 设备最后通讯时间
         /// </summary>
-        public DateTime GReceiveTime { get; set; }
+        public DateTime? GReceiveTime { get; set; }
 
         /// <summary>
         /// 是否已经定位 状态

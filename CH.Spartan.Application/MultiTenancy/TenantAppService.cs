@@ -136,7 +136,7 @@ namespace CH.Spartan.MultiTenancy
 
             var count = await query.CountAsync();
 
-            var list = await LinqExtend.OrderBy(query, input).PageBy(input).ToListAsync();
+            var list = await query.OrderBy(input).PageBy(input).ToListAsync();
 
             return new PagedResultOutput<GetTenantListDto>(count, list.MapTo<List<GetTenantListDto>>());
         }

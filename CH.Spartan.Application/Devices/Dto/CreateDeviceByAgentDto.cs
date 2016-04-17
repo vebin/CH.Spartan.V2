@@ -7,7 +7,7 @@ namespace CH.Spartan.Devices.Dto
 {
     [AutoMap(typeof(Device))]
     public class CreateDeviceByAgentDto : IDoubleWayDto
-       {
+    {
         /// <summary>
         /// 设备名字
         /// </summary>
@@ -16,15 +16,15 @@ namespace CH.Spartan.Devices.Dto
         public string BName { get; set; }
 
         /// <summary>
-        /// 车牌号
+        /// 设备描述
         /// </summary>
-        [Required]
         [MaxLength(100)]
-        public string BLicensePlate { get; set; }
+        public string BDscription { get; set; }
 
         /// <summary>
         /// 设备类型Id
         /// </summary>
+        [Required, Range(1, int.MaxValue)]
         public int BDeviceTypeId { get; set; }
 
         /// <summary>
@@ -34,7 +34,7 @@ namespace CH.Spartan.Devices.Dto
         public string BNo { get; set; }
 
         /// <summary>
-        /// Sim号
+        /// 设备卡号
         /// </summary>
         [Required]
         public string BSimNo { get; set; }
@@ -47,6 +47,7 @@ namespace CH.Spartan.Devices.Dto
         /// <summary>
         /// 所属用户Id
         /// </summary>
+        [Required, Range(1, long.MaxValue)]
         public long UserId { get; set; }
 
     }

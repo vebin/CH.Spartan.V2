@@ -1,5 +1,8 @@
-﻿using Abp.Localization;
+﻿using System.Collections.Generic;
+using Abp.AutoMapper;
+using Abp.Localization;
 using AutoMapper;
+using CH.Spartan.Areas.Dto;
 using CH.Spartan.Devices;
 using CH.Spartan.Devices.Dto;
 using CH.Spartan.Infrastructure;
@@ -28,6 +31,9 @@ namespace CH.Spartan
                .ForMember(d => d.IsOnlineText, opt => opt.MapFrom(o => DeviceHelper.IsOnline(o) ? L("是") : L("否")))
                .ForMember(d => d.IsExpireText, opt => opt.MapFrom(o => DeviceHelper.IsExpire(o) ? L("是") : L("否")))
                .ForMember(d => d.IsLocatedText, opt => opt.MapFrom(o => o.GIsLocated? L("是") : L("否")));
+
+            Mapper.CreateMap<Device, UpdateDeviceByAgentDto>()
+            .ForMember(d => d.AreaSettings, opt => opt.MapFrom(o => o.GetOutAreaSettings().MapTo<List<AreaSettingDto>>()));
         }
 
         private static string L(string name)

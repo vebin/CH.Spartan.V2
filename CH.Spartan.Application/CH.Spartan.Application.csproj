@@ -98,7 +98,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Areas\AreaAppService.cs" />
-    <Compile Include="Areas\AreaConstants.cs" />
     <Compile Include="Areas\Dto\AreaSettingDto.cs" />
     <Compile Include="Areas\Dto\CreateAreaDto.cs" />
     <Compile Include="Areas\Dto\GetAreaDto.cs" />

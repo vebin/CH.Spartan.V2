@@ -1,6 +1,6 @@
 ﻿@model CH.Spartan.Devices.Dto.UpdateDeviceByAgentOutput
 @section styles
-    {
+{
     @Styles.Render("~/styles/plugins/edit")
     <style type="text/css">
         .tabs-container ul > li > a {
@@ -12,6 +12,14 @@
             height: 599px;
             overflow: auto;
         }
+
+        .checkbox.i-checks label:first-child {
+            padding-left: 0px;
+        }
+
+        .checkbox.i-checks label:last-child {
+            padding-left: 15px;
+        }
     </style>
 }
 @section scripts
@@ -19,28 +27,55 @@
     @Scripts.Render("~/scripts/plugins/edit")
     <script type="text/javascript">
         var from = $("#form");
-        (function ($) {
+        var callback = null;
+        (function($) {
             if (!$) {
                 return;
             }
-            from.validate({
-                submitHandler: function (form) {
-                    var data =
-                    {
-                        device: abp.utils.getFormData(form)
-                    };
-                    abp.ajax({
-                        url: "/AgentManage/UpdateDevice",
-                        data: JSON.stringify(data)
-                    }).done(function (result) {
-                        abp.notify.success("@L("保存成功")");
-                        abp.dialog.close();
-                    });
-                }
+            $(function() {
+                from.validate({
+                    submitHandler: function(form) {
+                        var areaSetting = [];
+                        $(".area-setting").each(function() {
+                            var inarea = $(".in", this);
+                            var outarea = $(".out", this);
+                            if (inarea.prop("checked")) {
+                                areaSetting.push({ AreaId: inarea.data("areaid"), IsInArea: true });
+                            }
+
+                            if (outarea.prop("checked")) {
+                                areaSetting.push({ AreaId: outarea.data("areaid"), IsInArea: false });
+                            }
+                        });
+
+                        if (areaSetting.length > 0) {
+                            $("#SInOutArea").val(JSON.stringify(areaSetting));
+                        } else {
+                            $("#SInOutArea").val("");
+                        }
+
+                        var data =
+                        {
+                            device: abp.utils.getFormData(form)
+                        };
+
+                        abp.ajax({
+                            url: "/AgentManage/UpdateDevice",
+                            data: JSON.stringify(data)
+                        }).done(function(result) {
+                            if (callback) {
+                                callback(result, "@L("保存成功")");
+                            }
+                            abp.dialog.close();
+                        });
+                    }
+                });
+
             });
         })(jQuery);
 
-        function submitForm() {
+        function submitForm(cb) {
+            callback = cb;
             from.submit();
         }
     </script>
@@ -48,6 +83,7 @@
 
 <div class="ibox float-e-margins @SpartanConsts.DefaultAnimate edit-col-1">
     <form class="form-horizontal" id="form">
+        <input name="Id" class="form-control" type="hidden" value="@Model.Device.Id">
         <div class="tabs-container">
             <ul class="nav nav-tabs">
                 <li class="active">
@@ -80,14 +116,14 @@
                                     <label class="col-sm-4 control-label">@L("设备号"):</label>
                                     <div class="col-sm-8 ">
                                         <input class="form-control required isDigits" type="text" id="BNo" name="BNo" value="@Model.Device.BNo" />
-                                        <span class="help-block m-b-none">设备的唯一编码 一般是IMEI号或者序列号</span>
+                                        <span class="help-block m-b-none">@L("设备的唯一编码) 一般是IMEI号或者序列号")</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-4 control-label">@L("设备卡号"):</label>
                                     <div class="col-sm-8 ">
                                         <input class="form-control required isDigits" type="text" id="BSimNo" name="BSimNo" value="@Model.Device.BSimNo" />
-                                        <span class="help-block m-b-none">设备所使用的SIM卡卡号</span>
+                                        <span class="help-block m-b-none">@L("设备所使用的SIM卡卡号")</span>
                                     </div>
                                 </div>
                             </div>
@@ -103,7 +139,7 @@
                                     <label class="col-sm-4 control-label">@L("设备描述"):</label>
                                     <div class="col-sm-8">
                                         <input class="form-control required" type="text" id="BDscription" name="BDscription" value="@Model.Device.BDscription" />
-                                        <span class="help-block m-b-none">例如：隐藏安装/安装在车头</span>
+                                        <span class="help-block m-b-none">@L("例如：隐藏安装/安装在车头")</span>
                                     </div>
                                 </div>
                             </div>
@@ -128,14 +164,33 @@
                                     <label class="col-sm-4 control-label">@L("超速限制"):</label>
                                     <div class="col-sm-8 ">
                                         <input class="form-control required isInteger w180" type="text" id="SLimitSpeed" name="SLimitSpeed" value="@Model.Device.SLimitSpeed" />
-                                        <span class="help-block m-b-none">触发超速报警的最大速度 km/h</span>
+                                        <span class="help-block m-b-none">@L("触发超速报警的最大速度 km/h")</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-4 control-label">@L("进出区域"):</label>
                                     <div class="col-sm-8 ">
-                                        <input class="form-control required" type="text" id="SInOutArea" name="SInOutArea" value="@Model.Device.SInOutArea" />
-                                        <span class="help-block m-b-none">设置进入和离开哪个区域的时候触发报警</span>
+                                        <input class="form-control" type="hidden" id="SInOutArea" name="SInOutArea" value="@Model.Device.SInOutArea" />
+                                        <span class="help-block m-b-none mb10">@L("设置进入和离开哪个区域的时候触发报警")</span>
+                                        @if (Model.AllAreas.Count == 0)
+                                        {
+                                            <p>@L("您还没有设置有任何区域")</p>
+                                        }
+                                        else
+                                        {
+                                            foreach (var area in Model.AllAreas)
+                                            {
+                                                <div class="checkbox i-checks area-setting">
+                                                    <label>
+                                                        <input type="checkbox" class="in" id="area-in-@area.Id" data-areaid="@area.Id" @(Model.Device.AreaSettings.Any(p => p.AreaId == area.Id && p.IsInArea) ? "checked" : "")> @L("进入")
+                                                    </label>
+                                                    <label>
+                                                        <input type="checkbox" class="out" id="area-out-@area.Id" data-areaid="@area.Id" @(Model.Device.AreaSettings.Any(p => p.AreaId == area.Id && !p.IsInArea) ? "checked" : "")> @L("离开") @area.Name
+                                                    </label>
+                                                </div>
+                                            }
+                                        }
+
                                     </div>
                                 </div>
                             </div>

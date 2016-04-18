@@ -75,6 +75,7 @@ namespace CH.Spartan.Web
             bundles.Add(
                 new StyleBundle("~/styles/plugins/edit")
                      .Include("~/Content/js/plugins/select2/css/select2.css", new CssRewriteUrlTransform())
+                     .Include("~/Content/js/plugins/icheck/skins/all.css", new CssRewriteUrlTransform())
                 );
 
             bundles.Add(
@@ -89,6 +90,10 @@ namespace CH.Spartan.Web
                        "~/Content/js/plugins/my97/wdatepicker.js"
                    ).Include(
                        "~/Content/js/plugins/select2/js/select2.full.js"
+                   ).Include(
+                       "~/Content/js/plugins/icheck/icheck.js"
+                   ).Include(
+                       "~/Content/js/plugins/icheck/icheck.default.js"
                    )
                );
         }

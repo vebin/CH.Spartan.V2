@@ -14,7 +14,6 @@
             }
             return del;
         }
-
         //删除
         function del(ids) {
             if (typeof ids == "string") {
@@ -36,29 +35,32 @@
             if (!$) {
                 return;
             }
-
-            //搜索
-            $("#btn-search").click(function () {
-                var args =
-                {
-                    query: abp.utils.getFormData("#form")
-                }
-                $("#table").bootstrapTable("refresh", args);
-            });
-
-            //删除
-            $("#btn-del").click(function () {
-                var rows = $("#table").bootstrapTable("getSelections");
-                var ids = [];
-                $.each(rows, function (index, item) {
-                    ids.push({ id: item.id });
+            $(function () {
+                //搜索
+                $("#btn-search").click(function () {
+                    var args =
+                    {
+                        query: abp.utils.getFormData("#form")
+                    }
+                    $("#table").bootstrapTable("refresh", args);
                 });
-                if (ids.length == 0) {
-                    abp.notify.error("@L("请选择要删除的数据")");
-                } else {
-                    del(ids);
-                }
+
+                //删除
+                $("#btn-del").click(function () {
+                    var rows = $("#table").bootstrapTable("getSelections");
+                    var ids = [];
+                    $.each(rows, function (index, item) {
+                        ids.push({ id: item.id });
+                    });
+                    if (ids.length == 0) {
+                        abp.notify.error("@L("请选择要删除的数据")");
+                    } else {
+                        del(ids);
+                    }
+                });
+
             });
+
         })(jQuery);
     </script>
 }

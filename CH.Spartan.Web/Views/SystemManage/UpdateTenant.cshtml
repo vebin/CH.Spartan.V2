@@ -12,24 +12,32 @@
             if (!$) {
                 return;
             }
-            from.validate({
-                submitHandler: function (form) {
-                    var data =
-                    {
-                        tenant: abp.utils.getFormData(form)
-                    };
-                    abp.ajax({
-                        url: "/SystemManage/UpdateTenant",
-                        data: JSON.stringify(data)
-                    }).done(function (result) {
-                        abp.notify.success("@L("保存成功")");
-                        abp.dialog.close();
-                    });
-                }
+
+            $(function () {
+                from.validate({
+                    submitHandler: function (form) {
+                        var data =
+                        {
+                            tenant: abp.utils.getFormData(form)
+                        };
+                        abp.ajax({
+                            url: "/SystemManage/UpdateTenant",
+                            data: JSON.stringify(data)
+                        }).done(function (result) {
+                            if (callback) {
+                                callback(result, "@L("保存成功")");
+                            }
+                            abp.dialog.close();
+                        });
+                    }
+                });
+
             });
+
         })(jQuery);
 
-        function submitForm() {
+        function submitForm(cb) {
+            callback = cb;
             from.submit();
         }
     </script>

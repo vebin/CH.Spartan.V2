@@ -16,6 +16,13 @@
         options.success = undefined;
         options.error = undefined;
 
+        options.beforeSend= function(){
+            abp.ui.setBusy();
+        }
+
+        options.complete= function() {
+            abp.ui.clearBusy();
+        }
         return $.Deferred(function ($dfd) {
             $.ajax(options)
                 .done(function (data) {

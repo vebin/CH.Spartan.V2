@@ -9,6 +9,7 @@ using Abp.Linq.Extensions;
 using Abp.Extensions;
 using System.Data.Entity;
 using Abp.Runtime.Session;
+using CH.Spartan.Areas;
 using CH.Spartan.Areas.Dto;
 using CH.Spartan.DealRecords;
 using CH.Spartan.Devices.Dto;
@@ -31,7 +32,17 @@ namespace CH.Spartan.Devices
         private readonly IRepository<Tenant> _tenantRepository;
         private readonly IRepository<DeviceType> _deviceTypeRepository;
         private readonly IRepository<DealRecord> _dealRecordRepository;
-        public DeviceAppService(IRepository<Device> deviceRepository,DeviceManager deviceManager, DeviceTypeManager deviceTypeManager, NodeManager nodeManager, TenantManager tenantManager, IRepository<Tenant> tenantRepository, IRepository<DeviceType> deviceTypeRepository, IRepository<DealRecord> dealRecordRepository)
+        private readonly IRepository<Area> _areaRepository; 
+        public DeviceAppService(
+            DeviceManager deviceManager,
+            DeviceTypeManager deviceTypeManager, 
+            NodeManager nodeManager,
+            TenantManager tenantManager,
+            IRepository<Device> deviceRepository,
+            IRepository<Tenant> tenantRepository, 
+            IRepository<DeviceType> deviceTypeRepository,
+            IRepository<DealRecord> dealRecordRepository,
+            IRepository<Area> areaRepository)
         {
             _deviceRepository = deviceRepository;
             _deviceManager = deviceManager;
@@ -41,6 +52,7 @@ namespace CH.Spartan.Devices
             _tenantRepository = tenantRepository;
             _deviceTypeRepository = deviceTypeRepository;
             _dealRecordRepository = dealRecordRepository;
+            _areaRepository = areaRepository;
         }
 
         public async Task<ListResultOutput<GetDeviceListDto>> GetDeviceListAsync(GetDeviceListInput input)
@@ -91,6 +103,8 @@ namespace CH.Spartan.Devices
             device.BCode = await _deviceTypeManager.CreateCodeAsync(device, deviceType);
             //数据节点
             device.BNodeId = await _nodeManager.GetNodeIdAsync(device);
+            //默认超速
+            device.SLimitSpeed = SpartanConsts.DefaultLimitSpeed;
             //添加设备
             CheckErrors(await _deviceManager.CreateAsync(device));
             await CurrentUnitOfWork.SaveChangesAsync();
@@ -105,6 +119,10 @@ namespace CH.Spartan.Devices
         {
             var device = await _deviceRepository.GetAsync(input.Device.Id);
             input.Device.MapTo(device);
+            //设备类型
+            var deviceType = await _deviceTypeRepository.GetAsync(device.BDeviceTypeId);
+            //生成设备Code
+            device.BCode = await _deviceTypeManager.CreateCodeAsync(device, deviceType);
             await _deviceRepository.UpdateAsync(device);
         }
     
@@ -115,11 +133,13 @@ namespace CH.Spartan.Devices
 
         public async Task<UpdateDeviceByAgentOutput> GetUpdateDeviceByAgentAsync(IdInput input)
         {
-            
             var result = await _deviceRepository.GetAsync(input.Id);
-            var updateDeviceByAgentDto = result.MapTo<UpdateDeviceByAgentDto>();
-            updateDeviceByAgentDto.AreaSettings = result.GetOutAreaSettings().MapTo<List<AreaSettingDto>>();
-            var output = new UpdateDeviceByAgentOutput(updateDeviceByAgentDto);
+            var output = new UpdateDeviceByAgentOutput
+            {
+                Device = result.MapTo<UpdateDeviceByAgentDto>(),
+                AllAreas =
+                    (await _areaRepository.GetAllListAsync(p => p.UserId == result.UserId)).MapTo<List<GetAreaListDto>>()
+            };
             return output;
         }
 

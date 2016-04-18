@@ -8,124 +8,119 @@
     <script type="text/javascript">
         //操作
         function formatterOp(value, row, index) {
-            var edit="";
-			var del="";
-			if(abp.auth.isGranted("@SpartanPermissionNames.Customers_Setting_Area_Update"))
-			{
-				edit = '<button type="button" class="btn btn-link btn-op" title="@L("修改")" onclick="update(\'' + row.id + '\')"><i class="fa fa-edit" ></i> @L("修改")</button>';
-			}
-			if(abp.auth.isGranted("@SpartanPermissionNames.Customers_Setting_Area_Delete"))
-			{
-			    del = '<button type="button" class="btn btn-link btn-op" title="@L("删除")" onclick="del(\'' + row.id + '\')"><i class="fa fa-trash-o""></i> @L("删除")</button>';
-			}
+            var edit = "";
+            var del = "";
+            if (abp.auth.isGranted("@SpartanPermissionNames.Customers_Setting_Area_Update")) {
+                edit = '<button type="button" class="btn btn-link btn-op" title="@L("修改")" onclick="update(\'' + row.id + '\')"><i class="fa fa-edit" ></i> @L("修改")</button>';
+            }
+            if (abp.auth.isGranted("@SpartanPermissionNames.Customers_Setting_Area_Delete")) {
+                del = '<button type="button" class="btn btn-link btn-op" title="@L("删除")" onclick="del(\'' + row.id + '\')"><i class="fa fa-trash-o""></i> @L("删除")</button>';
+            }
             return edit + del;
         }
 
-       
-		
-				 //添加
+        //子窗口回调
+        function callback(result, message) {
+            abp.notify.success(message);
+            $("#table").bootstrapTable("refresh");
+        }
+
+        //添加
         function create() {
             abp.dialog.open("/Customers_Settin/CreateArea", "@L("添加区域")", {
-                               	area: ["775px", "750px"],
-			                //area: ["675px", "750px"],
+                area: ["775px", "750px"],
+                //area: ["675px", "750px"],
                 //area: ["775px", "750px"],
                 //area: ["995px", "750px"],
                 //area: ["1250px", "750px"],
                 btn: ["@L("确定")", '@L("取消")'],
-                yes: function(index, layero) {
+                yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
-                    iframeWin.submitForm();
-                },
-                cancel: function(index) {
-                },
-                end: function() {
-                     $("#table").bootstrapTable("refresh");
+                    iframeWin.submitForm(callback);
                 }
             });
         }
-		    
-		
-          
-				//更新
+
+
+
+        //更新
         function update(id) {
             abp.dialog.open("/Customers_Settin/UpdateArea?id=" + id, "@L("修改区域")", {
-                         area: ["775px", "750px"],
-                            //area: ["675px", "750px"],
+                area: ["775px", "750px"],
+                //area: ["675px", "750px"],
                 //area: ["775px", "750px"],
                 //area: ["995px", "750px"],
                 //area: ["1250px", "750px"],
                 btn: ["@L("保存")", '@L("取消")'],
-                yes: function(index, layero) {
+                yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
-                    iframeWin.submitForm();
-                },
-                cancel: function(index) {
-                },
-                end: function() {
-                     $("#table").bootstrapTable("refresh");
+                    iframeWin.submitForm(callback);
                 }
             });
         }
-		    
-        
 
-		
-				//删除
+
+
+
+        //删除
         function del(ids) {
             if (typeof ids == "string") {
                 ids = [{ id: ids }];
             }
-            abp.message.confirm("@L("确定删除")?", function(yes) {
+            abp.message.confirm("@L("确定删除")?", function (yes) {
                 if (!yes) return;
                 abp.ajax({
                     url: "/Customers_Settin/DeleteArea",
                     data: JSON.stringify(ids)
                 }).done(function (result) {
                     abp.notify.success("@L("删除成功")");
-					 $("#table").bootstrapTable("refresh");
+                    $("#table").bootstrapTable("refresh");
                 });
             });
         }
-		    
 
 
-        
 
-        (function($) {
+
+
+        (function ($) {
             if (!$) {
                 return;
             }
+            $(function () {
+                //搜索
+                $("#btn-search").click(function () {
+                    var args =
+                    {
+                        query: abp.utils.getFormData("#form")
+                    }
+                    $("#table").bootstrapTable("refresh", args);
+                });
 
-            //搜索
-            $("#btn-search").click(function() {
-                var args =
-                {
-                    query: abp.utils.getFormData("#form")
-                }
-                $("#table").bootstrapTable("refresh", args);
+                //添加
+                $("#btn-add").click(function () {
+                    create();
+                });
+
+                //删除
+                $("#btn-del").click(function () {
+                    var rows = $("#table").bootstrapTable("getSelections");
+                    var ids = [];
+                    $.each(rows, function (index, item) {
+                        ids.push({ id: item.id });
+                    });
+                    if (ids.length == 0) {
+                        abp.notify.error("@L("请选择要删除的数据")");
+                    } else {
+                        del(ids);
+                    }
+                });
+
             });
-			
-				//添加
-				$("#btn-add").click(function() {
-					create();
-				});
-			
-				//删除
-				$("#btn-del").click(function() {
-					var rows = $("#table").bootstrapTable("getSelections");
-					var ids = [];
-					$.each(rows,function(index, item) {
-						ids.push({ id: item.id });
-					});
-					if (ids.length == 0) {
-                    abp.notify.error("@L("请选择要删除的数据")");
-                } else {
-                    del(ids);
-                }
-				});
-		    
 
-           
+
+
+
         })(jQuery);
     </script>
 }
@@ -142,14 +137,14 @@
                 </div>
                 <div class="ibox-content list-content">
                     <div class="btn-group hidden-xs" id="tableToolbar" role="group">
-						@if (IsGranted(SpartanPermissionNames.Customers_Setting_Area_Create))
-						{
-							<button type="button" class="btn btn-outline btn-default" id="btn-add"><i class="fa fa-plus" aria-hidden="true"></i></button>
-						}
-						@if (IsGranted(SpartanPermissionNames.Customers_Setting_Area_Delete))
-						{
-							 <button type="button" class="btn btn-outline btn-default" id="btn-del"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-						}
+                        @if (IsGranted(SpartanPermissionNames.Customers_Setting_Area_Create))
+                        {
+                            <button type="button" class="btn btn-outline btn-default" id="btn-add"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                        }
+                        @if (IsGranted(SpartanPermissionNames.Customers_Setting_Area_Delete))
+                        {
+                            <button type="button" class="btn btn-outline btn-default" id="btn-del"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                        }
                     </div>
                     <table id="table"
                            data-toggle="table"
@@ -159,17 +154,17 @@
                            data-show-export="true">
                         <thead>
                             <tr>
-							 <th data-field="state" data-checkbox="true"></th>
+                                <th data-field="state" data-checkbox="true"></th>
                                 <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
-                                      <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
-							                   <th data-field="name" data-sortable="true">@L("区域名字")</th>
-                   <th data-field="points" data-sortable="true">@L("区域点集合")</th>
-                   <th data-field="tenantId" data-sortable="true">@L("所属租户Id")</th>
-                   <th data-field="tenant" data-sortable="true">@L("所属租户")</th>
-                   <th data-field="userId" data-sortable="true">@L("所属用户Id")</th>
-                   <th data-field="user" data-sortable="true">@L("所属租户")</th>
-                   <th data-field="lastModificationTime" data-sortable="true">@L("最后编辑时间")</th>
-                   <th data-field="creationTime" data-sortable="true">@L("创建时间")</th>
+                                <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
+                                <th data-field="name" data-sortable="true">@L("区域名字")</th>
+                                <th data-field="points" data-sortable="true">@L("区域点集合")</th>
+                                <th data-field="tenantId" data-sortable="true">@L("所属租户Id")</th>
+                                <th data-field="tenant" data-sortable="true">@L("所属租户")</th>
+                                <th data-field="userId" data-sortable="true">@L("所属用户Id")</th>
+                                <th data-field="user" data-sortable="true">@L("所属租户")</th>
+                                <th data-field="lastModificationTime" data-sortable="true">@L("最后编辑时间")</th>
+                                <th data-field="creationTime" data-sortable="true">@L("创建时间")</th>
                             </tr>
                         </thead>
                     </table>
@@ -178,6 +173,3 @@
         </div>
     </div>
 </div>
-
-
-

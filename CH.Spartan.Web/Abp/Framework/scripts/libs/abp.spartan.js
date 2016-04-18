@@ -113,7 +113,7 @@
             type: 2,
             title: title,
             shade: 0.1,
-            maxmin: true,
+            //maxmin: true,
             area: ["80%", "80%"],
             content: url
         };

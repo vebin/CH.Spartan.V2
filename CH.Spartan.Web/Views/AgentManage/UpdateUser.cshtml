@@ -4,28 +4,37 @@
     @Scripts.Render("~/scripts/plugins/edit")
     <script type="text/javascript">
         var from = $("#form");
+        var callback = null;
         (function ($) {
             if (!$) {
                 return;
             }
-            from.validate({
-                submitHandler: function (form) {
-                    var data =
-                    {
-                        user: abp.utils.getFormData(form)
-                    };
-                    abp.ajax({
-                        url: "/AgentManage/UpdateUser",
-                        data: JSON.stringify(data)
-                    }).done(function (result) {
-                        abp.notify.success("@L("保存成功")");
-                        abp.dialog.close();
-                    });
-                }
+            $(function () {
+                from.validate({
+                    submitHandler: function (form) {
+                        var data =
+                        {
+                            user: abp.utils.getFormData(form)
+                        };
+                        abp.ajax({
+                            url: "/AgentManage/UpdateUser",
+                            data: JSON.stringify(data)
+                        }).done(function (result) {
+                            if (callback) {
+                                callback(result, "@L("保存成功")");
+                            }
+                            abp.dialog.close();
+                        });
+                    }
+                });
+
             });
+
+
         })(jQuery);
 
-        function submitForm() {
+        function submitForm(cb) {
+            callback = cb;
             from.submit();
         }
     </script>
@@ -40,14 +49,14 @@
                     <div class="form-group">
                         <label class="col-sm-4 control-label">@L("客户名"):</label>
                         <div class="col-sm-8">
-                            <input class="form-control required stringCheck" type="text" id="UserName" name="UserName" value="@Model.User.UserName"/>
-                            <span  class="help-block m-b-none">用于登录系统</span>
+                            <input class="form-control required stringCheck" type="text" id="UserName" name="UserName" value="@Model.User.UserName" />
+                            <span class="help-block m-b-none">用于登录系统</span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-4 control-label">@L("名称"):</label>
                         <div class="col-sm-8">
-                            <input class="form-control required stringCheck" type="text" id="Name" name="Name" value="@Model.User.Name"/>
+                            <input class="form-control required stringCheck" type="text" id="Name" name="Name" value="@Model.User.Name" />
                             <span class="help-block m-b-none">客户的名称</span>
                         </div>
                     </div>
@@ -56,7 +65,7 @@
                     <div class="form-group">
                         <label class="col-sm-4 control-label">@L("邮件"):</label>
                         <div class="col-sm-8">
-                            <input class="form-control  required isEmail" type="text" id="EmailAddress" name="EmailAddress" value="@Model.User.EmailAddress"/>
+                            <input class="form-control  required isEmail" type="text" id="EmailAddress" name="EmailAddress" value="@Model.User.EmailAddress" />
                             <span class="help-block m-b-none">请务必填写真实的邮件地址 用于忘记密码时的验证</span>
                         </div>
                     </div>

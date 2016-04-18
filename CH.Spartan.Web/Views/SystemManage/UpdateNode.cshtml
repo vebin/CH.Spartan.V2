@@ -4,28 +4,37 @@
     @Scripts.Render("~/scripts/plugins/edit")
     <script type="text/javascript">
         var from = $("#form");
+        var callback = null;
         (function ($) {
             if (!$) {
                 return;
             }
-            from.validate({
-                submitHandler: function (form) {
-                    var data =
-                    {
-                        node: abp.utils.getFormData(form)
-                    };
-                    abp.ajax({
-                        url: "/SystemManage/UpdateNode",
-                        data: JSON.stringify(data)
-                    }).done(function (result) {
-                        abp.notify.success("@L("保存成功")");
-                        abp.dialog.close();
-                    });
-                }
+
+            $(function () {
+                from.validate({
+                    submitHandler: function (form) {
+                        var data =
+                        {
+                            node: abp.utils.getFormData(form)
+                        };
+                        abp.ajax({
+                            url: "/SystemManage/UpdateNode",
+                            data: JSON.stringify(data)
+                        }).done(function (result) {
+                            if (callback) {
+                                callback(result, "@L("保存成功")");
+                            }
+                            abp.dialog.close();
+                        });
+                    }
+                });
+
             });
+
         })(jQuery);
 
-        function submitForm() {
+        function submitForm(cb) {
+            callback = cb;
             from.submit();
         }
     </script>
@@ -46,7 +55,7 @@
                     <div class="form-group">
                         <label class="col-sm-4 control-label">@L("历史数据表"):</label>
                         <div class="col-sm-8">
-                            <input class="form-control required isEnglishAndNumber" type="text" id="HistoryTableName" readonly  name="HistoryTableName" value="@Model.Node.HistoryTableName" />
+                            <input class="form-control required isEnglishAndNumber" type="text" id="HistoryTableName" readonly name="HistoryTableName" value="@Model.Node.HistoryTableName" />
                         </div>
                     </div>
                 </div>

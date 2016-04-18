@@ -8,28 +8,34 @@
     @Scripts.Render("~/scripts/plugins/edit")
     <script type="text/javascript">
         var from = $("#form");
+        var callback = null;
         (function ($) {
             if (!$) {
                 return;
             }
-            from.validate({
-                submitHandler: function (form) {
-                    var data =
-                    {
-                        device: abp.utils.getFormData(form)
-                    };
-                    abp.ajax({
-                        url: "/AgentManage/CreateDevice",
-                        data: JSON.stringify(data)
-                    }).done(function (result) {
-                        abp.notify.success("@L("添加成功")");
-                        abp.dialog.close();
-                    });
-                }
+            $(function () {
+                from.validate({
+                    submitHandler: function (form) {
+                        var data =
+                        {
+                            device: abp.utils.getFormData(form)
+                        };
+                        abp.ajax({
+                            url: "/AgentManage/CreateDevice",
+                            data: JSON.stringify(data)
+                        }).done(function (result) {
+                            if (callback) {
+                                callback(result, "@L("添加成功")");
+                            }
+                            abp.dialog.close();
+                        });
+                    }
+                });
             });
         })(jQuery);
 
-        function submitForm() {
+        function submitForm(cb) {
+            callback = cb;
             from.submit();
         }
     </script>
@@ -64,7 +70,7 @@
                     <div class="form-group">
                         <label class="col-sm-4 control-label">@L("设备卡号"):</label>
                         <div class="col-sm-8 ">
-                            <input class="form-control required isDigits" type="text" id="BSimNo" name="BSimNo"/>
+                            <input class="form-control required isDigits" type="text" id="BSimNo" name="BSimNo" />
                             <span class="help-block m-b-none">设备所使用的SIM卡卡号</span>
                         </div>
                     </div>
@@ -73,7 +79,7 @@
                     <div class="form-group">
                         <label class="col-sm-4 control-label">@L("设备名字"):</label>
                         <div class="col-sm-8 ">
-                            <input class="form-control required" type="text" id="BName" name="BName"/>
+                            <input class="form-control required" type="text" id="BName" name="BName" />
                             <span class="help-block m-b-none">例如：粤B95270</span>
                         </div>
                     </div>
@@ -89,7 +95,7 @@
                     <div class="form-group">
                         <label class="col-sm-4 control-label">@L("过期时间"):</label>
                         <div class="col-sm-8">
-                            <input class="form-control required" type="text" id="BExpireTime" name="BExpireTime" onfocus="WdatePicker()" value="@Model.Device.BExpireTime"/>
+                            <input class="form-control required" type="text" id="BExpireTime" name="BExpireTime" onfocus="WdatePicker()" value="@Model.Device.BExpireTime" />
                             <span class="help-block m-b-none"></span>
                         </div>
                     </div>

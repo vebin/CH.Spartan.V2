@@ -61,8 +61,13 @@ namespace CH.Spartan.Devices.Dto
         /// <summary>
         /// 报警设置进出区域
         /// </summary>
-        public List<AreaSettingDto> AreaSettings { get; set; }
+        public string SInOutArea { get; set; }
 
+        /// <summary>
+        /// 报警设置进出区域
+        /// </summary>
+        public List<AreaSettingDto> AreaSettings { get; set; }
+     
     }
 
     public class UpdateDeviceByAgentInput : IInputDto
@@ -72,11 +77,16 @@ namespace CH.Spartan.Devices.Dto
 
     public class UpdateDeviceByAgentOutput : IOutputDto
     {
+        public UpdateDeviceByAgentOutput()
+        {
+        }
         public UpdateDeviceByAgentOutput(UpdateDeviceByAgentDto device)
         {
             Device = device;
         }
 
         public UpdateDeviceByAgentDto Device { get; set; }
+
+        public List<GetAreaListDto> AllAreas { get; set; }
     }
 }

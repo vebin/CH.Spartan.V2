@@ -14,7 +14,7 @@
 
     <text name="平台管理" value="平台管理" />
     <text name="客户管理" value="客户管理" />
-    <text name="角色管理" value="角色管理" />
+    <text name="代理管理" value="代理管理" />
     <text name="车辆管理" value="车辆管理" />
     <text name="车辆统计" value="车辆统计" />
     <text name="用户统计" value="用户统计" />
@@ -106,6 +106,12 @@
     <text name="微博唯一Id" value="微博唯一Id" />
     <text name="微博访问口令" value="微博访问口令" />
     <text name="微博访问过期时间" value="微博访问过期时间" />
+
+
+    <text name="区域" value="区域" />
+    <text name="区域名字" value="区域名字" />
+    <text name="区域点集合" value="区域点集合" />
+    <text name="所属用户Id" value="所属用户Id" />
     
   </texts>
 </localizationDictionary>

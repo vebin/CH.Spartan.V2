@@ -11,14 +11,18 @@
             var edit = "";
             var del = "";
             if (abp.auth.isGranted("@SpartanPermissionNames.SystemManages_Tenant_Update")) {
-                 edit = '<button type="button" class="btn btn-link btn-op" title="@L("修改")" onclick="update(\'' + row.id + '\')"><i class="fa fa-edit" ></i> @L("修改")</button>';
+                edit = '<button type="button" class="btn btn-link btn-op" title="@L("修改")" onclick="update(\'' + row.id + '\')"><i class="fa fa-edit" ></i> @L("修改")</button>';
             }
             if (abp.auth.isGranted("@SpartanPermissionNames.SystemManages_Tenant_Delete")) {
-                 del = '<button type="button" class="btn btn-link btn-op" title="@L("删除")" onclick="del(\'' + row.id + '\')"><i class="fa fa-trash-o""></i> @L("删除")</button>';
+                del = '<button type="button" class="btn btn-link btn-op" title="@L("删除")" onclick="del(\'' + row.id + '\')"><i class="fa fa-trash-o""></i> @L("删除")</button>';
             }
             return edit + del;
         }
-
+        //子窗口回调
+        function callback(result, message) {
+            abp.notify.success(message);
+            $("#table").bootstrapTable("refresh");
+        }
         //添加
         function create() {
             abp.dialog.open("/SystemManage/CreateTenant", "@L("添加租户")", {
@@ -26,13 +30,7 @@
                 btn: ["@L("确定")", '@L("取消")'],
                 yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
-                    iframeWin.submitForm();
-                },
-                cancel: function (index) {
-
-                },
-                end: function () {
-                    $("#btn-search").click();
+                    iframeWin.submitForm(callback);
                 }
             });
         }
@@ -77,30 +75,33 @@
             if (!$) {
                 return;
             }
-
-            //搜索
-            $("#btn-search").click(function () {
-                var args =
-                {
-                    query: abp.utils.getFormData("#form")
-                }
-                $("#table").bootstrapTable("refresh", args);
-            });
-
-            //添加
-            $("#btn-add").click(function () {
-                create();
-            });
-
-            //删除
-            $("#btn-del").click(function () {
-                var rows = $("#table").bootstrapTable("getSelections");
-                var ids = [];
-                $.each(rows, function (index, item) {
-                    ids.push({ id: item.id });
+            $(function () {
+                //搜索
+                $("#btn-search").click(function () {
+                    var args =
+                    {
+                        query: abp.utils.getFormData("#form")
+                    }
+                    $("#table").bootstrapTable("refresh", args);
                 });
-                del(ids);
+
+                //添加
+                $("#btn-add").click(function () {
+                    create();
+                });
+
+                //删除
+                $("#btn-del").click(function () {
+                    var rows = $("#table").bootstrapTable("getSelections");
+                    var ids = [];
+                    $.each(rows, function (index, item) {
+                        ids.push({ id: item.id });
+                    });
+                    del(ids);
+                });
+
             });
+
         })(jQuery);
     </script>
 }

@@ -8,28 +8,36 @@
     @Scripts.Render("~/scripts/plugins/edit")
     <script type="text/javascript">
         var from = $("#form");
+        var callback = null;
         (function ($) {
             if (!$) {
                 return;
             }
-            from.validate({
-                submitHandler: function (form) {
-                    var data =
-                    {
-                        node: abp.utils.getFormData(form)
-                    };
-                    abp.ajax({
-                        url: "/SystemManage/CreateNode",
-                        data: JSON.stringify(data)
-                    }).done(function (result) {
-                        abp.notify.success("@L("添加成功")");
-                        abp.dialog.close();
-                    });
-                }
+            $(function () {
+                from.validate({
+                    submitHandler: function (form) {
+                        var data =
+                        {
+                            node: abp.utils.getFormData(form)
+                        };
+                        abp.ajax({
+                            url: "/SystemManage/CreateNode",
+                            data: JSON.stringify(data)
+                        }).done(function (result) {
+                             if (callback) {
+                                callback(result, "@L("添加成功")");
+                            }
+                            abp.dialog.close();
+                        });
+                    }
+                });
+
             });
+
         })(jQuery);
 
-        function submitForm() {
+        function submitForm(cb) {
+            callback = cb;
             from.submit();
         }
     </script>

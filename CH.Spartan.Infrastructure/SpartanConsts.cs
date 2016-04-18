@@ -25,13 +25,6 @@ namespace CH.Spartan.Infrastructure
         [EnumDisplayName("安装设备")]
         InstallDevice = 2
     }
-    public enum EnumAreaType
-    {
-        [EnumDisplayName("矩形")]
-        Polygon = 1,
-        [EnumDisplayName("圆圈")]
-        Circle = 2
-    }
 
     public enum EnumCodeCreateRule
     {

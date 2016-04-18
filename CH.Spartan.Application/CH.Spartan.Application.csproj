@@ -97,6 +97,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\AreaAppService.cs" />
+    <Compile Include="Areas\AreaConstants.cs" />
+    <Compile Include="Areas\Dto\AreaSettingDto.cs" />
+    <Compile Include="Areas\Dto\CreateAreaDto.cs" />
+    <Compile Include="Areas\Dto\GetAreaDto.cs" />
+    <Compile Include="Areas\Dto\GetAreaListDto.cs" />
+    <Compile Include="Areas\Dto\UpdateAreaDto.cs" />
+    <Compile Include="Areas\IAreaAppService.cs" />
     <Compile Include="AuditLogs\AuditLogAppService.cs" />
     <Compile Include="AuditLogs\Dto\GetAuditLogListDto.cs" />
     <Compile Include="AuditLogs\IAuditLogAppService.cs" />

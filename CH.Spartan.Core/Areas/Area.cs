@@ -21,19 +21,9 @@ namespace CH.Spartan.Areas
         public string Name { get; set; }
 
         /// <summary>
-        /// 区域类型
-        /// </summary>
-        public EnumAreaType Type { get; set; }
-
-        /// <summary>
         /// 区域点集合
         /// </summary>
         [MaxLength(500)]
         public string Points { get; set; }
-
-        /// <summary>
-        /// 区域半径
-        /// </summary>
-        public int? Radius { get; set; }
     }
 }

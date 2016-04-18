@@ -8,11 +8,15 @@ using System.Threading.Tasks;
 using Abp.Authorization.Users;
 using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
+using CH.Spartan.Areas;
 using CH.Spartan.DeviceTypes;
 using CH.Spartan.Infrastructure;
 using CH.Spartan.MultiTenancy;
 using CH.Spartan.Nodes;
 using CH.Spartan.Users;
+using Abp.Extensions;
+using Abp.Json;
+using Castle.Components.DictionaryAdapter;
 
 namespace CH.Spartan.Devices
 {
@@ -84,7 +88,7 @@ namespace CH.Spartan.Devices
         /// <summary>
         /// 报警设置 进出区域
         /// </summary>
-        public bool SInOutArea { get; set; }
+        public string SInOutArea { get; set; }
 
         #endregion
 
@@ -322,6 +326,19 @@ namespace CH.Spartan.Devices
         /// </summary>
         [ForeignKey("BNodeId")]
         public virtual Node Node { get; set; }
+
+        #endregion
+
+        #region 实体方法
+
+        public List<AreaSetting> GetOutAreaSettings()
+        {
+            if (!SInOutArea.IsNullOrEmpty())
+            {
+               return SInOutArea.ToObject<List<AreaSetting>>();
+            }
+            return new EditableList<AreaSetting>();
+        }
 
         #endregion
     }

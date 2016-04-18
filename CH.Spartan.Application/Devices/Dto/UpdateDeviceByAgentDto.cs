@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
+using CH.Spartan.Areas;
+using CH.Spartan.Areas.Dto;
 
 namespace CH.Spartan.Devices.Dto
 {
@@ -58,7 +61,7 @@ namespace CH.Spartan.Devices.Dto
         /// <summary>
         /// 报警设置进出区域
         /// </summary>
-        public string SInOutArea { get; set; }
+        public List<AreaSettingDto> AreaSettings { get; set; }
 
     }
 

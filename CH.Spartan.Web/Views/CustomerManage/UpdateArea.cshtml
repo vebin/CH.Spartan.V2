@@ -1,0 +1,64 @@
+﻿@model CH.Spartan.Areas.Dto.UpdateAreaOutput
+@section scripts
+{
+    @Scripts.Render("~/scripts/plugins/edit")
+    <script type="text/javascript">
+        var from = $("#form");
+        (function ($) {
+            if (!$) {
+                return;
+            }
+            from.validate({
+                submitHandler: function (form) {
+                    var data =
+                    {
+                        area: abp.utils.getFormData(form)
+                    };
+                    abp.ajax({
+                        url: "/Customers_Settin/UpdateArea",
+                        data: JSON.stringify(data)
+                    }).done(function (result) {
+                        abp.notify.success("@L("保存成功")");
+                        abp.dialog.close();
+                    });
+                }
+            });
+        })(jQuery);
+
+        function submitForm() {
+            from.submit();
+        }
+    </script>
+}
+
+<div class="ibox float-e-margins @(SpartanConsts.DefaultAnimate) edit">
+   <form class="form-horizontal" id="form">
+    <input name="Id" class="form-control" type="hidden" value="@Model.Area.Id">
+    <div class="ibox-content">
+             <div class="row">
+     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("区域名字"):</label>
+                        <div class="col-sm-8">
+                        <input class="form-control " type="text" id="Name" name="Name" value="@Model.Area.Name" />
+                        </div>
+                    </div>
+  <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("区域点集合"):</label>
+                        <div class="col-sm-8">
+                        <input class="form-control " type="text" id="Points" name="Points" value="@Model.Area.Points" />
+ <span class="help-block m-b-none"></span>
+         </div>
+                    </div>
+   </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("所属用户Id"):</label>
+                        <div class="col-sm-8">
+                        <input class="form-control " type="text" id="UserId" name="UserId" value="@Model.Area.UserId" />
+                        </div>
+                    </div>
+  </div>
+    </div>
+ </form>
+</div>

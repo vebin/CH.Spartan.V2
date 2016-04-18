@@ -9,6 +9,7 @@ using Abp.Linq.Extensions;
 using Abp.Extensions;
 using System.Data.Entity;
 using Abp.Runtime.Session;
+using CH.Spartan.Areas.Dto;
 using CH.Spartan.DealRecords;
 using CH.Spartan.Devices.Dto;
 using CH.Spartan.DeviceTypes;
@@ -114,8 +115,12 @@ namespace CH.Spartan.Devices
 
         public async Task<UpdateDeviceByAgentOutput> GetUpdateDeviceByAgentAsync(IdInput input)
         {
+            
             var result = await _deviceRepository.GetAsync(input.Id);
-            return new UpdateDeviceByAgentOutput(result.MapTo<UpdateDeviceByAgentDto>());
+            var updateDeviceByAgentDto = result.MapTo<UpdateDeviceByAgentDto>();
+            updateDeviceByAgentDto.AreaSettings = result.GetOutAreaSettings().MapTo<List<AreaSettingDto>>();
+            var output = new UpdateDeviceByAgentOutput(updateDeviceByAgentDto);
+            return output;
         }
 
         public async Task DeleteDeviceAsync(List<IdInput> input)

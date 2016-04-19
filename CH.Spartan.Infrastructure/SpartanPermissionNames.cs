@@ -2,6 +2,7 @@
 {
     public static class SpartanPermissionNames
     {
+     
         //客户
         public const string Customers = "Customers";
         public const string Customers_Monitor = "Customers.Monitor";
@@ -36,6 +37,8 @@
         public const string AgentManages_Device_Create = "AgentManages.Device.Create";
         public const string AgentManages_Device_Update = "AgentManages.Device.Update";
         public const string AgentManages_Device_Delete = "AgentManages.Device.Delete";
+        public const string AgentManages_DealRecord = "AgentManages.DealRecord";
+        public const string AgentManages_DealRecord_Delete = "AgentManages.DealRecord.Delete";
 
         //平台
         public const string PlatformManages = "PlatformManages";

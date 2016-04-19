@@ -98,6 +98,7 @@
     <Compile Include="Areas\AreaManager.cs" />
     <Compile Include="Areas\AreaSetting.cs" />
     <Compile Include="AuditLogs\AuditLogManager.cs" />
+    <Compile Include="DealRecords\DealRecordManager.cs" />
     <Compile Include="Devices\DeviceHelper.cs" />
     <Compile Include="Devices\DeviceManager.cs" />
     <Compile Include="Domain\ManagerBase.cs" />

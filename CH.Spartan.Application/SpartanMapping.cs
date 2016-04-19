@@ -3,6 +3,8 @@ using Abp.AutoMapper;
 using Abp.Localization;
 using AutoMapper;
 using CH.Spartan.Areas.Dto;
+using CH.Spartan.DealRecords;
+using CH.Spartan.DealRecords.Dto;
 using CH.Spartan.Devices;
 using CH.Spartan.Devices.Dto;
 using CH.Spartan.Infrastructure;
@@ -34,6 +36,11 @@ namespace CH.Spartan
 
             Mapper.CreateMap<Device, UpdateDeviceByAgentDto>()
             .ForMember(d => d.AreaSettings, opt => opt.MapFrom(o => o.GetOutAreaSettings().MapTo<List<AreaSettingDto>>()));
+
+            Mapper.CreateMap<DealRecord, GetDealRecordListDto>()
+              .ForMember(d => d.IsSucceedText, opt => opt.MapFrom(o => o.IsSucceed ? L("是") : L("否")))
+              .ForMember(d => d.TenantText, opt => opt.MapFrom(o => o.Tenant != null ? o.Tenant.Name : "-"))
+             .ForMember(d => d.TypeText, opt => opt.MapFrom(o => L(o.Type.GetDisplayName())));
         }
 
         private static string L(string name)

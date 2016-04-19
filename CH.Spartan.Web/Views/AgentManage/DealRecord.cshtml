@@ -1,0 +1,119 @@
+﻿@section styles
+{
+    @Styles.Render("~/styles/plugins/list")
+}
+@section scripts
+{
+    @Scripts.Render("~/scripts/plugins/list")
+    <script type="text/javascript">
+        //操作
+        function formatterOp(value, row, index) {
+            var del = "";
+            if (abp.auth.isGranted("@SpartanPermissionNames.AgentManages_DealRecord_Delete")) {
+                del = '<button type="button" class="btn btn-link btn-op" title="@L("删除")" onclick="del(\'' + row.id + '\')"><i class="fa fa-trash-o""></i> @L("删除")</button>';
+            }
+            return del;
+        }
+        //删除
+        function del(ids) {
+            if (typeof ids == "string") {
+                ids = [{ id: ids }];
+            }
+            abp.message.confirm("@L("确定删除")?", function (yes) {
+                if (!yes) return;
+                abp.ajax({
+                    url: "/PlatformManage/DeleteDealRecord",
+                    data: JSON.stringify(ids)
+                }).done(function (result) {
+                    abp.notify.success("@L("删除成功")");
+                    $("#table").bootstrapTable("refresh");
+                });
+            });
+        }
+        (function ($) {
+            if (!$) {
+                return;
+            }
+
+            //搜索
+            $("#btn-search").click(function () {
+                var args =
+                {
+                    query: abp.utils.getFormData("#form")
+                }
+                $("#table").bootstrapTable("refresh", args);
+            });
+
+
+            //删除
+            $("#btn-del").click(function () {
+                var rows = $("#table").bootstrapTable("getSelections");
+                var ids = [];
+                $.each(rows, function (index, item) {
+                    ids.push({ id: item.id });
+                });
+                if (ids.length == 0) {
+                    abp.notify.error("@L("请选择要删除的数据")");
+                } else {
+                    del(ids);
+                }
+            });
+
+
+
+        })(jQuery);
+    </script>
+}
+<div class="wrapper wrapper-content @(SpartanConsts.DefaultAnimate) list">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content list-toolbar">
+                    <form role="form" class="form-inline" id="form">
+                        <div class="form-group">
+                            <select class="form-control w180" name="SearchTime">
+                                <option value="CreationTime">@L("交易时间")</option>
+                            </select>
+                        </div>
+                        @Html.DateTimeRange()
+                        <div class="form-group" data-toggle="tooltip" data-placement="bottom" title="@L("交易类型")">
+                            @Html.GetSelectByEnum(typeof(EnumDealRecordType),"Type", L("不限(交易类型)"))
+                        </div>
+                        <div class="form-group">
+                            @Html.SearchText(L("请输入交易流水号/交易名称"), L("查询"))
+                        </div>
+                    </form>
+                </div>
+                <div class="ibox-content list-content">
+                    <div class="btn-group hidden-xs" id="tableToolbar" role="group">
+                        @if (IsGranted(SpartanPermissionNames.AgentManages_DealRecord_Delete))
+                        {
+                            <button type="button" class="btn btn-outline btn-default" id="btn-del"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                        }
+                    </div>
+                    <table id="table"
+                           data-toggle="table"
+                           data-url="/AgentManage/GetDealRecordListPaged"
+                           data-toolbar="#tableToolbar"
+                           data-height="550"
+                           data-show-export="true">
+                        <thead>
+                            <tr>
+                                <th data-field="state" data-checkbox="true"></th>
+                                <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
+                                <th data-field="op" data-formatter="formatterOp" data-width="60">@L("操作")</th>
+                                <th data-field="no">@L("交易流水号")</th>
+                                <th data-field="typeText" data-sortable="true" data-sort-name="type">@L("交易类型")</th>
+                                <th data-field="name">@L("交易名称")</th>
+                                <th data-field="remark">@L("交易备注")</th>
+                                <th data-field="amount" data-sortable="true">@L("交易金额")</th>
+                                <th data-field="isSucceedText" data-sortable="true" data-sort-name="isSucceed">@L("交易成功")</th>
+                                <th data-field="creationTime">@L("交易时间")</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

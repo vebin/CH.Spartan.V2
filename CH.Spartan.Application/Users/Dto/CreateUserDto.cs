@@ -17,6 +17,11 @@ namespace CH.Spartan.Users.Dto
         public string UserName { get; set; }
 
         /// <summary>
+        /// 名称 陈欢
+        /// </summary>
+        public string Name { get; set; }
+
+        /// <summary>
         /// 邮件
         /// </summary>
         public string EmailAddress { get; set; }

@@ -74,6 +74,7 @@ namespace CH.Spartan.Devices
                          p.BDscription.Contains(input.SearchText) ||
                          p.BSimNo.Contains(input.SearchText) ||
                          p.BNo.Contains(input.SearchText))
+                .WhereIf(input.UserId.HasValue, p => p.UserId == input.UserId.Value)
                 .WhereIf(input.DeviceTypeId.HasValue, p => p.BDeviceTypeId == input.DeviceTypeId.Value)
                 .WhereIf(input.IsLocated.HasValue, p => p.GIsLocated)
                 .WhereIfDynamic(input.StartTime.HasValue, input.SearchTime + ">", input.StartTime)

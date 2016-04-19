@@ -6,6 +6,8 @@ using System.Web;
 using System.Web.Mvc;
 using Abp.Application.Services.Dto;
 using Abp.Web.Mvc.Authorization;
+using CH.Spartan.DealRecords;
+using CH.Spartan.DealRecords.Dto;
 using CH.Spartan.Devices;
 using CH.Spartan.Devices.Dto;
 using CH.Spartan.Infrastructure;
@@ -22,10 +24,12 @@ namespace CH.Spartan.Web.Controllers
     {
         private readonly IDeviceAppService _deviceAppService;
         private readonly IUserAppService _userAppService;
-        public AgentManageController(IDeviceAppService deviceAppService, IUserAppService userAppService)
+        private readonly IDealRecordAppService _dealRecordAppService;
+        public AgentManageController(IDeviceAppService deviceAppService, IUserAppService userAppService, IDealRecordAppService dealRecordAppService)
         {
             _deviceAppService = deviceAppService;
             _userAppService = userAppService;
+            _dealRecordAppService = dealRecordAppService;
         }
 
         #region 设备
@@ -161,6 +165,48 @@ namespace CH.Spartan.Web.Controllers
         public async Task<JsonResult> DeleteUser(List<IdInput<long>> input)
         {
             await _userAppService.DeleteUserAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+
+        #endregion
+
+        #region 交易记录
+
+        #region 首页
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_DealRecord)]
+        public ActionResult DealRecord()
+        {
+            return View();
+        }
+        #endregion
+
+        #region 查询
+
+        [HttpGet]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_DealRecord)]
+        public async Task<JsonResult> GetDealRecordListPaged(GetDealRecordListPagedInput input)
+        {
+            var result = await _dealRecordAppService.GetDealRecordListPagedAsync(input);
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_DealRecord)]
+        public async Task<JsonResult> GetDealRecordList(GetDealRecordListInput input)
+        {
+            var result = await _dealRecordAppService.GetDealRecordListAsync(input);
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+        #region 删除
+        [HttpPost]
+        [AbpMvcAuthorize(SpartanPermissionNames.PlatformManages_DealRecord_Delete)]
+        public async Task<JsonResult> DeleteDealRecord(List<IdInput> input)
+        {
+            await _dealRecordAppService.DeleteDealRecordAsync(input);
             return Json(true, JsonRequestBehavior.AllowGet);
         }
         #endregion

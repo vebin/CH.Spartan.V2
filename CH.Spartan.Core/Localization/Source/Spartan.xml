@@ -112,6 +112,14 @@
     <text name="区域名字" value="区域名字" />
     <text name="区域点集合" value="区域点集合" />
     <text name="所属用户Id" value="所属用户Id" />
+
+
+    <text name="交易流水号" value="交易流水号" />
+    <text name="交易外部编号" value="交易外部编号" />
+    <text name="交易名称" value="交易名称" />
+    <text name="交易备注" value="交易备注" />
+    <text name="交易类型" value="交易类型" />
+    <text name="交易金额" value="交易金额" />
     
   </texts>
 </localizationDictionary>

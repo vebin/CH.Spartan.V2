@@ -91,5 +91,10 @@ namespace CH.Spartan.Devices.Dto
         /// 是否定位
         /// </summary>
         public bool? IsLocated { get; set; }
+
+        /// <summary>
+        /// 用户Id
+        /// </summary>
+        public long? UserId { get; set; }
     }
 }

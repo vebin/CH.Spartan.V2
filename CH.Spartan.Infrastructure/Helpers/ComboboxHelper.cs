@@ -18,7 +18,10 @@ namespace CH.Spartan.Infrastructure
                 IocManager.Instance.Resolve<ILocalizationManager>().GetSource(SpartanConsts.LocalizationSourceName);
             var list = new List<ComboboxItemDto>();
             var values = System.Enum.GetValues(enumType);
-
+            if (!allText.IsNullOrEmpty())
+            {
+                list.Add(new ComboboxItemDto("", allText));
+            }
             foreach (var val in values)
             {
                 var obj = (System.Enum)val;
@@ -26,12 +29,6 @@ namespace CH.Spartan.Infrastructure
                 var localName = localizationSource.GetString(displayName);
                 list.Add(new ComboboxItemDto(val.ToString(), localName));
             }
-
-            if (!allText.IsNullOrEmpty())
-            {
-                list.Add(new ComboboxItemDto("", allText));
-            }
-
             return list;
         }
 

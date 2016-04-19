@@ -110,7 +110,6 @@ namespace CH.Spartan.Users
 
         public async Task<IdentityResult> CreateUserAsync(User user)
         {
-            user.Name = user.UserName;
             user.Surname = user.UserName;
             user.Password = new Md532PasswordHasher().HashPassword(SpartanConsts.DefaultPassword);
             user.IsInitPassword = true;

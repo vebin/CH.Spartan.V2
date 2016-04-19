@@ -49,6 +49,12 @@ namespace CH.Spartan.DealRecords
         /// </summary>
         public decimal Amount { get; set; }
 
+        /// <summary>
+        /// 交易成功
+        /// </summary>
+        public bool IsSucceed { get; set; }
+
+
         private static string GetNo(int tenantId, long userId)
         {
             return $"IDR{DateTime.Now.ToString("yyyyMMddHHmmss")}{tenantId}{userId}";
@@ -66,13 +72,14 @@ namespace CH.Spartan.DealRecords
         {
             return new DealRecord
             {
-                No = GetNo(tenantId,userId),
+                No = GetNo(tenantId, userId),
                 Name = "安装设备",
                 TenantId = tenantId,
                 UserId = userId,
                 Type = EnumDealRecordType.InstallDevice,
                 Amount = -amount,
-                Remark = remark
+                Remark = remark,
+                IsSucceed = true,
             };
         }
     }

@@ -145,6 +145,10 @@
     <Compile Include="Migrations\201604181208070_Edit_Area.Designer.cs">
       <DependentUpon>201604181208070_Edit_Area.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604191305319_EditDealRecord.cs" />
+    <Compile Include="Migrations\201604191305319_EditDealRecord.Designer.cs">
+      <DependentUpon>201604191305319_EditDealRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\SeedData\DefaultDataBuilder.cs" />
     <Compile Include="SpartanDataModule.cs" />
@@ -201,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604181208070_Edit_Area.resx">
       <DependentUpon>201604181208070_Edit_Area.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604191305319_EditDealRecord.resx">
+      <DependentUpon>201604191305319_EditDealRecord.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

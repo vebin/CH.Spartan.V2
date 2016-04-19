@@ -852,6 +852,8 @@
     <Content Include="Content\js\plugins\icheck\icheck.jquery.json" />
     <Content Include="Content\js\plugins\icheck\README.md" />
     <Content Include="Content\js\plugins\icheck\icheck.default.js" />
+    <Content Include="Views\PlatformManage\DealRecord.cshtml" />
+    <Content Include="Views\AgentManage\DealRecord.cshtml" />
     <None Include="Views\SystemManage\CreateTenant.cshtml" />
     <Content Include="Views\SystemManage\UpdateTenant.cshtml" />
     <Content Include="Views\SystemManage\DeviceType.cshtml" />
@@ -938,9 +940,7 @@
       <Name>CH.Spartan.WebApi</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\PlatformManage\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Content\js\content.min.js" />
   </ItemGroup>

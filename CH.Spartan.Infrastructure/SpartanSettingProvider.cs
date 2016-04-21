@@ -40,16 +40,20 @@ namespace CH.Spartan.Infrastructure
                 new SettingDefinition(SpartanSettingKeys.General_WeiBo_AppSecret,GetDefaultSetting(SpartanSettingKeys.General_WeiBo_AppSecret,"f2206c86a2949eeb9df79222da1394a3"),L("微博登录接入密钥")),
                 new SettingDefinition(SpartanSettingKeys.General_WeiXin_AppId,GetDefaultSetting(SpartanSettingKeys.General_WeiXin_AppId,"wxdcda5516be05d99f"),L("微信登录接入Id")),
                 new SettingDefinition(SpartanSettingKeys.General_WeiXin_AppSecret,GetDefaultSetting(SpartanSettingKeys.General_WeiXin_AppSecret,"8c3e08ff4069fa8392811c83548fe7c1"),L("微信登录接入密钥")),
+
+                //租户
+                new SettingDefinition(SpartanSettingKeys.Tenant_Customer_InstallDevice_ExpireYear,GetDefaultSetting(SpartanSettingKeys.Tenant_Customer_InstallDevice_ExpireYear,"1"),L("客户安装设备过期"),scopes:SettingScopes.Tenant),
+               
                 //用户
-                new SettingDefinition(SpartanSettingKeys.User_IsEnableAlarm,GetDefaultSetting(SpartanSettingKeys.User_IsEnableAlarm,"true"),L("报警是否开启")),
-                new SettingDefinition(SpartanSettingKeys.User_AlarmSound,GetDefaultSetting(SpartanSettingKeys.User_AlarmSound,"default"),L("报警信息报警声音")),
-                new SettingDefinition(SpartanSettingKeys.User_IsSendEmail,GetDefaultSetting(SpartanSettingKeys.User_IsSendEmail,"true"),L("报警信息是否发送邮件")),
-                new SettingDefinition(SpartanSettingKeys.User_IsSendApp,GetDefaultSetting(SpartanSettingKeys.User_IsSendApp,"true"),L("报警信息是否发送APP")),
-                new SettingDefinition(SpartanSettingKeys.User_ReceiveAlarmType,GetDefaultSetting(SpartanSettingKeys.User_ReceiveAlarmType,"all"),L("接收报警类型")),
-                new SettingDefinition(SpartanSettingKeys.User_ReceiveEmails,GetDefaultSetting(SpartanSettingKeys.User_ReceiveEmails,""),L("报警信息接收邮件列表")),
-                new SettingDefinition(SpartanSettingKeys.User_ReceiveStartTime,GetDefaultSetting(SpartanSettingKeys.User_ReceiveStartTime,"00:00:00"),L("报警信息允许接收开始时间")),
-                new SettingDefinition(SpartanSettingKeys.User_ReceiveEndTime,GetDefaultSetting(SpartanSettingKeys.User_ReceiveEndTime,"23:59:59"),L("报警信息允许接收结束时间")),
-                new SettingDefinition(SpartanSettingKeys.User_FortifyRadius,GetDefaultSetting(SpartanSettingKeys.User_FortifyRadius,"150"),L("报警设防半径")),
+                new SettingDefinition(SpartanSettingKeys.User_IsEnableAlarm,GetDefaultSetting(SpartanSettingKeys.User_IsEnableAlarm,"true"),L("报警是否开启"),scopes:SettingScopes.User),
+                new SettingDefinition(SpartanSettingKeys.User_AlarmSound,GetDefaultSetting(SpartanSettingKeys.User_AlarmSound,"default"),L("报警信息报警声音"),scopes:SettingScopes.User),
+                new SettingDefinition(SpartanSettingKeys.User_IsSendEmail,GetDefaultSetting(SpartanSettingKeys.User_IsSendEmail,"true"),L("报警信息是否发送邮件"),scopes:SettingScopes.User),
+                new SettingDefinition(SpartanSettingKeys.User_IsSendApp,GetDefaultSetting(SpartanSettingKeys.User_IsSendApp,"true"),L("报警信息是否发送APP"),scopes:SettingScopes.User),
+                new SettingDefinition(SpartanSettingKeys.User_ReceiveAlarmType,GetDefaultSetting(SpartanSettingKeys.User_ReceiveAlarmType,"all"),L("接收报警类型"),scopes:SettingScopes.User),
+                new SettingDefinition(SpartanSettingKeys.User_ReceiveEmails,GetDefaultSetting(SpartanSettingKeys.User_ReceiveEmails,""),L("报警信息接收邮件列表"),scopes:SettingScopes.User),
+                new SettingDefinition(SpartanSettingKeys.User_ReceiveStartTime,GetDefaultSetting(SpartanSettingKeys.User_ReceiveStartTime,"00:00:00"),L("报警信息允许接收开始时间"),scopes:SettingScopes.User),
+                new SettingDefinition(SpartanSettingKeys.User_ReceiveEndTime,GetDefaultSetting(SpartanSettingKeys.User_ReceiveEndTime,"23:59:59"),L("报警信息允许接收结束时间"),scopes:SettingScopes.User),
+                new SettingDefinition(SpartanSettingKeys.User_FortifyRadius,GetDefaultSetting(SpartanSettingKeys.User_FortifyRadius,"150"),L("报警设防半径"),scopes:SettingScopes.User),
             };
         }
 

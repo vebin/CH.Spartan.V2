@@ -35,12 +35,9 @@ namespace CH.Spartan.Authorization.Roles
         public async Task GrantAllUserPermissionsAsync(Role role)
         {
             var permissions =
-                _permissionManager.GetAllPermissions(MultiTenancySides.Tenant).Where(p =>
-                    !p.Name.StartsWith(SpartanPermissionNames.AgentManages)&&
-                    !p.Name.Equals(SpartanPermissionNames.Customers_Setting_Device_Create) &&
-                    !p.Name.Equals(SpartanPermissionNames.Customers_Setting_Device_Delete)
+                _permissionManager.GetAllPermissions(MultiTenancySides.Tenant).Where(p =>!p.Name.StartsWith(SpartanPermissionNames.AgentManages)
                     );
-            await SetGrantedPermissionsAsync(role,permissions);
+            await SetGrantedPermissionsAsync(role, permissions);
         }
     }
 }

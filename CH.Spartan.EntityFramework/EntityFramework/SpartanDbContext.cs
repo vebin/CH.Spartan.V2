@@ -10,6 +10,7 @@ using CH.Spartan.Users;
 using MySql.Data.Entity;
 using CH.Spartan.Areas;
 using CH.Spartan.DealRecords;
+using CH.Spartan.DeviceStocks;
 using CH.Spartan.Historys;
 using CH.Spartan.Nodes;
 using CH.Spartan.Reports;
@@ -21,7 +22,12 @@ namespace CH.Spartan.EntityFramework
         /// <summary>
         /// 设备
         /// </summary>
-        public IDbSet<Device> Devices { get; set; }
+        public IDbSet<Device> Devices { get; set; } 
+        
+        /// <summary>
+        /// 库存
+        /// </summary>
+        public IDbSet<DeviceStock> DeviceStocks { get; set; }
 
         /// <summary>
         /// 设备类型

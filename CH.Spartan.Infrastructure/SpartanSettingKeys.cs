@@ -125,6 +125,13 @@ namespace CH.Spartan.Infrastructure
 
         #endregion
 
+        #region 租户
+        /// <summary>
+        /// 租户客户自行安装设备 默认过期 年
+        /// </summary>
+        public const string Tenant_Customer_InstallDevice_ExpireYear = "Tenant.Customer.InstallDevice.ExpireYear";
+        #endregion
+
         #region 用户
 
         /// <summary>

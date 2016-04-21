@@ -1,0 +1,61 @@
+﻿@model CH.Spartan.DeviceStocks.Dto.CreateDeviceStockOutput
+@section styles
+{
+    @Styles.Render("~/styles/plugins/edit")
+}
+@section scripts
+{
+    @Scripts.Render("~/scripts/plugins/edit")
+    <script type="text/javascript">
+        var from = $("#form");
+        var callback = null;
+        (function ($) {
+            if (!$) {
+                return;
+            }
+            $(function () {
+                from.validate({
+                    submitHandler: function (form) {
+                        var data =
+                        {
+                            deviceStock: abp.utils.getFormData(form)
+                        };
+                        abp.ajax({
+                            url: "/AgentManage/CreateDeviceStock",
+                            data: JSON.stringify(data)
+                        }).done(function (result) {
+                            if (callback) {
+                                callback(result, "@L("添加成功")");
+                            }
+                            abp.dialog.close();
+                        });
+                    }
+                });
+            });
+        })(jQuery);
+
+        function submitForm(cb) {
+            callback = cb;
+            from.submit();
+        }
+    </script>
+}
+
+<div class="ibox float-e-margins @(SpartanConsts.DefaultAnimate)  edit-col-1">
+    <form class="form-horizontal" id="form">
+        <div class="ibox-content">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">@L("设备号"):</label>
+                        <div class="col-sm-8 ">
+                            <textarea class="form-control required h500" id="Nos" name="Nos"></textarea>
+                            <span class="help-block m-b-none">@L("支持批量添加 一行一个")</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+

@@ -25,6 +25,11 @@
             $("#table").bootstrapTable("refresh");
         }
 
+        //参数
+        function queryParams(params) {
+            return $.extend({}, params, abp.utils.getFormData("#form"));
+        }
+
         //添加
         function create() {
             abp.dialog.open("/Customers_Settin/CreateArea", "@L("添加区域")", {
@@ -90,11 +95,7 @@
             $(function () {
                 //搜索
                 $("#btn-search").click(function () {
-                    var args =
-                    {
-                        query: abp.utils.getFormData("#form")
-                    }
-                    $("#table").bootstrapTable("refresh", args);
+                    $("#table").bootstrapTable("refresh");
                 });
 
                 //添加
@@ -151,6 +152,7 @@
                            data-url="/Customers_Settin/SearchArea"
                            data-toolbar="#tableToolbar"
                            data-height="550"
+                           data-query-params="queryParams"
                            data-show-export="true">
                         <thead>
                             <tr>

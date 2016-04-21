@@ -37,6 +37,13 @@
         public const string AgentManages_Device_Create = "AgentManages.Device.Create";
         public const string AgentManages_Device_Update = "AgentManages.Device.Update";
         public const string AgentManages_Device_Delete = "AgentManages.Device.Delete";
+
+        public const string AgentManages_DeviceStock = "AgentManages.DeviceStock";
+        public const string AgentManages_DeviceStock_Create = "AgentManages.DeviceStock.Create";
+        public const string AgentManages_DeviceStock_Update = "AgentManages.DeviceStock.Update";
+        public const string AgentManages_DeviceStock_Delete = "AgentManages.DeviceStock.Delete";
+      
+
         public const string AgentManages_DealRecord = "AgentManages.DealRecord";
         public const string AgentManages_DealRecord_Delete = "AgentManages.DealRecord.Delete";
 

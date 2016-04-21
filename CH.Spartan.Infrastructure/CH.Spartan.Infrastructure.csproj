@@ -105,6 +105,7 @@
     <Compile Include="SpartanAuthorizationProvider.cs" />
     <Compile Include="SpartanConsts.cs" />
     <Compile Include="SpartanInfrastructureModule.cs" />
+    <Compile Include="SpartanNavigationProvider.cs" />
     <Compile Include="SpartanPermissionNames.cs" />
     <Compile Include="SpartanSettingKeys.cs" />
     <Compile Include="SpartanSettingProvider.cs" />

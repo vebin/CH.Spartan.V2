@@ -57,6 +57,11 @@ namespace CH.Spartan.Infrastructure
             agentManageDevice.CreateChildPermission(SpartanPermissionNames.AgentManages_Device_Update, L("更新"), multiTenancySides: MultiTenancySides.Tenant);
             agentManageDevice.CreateChildPermission(SpartanPermissionNames.AgentManages_Device_Delete, L("删除"), multiTenancySides: MultiTenancySides.Tenant);
 
+            var agentManageDeviceStock = agentManages.CreateChildPermission(SpartanPermissionNames.AgentManages_DeviceStock, L("库存管理"), multiTenancySides: MultiTenancySides.Tenant);
+            agentManageDeviceStock.CreateChildPermission(SpartanPermissionNames.AgentManages_DeviceStock_Create, L("添加"), multiTenancySides: MultiTenancySides.Tenant);
+            agentManageDeviceStock.CreateChildPermission(SpartanPermissionNames.AgentManages_DeviceStock_Update, L("更新"), multiTenancySides: MultiTenancySides.Tenant);
+            agentManageDeviceStock.CreateChildPermission(SpartanPermissionNames.AgentManages_DeviceStock_Delete, L("删除"), multiTenancySides: MultiTenancySides.Tenant);
+
             var agentManageDealRecord = agentManages.CreateChildPermission(SpartanPermissionNames.AgentManages_DealRecord, L("交易记录"), multiTenancySides: MultiTenancySides.Tenant);
             agentManageDealRecord.CreateChildPermission(SpartanPermissionNames.AgentManages_DealRecord_Delete, L("删除"), multiTenancySides: MultiTenancySides.Tenant);
 

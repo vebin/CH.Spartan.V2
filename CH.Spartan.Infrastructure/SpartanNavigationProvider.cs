@@ -1,9 +1,7 @@
 ﻿using Abp.Application.Navigation;
 using Abp.Localization;
-using CH.Spartan.Authorization;
-using CH.Spartan.Infrastructure;
 
-namespace CH.Spartan.Web
+namespace CH.Spartan.Infrastructure
 {
     /// <summary>
     /// This class defines menus for the application.
@@ -52,6 +50,7 @@ namespace CH.Spartan.Web
                         .AddItem(new MenuItemDefinition("User", L("客户管理"), "fa fa-user", "/AgentManage/User", true, SpartanPermissionNames.AgentManages_User))
                         //.AddItem(new MenuItemDefinition("Role", L("角色管理"), "fa fa-check", "/AgentManage/Role", true, SpartanPermissionNames.AgentManages_Role))
                         .AddItem(new MenuItemDefinition("Device", L("车辆管理"), "fa fa-truck", "/AgentManage/Device", true, SpartanPermissionNames.AgentManages_Device))
+                        .AddItem(new MenuItemDefinition("DeviceStock", L("库存管理"), "fa fa-hourglass-half", "/AgentManage/DeviceStock", true, SpartanPermissionNames.AgentManages_DeviceStock))
                         .AddItem(new MenuItemDefinition("DealRecord", L("交易记录"), "fa fa-credit-card", "/AgentManage/DealRecord", true, SpartanPermissionNames.AgentManages_DealRecord))
                 )
                 .AddItem(

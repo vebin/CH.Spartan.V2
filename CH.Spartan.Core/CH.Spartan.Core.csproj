@@ -120,6 +120,8 @@
     <Compile Include="AuditLogs\AuditLogManager.cs" />
     <Compile Include="Authorization\HangfireAuthorizationFilter.cs" />
     <Compile Include="DealRecords\DealRecordManager.cs" />
+    <Compile Include="DeviceStocks\DeviceStock.cs" />
+    <Compile Include="DeviceStocks\DeviceStockManager.cs" />
     <Compile Include="Devices\DeviceHelper.cs" />
     <Compile Include="Devices\DeviceManager.cs" />
     <Compile Include="Domain\ManagerBase.cs" />

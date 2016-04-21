@@ -9,8 +9,7 @@ using Abp.Modules;
 using Abp.Web.Mvc;
 using Abp.Web.SignalR;
 using CH.Spartan.Api;
-using Hangfire;
-using Hangfire.Dashboard;
+using CH.Spartan.Infrastructure;
 using Hangfire.MemoryStorage;
 
 namespace CH.Spartan.Web

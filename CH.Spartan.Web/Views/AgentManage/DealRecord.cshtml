@@ -37,11 +37,7 @@
 
             //搜索
             $("#btn-search").click(function () {
-                var args =
-                {
-                    query: abp.utils.getFormData("#form")
-                }
-                $("#table").bootstrapTable("refresh", args);
+                $("#table").bootstrapTable("refresh");
             });
 
 
@@ -96,6 +92,7 @@
                            data-url="/AgentManage/GetDealRecordListPaged"
                            data-toolbar="#tableToolbar"
                            data-height="550"
+                           data-query-params="queryParams"
                            data-show-export="true">
                         <thead>
                             <tr>

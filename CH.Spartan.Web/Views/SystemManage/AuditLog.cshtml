@@ -14,6 +14,11 @@
             }
             return del;
         }
+        //参数
+        function queryParams(params) {
+            return $.extend({}, params, abp.utils.getFormData("#form"));
+        }
+
         //删除
         function del(ids) {
             if (typeof ids == "string") {
@@ -38,11 +43,7 @@
             $(function () {
                 //搜索
                 $("#btn-search").click(function () {
-                    var args =
-                    {
-                        query: abp.utils.getFormData("#form")
-                    }
-                    $("#table").bootstrapTable("refresh", args);
+                    $("#table").bootstrapTable("refresh");
                 });
 
                 //删除
@@ -87,6 +88,7 @@
                            data-url="/SystemManage/GetAuditLogListPaged"
                            data-toolbar="#tableToolbar"
                            data-height="550"
+                           data-query-params="queryParams"
                            data-show-export="true">
                         <thead>
                             <tr>

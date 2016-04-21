@@ -10,6 +10,8 @@ using CH.Spartan.DealRecords;
 using CH.Spartan.DealRecords.Dto;
 using CH.Spartan.Devices;
 using CH.Spartan.Devices.Dto;
+using CH.Spartan.DeviceStocks;
+using CH.Spartan.DeviceStocks.Dto;
 using CH.Spartan.Infrastructure;
 using CH.Spartan.Users;
 using CH.Spartan.Users.Dto;
@@ -25,11 +27,13 @@ namespace CH.Spartan.Web.Controllers
         private readonly IDeviceAppService _deviceAppService;
         private readonly IUserAppService _userAppService;
         private readonly IDealRecordAppService _dealRecordAppService;
-        public AgentManageController(IDeviceAppService deviceAppService, IUserAppService userAppService, IDealRecordAppService dealRecordAppService)
+        private readonly IDeviceStockAppService _deviceStockAppService;
+        public AgentManageController(IDeviceAppService deviceAppService, IUserAppService userAppService, IDealRecordAppService dealRecordAppService, IDeviceStockAppService deviceStockAppService)
         {
             _deviceAppService = deviceAppService;
             _userAppService = userAppService;
             _dealRecordAppService = dealRecordAppService;
+            _deviceStockAppService = deviceStockAppService;
         }
 
         #region 设备
@@ -95,6 +99,85 @@ namespace CH.Spartan.Web.Controllers
         public async Task<JsonResult> DeleteDevice(List<IdInput> input)
         {
             await _deviceAppService.DeleteDeviceAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+
+        #endregion
+
+        #region 库存管理
+
+        #region 首页
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_DeviceStock)]
+        public ActionResult DeviceStock()
+        {
+            return View();
+        }
+        #endregion
+
+        #region 查询
+
+        [HttpGet]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_DeviceStock)]
+        public async Task<JsonResult> GetDeviceStockListPaged(GetDeviceStockListPagedInput input)
+        {
+            var result = await _deviceStockAppService.GetDeviceStockListPagedAsync(input);
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_DeviceStock)]
+        public async Task<JsonResult> GetDeviceStockList(GetDeviceStockListInput input)
+        {
+            var result = await _deviceStockAppService.GetDeviceStockListAsync(input);
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+        #region 添加
+        [HttpGet]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_DeviceStock_Create)]
+        public ActionResult CreateDeviceStock()
+        {
+            var result = _deviceStockAppService.GetNewDeviceStock();
+            return View(result);
+        }
+
+        [HttpPost]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_DeviceStock_Create)]
+        public async Task<JsonResult> CreateDeviceStock(CreateDeviceStockInput input)
+        {
+            _deviceStockAppService.CreateDeviceStockAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+
+        #endregion
+
+        #region 更新
+        [HttpGet]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_DeviceStock_Update)]
+        public async Task<ActionResult> UpdateDeviceStock(IdInput input)
+        {
+            var result = await _deviceStockAppService.GetUpdateDeviceStockAsync(input);
+            return View(result);
+        }
+
+        [HttpPost]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_DeviceStock_Update)]
+        public async Task<JsonResult> UpdateDeviceStock(UpdateDeviceStockInput input)
+        {
+            await _deviceStockAppService.UpdateDeviceStockAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+        #region 删除
+        [HttpPost]
+        [AbpMvcAuthorize(SpartanPermissionNames.AgentManages_DeviceStock_Delete)]
+        public async Task<JsonResult> DeleteDeviceStock(List<IdInput> input)
+        {
+            await _deviceStockAppService.DeleteDeviceStockAsync(input);
             return Json(true, JsonRequestBehavior.AllowGet);
         }
         #endregion

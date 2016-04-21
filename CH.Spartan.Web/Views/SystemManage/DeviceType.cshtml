@@ -20,6 +20,12 @@
             abp.notify.success(message);
             $("#table").bootstrapTable("refresh");
         }
+
+        //参数
+        function queryParams(params) {
+            return $.extend({}, params, abp.utils.getFormData("#form"));
+        }
+
         //更新
         function update(id) {
             abp.dialog.open("/SystemManage/UpdateDeviceType?id=" + id, "@L("修改设备类型")", {
@@ -47,11 +53,7 @@
             $(function () {
                 //搜索
                 $("#btn-search").click(function () {
-                    var args =
-                    {
-                        query: abp.utils.getFormData("#form")
-                    }
-                    $("#table").bootstrapTable("refresh", args);
+                    $("#table").bootstrapTable("refresh");
                 });
 
                 //添加
@@ -81,6 +83,7 @@
                            data-url="/SystemManage/GetDeviceTypeListPaged"
                            data-toolbar="#tableToolbar"
                            data-height="550"
+                           data-query-params="queryParams"
                            data-show-export="true">
                         <thead>
                             <tr>

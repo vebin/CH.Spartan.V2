@@ -740,7 +740,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\SpartanNavigationProvider.cs" />
     <Compile Include="App_Start\SpartanWebModule.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.cs" />
@@ -854,6 +853,12 @@
     <Content Include="Content\js\plugins\icheck\icheck.default.js" />
     <Content Include="Views\PlatformManage\DealRecord.cshtml" />
     <Content Include="Views\AgentManage\DealRecord.cshtml" />
+    <Content Include="Views\CustomerManage\CreateDevice.cshtml" />
+    <Content Include="Views\CustomerManage\Device.cshtml" />
+    <Content Include="Views\CustomerManage\UpdateDevice.cshtml" />
+    <Content Include="Views\AgentManage\CreateDeviceStock.cshtml" />
+    <Content Include="Views\AgentManage\DeviceStock.cshtml" />
+    <Content Include="Views\AgentManage\UpdateDeviceStock.cshtml" />
     <None Include="Views\SystemManage\CreateTenant.cshtml" />
     <Content Include="Views\SystemManage\UpdateTenant.cshtml" />
     <Content Include="Views\SystemManage\DeviceType.cshtml" />

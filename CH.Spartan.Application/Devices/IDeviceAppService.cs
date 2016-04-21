@@ -9,6 +9,7 @@ namespace CH.Spartan.Devices
 
     public interface IDeviceAppService : IApplicationService
     {
+        #region 通用
         /// <summary>
         /// 获取 设备
         /// </summary>
@@ -24,37 +25,70 @@ namespace CH.Spartan.Devices
         Task<PagedResultOutput<GetDeviceListDto>> GetDeviceListPagedAsync(GetDeviceListPagedInput input);
 
         /// <summary>
-        /// 添加 设备
+        /// 删除 设备
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task DeleteDeviceAsync(List<IdInput> input);
+        #endregion
+
+        #region 代理
+        /// <summary>
+        /// 添加 设备 代理
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
         Task CreateDeviceByAgentAsync(CreateDeviceByAgentInput input);
 
         /// <summary>
-        /// 更新 设备
+        /// 更新 设备 代理
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
         Task UpdateDeviceByAgentAsync(UpdateDeviceByAgentInput input);
 
         /// <summary>
-        /// 获取 新设备
+        /// 获取 新设备 代理
         /// </summary>
         /// <returns></returns>
         CreateDeviceByAgentOutput GetNewDeviceByAgent();
 
         /// <summary>
-        /// 获取 更新设备
+        /// 获取 更新设备 代理
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
         Task<UpdateDeviceByAgentOutput> GetUpdateDeviceByAgentAsync(IdInput input);
+        #endregion
+
+        #region 客户
 
         /// <summary>
-        /// 删除 设备
+        /// 添加 设备 客户
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        Task DeleteDeviceAsync(List<IdInput> input);
+        Task CreateDeviceByCustomerAsync(CreateDeviceByCustomerInput input);
+
+        /// <summary>
+        /// 更新 设备 客户
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task UpdateDeviceByCustomerAsync(UpdateDeviceByCustomerInput input);
+
+        /// <summary>
+        /// 获取 新设备 客户
+        /// </summary>
+        /// <returns></returns>
+        CreateDeviceByCustomerOutput GetNewDeviceByCustomer();
+
+        /// <summary>
+        /// 获取 更新设备 客户
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        Task<UpdateDeviceByCustomerOutput> GetUpdateDeviceByCustomerAsync(IdInput input); 
+        #endregion
     }
 }

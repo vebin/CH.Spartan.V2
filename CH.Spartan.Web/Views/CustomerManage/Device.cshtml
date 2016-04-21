@@ -11,10 +11,10 @@
         function formatterOp(value, row, index) {
             var edit = "";
             var del = "";
-            if (abp.auth.isGranted("@SpartanPermissionNames.AgentManages_Device_Update")) {
+            if (abp.auth.isGranted("@SpartanPermissionNames.Customers_Setting_Device_Update")) {
                 edit = '<button type="button" class="btn btn-link btn-op" title="@L("修改")" onclick="update(\'' + row.id + '\')"><i class="fa fa-edit" ></i> @L("修改")</button>';
             }
-            if (abp.auth.isGranted("@SpartanPermissionNames.AgentManages_Device_Delete")) {
+            if (abp.auth.isGranted("@SpartanPermissionNames.Customers_Setting_Device_Delete")) {
                 del = '<button type="button" class="btn btn-link btn-op" title="@L("删除")" onclick="del(\'' + row.id + '\')"><i class="fa fa-trash-o""></i> @L("删除")</button>';
 
             }
@@ -22,21 +22,26 @@
         }
 
         //子窗口回调
-        function callback(result,message) {
+        function callback(result, message) {
             abp.notify.success(message);
             $("#table").bootstrapTable("refresh");
         }
 
+        //参数
+        function queryParams(params) {
+            return $.extend({}, params, abp.utils.getFormData("#form"));
+        }
+
         //添加
         function create() {
-            abp.dialog.open("/AgentManage/CreateDevice", "@L("添加车辆")", {
+            abp.dialog.open("/CustomerManage/CreateDevice", "@L("添加车辆")", {
                 //area: ["775px", "750px"],
                 area: ["575px", "750px"],
                 //area: ["775px", "750px"],
                 //area: ["995px", "750px"],
                 //area: ["1250px", "750px"],
                 btn: ["@L("确定")", '@L("取消")'],
-                yes: function(index, layero) {
+                yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
                     iframeWin.submitForm(callback);
                 }
@@ -45,14 +50,14 @@
 
         //更新
         function update(id) {
-            abp.dialog.open("/AgentManage/UpdateDevice?id=" + id, "@L("修改车辆")", {
+            abp.dialog.open("/CustomerManage/UpdateDevice?id=" + id, "@L("修改车辆")", {
                 //area: ["775px", "750px"],
                 area: ["575px", "750px"],
                 //area: ["775px", "750px"],
                 //area: ["995px", "750px"],
                 //area: ["1250px", "750px"],
                 btn: ["@L("保存")", '@L("取消")'],
-                yes: function(index, layero) {
+                yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
                     iframeWin.submitForm(callback);
                 }
@@ -64,12 +69,12 @@
             if (typeof ids == "string") {
                 ids = [{ id: ids }];
             }
-            abp.message.confirm("@L("确定删除")?", function(yes) {
+            abp.message.confirm("@L("确定删除")?", function (yes) {
                 if (!yes) return;
                 abp.ajax({
-                    url: "/AgentManage/DeleteDevice",
+                    url: "/CustomerManage/DeleteDevice",
                     data: JSON.stringify(ids)
-                }).done(function(result) {
+                }).done(function (result) {
                     abp.notify.success("@L("删除成功")");
                     $("#btn-search").click();
                 });
@@ -83,27 +88,27 @@
             return query;
         }
 
-        (function($) {
+        (function ($) {
             if (!$) {
                 return;
             }
 
-            $(function() {
+            $(function () {
                 //搜索
-                $("#btn-search").click(function() {
+                $("#btn-search").click(function () {
                     $("#table").bootstrapTable("refresh");
                 });
 
                 //添加
-                $("#btn-add").click(function() {
+                $("#btn-add").click(function () {
                     create();
                 });
 
                 //删除
-                $("#btn-del").click(function() {
+                $("#btn-del").click(function () {
                     var rows = $("#table").bootstrapTable("getSelections");
                     var ids = [];
-                    $.each(rows, function(index, item) {
+                    $.each(rows, function (index, item) {
                         ids.push({ id: item.id });
                     });
                     if (ids.length == 0) {
@@ -134,9 +139,6 @@
                         <div class="form-group" data-toggle="tooltip" data-placement="bottom" title="@L("设备类型")">
                             @Html.GetSelectByDeviceType("DeviceTypeId", L("全部(设备类型)"))
                         </div>
-                        <div class="form-group" data-toggle="tooltip" data-placement="bottom" title="@L("所属用户")">
-                            @Html.AutoCompleteUser("UserId",L("所属用户"))
-                        </div>
                         <div class="clearfix"></div>
                         <div class="form-group" data-toggle="tooltip" data-placement="bottom" title="@L("是否定位")">
                             @Html.GetSelectByEnable("IsLocated", L("不限(是否定位)"))
@@ -148,18 +150,18 @@
                 </div>
                 <div class="ibox-content list-content">
                     <div class="btn-group hidden-xs" id="tableToolbar" role="group">
-                        @if (IsGranted(SpartanPermissionNames.AgentManages_Device_Create))
+                        @if (IsGranted(SpartanPermissionNames.Customers_Setting_Device_Create))
                         {
                             <button type="button" class="btn btn-outline btn-default" id="btn-add"><i class="fa fa-plus" aria-hidden="true"></i></button>
                         }
-                        @if (IsGranted(SpartanPermissionNames.AgentManages_Device_Delete))
+                        @if (IsGranted(SpartanPermissionNames.Customers_Setting_Device_Delete))
                         {
                             <button type="button" class="btn btn-outline btn-default" id="btn-del"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                         }
                     </div>
                     <table id="table"
                            data-toggle="table"
-                           data-url="/AgentManage/GetDeviceListPaged"
+                           data-url="/CustomerManage/GetDeviceListPaged"
                            data-toolbar="#tableToolbar"
                            data-height="550"
                            data-query-params="queryParams"
@@ -174,7 +176,6 @@
                                 <th data-field="deviceTypeName" data-sortable="true" data-sort-name="bDeviceTypeId">@L("设备类型")</th>
                                 <th data-field="bNo" data-sortable="true">@L("设备号")</th>
                                 <th data-field="bSimNo" data-sortable="true">@L("设备卡号")</th>
-                                <th data-field="userName" data-sortable="true" data-sort-name="userId">@L("所属客户")</th>
                                 <th data-field="isExpireText" data-sortable="true">@L("是否过期")</th>
                                 <th data-field="bExpireTime" data-sortable="true">@L("过期时间")</th>
                                 <th data-field="isOnlineText" data-sortable="true">@L("是否在线")</th>

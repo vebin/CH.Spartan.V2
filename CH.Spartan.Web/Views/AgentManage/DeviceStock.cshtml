@@ -10,31 +10,30 @@
         function formatterOp(value, row, index) {
             var edit = "";
             var del = "";
-            if (abp.auth.isGranted("@SpartanPermissionNames.SystemManages_Tenant_Update")) {
+            if (abp.auth.isGranted("@SpartanPermissionNames.AgentManages_DeviceStock_Update")) {
                 edit = '<button type="button" class="btn btn-link btn-op" title="@L("修改")" onclick="update(\'' + row.id + '\')"><i class="fa fa-edit" ></i> @L("修改")</button>';
             }
-            if (abp.auth.isGranted("@SpartanPermissionNames.SystemManages_Tenant_Delete")) {
+            if (abp.auth.isGranted("@SpartanPermissionNames.AgentManages_DeviceStock_Delete")) {
                 del = '<button type="button" class="btn btn-link btn-op" title="@L("删除")" onclick="del(\'' + row.id + '\')"><i class="fa fa-trash-o""></i> @L("删除")</button>';
             }
             return edit + del;
         }
+
         //子窗口回调
         function callback(result, message) {
             abp.notify.success(message);
             $("#table").bootstrapTable("refresh");
         }
 
-        //参数
-        function queryParams(params) {
-            return $.extend({}, params, abp.utils.getFormData("#form"));
-        }
-
         //添加
         function create() {
-            abp.dialog.open("/SystemManage/CreateTenant", "@L("添加租户")", {
-                area: ["475px", "500px"],
+            abp.dialog.open("/AgentManage/CreateDeviceStock", "@L("添加库存管理")", {
+                area: ["475px", "750px"],
+                //area: ["775px", "750px"],
+                //area: ["995px", "750px"],
+                //area: ["1250px", "750px"],
                 btn: ["@L("确定")", '@L("取消")'],
-                yes: function (index, layero) {
+                yes: function(index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
                     iframeWin.submitForm(callback);
                 }
@@ -44,65 +43,71 @@
 
         //更新
         function update(id) {
-            abp.dialog.open("/SystemManage/UpdateTenant?id=" + id, "@L("修改租户")", {
-                area: ["475px", "500px"],
+            abp.dialog.open("/AgentManage/UpdateDeviceStock?id=" + id, "@L("修改库存管理")", {
+                area: ["475px", "250px"],
+                //area: ["775px", "750px"],
+                //area: ["995px", "750px"],
+                //area: ["1250px", "750px"],
                 btn: ["@L("保存")", '@L("取消")'],
-                yes: function (index, layero) {
+                yes: function(index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
-                    iframeWin.submitForm();
-                },
-                cancel: function (index) {
-
-                },
-                end: function () {
-                    $("#btn-search").click();
+                    iframeWin.submitForm(callback);
                 }
             });
         }
+
 
         //删除
         function del(ids) {
             if (typeof ids == "string") {
                 ids = [{ id: ids }];
             }
-            abp.message.confirm("@L("确定删除")?", function (yes) {
-                if (yes) {
-                    abp.ajax({
-                        url: "/SystemManage/DeleteTenant",
-                        data: JSON.stringify(ids)
-                    }).done(function (result) {
-                        $("#btn-search").click();
-                    });
-                }
+            abp.message.confirm("@L("确定删除")?", function(yes) {
+                if (!yes) return;
+                abp.ajax({
+                    url: "/AgentManage/DeleteDeviceStock",
+                    data: JSON.stringify(ids)
+                }).done(function(result) {
+                    abp.notify.success("@L("删除成功")");
+                    $("#table").bootstrapTable("refresh");
+                });
             });
         }
 
-        (function ($) {
+        //参数
+        function queryParams(params) {
+            return $.extend({}, params, abp.utils.getFormData("#form"));
+        }
+
+        (function($) {
             if (!$) {
                 return;
             }
-            $(function () {
-                //搜索
-                $("#btn-search").click(function () {
-                    $("#table").bootstrapTable("refresh");
-                });
 
-                //添加
-                $("#btn-add").click(function () {
-                    create();
-                });
-
-                //删除
-                $("#btn-del").click(function () {
-                    var rows = $("#table").bootstrapTable("getSelections");
-                    var ids = [];
-                    $.each(rows, function (index, item) {
-                        ids.push({ id: item.id });
-                    });
-                    del(ids);
-                });
-
+            //搜索
+            $("#btn-search").click(function() {
+                $("#table").bootstrapTable("refresh");
             });
+
+            //添加
+            $("#btn-add").click(function() {
+                create();
+            });
+
+            //删除
+            $("#btn-del").click(function() {
+                var rows = $("#table").bootstrapTable("getSelections");
+                var ids = [];
+                $.each(rows, function(index, item) {
+                    ids.push({ id: item.id });
+                });
+                if (ids.length == 0) {
+                    abp.notify.error("@L("请选择要删除的数据")");
+                } else {
+                    del(ids);
+                }
+            });
+
 
         })(jQuery);
     </script>
@@ -114,24 +119,24 @@
                 <div class="ibox-content list-toolbar">
                     <form role="form" class="form-inline" id="form">
                         <div class="form-group">
-                            @Html.SearchText(L("请输入租户名/名称"), L("查询"))
+                            @Html.SearchText(L("请输入设备号"), L("查询"))
                         </div>
                     </form>
                 </div>
                 <div class="ibox-content list-content">
                     <div class="btn-group hidden-xs" id="tableToolbar" role="group">
-                        @if (IsGranted(SpartanPermissionNames.SystemManages_Tenant_Create))
+                        @if (IsGranted(SpartanPermissionNames.AgentManages_DeviceStock_Create))
                         {
                             <button type="button" class="btn btn-outline btn-default" id="btn-add"><i class="fa fa-plus" aria-hidden="true"></i></button>
                         }
-                        @if (IsGranted(SpartanPermissionNames.SystemManages_Tenant_Delete))
+                        @if (IsGranted(SpartanPermissionNames.AgentManages_DeviceStock_Delete))
                         {
                             <button type="button" class="btn btn-outline btn-default" id="btn-del"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                         }
                     </div>
                     <table id="table"
                            data-toggle="table"
-                           data-url="/SystemManage/GetTenantListPaged"
+                           data-url="/AgentManage/GetDeviceStockListPaged"
                            data-toolbar="#tableToolbar"
                            data-height="550"
                            data-query-params="queryParams"
@@ -141,9 +146,9 @@
                                 <th data-field="state" data-checkbox="true"></th>
                                 <th data-field="id" data-sortable="true" data-width="50">@L("编号")</th>
                                 <th data-field="op" data-formatter="formatterOp" data-width="120">@L("操作")</th>
-                                <th data-field="tenancyName" data-sortable="true">@L("租户名")</th>
-                                <th data-field="name" data-sortable="true">@L("公司名")</th>
-                                <th data-field="isActiveText" data-sortable="true">@L("允许登录")</th>
+                                <th data-field="no" data-sortable="true">@L("设备号")</th>
+                                <th data-field="lastModificationTime" data-sortable="true">@L("最后编辑时间")</th>
+                                <th data-field="creationTime" data-sortable="true">@L("创建时间")</th>
                             </tr>
                         </thead>
                     </table>
@@ -152,6 +157,3 @@
         </div>
     </div>
 </div>
-
-
-

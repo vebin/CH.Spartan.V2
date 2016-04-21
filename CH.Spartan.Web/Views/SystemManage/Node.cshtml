@@ -19,6 +19,12 @@
             abp.notify.success(message);
             $("#table").bootstrapTable("refresh");
         }
+
+        //参数
+        function queryParams(params) {
+            return $.extend({}, params, abp.utils.getFormData("#form"));
+        }
+
         //添加
         function create() {
             abp.dialog.open("/SystemManage/CreateNode", "@L("添加节点")", {
@@ -61,11 +67,7 @@
             $(function () {
                 //搜索
                 $("#btn-search").click(function () {
-                    var args =
-                    {
-                        query: abp.utils.getFormData("#form")
-                    }
-                    $("#table").bootstrapTable("refresh", args);
+                    $("#table").bootstrapTable("refresh");
                 });
 
                 //添加
@@ -102,6 +104,7 @@
                            data-url="/SystemManage/GetNodeListPaged"
                            data-toolbar="#tableToolbar"
                            data-height="550"
+                           data-query-params="queryParams"
                            data-show-export="true">
                         <thead>
                             <tr>

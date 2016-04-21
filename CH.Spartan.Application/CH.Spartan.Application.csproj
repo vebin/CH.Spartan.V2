@@ -110,9 +110,17 @@
     <Compile Include="AuditLogs\AuditLogAppService.cs" />
     <Compile Include="AuditLogs\Dto\GetAuditLogListDto.cs" />
     <Compile Include="AuditLogs\IAuditLogAppService.cs" />
+    <Compile Include="DeviceStocks\DeviceStockAppService.cs" />
+    <Compile Include="DeviceStocks\Dto\CreateDeviceStockDto.cs" />
+    <Compile Include="DeviceStocks\Dto\GetDeviceStockDto.cs" />
+    <Compile Include="DeviceStocks\Dto\GetDeviceStockListDto.cs" />
+    <Compile Include="DeviceStocks\Dto\UpdateDeviceStockDto.cs" />
+    <Compile Include="DeviceStocks\IDeviceStockAppService.cs" />
     <Compile Include="Devices\DeviceAppService.cs" />
+    <Compile Include="Devices\Dto\CreateDeviceByCustomerDto.cs" />
     <Compile Include="Devices\Dto\CreateDeviceByAgentDto.cs" />
     <Compile Include="Devices\Dto\GetDeviceListDto.cs" />
+    <Compile Include="Devices\Dto\UpdateDeviceByCustomerDto.cs" />
     <Compile Include="Devices\Dto\UpdateDeviceByAgentDto.cs" />
     <Compile Include="Devices\IDeviceAppService.cs" />
     <Compile Include="DeviceTypes\DeviceTypeAppService.cs" />

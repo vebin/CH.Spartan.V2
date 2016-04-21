@@ -5,9 +5,12 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using Abp.Application.Services.Dto;
+using Abp.Runtime.Session;
 using Abp.Web.Mvc.Authorization;
 using CH.Spartan.Areas;
 using CH.Spartan.Areas.Dto;
+using CH.Spartan.Devices;
+using CH.Spartan.Devices.Dto;
 using CH.Spartan.Infrastructure;
 
 namespace CH.Spartan.Web.Controllers
@@ -19,10 +22,12 @@ namespace CH.Spartan.Web.Controllers
     public class CustomerManageController : SpartanControllerBase
     {
         private readonly IAreaAppService _areaAppService;
+        private readonly IDeviceAppService _deviceAppService;
 
-        public CustomerManageController(IAreaAppService areaAppService)
+        public CustomerManageController(IAreaAppService areaAppService, IDeviceAppService deviceAppService)
         {
             _areaAppService = areaAppService;
+            _deviceAppService = deviceAppService;
         }
 
         #region 区域
@@ -96,6 +101,77 @@ namespace CH.Spartan.Web.Controllers
         public async Task<JsonResult> DeleteArea(List<IdInput> input)
         {
             await _areaAppService.DeleteAreaAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+
+        #endregion
+
+        #region 设备
+
+        #region 首页
+        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Device)]
+        public ActionResult Device()
+        {
+            return View();
+        }
+        #endregion
+
+        #region 查询
+
+        [HttpGet]
+        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Device)]
+        public async Task<JsonResult> GetDeviceListPaged(GetDeviceListPagedInput input)
+        {
+            input.UserId = AbpSession.GetUserId();
+            var result = await _deviceAppService.GetDeviceListPagedAsync(input);
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+        #region 添加
+        [HttpGet]
+        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Device_Create)]
+        public ActionResult CreateDevice()
+        {
+            var result = _deviceAppService.GetNewDeviceByCustomer();
+            return View(result);
+        }
+
+        [HttpPost]
+        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Device_Create)]
+        public async Task<JsonResult> CreateDevice(CreateDeviceByCustomerInput input)
+        {
+            await _deviceAppService.CreateDeviceByCustomerAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+        #region 更新
+        [HttpGet]
+        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Device_Update)]
+        public async Task<ActionResult> UpdateDevice(IdInput input)
+        {
+            var result = await _deviceAppService.GetUpdateDeviceByCustomerAsync(input);
+            return View(result);
+        }
+
+        [HttpPost]
+        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Device_Update)]
+        public async Task<JsonResult> UpdateDevice(UpdateDeviceByCustomerInput input)
+        {
+            await _deviceAppService.UpdateDeviceByCustomerAsync(input);
+            return Json(true, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
+        #region 删除
+        [HttpPost]
+        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Device_Delete)]
+        public async Task<JsonResult> DeleteDevice(List<IdInput> input)
+        {
+            await _deviceAppService.DeleteDeviceAsync(input);
             return Json(true, JsonRequestBehavior.AllowGet);
         }
         #endregion

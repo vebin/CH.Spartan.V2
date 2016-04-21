@@ -79,7 +79,7 @@ namespace CH.Spartan.MultiTenancy
 
                 //把租户的部分权限赋予 普通用户角色
                 var userRole = _roleManager.Roles.Single(r => r.Name == StaticRoleNames.Tenants.User);
-                //设置为新添加用户时默认添加的角色
+                //设置新添加客户时默认添加的角色
                 userRole.IsDefault = true;
                 await _roleManager.GrantAllUserPermissionsAsync(userRole);
                 //管理员账户

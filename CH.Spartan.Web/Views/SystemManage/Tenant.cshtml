@@ -26,7 +26,7 @@
         //添加
         function create() {
             abp.dialog.open("/SystemManage/CreateTenant", "@L("添加租户")", {
-                area: ["675px", "500px"],
+                area: ["575px", "500px"],
                 btn: ["@L("确定")", '@L("取消")'],
                 yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;
@@ -39,7 +39,7 @@
         //更新
         function update(id) {
             abp.dialog.open("/SystemManage/UpdateTenant?id=" + id, "@L("修改租户")", {
-                area: ["675px", "500px"],
+                area: ["575px", "500px"],
                 btn: ["@L("保存")", '@L("取消")'],
                 yes: function (index, layero) {
                     var iframeWin = layero.find("iframe")[0].contentWindow;

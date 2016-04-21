@@ -36,7 +36,6 @@ namespace CH.Spartan.Web
             Configuration.BackgroundJobs.UseHangfire(configuration =>
             {
                 configuration.GlobalConfiguration.UseMemoryStorage();
-                //configuration.GlobalConfiguration.UseSqlServerStorage("Default");
             });
 
 

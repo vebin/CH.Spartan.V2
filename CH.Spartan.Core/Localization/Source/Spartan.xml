@@ -24,6 +24,7 @@
     <text name="租户管理" value="租户管理" />
     <text name="设备类型" value="设备类型" />
     <text name="审计日志" value="审计日志" />
+    <text name="调度任务" value="调度任务" />
     
     <text name="个人资料" value="个人资料" />
     <text name="修改密码" value="修改密码" />

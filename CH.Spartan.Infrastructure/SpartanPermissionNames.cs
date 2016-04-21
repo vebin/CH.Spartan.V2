@@ -65,5 +65,7 @@
 
         public const string SystemManages_AuditLog = "PlatformManages.AuditLog";
         public const string SystemManages_AuditLog_Delete = "PlatformManages.AuditLog.Delete";
+
+        public const string SystemManages_Job = "PlatformManages.Job";
     }
 }

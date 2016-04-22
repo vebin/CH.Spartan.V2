@@ -33,7 +33,7 @@ namespace CH.Spartan.Web.Controllers
         #region 区域
 
         #region 首页
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Area)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Area)]
         public ActionResult Area()
         {
             return View();
@@ -43,7 +43,7 @@ namespace CH.Spartan.Web.Controllers
         #region 查询
 
         [HttpGet]
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Area)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Area)]
         public async Task<JsonResult> GetAreaListPaged(GetAreaListPagedInput input)
         {
             var result = await _areaAppService.GetAreaListPagedAsync(input);
@@ -51,7 +51,7 @@ namespace CH.Spartan.Web.Controllers
         }
 
         [HttpGet]
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Area)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Area)]
         public async Task<JsonResult> GetAreaList(GetAreaListInput input)
         {
             var result = await _areaAppService.GetAreaListAsync(input);
@@ -61,7 +61,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 添加
         [HttpGet]
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Area_Create)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Area_Create)]
         public ActionResult CreateArea()
         {
             var result = _areaAppService.GetNewArea();
@@ -69,7 +69,7 @@ namespace CH.Spartan.Web.Controllers
         }
 
         [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Area_Create)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Area_Create)]
         public async Task<JsonResult> CreateArea(CreateAreaInput input)
         {
             await _areaAppService.CreateAreaAsync(input);
@@ -79,7 +79,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 更新
         [HttpGet]
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Area_Update)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Area_Update)]
         public async Task<ActionResult> UpdateArea(IdInput input)
         {
             var result = await _areaAppService.GetUpdateAreaAsync(input);
@@ -87,7 +87,7 @@ namespace CH.Spartan.Web.Controllers
         }
 
         [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Area_Update)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Area_Update)]
         public async Task<JsonResult> UpdateArea(UpdateAreaInput input)
         {
             await _areaAppService.UpdateAreaAsync(input);
@@ -97,7 +97,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 删除
         [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Area_Delete)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Area_Delete)]
         public async Task<JsonResult> DeleteArea(List<IdInput> input)
         {
             await _areaAppService.DeleteAreaAsync(input);
@@ -111,7 +111,7 @@ namespace CH.Spartan.Web.Controllers
         #region 设备
 
         #region 首页
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Device)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Device)]
         public ActionResult Device()
         {
             return View();
@@ -121,7 +121,7 @@ namespace CH.Spartan.Web.Controllers
         #region 查询
 
         [HttpGet]
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Device)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Device)]
         public async Task<JsonResult> GetDeviceListPaged(GetDeviceListPagedInput input)
         {
             input.UserId = AbpSession.GetUserId();
@@ -132,7 +132,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 添加
         [HttpGet]
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Device_Create)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Device_Create)]
         public ActionResult CreateDevice()
         {
             var result = _deviceAppService.GetNewDeviceByCustomer();
@@ -140,7 +140,7 @@ namespace CH.Spartan.Web.Controllers
         }
 
         [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Device_Create)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Device_Create)]
         public async Task<JsonResult> CreateDevice(CreateDeviceByCustomerInput input)
         {
             await _deviceAppService.CreateDeviceByCustomerAsync(input);
@@ -150,7 +150,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 更新
         [HttpGet]
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Device_Update)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Device_Update)]
         public async Task<ActionResult> UpdateDevice(IdInput input)
         {
             var result = await _deviceAppService.GetUpdateDeviceByCustomerAsync(input);
@@ -158,7 +158,7 @@ namespace CH.Spartan.Web.Controllers
         }
 
         [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Device_Update)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Device_Update)]
         public async Task<JsonResult> UpdateDevice(UpdateDeviceByCustomerInput input)
         {
             await _deviceAppService.UpdateDeviceByCustomerAsync(input);
@@ -168,7 +168,7 @@ namespace CH.Spartan.Web.Controllers
 
         #region 删除
         [HttpPost]
-        [AbpMvcAuthorize(SpartanPermissionNames.Customers_Setting_Device_Delete)]
+        [AbpMvcAuthorize(SpartanPermissionNames.CustomerManages_Device_Delete)]
         public async Task<JsonResult> DeleteDevice(List<IdInput> input)
         {
             await _deviceAppService.DeleteDeviceAsync(input);

@@ -8,10 +8,9 @@
     <text name="里程统计" value="里程统计" />
     
     <text name="我的设置" value="我的设置" />
-    <text name="车辆设置" value="车辆设置" />
-    <text name="区域设置" value="区域设置" />
-
-
+    <text name="区域管理" value="区域管理" />
+    
+    <text name="客户主页" value="客户主页" />
     <text name="平台管理" value="平台管理" />
     <text name="客户管理" value="客户管理" />
     <text name="代理管理" value="代理管理" />

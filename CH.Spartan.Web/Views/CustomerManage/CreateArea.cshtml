@@ -22,7 +22,7 @@
                             area: abp.utils.getFormData(form)
                         };
                         abp.ajax({
-                            url: "/Customers_Settin/CreateArea",
+                            url: "/CustomerManage/CreateArea",
                             data: JSON.stringify(data)
                         }).done(function (result) {
                             if (callback) {

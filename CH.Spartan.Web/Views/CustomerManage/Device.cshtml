@@ -11,10 +11,10 @@
         function formatterOp(value, row, index) {
             var edit = "";
             var del = "";
-            if (abp.auth.isGranted("@SpartanPermissionNames.Customers_Setting_Device_Update")) {
+            if (abp.auth.isGranted("@SpartanPermissionNames.CustomerManages_Device_Update")) {
                 edit = '<button type="button" class="btn btn-link btn-op" title="@L("修改")" onclick="update(\'' + row.id + '\')"><i class="fa fa-edit" ></i> @L("修改")</button>';
             }
-            if (abp.auth.isGranted("@SpartanPermissionNames.Customers_Setting_Device_Delete")) {
+            if (abp.auth.isGranted("@SpartanPermissionNames.CustomerManages_Device_Delete")) {
                 del = '<button type="button" class="btn btn-link btn-op" title="@L("删除")" onclick="del(\'' + row.id + '\')"><i class="fa fa-trash-o""></i> @L("删除")</button>';
 
             }
@@ -150,11 +150,11 @@
                 </div>
                 <div class="ibox-content list-content">
                     <div class="btn-group hidden-xs" id="tableToolbar" role="group">
-                        @if (IsGranted(SpartanPermissionNames.Customers_Setting_Device_Create))
+                        @if (IsGranted(SpartanPermissionNames.CustomerManages_Device_Create))
                         {
                             <button type="button" class="btn btn-outline btn-default" id="btn-add"><i class="fa fa-plus" aria-hidden="true"></i></button>
                         }
-                        @if (IsGranted(SpartanPermissionNames.Customers_Setting_Device_Delete))
+                        @if (IsGranted(SpartanPermissionNames.CustomerManages_Device_Delete))
                         {
                             <button type="button" class="btn btn-outline btn-default" id="btn-del"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                         }

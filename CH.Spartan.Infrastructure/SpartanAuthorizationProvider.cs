@@ -8,39 +8,33 @@ namespace CH.Spartan.Infrastructure
     {
         public override void SetPermissions(IPermissionDefinitionContext context)
         {
-            //客户
-            var customers = context.GetPermissionOrNull(SpartanPermissionNames.Customers);
-            if (customers == null)
-            {
-                customers = context.CreatePermission(SpartanPermissionNames.Customers, L("我的主页"), multiTenancySides: MultiTenancySides.Tenant);
-            }
-            customers.CreateChildPermission(SpartanPermissionNames.Customers_Monitor, L("定位监控"), multiTenancySides: MultiTenancySides.Tenant);
-            customers.CreateChildPermission(SpartanPermissionNames.Customers_HistoryTrack, L("历史轨迹"), multiTenancySides: MultiTenancySides.Tenant);
-            customers.CreateChildPermission(SpartanPermissionNames.Customers_Notification, L("报警信息"), multiTenancySides: MultiTenancySides.Tenant);
-            customers.CreateChildPermission(SpartanPermissionNames.Customers_MileageReport, L("里程统计"), multiTenancySides: MultiTenancySides.Tenant);
+            //客户--------------------------------------------------------------------
+            var customerManages = context.GetPermissionOrNull(SpartanPermissionNames.CustomerManages) ??
+                            context.CreatePermission(SpartanPermissionNames.CustomerManages, L("客户管理"), multiTenancySides: MultiTenancySides.Tenant);
+            customerManages.CreateChildPermission(SpartanPermissionNames.CustomerManages_Monitor, L("定位监控"), multiTenancySides: MultiTenancySides.Tenant);
+            customerManages.CreateChildPermission(SpartanPermissionNames.CustomerManages_HistoryTrack, L("历史轨迹"), multiTenancySides: MultiTenancySides.Tenant);
+            customerManages.CreateChildPermission(SpartanPermissionNames.CustomerManages_Notification, L("报警信息"), multiTenancySides: MultiTenancySides.Tenant);
+            customerManages.CreateChildPermission(SpartanPermissionNames.CustomerManages_MileageReport, L("里程统计"), multiTenancySides: MultiTenancySides.Tenant);
 
-            var customersSettings = context.GetPermissionOrNull(SpartanPermissionNames.Customers_Setting);
-            if (customersSettings == null)
-            {
-                customersSettings = context.CreatePermission(SpartanPermissionNames.Customers_Setting, L("我的设置"), multiTenancySides: MultiTenancySides.Tenant);
-            }
+            var customerManageDevice = customerManages.CreateChildPermission(SpartanPermissionNames.CustomerManages_Device, L("车辆管理"), multiTenancySides: MultiTenancySides.Tenant);
+            customerManageDevice.CreateChildPermission(SpartanPermissionNames.CustomerManages_Device_Create, L("添加"), multiTenancySides: MultiTenancySides.Tenant);
+            customerManageDevice.CreateChildPermission(SpartanPermissionNames.CustomerManages_Device_Update, L("更新"), multiTenancySides: MultiTenancySides.Tenant);
+            customerManageDevice.CreateChildPermission(SpartanPermissionNames.CustomerManages_Device_Delete, L("删除"), multiTenancySides: MultiTenancySides.Tenant);
 
-            var customersSettingDevice =  customersSettings.CreateChildPermission(SpartanPermissionNames.Customers_Setting_Device, L("车辆设置"), multiTenancySides: MultiTenancySides.Tenant);
-            customersSettingDevice.CreateChildPermission(SpartanPermissionNames.Customers_Setting_Device_Create, L("添加"), multiTenancySides: MultiTenancySides.Tenant);
-            customersSettingDevice.CreateChildPermission(SpartanPermissionNames.Customers_Setting_Device_Update, L("更新"), multiTenancySides: MultiTenancySides.Tenant);
-            customersSettingDevice.CreateChildPermission(SpartanPermissionNames.Customers_Setting_Device_Delete, L("删除"), multiTenancySides: MultiTenancySides.Tenant);
+            var customerManageArea = customerManages.CreateChildPermission(SpartanPermissionNames.CustomerManages_Area, L("区域管理"), multiTenancySides: MultiTenancySides.Tenant);
+            customerManageArea.CreateChildPermission(SpartanPermissionNames.CustomerManages_Area_Create, L("添加"), multiTenancySides: MultiTenancySides.Tenant);
+            customerManageArea.CreateChildPermission(SpartanPermissionNames.CustomerManages_Area_Update, L("更新"), multiTenancySides: MultiTenancySides.Tenant);
+            customerManageArea.CreateChildPermission(SpartanPermissionNames.CustomerManages_Area_Delete, L("删除"), multiTenancySides: MultiTenancySides.Tenant);
 
-            var customersSettingArea= customersSettings.CreateChildPermission(SpartanPermissionNames.Customers_Setting_Area, L("区域设置"), multiTenancySides: MultiTenancySides.Tenant);
-            customersSettingArea.CreateChildPermission(SpartanPermissionNames.Customers_Setting_Area_Create, L("添加"), multiTenancySides: MultiTenancySides.Tenant);
-            customersSettingArea.CreateChildPermission(SpartanPermissionNames.Customers_Setting_Area_Update, L("更新"), multiTenancySides: MultiTenancySides.Tenant);
-            customersSettingArea.CreateChildPermission(SpartanPermissionNames.Customers_Setting_Area_Delete, L("删除"), multiTenancySides: MultiTenancySides.Tenant);
+            //代理--------------------------------------------------------------------
+            var agentManages = context.GetPermissionOrNull(SpartanPermissionNames.AgentManages) ??
+                               context.CreatePermission(SpartanPermissionNames.AgentManages, L("代理管理"), multiTenancySides: MultiTenancySides.Tenant);
 
-            //代理
-            var agentManages = context.GetPermissionOrNull(SpartanPermissionNames.AgentManages);
-            if (agentManages == null)
-            {
-                agentManages = context.CreatePermission(SpartanPermissionNames.AgentManages, L("代理管理"), multiTenancySides: MultiTenancySides.Tenant);
-            }
+            agentManages.CreateChildPermission(SpartanPermissionNames.AgentManages_Monitor, L("定位监控"), multiTenancySides: MultiTenancySides.Tenant);
+            agentManages.CreateChildPermission(SpartanPermissionNames.AgentManages_HistoryTrack, L("历史轨迹"), multiTenancySides: MultiTenancySides.Tenant);
+            agentManages.CreateChildPermission(SpartanPermissionNames.AgentManages_Notification, L("报警信息"), multiTenancySides: MultiTenancySides.Tenant);
+            agentManages.CreateChildPermission(SpartanPermissionNames.AgentManages_MileageReport, L("里程统计"), multiTenancySides: MultiTenancySides.Tenant);
+
 
             var agentManageUser = agentManages.CreateChildPermission(SpartanPermissionNames.AgentManages_User, L("客户管理"), multiTenancySides: MultiTenancySides.Tenant);
             agentManageUser.CreateChildPermission(SpartanPermissionNames.AgentManages_User_Create, L("添加"), multiTenancySides: MultiTenancySides.Tenant);
@@ -65,22 +59,16 @@ namespace CH.Spartan.Infrastructure
             var agentManageDealRecord = agentManages.CreateChildPermission(SpartanPermissionNames.AgentManages_DealRecord, L("交易记录"), multiTenancySides: MultiTenancySides.Tenant);
             agentManageDealRecord.CreateChildPermission(SpartanPermissionNames.AgentManages_DealRecord_Delete, L("删除"), multiTenancySides: MultiTenancySides.Tenant);
 
-            //平台
-            var platformManages = context.GetPermissionOrNull(SpartanPermissionNames.PlatformManages);
-            if (platformManages == null)
-            {
-                platformManages = context.CreatePermission(SpartanPermissionNames.PlatformManages, L("平台管理"), multiTenancySides: MultiTenancySides.Host);
-            }
-           
+            //平台--------------------------------------------------------------------
+            var platformManages = context.GetPermissionOrNull(SpartanPermissionNames.PlatformManages) ??
+                                  context.CreatePermission(SpartanPermissionNames.PlatformManages, L("平台管理"), multiTenancySides: MultiTenancySides.Host);
+
             var platformManageDealRecord = platformManages.CreateChildPermission(SpartanPermissionNames.PlatformManages_DealRecord, L("交易记录"), multiTenancySides: MultiTenancySides.Host);
             platformManageDealRecord.CreateChildPermission(SpartanPermissionNames.PlatformManages_DealRecord_Delete, L("删除"), multiTenancySides: MultiTenancySides.Host);
 
-            //系统
-            var systemManage = context.GetPermissionOrNull(SpartanPermissionNames.SystemManages);
-            if (systemManage == null)
-            {
-                systemManage = context.CreatePermission(SpartanPermissionNames.SystemManages, L("系统管理"), multiTenancySides: MultiTenancySides.Host);
-            }
+            //系统--------------------------------------------------------------------
+            var systemManage = context.GetPermissionOrNull(SpartanPermissionNames.SystemManages) ??
+                               context.CreatePermission(SpartanPermissionNames.SystemManages, L("系统管理"), multiTenancySides: MultiTenancySides.Host);
 
             var systemManageTenant = systemManage.CreateChildPermission(SpartanPermissionNames.SystemManages_Tenant, L("租户管理"), multiTenancySides: MultiTenancySides.Host);
             systemManageTenant.CreateChildPermission(SpartanPermissionNames.SystemManages_Tenant_Create, L("添加"), multiTenancySides: MultiTenancySides.Host);
